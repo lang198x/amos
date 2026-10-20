@@ -71,6 +71,14 @@ does not add standalone BASIC instructions or interpret string contents. The
 bank chapter's contradictory upper bank numbers are not turned into validation.
 All 363 recorded line/page bindings match the hash-pinned extract.
 
+The object continuation cites §§7.1–7.3: 53 further entries, for 402 BASIC
+chapter entries in total. It includes the Get Object Palette alias explicitly
+named in §7.1, all update variants, coordinate conversions and reversal functions.
+All 416 BASIC/embedded line/page bindings match the held extract. The held
+Get Bob signature and Hrev flag example contain discrepancies with nearby prose;
+they are recorded in the inventory README without becoming semantic rules.
+Lexical coverage does not establish image-flag values or rendered behaviour.
+
 [Opening sources](../corpus/opening/README.md) retain their upstream MIT licence
 and immutable provenance. [New native probes](../corpus/probes/README.md) record
 exact input hashes, screenshots and a pinned runtime profile. Host parser tests

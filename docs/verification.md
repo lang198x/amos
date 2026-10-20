@@ -164,3 +164,26 @@ registration renders the new listing in both themes. These checks do not publish
 packages, change preview assets or establish native bank/file/menu acceptance.
 Parser scope, edition qualification and private Marketplace availability remain
 unchanged. No dependency was added.
+
+## Unreleased sprite, Bob and update highlighting
+
+The §§7.1–7.3 inventories add 53 entries (three previously passing), for 402 BASIC
+chapter entries plus 14 separate embedded menu records. All 416 source-line/page
+bindings and both source hashes match. The earlier 109/171/262/349 checks and
+all 398 game expectations remain intact.
+
+Fifty-six integration tests pass in each existing consumer (shiki-highlight-api
+1.3.0 and local 2.0.0 with Shiki 4.4.3), in both themes. Six package/inventory
+checks and editor synchronisation pass. Focused checks cover whole update and
+palette phrases, Sprite Base, nested coordinate/reversal expressions, omitted
+arguments, masks, typed suffixes and opaque menu/AMAL-like strings. Disabling
+Hrev fails on its exact range in a Bob expression; it was restored before the
+passing checks. The old Bob Update Office expectation now checks the documented
+Bob Update prefix and the ordinary Office identifier separately.
+
+Actual npm/VSIX builds contain the canonical grammar; icon bytes/metadata match
+and public gallery flags are absent. The extracted npm registration preserves
+the fresh listing and key scopes in both themes. Disposable builds do not replace
+release assets or publish packages. No native animation, rendering, AMAL or
+image-bank persistence is qualified. Parser scope and Marketplace availability
+remain unchanged; no dependency was added.

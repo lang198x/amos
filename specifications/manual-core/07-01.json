@@ -1,0 +1,24 @@
+{
+  "chapter": "07.01",
+  "entries": [
+    {"spelling": "Sprite", "kind": "command", "page": "07.01.04", "extract_line": 10490, "example": "Sprite 8,180,100,1"},
+    {"spelling": "Del Sprite", "kind": "command", "page": "07.01.05", "extract_line": 10551, "example": "Del Sprite 2"},
+    {"spelling": "Ins Sprite", "kind": "command", "page": "07.01.05", "extract_line": 10574, "example": "Ins Sprite 2"},
+    {"spelling": "Get Sprite Palette", "kind": "command", "page": "07.01.07", "extract_line": 10647, "example": "Get Sprite Palette $FFFF"},
+    {"spelling": "Get Object Palette", "kind": "command", "page": "07.01.07", "extract_line": 10676, "example": "Get Object Palette"},
+    {"spelling": "Get Sprite", "kind": "command", "page": "07.01.07", "extract_line": 10679, "example": "Get Sprite 1,0,0 To 16,16"},
+    {"spelling": "Set Sprite Buffer", "kind": "command", "page": "07.01.08", "extract_line": 10701, "example": "Set Sprite Buffer 256"},
+    {"spelling": "Sprite Update", "kind": "command", "page": "07.01.08", "extract_line": 10720, "example": "Sprite Update"},
+    {"spelling": "Sprite Update Off", "kind": "command", "page": "07.01.08", "extract_line": 10723, "example": "Sprite Update Off"},
+    {"spelling": "Sprite Update On", "kind": "command", "page": "07.01.08", "extract_line": 10724, "example": "Sprite Update On"},
+    {"spelling": "Sprite Off", "kind": "command", "page": "07.01.08", "extract_line": 10737, "example": "Sprite Off 8"},
+    {"spelling": "X Sprite", "kind": "function", "page": "07.01.09", "extract_line": 10756, "example": "MC_VALUE=X Sprite(8)"},
+    {"spelling": "Y Sprite", "kind": "function", "page": "07.01.09", "extract_line": 10764, "example": "MC_VALUE=Y Sprite(8)"},
+    {"spelling": "I Sprite", "kind": "function", "page": "07.01.09", "extract_line": 10770, "example": "MC_VALUE=I Sprite(8)"},
+    {"spelling": "X Screen", "kind": "function", "page": "07.01.09", "extract_line": 10778, "example": "MC_VALUE=X Screen(X Mouse)"},
+    {"spelling": "Y Screen", "kind": "function", "page": "07.01.09", "extract_line": 10783, "example": "MC_VALUE=Y Screen(Y Mouse)"},
+    {"spelling": "X Hard", "kind": "function", "page": "07.01.10", "extract_line": 10800, "example": "MC_VALUE=X Hard(80)"},
+    {"spelling": "Y Hard", "kind": "function", "page": "07.01.10", "extract_line": 10805, "example": "MC_VALUE=Y Hard(60)"},
+    {"spelling": "Hot Spot", "kind": "command", "page": "07.01.11", "extract_line": 10851, "example": "Hot Spot 1,$11"}
+  ]
+}

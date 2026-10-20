@@ -1,0 +1,26 @@
+{
+  "chapter": "07.02",
+  "entries": [
+    {"spelling": "Bob", "kind": "command", "page": "07.02.01", "extract_line": 10961, "example": "Bob 1,80,60,1"},
+    {"spelling": "Bob Off", "kind": "command", "page": "07.02.03", "extract_line": 11033, "example": "Bob Off 1"},
+    {"spelling": "X Bob", "kind": "function", "page": "07.02.03", "extract_line": 11046, "example": "MC_VALUE=X Bob(1)"},
+    {"spelling": "Y Bob", "kind": "function", "page": "07.02.03", "extract_line": 11050, "example": "MC_VALUE=Y Bob(1)"},
+    {"spelling": "I Bob", "kind": "function", "page": "07.02.04", "extract_line": 11086, "example": "MC_VALUE=I Bob(1)"},
+    {"spelling": "Get Bob Palette", "kind": "command", "page": "07.02.04", "extract_line": 11107, "example": "Get Bob Palette $FFFF"},
+    {"spelling": "No Mask", "kind": "command", "page": "07.02.04", "extract_line": 11122, "example": "No Mask 1"},
+    {"spelling": "Priority On", "kind": "command", "page": "07.02.05", "extract_line": 11158, "example": "Priority On"},
+    {"spelling": "Priority Off", "kind": "command", "page": "07.02.05", "extract_line": 11162, "example": "Priority Off"},
+    {"spelling": "Priority Reverse On", "kind": "command", "page": "07.02.05", "extract_line": 11171, "example": "Priority Reverse On"},
+    {"spelling": "Priority Reverse Off", "kind": "command", "page": "07.02.05", "extract_line": 11175, "example": "Priority Reverse Off"},
+    {"spelling": "Limit Bob", "kind": "command", "page": "07.02.06", "extract_line": 11195, "example": "Limit Bob 1,0,0 To 320,200"},
+    {"spelling": "Double Buffer", "kind": "command", "page": "07.02.06", "extract_line": 11218, "example": "Double Buffer"},
+    {"spelling": "Get Bob", "kind": "command", "page": "07.02.07", "extract_line": 11268, "example": "Get Bob 1,0,0 To 16,16"},
+    {"spelling": "Put Bob", "kind": "command", "page": "07.02.08", "extract_line": 11315, "example": "Put Bob 1"},
+    {"spelling": "Paste Bob", "kind": "command", "page": "07.02.08", "extract_line": 11329, "example": "Paste Bob 100,80,1"},
+    {"spelling": "Del Bob", "kind": "command", "page": "07.02.09", "extract_line": 11369, "example": "Del Bob 2"},
+    {"spelling": "Ins Bob", "kind": "command", "page": "07.02.10", "extract_line": 11400, "example": "Ins Bob 2"},
+    {"spelling": "Hrev", "kind": "function", "page": "07.02.10", "extract_line": 11435, "example": "MC_VALUE=Hrev(1)"},
+    {"spelling": "Vrev", "kind": "function", "page": "07.02.11", "extract_line": 11492, "example": "MC_VALUE=Vrev(1)"},
+    {"spelling": "Rev", "kind": "function", "page": "07.02.12", "extract_line": 11519, "example": "MC_VALUE=Rev(1)"}
+  ]
+}

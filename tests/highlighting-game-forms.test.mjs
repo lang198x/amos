@@ -29,7 +29,7 @@ test('display commands keep complete multiword forms and ordinary names distinct
   checkForms(['Bob Update Off', 'Double Buffer', 'Screen Swap', 'Screen Copy',
     'Curs Off', 'Flash Off', 'Autoback', 'Palette', 'Paper', 'Pen', 'Locate',
     'Ink', 'Bar', 'Box', 'Hide', 'Show'], 'keyword.control.amos');
-  for (const source of ['Double Buffering', 'Bob Update Office', 'Curs Offset']) {
+  for (const source of ['Double Buffering', 'Curs Offset']) {
     for (const token of tokens(source)[0]) {
       if (token.content.trim()) assertScope([token], 0, token.content.length, 'variable.other.amos', source);
     }

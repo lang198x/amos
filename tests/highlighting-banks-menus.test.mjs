@@ -52,7 +52,7 @@ test('menu callback targets remain unresolved identifiers', () => {
   }
 });
 
-test('all fourteen embedded menu forms remain strings without becoming BASIC vocabulary', () => {
+test('all fourteen embedded menu forms remain strings without promoting embedded-only names to BASIC vocabulary', () => {
   const embedded = chapters.find((chapter) => chapter.chapter === '06.05').embedded_entries;
   assert.equal(embedded.length, 14);
   for (const theme of ['dark-plus', 'light-plus']) {
@@ -60,7 +60,8 @@ test('all fourteen embedded menu forms remain strings without becoming BASIC voc
       const source = entry.example;
       assertScope(tokens(source, theme)[0], source.indexOf('"') + 1, source.lastIndexOf('"'), 'string.quoted.double.amos', entry.spelling);
     }
-    for (const word of ['Sfont', 'Sstyle', 'Sline', 'Pattern', 'Outline', 'Reserve', 'Bob', 'Icon']) {
+    check('Bob 1,80,60,1', 'Bob', 'keyword.control.amos', theme);
+    for (const word of ['Sfont', 'Sstyle', 'Sline', 'Pattern', 'Outline', 'Reserve', 'Icon']) {
       check(word, word, 'variable.other.amos', theme);
     }
   }

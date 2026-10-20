@@ -1,0 +1,18 @@
+{
+  "chapter": "07.03",
+  "entries": [
+    {"spelling": "Bob Update", "kind": "command", "page": "07.03.03", "extract_line": 11747, "example": "Bob Update"},
+    {"spelling": "Bob Update Off", "kind": "command", "page": "07.03.03", "extract_line": 11750, "example": "Bob Update Off"},
+    {"spelling": "Bob Update On", "kind": "command", "page": "07.03.03", "extract_line": 11751, "example": "Bob Update On"},
+    {"spelling": "Sprite Update", "kind": "command", "page": "07.03.04", "extract_line": 11779, "example": "Sprite Update"},
+    {"spelling": "Sprite Update Off", "kind": "command", "page": "07.03.04", "extract_line": 11782, "example": "Sprite Update Off"},
+    {"spelling": "Sprite Update On", "kind": "command", "page": "07.03.04", "extract_line": 11783, "example": "Sprite Update On"},
+    {"spelling": "Update", "kind": "command", "page": "07.03.04", "extract_line": 11791, "example": "Update"},
+    {"spelling": "Update Off", "kind": "command", "page": "07.03.04", "extract_line": 11794, "example": "Update Off"},
+    {"spelling": "Update On", "kind": "command", "page": "07.03.04", "extract_line": 11795, "example": "Update On"},
+    {"spelling": "Bob Clear", "kind": "command", "page": "07.03.05", "extract_line": 11815, "example": "Bob Clear"},
+    {"spelling": "Bob Draw", "kind": "command", "page": "07.03.05", "extract_line": 11819, "example": "Bob Draw"},
+    {"spelling": "Autoback", "kind": "command", "page": "07.03.06", "extract_line": 11887, "example": "Autoback 0"},
+    {"spelling": "Set Bob", "kind": "command", "page": "07.03.07", "extract_line": 11927, "example": "Set Bob 1,0,%1111,%11001010"}
+  ]
+}

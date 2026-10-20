@@ -9,7 +9,7 @@ Published npm 0.1.0 and editor 0.1.1 retain their original grammar.
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5 and 10.1, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.3 and 10.1, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -85,7 +85,7 @@ identifiers. Two fresh mixed listings exercise these constructs independently of
 Bank or Risk.
 
 The inventory is documentary Professional coverage, not native release or
-Creator/Easy qualification. Broader object/file facilities, numeric notation, numeric/inline labels,
+Creator/Easy qualification. Broader file facilities, numeric notation, numeric/inline labels,
 AMAL/Interface and extension vocabularies remain separate sweeps. The existing
 game milestone still passes. Published packages and the private Marketplace
 preview retain their earlier grammar; this source expansion is unreleased.
@@ -125,7 +125,7 @@ Text$ is a command. Spack, Pack and Unpack carry the manual's picture-compactor
 extension label, without qualifying availability. Filename and effect payloads
 remain strings. A fresh mixed listing checks these contexts in both consumers.
 
-Objects, general file I/O and broader extensions remain later work. No runtime, parser or edition qualification
+General file I/O and broader extensions remain later work. No runtime, parser or edition qualification
 is added. Published packages and Marketplace availability are unchanged.
 
 ## Memory banks, drawing and menus milestone
@@ -144,7 +144,28 @@ Load/Save Iff still match whole phrases beside bank Load/Save. On Menu callbacks
 remain unresolved identifiers. A fresh mixed listing checks these forms in both
 existing consumers and themes.
 
-Objects and animation, general file I/O, broader extensions and edition/release
+Further animation, general file I/O, broader extensions and edition/release
 qualification remain later work. Memory ranges, pointer safety, argument validity
 and native bank/menu persistence are not established by highlighting. The parser,
 published packages and private Marketplace availability are unchanged.
+
+## Sprite, Bob and object-update milestone
+
+The §§7.1–7.3 inventories add 53 entries (19 sprite, 21 Bob and 13 update forms),
+bringing the total to 402 BASIC chapter entries. Three new entries passed the
+previous complete phrase/boundary checks; all 53 now pass. Repeated chapter
+references are retained, including Sprite Update and its On/Off variants.
+
+Coverage includes object display and image-bank commands, palette aliases,
+coordinate/image queries, coordinate conversion, reversal functions, priority,
+masking and manual/automatic update commands. Specific phrases precede bare
+object names; Sprite Base retains its function scope. Bob Update Office colours
+the documented Bob Update prefix and leaves Office an identifier. Nested calls,
+omitted arguments and masks receive lexical scopes without semantic validation.
+
+All 14 embedded menu examples remain strings. Bob's BASIC command scope comes
+from the independent object chapter, rather than promotion of embedded commands.
+A fresh mixed listing exercises creation, positioning, updating and queries.
+Collisions, IFF animation, AMAL, broader object/icon facilities and native rendering
+remain later work. Parser scope, package releases and private Marketplace
+availability are unchanged.

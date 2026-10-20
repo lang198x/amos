@@ -1,0 +1,31 @@
+Rem Fresh lexical example; not a runtime-qualified program.
+Screen Open 0,320,200,16,Lowres
+Curs Off : Flash Off : Cls 0
+Ink 2 : Bar 0,0 To 15,15
+Get Bob 1,0,0 To 16,16 : Hot Spot 1,$11
+Ink 3 : Circle 8,8,7
+Get Sprite 2,0,0 To 16,16 : Hot Spot 2,$11
+Get Object Palette : Double Buffer
+Set Sprite Buffer 256 : Hide On : Wait Vbl
+Update Off : Autoback 0
+Bob 1,80,80,1
+Sprite 8,X Hard(160),Y Hard(80),2
+MC_TABLE=Sprite Base(8)
+For MC_X=80 To 120
+  Bob Clear
+  Ink 1 : Draw 0,150 To 319,150
+  Bob 1,MC_X,,Hrev(1)
+  Sprite 8,X Hard(MC_X+80),,
+  Bob Draw : Sprite Update
+  Screen Swap : Wait Vbl
+Next MC_X
+MC_BX=X Bob(1) : MC_BY=Y Bob(1) : MC_BI=I Bob(1)
+MC_SX=X Sprite(8) : MC_SY=Y Sprite(8) : MC_SI=I Sprite(8)
+MC_X=X Screen(X Sprite(8)) : MC_Y=Y Screen(Y Sprite(8))
+Bob Off 1 : Sprite Off 8
+Priority Reverse On : Priority Reverse Off
+Paste Bob 200,100,Rev(1)
+Set Bob 1,0,%1111,%11001010
+Update On : Show On
+Print "Bob Update Off; Sprite Base; Get Object Palette"
+Rem Sprite Update On and Bob Draw stay in this comment.

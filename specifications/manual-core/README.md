@@ -4,7 +4,8 @@ This inventory follows the **AMOS Professional User Guide**: 109 entries from
 chapters 5.1–5.5 (basics, strings, maths, control and procedures), 48 from chapter
 5.6 (text), 14 from chapter 10.1 (keyboard input), 17 from 5.7 (windows), 20 from
 5.8 (joystick/mouse), 54 from 6.1–6.3 (screen setup/use/effects), 25 from 5.9
-(memory banks), 27 from 6.4 (drawing) and 35 from 6.5 (menus). The 349 BASIC
+(memory banks), 27 from 6.4 (drawing), 35 from 6.5 (menus), 19 from 7.1
+(sprites), 21 from 7.2 (Bobs) and 13 from 7.3 (object updating). The 402 BASIC
 entries include grouped headings, connective words, typed forms and the `?`
 print shortcut. Fourteen embedded menu commands are recorded separately in
 `06-05.json`, outside the BASIC vocabulary count.
@@ -76,3 +77,16 @@ Callback targets remain unresolved identifiers. Bank sizes, pointer arithmetic,
 file formats and original execution are outside these lexical checks. The bank
 chapter gives conflicting upper bank numbers (65535 and 65536); no numeric limit
 is inferred from that prose.
+
+The object chapters include complete update variants, coordinate conversions,
+image-reversal functions and the named Get Object Palette alias. Bare Bob and
+Sprite are BASIC commands independently of their names appearing inside menu
+strings; the embedded inventory does not determine BASIC coverage. Specific
+phrases and functions retain priority over bare object names, including Sprite
+Base. Omitted arguments receive lexical coverage without argument validation.
+
+The held Bob chapter prints `$800+n` beside prose naming `$8000` as the horizontal
+reversal flag, and its first Get Bob signature repeats x2 where the surrounding
+prose describes a top-left coordinate pair. These discrepancies are not converted
+into image flags or argument rules. Hardware limits, masking, update timing and
+actual rendered results require separate evidence.
