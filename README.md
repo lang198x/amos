@@ -79,8 +79,10 @@ and are deliberately not associated automatically.
 The preview uses your editor's active theme. It colours the documented subset;
 it does not provide compiler errors, completion or a language server. The `lang198x` Marketplace publisher is created. The editor-only 0.1.1
 package uses identifier `lang198x.lang198x-amos` and the approved L icon; its
-Marketplace validation is in progress; it currently shows Verifying and Private.
-The downloadable VSIX works separately.
+The Marketplace submission is private while coverage is developed and reviewed;
+Microsoft validation does not trigger a public release. See the
+[release decision](decisions/marketplace-release-readiness.md). The downloadable
+VSIX works separately.
 
 `editors/vscode/` is a thin declarative extension. Its grammar is generated from
 the canonical file; `npm run check:editor` fails on drift. Build an installable

@@ -53,8 +53,9 @@ sandboxed attempt failed with `EMFILE: too many open files, watch`; the isolated
 CLI installation then succeeded outside the sandbox. Native window selection
 was rejected by automatic approval review because it could bind a private editor
 window, so no native visual inspection is claimed. Microsoft accepted the renamed
-upload and currently shows 0.1.1 as Verifying and Private. A fresh Marketplace
-installation is pending public availability. The exact VSIX is retained in the
+upload and currently shows 0.1.1 as Verifying and Private. Public Marketplace release is intentionally
+deferred until highlighting coverage is reviewed; a fresh public Marketplace
+installation has not been tested. The exact VSIX is retained in the
 GitHub v0.1.1 preview release; its downloaded SHA-256 and isolated installed
 grammar/icon bytes match the verified package.
 CI passes at commit `a21cbf5f6798b0b6b011b69479edfddef32213e9`.

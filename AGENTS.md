@@ -14,3 +14,8 @@ Use docs/plans/ and decisions/ for implementation plans and adopted designs.
 Keep source files small and focused. Each supported AMOS instruction has its own
 module under src/instructions/. Keep the dispatcher explicit; no registration or
 plugin framework is needed. Split tests by concern as coverage grows.
+
+Keep the Marketplace preview private until coverage is reviewed; consult
+[release readiness](decisions/marketplace-release-readiness.md) before changing
+availability or adding public gallery flags. Microsoft validation is not release
+approval.

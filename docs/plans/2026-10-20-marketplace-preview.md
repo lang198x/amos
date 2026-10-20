@@ -76,10 +76,15 @@ package code were not changed, and no dependency was added.
 ## Current outcome
 
 Publisher creation and its approved L logo are confirmed. The renamed 0.1.1
-upload is accepted and shows Verifying / Private; public installation remains
-pending Microsoft validation. CI passes for a21cbf5. GitHub release v0.1.1
+upload is accepted and shows Verifying / Private; public availability is intentionally deferred
+until highlighting coverage is reviewed under the release-readiness decision. CI passes for a21cbf5. GitHub release v0.1.1
 retains the exact VSIX and checksum, independently downloaded and compared.
 The installed grammar/icon match source. Native visual review remains unverified
 after automatic approval review blocked editor-window selection. No retry of
 that UI action was made. Temporary downloads and isolated settings are disposable
 once cleanup confirms no task-owned Code process remains.
+
+The user subsequently reviewed the current appearance and required broader
+coverage before public Marketplace release. Availability was rechecked as
+Private. No public action was taken; the accepted package has no Public gallery
+flag. User visual feedback does not broaden the tested language surface.
