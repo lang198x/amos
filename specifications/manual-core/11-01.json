@@ -1,0 +1,22 @@
+{
+  "chapter": "11.01",
+  "entries": [
+    {"spelling": "Get Fonts", "kind": "command", "page": "11.01.01", "extract_line": 19942, "example": "Get Fonts"},
+    {"spelling": "Get Disc Fonts", "kind": "command", "page": "11.01.02", "extract_line": 19965, "example": "Get Disc Fonts"},
+    {"spelling": "Get Rom Fonts", "kind": "command", "page": "11.01.02", "extract_line": 19973, "example": "Get Rom Fonts"},
+    {"spelling": "Font$", "kind": "function", "page": "11.01.02", "extract_line": 19987, "example": "MC_DETAIL$=Font$(1)"},
+    {"spelling": "Set Font", "kind": "command", "page": "11.01.02", "extract_line": 19998, "example": "Set Font 1"},
+    {"spelling": "Text", "kind": "command", "page": "11.01.03", "extract_line": 20017, "example": "Text 10,20,\"Ready\""},
+    {"spelling": "Text Base", "kind": "function", "page": "11.01.03", "extract_line": 20031, "example": "MC_BASE=Text Base"},
+    {"spelling": "Text Length", "kind": "function", "page": "11.01.03", "extract_line": 20039, "example": "MC_WIDTH=Text Length(\"Ready\")"},
+    {"spelling": "Assign", "kind": "command", "page": "11.01.04", "extract_line": 20077, "example": "Assign \"Fonts:\" To \"RAM:Fonts\""},
+    {"spelling": "Xtext", "kind": "function", "page": "11.01.04", "extract_line": 20096, "example": "MC_COLUMN=Xtext(80)"},
+    {"spelling": "Ytext", "kind": "function", "page": "11.01.04", "extract_line": 20097, "example": "MC_ROW=Ytext(40)"},
+    {"spelling": "Xgraphic", "kind": "function", "page": "11.01.04", "extract_line": 20107, "example": "MC_X=Xgraphic(10)"},
+    {"spelling": "Ygraphic", "kind": "function", "page": "11.01.04", "extract_line": 20108, "example": "MC_Y=Ygraphic(5)"}
+  ],
+  "notes": [
+    "Xgraphic/Ygraphic headings and conversion prose identify the functions, but the signatures at lines 20110\u201311 repeat Xtext/Ytext. No alternate conversion semantics are inferred.",
+    "Assign already appears in the file chapter; counts retain chapter overlap. The font-clearing allocation example is not adopted as runtime advice. Font availability, metrics and native rendering remain unqualified."
+  ]
+}

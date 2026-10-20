@@ -33,3 +33,8 @@ inspect and remove its archives/cache/consumer/scripts before final completion.
 §7.7 outcome: 15 entries, total 558 across 27 chapters. 22 package checks and
 118 integrations per consumer pass; missing-rule control and package inspection
 pass. Native graphics remain unqualified.
+
+§11.1 outcome: 13 entries (Assign overlaps §10.2), total 571 across 28 chapters.
+22 package checks and 125 integrations per consumer pass. The old partial Text
+expectation now recognises its documented command prefix. Missing-rule control,
+archive byte inspection and extracted-mode rendering pass.

@@ -209,3 +209,10 @@ The 15 §7.7 icon/block headings and printed pages (07.07.01–05) were checked
 against the pinned extract. The Paste Icon section illustrates Get/Put Block;
 its heading/signature supply the icon spelling. Fresh icon/block examples are
 lexical inputs and do not establish native rendering, masks or alignment.
+
+
+The 13 font entries cite §11.1, pp.11.01.01–04, with exact headings/page bindings
+checked against the pinned extract. Xgraphic/Ygraphic headings and conversion
+prose identify the functions; signatures at 20110–11 incorrectly repeat Xtext/
+Ytext. The discrepancy is retained without inventing conversion rules. Assign
+overlaps §10.2. The fresh font listing does not establish native font results.

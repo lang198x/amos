@@ -522,3 +522,16 @@ payloads. Removing the new command rule fails the focused suite; restoration
 passes. npm/VSIX source files match exactly, with no public flag or executable
 host; extracted modes render in both themes and preserve the fresh listing.
 No native image/mask/alignment result, parser or release change is claimed.
+
+
+## Font continuation
+
+All 13 §11.1 entry/page citations match the pinned extract; Assign already passed.
+All 22 package checks and 125 integrations per existing consumer pass. Text
+Base/Length and existing Text Styles retain function scopes beside bare Text;
+typed Font$ boundaries, coordinate conversions and opaque payloads are checked.
+The previous Text Stylesheet expectation now checks the documented Text command
+and ordinary Stylesheet identifier. Removing the font command rule fails the
+focused suite; restoration passes. npm/VSIX source bytes match, with no public
+flag or executable host; extracted modes render both themes. No native font
+availability, metric or rendering result, parser or release change is claimed.

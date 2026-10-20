@@ -24,13 +24,21 @@ test('text/keyboard dollar forms retain their documented category in expression 
 });
 
 test('partial multiword endings do not acquire command or function scopes', () => {
-  for (const source of ['Text Stylesheet', 'Key Shifting', 'Remember Yesterday', 'Set Tabs', 'Line InputValue']) {
+  for (const source of ['Key Shifting', 'Remember Yesterday', 'Set Tabs', 'Line InputValue']) {
     for (const theme of ['dark-plus', 'light-plus']) {
       for (const token of fragments(tokens(source, theme)[0])) {
         if (!token.content.trim()) continue;
         assert.ok(scopes(token).includes('variable.other.amos'), source);
       }
     }
+  }
+});
+
+test('Text stays a command while a partial Styles ending stays an identifier', () => {
+  for (const theme of ['dark-plus', 'light-plus']) {
+    const line = tokens('Text Stylesheet', theme)[0];
+    assertScope(line, 0, 4, 'keyword.control.amos');
+    assertScope(line, 5, 15, 'variable.other.amos');
   }
 });
 

@@ -1,0 +1,11 @@
+Rem Lexical font board: installed font lists and metrics are not tested
+Get Rom Fonts : Set Font 1
+MC_FONT$=Font$(1) : MC_BASE=Text Base
+MC_WIDTH=Text Length("Ready")
+Text 160-MC_WIDTH/2,40,"Ready"
+MC_COLUMN=Xtext(80) : MC_ROW=Ytext(40)
+MC_X=Xgraphic(10) : MC_Y=Ygraphic(5)
+MC_STYLES=Text Styles
+Assign "Fonts:" To "RAM:Fonts" : Get Disc Fonts : Get Fonts
+MC_NOTE$="Set Font: Text Length and Font$"
+' Get Fonts Xgraphic Text
