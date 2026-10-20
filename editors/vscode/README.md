@@ -20,3 +20,11 @@ see the repository's coverage document. Marketplace availability remains private
 until a separate coverage review approves public release.
 The icon comes from https://github.com/lang198x/.github/tree/main/branding;
 its lettering uses Oxanium under the SIL Open Font License recorded there.
+
+
+Current source also adds the opt-in **AMOS + AMOS 3D** language mode, covering
+59 inventoried extension records alongside BASIC. Select it from the language
+mode selector, or set a workspace file association to `amos-3d`. Automatic
+`.amos.txt` detection still selects AMOS. This mode is not included in the
+released 0.1.1 package yet. Movement strings stay opaque; the mode neither
+installs AMOS 3D nor validates compatibility or execution.

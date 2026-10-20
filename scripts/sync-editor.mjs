@@ -1,7 +1,9 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import './compose-3d.mjs';
 
 const files = [
   ['syntaxes/amos.tmLanguage.json', 'editors/vscode/syntaxes/amos.tmLanguage.json'],
+  ['syntaxes/amos-3d.tmLanguage.json', 'editors/vscode/syntaxes/amos-3d.tmLanguage.json'],
   ['LICENSE', 'editors/vscode/LICENSE'],
 ];
 for (const [source, target] of files) {

@@ -1,0 +1,26 @@
+Rem Lexical fixture: this does not install 3D or load an object model.
+Screen Open 0,320,200,16,Lowres
+Td Screen Height 200
+Td Keep On
+Td Move 1,0,0,400
+Td Move Rel 1,0,0,20
+Td Angle Rel 1,0,10,0
+Td Move X 1,"(10,2,1)"
+Td Redraw
+MC_X=Td Position X(1)
+MC_R=Td Bearing R(1,2)
+MC_CACHED=Td World Z
+Td Set Zone 1,0,0,0,0,80
+MC_OTHER=Td Collide(1)
+If MC_OTHER<>-1 Then Print MC_OTHER
+MC_PAIR=Td Collide(1,2)
+Td Anim Rel 1,0,0,20,0,1
+MC_POINT=Td Anim Point X(1,0)
+Td Surface Points 0,1,2,3
+Td Surface Points Off
+Td Background 1,0,0,160,100 To 0,0,1
+MC_ADDRESS=Td Advanced(1)
+TD_SCORE=1 : Print "Td Redraw: Td Collide(7)"
+Rem Td Quit is inside this comment.
+Td Quit
+End

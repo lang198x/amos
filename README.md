@@ -105,8 +105,39 @@ are inventoried separately; their string payloads remain opaque.
 [AMOS 3D](specifications/extensions/amos-3d/README.md) is tracked as an optional
 extension with a 59-record manual inventory, three source-level answers and a pinned-binary
 answer to the collision-result question;
-Td highlighting is not yet implemented. This is unreleased lexical coverage; other manual chapters and edition/extension qualification remain
+The opt-in `amos-3d` profile highlights those records. This is unreleased lexical
+coverage; other manual chapters and edition/extension qualification remain
 separate work.
+
+## Optional AMOS 3D highlighting
+
+Current source adds a separate `@lang198x/amos/amos-3d` registration. This is not
+in the published npm 0.1.0 or editor 0.1.1 packages yet. The default `amos`
+registration and its file associations keep their existing behaviour.
+
+For Shiki (and Astro's Shiki language configuration), register the opt-in profile:
+
+```js
+import amos3d from '@lang198x/amos/amos-3d';
+
+const highlighter = await createHighlighter({
+  langs: [amos3d],
+  themes: ['dark-plus'],
+});
+const html = highlighter.codeToHtml('Td Redraw', {
+  lang: 'amos-3d', theme: 'dark-plus',
+});
+```
+
+Import `createHighlighter` from your existing Shiki installation. For Astro,
+pass `[amos3d]` as `markdown.shikiConfig.langs` and use `amos-3d` code fences.
+For shiki-highlight-api, pass `amos3d` to `loadCustomLanguage`. Other TextMate
+consumers can use `@lang198x/amos/amos-3d.tmLanguage.json` directly.
+
+In the current VS Code source build, choose **AMOS + AMOS 3D** from the language
+mode selector. To remember it for a project, add a workspace association such as
+`"files.associations": { "*.amos.txt": "amos-3d" }`. The profile selects vocabulary;
+it does not install the extension, qualify a release or validate a program.
 
 ## Verify packages
 

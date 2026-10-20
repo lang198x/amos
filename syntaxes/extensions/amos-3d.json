@@ -1,0 +1,10 @@
+{
+  "td-commands": {
+    "name": "keyword.control.amos",
+    "match": "(?i:(?<![A-Za-z0-9_$#])Td[ \\t]+(?:Screen[ \\t]+Height|Clear[ \\t]+All|Keep[ \\t]+(?:On|Off)|Move(?:[ \\t]+(?:Rel|[XYZ]))?|Angle(?:[ \\t]+(?:Rel|[ABC]))?|Set[ \\t]+Zone|Delete[ \\t]+Zone|Anim(?:[ \\t]+Rel)?|Surface(?:[ \\t]+Points(?:[ \\t]+Off)?)?|Redraw|Cls|Dir|Load|Object|Kill|Forward|Face|Background|Quit)(?![A-Za-z0-9_$#]))"
+  },
+  "td-functions": {
+    "name": "support.function.amos",
+    "match": "(?i:(?<![A-Za-z0-9_$#])Td[ \\t]+(?:Position[ \\t]+[XYZ]|Attitude[ \\t]+[ABC]|Bearing[ \\t]+[ABR]|Screen[ \\t]+[XY]|World[ \\t]+[XYZ]|View[ \\t]+[XYZ]|Zone[ \\t]+[XYZR]|Anim[ \\t]+Point[ \\t]+[XYZ]|Range|Visible|Collide|Advanced)(?![A-Za-z0-9_$#]))"
+  }
+}

@@ -137,3 +137,11 @@ chain and exact code excerpts are retained in
 [collision-binary.json](../specifications/extensions/amos-3d/collision-binary.json).
 Static analysis shows an object index or -1 in single-object mode. No binary or
 original-runtime equivalence is inferred from source inspection.
+
+
+The optional 3D lexical profile uses those 59 guide/card records and the pinned
+source conclusions for role and spelling. Its canonical fragment is
+`syntaxes/extensions/amos-3d.json`; explicit composition embeds the unchanged
+BASIC rules into a self-contained grammar for both package and editor consumers.
+The mixed `highlighting.amos.txt` fixture is newly authored under this repository's
+licence and is a lexical test, not a runnable demonstration with installed models.

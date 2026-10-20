@@ -11,6 +11,7 @@ FILES = [
     "package.json",
     "language-configuration.json",
     "syntaxes/amos.tmLanguage.json",
+    "syntaxes/amos-3d.tmLanguage.json",
     "README.md",
     "LICENSE",
     "icon.png",
@@ -23,6 +24,10 @@ def main() -> None:
         (
             ROOT / "syntaxes/amos.tmLanguage.json",
             EDITOR / "syntaxes/amos.tmLanguage.json",
+        ),
+        (
+            ROOT / "syntaxes/amos-3d.tmLanguage.json",
+            EDITOR / "syntaxes/amos-3d.tmLanguage.json",
         ),
         (ROOT / "LICENSE", EDITOR / "LICENSE"),
     ]:

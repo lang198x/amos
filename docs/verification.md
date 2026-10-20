@@ -289,3 +289,34 @@ the package evidence check; a wrong excerpt file offset fails the full-library
 check. Both negative controls were restored before the passing checks. Ruff
 checks and formatting pass for that checker. No grammar, API, version, dependency,
 package publication or Marketplace availability changes follow from this audit.
+
+
+## Optional AMOS 3D highlighting
+
+The explicit `amos-3d` profile adds the 59 inventoried records to BASIC, using
+shared canonical rules and a self-contained combined grammar. The base grammar
+bytes are unchanged. Twenty package/inventory checks and editor synchronisation
+pass. Seventy-four highlighting integrations pass against each existing
+shiki-highlight-api installation (1.3.0 and 2.0.0), both with Shiki 4.4.3, using
+dark-plus and light-plus. The new checks cover every inventory record, longer
+forms, corrected source spelling, cached/overloaded examples, identifiers,
+comments and opaque strings. The complete Bank or Risk listing retains
+identical BASIC token scopes and colours in the combined mode.
+
+Removing World Z from the canonical 3D fragment and recomposing makes the
+59-record integration check fail. The fragment and generated grammars were
+restored before the passing checks. The inventory retains conflicting historical
+examples; highlighting checks use the evidenced ANGLE spelling and Advanced
+call example. No alias or parser acceptance is inferred from colour.
+
+The npm archive was extracted into an isolated consumer without dependencies;
+its default and 3D imports render through existing Shiki, and their declarations
+pass strict TypeScript NodeNext checking. The VSIX contains both exact canonical
+grammars and declarative language registrations. No extension host code or
+automatic 3D file association is added. These are package-content and grammar
+engine checks, not an installed VS Code visual review or native AMOS execution.
+The first npm pack attempt reported `EPERM` in the default npm cache; packaging
+succeeded using an isolated temporary cache. Ruff checks/formatting pass for the
+modified packager. No packages were published, release versions changed or
+Marketplace availability altered. Temporary archives, consumer and cache are
+removed after verification.

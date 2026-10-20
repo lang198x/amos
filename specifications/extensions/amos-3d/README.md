@@ -71,8 +71,9 @@ complete embedded string grammar. The guide's Delete Zone signature uses `en`
 where nearby prose and the card use n; placeholder spelling is not a new argument.
 
 A native trial that distinguishes object identity from collision count remains
-useful for release qualification. Before implementation, agree
-optional highlighting/profile selection, preserving existing package exports and consumers. Native availability,
+useful for release qualification. The approved optional `amos-3d` highlighting
+profile covers these 59 records separately from the default AMOS mode. Native availability,
 object formats, runtime behaviour and tokenised persistence need separate evidence.
-No Td highlighting, parser, codec, compiler or runtime is implemented by this scope
-record. Native formats remain outside the language frontend's ownership.
+Movement strings remain opaque, and later publisher-source tokens stay outside
+this profile until separately inventoried. No parser, codec, compiler or runtime
+is implemented by this profile. Native formats remain outside the language frontend's ownership.

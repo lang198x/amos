@@ -13,11 +13,19 @@
       "types": "./index.d.ts",
       "import": "./index.mjs"
     },
-    "./amos.tmLanguage.json": "./syntaxes/amos.tmLanguage.json"
+    "./amos.tmLanguage.json": "./syntaxes/amos.tmLanguage.json",
+    "./amos-3d": {
+      "types": "./amos-3d.d.ts",
+      "import": "./amos-3d.mjs"
+    },
+    "./amos-3d.tmLanguage.json": "./syntaxes/amos-3d.tmLanguage.json"
   },
   "files": [
     "index.mjs",
     "index.d.ts",
+    "amos-3d.mjs",
+    "amos-3d.d.ts",
+    "syntaxes/amos-3d.tmLanguage.json",
     "syntaxes/amos.tmLanguage.json",
     "docs/coverage.md",
     "docs/provenance.md",
@@ -25,7 +33,7 @@
     "docs/verification.md"
   ],
   "scripts": {
-    "test": "node --test tests/package.test.mjs tests/manual-core.test.mjs tests/language-inventories.test.mjs tests/amos-3d-inventory.test.mjs tests/amos-3d-source.test.mjs",
+    "test": "node --test tests/package.test.mjs tests/manual-core.test.mjs tests/language-inventories.test.mjs tests/amos-3d-inventory.test.mjs tests/amos-3d-source.test.mjs tests/amos-3d-package.test.mjs",
     "test:integrations": "node --test tests/highlighting*.test.mjs",
     "check:editor": "node scripts/sync-editor.mjs --check",
     "prepack": "node scripts/sync-editor.mjs --check"

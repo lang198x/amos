@@ -222,7 +222,8 @@ evidence, and one has pinned-binary evidence for the single-object Collide resul
 The evidence
 backlog names what must be checked before accepting spellings, call shapes or
 semantics. No extension release is
-qualified and no Td grammar, parser, native format or runtime is implemented.
+qualified. The optional Td lexical profile is described below; no 3D parser,
+native format or runtime is implemented.
 
 ## AMOS 3D original-source evidence
 
@@ -240,3 +241,21 @@ or built-wrapper equivalence. Later tokens in this source also extend
 beyond the quick card. The manual's 59 records do not become a complete inventory
 of that source revision. No Td highlighting, parser, release qualification or
 package availability change follows from this source audit.
+
+
+## Optional AMOS 3D lexical profile
+
+Current source offers `amos-3d`, containing the unchanged BASIC rules plus the
+59-record extension vocabulary. The npm subpath and self-contained TextMate JSON
+share the same combined grammar as VS Code's **AMOS + AMOS 3D** mode. The default
+AMOS mode and file associations keep their prior behaviour.
+
+All 59 records have command/function scope checks in both themes, including
+case, horizontal spacing, grouped axes, longer phrases and documented overload
+examples. ANGLE REL uses its source spelling; ANGEL REL remains documentary
+conflict evidence and is not an accepted alias. Quit uses command scopes and
+Advanced uses function scopes. Colouring does not enforce arguments or call shape.
+Movement/rotation strings remain strings. The five additional publisher-source
+tokens are excluded pending their own inventory. Profiles do not qualify editions,
+installed releases, collision geometry or native acceptance. This is unreleased;
+Marketplace availability remains private.

@@ -27,6 +27,13 @@
           ".amos.txt"
         ],
         "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "amos-3d",
+        "aliases": [
+          "AMOS + AMOS 3D"
+        ],
+        "configuration": "./language-configuration.json"
       }
     ],
     "grammars": [
@@ -34,6 +41,11 @@
         "language": "amos",
         "scopeName": "source.basic.amos",
         "path": "./syntaxes/amos.tmLanguage.json"
+      },
+      {
+        "language": "amos-3d",
+        "scopeName": "source.basic.amos.3d",
+        "path": "./syntaxes/amos-3d.tmLanguage.json"
       }
     ]
   },

@@ -3,7 +3,7 @@
   "component": "optional language extension",
   "documentation_year": 1991,
   "source": "https://gitlab.com/amigasourcecodepreservation/amos-classic-documentation",
-  "scope": "Documentary command inventory and extension evidence only; no Td grammar, parser or runtime qualification",
+  "scope": "Documentary command inventory with optional lexical highlighting; no parser or runtime qualification",
   "qualified_releases": [],
   "sources": {
     "guide": {
