@@ -7,8 +7,8 @@ chapters 5.1–5.5 (basics, strings, maths, control and procedures), 48 from cha
 (memory banks), 27 from 6.4 (drawing), 35 from 6.5 (menus), 19 from 7.1
 (sprites), 21 from 7.2 (Bobs), 13 from 7.3 (object updating), 14 from 7.4
 (collisions), 12 from 7.5 (IFF animation), 24 from 7.6 (BASIC AMAL controls),
-38 from 10.2 (file/directory I/O) and 21 from 8.1 (music/basic sound).
-The 511 BASIC entries include grouped headings, connective words, typed forms and the `?`
+38 from 10.2 (file/directory I/O) 21 from 8.1 (music/basic sound) and ten from 8.2 (samples).
+The 521 BASIC entries include grouped headings, connective words, typed forms and the `?`
 print shortcut. Fourteen embedded menu commands are recorded separately in
 `06-05.json`, outside the BASIC vocabulary count.
 Each entry cites a printed page and a line in the hash-pinned held extract
@@ -150,3 +150,14 @@ zero-based 0–3 description; no channel mapping is inferred. Sample here assign
 a bank sample to a wave. The sample-management/playback, tracker/MED and speech
 chapters remain separate sweeps. Wave payloads stay strings; no bank, amplitude,
 voice mask, pitch, envelope, volume or tempo validity is established.
+
+
+The sample chapter adds Sam Play/Stop/Bank/Raw, Sam Loop On/Off, Sload, Ssave,
+Sam Swap and the Sam Swapped function. Complete phrase boundaries distinguish
+Sam Swap from Sam Swapped; bare Sam and run-together Samraw remain identifiers.
+The §8.2 signature and later listing use `Sam Swap voices To address,length`,
+while the example on 08.02.06 uses a comma after voices. This discrepancy stays
+explicit; the fresh examples follow the signature without qualifying either
+syntax natively. Ssave's start To end is distinct from Sload's address,length.
+Highlighting does not validate data bounds, CHIP memory, audio frequency,
+refill timing, swap results or sample bank availability.

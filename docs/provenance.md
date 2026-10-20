@@ -175,3 +175,13 @@ The repeated MVOLUME speed wording at line 14729 is retained; the Tempo example
 at 14743 and definition at 15167 identify the speed command. The voice-table
 2,4 wording at 14431 is retained without deriving channel semantics. The fresh
 music fixture is authored here as a lexical input and was not executed natively.
+
+
+Sample coverage cites ten headings in Professional §8.2, pp.08.02.01–06, in the
+same hash-pinned held extract. Each exact heading line and following page footer
+was checked against the held text. Sam Swapped is labelled a function, distinct
+from Sam Swap. The latter's signature and 08.02.07 listing use To, while its
+08.02.06 example uses a comma after the voice mask. The looping prose's SAMRAW
+reference is retained as a discrepancy; the heading/signature give Sam Raw.
+The newly authored samples fixture follows the signatures and is a lexical
+input, without native sample playback, streaming or filesystem execution.

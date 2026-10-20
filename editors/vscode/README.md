@@ -29,8 +29,8 @@ mode selector, or set a workspace file association to `amos-3d`. Automatic
 installs AMOS 3D nor validates compatibility or execution.
 
 
-Current source additionally covers the Professional file/directory and music/basic sound
-chapters, bringing its BASIC inventory to 511 entries. These continuations are unreleased;
+Current source additionally covers the Professional file/directory, music/basic sound
+and sample chapters, bringing its BASIC inventory to 521 entries. These continuations are unreleased;
 the downloadable 0.2.0 preview retains its 452-entry inventory. Directory options,
 channel markers and record operations receive lexical scopes; file contents,
 paths and actual I/O are not checked or executed by the extension.

@@ -435,3 +435,27 @@ Extracted npm registrations render all three modes in both themes. No installed
 editor review, audible result, native AMOS execution or argument/range validation
 is claimed. Package versions, published preview 0.2.0 and Marketplace state are
 unchanged.
+
+
+## Unreleased sample playback and management highlighting
+
+Ten §8.2 forms bring BASIC to 521 entries across 24 chapters. None passed the
+complete phrase checks before the change. All ten heading lines and printed-page
+bindings match the pinned Professional extract; source discrepancies stay explicit.
+Twenty-two package/inventory checks and editor synchronisation pass.
+
+One hundred highlighting integrations pass in each existing consumer (Shiki 4.4.3
+with shiki-highlight-api 1.3.0 and 2.0.0), using dark-plus/light-plus. The focused
+checks cover every form in both BASIC profiles, playback variants, complete
+phrases and function/command boundaries, typed/suffixed identifiers, old Sample
+and Swap commands, nested memory expressions, strings/comments and line recovery.
+The mixed listing preserves exact text and emits styled HTML/CSS. Removing Sam
+Swapped's function rule makes the focused suite fail in both profiles; restoring
+and synchronising the canonical grammar makes it pass again.
+
+Disposable npm/VSIX builds contain exact source grammars, icon, configuration and
+manifest files, without public gallery flags or executable extension code.
+Extracted npm registrations render all three modes in both themes; the sample
+listing retains Sam Swapped's function scope. No installed editor review, native
+audio, streaming or I/O result is claimed. Versions, published preview 0.2.0,
+parser and private Marketplace availability are unchanged.

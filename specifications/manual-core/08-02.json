@@ -1,0 +1,20 @@
+{
+  "chapter": "08.02",
+  "entries": [
+    {"spelling": "Sam Play", "kind": "command", "page": "08.02.01", "extract_line": 14773, "example": "Sam Play %0011,2,8000"},
+    {"spelling": "Sam Stop", "kind": "command", "page": "08.02.02", "extract_line": 14829, "example": "Sam Stop %0011"},
+    {"spelling": "Sam Bank", "kind": "command", "page": "08.02.03", "extract_line": 14857, "example": "Sam Bank 6"},
+    {"spelling": "Sam Raw", "kind": "command", "page": "08.02.03", "extract_line": 14881, "example": "Sam Raw %0001,Start(10),Length(10),8000"},
+    {"spelling": "Sam Loop On", "kind": "command", "page": "08.02.04", "extract_line": 14907, "example": "Sam Loop On"},
+    {"spelling": "Sam Loop Off", "kind": "command", "page": "08.02.04", "extract_line": 14908, "example": "Sam Loop Off"},
+    {"spelling": "Sload", "kind": "command", "page": "08.02.05", "extract_line": 14968, "example": "Sload 1 To Start(10),4096"},
+    {"spelling": "Ssave", "kind": "command", "page": "08.02.05", "extract_line": 14993, "example": "Ssave 2,Start(10) To Start(10)+4096"},
+    {"spelling": "Sam Swap", "kind": "command", "page": "08.02.06", "extract_line": 15008, "example": "Sam Swap %0001 To Start(11),4096"},
+    {"spelling": "Sam Swapped", "kind": "function", "page": "08.02.06", "extract_line": 15035, "example": "MC_STATUS=Sam Swapped(0)"}
+  ],
+  "notes": [
+    "Sam Swap signature uses To; the example on 08.02.06 uses a comma after the voice mask, while 08.02.07 returns to To. Examples here follow the signature; no alternate argument syntax is qualified.",
+    "The looping prose uses SAMRAW as a run-together reference; the heading and signature give Sam Raw. No Samraw alias is inferred.",
+    "Ssave is inventoried by its start To end signature, distinct from Sload address,length. Highlighting does not validate pointers, chunk bounds, CHIP memory, refill timing or swap-result values."
+  ]
+}

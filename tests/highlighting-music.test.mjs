@@ -32,7 +32,7 @@ for (const lang of ['amos', 'amos-3d']) {
       check('Music StopExtra', 'StopExtra', 'variable.other.amos', lang, theme);
       check('Led Office', 'Led', 'variable.other.amos', lang, theme);
       check('MC_LEVEL=Vumeter(0)+Vumeter(3)', 'Vumeter', 'support.function.amos', lang, theme);
-      check('Sam Bank 6', 'Sam', 'variable.other.amos', lang, theme);
+      check('Sam BankExtra 6', 'Sam', 'variable.other.amos', lang, theme);
       check('MC_VOLUME=VU(0)', 'VU', 'variable.other.amos', lang, theme);
     }
   });

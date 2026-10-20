@@ -3,7 +3,7 @@
 Preview 0.2.0 releases the expanded BASIC and optional AMOS 3D highlighting.
 The Rust parser remains at 0.1.0 with its opening-program subset. Neither surface
 is complete AMOS support. Current source additionally covers §10.2 file/directory
-I/O and §8.1 music/basic sound; these continuations are not in preview 0.2.0.
+I/O, §8.1 music/basic sound and §8.2 samples; these continuations are not in preview 0.2.0.
 The table describes current source.
 
 | Surface | Implemented |
@@ -11,7 +11,7 @@ The table describes current source.
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.6, 8.1 and 10.1–10.2, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.6, 8.1–8.2 and 10.1–10.2, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -321,3 +321,19 @@ channels, banks, argument ranges, sound quality and native execution are not
 validated. Sample management/playback, tracker/MED and speech remain later work.
 This is unreleased source coverage; preview 0.2.0, parser and Marketplace state
 are unchanged.
+
+
+## Sample playback and management milestone
+
+Ten §8.2 entries bring BASIC coverage to 521 chapter entries across 24 chapters.
+None passed the full phrase checks before this change; all ten now pass in both
+BASIC profiles and themes. Sample playback/stopping/bank selection, raw playback,
+loop controls, chunk I/O and switching commands have command scopes; Sam Swapped
+has a function scope. Existing Sample assignment and Swap retain their scopes.
+
+The independent mixed listing exercises optional playback forms, file/memory
+expressions and sample status without claiming a working audio streamer.
+Pointers, bounds, memory type, buffer scheduling, result values and actual sound
+remain unvalidated. Source discrepancies are recorded in the inventory rather
+than promoted to aliases. Tracker/MED and speech remain later sweeps. This source
+coverage is unreleased; published 0.2.0, parser and Marketplace state are unchanged.

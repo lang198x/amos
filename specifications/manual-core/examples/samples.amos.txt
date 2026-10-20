@@ -1,0 +1,18 @@
+Rem Lexical sample board: provide sample banks and raw audio separately
+Load "RAM:effects.abk",6 : Sam Bank 6
+Sam Play 2 : Sam Play %0011,2 : Sam Play %0001,2,8000
+Sam Stop %0010 : Sam Loop On : Sam Loop Off : Sam Stop
+Reserve As Chip Work 10,8192 : Reserve As Chip Work 11,8192
+Open In 1,"RAM:sample.raw"
+Sload 1 To Start(10),4096 : Sload 1 To Start(11),4096
+Sam Raw %0001,Start(10),4096,8000
+Sam Swap %0001 To Start(11),4096
+MC_STATUS=Sam Swapped(0) : MC_REMAIN=Lof(1)-Pof(1)
+If MC_STATUS=-1 Then Sload 1 To Start(10),4096
+Sam Stop : Close 1
+Open Out 2,"RAM:sample-copy.raw"
+Ssave 2,Start(10) To Start(10)+4096 : Close 2
+Sample 2 To %0001 : Play %0001,37,5 : Play Off
+Swap MC_CURRENT,MC_NEXT : MC_SAM_VALUE=2
+MC_LABEL$="Sam Swap: Sam Swapped(0) Sload Ssave"
+' Sam Raw Sam Loop On Sam Swapped
