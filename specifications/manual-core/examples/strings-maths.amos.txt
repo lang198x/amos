@@ -1,0 +1,27 @@
+Rem Fresh lexical fixture; no runtime acceptance is claimed.
+Set Buffer 16
+Dim MC_ITEMS$(3)
+Set Double Precision
+Radian
+MC_ANGLE#=Pi#/4
+MC_X#=Cos(MC_ANGLE#)
+MC_Y#=Sin(MC_ANGLE#)
+MC_LENGTH#=Sqr(MC_X#*MC_X#+MC_Y#*MC_Y#)
+MC_N=Int(Abs(-2.75))
+MC_N=Max(MC_N,Min(3,8))
+MC_BIT_RESULT=(7 Xor 3) And 15
+MC_REST=17 Mod 5
+MC_NAME$=Lower$("MANUAL")
+MC_ITEMS$(0)=Left$(MC_NAME$,3)
+MC_ITEMS$(1)=Right$(MC_NAME$,3)
+MC_ITEMS$(2)=Mid$(MC_NAME$,2,3)
+Sort MC_ITEMS$(0)
+MC_FOUND=Match(MC_ITEMS$(0),"man")
+MC_POS=Instr(MC_NAME$,"nu")
+MC_CODE=Asc(Chr$(65))
+MC_TEXT$=Space$(2)+Flip$(MC_NAME$)+Repeat$("!",2)
+MC_NUMBER#=Val(Str$(MC_N))
+Print Len(MC_TEXT$),Free
+Rem Literal words stay text: "Else If Param# Set Stack"
+Print "Def Fn MC_NAME$ Screen Copy Mod"
+End

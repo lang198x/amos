@@ -36,3 +36,32 @@ tests failing; declaration-context work follows separately. The initial checklis
 has 109 entries (32 previously passed all lexical checks). Its intentional red
 run failed first on Set Buffer, Left$, Mod, Goto and Set Stack in the five
 chapters. These are reproduced scope gaps, not original-runtime verdicts.
+
+## Outcome
+
+All 109 inventory entries now pass lexical checks; procedure and Def Fn names
+have declaration scopes while references stay unresolved. Two MC_-prefixed mixed
+listings exercise control/data/procedures and string/maths contexts. Every
+inventory entry matches its heading/mention in the hash-pinned primary extract.
+The pagination discrepancy caught by the metadata test is cross-checked against
+a separately held original-manual extract, with both page values retained.
+The original failing metadata commit was corrected by a follow-up, not a weakened
+check. Removing typed Param recognition fails on Param# as intended.
+
+The first sweep is limited to named forms in §§5.1–5.5. Later text/input,
+screen/object/file facilities, numeric notation, inline/numeric labels and
+edition/extension qualification remain explicit gaps. No dependency, Rust parser,
+registry release or Marketplace change is part of this work.
+
+Final checks: 24 integration tests pass with Shiki 4.4.3 and both existing
+shiki-highlight-api consumers; five package/inventory checks pass. Source hashes
+and all 109 extract-line/printed-page bindings were compared to the held sources.
+Built npm and VSIX grammar bytes, icon metadata and absence of Public gallery
+flags were inspected. The actual tarball registration renders both mixed
+listings in both themes with expected core scopes. No dependency was added.
+The baseline comparison used grammar at `3913df4` before the expansion.
+
+Disposable work: `dist/` and `/private/tmp/lang198x-manual-packages/` (extracted
+consumer plus task npm cache). These contain no unfinished source and are removed
+after the final source commit is retained remotely. No background process or
+temporary worktree was created.

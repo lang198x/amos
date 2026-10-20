@@ -83,3 +83,24 @@ the exact canonical grammar and valid icon metadata; these are disposable local
 build checks, not replacements for versioned preview assets or registry uploads.
 The Marketplace preview remains private. Host parsing and original-runtime
 qualification are unchanged.
+
+## Unreleased manual-led core highlighting
+
+The Professional manual's §§5.1–5.5 have a 109-entry inventory with page and
+extract-line citations, typed/grouped forms and fresh examples. The baseline
+passed all lexical checks for 32 entries; all 109 now pass. Twenty-four integration
+tests cover both themes, existing game ranges, declaration scopes, identifier and
+typed-suffix boundaries, strings/comments, malformed declaration boundaries and
+two independent mixed listings. Existing shiki-highlight-api 1.3.0 and local
+2.0.0 integrations are exercised with Shiki 4.4.3. Five dependency-free package
+and inventory checks pass.
+
+Removing Param's typed suffix recognition makes the manual test fail specifically
+on Param#; the original rule is restored before passing checks. The inventory
+metadata check also detected a pagination discrepancy: four maths entries appear
+on 05.03.08 in the original-manual extract, while the held retypeset edition
+prints 05.02.08. Both source hashes and the discrepancy are retained; the chapter/page consistency
+check passes without suppressing mismatches.
+
+These are lexical/documentary checks, not new runtime acceptance observations.
+Parser scope, original execution and edition qualification are unchanged.

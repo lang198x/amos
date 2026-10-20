@@ -97,6 +97,12 @@ builtin/control-word and label occurrences in Bank or Risk in two themes.
 Released npm 0.1.0 and editor 0.1.1 retain the earlier grammar. The Rust parser's
 opening-program surface is unchanged, and the Marketplace preview stays private.
 
+The [manual-led core inventory](specifications/manual-core/README.md) now drives
+broader coverage: current source highlights its 109 entries from Professional
+manual chapters 5.1–5.5, including typed forms and declaration names. This is
+unreleased lexical coverage; later manual chapters and edition/extension
+qualification remain separate work.
+
 ## Verify packages
 
 Node 24 or later is required for package checks:

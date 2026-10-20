@@ -1,0 +1,35 @@
+Rem Fresh lexical fixture; not an original-runtime observation.
+Global MC_TOTAL
+Def Fn MC_TWICE(MC_V)=MC_V*2
+MC_TOTAL=0
+Restore MC_VALUES
+For MC_SLOT=1 To 4
+   Read MC_VALUE
+   MC_ACCUMULATE[MC_VALUE]
+Next MC_SLOT
+If MC_TOTAL>10
+   MC_RESULT=True
+Else If MC_TOTAL=10
+   MC_RESULT=False
+Else
+   MC_RESULT=Not False
+End If
+MC_COUNT=0
+Repeat
+   Inc MC_COUNT
+Until MC_COUNT=2
+While MC_COUNT>0
+   Dec MC_COUNT
+Wend
+Do
+   Exit If MC_RESULT
+   Exit
+Loop
+Print Fn MC_TWICE(MC_TOTAL)
+End
+MC_VALUES:
+Data 2,4,6,8
+Procedure MC_ACCUMULATE[MC_VALUE]
+   Shared MC_TOTAL
+   Add MC_TOTAL,MC_VALUE
+End Proc[MC_TOTAL]

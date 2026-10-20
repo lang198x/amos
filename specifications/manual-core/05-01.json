@@ -2,10 +2,10 @@
   "chapter": "05.01",
   "entries": [
     {"spelling": "Set Buffer", "kind": "command", "page": "05.01.04", "extract_line": 3125, "example": "Set Buffer 16"},
-    {"spelling": "Dim", "kind": "command", "page": "05.01.04", "extract_line": 3144, "example": "Dim VALUES(8)"},
+    {"spelling": "Dim", "kind": "command", "page": "05.01.04", "extract_line": 3144, "example": "Dim MC_VALUES(8)"},
     {"spelling": "Free", "kind": "function", "page": "05.01.05", "extract_line": 3210, "example": "Print Free"},
-    {"spelling": "Def Fn", "kind": "command", "page": "05.01.06", "extract_line": 3237, "example": "Def Fn TWICE(V)=V*2"},
-    {"spelling": "Fn", "kind": "command", "page": "05.01.06", "extract_line": 3251, "example": "Print Fn TWICE(7)"},
+    {"spelling": "Def Fn", "kind": "command", "page": "05.01.06", "extract_line": 3237, "example": "Def Fn MC_TWICE(MC_V)=MC_V*2"},
+    {"spelling": "Fn", "kind": "command", "page": "05.01.06", "extract_line": 3251, "example": "Print Fn MC_TWICE(7)"},
     {"spelling": "Wait", "kind": "command", "page": "05.01.07", "extract_line": 3309, "example": "Wait 25"},
     {"spelling": "End", "kind": "command", "page": "05.01.07", "extract_line": 3323, "example": "End"},
     {"spelling": "Stop", "kind": "command", "page": "05.01.08", "extract_line": 3340, "example": "Stop"},

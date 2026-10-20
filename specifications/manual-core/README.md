@@ -24,6 +24,11 @@ in §5.1 concern original editor acceptance; conservative whole-word highlightin
 of a command-like identifier is not a validity judgement. No new native tests
 are claimed by this documentary inventory.
 
+Fresh example identifiers use `MC_` to avoid known command-prefix restrictions.
+The two mixed listings under `examples/` combine forms without deriving their
+expectations from the game. They are lexical test inputs under the repository's
+GPL-2.0-or-later licence, not newly qualified native programs.
+
 The Degree/Radian/Sin/Cos page is misprinted as `05.02.08` in the retypeset
 extract. A separate original-manual extract gives `05.03.08`. Those four entries
 cite the original pagination and retain `held_retypeset_page`; `source.json`
@@ -33,3 +38,9 @@ Tests check complete phrases, letter case, spaces/tabs, typed builtin variants,
 suffix and identifier boundaries, comments/strings and unchanged full-game
 coverage. Passing entries mean lexical coverage of the recorded forms, not
 complete syntax, semantics, runtime compatibility or public-release readiness.
+
+`Procedure` and `Def Fn` declaration names receive a definition scope. Parameters,
+bare calls, `Proc` targets and `Fn` references remain generic identifiers; colouring
+a declaration does not establish name resolution or type checking. Numeric and
+inline labels, full numeric notation and commands defined in later chapters are
+separate work.

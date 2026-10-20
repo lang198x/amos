@@ -9,7 +9,7 @@ Published npm 0.1.0 and editor 0.1.1 retain their original grammar.
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Opening/control commands plus Bank or Risk's control/data, drawing/display, sound/input forms; selected functions, Timer, And/Or and standalone label definitions. Decimal/hex/binary numbers, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional core forms from §§5.1–5.5, plus Bank or Risk display/sound/input vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -67,3 +67,26 @@ procedure resolution and target resolution remain outside this milestone.
 TextMate accepts spaced/tabbed spellings lexically, without qualifying how each
 original runtime imports them. Parser coverage is unchanged. Public Marketplace
 release still requires a separate review.
+
+## Manual-led core milestone
+
+Current source covers the 109 chapter entries in the
+[Professional manual core inventory](../specifications/manual-core/README.md),
+from §§5.1–5.5. These are named forms and connective words, including grouped
+headings and typed variants; the count is not a whole-language percentage or
+a count of argument overloads. Thirty-two entries passed the previous complete
+phrase/boundary checks; all 109 now pass in both tested themes.
+
+This adds missing basics, array/string operations, maths/trigonometry, logical
+operators, control/data commands and procedure forms. `Param`, `Param#`, `Param$`
+and `Pi#` retain their typed spelling. `Procedure` and `Def Fn` declaration names
+have a function-definition scope; parameters, calls and targets remain unresolved
+identifiers. Two fresh mixed listings exercise these constructs independently of
+Bank or Risk.
+
+The inventory is documentary Professional coverage, not native release or
+Creator/Easy qualification. Print/Input/text facilities defined in later chapters,
+broader screen/object/file facilities, numeric notation, numeric/inline labels,
+AMAL/Interface and extension vocabularies remain separate sweeps. The existing
+game milestone still passes. Published packages and the private Marketplace
+preview retain their earlier grammar; this source expansion is unreleased.

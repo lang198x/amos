@@ -1,16 +1,16 @@
 {
   "chapter": "05.05",
   "entries": [
-    {"spelling": "Procedure", "kind": "command", "page": "05.05.01", "extract_line": 5111, "example": "Procedure CALCULATE[V]"},
+    {"spelling": "Procedure", "kind": "command", "page": "05.05.01", "extract_line": 5111, "example": "Procedure MC_CALCULATE[MC_V]"},
     {"spelling": "End Proc", "kind": "command", "page": "05.05.01", "extract_line": 5115, "example": "End Proc[12]"},
     {"spelling": "Set Stack", "kind": "command", "page": "05.05.01", "extract_line": 5139, "example": "Set Stack 32"},
-    {"spelling": "Proc", "kind": "command", "page": "05.05.02", "extract_line": 5166, "example": "Proc CALCULATE"},
+    {"spelling": "Proc", "kind": "command", "page": "05.05.02", "extract_line": 5166, "example": "Proc MC_CALCULATE"},
     {"spelling": "Pop Proc", "kind": "command", "page": "05.05.03", "extract_line": 5253, "example": "Pop Proc"},
-    {"spelling": "On Break Proc", "kind": "command", "page": "05.05.04", "extract_line": 5275, "example": "On Break Proc INTERRUPTED"},
-    {"spelling": "Shared", "kind": "command", "page": "05.05.05", "extract_line": 5354, "example": "Shared VALUES(),NAME$"},
-    {"spelling": "Global", "kind": "command", "page": "05.05.06", "extract_line": 5388, "example": "Global SCORE,NAME$"},
-    {"spelling": "Param", "kind": "function", "page": "05.05.08", "extract_line": 5471, "example": "V=Param"},
-    {"spelling": "Param#", "kind": "function", "page": "05.05.08", "extract_line": 5474, "example": "V#=Param#"},
-    {"spelling": "Param$", "kind": "function", "page": "05.05.08", "extract_line": 5475, "example": "V$=Param$"}
+    {"spelling": "On Break Proc", "kind": "command", "page": "05.05.04", "extract_line": 5275, "example": "On Break Proc MC_INTERRUPTED"},
+    {"spelling": "Shared", "kind": "command", "page": "05.05.05", "extract_line": 5354, "example": "Shared MC_VALUES(),MC_NAME$"},
+    {"spelling": "Global", "kind": "command", "page": "05.05.06", "extract_line": 5388, "example": "Global MC_SCORE,MC_NAME$"},
+    {"spelling": "Param", "kind": "function", "page": "05.05.08", "extract_line": 5471, "example": "MC_V=Param"},
+    {"spelling": "Param#", "kind": "function", "page": "05.05.08", "extract_line": 5474, "example": "MC_V#=Param#"},
+    {"spelling": "Param$", "kind": "function", "page": "05.05.08", "extract_line": 5475, "example": "MC_V$=Param$"}
   ]
 }

@@ -12,6 +12,9 @@
       "include": "#comments"
     },
     {
+      "include": "#definitions"
+    },
+    {
       "include": "#labels"
     },
     {
@@ -151,6 +154,17 @@
         },
         "3": {
           "name": "punctuation.separator.amos"
+        }
+      }
+    },
+    "definitions": {
+      "match": "(?i:(?<![A-Za-z0-9_$#])(Procedure|Def[ \\t]+Fn))[ \\t]+([A-Za-z_][A-Za-z0-9_]*[$#]?)(?![A-Za-z0-9_$#])",
+      "captures": {
+        "1": {
+          "name": "keyword.control.amos"
+        },
+        "2": {
+          "name": "entity.name.function.amos"
         }
       }
     }
