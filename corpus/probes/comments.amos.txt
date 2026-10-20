@@ -1,0 +1,3 @@
+'note
+Cls: Print "": Rem Print "ignored"
+Wait Key: End

@@ -1,0 +1,4 @@
+  cLs 0
+print"Wait Key: Rem ' \"
+wait key
+end

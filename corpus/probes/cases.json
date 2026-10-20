@@ -1,0 +1,64 @@
+{
+  "record_status": "research_observations_not_a_native_conformance_guarantee",
+  "date": "2026-10-20",
+  "profile": "../opening/profiles/pro-2.00.json",
+  "emulator_binary_sha256": "a3acfa056fb38e68752ca1e6b7c9c349f3312e582e20cfc209aeda1e783b202a",
+  "initial_snapshot_sha256": "a475cd230c402b47a050a0355fcb3a1d2bf90ed369c8e5941d27fbc35cad3a86",
+  "cases": [
+    {
+      "id": "boundaries",
+      "source": "boundaries.amos.txt",
+      "sha256": "2dba5f68f9f1129321509272335b547374ebfd0c1f1a50d30805177c970d5164",
+      "binding": "exact_type_string_request_input_editor_may_normalise_case_and_spacing",
+      "native_test_result": "accepted",
+      "native_action": "F2 Test after typed entry from blank editor snapshot",
+      "capture": "captures/boundaries.png",
+      "capture_sha256": "701c229d95eebd746ef9dde49296c39fdf96476de7aea2e4b2eb02c6d0eac1d6",
+      "host_expectation": "supported_structure"
+    },
+    {
+      "id": "comments",
+      "source": "comments.amos.txt",
+      "sha256": "e23ca0ac790ee813854796c0fb5b016053e8dac586acd2024c8af2e8964a5e64",
+      "binding": "exact_type_string_request_input_editor_may_normalise_case_and_spacing",
+      "native_test_result": "accepted",
+      "native_action": "F2 Test after typed entry from blank editor snapshot",
+      "capture": "captures/comments.png",
+      "capture_sha256": "86bb04495eeb00ed9d1d266b36f95f4ce714bacdcd81e1b8f7864bd8cc4201cf",
+      "host_expectation": "supported_structure"
+    },
+    {
+      "id": "end-argument",
+      "source": "end-argument.amos.txt",
+      "sha256": "01a3dabc7707a4c00713e2718de2d9f9c6eabdc90675297769195cc576cc1ca7",
+      "binding": "exact_type_string_request_input_editor_may_normalise_case_and_spacing",
+      "native_test_result": "rejected_syntax_error",
+      "native_action": "F2 Test after typed entry from blank editor snapshot",
+      "capture": "captures/end-argument.png",
+      "capture_sha256": "4b9c249ca05d5fa4224d14ee3adf6e56928e3b9eba6fb86a38e145478e6e898b",
+      "host_expectation": "unsupported"
+    },
+    {
+      "id": "unsupported-print",
+      "source": "unsupported-print.amos.txt",
+      "sha256": "75863a92eeaab6304be3406d6eebb863731c0f5e58ae6f0f8657dd5b1fcf622c",
+      "binding": "exact_type_string_request_input_editor_may_normalise_case_and_spacing",
+      "native_test_result": "accepted",
+      "native_action": "F2 Test after typed entry from blank editor snapshot",
+      "capture": "captures/unsupported-print.png",
+      "capture_sha256": "a70950403402308445fa9e1e58323c8ec57a8d40f1fefbf502947d70fe80b9f8",
+      "host_expectation": "unsupported"
+    },
+    {
+      "id": "wait-argument",
+      "source": "wait-argument.amos.txt",
+      "sha256": "062d504e7c9de1bebc03f57787fcbd120f7e7c84cf330f2a10d200ab0fb7016b",
+      "binding": "exact_type_string_request_input_editor_may_normalise_case_and_spacing",
+      "native_test_result": "rejected_syntax_error",
+      "native_action": "F2 Test after typed entry from blank editor snapshot",
+      "capture": "captures/wait-argument.png",
+      "capture_sha256": "8c4546fde0d3e5408ccf9fb47e4b22c27c7c241e95d9b297c37cfe79b4b1a799",
+      "host_expectation": "unsupported"
+    }
+  ]
+}
