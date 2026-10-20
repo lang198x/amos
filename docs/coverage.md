@@ -2,14 +2,15 @@
 
 Preview 0.2.0 releases the expanded BASIC and optional AMOS 3D highlighting.
 The Rust parser remains at 0.1.0 with its opening-program subset. Neither surface
-is complete AMOS support. The table describes the current implementation.
+is complete AMOS support. Current source additionally covers §10.2 file/directory
+I/O; that continuation is not in preview 0.2.0. The table describes current source.
 
 | Surface | Implemented |
 | --- | --- |
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.6 and 10.1, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.6 and 10.1–10.2, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -259,3 +260,25 @@ Movement/rotation strings remain strings. The five additional publisher-source
 tokens are excluded pending their own inventory. Profiles do not qualify editions,
 installed releases, collision geometry or native acceptance. This is included in preview 0.2.0;
 Marketplace availability remains private.
+
+
+## Unreleased file and directory I/O
+
+Professional §10.2 adds 38 chapter entries for a total of 490 BASIC entries.
+One of the 38 spellings, Input$, already had complete function scopes; the new
+inventory records its file-channel example separately. Directory listings/search,
+file selection, space queries, sequential channels, record access, Run and Include
+now have lexical coverage. Dir$ preserves the manual's function category but uses
+a reserved-variable scope for reading/assignment, beside Pof and Command Line$.
+Print #, Input #, Line Input # and ? # include their documented channel markers.
+
+The directory-listing context confines /W to Dir/Ldir statements. It protects
+quoted device paths and ends at a colon separator or line end; normal division
+and both existing Get/Put phrases retain their scopes. The plural Command Lines$
+signature and FIELD$ prose are documentary conflicts, not accepted new aliases.
+Filenames, wildcard patterns and included source contents remain opaque.
+
+This does not implement channel validation, file existence checks, actual
+filesystem operations, record layouts, include resolution, compiler or parser
+behaviour, or native release qualification. Both lexical profiles share the new
+BASIC rules. Published npm/VSIX 0.2.0 and Marketplace availability are unchanged.

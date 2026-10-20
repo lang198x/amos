@@ -1,0 +1,40 @@
+Rem File and directory vocabulary: independent lexical fixture.
+MC_HOME$=Dir$
+Dir$="RAM:"
+Set Dir 24,"*.bak"
+Dir "RAM:*.txt" /W
+Ldir MC_HOME$/W
+MC_NAME$=Dir First$("RAM:*.txt")
+While MC_NAME$<>""
+  Print MC_NAME$
+  MC_NAME$=Dir Next$
+Wend
+MC_FREE=Dfree : MC_INFO$=Disc Info$("RAM:")
+MC_PICK$=Fsel$("*.txt","notes.txt","Choose a file","Text files")
+If Exist(MC_PICK$) Then Print MC_PICK$
+Open Out 1,"RAM:notes.txt"
+Print #1,"blue, gold"
+? #1,"green"
+Close 1
+Append 1,"RAM:notes.txt"
+Print #1,"orange"
+Close 1
+Open In 1,"RAM:notes.txt"
+Set Input 10,-1
+While Not Eof(1)
+  Line Input #1,MC_LINE$
+  Print MC_LINE$
+Wend
+MC_LENGTH=Lof(1)
+Pof(1)=0 : MC_FIRST$=Input$(1,4)
+Close 1
+Open Random 2,"RAM:records.dat"
+Field 2,16 As MC_NAME$,4 As MC_CODE$
+MC_NAME$="blue" : MC_CODE$="B001"
+Put 2,1
+Get 2,1
+Close 2
+Command Line$="stage=2"
+Run "RAM:next_stage.AMOS"
+Include "RAM:routines.AMOS"
+Rem Paths and included programs are not resolved by highlighting.

@@ -354,3 +354,31 @@ npm required a manual publishing authentication. The host browser launcher
 failed; an interactive publish with `--browser=false` kept the security flow
 waiting without invoking that launcher. No authentication links or tokens are
 retained in the repository. Marketplace received no upload or availability change.
+
+
+## Unreleased file and directory I/O highlighting
+
+The §10.2 checklist adds 38 entries, including grouped listing variants, As and
+? #, for 490 BASIC chapter entries. Every entry's exact held-source line and
+following printed page footer was checked against the pinned extract. Before
+changes, only Input$ had complete expected scopes among these 38 examples; the
+chapter integration check failed at Dir. All 38 now pass the shared case, tab,
+identifier-boundary and standalone-form checks. Punctuated directory variants
+use underscore-joined legal identifier lookalikes in the suffix guards.
+
+Twenty package/inventory checks, editor sync and 80 highlighting integrations
+pass in each existing shiki-highlight-api consumer (1.3.0 and 2.0.0), both with
+Shiki 4.4.3 and dark-plus/light-plus themes. Focused cases check statement-local
+/W, quoted device paths/colons, normal division after colons/newlines, channel
+markers, random-access connectives, read/write file variables, longer Get/Put
+forms and disputed spellings. Existing full-game and optional 3D regressions
+pass. Removing Eof deliberately fails the file-channel function check; the rule
+and composed copies were restored before the passing checks.
+
+Actual disposable npm/VSIX builds contain both exact canonical grammars and the
+matching editor icon/registrations, with no public gallery flags. An extracted
+npm consumer preserves the new mixed listing and renders both profiles/themes
+with expected function scopes. No package is published or versioned asset
+replaced. Released 0.2.0 retains its 452-entry BASIC inventory. No file/device
+operations, include expansion, native execution, parser validation or new editor
+installation is claimed for this continuation. Marketplace stays private.

@@ -6,8 +6,9 @@ chapters 5.1–5.5 (basics, strings, maths, control and procedures), 48 from cha
 5.8 (joystick/mouse), 54 from 6.1–6.3 (screen setup/use/effects), 25 from 5.9
 (memory banks), 27 from 6.4 (drawing), 35 from 6.5 (menus), 19 from 7.1
 (sprites), 21 from 7.2 (Bobs), 13 from 7.3 (object updating), 14 from 7.4
-(collisions), 12 from 7.5 (IFF animation) and 24 from 7.6 (BASIC AMAL controls).
-The 452 BASIC entries include grouped headings, connective words, typed forms and the `?`
+(collisions), 12 from 7.5 (IFF animation), 24 from 7.6 (BASIC AMAL controls) and
+38 from 10.2 (file/directory I/O).
+The 490 BASIC entries include grouped headings, connective words, typed forms and the `?`
 print shortcut. Fourteen embedded menu commands are recorded separately in
 `06-05.json`, outside the BASIC vocabulary count.
 Each entry cites a printed page and a line in the hash-pinned held extract
@@ -100,7 +101,7 @@ latter two functions, but shows statement usage; no alternate expression forms
 are inferred. The held examples also contain `Bobsprite 001` and `Form Param`,
 which are not promoted to builtin spellings. Function headings give Bobsprite Col
 and Frame Param. Masks, collision results, frame data/pointers and timing are not
-validated. General file-channel I/O remains a separate inventory.
+validated. General file-channel I/O is inventoried separately in §10.2.
 
 The AMAL chapter's BASIC controls and STOS-compatible Move/Anim controls are
 inventoried here. Amreg is a reserved variable; Chanan, Chanmv, Amalerr and Movon
@@ -114,3 +115,27 @@ functions and register families separately; no embedded grammar is implemented.
 The [AMOS 3D scope](../extensions/amos-3d/README.md) records optional-extension
 sources and unresolved spellings, not extra Professional core vocabulary or
 qualified releases. AMOS 3D is separate from AMAL.
+
+
+The file/directory chapter includes both forms of directory listings (including
+printer listings), selection/search functions, sequential channels, random-access
+records and program/include filenames. Its 38 entries include the `As` connective
+and `? #` shortcut; the Input$ spelling also appears in the keyboard chapter with
+a different example. These are chapter entries, not a count of unique instructions.
+
+Dir$ retains its documented function kind, with a reserved-variable lexical scope
+because pp.10.02.05 shows reads and assignments. Pof and Command Line$ also receive
+reserved-variable scopes. The Command Line$ heading and repeated examples use
+the singular spelling, but extract line 18486 says `Command Lines$`; that plural
+is retained as a discrepancy, not a new highlighted alias. Line 18775 says
+`FIELD$` while the heading/signature/examples say Field. Line Input # has a
+structure heading and statement examples even though nearby prose calls it a
+function; it receives a command scope.
+
+Directory `/W` is an option inside Dir/Ldir statements, not a global keyword.
+Quoted paths protect internal colons, and the context ends at the next statement
+separator or line end. File-channel forms retain their whitespace-separated #
+marker without treating typed identifiers such as `Print#` as file operations.
+Filenames, wildcard patterns and included programs remain opaque/unresolved.
+No channel, field size, random-access layout, pointer range, include expansion,
+filesystem mutation or original runtime acceptance is validated by highlighting.

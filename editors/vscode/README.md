@@ -27,3 +27,10 @@ Preview 0.2.0 also adds the opt-in **AMOS + AMOS 3D** language mode, covering
 mode selector, or set a workspace file association to `amos-3d`. Automatic
 `.amos.txt` detection still selects AMOS. Movement strings stay opaque; the mode neither
 installs AMOS 3D nor validates compatibility or execution.
+
+
+Current source additionally covers the Professional file/directory chapter,
+bringing its BASIC inventory to 490 entries. This continuation is unreleased;
+the downloadable 0.2.0 preview retains its 452-entry inventory. Directory options,
+channel markers and record operations receive lexical scopes; file contents,
+paths and actual I/O are not checked or executed by the extension.

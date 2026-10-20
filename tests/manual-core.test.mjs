@@ -9,7 +9,7 @@ test('manual inventory has cited, nonempty examples for every declared chapter',
   const source = await json('source.json');
   assert.equal(source.product, 'AMOS Professional');
   assert.match(source.extract_sha256, /^[0-9a-f]{64}$/);
-  assert.deepEqual(source.chapters, ['05-01', '05-02', '05-03', '05-04', '05-05', '05-06', '10-01', '05-07', '05-08', '06-01', '06-02', '06-03', '05-09', '06-04', '06-05', '07-01', '07-02', '07-03', '07-04', '07-05', '07-06']);
+  assert.deepEqual(source.chapters, ['05-01', '05-02', '05-03', '05-04', '05-05', '05-06', '10-01', '05-07', '05-08', '06-01', '06-02', '06-03', '05-09', '06-04', '06-05', '07-01', '07-02', '07-03', '07-04', '07-05', '07-06', '10-02']);
   const seen = new Set();
   let checked = 0;
   for (const id of source.chapters) {
@@ -23,12 +23,13 @@ test('manual inventory has cited, nonempty examples for every declared chapter',
       assert.ok(entry.page.startsWith(`${chapter.chapter}.`));
       assert.ok(Number.isInteger(entry.extract_line) && entry.extract_line > 0);
       assert.ok(['command', 'comment', 'function', 'operator', 'reserved', 'shortcut'].includes(entry.kind));
-      if (entry.kind === 'shortcut') assert.equal(entry.spelling, '?');
+      if (entry.kind === 'shortcut') assert.ok(entry.spelling === '?' || (id === '10-02' && entry.spelling === '? #'));
       if (entry.lexical_scope !== undefined) {
         const allowed = {
           Screen: ['06-01', 'keyword.other.amos'],
           Colour: ['06-04', 'keyword.other.amos'],
           'Menu$': ['06-05', 'variable.language.amos'],
+          'Dir$': ['10-02', 'variable.language.amos'],
         };
         assert.deepEqual([id, entry.lexical_scope], allowed[entry.spelling]);
         if (entry.spelling === 'Menu$') assert.equal(entry.kind, 'command');
@@ -42,7 +43,7 @@ test('manual inventory has cited, nonempty examples for every declared chapter',
       checked++;
     }
   }
-  assert.equal(checked, 452);
+  assert.equal(checked, 490);
   const maths = await json('05-03.json');
   const crosschecked = maths.entries.filter((entry) => entry.held_retypeset_page);
   assert.deepEqual(crosschecked.map((entry) => entry.spelling), ['Degree', 'Radian', 'Sin', 'Cos']);

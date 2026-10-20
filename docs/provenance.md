@@ -145,3 +145,15 @@ source conclusions for role and spelling. Its canonical fragment is
 BASIC rules into a self-contained grammar for both package and editor consumers.
 The mixed `highlighting.amos.txt` fixture is newly authored under this repository's
 licence and is a lexical test, not a runnable demonstration with installed models.
+
+
+The file/directory continuation cites Professional §10.2, pp.10.02.02–16, in the
+same hash-pinned retypeset extract. All 38 entry lines and their following printed
+page footers were checked against the held text. Directory/W and Ldir/W headings,
+the ? # abbreviation and As field connective are included explicitly. Dir$'s
+read/write signatures support its variable scope despite the function heading.
+The Command Lines$ signature (line 18486), FIELD$ prose (18775), and Line Input #
+function wording (18675) remain discrepancies; the heading/example spellings and
+statement roles drive this lexical inventory. No native semantics follow from
+those documentary choices. The independent file-io fixture is newly authored
+under this repository's licence and was not executed as an AMOS program.
