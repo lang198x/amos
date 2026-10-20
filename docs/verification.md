@@ -52,7 +52,12 @@ synchronisation pass; the new VSIX installs in isolated directories. The first
 sandboxed attempt failed with `EMFILE: too many open files, watch`; the isolated
 CLI installation then succeeded outside the sandbox. Native window selection
 was rejected by automatic approval review because it could bind a private editor
-window, so no native visual inspection is claimed. Marketplace upload is pending.
+window, so no native visual inspection is claimed. Microsoft accepted the renamed
+upload and currently shows 0.1.1 as Verifying and Private. A fresh Marketplace
+installation is pending public availability. The exact VSIX is retained in the
+GitHub v0.1.1 preview release; its downloaded SHA-256 and isolated installed
+grammar/icon bytes match the verified package.
+CI passes at commit `a21cbf5f6798b0b6b011b69479edfddef32213e9`.
 The npm package, Rust crate and highlighting coverage remain at 0.1.0.
 
 Native file codecs/output, execution, complete name/type analysis, LSP and

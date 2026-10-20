@@ -33,8 +33,6 @@ Publishing and broader highlighting are separate bounded changes. VS Code uses
 one canonical grammar shared with npm/Shiki; editor adapters do not own a second
 semantic implementation. Keep source and test files small as this grows.
 
-## Current outcome
-
 ## Publication follow-up
 
 The user completed publisher creation and uploaded the approved L logo. The
@@ -74,3 +72,14 @@ pinned full-game source and the released grammar. It inspects physical-line head
 candidates only; BR_MARK demonstrates why candidates are not all commands.
 An empty source was rejected before any output write. Grammar, parser and npm
 package code were not changed, and no dependency was added.
+
+## Current outcome
+
+Publisher creation and its approved L logo are confirmed. The renamed 0.1.1
+upload is accepted and shows Verifying / Private; public installation remains
+pending Microsoft validation. CI passes for a21cbf5. GitHub release v0.1.1
+retains the exact VSIX and checksum, independently downloaded and compared.
+The installed grammar/icon match source. Native visual review remains unverified
+after automatic approval review blocked editor-window selection. No retry of
+that UI action was made. Temporary downloads and isolated settings are disposable
+once cleanup confirms no task-owned Code process remains.
