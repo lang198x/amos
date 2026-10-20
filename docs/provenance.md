@@ -29,6 +29,12 @@ Display forms come from §5.6 (Pen, Paper, Locate, Curs Off), §5.8 (Hide/Show),
 (Ink, Palette, Bar and Box), §7.2 (Double Buffer and Bob Update Off), and §7.3
 (Autoback). Multiword forms are matched as complete lexical phrases.
 
+Sound uses §8.1's BASIC music commands (Play pitch,delay; Play Off; Wave; Volume;
+Set Envel), not the separate AMAL `PLay` instruction in §7.6. Input uses §10.1
+(Key State, Scancode and Clear Key); Upper$ is in §5.2. Timer is a reserved
+variable, while Physic and Logic are functions. Labels are scoped only at a
+standalone definition; Gosub targets and procedure invocations are not resolved.
+
 These are language facts, not a claim that every edition behaves identically.
 The AMOS-specific grammar is deliberately partial; it is not copied manual text.
 

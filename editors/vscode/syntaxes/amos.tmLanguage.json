@@ -12,6 +12,12 @@
       "include": "#comments"
     },
     {
+      "include": "#labels"
+    },
+    {
+      "include": "#reserved"
+    },
+    {
       "include": "#commands"
     },
     {
@@ -70,6 +76,10 @@
         {
           "name": "keyword.control.amos",
           "match": "(?i:(?<![A-Za-z0-9_$#])(?:Bob[ \\t]+Update[ \\t]+Off|Double[ \\t]+Buffer|Screen[ \\t]+(?:Swap|Copy)|Curs[ \\t]+Off|Flash[ \\t]+Off|Autoback|Palette|Paper|Pen|Locate|Ink|Bar|Box|Hide|Show)(?![A-Za-z0-9_$#]))"
+        },
+        {
+          "name": "keyword.control.amos",
+          "match": "(?i:(?<![A-Za-z0-9_$#])(?:Play[ \\t]+Off|Clear[ \\t]+Key|Set[ \\t]+Envel|Play|Wave|Volume)(?![A-Za-z0-9_$#]))"
         }
       ]
     },
@@ -77,7 +87,7 @@
       "patterns": [
         {
           "name": "support.function.amos",
-          "match": "(?i:(?<![A-Za-z0-9_$#])(?:Inkey\\$|Chr\\$|Str\\$|Rnd)(?![A-Za-z0-9_$#]))"
+          "match": "(?i:(?<![A-Za-z0-9_$#])(?:Key[ \\t]+State|Upper\\$|Inkey\\$|Chr\\$|Str\\$|Rnd|Scancode|Physic|Logic)(?![A-Za-z0-9_$#]))"
         }
       ]
     },
@@ -101,6 +111,10 @@
       "patterns": [
         {
           "name": "keyword.operator.amos",
+          "match": "(?i:(?<![A-Za-z0-9_$#])(?:And|Or)(?![A-Za-z0-9_$#]))"
+        },
+        {
+          "name": "keyword.operator.amos",
           "match": "<>|<=|>=|[+*/^=<>\\-]"
         },
         {
@@ -116,6 +130,21 @@
           "match": "[A-Za-z_][A-Za-z0-9_]*[$#]?"
         }
       ]
+    },
+    "reserved": {
+      "name": "variable.language.amos",
+      "match": "(?i:(?<![A-Za-z0-9_$#])Timer(?![A-Za-z0-9_$#]))"
+    },
+    "labels": {
+      "match": "^[ \\t]*(?!(?i:Cls|Print|End|If|Then|Else|Do|Loop|For|To|Step|Next|Repeat|Until|While|Wend|Procedure|Gosub|Return|Dim|Randomize|Wait|Autoback|Palette|Paper|Pen|Locate|Ink|Bar|Box|Hide|Show|Play|Wave|Volume|Rnd|Scancode|Physic|Logic|Timer|And|Or)[ \\t]*:)([A-Za-z_][A-Za-z0-9_]*)([ \\t]*)(:)[ \\t]*$",
+      "captures": {
+        "1": {
+          "name": "entity.name.label.amos"
+        },
+        "3": {
+          "name": "punctuation.separator.amos"
+        }
+      }
     }
   }
 }

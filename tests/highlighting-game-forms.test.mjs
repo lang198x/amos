@@ -8,7 +8,8 @@ const checkForms = (forms, scope) => {
         assertScope(tokens(source, theme)[0], 0, source.length, scope, source);
         // Every longer word, including either AMOS type suffix, stays an identifier.
         for (const suffix of ['Extra', '_VALUE', '$', '#']) {
-          const name = form.replaceAll(' ', '_') + suffix;
+          const name = form.replaceAll(' ', '_').replace(/[$#]$/, '') + suffix;
+          if (name === form) continue; // The actual builtin is a positive case above.
           assertScope(tokens(`${name}=1`, theme)[0], 0, name.length, 'variable.other.amos', name);
         }
       }
@@ -28,6 +29,29 @@ test('display commands keep complete multiword forms and ordinary names distinct
     for (const token of tokens(source)[0]) {
       if (token.content.trim()) assertScope([token], 0, token.content.length, 'variable.other.amos', source);
     }
+  }
+});
+
+test('sound, input and screen functions retain their complete forms', () => {
+  checkForms(['Play Off', 'Play', 'Wave', 'Volume', 'Set Envel', 'Clear Key'], 'keyword.control.amos');
+  checkForms(['Key State', 'Upper$', 'Inkey$', 'Scancode', 'Physic', 'Logic', 'Rnd'], 'support.function.amos');
+  checkForms(['Timer'], 'variable.language.amos');
+  checkForms(['And', 'Or'], 'keyword.operator.amos');
+});
+
+test('standalone labels differ from commands, array names and unresolved invocations', () => {
+  for (const source of ['BR_DRAW_STATE:', 'Other_Label:', '  other_label :']) {
+    const start = source.search(/[A-Za-z_]/);
+    const end = source.indexOf(':');
+    assertScope(tokens(source)[0], start, source.slice(0, end).trimEnd().length, 'entity.name.label.amos');
+  }
+  for (const source of ['Print:', 'End:', 'Return:', 'Wait:']) {
+    assertScope(tokens(source)[0], 0, source.length - 1, 'keyword.control.amos');
+  }
+  for (const source of ['BR_MARK(1)=2', 'BR_DRAW_STATE', 'Gosub TARGET+1', 'MY_PROC[1]']) {
+    const name = source.startsWith('Gosub') ? 'TARGET' : source.match(/^[A-Za-z_]+/)[0];
+    const start = source.indexOf(name);
+    assertScope(tokens(source)[0], start, start + name.length, 'variable.other.amos');
   }
 });
 
