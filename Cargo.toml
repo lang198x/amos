@@ -1,0 +1,17 @@
+[package]
+name = "lang198x-amos"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.98"
+description = "Source-preserving AMOS opening-program parser and bounded checker"
+license = "GPL-2.0-or-later"
+repository = "https://github.com/lang198x/amos"
+readme = "README.md"
+include = ["src/**", "tests/**", "corpus/**/*.txt", "corpus/**/*.json", "corpus/**/README.md", "corpus/LICENSE", "Cargo.toml", "Cargo.lock", "README.md", "LICENSE", "docs/coverage.md", "docs/provenance.md", "docs/verification.md"]
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"

@@ -1,0 +1,117 @@
+{
+  "name": "AMOS",
+  "scopeName": "source.basic.amos",
+  "fileTypes": [
+    "amos.txt"
+  ],
+  "patterns": [
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#commands"
+    },
+    {
+      "include": "#functions"
+    },
+    {
+      "include": "#numbers"
+    },
+    {
+      "include": "#operators"
+    },
+    {
+      "include": "#names"
+    }
+  ],
+  "repository": {
+    "strings": {
+      "name": "string.quoted.double.amos",
+      "begin": "\"",
+      "end": "\"|$",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.begin.amos"
+        }
+      },
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.definition.string.end.amos"
+        }
+      }
+    },
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.apostrophe.amos",
+          "match": "^[ \\t]*'.*$"
+        },
+        {
+          "begin": "(?i:(?:^[ \\t]*|:[ \\t]*)(Rem)(?![A-Za-z0-9_$#]))",
+          "end": "$",
+          "name": "comment.line.rem.amos",
+          "beginCaptures": {
+            "1": {
+              "name": "keyword.control.amos"
+            }
+          }
+        }
+      ]
+    },
+    "commands": {
+      "patterns": [
+        {
+          "name": "keyword.control.amos",
+          "match": "(?i:(?<![A-Za-z0-9_$#])(?:Wait[ \\t]+Key|End[ \\t]+(?:If|Proc)|Cls|Print|End|If|Then|Else|Do|Loop|For|To|Step|Next|Repeat|Until|While|Wend|Procedure)(?![A-Za-z0-9_$#]))"
+        }
+      ]
+    },
+    "functions": {
+      "patterns": [
+        {
+          "name": "support.function.amos",
+          "match": "(?i:(?<![A-Za-z0-9_$#])(?:Inkey\\$|Chr\\$|Str\\$|Rnd)(?![A-Za-z0-9_$#]))"
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.hex.amos",
+          "match": "(?<![A-Za-z0-9_$#])\\$[0-9A-Fa-f]+(?![A-Za-z0-9_$#])"
+        },
+        {
+          "name": "constant.numeric.binary.amos",
+          "match": "(?<![A-Za-z0-9_$#])%[01]+(?![A-Za-z0-9_$#])"
+        },
+        {
+          "name": "constant.numeric.decimal.amos",
+          "match": "(?<![A-Za-z0-9_$#])[0-9]+(?:\\.[0-9]+)?(?![A-Za-z0-9_$#])"
+        }
+      ]
+    },
+    "operators": {
+      "patterns": [
+        {
+          "name": "keyword.operator.amos",
+          "match": "<>|<=|>=|[+*/^=<>\\-]"
+        },
+        {
+          "name": "punctuation.separator.amos",
+          "match": "[:,;]"
+        }
+      ]
+    },
+    "names": {
+      "patterns": [
+        {
+          "name": "variable.other.amos",
+          "match": "[A-Za-z_][A-Za-z0-9_]*[$#]?"
+        }
+      ]
+    }
+  }
+}
