@@ -1,0 +1,62 @@
+{
+  "product": "AMOS 3D",
+  "component": "optional language extension",
+  "documentation_year": 1991,
+  "source": "https://gitlab.com/amigasourcecodepreservation/amos-classic-documentation",
+  "scope": "Source discovery and extension planning only; no Td grammar or parser support",
+  "qualified_releases": [],
+  "sources": {
+    "guide": {
+      "held_extract": "amos-3d-user-guide-1991-wilkes-lewis.txt",
+      "extract_sha256": "75015e87838a89df21c630c6390dc126d6f93bd41c381a08084febe97447cdc1"
+    },
+    "quickcard": {
+      "held_extract": "amos-3d-quickcard-1991.txt",
+      "extract_sha256": "702ed01a3261c7d35d8b68dfde4850a2c4443bf17f20ab6ffb1ed1fc742f79ed"
+    }
+  },
+  "evidence": [
+    {
+      "id": "minimum-version",
+      "source": "guide",
+      "extract_line": 379,
+      "page": "5",
+      "text": "AMOS 3D will only work with versions of AMOS Basic from 1.3 upwards"
+    },
+    {
+      "id": "extension-installation",
+      "source": "guide",
+      "extract_line": 560,
+      "page": "11",
+      "text": "install a special extension of commands onto it"
+    },
+    {
+      "id": "relative-angle-prose",
+      "source": "guide",
+      "extract_line": 3022,
+      "page": "78",
+      "text": "Td ANGLE REL"
+    },
+    {
+      "id": "relative-angle-signature",
+      "source": "guide",
+      "extract_line": 3042,
+      "page": "79",
+      "text": "Td ANGEL REL n,dA,dB,dC"
+    },
+    {
+      "id": "relative-angle-card",
+      "source": "quickcard",
+      "extract_line": 32,
+      "page": "1",
+      "text": "Td ANGEL REL n,dA,dB,dC"
+    },
+    {
+      "id": "movement-string-card",
+      "source": "quickcard",
+      "extract_line": 25,
+      "page": "1",
+      "text": "Td MOVE X/Y/Z n,string$"
+    }
+  ]
+}

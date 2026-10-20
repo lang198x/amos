@@ -1,0 +1,20 @@
+{
+  "entries": [
+    {"spelling": "Move", "kind": "command", "page": "07.06.02", "extract_line": 12807, "example": "Move 20,0,10", "code": "M"},
+    {"spelling": "Anim", "kind": "command", "page": "07.06.03", "extract_line": 12847, "example": "Anim 2,(1,4)(2,4)", "code": "A"},
+    {"spelling": "Jump", "kind": "command", "page": "07.06.03", "extract_line": 12875, "example": "Jump Target", "code": "J"},
+    {"spelling": "Let", "kind": "command", "page": "07.06.04", "extract_line": 12907, "example": "Let R0=10", "code": "L"},
+    {"spelling": "If", "kind": "command", "page": "07.06.05", "extract_line": 12953, "example": "If X>10 Jump Target", "code": "I"},
+    {"spelling": "For", "kind": "command", "page": "07.06.05", "extract_line": 12981, "example": "For R0=0 To 10", "code": "F"},
+    {"spelling": "To", "kind": "command", "page": "07.06.05", "extract_line": 12982, "example": "For R0=0 To 10", "code": "T"},
+    {"spelling": "Next", "kind": "command", "page": "07.06.05", "extract_line": 12983, "example": "Next R0", "code": "N"},
+    {"spelling": "AUtotest", "kind": "command", "page": "07.06.06", "extract_line": 13003, "example": "AUtotest (If X>10 eXit)", "code": "AU"},
+    {"spelling": "Direct", "kind": "command", "page": "07.06.06", "extract_line": 13010, "example": "Direct Target", "code": "D"},
+    {"spelling": "End", "kind": "command", "page": "07.06.06", "extract_line": 13015, "example": "End", "code": "E"},
+    {"spelling": "eXit", "kind": "command", "page": "07.06.06", "extract_line": 13022, "example": "eXit", "code": "X"},
+    {"spelling": "On", "kind": "command", "page": "07.06.06", "extract_line": 13026, "example": "On", "code": "O"},
+    {"spelling": "Pause", "kind": "command", "page": "07.06.06", "extract_line": 13031, "example": "Pause", "code": "P"},
+    {"spelling": "Wait", "kind": "command", "page": "07.06.07", "extract_line": 13049, "example": "Wait", "code": "W"},
+    {"spelling": "PLay", "kind": "command", "page": "07.06.07", "extract_line": 13088, "example": "PLay 1", "code": "PL"}
+  ]
+}

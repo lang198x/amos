@@ -88,6 +88,22 @@ transcriptions are recorded without inventing overloads or aliases. These
 citations do not implement IFF decoding or qualify AMAL, collision accuracy or
 original animation timing.
 
+Professional §7.6 supplies 24 BASIC-facing AMAL/STOS controls, for 452 BASIC
+entries. A separate AMAL inventory retains 16 commands/structures, 15 functions
+and five register/family records. Its capital-significant codes are not treated as
+case-insensitive BASIC. The RA–RI heading conflicts with the following 26-register
+A–Z prose; both are retained. The Movon heading/prose differ from its printed
+Move On signature; no new expression overload is inferred. All 502 BASIC/menu/
+AMAL line/page bindings match the held extract.
+
+AMOS 3D's separately held guide and quick card have their own SHA-256 bindings
+and six exact evidence records. They identify optional installation and a stated
+AMOS 1.3 minimum, not compatibility qualification for every later release. The
+guide's ANGLE REL prose conflicts with its ANGEL REL signature and quick card;
+accepted spellings require further primary evidence. The source catalogue's 1991
+bibliographic date is retained with its title-page caveat. No 3D grammar or runtime
+support follows from collecting these sources.
+
 [Opening sources](../corpus/opening/README.md) retain their upstream MIT licence
 and immutable provenance. [New native probes](../corpus/probes/README.md) record
 exact input hashes, screenshots and a pinned runtime profile. Host parser tests

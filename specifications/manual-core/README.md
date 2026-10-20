@@ -6,7 +6,8 @@ chapters 5.1–5.5 (basics, strings, maths, control and procedures), 48 from cha
 5.8 (joystick/mouse), 54 from 6.1–6.3 (screen setup/use/effects), 25 from 5.9
 (memory banks), 27 from 6.4 (drawing), 35 from 6.5 (menus), 19 from 7.1
 (sprites), 21 from 7.2 (Bobs), 13 from 7.3 (object updating), 14 from 7.4
-(collisions) and 12 from 7.5 (IFF animation). The 428 BASIC entries include grouped headings, connective words, typed forms and the `?`
+(collisions), 12 from 7.5 (IFF animation) and 24 from 7.6 (BASIC AMAL controls).
+The 452 BASIC entries include grouped headings, connective words, typed forms and the `?`
 print shortcut. Fourteen embedded menu commands are recorded separately in
 `06-05.json`, outside the BASIC vocabulary count.
 Each entry cites a printed page and a line in the hash-pinned held extract
@@ -100,3 +101,16 @@ are inferred. The held examples also contain `Bobsprite 001` and `Form Param`,
 which are not promoted to builtin spellings. Function headings give Bobsprite Col
 and Frame Param. Masks, collision results, frame data/pointers and timing are not
 validated. General file-channel I/O remains a separate inventory.
+
+The AMAL chapter's BASIC controls and STOS-compatible Move/Anim controls are
+inventoried here. Amreg is a reserved variable; Chanan, Chanmv, Amalerr and Movon
+are functions. The held Movon signature says Move On, while its heading and prose
+name Movon; no function overload is inferred for the Move On command. Channel
+has both object and screen targets; `To Screen Size` is recognised as a target
+phrase without promoting bare Screen Size to a standalone command.
+
+The [embedded AMAL inventory](../amal/README.md) retains significant capitals,
+functions and register families separately; no embedded grammar is implemented.
+The [AMOS 3D scope](../extensions/amos-3d/README.md) records optional-extension
+sources and unresolved spellings, not extra Professional core vocabulary or
+qualified releases. AMOS 3D is separate from AMAL.

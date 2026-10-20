@@ -211,3 +211,26 @@ do not publish packages or replace release assets. Native collision results,
 file/channel behaviour, animation contents, pointers, timing and AMAL remain
 unqualified. Parser scope and private Marketplace availability are unchanged;
 no dependency was added.
+
+## Unreleased AMAL controls and AMOS 3D scope
+
+Professional §7.6 adds 24 BASIC controls (none previously passing), for 452 BASIC
+entries. Separate inventories retain 14 menu records and 36 AMAL records. All
+502 line/page bindings, six AMOS 3D evidence bindings and four held-source hashes
+match. Earlier 109/171/262/349/402/428 checks and all 398 game expectations remain.
+
+Sixty-nine integration tests pass in each existing consumer (shiki-highlight-api
+1.3.0 and local 2.0.0 with Shiki 4.4.3), in both themes. Eight package/inventory
+checks and editor sync pass. Checks cover complete BASIC control forms, Amreg
+reads/assignments, case/typed boundaries, the Screen Size target context and all
+embedded AMAL examples as opaque strings. Significant-capital variants do not
+receive embedded validation. Disabling Amreg fails on its exact assignment range;
+it was restored before passing checks. AMOS 3D remains outside builtin coverage.
+
+Actual npm/VSIX grammar and icon bytes/metadata match, with public flags absent.
+An extracted npm registration preserves the fresh listing and critical scopes in
+both themes. Builds are disposable, with no registry/preview asset replacement.
+No AMAL compiler, grammar, runtime, extension installation or native compatibility
+qualification is added. The AMOS 3D spelling conflict and profile requirements
+remain recorded follow-on work. No dependency was added; parser scope and private
+Marketplace availability are unchanged.

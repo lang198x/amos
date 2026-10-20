@@ -1,0 +1,25 @@
+Rem Fresh lexical example; not a runtime-qualified program.
+Screen Open 0,320,200,16,Lowres
+Ink 2 : Bar 0,0 To 15,15 : Get Bob 1,0,0 To 16,16
+Ink 3 : Bar 0,0 To 15,15 : Get Bob 2,0,0 To 16,16
+Double Buffer : Bob 1,80,80,1
+Channel 1 To Bob 1
+MC_PATH$="Start: Move 20,0,20; Pause; Move -20,0,20; Jump Start"
+Amal 1,MC_PATH$ : Amal On 1
+Amreg(1,0)=20 : MC_VALUE=Amreg(1,0)
+MC_MOVING=Chanmv(1) : MC_ACTIVE=Chanan(1)
+Amal Freeze 1 : Amal On 1 : Amal Off 1
+Synchro Off
+Amal 1,"Start: Let X=XM; Let Y=YM; Pause; Jump Start"
+Synchro : Synchro On
+Update Every 2
+Channel 2 To Screen Size 0
+Move X 1,"(1,2,20)(1,-2,20)L"
+Move Y 1,"(1,1,10)(1,-1,10)L"
+Move On 1 : MC_MOVING=Movon(1)
+Move Freeze 1 : Move On 1 : Move Off 1
+Anim 1,"(1,4)(2,4)L" : Anim On 1
+Anim Freeze 1 : Anim On 1 : Anim Off 1
+Amplay 2,1 : MC_ERROR=Amalerr
+Print "AMAL IF and If remain literal; Td ANGLE REL is not qualified"
+Rem Embedded-only BC, XM, AUtotest and AMOS 3D stay separate from BASIC.

@@ -80,6 +80,10 @@
       "patterns": [
         {
           "name": "keyword.control.amos",
+          "match": "(?i:(?<![A-Za-z0-9_$#])(?:(?:Amal|Anim)[ \\t]+(?:On|Off|Freeze)|Move[ \\t]+(?:X|Y|On|Off|Freeze)|Synchro[ \\t]+(?:On|Off)|Update[ \\t]+Every|To[ \\t]+Screen[ \\t]+Size|Amal|Amplay|Channel|Synchro|Anim)(?![A-Za-z0-9_$#]))"
+        },
+        {
+          "name": "keyword.control.amos",
           "match": "(?i:(?<![A-Za-z0-9_$#])(?:Make[ \\t]+Mask|Set[ \\t]+(?:Hardcol|Zone)|Reserve[ \\t]+Zone|Reset[ \\t]+Zone|Iff[ \\t]+Anim|Mask[ \\t]+Iff|Freeze|Unfreeze)(?![A-Za-z0-9_$#]))"
         },
         {
@@ -122,6 +126,10 @@
     },
     "functions": {
       "patterns": [
+        {
+          "name": "support.function.amos",
+          "match": "(?i:(?<![A-Za-z0-9_$#])(?:Chanan|Chanmv|Amalerr|Movon)(?![A-Za-z0-9_$#]))"
+        },
         {
           "name": "support.function.amos",
           "match": "(?i:(?<![A-Za-z0-9_$#])(?:(?:Bob|Sprite|Spritebob|Bobsprite)[ \\t]+Col|Frame[ \\t]+(?:Load|Length|Play|Skip|Param)|Col|Hardcol|Zone|Hzone|Picture)(?![A-Za-z0-9_$#]))"
@@ -194,10 +202,10 @@
     },
     "reserved": {
       "name": "variable.language.amos",
-      "match": "(?i:(?<![A-Za-z0-9_$#])(?:X[ \\t]+Mouse|Y[ \\t]+Mouse|Menu\\$|Laced|Timer|Key\\$)(?![A-Za-z0-9_$#]))"
+      "match": "(?i:(?<![A-Za-z0-9_$#])(?:X[ \\t]+Mouse|Y[ \\t]+Mouse|Menu\\$|Amreg|Laced|Timer|Key\\$)(?![A-Za-z0-9_$#]))"
     },
     "labels": {
-      "match": "^[ \\t]*(?!(?i:Cls|Print|End|If|Then|Else|Do|Loop|For|To|Step|Next|Repeat|Until|While|Wend|Procedure|Gosub|Return|Dim|Randomize|Wait|Autoback|Palette|Paper|Pen|Locate|Ink|Bar|Box|Hide|Show|Play|Wave|Volume|Rnd|Scancode|Physic|Logic|Timer|And|Or|Mod|Xor|Inc|Dec|Add|Max|Min|Sgn|Abs|Int|Fix|Sqr|Exp|Log|Ln|Pi\\#|Degree|Radian|Sin|Cos|Tan|Acos|Asin|Atan|Hsin|Hcos|Htan|Left\\$|Right\\$|Mid\\$|Instr|Upper\\$|Lower\\$|Str\\$|Val|String\\$|Space\\$|Flip\\$|Repeat\\$|Chr\\$|Asc|Len|Sort|Match|Proc|Shared|Global|Param|Param\\#|Param\\$|Goto|Pop|True|False|Not|Swap|Exit|On|Every|Data|Read|Restore|Free|Fn|Stop|Edit|Direct|System|Rem|Pen\\$|Paper\\$|Writing|Home|Cmove|Cmove\\$|At|Centre|Tab\\$|Cdown|Cdown\\$|Cup|Cleft|Cright|Cup\\$|Cleft\\$|Cright\\$|Cline|Xcurs|Ycurs|Zone\\$|Border\\$|Hscroll|Vscroll|Using|Lprint|Inkey\\$|Scanshift|Input\\$|Input|Key\\$|Scan\\$|Window|Border|Windon|Clw|Hslider|Vslider|Joy|Jleft|Jright|Jup|Jdown|Fire|Lowres|Hires|Default|View|Screen|Scin|Laced|Scroll|Zoom|Logbase|Phybase|Spack|Pack|Unpack|Appear|Fade|Flash|Rainbow|Rain|Save|Load|Bsave|Bload|Erase|Length|Start|Blength|Bstart|Bgrab|Bsend|Plot|Point|Xgr|Ygr|Draw|Polyline|Circle|Ellipse|Clip|Colour|Paint|Polygon|Menu\\$|Choice|Sprite|Bob|Hrev|Vrev|Rev|Update|Col|Hardcol|Zone|Hzone|Picture|Freeze|Unfreeze)[ \\t]*:)([A-Za-z_][A-Za-z0-9_]*)([ \\t]*)(:)[ \\t]*$",
+      "match": "^[ \\t]*(?!(?i:Cls|Print|End|If|Then|Else|Do|Loop|For|To|Step|Next|Repeat|Until|While|Wend|Procedure|Gosub|Return|Dim|Randomize|Wait|Autoback|Palette|Paper|Pen|Locate|Ink|Bar|Box|Hide|Show|Play|Wave|Volume|Rnd|Scancode|Physic|Logic|Timer|And|Or|Mod|Xor|Inc|Dec|Add|Max|Min|Sgn|Abs|Int|Fix|Sqr|Exp|Log|Ln|Pi\\#|Degree|Radian|Sin|Cos|Tan|Acos|Asin|Atan|Hsin|Hcos|Htan|Left\\$|Right\\$|Mid\\$|Instr|Upper\\$|Lower\\$|Str\\$|Val|String\\$|Space\\$|Flip\\$|Repeat\\$|Chr\\$|Asc|Len|Sort|Match|Proc|Shared|Global|Param|Param\\#|Param\\$|Goto|Pop|True|False|Not|Swap|Exit|On|Every|Data|Read|Restore|Free|Fn|Stop|Edit|Direct|System|Rem|Pen\\$|Paper\\$|Writing|Home|Cmove|Cmove\\$|At|Centre|Tab\\$|Cdown|Cdown\\$|Cup|Cleft|Cright|Cup\\$|Cleft\\$|Cright\\$|Cline|Xcurs|Ycurs|Zone\\$|Border\\$|Hscroll|Vscroll|Using|Lprint|Inkey\\$|Scanshift|Input\\$|Input|Key\\$|Scan\\$|Window|Border|Windon|Clw|Hslider|Vslider|Joy|Jleft|Jright|Jup|Jdown|Fire|Lowres|Hires|Default|View|Screen|Scin|Laced|Scroll|Zoom|Logbase|Phybase|Spack|Pack|Unpack|Appear|Fade|Flash|Rainbow|Rain|Save|Load|Bsave|Bload|Erase|Length|Start|Blength|Bstart|Bgrab|Bsend|Plot|Point|Xgr|Ygr|Draw|Polyline|Circle|Ellipse|Clip|Colour|Paint|Polygon|Menu\\$|Choice|Sprite|Bob|Hrev|Vrev|Rev|Update|Col|Hardcol|Zone|Hzone|Picture|Freeze|Unfreeze|Amal|Channel|Synchro|Amreg|Amplay|Chanan|Chanmv|Amalerr|Movon|Anim)[ \\t]*:)([A-Za-z_][A-Za-z0-9_]*)([ \\t]*)(:)[ \\t]*$",
       "captures": {
         "1": {
           "name": "entity.name.label.amos"

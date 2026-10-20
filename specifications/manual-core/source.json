@@ -2,7 +2,7 @@
   "title": "AMOS Professional User Guide",
   "year": 1992,
   "product": "AMOS Professional",
-  "scope": "Named BASIC core, input, screen, bank, drawing, menu, object, collision and IFF animation forms; lexical highlighting only; embedded menu vocabulary recorded separately",
+  "scope": "Named BASIC core, input, graphics, object, collision, IFF and AMAL-control forms; lexical highlighting only; embedded menu and AMAL vocabularies recorded separately",
   "source": "https://gitlab.com/amigasourcecodepreservation/amos-classic-documentation",
   "held_extract": "amos-pro-user-guide-1992-croucher-hill.txt",
   "extract_sha256": "b0bf946502ad3ce6534e13d620dd5c017f8f6a6cd7a4c4f99ced87b1d925715c",
@@ -26,7 +26,8 @@
     "07-02",
     "07-03",
     "07-04",
-    "07-05"
+    "07-05",
+    "07-06"
   ],
   "other_editions": "Creator, Easy and individual release/extension differences are not qualified by this manual inventory",
   "pagination_crosscheck": {

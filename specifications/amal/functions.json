@@ -1,0 +1,19 @@
+{
+  "entries": [
+    {"spelling": "BC", "kind": "function", "page": "07.06.08", "extract_line": 13136, "example": "Let R0=BC(1,2,4)", "code": "BC"},
+    {"spelling": "C", "kind": "function", "page": "07.06.09", "extract_line": 13154, "example": "Let R0=C(2)", "code": "C"},
+    {"spelling": "J0", "kind": "function", "page": "07.06.09", "extract_line": 13160, "example": "Let R0=J0", "code": "J0"},
+    {"spelling": "J1", "kind": "function", "page": "07.06.09", "extract_line": 13166, "example": "Let R0=J1", "code": "J1"},
+    {"spelling": "K1", "kind": "function", "page": "07.06.09", "extract_line": 13172, "example": "Let R0=K1", "code": "K1"},
+    {"spelling": "K2", "kind": "function", "page": "07.06.09", "extract_line": 13178, "example": "Let R0=K2", "code": "K2"},
+    {"spelling": "SC", "kind": "function", "page": "07.06.09", "extract_line": 13184, "example": "Let R0=SC(8,9,12)", "code": "SC"},
+    {"spelling": "VU", "kind": "function", "page": "07.06.09", "extract_line": 13194, "example": "Let R0=VU(0)", "code": "VU"},
+    {"spelling": "XH", "kind": "function", "page": "07.06.10", "extract_line": 13210, "example": "Let X=XH(0,80)", "code": "XH"},
+    {"spelling": "XM", "kind": "function", "page": "07.06.10", "extract_line": 13216, "example": "Let X=XM", "code": "XM"},
+    {"spelling": "XS", "kind": "function", "page": "07.06.10", "extract_line": 13222, "example": "Let X=XS(0,128)", "code": "XS"},
+    {"spelling": "YH", "kind": "function", "page": "07.06.10", "extract_line": 13227, "example": "Let Y=YH(0,60)", "code": "YH"},
+    {"spelling": "YM", "kind": "function", "page": "07.06.10", "extract_line": 13233, "example": "Let Y=YM", "code": "YM"},
+    {"spelling": "YS", "kind": "function", "page": "07.06.10", "extract_line": 13239, "example": "Let Y=YS(0,50)", "code": "YS"},
+    {"spelling": "Z", "kind": "function", "page": "07.06.10", "extract_line": 13244, "example": "Let R0=Z(255)", "code": "Z"}
+  ]
+}

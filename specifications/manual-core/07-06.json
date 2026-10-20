@@ -1,0 +1,29 @@
+{
+  "chapter": "07.06",
+  "entries": [
+    {"spelling": "Amal", "kind": "command", "page": "07.06.11", "extract_line": 13271, "example": "Amal 1,\"Move 20,0,10\""},
+    {"spelling": "Update Every", "kind": "command", "page": "07.06.12", "extract_line": 13323, "example": "Update Every 2"},
+    {"spelling": "Channel", "kind": "command", "page": "07.06.12", "extract_line": 13344, "example": "Channel 1 To Bob 1"},
+    {"spelling": "Synchro", "kind": "command", "page": "07.06.13", "extract_line": 13388, "example": "Synchro"},
+    {"spelling": "Synchro On", "kind": "command", "page": "07.06.13", "extract_line": 13389, "example": "Synchro On"},
+    {"spelling": "Synchro Off", "kind": "command", "page": "07.06.13", "extract_line": 13390, "example": "Synchro Off"},
+    {"spelling": "Amal On", "kind": "command", "page": "07.06.17", "extract_line": 13615, "example": "Amal On 1"},
+    {"spelling": "Amal Off", "kind": "command", "page": "07.06.17", "extract_line": 13616, "example": "Amal Off 1"},
+    {"spelling": "Amal Freeze", "kind": "command", "page": "07.06.18", "extract_line": 13638, "example": "Amal Freeze 1"},
+    {"spelling": "Amreg", "kind": "reserved", "page": "07.06.18", "extract_line": 13648, "example": "Amreg(1,0)=20"},
+    {"spelling": "Amplay", "kind": "command", "page": "07.06.18", "extract_line": 13673, "example": "Amplay 2,1"},
+    {"spelling": "Chanan", "kind": "function", "page": "07.06.19", "extract_line": 13714, "example": "MC_ACTIVE=Chanan(1)"},
+    {"spelling": "Chanmv", "kind": "function", "page": "07.06.19", "extract_line": 13731, "example": "MC_MOVING=Chanmv(1)"},
+    {"spelling": "Amalerr", "kind": "function", "page": "07.06.20", "extract_line": 13755, "example": "MC_ERROR=Amalerr"},
+    {"spelling": "Move X", "kind": "command", "page": "07.06.22", "extract_line": 13858, "example": "Move X 1,\"(1,2,20)L\""},
+    {"spelling": "Move Y", "kind": "command", "page": "07.06.23", "extract_line": 13904, "example": "Move Y 1,\"(1,2,20)L\""},
+    {"spelling": "Move On", "kind": "command", "page": "07.06.23", "extract_line": 13922, "example": "Move On 1"},
+    {"spelling": "Move Off", "kind": "command", "page": "07.06.23", "extract_line": 13923, "example": "Move Off 1"},
+    {"spelling": "Movon", "kind": "function", "page": "07.06.23", "extract_line": 13935, "example": "MC_MOVING=Movon(1)"},
+    {"spelling": "Move Freeze", "kind": "command", "page": "07.06.24", "extract_line": 13952, "example": "Move Freeze 1"},
+    {"spelling": "Anim", "kind": "command", "page": "07.06.24", "extract_line": 13961, "example": "Anim 1,\"(1,4)(2,4)L\""},
+    {"spelling": "Anim On", "kind": "command", "page": "07.06.24", "extract_line": 13983, "example": "Anim On 1"},
+    {"spelling": "Anim Off", "kind": "command", "page": "07.06.24", "extract_line": 13984, "example": "Anim Off 1"},
+    {"spelling": "Anim Freeze", "kind": "command", "page": "07.06.25", "extract_line": 14003, "example": "Anim Freeze 1"}
+  ]
+}

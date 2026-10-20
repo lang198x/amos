@@ -9,7 +9,7 @@ Published npm 0.1.0 and editor 0.1.1 retain their original grammar.
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.5 and 10.1, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.6 and 10.1, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -166,7 +166,7 @@ omitted arguments and masks receive lexical scopes without semantic validation.
 All 14 embedded menu examples remain strings. Bob's BASIC command scope comes
 from the independent object chapter, rather than promotion of embedded commands.
 A fresh mixed listing exercises creation, positioning, updating and queries.
-AMAL, broader object/icon facilities and native rendering remain later work. Parser scope, package releases and private Marketplace
+Embedded AMAL highlighting, broader object/icon facilities and native rendering remain later work. Parser scope, package releases and private Marketplace
 availability are unchanged.
 
 ## Collision detection and IFF animation milestone
@@ -183,6 +183,28 @@ A fresh mixed listing preserves these contexts and literal filenames; it assumes
 an already-open channel for frame expressions and does not qualify file I/O.
 
 This is vocabulary coverage, not collision accuracy, frame decoding, mask/pointer
-validation, render timing or native acceptance. AMAL and general file I/O remain
-separate work. Published packages, parser scope and private Marketplace
+validation, render timing or native acceptance. Embedded AMAL highlighting and general file I/O remain separate work. Published packages, parser scope and private Marketplace
 availability are unchanged.
+
+## AMAL controls and extension planning
+
+Professional §7.6 adds 24 BASIC entries, for 452 across 21 chapters. None passed
+the previous complete phrase/boundary checks; all 24 now pass. Complete Amal,
+Anim, Move and Synchro variants and Update Every retain command scopes. Amreg
+has a reserved-variable scope in reads and assignments; Chanan, Chanmv, Amalerr
+and Movon are functions. Channel's `To Screen Size` target phrase is recognised;
+bare Screen Size is not promoted to a standalone command.
+
+A separate [AMAL inventory](../specifications/amal/README.md) records 16 embedded
+commands/structures, 15 functions and five register/family records. These are
+36 documentary records, outside the BASIC count. Significant-capital behaviour,
+labels, Autotest and register-family evidence are recorded for a later design.
+All BASIC strings remain opaque, including invalid or incomplete AMAL payloads.
+No standalone AMAL grammar, parser, validation or runtime execution is added.
+
+[AMOS 3D](../specifications/extensions/amos-3d/README.md) now has hash-bound guide
+and quick-card evidence, installation/minimum-version statements and a bounded
+inventory/profile follow-on plan. It is an optional extension, distinct from AMAL.
+The ANGLE REL/ANGEL REL discrepancy remains unresolved; no Td vocabulary or
+release compatibility is qualified. Published packages, parser scope and private
+Marketplace availability are unchanged.
