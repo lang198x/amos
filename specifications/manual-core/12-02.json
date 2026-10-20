@@ -1,0 +1,21 @@
+{
+  "chapter": "12.02",
+  "entries": [
+    {"spelling": "On Error", "kind": "command", "page": "12.02.01", "extract_line": 21284, "example": "On Error"},
+    {"spelling": "On Error Goto", "kind": "command", "page": "12.02.01", "extract_line": 21286, "example": "On Error Goto MC_RECOVER"},
+    {"spelling": "Resume", "kind": "command", "page": "12.02.02", "extract_line": 21333, "example": "Resume MC_RETRY"},
+    {"spelling": "Resume Next", "kind": "command", "page": "12.02.02", "extract_line": 21336, "example": "Resume Next"},
+    {"spelling": "On Error Proc", "kind": "command", "page": "12.02.02", "extract_line": 21345, "example": "On Error Proc MC_HANDLER"},
+    {"spelling": "Resume Label", "kind": "command", "page": "12.02.03", "extract_line": 21378, "example": "Resume Label MC_RETRY"},
+    {"spelling": "Errn", "kind": "function", "page": "12.02.03", "extract_line": 21386, "example": "MC_CODE=Errn"},
+    {"spelling": "Error", "kind": "command", "page": "12.02.03", "extract_line": 21396, "example": "Error 88"},
+    {"spelling": "Trap", "kind": "command", "page": "12.02.04", "extract_line": 21432, "example": "Trap Load \"RAM:missing.abk\",10"},
+    {"spelling": "Errtrap", "kind": "function", "page": "12.02.04", "extract_line": 21451, "example": "MC_CODE=Errtrap"},
+    {"spelling": "Err$", "kind": "function", "page": "12.02.04", "extract_line": 21459, "example": "MC_MESSAGE$=Err$(88)"}
+  ],
+  "notes": [
+    "Resume Label prose and example discuss different setup/handler contexts; this inventory establishes spelling and lexical role, not recovery placement rules.",
+    "The prose prints RESUMEL ABEL; headings/signatures give Resume Label. No alternate alias is inferred.",
+    "Err$ availability depends on loaded messages/editor context according to the manual. Error codes, handler targets, recovery semantics and compiled-program availability remain unqualified."
+  ]
+}

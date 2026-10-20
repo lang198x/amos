@@ -11,7 +11,7 @@ The table describes current source.
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 10.1–10.2 and 11.1–11.2, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 10.1–10.2, 11.1–11.2 and 12.2, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -370,8 +370,8 @@ are unchanged.
 
 
 The [remaining-gap review](highlighting-gaps.md) maps uninventoried manual routes,
-records representative scope failures and proposes icons/blocks, fonts and error
-handling next. It is a planning audit, not an implementation or release approval.
+records representative pre-sweep scope failures. The approved icons/blocks, fonts
+and error-handling sweeps are now complete; the review maps the remaining work.
 
 
 ## Icons and blocks
@@ -392,3 +392,15 @@ characters while Text Base/Length and existing Text Styles retain function scope
 Font$, enumeration/selection and coordinate conversions have bounded scopes;
 typed lookalikes remain identifiers. The fresh listing is lexical evidence only:
 font availability, metrics and rendering remain unqualified. Coverage is unreleased.
+
+
+## Error handling
+
+Eleven §12.2 entries bring BASIC to 582 across 29 chapters, including explicit
+On Error Goto and Resume Next forms. None passed complete scopes before this
+change. Full On Error/Resume phrases, Trap/Error commands and Errn/Errtrap/Err$
+queries pass in both profiles/themes. Trap immediately followed by another
+command preserves both scopes; handler and recovery targets remain unresolved
+identifiers. The mixed listing is a lexical fixture, without validating error
+codes, handler placement, recovery behavior or native message availability.
+All three approved gap sweeps are complete. Coverage remains unreleased.

@@ -216,3 +216,11 @@ checked against the pinned extract. Xgraphic/Ygraphic headings and conversion
 prose identify the functions; signatures at 20110–11 incorrectly repeat Xtext/
 Ytext. The discrepancy is retained without inventing conversion rules. Assign
 overlaps §10.2. The fresh font listing does not establish native font results.
+
+
+The §12.2 inventory has nine named headings plus the explicitly shown On Error
+Goto and Resume Next forms, for 11 entries on pp.12.02.01–04. Exact heading/
+signature lines and page bindings match the pinned extract. Resume Label's setup/
+handler wording and the RESUMEL ABEL typo are retained without deriving recovery
+placement rules. Fresh error examples are lexical inputs, not executed handlers
+or evidence of message availability in compiled programs.

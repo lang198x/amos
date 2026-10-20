@@ -38,3 +38,8 @@ pass. Native graphics remain unqualified.
 22 package checks and 125 integrations per consumer pass. The old partial Text
 expectation now recognises its documented command prefix. Missing-rule control,
 archive byte inspection and extracted-mode rendering pass.
+
+§12.2 outcome: 11 entries, total 582 across 29 chapters. 22 package checks and
+131 integrations per consumer pass, with Trap composition and unresolved-target
+checks. Missing-rule control, archive byte inspection and extracted rendering
+pass. The gap review records completion and preserves the original audit baseline.

@@ -1,0 +1,17 @@
+Rem Lexical recovery board; handler behavior is not executed
+On Error Goto MC_RECOVER
+MC_RETRY:
+Trap Load "RAM:missing.abk",10
+MC_CODE=Errtrap : MC_MESSAGE$=Err$(MC_CODE)
+If MC_CODE Then Print MC_MESSAGE$
+On Error : On Error Goto 0
+On Error Proc MC_HANDLER : Resume Label MC_RETRY
+Error 88
+End
+MC_RECOVER:
+Print Errn : Resume MC_RETRY
+Procedure MC_HANDLER
+Print Err$(Errn) : Resume Next
+End Proc
+MC_NOTE$="On Error: Trap Load, Resume Label"
+' Errtrap Err$ Resume Next

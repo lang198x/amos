@@ -1,12 +1,9 @@
 # Remaining highlighting work
 
-The next recommended sweep is **§7.7 Icons and Blocks**, followed by **§11.1
-Fonts** and **§12.2 Error Handling**. These fill ordinary graphics and program
-control gaps before the larger Interface and system-integration surfaces.
-The sequence is approved for implementation. Icons/blocks now have a 15-entry
-inventory and verified scopes; fonts now add 13 chapter entries. Error handling
-is next. The audit
-baseline and probes below retain their pre-implementation results. Publication
+The approved sequence is complete: **§7.7 Icons and Blocks**, **§11.1 Fonts**,
+then **§12.2 Error Handling**. Current BASIC coverage is 582 chapter entries across
+29 chapters. The audit baseline and representative probes below retain their
+pre-implementation results; the completion record follows them. Publication
 remains separate.
 
 ## Audit baseline
@@ -63,7 +60,18 @@ libraries are discussed again in §11.3. A chapter absent from the inventory lis
 therefore does not mean that all vocabulary mentioned there is missing.
 No grammar or test expectations were changed for these probes.
 
-## Proposed first three sweeps
+## Completed first three sweeps
+
+| Sweep | Chapter entries | BASIC total | Integrations per consumer |
+| --- | --- | --- | --- |
+| [Icons/blocks](../specifications/manual-core/07-07.json) | 15 | 558 | 118 |
+| [Fonts](../specifications/manual-core/11-01.json) | 13 (includes existing Assign) | 571 | 125 |
+| [Error handling](../specifications/manual-core/12-02.json) | 11 | 582 | 131 |
+
+Each sweep passed 22 package/inventory checks, both existing consumers and both
+profiles/themes, a failing-rule control, archive byte inspection and extracted
+npm rendering. See [verification](verification.md) for evidence and limits.
+The original scope descriptions follow.
 
 1. **Icons and Blocks (§7.7, pp.07.07.01–05).** Complete the remaining chapter of
    the object/animation section. Inventory icon capture/palette/pasting, insertion,
@@ -82,10 +90,10 @@ No grammar or test expectations were changed for these probes.
    complete control phrases and typed Err$ boundaries. Callback/label targets
    remain unresolved identifiers; lexical coverage cannot validate error recovery.
 
-Each sweep should begin with its full cited inventory and a before-change scope
+Each further sweep should begin with its full cited inventory and a before-change scope
 measurement. Use the existing two-profile/two-theme consumer checks, fresh mixed
 examples and a failing-rule control. No new parser, dependency or release follows
-from this proposed sequence.
+from these coverage milestones.
 
 ## Other manual routes
 

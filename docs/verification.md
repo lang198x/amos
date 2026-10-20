@@ -535,3 +535,17 @@ and ordinary Stylesheet identifier. Removing the font command rule fails the
 focused suite; restoration passes. npm/VSIX source bytes match, with no public
 flag or executable host; extracted modes render both themes. No native font
 availability, metric or rendering result, parser or release change is claimed.
+
+
+## Error-handling continuation
+
+All 11 §12.2 heading/signature and page citations match the pinned extract. None
+passed complete scopes before the change. All 22 package checks and 131
+integrations per existing consumer pass, in both profiles/themes. Checks cover
+complete On Error/Resume phrases, Trap followed directly by another command,
+Err$ boundaries, nested error queries, unresolved handler/label names and opaque
+payloads. Removing the new command rule fails the focused suite; restoration
+passes. npm/VSIX source bytes match with no public flag or executable host;
+extracted modes render both themes and preserve the fresh listing. Native handler
+behavior, code ranges and message availability remain unqualified. All three
+approved sweeps are complete; parser, versions and Marketplace are unchanged.
