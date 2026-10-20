@@ -411,3 +411,27 @@ all three declarations pass strict TypeScript NodeNext checking. Ruff checks
 and formatting pass for the modified packager. These are grammar-engine and
 package-content checks, not an installed editor visual review or native AMAL
 execution. No versions, published 0.2.0 assets or Marketplace state change.
+
+
+## Unreleased music and basic sound highlighting
+
+Twenty-one §8.1 entries bring the BASIC inventory to 511 across 23 chapters.
+Five forms passed before the change; all 21 pass now. Exact entry lines and
+printed-page footers match the pinned extract, including the five §8.3 playback
+definition crosschecks. Source discrepancies remain explicit inventory notes.
+
+Twenty-two package/inventory tests and editor sync pass. Ninety-four highlighting
+integrations pass in each existing consumer installation (Shiki 4.4.3 with
+shiki-highlight-api 1.3.0 and 2.0.0), using dark-plus/light-plus. Focused checks
+cover every music form in both BASIC profiles, complete phrases, case/tabs,
+identifier suffixes, standalone builtin/label boundaries, Vumeter expressions,
+strings/comments and line recovery. The independent mixed listing preserves
+exact source and emits styled HTML/CSS. Removing Vumeter's function rule makes
+the focused tests fail; restored canonical/profile/editor files pass again.
+
+Disposable npm and VSIX archives contain exact canonical grammars, expected
+icon/configuration/manifest bytes and no public gallery flag or executable host.
+Extracted npm registrations render all three modes in both themes. No installed
+editor review, audible result, native AMOS execution or argument/range validation
+is claimed. Package versions, published preview 0.2.0 and Marketplace state are
+unchanged.

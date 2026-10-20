@@ -1,0 +1,15 @@
+Rem Lexical sound board: wave data and a music bank must be supplied separately
+MC_SHAPE$=String$(Chr$(0),256)
+Set Wave 2,MC_SHAPE$
+Set Envel 2,0 To 4,40
+Voice %0011 : Volume %0001,40 : Wave 2 To %0011
+Play %0001,49,5 : MC_LEVEL=Vumeter(0)
+Bell 49 : Shoot : Boom
+Noise To %1000 : Play %1000,25,0 : Play Off
+Sample 3 To %0001 : Play %0001,37,5
+Music 2 : Mvolume 40 : Tempo 30
+Led Off : Wait 10 : Led On
+Music Stop : Music Off : Del Wave 2
+MC_MUSIC$="Music Stop: Noise To %1111"
+' Vumeter(0) Music Off Set Wave
+MC_TEMPO_VALUE=30 : MC_SAMPLE_COUNT=3

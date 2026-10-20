@@ -3,14 +3,15 @@
 Preview 0.2.0 releases the expanded BASIC and optional AMOS 3D highlighting.
 The Rust parser remains at 0.1.0 with its opening-program subset. Neither surface
 is complete AMOS support. Current source additionally covers §10.2 file/directory
-I/O; that continuation is not in preview 0.2.0. The table describes current source.
+I/O and §8.1 music/basic sound; these continuations are not in preview 0.2.0.
+The table describes current source.
 
 | Surface | Implemented |
 | --- | --- |
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.6 and 10.1–10.2, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.6, 8.1 and 10.1–10.2, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -302,3 +303,21 @@ invented acceptance. Full compact syntax, arities, loop/Autotest legality,
 numeric ranges, persistence, compilation and native execution remain unqualified.
 The default AMOS/AMOS 3D grammars and registrations are byte-for-byte unchanged
 by this milestone. Published 0.2.0 and Marketplace availability stay unchanged.
+
+
+## Music and basic sound milestone
+
+Twenty-one §8.1 entries bring the BASIC inventory to 511 across 23 chapters.
+Five forms already passed the complete phrase/boundary checks; all 21 now pass.
+Coverage includes effects, voice/volume controls, note playback, wave/envelope
+commands, sample-to-wave assignment, filter controls, Vumeter and basic music
+playback. Music Stop/Off and Noise To retain complete command scopes. Vumeter
+is a function; standalone AMAL's VU remains separate.
+
+The five music playback entries are crosschecked against their §8.3 definitions.
+Source discrepancies are retained in the inventory. A fresh mixed listing checks
+both BASIC profiles and themes. String wave data and filenames remain opaque;
+channels, banks, argument ranges, sound quality and native execution are not
+validated. Sample management/playback, tracker/MED and speech remain later work.
+This is unreleased source coverage; preview 0.2.0, parser and Marketplace state
+are unchanged.

@@ -1,0 +1,31 @@
+{
+  "chapter": "08.01",
+  "entries": [
+    {"spelling": "Boom", "kind": "command", "page": "08.01.01", "extract_line": 14300, "example": "Boom"},
+    {"spelling": "Shoot", "kind": "command", "page": "08.01.01", "extract_line": 14314, "example": "Shoot"},
+    {"spelling": "Bell", "kind": "command", "page": "08.01.01", "extract_line": 14323, "example": "Bell 49"},
+    {"spelling": "Volume", "kind": "command", "page": "08.01.03", "extract_line": 14387, "example": "Volume %0011,40"},
+    {"spelling": "Voice", "kind": "command", "page": "08.01.03", "extract_line": 14403, "example": "Voice %0011"},
+    {"spelling": "Play", "kind": "command", "page": "08.01.04", "extract_line": 14444, "example": "Play %0001,49,5"},
+    {"spelling": "Play Off", "kind": "command", "page": "08.01.04", "extract_line": 14449, "example": "Play Off"},
+    {"spelling": "Set Wave", "kind": "command", "page": "08.01.05", "extract_line": 14497, "example": "Set Wave 2,MC_SHAPE$"},
+    {"spelling": "Wave", "kind": "command", "page": "08.01.06", "extract_line": 14565, "example": "Wave 2 To %0011"},
+    {"spelling": "Noise To", "kind": "command", "page": "08.01.07", "extract_line": 14589, "example": "Noise To %1000"},
+    {"spelling": "Sample", "kind": "command", "page": "08.01.07", "extract_line": 14602, "example": "Sample 3 To %0001"},
+    {"spelling": "Del Wave", "kind": "command", "page": "08.01.07", "extract_line": 14621, "example": "Del Wave 2"},
+    {"spelling": "Set Envel", "kind": "command", "page": "08.01.08", "extract_line": 14644, "example": "Set Envel 2,0 To 4,40"},
+    {"spelling": "Led On", "kind": "command", "page": "08.01.08", "extract_line": 14670, "example": "Led On"},
+    {"spelling": "Led Off", "kind": "command", "page": "08.01.08", "extract_line": 14671, "example": "Led Off"},
+    {"spelling": "Vumeter", "kind": "function", "page": "08.01.09", "extract_line": 14709, "example": "MC_LEVEL=Vumeter(0)"},
+    {"spelling": "Music", "kind": "command", "page": "08.01.09", "extract_line": 14728, "example": "Music 2", "definition": {"extract_line": 15125, "page": "08.03.01"}},
+    {"spelling": "Music Stop", "kind": "command", "page": "08.01.09", "extract_line": 14729, "example": "Music Stop", "definition": {"extract_line": 15140, "page": "08.03.01"}},
+    {"spelling": "Music Off", "kind": "command", "page": "08.01.09", "extract_line": 14730, "example": "Music Off", "definition": {"extract_line": 15147, "page": "08.03.01"}},
+    {"spelling": "Mvolume", "kind": "command", "page": "08.01.09", "extract_line": 14728, "example": "Mvolume 40", "definition": {"extract_line": 15155, "page": "08.03.01"}},
+    {"spelling": "Tempo", "kind": "command", "page": "08.01.10", "extract_line": 14743, "example": "Tempo 30", "definition": {"extract_line": 15167, "page": "08.03.02"}}
+  ],
+  "notes": [
+    "Line 14729 repeats MVOLUME for speed; the Tempo example at 14743 and its definition at 15167 identify Tempo. No alternate speed semantics are inferred.",
+    "The voice table at 14431 says 2,4 for mask 6, despite the preceding zero-based 0–3 voice description. No channel mapping or argument limits are inferred.",
+    "Sample assigns a bank sample to a wave here; sample management and playback from chapter 8.2 are outside this inventory."
+  ]
+}

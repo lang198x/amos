@@ -164,5 +164,14 @@ Professional manual extract. They cover significant capitals/padding, labels,
 separators, expressions, registers, Autotest and the extended If action signatures
 on 07.06.17. All range text and following page footers were checked against the
 held extract. This does not qualify a compiled program or individual release.
-The 36 documentary records remain separate from BASIC's 490 chapter entries;
+The 36 documentary records remain separate from BASIC's chapter entries;
 the new standalone fixture is authored here and is not a native execution claim.
+
+
+Music/basic sound coverage cites Professional §8.1, pp.08.01.01–10, in the same
+hash-pinned extract. All 21 entry lines and following printed-page footers were
+checked, along with five playback definition citations on pp.08.03.01–02.
+The repeated MVOLUME speed wording at line 14729 is retained; the Tempo example
+at 14743 and definition at 15167 identify the speed command. The voice-table
+2,4 wording at 14431 is retained without deriving channel semantics. The fresh
+music fixture is authored here as a lexical input and was not executed natively.

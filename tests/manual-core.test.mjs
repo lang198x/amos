@@ -9,7 +9,7 @@ test('manual inventory has cited, nonempty examples for every declared chapter',
   const source = await json('source.json');
   assert.equal(source.product, 'AMOS Professional');
   assert.match(source.extract_sha256, /^[0-9a-f]{64}$/);
-  assert.deepEqual(source.chapters, ['05-01', '05-02', '05-03', '05-04', '05-05', '05-06', '10-01', '05-07', '05-08', '06-01', '06-02', '06-03', '05-09', '06-04', '06-05', '07-01', '07-02', '07-03', '07-04', '07-05', '07-06', '10-02']);
+  assert.deepEqual(source.chapters, ['05-01', '05-02', '05-03', '05-04', '05-05', '05-06', '10-01', '05-07', '05-08', '06-01', '06-02', '06-03', '05-09', '06-04', '06-05', '07-01', '07-02', '07-03', '07-04', '07-05', '07-06', '10-02', '08-01']);
   const seen = new Set();
   let checked = 0;
   for (const id of source.chapters) {
@@ -43,7 +43,14 @@ test('manual inventory has cited, nonempty examples for every declared chapter',
       checked++;
     }
   }
-  assert.equal(checked, 490);
+  assert.equal(checked, 511);
+  const music = await json('08-01.json');
+  const playback = music.entries.filter((entry) => entry.definition);
+  assert.deepEqual(playback.map((entry) => entry.spelling), ['Music', 'Music Stop', 'Music Off', 'Mvolume', 'Tempo']);
+  for (const entry of playback) {
+    assert.ok(Number.isInteger(entry.definition.extract_line) && entry.definition.extract_line > entry.extract_line);
+    assert.match(entry.definition.page, /^08\.03\.0[12]$/);
+  }
   const maths = await json('05-03.json');
   const crosschecked = maths.entries.filter((entry) => entry.held_retypeset_page);
   assert.deepEqual(crosschecked.map((entry) => entry.spelling), ['Degree', 'Radian', 'Sin', 'Cos']);

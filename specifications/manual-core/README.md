@@ -6,9 +6,9 @@ chapters 5.1–5.5 (basics, strings, maths, control and procedures), 48 from cha
 5.8 (joystick/mouse), 54 from 6.1–6.3 (screen setup/use/effects), 25 from 5.9
 (memory banks), 27 from 6.4 (drawing), 35 from 6.5 (menus), 19 from 7.1
 (sprites), 21 from 7.2 (Bobs), 13 from 7.3 (object updating), 14 from 7.4
-(collisions), 12 from 7.5 (IFF animation), 24 from 7.6 (BASIC AMAL controls) and
-38 from 10.2 (file/directory I/O).
-The 490 BASIC entries include grouped headings, connective words, typed forms and the `?`
+(collisions), 12 from 7.5 (IFF animation), 24 from 7.6 (BASIC AMAL controls),
+38 from 10.2 (file/directory I/O) and 21 from 8.1 (music/basic sound).
+The 511 BASIC entries include grouped headings, connective words, typed forms and the `?`
 print shortcut. Fourteen embedded menu commands are recorded separately in
 `06-05.json`, outside the BASIC vocabulary count.
 Each entry cites a printed page and a line in the hash-pinned held extract
@@ -139,3 +139,14 @@ marker without treating typed identifiers such as `Print#` as file operations.
 Filenames, wildcard patterns and included programs remain opaque/unresolved.
 No channel, field size, random-access layout, pointer range, include expansion,
 filesystem mutation or original runtime acceptance is validated by highlighting.
+
+
+The music chapter includes effects, voices/volume, notes, wave definitions,
+noise/sample assignment, envelopes, filter controls, Vumeter and five music
+playback controls. The playback entries also cite their full definitions in
+§8.3. Line 14729 repeats MVOLUME for speed, while the example and §8.3 identify
+Tempo. The voice table at line 14431 lists voices 2,4 for mask 6, despite the
+zero-based 0–3 description; no channel mapping is inferred. Sample here assigns
+a bank sample to a wave. The sample-management/playback, tracker/MED and speech
+chapters remain separate sweeps. Wave payloads stay strings; no bank, amplitude,
+voice mask, pitch, envelope, volume or tempo validity is established.
