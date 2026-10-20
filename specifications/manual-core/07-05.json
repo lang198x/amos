@@ -1,0 +1,17 @@
+{
+  "chapter": "07.05",
+  "entries": [
+    {"spelling": "Load Iff", "kind": "command", "page": "07.05.01", "extract_line": 12367, "example": "Load Iff \"scene.iff\",0"},
+    {"spelling": "Save Iff", "kind": "command", "page": "07.05.01", "extract_line": 12375, "example": "Save Iff \"scene.iff\",0"},
+    {"spelling": "Iff Anim", "kind": "command", "page": "07.05.03", "extract_line": 12481, "example": "Iff Anim \"scene.anim\" To 0,2"},
+    {"spelling": "Frame Load", "kind": "function", "page": "07.05.04", "extract_line": 12515, "example": "MC_COUNT=Frame Load(1 To 10,20)"},
+    {"spelling": "Frame Length", "kind": "function", "page": "07.05.04", "extract_line": 12554, "example": "MC_BYTES=Frame Length(1,20)"},
+    {"spelling": "Frame Play", "kind": "function", "page": "07.05.05", "extract_line": 12586, "example": "MC_NEXT=Frame Play(10,1,0)"},
+    {"spelling": "Frame Skip", "kind": "function", "page": "07.05.06", "extract_line": 12642, "example": "MC_NEXT=Frame Skip(10,1)"},
+    {"spelling": "Frame Param", "kind": "function", "page": "07.05.06", "extract_line": 12656, "example": "MC_DELAY=Frame Param"},
+    {"spelling": "Picture", "kind": "function", "page": "07.05.07", "extract_line": 12686, "example": "MC_MASK=Picture"},
+    {"spelling": "Mask Iff", "kind": "command", "page": "07.05.07", "extract_line": 12690, "example": "Mask Iff Picture"},
+    {"spelling": "Freeze", "kind": "command", "page": "07.05.07", "extract_line": 12710, "example": "Freeze"},
+    {"spelling": "Unfreeze", "kind": "command", "page": "07.05.07", "extract_line": 12714, "example": "Unfreeze"}
+  ]
+}

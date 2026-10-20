@@ -79,6 +79,15 @@ Get Bob signature and Hrev flag example contain discrepancies with nearby prose;
 they are recorded in the inventory README without becoming semantic rules.
 Lexical coverage does not establish image-flag values or rendered behaviour.
 
+The collision/IFF continuation cites §§7.4–7.5: 26 further entries, for 428 BASIC
+chapter entries plus the 14 separate embedded menu records. All 442 recorded
+line/page bindings match the held extract. It follows the function headings for
+collision and frame queries, and instruction headings for Iff Anim and Mask Iff.
+Conflicting nearby prose labels and apparent `Bobsprite 001`/`Form Param` example
+transcriptions are recorded without inventing overloads or aliases. These
+citations do not implement IFF decoding or qualify AMAL, collision accuracy or
+original animation timing.
+
 [Opening sources](../corpus/opening/README.md) retain their upstream MIT licence
 and immutable provenance. [New native probes](../corpus/probes/README.md) record
 exact input hashes, screenshots and a pinned runtime profile. Host parser tests

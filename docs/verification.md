@@ -187,3 +187,27 @@ the fresh listing and key scopes in both themes. Disposable builds do not replac
 release assets or publish packages. No native animation, rendering, AMAL or
 image-bank persistence is qualified. Parser scope and Marketplace availability
 remain unchanged; no dependency was added.
+
+## Unreleased collision and IFF highlighting
+
+The §§7.4–7.5 inventories add 26 entries (three previously passing), for 428 BASIC
+entries and 14 separate embedded menu records. All 442 source-line/page bindings
+and both held-source hashes match. Earlier 109/171/262/349/402 checks and all 398
+game expectations remain intact.
+
+Sixty-three integration tests pass in each existing consumer (shiki-highlight-api
+1.3.0 and local 2.0.0 with Shiki 4.4.3), in both themes. Six package/inventory
+checks and editor synchronisation pass. Focused checks distinguish collision
+functions from object commands, target-range connectives, nested zone queries,
+Zone$, frame functions and IFF mask commands/queries. Literal filenames, AMAL-like
+strings, typed suffixes and transcription mistakes retain conservative scopes.
+Disabling Frame Play fails at its exact phrase in an expression; it was restored
+before passing checks.
+
+Actual npm/VSIX builds contain the canonical grammar and matching icon metadata
+and bytes, with no public gallery flags. An extracted npm registration preserves
+the new mixed listing and critical scopes in both themes. These disposable builds
+do not publish packages or replace release assets. Native collision results,
+file/channel behaviour, animation contents, pointers, timing and AMAL remain
+unqualified. Parser scope and private Marketplace availability are unchanged;
+no dependency was added.

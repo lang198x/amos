@@ -9,7 +9,7 @@ Published npm 0.1.0 and editor 0.1.1 retain their original grammar.
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.3 and 10.1, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.5 and 10.1, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -166,6 +166,23 @@ omitted arguments and masks receive lexical scopes without semantic validation.
 All 14 embedded menu examples remain strings. Bob's BASIC command scope comes
 from the independent object chapter, rather than promotion of embedded commands.
 A fresh mixed listing exercises creation, positioning, updating and queries.
-Collisions, IFF animation, AMAL, broader object/icon facilities and native rendering
-remain later work. Parser scope, package releases and private Marketplace
+AMAL, broader object/icon facilities and native rendering remain later work. Parser scope, package releases and private Marketplace
+availability are unchanged.
+
+## Collision detection and IFF animation milestone
+
+The §§7.4–7.5 inventories add 14 collision and 12 IFF entries, for 428 BASIC
+chapter entries across 20 chapters. Three new entries passed the previous full
+phrase/boundary checks; all 26 now pass. The 14 embedded menu records stay separate.
+
+Bob/Sprite collision queries keep function scopes beside bare object commands.
+Checks cover target ranges, Col queries, screen/hardware zones, masking and
+Frame Load/Length/Play/Skip/Param expressions. Mask Iff is a command and Picture
+a function. Load/Save Iff, Iff Anim, Freeze and Unfreeze have command scopes.
+A fresh mixed listing preserves these contexts and literal filenames; it assumes
+an already-open channel for frame expressions and does not qualify file I/O.
+
+This is vocabulary coverage, not collision accuracy, frame decoding, mask/pointer
+validation, render timing or native acceptance. AMAL and general file I/O remain
+separate work. Published packages, parser scope and private Marketplace
 availability are unchanged.

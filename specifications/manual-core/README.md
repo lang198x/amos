@@ -5,8 +5,8 @@ chapters 5.1–5.5 (basics, strings, maths, control and procedures), 48 from cha
 5.6 (text), 14 from chapter 10.1 (keyboard input), 17 from 5.7 (windows), 20 from
 5.8 (joystick/mouse), 54 from 6.1–6.3 (screen setup/use/effects), 25 from 5.9
 (memory banks), 27 from 6.4 (drawing), 35 from 6.5 (menus), 19 from 7.1
-(sprites), 21 from 7.2 (Bobs) and 13 from 7.3 (object updating). The 402 BASIC
-entries include grouped headings, connective words, typed forms and the `?`
+(sprites), 21 from 7.2 (Bobs), 13 from 7.3 (object updating), 14 from 7.4
+(collisions) and 12 from 7.5 (IFF animation). The 428 BASIC entries include grouped headings, connective words, typed forms and the `?`
 print shortcut. Fourteen embedded menu commands are recorded separately in
 `06-05.json`, outside the BASIC vocabulary count.
 Each entry cites a printed page and a line in the hash-pinned held extract
@@ -90,3 +90,13 @@ reversal flag, and its first Get Bob signature repeats x2 where the surrounding
 prose describes a top-left coordinate pair. These discrepancies are not converted
 into image flags or argument rules. Hardware limits, masking, update timing and
 actual rendered results require separate evidence.
+
+Collision functions retain their complete Bob/Sprite prefixes and optional target
+range examples. Zone, Hzone and Mouse Zone are functions; Reserve/Set/Reset Zone
+are commands. Frame Load/Length/Play/Skip/Param and Picture are functions, while
+Mask Iff and Iff Anim follow their instruction headings. Nearby prose calls the
+latter two functions, but shows statement usage; no alternate expression forms
+are inferred. The held examples also contain `Bobsprite 001` and `Form Param`,
+which are not promoted to builtin spellings. Function headings give Bobsprite Col
+and Frame Param. Masks, collision results, frame data/pointers and timing are not
+validated. General file-channel I/O remains a separate inventory.

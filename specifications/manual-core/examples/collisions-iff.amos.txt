@@ -1,0 +1,30 @@
+Rem Fresh lexical example; not a runtime-qualified program.
+Screen Open 0,320,200,16,Lowres
+Ink 2 : Bar 0,0 To 15,15 : Get Bob 1,0,0 To 16,16
+Make Mask 1 : Double Buffer : Wait Vbl
+Bob 1,80,80,1 : Bob 2,90,80,1
+Sprite 8,X Hard(80),Y Hard(80),1
+Reserve Zone 2 : Set Zone 1,40,40 To 120,120
+MC_HIT=Bob Col(1,2 To 4)
+If MC_HIT Then Print Col(-1)
+MC_HIT=Sprite Col(8,9 To 12)
+MC_HIT=Spritebob Col(8,1 To 4)
+MC_HIT=Bobsprite Col(1,8 To 12)
+MC_ZONE=Zone(X Bob(1),Y Bob(1))
+MC_ZONE=Hzone(X Sprite(8),Y Sprite(8))
+MC_MOUSE=Mouse Zone
+Reset Zone 1 : Reserve Zone
+Bob Off : Sprite Off
+Rem The following expressions assume animation channel 1 is already open.
+MC_BYTES=Frame Length(1,20)
+MC_COUNT=Frame Load(1 To 10,20)
+MC_NEXT=Frame Play(10,1,0)
+Double Buffer : Screen Swap : Wait Vbl
+MC_NEXT=Frame Skip(MC_NEXT,1)
+MC_DELAY=Frame Param : Wait MC_DELAY
+Mask Iff Picture : Load Iff "scene.iff",0
+Save Iff "scene.iff",0
+Iff Anim "scene.anim" To 0,2
+Freeze : Unfreeze
+Print "Bob Col; Frame Play; Mask Iff; Form Param"
+Rem Frame Load and Sprite Col stay in this comment.

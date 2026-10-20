@@ -1,0 +1,19 @@
+{
+  "chapter": "07.04",
+  "entries": [
+    {"spelling": "Make Mask", "kind": "command", "page": "07.04.02", "extract_line": 12096, "example": "Make Mask 1"},
+    {"spelling": "Bob Col", "kind": "function", "page": "07.04.03", "extract_line": 12113, "example": "MC_HIT=Bob Col(1,2 To 4)"},
+    {"spelling": "Sprite Col", "kind": "function", "page": "07.04.03", "extract_line": 12137, "example": "MC_HIT=Sprite Col(8,9 To 12)"},
+    {"spelling": "Spritebob Col", "kind": "function", "page": "07.04.04", "extract_line": 12162, "example": "MC_HIT=Spritebob Col(8,1 To 4)"},
+    {"spelling": "Bobsprite Col", "kind": "function", "page": "07.04.04", "extract_line": 12185, "example": "MC_HIT=Bobsprite Col(1,8 To 12)"},
+    {"spelling": "Col", "kind": "function", "page": "07.04.04", "extract_line": 12195, "example": "MC_OBJECT=Col(-1)"},
+    {"spelling": "Set Hardcol", "kind": "command", "page": "07.04.05", "extract_line": 12242, "example": "Set Hardcol %1111,%111111"},
+    {"spelling": "Hardcol", "kind": "function", "page": "07.04.05", "extract_line": 12255, "example": "MC_HIT=Hardcol"},
+    {"spelling": "Reserve Zone", "kind": "command", "page": "07.04.06", "extract_line": 12273, "example": "Reserve Zone 4"},
+    {"spelling": "Set Zone", "kind": "command", "page": "07.04.06", "extract_line": 12285, "example": "Set Zone 1,20,20 To 100,80"},
+    {"spelling": "Zone", "kind": "function", "page": "07.04.06", "extract_line": 12294, "example": "MC_ZONE=Zone(X Bob(1),Y Bob(1))"},
+    {"spelling": "Hzone", "kind": "function", "page": "07.04.07", "extract_line": 12318, "example": "MC_ZONE=Hzone(X Sprite(8),Y Sprite(8))"},
+    {"spelling": "Mouse Zone", "kind": "function", "page": "07.04.07", "extract_line": 12329, "example": "MC_ZONE=Mouse Zone"},
+    {"spelling": "Reset Zone", "kind": "command", "page": "07.04.07", "extract_line": 12336, "example": "Reset Zone 1"}
+  ]
+}
