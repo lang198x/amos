@@ -43,8 +43,17 @@ through the existing Shiki installation. No dependency was added to this project
 The versioned tarball retains the original pre-publication documentation.
 Current availability and installation instructions are maintained in this repo.
 
-The VSIX remains available through GitHub downloads. No Marketplace publication
-is claimed.
+The original 0.1.0 VSIX remains available through GitHub downloads. Microsoft
+rejected its `amos` package name as already present in the Marketplace. The
+user-approved editor-only 0.1.1 uses `lang198x-amos` and the approved L PNG icon.
+Its VSIX identity, version, icon manifest asset, PNG dimensions, exact icon bytes
+and canonical grammar were inspected. Three Node package checks and editor
+synchronisation pass; the new VSIX installs in isolated directories. The first
+sandboxed attempt failed with `EMFILE: too many open files, watch`; the isolated
+CLI installation then succeeded outside the sandbox. Native window selection
+was rejected by automatic approval review because it could bind a private editor
+window, so no native visual inspection is claimed. Marketplace upload is pending.
+The npm package, Rust crate and highlighting coverage remain at 0.1.0.
 
 Native file codecs/output, execution, complete name/type analysis, LSP and
 qualification of Creator/Easy/other releases remain future work.

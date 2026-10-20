@@ -1,15 +1,41 @@
 {
-  "name": "amos",
-  "displayName": "AMOS — Lang198x",
+  "name": "lang198x-amos",
+  "displayName": "AMOS \u2014 Lang198x",
   "description": "Bounded AMOS syntax highlighting; no compiler or language server",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "lang198x",
   "license": "GPL-2.0-or-later",
-  "engines": { "vscode": "^1.85.0" },
-  "categories": ["Programming Languages"],
-  "repository": { "type": "git", "url": "https://github.com/lang198x/amos.git" },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lang198x/amos.git"
+  },
   "contributes": {
-    "languages": [{ "id": "amos", "aliases": ["AMOS", "AMOS BASIC"], "extensions": [".amos.txt"], "configuration": "./language-configuration.json" }],
-    "grammars": [{ "language": "amos", "scopeName": "source.basic.amos", "path": "./syntaxes/amos.tmLanguage.json" }]
-  }
+    "languages": [
+      {
+        "id": "amos",
+        "aliases": [
+          "AMOS",
+          "AMOS BASIC"
+        ],
+        "extensions": [
+          ".amos.txt"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "amos",
+        "scopeName": "source.basic.amos",
+        "path": "./syntaxes/amos.tmLanguage.json"
+      }
+    ]
+  },
+  "icon": "icon.png"
 }

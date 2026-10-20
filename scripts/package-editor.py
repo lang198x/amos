@@ -13,6 +13,7 @@ FILES = [
     "syntaxes/amos.tmLanguage.json",
     "README.md",
     "LICENSE",
+    "icon.png",
 ]
 
 
@@ -43,6 +44,7 @@ def main() -> None:
       <Property Id="Microsoft.VisualStudio.Code.ExecutesCode" Value="false" />
     </Properties>
     <License>extension/LICENSE</License>
+    <Icon>extension/icon.png</Icon>
   </Metadata>
   <Installation><InstallationTarget Id="Microsoft.VisualStudio.Code" /></Installation>
   <Dependencies />
@@ -50,6 +52,7 @@ def main() -> None:
     <Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
     <Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" />
     <Asset Type="Microsoft.VisualStudio.Services.Content.License" Path="extension/LICENSE" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/icon.png" Addressable="true" />
   </Assets>
 </PackageManifest>
 '''
@@ -58,6 +61,7 @@ def main() -> None:
   <Default Extension="json" ContentType="application/json" />
   <Default Extension="md" ContentType="text/markdown" />
   <Default Extension="vsixmanifest" ContentType="text/xml" />
+  <Default Extension="png" ContentType="image/png" />
   <Override PartName="/extension/LICENSE" ContentType="text/plain" />
 </Types>
 """

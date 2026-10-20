@@ -35,6 +35,26 @@ semantic implementation. Keep source and test files small as this grows.
 
 ## Current outcome
 
+## Publication follow-up
+
+The user completed publisher creation and uploaded the approved L logo. The
+0.1.0 upload was rejected: "The extension 'amos' already exists in the Marketplace.
+Please use a different 'name' in the package.json file". The user chose the
+replacement editor name `lang198x-amos` and approved including the icon in 0.1.1.
+
+1. Change only `editors/vscode/package.json` name/version/icon, copy the approved
+   PNG with provenance, and teach `scripts/package-editor.py` to package its PNG
+   content type and Marketplace icon asset. npm and Rust remain at 0.1.0.
+2. Run package checks and inspect the actual VSIX manifest, PNG and canonical
+   grammar. Install the new VSIX in isolated directories; do not retry native
+   editor selection, which automatic approval review rejected due to the risk of
+   binding a private editor window. Native visual inspection remains unverified.
+3. Publish the new VSIX, verify visible Marketplace status and fresh registry
+   installation if available, then update actual availability documentation.
+4. Commit/push and retain the release asset before cleaning task-owned resources.
+
+## Earlier outcome
+
 The user chose a new `lang198x` publisher. The Marketplace management route
 reached Microsoft sign-in, but two user sign-in attempts stalled. The browser
 connection then timed out while inspecting the existing page. No publisher was
