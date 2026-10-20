@@ -1,0 +1,17 @@
+{
+  "chapter": "11.02",
+  "entries": [
+    {"spelling": "Say", "kind": "command", "page": "11.02.01", "extract_line": 20192, "example": "Say \"Ready to begin.\",1"},
+    {"spelling": "Set Talk", "kind": "command", "page": "11.02.01", "extract_line": 20224, "example": "Set Talk 0,,120,150"},
+    {"spelling": "Talk Misc", "kind": "command", "page": "11.02.02", "extract_line": 20256, "example": "Talk Misc 32,12000"},
+    {"spelling": "Talk Stop", "kind": "command", "page": "11.02.02", "extract_line": 20277, "example": "Talk Stop"},
+    {"spelling": "Mouth Width", "kind": "function", "page": "11.02.03", "extract_line": 20295, "example": "MC_WIDTH=Mouth Width"},
+    {"spelling": "Mouth Height", "kind": "function", "page": "11.02.03", "extract_line": 20302, "example": "MC_HEIGHT=Mouth Height"},
+    {"spelling": "Mouth Read", "kind": "function", "page": "11.02.03", "extract_line": 20309, "example": "MC_POSITION=Mouth Read"}
+  ],
+  "notes": [
+    "The manual labels Mouth Width, Mouth Height and Mouth Read as functions; Read is not treated as a command based on its name.",
+    "Set Talk allows omitted parameters with commas preserved. Say has an optional mode argument. Lexical examples do not validate parameter ranges or timing.",
+    "The chapter describes a narrator device and multitasking context for mouth functions and Talk Stop. Availability, edition differences, spoken output, return values and mouth animation remain unqualified."
+  ]
+}

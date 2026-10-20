@@ -1,0 +1,13 @@
+Rem Lexical speech board: narrator availability and output are not tested
+MC_TEXT$="Ready to begin."
+Set Talk 0,,120,150 : Talk Misc 32,12000
+Say MC_TEXT$
+Say "Mouth Read: Talk Stop",0
+Set Talk ,,100, : Say MC_TEXT$,1
+MC_POSITION=Mouth Read
+MC_WIDTH=Mouth Width : MC_HEIGHT=Mouth Height
+If MC_WIDTH>=0 And MC_HEIGHT>=0 Then Print MC_WIDTH;MC_HEIGHT
+Talk Stop
+MC_CAPTION$="Say: Set Talk, Mouth Width and Mouth Height"
+' Talk Misc Mouth Read Say
+MC_SAY_VALUE=1 : MC_MOUTH_WIDTH=20

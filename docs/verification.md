@@ -484,3 +484,29 @@ Extracted npm registrations render all three modes in both themes and retain Med
 Midi On's command scope. These checks do not establish installed-editor appearance,
 native module playback, library loading or MIDI behavior. Versions, parser,
 published preview 0.2.0 and private Marketplace availability are unchanged.
+
+
+## Unreleased speech highlighting
+
+Seven §11.2 forms bring BASIC to 543 chapter entries across 26 chapters. None
+passed before the change. All seven exact heading/page bindings match the pinned
+Professional extract. Mouth Read retains its documented function role; ordinary
+Read stays a command. Narrator availability and multitasking context remain
+separate from lexical coverage.
+
+Twenty-two package/inventory checks and editor sync pass. One hundred and twelve
+highlighting integrations pass in each existing consumer (Shiki 4.4.3 with
+shiki-highlight-api 1.3.0 and 2.0.0), using dark-plus/light-plus. Focused checks
+cover all seven forms in both BASIC profiles, case/tabs, typed/suffixed lookalikes,
+standalone Say versus labels, optional Say modes, omitted Set Talk parameters,
+mouth expressions, quoted punctuation/apostrophes, comments and line recovery.
+The mixed listing preserves exact source and emits styled HTML/CSS. Removing
+Mouth Read's function alternative makes the focused suite fail in both profiles;
+restoring and synchronising the grammar makes it pass again.
+
+Disposable npm/VSIX archives contain exact source grammars, icon, configuration
+and manifest files, with no public gallery flags or executable host. Extracted
+npm registrations render all three modes in both themes and retain Mouth Read's
+function scope. No installed-editor visual review, spoken audio, narrator setup,
+mode timing or mouth animation is claimed. Versions, parser, published preview
+0.2.0 and private Marketplace availability are unchanged.

@@ -194,3 +194,12 @@ signature includes a bank while its looping example omits one; no loading defaul
 is inferred. MED prose prints MMDO beside MMD1; this is retained as source wording,
 not format qualification. The independent music-modules fixture is authored here
 and was not executed with a tracker module, MED library or MIDI device.
+
+
+Speech coverage cites seven named headings in Professional §11.2, pp.11.02.01–03,
+in the same pinned extract. Every heading line and following printed-page footer
+was checked. The manual labels Mouth Read a function, allows omitted Set Talk
+parameters with commas preserved and gives Say an optional mode. The chapter's
+narrator and multitasking context is retained without qualifying installation,
+editions or output. The independent speech fixture is authored here and was not
+executed with the narrator device or used to measure mouth animation.

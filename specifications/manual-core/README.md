@@ -7,8 +7,8 @@ chapters 5.1–5.5 (basics, strings, maths, control and procedures), 48 from cha
 (memory banks), 27 from 6.4 (drawing), 35 from 6.5 (menus), 19 from 7.1
 (sprites), 21 from 7.2 (Bobs), 13 from 7.3 (object updating), 14 from 7.4
 (collisions), 12 from 7.5 (IFF animation), 24 from 7.6 (BASIC AMAL controls),
-38 from 10.2 (file/directory I/O) 21 from 8.1 (music/basic sound) ten from 8.2 (samples) and 15 from 8.3 (music modules).
-The 536 BASIC entries include grouped headings, connective words, typed forms and the `?`
+38 from 10.2 (file/directory I/O) 21 from 8.1 (music/basic sound) ten from 8.2 (samples) 15 from 8.3 (music modules) and seven from 11.2 (speech).
+The 543 BASIC entries include grouped headings, connective words, typed forms and the `?`
 print shortcut. Fourteen embedded menu commands are recorded separately in
 `06-05.json`, outside the BASIC vocabulary count.
 Each entry cites a printed page and a line in the hash-pinned held extract
@@ -171,3 +171,12 @@ Track Load's signature supplies a bank, while a later example omits it. The MED
 prose prints MMDO alongside MMD1; neither this spelling nor the library discussion
 qualifies module versions, native loading, playback interaction or MIDI output.
 Module filenames remain opaque strings. Speech remains a separate sweep.
+
+
+The speech chapter adds Say, Set Talk, Talk Misc/Stop and the Mouth Width/Height/
+Read functions. Mouth Read retains the manual's function role, while ordinary
+Read remains a command. Set Talk's omitted parameters keep their commas, and
+Say's optional mode receives lexical coverage without range or timing checks.
+Speech strings stay opaque, including command-looking words, punctuation and
+apostrophes. Narrator availability, edition differences, spoken output and mouth
+animation remain unqualified; these are newly authored lexical examples.

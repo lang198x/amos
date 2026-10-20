@@ -3,7 +3,7 @@
 Preview 0.2.0 releases the expanded BASIC and optional AMOS 3D highlighting.
 The Rust parser remains at 0.1.0 with its opening-program subset. Neither surface
 is complete AMOS support. Current source additionally covers §10.2 file/directory
-I/O, §8.1 music/basic sound §8.2 samples and §8.3 music modules; these continuations are not in preview 0.2.0.
+I/O, §8.1 music/basic sound §8.2 samples §8.3 music modules and §11.2 speech; these continuations are not in preview 0.2.0.
 The table describes current source.
 
 | Surface | Implemented |
@@ -11,7 +11,7 @@ The table describes current source.
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.6, 8.1–8.3 and 10.1–10.2, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.6, 8.1–8.3, 10.1–10.2 and 11.2, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -351,5 +351,19 @@ and suffixed lookalikes remain identifiers.
 A fresh mixed listing covers module controls beside AMOS music and sample
 commands. Filenames stay strings. Module formats, MED library availability,
 audio interaction and MIDI output remain unqualified. Speech is a later pass.
+This continuation is unreleased; parser, published 0.2.0 and Marketplace state
+are unchanged.
+
+
+## Speech milestone
+
+Seven §11.2 entries bring BASIC to 543 chapter entries across 26 chapters. None
+passed before this change; all seven now pass in both profiles and themes. Say,
+Set Talk and Talk Misc/Stop have command scopes. Mouth Width/Height/Read have
+function scopes in expressions, alongside ordinary Read's existing command role.
+
+The fresh mixed listing exercises speech strings, optional Say modes, omitted
+Set Talk parameters and mouth queries. Narrator installation, mode timing, return
+values, spoken audio and mouth animation are not established by highlighting.
 This continuation is unreleased; parser, published 0.2.0 and Marketplace state
 are unchanged.
