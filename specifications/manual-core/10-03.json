@@ -1,0 +1,22 @@
+{
+  "chapter": "10.03",
+  "entries": [
+    {"spelling": "Printer Open", "kind": "command", "page": "10.03.01", "extract_line": 18955, "example": "Printer Open"},
+    {"spelling": "Printer Close", "kind": "command", "page": "10.03.01", "extract_line": 18961, "example": "Printer Close"},
+    {"spelling": "Printer Send", "kind": "command", "page": "10.03.01", "extract_line": 18971, "example": "Printer Send \"Ready\"+Chr$(10)"},
+    {"spelling": "Printer Dump", "kind": "command", "page": "10.03.03", "extract_line": 19069, "example": "Printer Dump 0,0 To 100,80,0,0,$80"},
+    {"spelling": "Printer Out", "kind": "command", "page": "10.03.05", "extract_line": 19158, "example": "Printer Out Start(10),Length(10)"},
+    {"spelling": "Printer Abort", "kind": "command", "page": "10.03.05", "extract_line": 19174, "example": "Printer Abort"},
+    {"spelling": "Printer Check", "kind": "function", "page": "10.03.05", "extract_line": 19181, "example": "MC_READY=Printer Check"},
+    {"spelling": "Printer Online", "kind": "function", "page": "10.03.06", "extract_line": 19191, "example": "MC_ONLINE=Printer Online"},
+    {"spelling": "Printer Error", "kind": "function", "page": "10.03.06", "extract_line": 19199, "example": "MC_CODE=Printer Error"},
+    {"spelling": "Printer Base", "kind": "function", "page": "10.03.06", "extract_line": 19206, "example": "MC_ADDRESS=Printer Base"},
+    {"spelling": "Open Port", "kind": "command", "page": "10.03.06", "extract_line": 19223, "example": "Open Port 1,\"PRT:\""},
+    {"spelling": "Port", "kind": "function", "page": "10.03.07", "extract_line": 19249, "example": "MC_READY=Port(1)"}
+  ],
+  "notes": [
+    "The FRACCOLS discussion first divides by $FFFF, then prints $FFF while describing half width. This discrepancy is not converted into dump scaling rules.",
+    "The Open Port example describes ten lines but loops from 0 To 10. No loop-count semantics or native output result is inferred.",
+    "Embedded escape names and dump setting labels are not extra BASIC constants. Printer buffers, driver status, memory addresses, port readiness and native behavior remain unqualified."
+  ]
+}

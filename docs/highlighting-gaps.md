@@ -1,8 +1,8 @@
 # Remaining highlighting work
 
 The approved sequence is complete: **§7.7 Icons and Blocks**, **§11.1 Fonts**,
-then **§12.2 Error Handling**. Current BASIC coverage is 582 chapter entries across
-29 chapters. The audit baseline and representative probes below retain their
+then **§12.2 Error Handling**. Current BASIC coverage is 594 chapter entries across
+30 chapters, including the subsequent printer/general-port sweep. The audit baseline and representative probes below retain their
 pre-implementation results; the completion record follows them. Publication
 remains separate.
 
@@ -103,7 +103,7 @@ review; they are not silently excluded from a future coverage claim.
 | Route | Remaining review |
 | --- | --- |
 | §§9.1–9.4 Interface | Separate BASIC Dialog/resource controls from the embedded Interface language. Inventory both before deciding any standalone mode or string injection. The existing AMAL mode is not Interface coverage. |
-| §§10.3–10.5 printer, serial, parallel | Device commands, functions and transfer/status forms. Printer control payloads stay separate from BASIC vocabulary. |
+| §§10.4–10.5 serial/parallel | Device commands, functions and transfer/status forms; the manual labels serial facilities an I/O Extension, which needs explicit profile review. §10.3 printer/general-port forms now have a 12-entry inventory; escape payloads stay opaque. |
 | §10.6 AREXX | BASIC integration commands and external script payload boundaries; no AREXX language implementation is implied. |
 | §11.3 floating point | Reconcile repeated precision/maths vocabulary with existing §5.3; distinguish library/number-representation facts from missing lexical forms. |
 | §11.4 multitasking | AMOS front/back/lock, waiting and inter-program communication forms. |

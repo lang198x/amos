@@ -224,3 +224,11 @@ signature lines and page bindings match the pinned extract. Resume Label's setup
 handler wording and the RESUMEL ABEL typo are retained without deriving recovery
 placement rules. Fresh error examples are lexical inputs, not executed handlers
 or evidence of message availability in compiled programs.
+
+
+The 12 §10.3 printer/port entries cite exact headings and printed pages
+10.03.01–07 in the pinned extract. The FRACCOLS $FFFF/$FFF wording and the
+Open Port loop's ten-line description versus 0 To 10 are retained without
+inferring semantics. Embedded printer controls and dump labels are distinct
+from BASIC forms. The fresh printer fixture is a lexical input, not hardware,
+device-driver, pointer or output evidence.

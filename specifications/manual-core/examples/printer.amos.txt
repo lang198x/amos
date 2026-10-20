@@ -1,0 +1,15 @@
+Rem Lexical printer board: no device or output is accessed by tests
+Trap Printer Open
+MC_CODE=Errtrap : MC_MESSAGE$=Err$(MC_CODE)
+MC_READY=Printer Check : MC_ONLINE=Printer Online
+Printer Send "Ready"+Chr$(27)+"E"
+MC_CODE=Printer Error : MC_ADDRESS=Printer Base
+Printer Dump 0,0 To 100,80,0,0,$80
+Printer Abort : Printer Close
+Open Port 1,"PRT:"
+MC_READY=Port(1) : Print #1,"Ready" : Close 1
+Printer Out Start(10),Length(10)
+Error 88
+MC_NOTE$="Printer Error: Open Port SER:"
+' Printer Open Port Printer Dump
+MC_PRINTER_VALUE=1 : MC_PORT_VALUE=2

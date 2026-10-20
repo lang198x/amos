@@ -549,3 +549,21 @@ passes. npm/VSIX source bytes match with no public flag or executable host;
 extracted modes render both themes and preserve the fresh listing. Native handler
 behavior, code ranges and message availability remain unqualified. All three
 approved sweeps are complete; parser, versions and Marketplace are unchanged.
+
+
+## Printer and general port continuation
+
+Twelve §10.3 heading/page citations match the pinned extract; none passed complete
+scopes before the change. All 22 package/inventory tests and 137 integrations per
+existing consumer pass in both profiles/themes. Checks cover every form, typed
+boundaries, Printer Error versus Error, dump variants, Trap composition, device
+strings, opaque escape payloads and existing file channels. Removing the printer
+command rule fails the focused suite; restoration and editor sync pass. The fresh
+mixed listing preserves exact source and emits styled HTML/CSS. No printer/port
+is accessed and no native output or driver result is claimed.
+
+Disposable npm/VSIX contents match source, including grammars/icon/configuration,
+with no public gallery flags or executable host. Extracted registrations render
+all modes in both themes and retain Printer Error's function scope. No installed
+editor review or native device test is claimed. Versions, parser, published
+preview 0.2.0 and Marketplace state are unchanged.

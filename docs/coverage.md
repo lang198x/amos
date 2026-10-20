@@ -11,7 +11,7 @@ The table describes current source.
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 10.1–10.2, 11.1–11.2 and 12.2, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 10.1–10.3, 11.1–11.2 and 12.2, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -404,3 +404,14 @@ command preserves both scopes; handler and recovery targets remain unresolved
 identifiers. The mixed listing is a lexical fixture, without validating error
 codes, handler placement, recovery behavior or native message availability.
 All three approved gap sweeps are complete. Coverage remains unreleased.
+
+
+## Printer and general ports
+
+Twelve §10.3 entries bring BASIC to 594 across 30 chapters. None passed complete
+scopes before this change; all now pass in both profiles/themes. Printer command
+and function phrases retain distinct scopes, alongside Open Port and Port.
+Existing file channels and error commands remain covered. The independent
+listing preserves strings and escape payloads; no printer/device is accessed.
+Pointer ranges, buffer lifetimes, status values and actual output remain
+unqualified. These additions are unreleased.
