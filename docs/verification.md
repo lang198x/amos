@@ -234,3 +234,22 @@ No AMAL compiler, grammar, runtime, extension installation or native compatibili
 qualification is added. The AMOS 3D spelling conflict and profile requirements
 remain recorded follow-on work. No dependency was added; parser scope and private
 Marketplace availability are unchanged.
+
+## AMOS 3D inventory verification
+
+This documentary-only change records 59 extension entries in six family files,
+46 quick-card cells, four open evidence questions and two string-family records.
+Both held-source hashes and all 213 stored citation occurrences match their exact
+text lines and printed pages. Independently reconstructing the quick-card cells
+from the held extract reproduces all 46 entries, excluding only the title.
+
+Thirteen dependency-free package/inventory checks and editor synchronisation pass.
+The new checks require unique entries, all axis variants, 11 cached-result forms,
+complete quick-card coverage and explicit unresolved statuses. Removing Td World Z
+makes the axis-completeness test fail; it was restored before the passing suite.
+
+The canonical/editor grammars, public exports and versions are unchanged; no new
+highlighting integration result is claimed for this inventory-only change. No
+package is published, no media is installed and no native program is executed.
+The 452 BASIC entries, 14 menu records and 36 AMAL records remain separate from
+this optional extension. Marketplace availability remains private.

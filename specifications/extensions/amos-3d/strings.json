@@ -1,0 +1,80 @@
+{
+  "records": [
+    {
+      "id": "position",
+      "commands": [
+        "Td Move X",
+        "Td Move Y",
+        "Td Move Z"
+      ],
+      "examples": [
+        "Td Move X 1,\"(2,3,12)(2,-3,12)L\""
+      ],
+      "qualification": "Documentary examples only; no string parser or full AMAL qualification",
+      "citations": [
+        {
+          "source": "guide",
+          "extract_line": 3067,
+          "page": "79",
+          "text": "Td MOVE X n,string"
+        },
+        {
+          "source": "guide",
+          "extract_line": 3060,
+          "page": "79",
+          "text": "AMOS sprites. Consult your AMOS manual for the syntax of these strings. One thing to"
+        },
+        {
+          "source": "guide",
+          "extract_line": 3063,
+          "page": "79",
+          "text": "positions and angles of objects every time Td Redraw is called."
+        },
+        {
+          "source": "quickcard",
+          "extract_line": 25,
+          "page": "1",
+          "text": "Td MOVE X/Y/Z n,string$"
+        }
+      ]
+    },
+    {
+      "id": "attitude",
+      "commands": [
+        "Td Angle A",
+        "Td Angle B",
+        "Td Angle C"
+      ],
+      "examples": [
+        "Td Angle A 1,\"(2,3,12)(2,-3,12)L\""
+      ],
+      "qualification": "Documentary examples only; no string parser or full AMAL qualification",
+      "citations": [
+        {
+          "source": "guide",
+          "extract_line": 3084,
+          "page": "79",
+          "text": "Td ANGLE A n,angle$"
+        },
+        {
+          "source": "guide",
+          "extract_line": 3060,
+          "page": "79",
+          "text": "AMOS sprites. Consult your AMOS manual for the syntax of these strings. One thing to"
+        },
+        {
+          "source": "guide",
+          "extract_line": 3063,
+          "page": "79",
+          "text": "positions and angles of objects every time Td Redraw is called."
+        },
+        {
+          "source": "quickcard",
+          "extract_line": 34,
+          "page": "1",
+          "text": "Td ANGLE A/B/C n,angle$"
+        }
+      ]
+    }
+  ]
+}

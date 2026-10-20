@@ -1,0 +1,104 @@
+{
+  "questions": [
+    {
+      "id": "relative-angle-spelling",
+      "issue": "Prose says ANGLE REL; signature and quick card say ANGEL REL. They are not established aliases.",
+      "blocks": [
+        "accepted spellings"
+      ],
+      "evidence_needed": "Original extension token table or a qualified native spelling probe.",
+      "citations": [
+        {
+          "source": "guide",
+          "extract_line": 3022,
+          "page": "78",
+          "text": "For example Td ANGLE REL lets you specify a change to be made to an object's"
+        },
+        {
+          "source": "guide",
+          "extract_line": 3042,
+          "page": "79",
+          "text": "Td ANGEL REL n,dA,dB,dC"
+        },
+        {
+          "source": "quickcard",
+          "extract_line": 32,
+          "page": "1",
+          "text": "Td ANGEL REL n,dA,dB,dC"
+        }
+      ]
+    },
+    {
+      "id": "quit-role",
+      "issue": "Guide prefixes QUIT with equals; quick card presents it as a command.",
+      "blocks": [
+        "command/function role"
+      ],
+      "evidence_needed": "Original token metadata and native statement/expression acceptance.",
+      "citations": [
+        {
+          "source": "guide",
+          "extract_line": 3598,
+          "page": "91",
+          "text": "=Td QUIT"
+        },
+        {
+          "source": "quickcard",
+          "extract_line": 48,
+          "page": "1",
+          "text": "Td QUIT"
+        }
+      ]
+    },
+    {
+      "id": "advanced-call-syntax",
+      "issue": "Guide heading/signature omit arguments, later notation and quick card show an unparenthesised n.",
+      "blocks": [
+        "call syntax"
+      ],
+      "evidence_needed": "Original parser/token metadata or qualified call-shape probes.",
+      "citations": [
+        {
+          "source": "guide",
+          "extract_line": 3604,
+          "page": "91",
+          "text": "Td ADVANCED"
+        },
+        {
+          "source": "guide",
+          "extract_line": 3612,
+          "page": "91",
+          "text": "=Td Advanced n"
+        },
+        {
+          "source": "quickcard",
+          "extract_line": 49,
+          "page": "1",
+          "text": "=Td ADVANCED n"
+        }
+      ]
+    },
+    {
+      "id": "collision-result",
+      "issue": "Single-object COLLIDE returns an object identity in the guide; the quick card says number of collided objects.",
+      "blocks": [
+        "result semantics"
+      ],
+      "evidence_needed": "Original implementation or a native trial where object identity differs from collision count.",
+      "citations": [
+        {
+          "source": "guide",
+          "extract_line": 3317,
+          "page": "84",
+          "text": "function returns the number of the object it collided with. Otherwise it returns -1."
+        },
+        {
+          "source": "quickcard",
+          "extract_line": 23,
+          "page": "1",
+          "text": "Returns number of collided objects"
+        }
+      ]
+    }
+  ]
+}

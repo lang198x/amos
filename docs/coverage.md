@@ -208,3 +208,16 @@ inventory/profile follow-on plan. It is an optional extension, distinct from AMA
 The ANGLE REL/ANGEL REL discrepancy remains unresolved; no Td vocabulary or
 release compatibility is qualified. Published packages, parser scope and private
 Marketplace availability are unchanged.
+
+## AMOS 3D documentary inventory
+
+The optional extension has a separate 59-record inventory across six command
+families. All 46 quick-card command/function cells are covered by guide-crosschecked
+records; grouped axes, overload examples, cached results and signature continuations
+are retained. Two additional records describe movement/rotation string families.
+This adds no entries to the 452-form Professional BASIC highlighting checklist.
+
+Fifty-five records have documentary status; four remain unresolved: ANGLE/ANGEL REL, Quit's category, Advanced call syntax and the
+single-object Collide result. The evidence backlog names what must be checked
+before accepting spellings, call shapes or semantics. No extension release is
+qualified and no Td grammar, parser, native format or runtime is implemented.

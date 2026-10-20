@@ -114,3 +114,13 @@ TextMate follows the documented
 Shiki's [custom-language interface](https://shiki.style/guide/load-lang) consumes
 that grammar. The VS Code extension owns no second copy of the language rules:
 its packaged grammar is generated from, and checked against, the canonical file.
+
+The expanded AMOS 3D inventory crosschecks 59 records against the guide's
+programming chapter and every one of the quick card's 46 command/function cells.
+All 213 stored line/page citation occurrences (including the six scope evidence
+records) and both held-source hashes match. These counts include repeated
+citations, not independent observations. The card's Background continuation and
+cached-result rows are retained. Four uncertainties are explicit in the extension's
+questions file; agreement between retypeset documents is not runtime qualification.
+Movement/rotation string records preserve the guide's STOS/redraw context without
+inferring full AMAL support.

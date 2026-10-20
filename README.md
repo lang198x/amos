@@ -103,8 +103,8 @@ chapters 5.1–5.9, 6.1–6.5, 7.1–7.6 and 10.1, including AMAL control comman
 Fourteen embedded menu commands and 36 [AMAL records](specifications/amal/README.md)
 are inventoried separately; their string payloads remain opaque.
 [AMOS 3D](specifications/extensions/amos-3d/README.md) is tracked as an optional
-extension with source evidence and a follow-on plan; Td highlighting is not yet
-implemented. This is unreleased lexical coverage; other manual chapters and edition/extension qualification remain
+extension with a 59-record command inventory and four open evidence questions;
+Td highlighting is not yet implemented. This is unreleased lexical coverage; other manual chapters and edition/extension qualification remain
 separate work.
 
 ## Verify packages

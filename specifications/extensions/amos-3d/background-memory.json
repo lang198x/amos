@@ -1,0 +1,7 @@
+{
+  "entries": [
+    {"id": "td-background", "spellings": ["Td Background"], "kind": "command", "status": "documented", "questions": [], "examples": ["Td Background 1,0,0,160,100 To 0,0", "Td Background 1,0,0,160,100 To 0,0,1"], "citations": [{"source": "guide", "extract_line": 3510, "page": "89", "text": "Td BACKGROUND source,x1 ,y1 ,width,height to x2,y2 [,plane]"}, {"source": "quickcard", "extract_line": 45, "page": "1", "text": "Td BACKGROUND source,x1,y1,"}, {"source": "quickcard", "extract_line": 46, "page": "1", "text": "width,height to x2,y2 [,plane]"}]},
+    {"id": "td-quit", "spellings": ["Td Quit"], "kind": "ambiguous", "status": "unresolved", "questions": ["quit-role"], "examples": ["Td Quit", "MC_RESULT=Td Quit"], "citations": [{"source": "guide", "extract_line": 3598, "page": "91", "text": "=Td QUIT"}, {"source": "quickcard", "extract_line": 48, "page": "1", "text": "Td QUIT"}]},
+    {"id": "td-advanced", "spellings": ["Td Advanced"], "kind": "function", "status": "unresolved", "questions": ["advanced-call-syntax"], "examples": ["MC_ADDRESS=Td Advanced 1"], "citations": [{"source": "guide", "extract_line": 3612, "page": "91", "text": "=Td Advanced n"}, {"source": "quickcard", "extract_line": 49, "page": "1", "text": "=Td ADVANCED n"}, {"source": "guide", "extract_line": 3604, "page": "91", "text": "Td ADVANCED"}]}
+  ]
+}

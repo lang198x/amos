@@ -3,7 +3,7 @@
   "component": "optional language extension",
   "documentation_year": 1991,
   "source": "https://gitlab.com/amigasourcecodepreservation/amos-classic-documentation",
-  "scope": "Source discovery and extension planning only; no Td grammar or parser support",
+  "scope": "Documentary command inventory and extension evidence only; no Td grammar, parser or runtime qualification",
   "qualified_releases": [],
   "sources": {
     "guide": {
@@ -58,5 +58,16 @@
       "page": "1",
       "text": "Td MOVE X/Y/Z n,string$"
     }
-  ]
+  ],
+  "inventory_files": [
+    "display-lifecycle.json",
+    "movement-attitude.json",
+    "bearings-coordinates.json",
+    "visibility-zones.json",
+    "animation.json",
+    "background-memory.json"
+  ],
+  "card_cells": "quickcard-cells.json",
+  "questions": "questions.json",
+  "strings": "strings.json"
 }
