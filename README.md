@@ -90,6 +90,13 @@ VSIX with `python3 scripts/package-editor.py`; this uses only Python's standard
 library. The [game baseline](audit/2026-10-highlighting/README.md) identifies the
 next highlighting groups without claiming full language coverage.
 
+Current source includes the unreleased
+[full-game highlighting milestone](docs/coverage.md#full-game-highlighting-milestone).
+Its pinned source and independently reviewed scope inventory check all 398
+builtin/control-word and label occurrences in Bank or Risk in two themes.
+Released npm 0.1.0 and editor 0.1.1 retain the earlier grammar. The Rust parser's
+opening-program surface is unchanged, and the Marketplace preview stays private.
+
 ## Verify packages
 
 Node 24 or later is required for package checks:

@@ -5,6 +5,11 @@ The released 0.1.0 grammar was compared with the pinned Bank or Risk
 SHA-256 values bind the comparison. This is a lexical highlighting observation,
 not AMOS parsing, static analysis or a new native-runtime test.
 
+This is the retained pre-expansion baseline. Current source has a separate
+[full-game inventory](../../corpus/highlighting/README.md), including functions,
+logical operators and label definitions. Do not change this historical baseline
+or feed the expanded grammar to its hash-pinned reproduction helper.
+
 The scan inspected 332 physical-line head candidates and found 35 distinct
 spellings. Twenty-six are not currently coloured as keywords/functions. These
 are **candidates, not 26 missing commands**: `BR_MARK` is an array assignment.

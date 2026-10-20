@@ -45,3 +45,19 @@ test('package exports declare only existing dependency-free artefacts', async ()
     assert.ok((await readFile(new URL(`../${file}`, import.meta.url))).length > 0);
   }
 });
+
+test('full-game scope expectations bind nonempty, unique ranges to pinned source', async () => {
+  const inventory = await json('../corpus/highlighting/bank-or-risk.inventory.json');
+  const source = await readFile(new URL('../corpus/highlighting/bank-or-risk.amos.txt', import.meta.url), 'utf8');
+  assert.equal(createHash('sha256').update(source).digest('hex'), inventory.source_sha256);
+  assert.ok(inventory.entries.length > 0);
+  const lines = source.split('\n');
+  const seen = new Set();
+  for (const [line, start, end, text, scope] of inventory.entries) {
+    assert.ok(line >= 1 && line <= lines.length && start >= 0 && end > start && scope.endsWith('.amos'));
+    assert.equal(lines[line - 1].slice(start, end), text);
+    const key = `${line}:${start}:${end}`;
+    assert.ok(!seen.has(key));
+    seen.add(key);
+  }
+});

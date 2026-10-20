@@ -63,3 +63,23 @@ The npm package, Rust crate and highlighting coverage remain at 0.1.0.
 
 Native file codecs/output, execution, complete name/type analysis, LSP and
 qualification of Creator/Easy/other releases remain future work.
+
+## Unreleased full-game highlighting
+
+The complete pinned Bank or Risk source has 398 reviewed vocabulary and label
+occurrences. The independent inventory binds exact source spans and its SHA-256.
+Every occurrence passes in Shiki 4.4.3 with dark-plus and light-plus, with no extra
+or missing builtin spans. Exact source text is retained and all four array uses
+remain identifiers. Boundary tests cover case, tabs, longer names, type suffixes,
+multiword endings, strings, comments and unresolved calls. Scope assertions inspect
+each explanation fragment: theme-coalesced punctuation cannot borrow a neighbouring
+operator's scope. Disabling Screen Copy makes the full-game test fail at line 414;
+the original grammar was restored before passing checks.
+
+Four package/corpus checks and fourteen integration tests pass. Integrations use
+the existing shiki-highlight-api 1.3.0 and local 2.0.0 build, including full-game
+rendering in both themes. No dependency was added. npm and VSIX builds retain
+the exact canonical grammar and valid icon metadata; these are disposable local
+build checks, not replacements for versioned preview assets or registry uploads.
+The Marketplace preview remains private. Host parsing and original-runtime
+qualification are unchanged.

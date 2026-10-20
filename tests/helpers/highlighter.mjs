@@ -9,13 +9,18 @@ export const tokens = (source, theme = 'dark-plus') => highlighter.codeToTokensB
   lang: 'amos', theme, includeExplanation: true,
 });
 export const scopes = (token) => token.explanation?.flatMap((item) => item.scopes.map((s) => s.scopeName)) ?? [];
+export const fragments = (line) => line.flatMap((token) => {
+  assert.ok(token.explanation?.length, 'scope explanations must be present');
+  assert.equal(token.explanation.map((item) => item.content).join(''), token.content);
+  return token.explanation.map((item) => ({ content: item.content, explanation: [item] }));
+});
 
 // Check every character of a source range, even when theme styles merge tokens.
 export const assertScope = (line, start, end, scope, context = '') => {
   assert.ok(end > start, `empty expectation: ${context}`);
   let offset = 0;
   let checked = 0;
-  for (const token of line) {
+  for (const token of fragments(line)) {
     const next = offset + token.content.length;
     const overlap = Math.max(0, Math.min(next, end) - Math.max(offset, start));
     if (overlap) {

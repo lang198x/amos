@@ -54,4 +54,17 @@ test('shiki-highlights consumes the registration and emits styled source', async
   assert.ok(result.stats.uniqueStyles >= 2);
 });
 
+test('shiki-highlights renders the complete pinned game with both themes', async () => {
+  await highlightApi.loadCustomLanguage(amos);
+  const source = await readFile(new URL('../corpus/highlighting/bank-or-risk.amos.txt', import.meta.url), 'utf8');
+  for (const theme of ['dark-plus', 'light-plus']) {
+    const result = await highlightApi.codeToHighlightHtml(source, { lang: 'amos', theme });
+    assert.ok(result.html.includes('BANK OR RISK'));
+    assert.ok(result.html.includes('Screen Swap'));
+    assert.ok(result.html.includes('BR_PRESENT'));
+    assert.ok(result.css.includes('::highlight('));
+    assert.ok(result.stats.tokens > 398);
+  }
+});
+
 test.after(() => highlighter.dispose());

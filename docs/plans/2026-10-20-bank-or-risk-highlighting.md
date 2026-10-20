@@ -28,3 +28,25 @@ Primary reference: the original AMOS Professional User Guide (1992), preserved
 by Amiga Source Code Preservation. Version-independent compatibility is not
 inferred from manual syntax or highlighting. Creator/Easy qualification remains
 separate work.
+
+## Outcome
+
+All three vocabulary groups are implemented and synchronised to the editor.
+The pinned game has 398 independently inventoried scope occurrences, including
+functions in expressions, logical operators and six label definitions. Both
+themes preserve every source character; all four array references remain names.
+An intentionally disabled Screen Copy rule failed at source line 414 and was
+restored. Scope checks also reject borrowing a neighbouring fragment's scope
+when a theme combines tokens of equal style.
+
+Four package checks and fourteen integration tests pass with existing Shiki
+4.4.3 and both existing shiki-highlight-api 1.3.0/local 2.0.0. The built npm
+registration renders the full game in both themes. npm/VSIX grammar bytes and
+VSIX icon/public-flag metadata were inspected. No dependency, parser change,
+new registry release or Marketplace upload was made. The original physical-line
+audit remains a historical baseline. Wider vocabulary, language variants,
+extension languages and numeric forms remain explicit gaps.
+
+Disposable artifacts are local build checks, not replacements for released
+0.1.0/0.1.1 assets. Remove the task npm cache, extracted consumer and dist before
+finishing; no background process or worktree was created.
