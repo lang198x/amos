@@ -218,7 +218,8 @@ are retained. Two additional records describe movement/rotation string families.
 This adds no entries to the 452-form Professional BASIC highlighting checklist.
 
 Fifty-five records have documentary status, three have revision-scoped source
-evidence, and the single-object Collide result remains unresolved. The evidence
+evidence, and one has pinned-binary evidence for the single-object Collide result.
+The evidence
 backlog names what must be checked before accepting spellings, call shapes or
 semantics. No extension release is
 qualified and no Td grammar, parser, native format or runtime is implemented.
@@ -231,8 +232,11 @@ an integer function with one parenthesised integer argument. Exact pinned source
 excerpts and the verifier path support those conclusions; no native execution or
 binary/source equivalence is claimed. Conflicting manual evidence remains intact.
 
-Collide's wrappers forward the external library result unchanged, leaving its
-single-object result semantics open. Later tokens in this source also extend
+Collide's wrappers forward the external library result unchanged. A separately
+pinned [library trace](../specifications/extensions/amos-3d/collision-binary.md)
+shows that its single-object mode returns the first colliding candidate index,
+or -1, rather than a collision count. This does not establish native execution
+or built-wrapper equivalence. Later tokens in this source also extend
 beyond the quick card. The manual's 59 records do not become a complete inventory
 of that source revision. No Td highlighting, parser, release qualification or
 package availability change follows from this source audit.

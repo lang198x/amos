@@ -38,7 +38,8 @@ The background signature continuation on the next card line is preserved.
 The four documentary questions retain their original citations in
 [questions.json](questions.json). Three now have answers scoped to the original
 publisher source at commit `533b4b1f5acd604814513f78e02c7b4796cb0531`; the fourth
-remains open. [original-source.json](original-source.json) binds file hashes,
+has a separately pinned binary conclusion.
+[original-source.json](original-source.json) binds file hashes,
 exact excerpt ranges and conclusions. The excerpts retain their upstream MIT
 notice in `original-source-LICENSE`.
 
@@ -51,8 +52,10 @@ notice in `original-source-LICENSE`.
   support `Td Advanced(1)`, rather than the bare/unparenthesised manual forms.
   This is source analysis, not an observed native acceptance trial.
 - Collide: both overloads call an external TD_COLLIDE routine with different mode
-  flags and return its integer unchanged. Identity-versus-count semantics remain
-  unresolved; inspecting the wrapper cannot settle them.
+  flags and return its integer unchanged. The [library trace](collision-binary.md)
+  shows the single-object
+  path returns the first colliding candidate index, or -1, rather than a count.
+  This is binary analysis, not native execution.
 
 The wrapper labels itself `Issue 1.02(AP200)`. No built binary has been matched to
 these bytes, and no Creator/Professional release is qualified. The table also
@@ -67,8 +70,8 @@ movement-string syntax. This does not qualify full AMAL, interrupts, timing or a
 complete embedded string grammar. The guide's Delete Zone signature uses `en`
 where nearby prose and the card use n; placeholder spelling is not a new argument.
 
-Next, trace TD_COLLIDE in the pinned external library or run a native trial that
-distinguishes object identity from collision count. Before implementation, agree
+A native trial that distinguishes object identity from collision count remains
+useful for release qualification. Before implementation, agree
 optional highlighting/profile selection, preserving existing package exports and consumers. Native availability,
 object formats, runtime behaviour and tokenised persistence need separate evidence.
 No Td highlighting, parser, codec, compiler or runtime is implemented by this scope

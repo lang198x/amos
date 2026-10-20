@@ -1,0 +1,137 @@
+{
+  "repository": "https://github.com/AOZ-Studio/AMOS-Professional-Official",
+  "commit": "533b4b1f5acd604814513f78e02c7b4796cb0531",
+  "path": "AMOSPro Sources/c3d.lib",
+  "git_blob": "e6bae371e2fc552fead4f20faf510e8dcb3731dc",
+  "size": 47696,
+  "sha256": "cb76133bd7eac024c9ea9cd79b01f7b2c1b20f31ecb0ef66907ea8dfdc83667d",
+  "license_file": "original-source-LICENSE",
+  "method": "Static Hunk relocation and 68000 control-flow analysis; original binary not executed.",
+  "native_verified": false,
+  "qualified_releases": [],
+  "disassembler": {
+    "repository": "https://github.com/Isa198x/isa198x",
+    "commit": "4bd1876b3e5572c2ce79b11f1db57a7c03ac6370",
+    "api": "isa_disasm::disassemble_68000"
+  },
+  "table": {
+    "hunk": 0,
+    "offset": 208,
+    "index": 23,
+    "entry_offset": 300,
+    "target_hunk": 2,
+    "target_offset": 5434
+  },
+  "relocations": [
+    {
+      "hunk": 0,
+      "offset": 68,
+      "target_hunk": 23
+    },
+    {
+      "hunk": 0,
+      "offset": 74,
+      "target_hunk": 1
+    },
+    {
+      "hunk": 0,
+      "offset": 80,
+      "target_hunk": 1
+    },
+    {
+      "hunk": 0,
+      "offset": 300,
+      "target_hunk": 2
+    }
+  ],
+  "excerpts": [
+    {
+      "id": "cold-start-return",
+      "hunk": 0,
+      "hunk_offset": 66,
+      "file_offset": 210,
+      "hex": "49f9000000004eb9000000004eb9000000f241fa007a224c4e75",
+      "sha256": "15c29055a8868be1fae5649a040a20e00974ab3c8356be083d0fded74d148363",
+      "listing": [
+        "0042 [49, f9, 00, 00, 00, 00] lea.l $0,a4",
+        "0048 [4e, b9, 00, 00, 00, 00] jsr $0",
+        "004e [4e, b9, 00, 00, 00, f2] jsr $F2",
+        "0054 [41, fa, 00, 7a] lea.l $D0(pc),a0",
+        "0058 [22, 4c] movea.l a4,a1",
+        "005a [4e, 75] rts"
+      ]
+    },
+    {
+      "id": "collision-slot",
+      "hunk": 0,
+      "hunk_offset": 300,
+      "file_offset": 444,
+      "hex": "0000153a",
+      "sha256": "6f231913111b3237fab943f3d73c3e54abd2b411960fb4100dc8e6bfbdeedbaf"
+    },
+    {
+      "id": "collision-entry",
+      "hunk": 2,
+      "hunk_offset": 5434,
+      "file_offset": 9330,
+      "hex": "48e70f302e2f001c2c2f00202a2f00242f06610002be584f264078004a8767367a0045ec47c0601cbc8567144a8567044a92670c2f052f0b61000038504f28005285588a7014ba8064044a0467da4a0467105385600c2f052f0b61000016504f28004a0467042005600270ff4cdf0cf04e75",
+      "sha256": "7067b04cfe2f25d683912885ea0e0333c729331407ea2f7bcaef12e4ad564ade",
+      "listing": [
+        "153a [48, e7, 0f, 30] movem.l d4-d7/a2-a3,-(a7)",
+        "153e [2e, 2f, 00, 1c] move.l 28(a7),d7",
+        "1542 [2c, 2f, 00, 20] move.l 32(a7),d6",
+        "1546 [2a, 2f, 00, 24] move.l 36(a7),d5",
+        "154a [2f, 06] move.l d6,-(a7)",
+        "154c [61, 00, 02, be] bsr.w $180C",
+        "1550 [58, 4f] addq.w #4,a7",
+        "1552 [26, 40] movea.l d0,a3",
+        "1554 [78, 00] moveq.l #0,d4",
+        "1556 [4a, 87] tst.l d7",
+        "1558 [67, 36] beq.s $1590",
+        "155a [7a, 00] moveq.l #0,d5",
+        "155c [45, ec, 47, c0] lea.l 18368(a4),a2",
+        "1560 [60, 1c] bra.s $157E",
+        "1562 [bc, 85] cmp.l d5,d6",
+        "1564 [67, 14] beq.s $157A",
+        "1566 [4a, 85] tst.l d5",
+        "1568 [67, 04] beq.s $156E",
+        "156a [4a, 92] tst.l (a2)",
+        "156c [67, 0c] beq.s $157A",
+        "156e [2f, 05] move.l d5,-(a7)",
+        "1570 [2f, 0b] move.l a3,-(a7)",
+        "1572 [61, 00, 00, 38] bsr.w $15AC",
+        "1576 [50, 4f] addq.w #8,a7",
+        "1578 [28, 00] move.l d0,d4",
+        "157a [52, 85] addq.l #1,d5",
+        "157c [58, 8a] addq.l #4,a2",
+        "157e [70, 14] moveq.l #20,d0",
+        "1580 [ba, 80] cmp.l d0,d5",
+        "1582 [64, 04] bcc.s $1588",
+        "1584 [4a, 04] tst.b d4",
+        "1586 [67, da] beq.s $1562",
+        "1588 [4a, 04] tst.b d4",
+        "158a [67, 10] beq.s $159C",
+        "158c [53, 85] subq.l #1,d5",
+        "158e [60, 0c] bra.s $159C",
+        "1590 [2f, 05] move.l d5,-(a7)",
+        "1592 [2f, 0b] move.l a3,-(a7)",
+        "1594 [61, 00, 00, 16] bsr.w $15AC",
+        "1598 [50, 4f] addq.w #8,a7",
+        "159a [28, 00] move.l d0,d4",
+        "159c [4a, 04] tst.b d4",
+        "159e [67, 04] beq.s $15A4",
+        "15a0 [20, 05] move.l d5,d0",
+        "15a2 [60, 02] bra.s $15A6",
+        "15a4 [70, ff] moveq.l #-1,d0",
+        "15a6 [4c, df, 0c, f0] movem.l (a7)+,d4-d7/a2-a3",
+        "15aa [4e, 75] rts"
+      ]
+    }
+  ],
+  "conclusion": "The nonzero-mode branch scans candidate indices 0 through 19, skipping the input index and absent nonzero slots, and stops at the first nonzero low-byte predicate result. It returns that candidate index, or -1 when none is found. It does not accumulate a collision count.",
+  "limits": [
+    "The geometry predicate and all error paths are outside this bounded return-value analysis.",
+    "Slot zero has a special path; this does not qualify which objects a particular release permits.",
+    "The co-located wrapper supplies the calling convention; no built-wrapper equivalence or release installation is established."
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "repository": "https://github.com/AOZ-Studio/AMOS-Professional-Official",
   "commit": "533b4b1f5acd604814513f78e02c7b4796cb0531",
-  "scope": "Original source evidence only; no native execution, built-binary equivalence or release compatibility qualification",
+  "scope": "Original source and separately pinned library analysis; no native execution, built-wrapper equivalence or release compatibility qualification",
   "wrapper_label": "Issue 1.02(AP200)",
   "qualified_releases": [],
   "files": {
@@ -40,7 +40,8 @@
   "external_library": {
     "path": "AMOSPro Sources/c3d.lib",
     "git_blob": "e6bae371e2fc552fead4f20faf510e8dcb3731dc",
-    "inspected": false
+    "inspected": true,
+    "evidence": "collision-binary.json"
   },
   "findings": [
     {
@@ -132,9 +133,8 @@
     },
     {
       "id": "collision-result",
-      "status": "open",
-      "conclusion": "The one- and two-object wrappers call TD_COLLIDE with mode values 1 and 0 respectively, then forward the library integer unchanged. This does not establish whether the single-object result is an identity or count.",
-      "unresolved_boundary": "c3d.lib TD_COLLIDE implementation",
+      "status": "binary-resolved",
+      "conclusion": "The wrapper forwards the library integer unchanged. Static analysis of the pinned external library shows the single-object mode returns the first colliding candidate index, or -1, rather than a count.",
       "citations": [
         {
           "file": "wrapper",
@@ -153,9 +153,28 @@
           "line": 714,
           "end_line": 732,
           "text": "C4IntRInt:  move.l  (a3)+,-(a1)\nC3IntRInt:  move.l  (a3)+,-(a1)\nC2IntRInt:  move.l  (a3)+,-(a1)\nCIntRInt:   move.l  (a3)+,-(a1)\nCNoneRInt:  tst.w   d2\n            bmi.s   NoExtraPar2\n            move.l  d2,-(a1)\nNoExtraPar2:movem.l  a3-a6,-(sp)           * Stash registers on AMOS stack\n            move.l   sp,AmosStack(a2)\n            move.l   a1,sp\n            move.l  CTable(a2),a0\n            move.l   CLinkerDB(a2),a4      * C V5.10 base relative addressing\n            move.l  0(a0,d1.w),a0\n            jsr     (a0)\n            move.l  AmosStack(a2),sp\n            movem.l (sp)+,a3-a6\n            move.l   d0,d3\n            moveq    #0,d2\n            rts"
+        },
+        {
+          "file": "wrapper",
+          "line": 45,
+          "end_line": 46,
+          "text": "FirstCode      equ   4                 * Offset of code from start of Segment\nC_COLD_START   equ   2                 * Offset from start of code to cold"
+        },
+        {
+          "file": "wrapper",
+          "line": 100,
+          "end_line": 100,
+          "text": "TD_COLLIDE          equ     23"
+        },
+        {
+          "file": "wrapper",
+          "line": 781,
+          "end_line": 794,
+          "text": "CLoadedOk:  move.l   d0,CPrgSeg(a2)\n            asl.l    #2,d0                   * d0=3d Code=(d0<<2)+4\n            addq.l   #FirstCode,d0\n            move.l   d0,a4\n            move.l   sp,AmosStack(a2)\n            move.l   CStackStart(a2),sp\n            lea      ___aprintf(pc),a0\n            lea      __smos_error(pc),a1\n            move.l   DosBase(a5),d0\n            move.l   T_GfxBase(a5),d1\n            jsr      C_COLD_START(a4)        * 3d initialisation\n            move.l   a0,CTable(a2)\n            move.l   a1,CLinkerDB(a2)        * Stash C V5.10 base address\n            move.l   AmosStack(a2),sp"
         }
       ],
-      "native_verified": false
+      "native_verified": false,
+      "binary_evidence": "collision-binary.json"
     }
   ],
   "license_file": "original-source-LICENSE"

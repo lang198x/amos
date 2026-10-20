@@ -269,3 +269,23 @@ restored before the passing suite. Documentary conflicts remain linked to their
 revision-scoped findings. Grammar bytes, registrations, exports and versions are
 unchanged. No new highlighting integration result is claimed for this source audit.
 No package is published and Marketplace remains private.
+
+
+## AMOS 3D library return-value audit
+
+Static analysis of the pinned 47,696-byte c3d.lib follows cold-start's returned
+function table, entry 23 and its Hunk relocation to the collision routine. The
+single-object mode stops at the first successful predicate and returns its
+candidate index, or -1 if none is found. Exact bytes, offsets, branch/return paths,
+file hashes and tool revision are retained in `collision-binary.json`; the
+[trace](../specifications/extensions/amos-3d/collision-binary.md) explains the result.
+The library was read, not executed. Geometry, errors, installed releases and
+built-wrapper equivalence are outside this conclusion.
+
+Eighteen package/inventory checks and editor synchronisation pass. The separate
+standard-library Python checker validates the full original file, all 29 Hunk
+records, retained excerpts and dispatch relocations. A wrong target hunk fails
+the package evidence check; a wrong excerpt file offset fails the full-library
+check. Both negative controls were restored before the passing checks. Ruff
+checks and formatting pass for that checker. No grammar, API, version, dependency,
+package publication or Marketplace availability changes follow from this audit.

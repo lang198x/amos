@@ -108,9 +108,9 @@
           "text": "Returns number of collided objects"
         }
       ],
-      "status": "open",
+      "status": "binary-resolved",
       "source_evidence": "original-source.json#collision-result",
-      "remaining_evidence": "Trace the pinned external library implementation or run a native trial that distinguishes object identity from collision count."
+      "remaining_evidence": "Native identity-versus-count trial and release/version qualification remain separate from the pinned binary conclusion."
     }
   ]
 }
