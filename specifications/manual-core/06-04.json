@@ -1,0 +1,32 @@
+{
+  "chapter": "06.04",
+  "entries": [
+    {"spelling": "Plot", "kind": "command", "page": "06.04.01", "extract_line": 8852, "example": "Plot 20,30,2"},
+    {"spelling": "Point", "kind": "function", "page": "06.04.01", "extract_line": 8869, "example": "MC_COLOUR=Point(20,30)"},
+    {"spelling": "Gr Locate", "kind": "command", "page": "06.04.01", "extract_line": 8880, "example": "Gr Locate 20,30"},
+    {"spelling": "Xgr", "kind": "function", "page": "06.04.02", "extract_line": 8902, "example": "MC_X=Xgr"},
+    {"spelling": "Ygr", "kind": "function", "page": "06.04.02", "extract_line": 8903, "example": "MC_Y=Ygr"},
+    {"spelling": "Draw", "kind": "command", "page": "06.04.02", "extract_line": 8916, "example": "Draw 20,30 To 100,80"},
+    {"spelling": "Draw To", "kind": "command", "page": "06.04.02", "extract_line": 8919, "example": "Draw To 100,80"},
+    {"spelling": "Set Line", "kind": "command", "page": "06.04.03", "extract_line": 8945, "example": "Set Line $F0F0"},
+    {"spelling": "Polyline", "kind": "command", "page": "06.04.03", "extract_line": 8962, "example": "Polyline 10,10 To 60,10 To 60,60"},
+    {"spelling": "Polyline To", "kind": "command", "page": "06.04.03", "extract_line": 8965, "example": "Polyline To 60,10 To 60,60"},
+    {"spelling": "Box", "kind": "command", "page": "06.04.03", "extract_line": 8974, "example": "Box 10,10 To 60,60"},
+    {"spelling": "Circle", "kind": "command", "page": "06.04.03", "extract_line": 8981, "example": "Circle 100,80,20"},
+    {"spelling": "Ellipse", "kind": "command", "page": "06.04.04", "extract_line": 9007, "example": "Ellipse 100,80,30,15"},
+    {"spelling": "Clip", "kind": "command", "page": "06.04.04", "extract_line": 9018, "example": "Clip 10,10 To 200,150"},
+    {"spelling": "Ink", "kind": "command", "page": "06.04.05", "extract_line": 9050, "example": "Ink 2,0,1"},
+    {"spelling": "Colour", "kind": "function", "page": "06.04.05", "extract_line": 9080, "example": "MC_RGB=Colour(2)", "lexical_scope": "keyword.other.amos"},
+    {"spelling": "Colour", "kind": "command", "page": "06.04.06", "extract_line": 9117, "example": "Colour 2,$F80", "lexical_scope": "keyword.other.amos"},
+    {"spelling": "Colour Back", "kind": "command", "page": "06.04.06", "extract_line": 9127, "example": "Colour Back $123"},
+    {"spelling": "Palette", "kind": "command", "page": "06.04.06", "extract_line": 9141, "example": "Palette $000,$FFF,$F80"},
+    {"spelling": "Paint", "kind": "command", "page": "06.04.07", "extract_line": 9180, "example": "Paint 100,80"},
+    {"spelling": "Bar", "kind": "command", "page": "06.04.08", "extract_line": 9207, "example": "Bar 10,10 To 60,60"},
+    {"spelling": "Polygon", "kind": "command", "page": "06.04.08", "extract_line": 9214, "example": "Polygon 10,10 To 60,10 To 30,60"},
+    {"spelling": "Polygon To", "kind": "command", "page": "06.04.08", "extract_line": 9217, "example": "Polygon To 60,10 To 30,60"},
+    {"spelling": "Set Pattern", "kind": "command", "page": "06.04.08", "extract_line": 9234, "example": "Set Pattern 3"},
+    {"spelling": "Set Paint", "kind": "command", "page": "06.04.10", "extract_line": 9307, "example": "Set Paint 1"},
+    {"spelling": "Gr Writing", "kind": "command", "page": "06.04.10", "extract_line": 9335, "example": "Gr Writing 1"},
+    {"spelling": "Set Tempras", "kind": "command", "page": "06.04.11", "extract_line": 9376, "example": "Set Tempras"}
+  ]
+}

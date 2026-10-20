@@ -61,6 +61,16 @@ manual labels Spack, Pack and Unpack as picture-compactor extension commands;
 the inventory preserves that component evidence without inferring availability.
 All entry lines/pages and both held-extract hashes were crosschecked.
 
+The bank/drawing/menu continuation cites §§5.9, 6.4 and 6.5: 87 further BASIC
+entries, for 349 total, and 14 separately recorded embedded menu commands.
+Colour has separate function and instruction descriptions. Menu$ is labelled a
+reserved variable for simple definitions and an instruction for advanced item
+assignments; both records retain a reserved-variable lexical scope. The menu
+chapter specifies two-character embedded prefixes inside strings. Recording these
+does not add standalone BASIC instructions or interpret string contents. The
+bank chapter's contradictory upper bank numbers are not turned into validation.
+All 363 recorded line/page bindings match the hash-pinned extract.
+
 [Opening sources](../corpus/opening/README.md) retain their upstream MIT licence
 and immutable provenance. [New native probes](../corpus/probes/README.md) record
 exact input hashes, screenshots and a pinned runtime profile. Host parser tests

@@ -1,0 +1,30 @@
+{
+  "chapter": "05.09",
+  "entries": [
+    {"spelling": "Reserve As Data", "kind": "command", "page": "05.09.02", "extract_line": 7013, "example": "Reserve As Data 10,1024"},
+    {"spelling": "Reserve As Work", "kind": "command", "page": "05.09.02", "extract_line": 7022, "example": "Reserve As Work 11,1024"},
+    {"spelling": "Fast Free", "kind": "function", "page": "05.09.03", "extract_line": 7038, "example": "MC_FAST=Fast Free"},
+    {"spelling": "Reserve As Chip Data", "kind": "command", "page": "05.09.03", "extract_line": 7048, "example": "Reserve As Chip Data 12,1024"},
+    {"spelling": "Chip Free", "kind": "function", "page": "05.09.03", "extract_line": 7054, "example": "MC_CHIP=Chip Free"},
+    {"spelling": "Reserve As Chip Work", "kind": "command", "page": "05.09.03", "extract_line": 7062, "example": "Reserve As Chip Work 13,1024"},
+    {"spelling": "Save", "kind": "command", "page": "05.09.03", "extract_line": 7078, "example": "Save \"shapes.abk\",10"},
+    {"spelling": "Load", "kind": "command", "page": "05.09.04", "extract_line": 7131, "example": "Load \"shapes.abk\",10"},
+    {"spelling": "Bsave", "kind": "command", "page": "05.09.05", "extract_line": 7168, "example": "Bsave \"data.bin\",Start(10) To Start(10)+Length(10)"},
+    {"spelling": "Bload", "kind": "command", "page": "05.09.05", "extract_line": 7183, "example": "Bload \"data.bin\",10"},
+    {"spelling": "Erase", "kind": "command", "page": "05.09.06", "extract_line": 7217, "example": "Erase 10"},
+    {"spelling": "Erase All", "kind": "command", "page": "05.09.06", "extract_line": 7230, "example": "Erase All"},
+    {"spelling": "Erase Temp", "kind": "command", "page": "05.09.07", "extract_line": 7257, "example": "Erase Temp"},
+    {"spelling": "Bank Shrink", "kind": "command", "page": "05.09.07", "extract_line": 7271, "example": "Bank Shrink 10 To 512"},
+    {"spelling": "Bank Swap", "kind": "command", "page": "05.09.07", "extract_line": 7291, "example": "Bank Swap 10,11"},
+    {"spelling": "List Bank", "kind": "command", "page": "05.09.08", "extract_line": 7322, "example": "List Bank"},
+    {"spelling": "Length", "kind": "function", "page": "05.09.08", "extract_line": 7348, "example": "MC_BYTES=Length(10)"},
+    {"spelling": "Start", "kind": "function", "page": "05.09.09", "extract_line": 7370, "example": "MC_ADDRESS=Start(10)"},
+    {"spelling": "Blength", "kind": "function", "page": "05.09.09", "extract_line": 7402, "example": "MC_BYTES=Blength(10)"},
+    {"spelling": "Bstart", "kind": "function", "page": "05.09.10", "extract_line": 7420, "example": "MC_ADDRESS=Bstart(10)"},
+    {"spelling": "Bgrab", "kind": "command", "page": "05.09.10", "extract_line": 7427, "example": "Bgrab 10"},
+    {"spelling": "Bsend", "kind": "command", "page": "05.09.10", "extract_line": 7440, "example": "Bsend 10"},
+    {"spelling": "Screen Base", "kind": "function", "page": "05.09.11", "extract_line": 7484, "example": "MC_ADDRESS=Screen Base"},
+    {"spelling": "Icon Base", "kind": "function", "page": "05.09.11", "extract_line": 7491, "example": "MC_ADDRESS=Icon Base(1)"},
+    {"spelling": "Sprite Base", "kind": "function", "page": "05.09.11", "extract_line": 7498, "example": "MC_ADDRESS=Sprite Base(1)"}
+  ]
+}

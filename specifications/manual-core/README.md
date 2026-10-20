@@ -3,9 +3,11 @@
 This inventory follows the **AMOS Professional User Guide**: 109 entries from
 chapters 5.1–5.5 (basics, strings, maths, control and procedures), 48 from chapter
 5.6 (text), 14 from chapter 10.1 (keyboard input), 17 from 5.7 (windows), 20 from
-5.8 (joystick/mouse), and 54 from 6.1–6.3 (screen setup/use/effects). The 262
+5.8 (joystick/mouse), 54 from 6.1–6.3 (screen setup/use/effects), 25 from 5.9
+(memory banks), 27 from 6.4 (drawing) and 35 from 6.5 (menus). The 349 BASIC
 entries include grouped headings, connective words, typed forms and the `?`
-print shortcut.
+print shortcut. Fourteen embedded menu commands are recorded separately in
+`06-05.json`, outside the BASIC vocabulary count.
 Each entry cites a printed page and a line in the hash-pinned held extract
 identified by `source.json`. Examples are freshly authored, not copied listings.
 
@@ -61,3 +63,16 @@ X Mouse/Y Mouse and Laced are reserved variables; Read Text$ is a command.
 Spack, Pack and Unpack retain the manual's picture-compactor extension label.
 Their lexical recognition does not establish installation availability. Filenames,
 Flash sequences and Rainbow component patterns remain opaque strings.
+
+Colour's command and function descriptions share the neutral scope used for
+Screen. Menu$ keeps a reserved-variable scope for both the simple definition
+and the advanced assignment that the manual labels an instruction. Distinct
+kinds remain separate cited records. These scopes do not resolve argument types.
+
+The menu chapter's embedded commands form a separate language inside strings.
+The `embedded_entries` records retain full names, two-letter prefixes, citations
+and literal examples. They do not add BASIC keywords or enable string parsing.
+Callback targets remain unresolved identifiers. Bank sizes, pointer arithmetic,
+file formats and original execution are outside these lexical checks. The bank
+chapter gives conflicting upper bank numbers (65535 and 65536); no numeric limit
+is inferred from that prose.

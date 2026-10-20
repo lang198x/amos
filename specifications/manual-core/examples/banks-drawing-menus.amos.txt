@@ -1,0 +1,31 @@
+Rem Fresh lexical example; not a runtime-qualified program.
+Reserve As Data 10,1024 : Reserve As Chip Work 11,1024
+MC_BYTES=Length(10) : MC_ADDRESS=Start(10)
+MC_FAST=Fast Free : MC_CHIP=Chip Free
+Bank Shrink 10 To 512 : List Bank
+Screen Open 1,320,200,16,Lowres : Screen 1
+Palette $000,$FFF,$F80 : Colour 2,$F80
+MC_RGB=Colour(2) : Colour Back $123
+Gr Locate 40,40 : Set Line $F0F0
+Draw To 100,40 : Polyline To 100,100 To 40,100
+Set Pattern 3 : Set Paint 1
+Ink 2,0,1 : Polygon 140,40 To 200,40 To 170,100
+Circle 80,140,20 : Paint 80,140
+MC_PIXEL=Point(80,140) : MC_X=Xgr : MC_Y=Ygr
+Menu$(1)="Shapes"
+Menu$(1,1)="Circle (LO 10,10:IN 1,2:EL 10,10)"
+Menu$(1,2)="Line (SL 65535:LI 40,10)"
+Menu Key(1,1) To "c" : Menu Base 10,10
+Set Menu(1,2) To 0,20
+Menu Item Static(1,1) : Menu Inactive(1,2)
+MC_X=X Menu(1,1) : MC_Y=Y Menu(1,1)
+On Menu Proc MC_SELECT : On Menu On : Menu On
+If Choice Then Print Choice(1),Choice(2)
+Menu Off : On Menu Off : On Menu Del
+Menu To Bank 20 : Bank To Menu 20 : Menu Calc
+Save "menu.abk",20 : Load "menu.abk",20
+Load Iff "drawing.iff",1 : Save Iff "drawing.iff",1
+Menu Del : Erase Temp : Erase 10
+Procedure MC_SELECT
+  Print "Selected"
+End Proc

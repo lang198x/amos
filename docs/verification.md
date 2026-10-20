@@ -142,3 +142,25 @@ registration preserves the fresh mixed listing and new scopes in both themes.
 These are disposable build checks at existing version numbers, not publications
 or replacement release assets. No original AMOS code was executed. Parser scope,
 edition qualification and private Marketplace availability remain unchanged.
+
+## Unreleased memory-bank, drawing and menu highlighting
+
+The §§5.9, 6.4 and 6.5 inventories add 87 BASIC entries (six previously passing),
+for 349 total. Fourteen embedded menu commands are recorded separately. All 363
+source-line/page bindings and both held-source hashes match. The earlier
+109/171/262-entry checks and all 398 game expectations remain intact.
+
+Forty-eight integration tests pass in both existing consumers (shiki-highlight-api
+1.3.0 and local 2.0.0 with Shiki 4.4.3), in dark and light themes. Six package and
+inventory checks pass. Focused checks cover long bank/menu phrases, bank queries,
+Colour's dual role, Menu$ definitions, callback identifiers and all embedded
+payloads. Disabling Menu$'s reserved-variable rule fails on the exact Menu$ range;
+it was restored before passing checks. A fresh mixed listing preserves its text
+and selected scopes through both consumers.
+
+Disposable npm/VSIX builds contain the exact canonical grammar; the VSIX icon
+bytes/metadata match and there are no public gallery flags. The extracted npm
+registration renders the new listing in both themes. These checks do not publish
+packages, change preview assets or establish native bank/file/menu acceptance.
+Parser scope, edition qualification and private Marketplace availability remain
+unchanged. No dependency was added.

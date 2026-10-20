@@ -9,7 +9,7 @@ Published npm 0.1.0 and editor 0.1.1 retain their original grammar.
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Professional forms from §§5.1–5.8, 6.1–6.3 and 10.1, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5 and 10.1, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -85,7 +85,7 @@ identifiers. Two fresh mixed listings exercise these constructs independently of
 Bank or Risk.
 
 The inventory is documentary Professional coverage, not native release or
-Creator/Easy qualification. Broader screen/object/file facilities, numeric notation, numeric/inline labels,
+Creator/Easy qualification. Broader object/file facilities, numeric notation, numeric/inline labels,
 AMAL/Interface and extension vocabularies remain separate sweeps. The existing
 game milestone still passes. Published packages and the private Marketplace
 preview retain their earlier grammar; this source expansion is unreleased.
@@ -125,6 +125,26 @@ Text$ is a command. Spack, Pack and Unpack carry the manual's picture-compactor
 extension label, without qualifying availability. Filename and effect payloads
 remain strings. A fresh mixed listing checks these contexts in both consumers.
 
-Memory banks (§5.9), drawing (§6.4), menus (§6.5), objects, general file I/O and
-broader extensions remain later work. No runtime, parser or edition qualification
+Objects, general file I/O and broader extensions remain later work. No runtime, parser or edition qualification
 is added. Published packages and Marketplace availability are unchanged.
+
+## Memory banks, drawing and menus milestone
+
+The inventory adds 25 bank entries (§5.9), 27 drawing entries (§6.4) and 35 menu
+entries (§6.5), bringing BASIC coverage to 349 chapter entries across 15 chapters.
+Six of these 87 entries passed the previous complete phrase/boundary checks;
+all 87 now pass. Counts retain repeated references and distinct documented roles.
+Fourteen embedded menu commands have a separate cited inventory; their payloads
+remain ordinary strings and do not increase the BASIC count.
+
+Colour's assignment and query uses share a neutral scope. Menu$ keeps its
+reserved-variable scope for simple and advanced definitions. Full Reserve As
+variants, bank queries, drawing phrases and menu controls have specific scopes.
+Load/Save Iff still match whole phrases beside bank Load/Save. On Menu callbacks
+remain unresolved identifiers. A fresh mixed listing checks these forms in both
+existing consumers and themes.
+
+Objects and animation, general file I/O, broader extensions and edition/release
+qualification remain later work. Memory ranges, pointer safety, argument validity
+and native bank/menu persistence are not established by highlighting. The parser,
+published packages and private Marketplace availability are unchanged.
