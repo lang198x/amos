@@ -510,3 +510,15 @@ npm registrations render all three modes in both themes and retain Mouth Read's
 function scope. No installed-editor visual review, spoken audio, narrator setup,
 mode timing or mouth animation is claimed. Versions, parser, published preview
 0.2.0 and private Marketplace availability are unchanged.
+
+
+## Icons/blocks continuation
+
+All 15 §7.7 heading/page citations match the pinned extract. None passed complete
+scopes before the change. All 22 package checks and 118 integrations per existing
+consumer pass, in both BASIC profiles/themes. Checks cover complete phrases,
+typed boundaries, Hrev/Vrev command/function roles, Get/Put regressions and opaque
+payloads. Removing the new command rule fails the focused suite; restoration
+passes. npm/VSIX source files match exactly, with no public flag or executable
+host; extracted modes render in both themes and preserve the fresh listing.
+No native image/mask/alignment result, parser or release change is claimed.

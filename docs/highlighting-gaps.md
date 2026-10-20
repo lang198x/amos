@@ -3,7 +3,10 @@
 The next recommended sweep is **§7.7 Icons and Blocks**, followed by **§11.1
 Fonts** and **§12.2 Error Handling**. These fill ordinary graphics and program
 control gaps before the larger Interface and system-integration surfaces.
-This is a proposed sequence, not approval to implement or publish it.
+The sequence is approved for implementation. Icons/blocks now have a 15-entry
+inventory and verified scopes; fonts and error handling are next. The audit
+baseline and probes below retain their pre-implementation results. Publication
+remains separate.
 
 ## Audit baseline
 

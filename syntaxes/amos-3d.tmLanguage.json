@@ -90,6 +90,10 @@
       "patterns": [
         {
           "name": "keyword.control.amos",
+          "match": "(?i:(?<![A-Za-z0-9_$#])(?:Get[ \\t]+Icon[ \\t]+Palette|(?:Get|Paste|Del|Ins)[ \\t]+Icon|(?:Make|No)[ \\t]+Icon[ \\t]+Mask|(?:Get|Put|Del)[ \\t]+C?block|(?:Hrev|Vrev)[ \\t]+Block)(?![A-Za-z0-9_$#]))"
+        },
+        {
+          "name": "keyword.control.amos",
           "match": "(?i:(?<![A-Za-z0-9_$#])(?:Set[ \\t]+Talk|Talk[ \\t]+(?:Misc|Stop)|Say)(?![A-Za-z0-9_$#]))"
         },
         {

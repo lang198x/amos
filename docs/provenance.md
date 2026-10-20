@@ -203,3 +203,9 @@ parameters with commas preserved and gives Say an optional mode. The chapter's
 narrator and multitasking context is retained without qualifying installation,
 editions or output. The independent speech fixture is authored here and was not
 executed with the narrator device or used to measure mouth animation.
+
+
+The 15 §7.7 icon/block headings and printed pages (07.07.01–05) were checked
+against the pinned extract. The Paste Icon section illustrates Get/Put Block;
+its heading/signature supply the icon spelling. Fresh icon/block examples are
+lexical inputs and do not establish native rendering, masks or alignment.

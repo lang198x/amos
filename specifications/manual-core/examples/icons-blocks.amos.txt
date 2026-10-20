@@ -1,0 +1,11 @@
+Rem Lexical overlay board; image output has not been executed
+Get Icon 1,0,0 To 15,15 : Get Icon Palette
+Ins Icon 2 : Make Icon Mask 1 : Paste Icon 32,32,1
+No Icon Mask 1 : Del Icon 2
+Get Block 1,0,0,16,16,1 : Put Block 1,32,32
+Hrev Block 1 : Vrev Block 1 : Put Block 1
+Get Cblock 2,0,0,16,16 : Put Cblock 2,48,32
+Del Block : Del Cblock 2
+MC_IMAGE=Hrev(1) : MC_REVERSED=Vrev(1)
+MC_NOTE$="Get Icon Palette: Hrev Block"
+' Put Block Get Cblock

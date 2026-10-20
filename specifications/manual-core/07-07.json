@@ -1,0 +1,24 @@
+{
+  "chapter": "07.07",
+  "entries": [
+    {"spelling": "Get Icon", "kind": "command", "page": "07.07.01", "extract_line": 14058, "example": "Get Icon 1,0,0 To 15,15"},
+    {"spelling": "Get Icon Palette", "kind": "command", "page": "07.07.01", "extract_line": 14073, "example": "Get Icon Palette"},
+    {"spelling": "Paste Icon", "kind": "command", "page": "07.07.02", "extract_line": 14086, "example": "Paste Icon 32,32,1"},
+    {"spelling": "Del Icon", "kind": "command", "page": "07.07.02", "extract_line": 14114, "example": "Del Icon 1 To 2"},
+    {"spelling": "Ins Icon", "kind": "command", "page": "07.07.02", "extract_line": 14123, "example": "Ins Icon 2"},
+    {"spelling": "Make Icon Mask", "kind": "command", "page": "07.07.03", "extract_line": 14138, "example": "Make Icon Mask 1"},
+    {"spelling": "No Icon Mask", "kind": "command", "page": "07.07.03", "extract_line": 14149, "example": "No Icon Mask 1"},
+    {"spelling": "Get Block", "kind": "command", "page": "07.07.03", "extract_line": 14163, "example": "Get Block 1,0,0,16,16,1"},
+    {"spelling": "Put Block", "kind": "command", "page": "07.07.03", "extract_line": 14177, "example": "Put Block 1,32,32"},
+    {"spelling": "Del Block", "kind": "command", "page": "07.07.04", "extract_line": 14199, "example": "Del Block 1"},
+    {"spelling": "Hrev Block", "kind": "command", "page": "07.07.04", "extract_line": 14208, "example": "Hrev Block 1"},
+    {"spelling": "Vrev Block", "kind": "command", "page": "07.07.04", "extract_line": 14214, "example": "Vrev Block 1"},
+    {"spelling": "Get Cblock", "kind": "command", "page": "07.07.04", "extract_line": 14226, "example": "Get Cblock 2,0,0,16,16"},
+    {"spelling": "Put Cblock", "kind": "command", "page": "07.07.05", "extract_line": 14244, "example": "Put Cblock 2,48,32"},
+    {"spelling": "Del Cblock", "kind": "command", "page": "07.07.05", "extract_line": 14253, "example": "Del Cblock 2"}
+  ],
+  "notes": [
+    "The Paste Icon section illustrates Get/Put Block instead of Paste Icon; the heading and signature define the recorded spelling.",
+    "Hrev/Vrev Block are commands; Hrev/Vrev image queries retain their existing function roles. Blitter modes, masks, coordinates, alignment and native image results are not validated."
+  ]
+}

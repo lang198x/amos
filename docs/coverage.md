@@ -11,7 +11,7 @@ The table describes current source.
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.6, 8.1–8.3, 10.1–10.2 and 11.2, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 10.1–10.2 and 11.2, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -372,3 +372,13 @@ are unchanged.
 The [remaining-gap review](highlighting-gaps.md) maps uninventoried manual routes,
 records representative scope failures and proposes icons/blocks, fonts and error
 handling next. It is a planning audit, not an implementation or release approval.
+
+
+## Icons and blocks
+
+Fifteen §7.7 entries bring BASIC to 558 across 27 chapters. None passed complete
+scopes before the change; all now pass in both profiles/themes. Full icon capture,
+palette, insertion/deletion, masks, block and compacted-block phrases take priority
+over bare file Get/Put. Hrev/Vrev Block are commands beside the image functions.
+A fresh mixed listing checks these roles and opaque payloads. Masking, alignment,
+blitter modes and image output remain unqualified. Coverage is unreleased.
