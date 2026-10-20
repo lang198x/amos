@@ -2,7 +2,7 @@
   "name": "lang198x-amos",
   "displayName": "AMOS \u2014 Lang198x",
   "description": "Bounded AMOS syntax highlighting; no compiler or language server",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "publisher": "lang198x",
   "license": "GPL-2.0-or-later",
   "engines": {

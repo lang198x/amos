@@ -35,7 +35,7 @@ The dependency-free grammar package is published on npm under the preview
 npm install @lang198x/amos@next
 ```
 
-Use `@lang198x/amos@0.1.0` to pin this first preview. A local tarball can also be
+Use `@lang198x/amos@0.2.0` to pin this highlighting preview. A local tarball can also be
 built with `npm pack --pack-destination dist` after creating `dist/`.
 
 ```js
@@ -69,7 +69,7 @@ Compatibility with other engines must be tested before it is advertised.
 
 ## VS Code
 
-Download the [AMOS editor 0.1.1 VSIX](https://github.com/lang198x/amos/releases/download/v0.1.1/lang198x-lang198x-amos-0.1.1.vsix),
+Download the [AMOS editor 0.2.0 VSIX](https://github.com/lang198x/amos/releases/download/v0.2.0/lang198x-lang198x-amos-0.2.0.vsix),
 then run **Extensions: Install from VSIX** from VS Code's Command Palette and
 select the downloaded file. Open a plain-text `.amos.txt` listing; its language
 mode should be **AMOS**. For text listings with another suffix, choose **Change
@@ -77,9 +77,9 @@ Language Mode → AMOS** explicitly. Native tokenised `.AMOS` files need decodin
 and are deliberately not associated automatically.
 
 The preview uses your editor's active theme. It colours the documented subset;
-it does not provide compiler errors, completion or a language server. The `lang198x` Marketplace publisher is created. The editor-only 0.1.1
-package uses identifier `lang198x.lang198x-amos` and the approved L icon; its
-The Marketplace submission is private while coverage is developed and reviewed;
+it does not provide compiler errors, completion or a language server. The package
+uses identifier `lang198x.lang198x-amos` and the approved L icon. The Marketplace
+submission remains private while coverage is developed and reviewed;
 Microsoft validation does not trigger a public release. See the
 [release decision](decisions/marketplace-release-readiness.md). The downloadable
 VSIX works separately.
@@ -90,12 +90,13 @@ VSIX with `python3 scripts/package-editor.py`; this uses only Python's standard
 library. The [game baseline](audit/2026-10-highlighting/README.md) identifies the
 next highlighting groups without claiming full language coverage.
 
-Current source includes the unreleased
+The 0.2.0 highlighting preview includes the
 [full-game highlighting milestone](docs/coverage.md#full-game-highlighting-milestone).
 Its pinned source and independently reviewed scope inventory check all 398
 builtin/control-word and label occurrences in Bank or Risk in two themes.
-Released npm 0.1.0 and editor 0.1.1 retain the earlier grammar. The Rust parser's
-opening-program surface is unchanged, and the Marketplace preview stays private.
+Earlier preview assets retain their original grammar. The Rust parser remains
+at 0.1.0 with its opening-program surface, and the Marketplace preview stays
+private. See the [0.2.0 release notes](docs/releases/0.2.0.md).
 
 The [manual-led core inventory](specifications/manual-core/README.md) now drives
 broader coverage: current source highlights 452 BASIC entries from Professional manual
@@ -104,15 +105,13 @@ Fourteen embedded menu commands and 36 [AMAL records](specifications/amal/README
 are inventoried separately; their string payloads remain opaque.
 [AMOS 3D](specifications/extensions/amos-3d/README.md) is tracked as an optional
 extension with a 59-record manual inventory, three source-level answers and a pinned-binary
-answer to the collision-result question;
-The opt-in `amos-3d` profile highlights those records. This is unreleased lexical
-coverage; other manual chapters and edition/extension qualification remain
-separate work.
+answer to the collision-result question. The opt-in `amos-3d` profile highlights
+those records in preview 0.2.0. Other manual chapters and edition/extension
+qualification remain separate work.
 
 ## Optional AMOS 3D highlighting
 
-Current source adds a separate `@lang198x/amos/amos-3d` registration. This is not
-in the published npm 0.1.0 or editor 0.1.1 packages yet. The default `amos`
+Preview 0.2.0 adds a separate `@lang198x/amos/amos-3d` registration. The default `amos`
 registration and its file associations keep their existing behaviour.
 
 For Shiki (and Astro's Shiki language configuration), register the opt-in profile:
@@ -134,7 +133,7 @@ pass `[amos3d]` as `markdown.shikiConfig.langs` and use `amos-3d` code fences.
 For shiki-highlight-api, pass `amos3d` to `loadCustomLanguage`. Other TextMate
 consumers can use `@lang198x/amos/amos-3d.tmLanguage.json` directly.
 
-In the current VS Code source build, choose **AMOS + AMOS 3D** from the language
+In the 0.2.0 VS Code preview, choose **AMOS + AMOS 3D** from the language
 mode selector. To remember it for a project, add a workspace association such as
 `"files.associations": { "*.amos.txt": "amos-3d" }`. The profile selects vocabulary;
 it does not install the extension, qualify a release or validate a program.

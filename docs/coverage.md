@@ -1,8 +1,8 @@
 # Coverage and result meanings
 
-The released 0.1.0 kit is an opening-program subset, not complete AMOS support.
-The table describes current source; expanded game highlighting is unreleased.
-Published npm 0.1.0 and editor 0.1.1 retain their original grammar.
+Preview 0.2.0 releases the expanded BASIC and optional AMOS 3D highlighting.
+The Rust parser remains at 0.1.0 with its opening-program subset. Neither surface
+is complete AMOS support. The table describes the current implementation.
 
 | Surface | Implemented |
 | --- | --- |
@@ -87,8 +87,8 @@ Bank or Risk.
 The inventory is documentary Professional coverage, not native release or
 Creator/Easy qualification. Broader file facilities, numeric notation, numeric/inline labels,
 AMAL/Interface and extension vocabularies remain separate sweeps. The existing
-game milestone still passes. Published packages and the private Marketplace
-preview retain their earlier grammar; this source expansion is unreleased.
+game milestone still passes. Preview 0.2.0 includes this expansion; the private
+Marketplace submission retains its earlier package.
 
 ## Text and keyboard milestone
 
@@ -257,5 +257,5 @@ conflict evidence and is not an accepted alias. Quit uses command scopes and
 Advanced uses function scopes. Colouring does not enforce arguments or call shape.
 Movement/rotation strings remain strings. The five additional publisher-source
 tokens are excluded pending their own inventory. Profiles do not qualify editions,
-installed releases, collision geometry or native acceptance. This is unreleased;
+installed releases, collision geometry or native acceptance. This is included in preview 0.2.0;
 Marketplace availability remains private.

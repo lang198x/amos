@@ -320,3 +320,23 @@ succeeded using an isolated temporary cache. Ruff checks/formatting pass for the
 modified packager. No packages were published, release versions changed or
 Marketplace availability altered. Temporary archives, consumer and cache are
 removed after verification.
+
+
+## Refreshed highlighting preview 0.2.0
+
+The npm grammar and downloadable VSIX use 0.2.0. The Rust kit remains 0.1.0;
+parser behaviour is unchanged. Twenty package/inventory checks, editor sync and
+74 integrations against each existing consumer installation pass, in both themes.
+Archive inspection verifies versions, both exact grammars, language registrations,
+icon bytes, declarative execution metadata and absence of public gallery flags.
+Extracted npm imports render both profiles with expected scopes in both themes;
+the declarations pass strict TypeScript NodeNext checking.
+
+The VSIX installs with VS Code 1.142.0 using task-specific settings/extensions.
+Its installed manifest, both grammar files and icon match source. The first
+sandboxed attempt failed with `EMFILE: too many open files, watch`; the same
+isolated CLI installation passed outside the sandbox. This verifies package
+installation and contents, not native visual review or original AMOS execution.
+The npm release uses `next`; `latest` stays at 0.1.0. Marketplace privacy and the
+existing Marketplace submission are unchanged. Publication bindings and download
+checks are recorded separately with the release evidence after publication.

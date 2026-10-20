@@ -19,3 +19,12 @@ No new dependencies, extension host code, parser behaviour, release versions or
 publication. Marketplace remains private. Test profile isolation, all inventory
 records, mixed listings, longest forms, case/spacing, identifiers, comments and
 strings, plus existing BASIC regressions in both themes and existing consumers.
+
+
+## Highlighting preview release
+
+After this implementation, a separate approval commissions npm and downloadable
+VSIX preview 0.2.0. This supersedes the implementation milestone's prohibition
+on version changes/publication only for that bounded release. npm uses `next`;
+Marketplace remains private, with no upload or public gallery change. The Rust
+crate version and parser remain unchanged. See `docs/releases/0.2.0.md`.

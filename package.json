@@ -1,6 +1,6 @@
 {
   "name": "@lang198x/amos",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "AMOS TextMate grammar for Shiki and editor integrations",
   "type": "module",
   "license": "GPL-2.0-or-later",
