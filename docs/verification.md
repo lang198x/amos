@@ -253,3 +253,19 @@ highlighting integration result is claimed for this inventory-only change. No
 package is published, no media is installed and no native program is executed.
 The 452 BASIC entries, 14 menu records and 36 AMAL records remain separate from
 this optional extension. Marketplace availability remains private.
+
+## AMOS 3D original-source audit
+
+The pinned official +3d.s wrapper and +Verif.s verifier have verified SHA-256/Git
+blob bindings. All 14 exact excerpt ranges match. Token-name inspection confirms
+ANGLE REL and no ANGEL REL in that table. Quit's instruction metadata/dispatch
+and Advanced's function signature/verifier path support three source-only answers.
+Collision wrappers pass the library return through unchanged; the result meaning
+remains open. No binary, runtime, extension installation or release is qualified.
+
+Sixteen package/inventory checks and editor sync pass. Marking the collision
+finding source-resolved deliberately fails the preserved-boundary check; it was
+restored before the passing suite. Documentary conflicts remain linked to their
+revision-scoped findings. Grammar bytes, registrations, exports and versions are
+unchanged. No new highlighting integration result is claimed for this source audit.
+No package is published and Marketplace remains private.

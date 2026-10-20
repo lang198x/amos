@@ -124,3 +124,13 @@ cached-result rows are retained. Four uncertainties are explicit in the extensio
 questions file; agreement between retypeset documents is not runtime qualification.
 Movement/rotation string records preserve the guide's STOS/redraw context without
 inferring full AMAL support.
+
+AMOS 3D source conclusions cite AOZ-Studio's original AMOS Professional release,
+commit `533b4b1f5acd604814513f78e02c7b4796cb0531`, files `AMOSPro Sources/+3d.s`
+and `+Verif.s`. Both full-file SHA-256 and Git blob bindings and all 14 excerpt
+ranges were checked. Their MIT notice is retained alongside the excerpts.
+The wrapper's own label is Issue 1.02(AP200); its token table, dispatch routines
+and verifier support three revision-scoped answers. A scan of the pinned token
+table finds ANGLE REL and no ANGEL REL. Collision return semantics lie beyond
+the wrapper in c3d.lib, which was identified but not inspected. No binary or
+original-runtime equivalence is inferred from source inspection.

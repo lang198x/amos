@@ -1,0 +1,162 @@
+{
+  "repository": "https://github.com/AOZ-Studio/AMOS-Professional-Official",
+  "commit": "533b4b1f5acd604814513f78e02c7b4796cb0531",
+  "scope": "Original source evidence only; no native execution, built-binary equivalence or release compatibility qualification",
+  "wrapper_label": "Issue 1.02(AP200)",
+  "qualified_releases": [],
+  "files": {
+    "wrapper": {
+      "path": "AMOSPro Sources/+3d.s",
+      "git_blob": "2b60267cbfd064f3443541a1a5d304f7d21a1508",
+      "sha256": "ed375f71668e4576d4cebec0ade2bd637360995aafd7f5c118c56e681b40f876"
+    },
+    "verifier": {
+      "path": "+Verif.s",
+      "git_blob": "196c19d589a85479779a18dc36336f66b1de19b6",
+      "sha256": "b701e25c6643898190aad93a2291fc707c7b0dfb10bd5530d868b8c61d7efca8"
+    }
+  },
+  "revision_citations": [
+    {
+      "file": "wrapper",
+      "line": 35,
+      "end_line": 37,
+      "text": "Version MACRO\n      \tdc.b   \"Issue 1.02(AP200)\"\n      \tENDM"
+    },
+    {
+      "file": "wrapper",
+      "line": 519,
+      "end_line": 535,
+      "text": "            dc.w     L_IPriority,1     * Td Priority n,pri\n            dc.b     \"td priorit\",\"y\"+$80,\"I0,0\",-1\n\n            dc.w     1,L_FPragmaStat   * =Td Pragma Status(param0,param1)\n            dc.b     \"td pragma statu\",\"s\"+$80,\"00,0\",-1\n\n            dc.w     L_IPragma,1       * Td Pragma param0,param1\n            dc.b     \"td pragm\",\"a\"+$80,\"I0,0\",-1\n\n            dc.w     L_IDelZone,1      * Td Delete Zone n,zn\n            dc.b     \"td delete zon\",\"e\"+$80,\"I0,0\",-1\n\n            dc.w     L_ISetCol,1       * Td Set Colour n,b,c\n            dc.b     \"td set colou\",\"r\"+$80,\"I0,0,0\",-1\n\n            dc.w     L_IRotate,1       * Td Rotate n,A,B,C\n            dc.b     \"td rotat\",\"e\"+$80,\"I0,0,0,0\",-1"
+    }
+  ],
+  "additional_token_names": [
+    "Td Priority",
+    "Td Pragma Status",
+    "Td Pragma",
+    "Td Set Colour",
+    "Td Rotate"
+  ],
+  "external_library": {
+    "path": "AMOSPro Sources/c3d.lib",
+    "git_blob": "e6bae371e2fc552fead4f20faf510e8dcb3731dc",
+    "inspected": false
+  },
+  "findings": [
+    {
+      "id": "relative-angle-spelling",
+      "status": "source-resolved",
+      "conclusion": "The token table spells td angle rel and dispatches IAngle_rel; td angel rel is absent from this table.",
+      "source_spelling": "Td Angle Rel",
+      "not_in_token_table": [
+        "Td Angel Rel"
+      ],
+      "citations": [
+        {
+          "file": "wrapper",
+          "line": 351,
+          "end_line": 352,
+          "text": "            dc.w     L_IAngle_rel,1    * Td Angle rel n A,B,C\n            dc.b     \"td angle re\",\"l\"+$80,\"I0,0,0,0\",-1"
+        },
+        {
+          "file": "wrapper",
+          "line": 1070,
+          "end_line": 1073,
+          "text": "L_IAngle_rel equ     22\nIAngle_rel: move.w   #C4IntNoRet-Data,d0\n            move.w   #4*TD_ANGLE_REL,d1          * 156 Oangle rel n A,B,C\n            CallC"
+        }
+      ],
+      "native_verified": false
+    },
+    {
+      "id": "quit-role",
+      "status": "source-resolved",
+      "conclusion": "Td Quit is a no-argument instruction, dispatching IQuit to unload the external C library.",
+      "kind": "command",
+      "arguments": 0,
+      "citations": [
+        {
+          "file": "wrapper",
+          "line": 516,
+          "end_line": 517,
+          "text": "            dc.w     L_IQuit,1         * Td Quit\n            dc.b     \"td qui\",\"t\"+$80,\"I\",-1"
+        },
+        {
+          "file": "wrapper",
+          "line": 1422,
+          "end_line": 1424,
+          "text": "L_IQuit     equ     (L_FAdvanced+1)             * Td Quit - doesn't call C\nIQuit:      move.l  ExtAdr+ExtNb*16(a5),a2      * Get address of Data zone\n            jmp     UnLoadCPrg-Data(a2)         * Clear C code if present."
+        }
+      ],
+      "native_verified": false
+    },
+    {
+      "id": "advanced-call-syntax",
+      "status": "source-resolved",
+      "conclusion": "Td Advanced is an integer-returning function with one integer argument; the verifier requires parenthesised function arguments for this signature.",
+      "kind": "function",
+      "arguments": 1,
+      "example": "MC_ADDRESS=Td Advanced(1)",
+      "citations": [
+        {
+          "file": "wrapper",
+          "line": 513,
+          "end_line": 514,
+          "text": "            dc.w     1,L_FAdvanced     * Td Advanced n\n            dc.b     \"td advance\",\"d\"+$80,\"00\",-1"
+        },
+        {
+          "file": "wrapper",
+          "line": 1417,
+          "end_line": 1420,
+          "text": "L_FAdvanced equ      (L_IKeepOff+1)\nFAdvanced:  move.w  #CIntRInt-Data,d0\n            move.w  #4*TD_ADVANCED,d1\n            CallC"
+        },
+        {
+          "file": "verifier",
+          "line": 3100,
+          "end_line": 3107,
+          "text": "\tcmp.w\t#_TkPar1,(a6)\n\tbne\tVerf6\n\taddq.l\t#2,a6\n\tcmp.w\t#_TkPar2,(a6)+\n\tbeq\tVerf6\n\tsubq.l\t#2,a6\n* Compte les parametres\nVerf2:\tbsr\tVer_Evalue"
+        },
+        {
+          "file": "verifier",
+          "line": 3153,
+          "end_line": 3160,
+          "text": "* Pas de parametre?\n\tmove.b\t(a1),d1\n\tbpl.s\tVerC0\n\ttst.b\t(a0)\n\tbmi.s\tVerCF\n\tbra.s\tVerC3\nVerC0:\ttst.b\t(a0)\n\tbmi.s\tVerC3"
+        },
+        {
+          "file": "verifier",
+          "line": 3184,
+          "end_line": 3187,
+          "text": "VerC3:\tmove.b\t(a1)+,d1\n\tbpl.s\tVerC3\nVerC4:\tcmp.b\t#-2,d1\t\t* Change le numero de l'instruction\n\tbne\tVerSynt"
+        }
+      ],
+      "native_verified": false
+    },
+    {
+      "id": "collision-result",
+      "status": "open",
+      "conclusion": "The one- and two-object wrappers call TD_COLLIDE with mode values 1 and 0 respectively, then forward the library integer unchanged. This does not establish whether the single-object result is an identity or count.",
+      "unresolved_boundary": "c3d.lib TD_COLLIDE implementation",
+      "citations": [
+        {
+          "file": "wrapper",
+          "line": 1208,
+          "end_line": 1218,
+          "text": "L_FCollide1 equ      45                 * =Td Collide(n)\nFCollide1:  move.w   #CIntRInt-Data,d0\n            move.w   #4*TD_COLLIDE,d1\n            moveq    #1,d2\n            CallCP\n\nL_FCollide2 equ      46                 * =Td Collide(n1,n2)\nFCollide2:  move.w   #C2IntRInt-Data,d0\n            move.w   #4*TD_COLLIDE,d1\n            moveq    #0,d2\n            CallCP"
+        },
+        {
+          "file": "wrapper",
+          "line": 137,
+          "end_line": 139,
+          "text": "*       CallC       SetUpC          Normal parameters expected.\n*       CallCP      SetUpCP         Passes an extra parameter to the C function\n*                                   as its first parameter."
+        },
+        {
+          "file": "wrapper",
+          "line": 714,
+          "end_line": 732,
+          "text": "C4IntRInt:  move.l  (a3)+,-(a1)\nC3IntRInt:  move.l  (a3)+,-(a1)\nC2IntRInt:  move.l  (a3)+,-(a1)\nCIntRInt:   move.l  (a3)+,-(a1)\nCNoneRInt:  tst.w   d2\n            bmi.s   NoExtraPar2\n            move.l  d2,-(a1)\nNoExtraPar2:movem.l  a3-a6,-(sp)           * Stash registers on AMOS stack\n            move.l   sp,AmosStack(a2)\n            move.l   a1,sp\n            move.l  CTable(a2),a0\n            move.l   CLinkerDB(a2),a4      * C V5.10 base relative addressing\n            move.l  0(a0,d1.w),a0\n            jsr     (a0)\n            move.l  AmosStack(a2),sp\n            movem.l (sp)+,a3-a6\n            move.l   d0,d3\n            moveq    #0,d2\n            rts"
+        }
+      ],
+      "native_verified": false
+    }
+  ],
+  "license_file": "original-source-LICENSE"
+}

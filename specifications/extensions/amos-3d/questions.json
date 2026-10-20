@@ -26,7 +26,10 @@
           "page": "1",
           "text": "Td ANGEL REL n,dA,dB,dC"
         }
-      ]
+      ],
+      "status": "source-resolved",
+      "source_evidence": "original-source.json#relative-angle-spelling",
+      "remaining_evidence": "Native or binary qualification is separate from this source conclusion."
     },
     {
       "id": "quit-role",
@@ -48,7 +51,10 @@
           "page": "1",
           "text": "Td QUIT"
         }
-      ]
+      ],
+      "status": "source-resolved",
+      "source_evidence": "original-source.json#quit-role",
+      "remaining_evidence": "Native or binary qualification is separate from this source conclusion."
     },
     {
       "id": "advanced-call-syntax",
@@ -76,7 +82,10 @@
           "page": "1",
           "text": "=Td ADVANCED n"
         }
-      ]
+      ],
+      "status": "source-resolved",
+      "source_evidence": "original-source.json#advanced-call-syntax",
+      "remaining_evidence": "Native or binary qualification is separate from this source conclusion."
     },
     {
       "id": "collision-result",
@@ -98,7 +107,10 @@
           "page": "1",
           "text": "Returns number of collided objects"
         }
-      ]
+      ],
+      "status": "open",
+      "source_evidence": "original-source.json#collision-result",
+      "remaining_evidence": "Trace the pinned external library implementation or run a native trial that distinguishes object identity from collision count."
     }
   ]
 }

@@ -69,5 +69,6 @@
   ],
   "card_cells": "quickcard-cells.json",
   "questions": "questions.json",
-  "strings": "strings.json"
+  "strings": "strings.json",
+  "original_source": "original-source.json"
 }

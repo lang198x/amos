@@ -205,8 +205,8 @@ No standalone AMAL grammar, parser, validation or runtime execution is added.
 [AMOS 3D](../specifications/extensions/amos-3d/README.md) now has hash-bound guide
 and quick-card evidence, installation/minimum-version statements and a bounded
 inventory/profile follow-on plan. It is an optional extension, distinct from AMAL.
-The ANGLE REL/ANGEL REL discrepancy remains unresolved; no Td vocabulary or
-release compatibility is qualified. Published packages, parser scope and private
+The ANGLE REL/ANGEL REL documentary conflict is retained; later source evidence
+is recorded below. No Td vocabulary or release compatibility is qualified. Published packages, parser scope and private
 Marketplace availability are unchanged.
 
 ## AMOS 3D documentary inventory
@@ -217,7 +217,22 @@ records; grouped axes, overload examples, cached results and signature continuat
 are retained. Two additional records describe movement/rotation string families.
 This adds no entries to the 452-form Professional BASIC highlighting checklist.
 
-Fifty-five records have documentary status; four remain unresolved: ANGLE/ANGEL REL, Quit's category, Advanced call syntax and the
-single-object Collide result. The evidence backlog names what must be checked
-before accepting spellings, call shapes or semantics. No extension release is
+Fifty-five records have documentary status, three have revision-scoped source
+evidence, and the single-object Collide result remains unresolved. The evidence
+backlog names what must be checked before accepting spellings, call shapes or
+semantics. No extension release is
 qualified and no Td grammar, parser, native format or runtime is implemented.
+
+## AMOS 3D original-source evidence
+
+The official publisher source supplies three answers for its `Issue 1.02(AP200)`
+wrapper: ANGLE REL spelling, Quit as a no-argument instruction, and Advanced as
+an integer function with one parenthesised integer argument. Exact pinned source
+excerpts and the verifier path support those conclusions; no native execution or
+binary/source equivalence is claimed. Conflicting manual evidence remains intact.
+
+Collide's wrappers forward the external library result unchanged, leaving its
+single-object result semantics open. Later tokens in this source also extend
+beyond the quick card. The manual's 59 records do not become a complete inventory
+of that source revision. No Td highlighting, parser, release qualification or
+package availability change follows from this source audit.

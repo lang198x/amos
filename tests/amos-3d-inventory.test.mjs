@@ -25,7 +25,7 @@ test('3D inventory retains all six families, fresh examples and optional-extensi
   const spellings = new Set();
   for (const entry of entries) {
     assert.ok(['command', 'function', 'ambiguous'].includes(entry.kind));
-    assert.ok(['documented', 'unresolved'].includes(entry.status));
+    assert.ok(['documented', 'source-evidenced', 'unresolved'].includes(entry.status));
     assert.ok(entry.examples.length > 0);
     for (const text of entry.examples) assert.ok(entry.spellings.some((word) => text.includes(word)));
     for (const word of entry.spellings) {
@@ -57,17 +57,18 @@ test('grouped axes and cached-result forms are expanded without dropping variant
   for (const entry of cached) assert.ok(entry.examples.includes(`MC_CACHED=${entry.spellings[0]}`));
 });
 
-test('unresolved spellings, roles, call syntax and results remain explicit evidence questions', () => {
+test('documentary questions retain explicit source and unresolved evidence states', () => {
   assert.deepEqual(questions.map((question) => question.id), ['relative-angle-spelling', 'quit-role', 'advanced-call-syntax', 'collision-result']);
   const referenced = new Set();
   for (const entry of entries) {
-    assert.equal(entry.status === 'unresolved', entry.questions.length > 0, entry.id);
+    assert.equal(entry.status !== 'documented', entry.questions.length > 0, entry.id);
     for (const id of entry.questions) {
       assert.ok(questions.some((question) => question.id === id));
       referenced.add(id);
     }
   }
-  assert.equal(entries.filter((entry) => entry.status === 'unresolved').length, 4);
+  assert.equal(entries.filter((entry) => entry.status === 'unresolved').length, 1);
+  assert.equal(entries.filter((entry) => entry.status === 'source-evidenced').length, 3);
   assert.deepEqual(referenced, new Set(questions.map((question) => question.id)));
   for (const question of questions) {
     assert.ok(question.blocks.length > 0 && question.evidence_needed.length > 0);
