@@ -367,3 +367,8 @@ Set Talk parameters and mouth queries. Narrator installation, mode timing, retur
 values, spoken audio and mouth animation are not established by highlighting.
 This continuation is unreleased; parser, published 0.2.0 and Marketplace state
 are unchanged.
+
+
+The [remaining-gap review](highlighting-gaps.md) maps uninventoried manual routes,
+records representative scope failures and proposes icons/blocks, fonts and error
+handling next. It is a planning audit, not an implementation or release approval.

@@ -110,7 +110,8 @@ BASIC string payloads remain opaque. This mode is not in preview 0.2.0.
 extension with a 59-record manual inventory, three source-level answers and a pinned-binary
 answer to the collision-result question. The opt-in `amos-3d` profile highlights
 those records in preview 0.2.0. Other manual chapters and edition/extension
-qualification remain separate work.
+qualification remain separate work. See the [remaining-gap review](docs/highlighting-gaps.md)
+for the proposed next sweeps and unresolved surfaces.
 
 ## Optional AMOS 3D highlighting
 
