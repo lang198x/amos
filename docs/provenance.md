@@ -18,6 +18,12 @@ Language facts were checked against the original **AMOS Professional User Guide*
 - §10.1: Inkey$ and Wait Key.
 - §14.1: binary and hexadecimal notation.
 
+Full-game highlighting additionally uses the original manual's §5.1 (Dim and
+Wait), §5.3 (Randomize and Timer), and §5.4 (Gosub/Return, labels, And/Or).
+The [full-game fixture](../corpus/highlighting/README.md) retains its pinned
+upstream source and MIT attribution. These facts identify vocabulary, not a new
+parser capability or cross-release qualification.
+
 These are language facts, not a claim that every edition behaves identically.
 The AMOS-specific grammar is deliberately partial; it is not copied manual text.
 

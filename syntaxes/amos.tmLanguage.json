@@ -65,7 +65,7 @@
       "patterns": [
         {
           "name": "keyword.control.amos",
-          "match": "(?i:(?<![A-Za-z0-9_$#])(?:Wait[ \\t]+Key|End[ \\t]+(?:If|Proc)|Cls|Print|End|If|Then|Else|Do|Loop|For|To|Step|Next|Repeat|Until|While|Wend|Procedure)(?![A-Za-z0-9_$#]))"
+          "match": "(?i:(?<![A-Za-z0-9_$#])(?:Wait[ \\t]+(?:Key|Vbl)|End[ \\t]+(?:If|Proc)|Cls|Print|End|If|Then|Else|Do|Loop|For|To|Step|Next|Repeat|Until|While|Wend|Procedure|Gosub|Return|Dim|Randomize|Wait)(?![A-Za-z0-9_$#]))"
         }
       ]
     },

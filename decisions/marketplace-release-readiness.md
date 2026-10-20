@@ -12,12 +12,13 @@ current physical-line-head audit is a baseline, not a coverage percentage or a
 release gate by itself. Highlighting coverage and parser coverage remain separate;
 this decision does not commission a full parser, compiler or LSP implementation.
 
-The next proposed scope starts with the complete pinned Bank or Risk listing:
+Steve approved the next bounded milestone: the complete pinned Bank or Risk listing.
+The scope is to
 inventory full command forms and functions in expressions, check them against
 primary manuals, and verify mixed case, boundaries, identifiers, strings and
 comments. Control/data, display and sound/input groups can be delivered in small
-changes. This is a proposal to agree before grammar expansion, not an adopted
-definition of sufficient whole-language coverage.
+changes. Completion is a coverage milestone, not an adopted definition of
+sufficient whole-language coverage or automatic public-release approval.
 
 Existing public GitHub preview downloads and the npm grammar remain available.
 This decision restricts public Marketplace release; it does not retract those

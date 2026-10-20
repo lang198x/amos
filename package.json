@@ -26,7 +26,7 @@
   ],
   "scripts": {
     "test": "node --test tests/package.test.mjs",
-    "test:integrations": "node --test tests/highlighting.test.mjs",
+    "test:integrations": "node --test tests/highlighting*.test.mjs",
     "check:editor": "node scripts/sync-editor.mjs --check",
     "prepack": "node scripts/sync-editor.mjs --check"
   },
