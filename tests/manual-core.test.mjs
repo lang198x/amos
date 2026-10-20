@@ -28,4 +28,12 @@ test('manual inventory has cited, nonempty examples for every declared chapter',
     }
   }
   assert.equal(checked, 109);
+  const maths = await json('05-03.json');
+  const crosschecked = maths.entries.filter((entry) => entry.held_retypeset_page);
+  assert.deepEqual(crosschecked.map((entry) => entry.spelling), ['Degree', 'Radian', 'Sin', 'Cos']);
+  for (const entry of crosschecked) {
+    assert.equal(entry.page, '05.03.08');
+    assert.equal(entry.held_retypeset_page, '05.02.08');
+  }
+  assert.match(source.pagination_crosscheck.extract_sha256, /^[0-9a-f]{64}$/);
 });

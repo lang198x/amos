@@ -13,5 +13,11 @@
     "05-04",
     "05-05"
   ],
-  "other_editions": "Creator, Easy and individual release/extension differences are not qualified by this manual inventory"
+  "other_editions": "Creator, Easy and individual release/extension differences are not qualified by this manual inventory",
+  "pagination_crosscheck": {
+    "source": "https://archive.org/details/AmosProfessionalManual",
+    "held_extract": "amos-professional-user-guide.txt",
+    "extract_sha256": "15c9f11acd4f5ef34c06b36a3769759488dbede94e1bf934df77eb0eac7daf21",
+    "finding": "Degree, Radian, Sin and Cos are on 05.03.08 in the original-manual extract; the retypeset extract misprints that maths page as 05.02.08 and labels its header String Functions. The four entries retain the retypeset page alongside the original page."
+  }
 }

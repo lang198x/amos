@@ -24,6 +24,11 @@ in §5.1 concern original editor acceptance; conservative whole-word highlightin
 of a command-like identifier is not a validity judgement. No new native tests
 are claimed by this documentary inventory.
 
+The Degree/Radian/Sin/Cos page is misprinted as `05.02.08` in the retypeset
+extract. A separate original-manual extract gives `05.03.08`. Those four entries
+cite the original pagination and retain `held_retypeset_page`; `source.json`
+binds both extracts. The chapter/page consistency check caught this discrepancy.
+
 Tests check complete phrases, letter case, spaces/tabs, typed builtin variants,
 suffix and identifier boundaries, comments/strings and unchanged full-game
 coverage. Passing entries mean lexical coverage of the recorded forms, not
