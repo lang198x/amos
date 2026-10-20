@@ -1,0 +1,222 @@
+{
+  "method": "physical_line_head_candidates_not_a_parser_or_full_vocabulary_audit",
+  "source": "https://github.com/code198x/code-samples/blob/633cd5805d4d0fcbe16ddc4eb41b85769bde41d8/commodore-amiga/amos/bank-or-risk/stages/arcade/stable-display.amos",
+  "source_sha256": "d540a483d722b4961f1abd70838d04d77c72f3e3596e78f63a011825414f9111",
+  "grammar_commit": "1f96074c0b8215d4d29bfe98c8d5a6c426baf672",
+  "grammar_sha256": "3164ff08e962fc691797caefa4c038d47eb689a0f5d4bf26ae313809a5d39d86",
+  "highlighter": "Shiki 4.4.3, dark-plus, scopes inspected",
+  "source_lines": 416,
+  "examined_candidate_lines": 332,
+  "heads": [
+    {
+      "word": "Autoback",
+      "occurrences": 1,
+      "highlighted": false,
+      "example_line": 5
+    },
+    {
+      "word": "Bar",
+      "occurrences": 29,
+      "highlighted": false,
+      "example_line": 30
+    },
+    {
+      "word": "Bob",
+      "occurrences": 1,
+      "highlighted": false,
+      "example_line": 6
+    },
+    {
+      "word": "Box",
+      "occurrences": 1,
+      "highlighted": false,
+      "example_line": 324
+    },
+    {
+      "word": "BR_MARK",
+      "occurrences": 2,
+      "highlighted": false,
+      "example_line": 67
+    },
+    {
+      "word": "Clear",
+      "occurrences": 1,
+      "highlighted": false,
+      "example_line": 309
+    },
+    {
+      "word": "Cls",
+      "occurrences": 3,
+      "highlighted": true,
+      "example_line": 20
+    },
+    {
+      "word": "Curs",
+      "occurrences": 1,
+      "highlighted": false,
+      "example_line": 2
+    },
+    {
+      "word": "Dim",
+      "occurrences": 1,
+      "highlighted": false,
+      "example_line": 61
+    },
+    {
+      "word": "Double",
+      "occurrences": 1,
+      "highlighted": false,
+      "example_line": 4
+    },
+    {
+      "word": "Else",
+      "occurrences": 18,
+      "highlighted": true,
+      "example_line": 86
+    },
+    {
+      "word": "End",
+      "occurrences": 47,
+      "highlighted": true,
+      "example_line": 55
+    },
+    {
+      "word": "Flash",
+      "occurrences": 1,
+      "highlighted": false,
+      "example_line": 3
+    },
+    {
+      "word": "For",
+      "occurrences": 4,
+      "highlighted": true,
+      "example_line": 66
+    },
+    {
+      "word": "Gosub",
+      "occurrences": 12,
+      "highlighted": false,
+      "example_line": 50
+    },
+    {
+      "word": "Hide",
+      "occurrences": 1,
+      "highlighted": false,
+      "example_line": 1
+    },
+    {
+      "word": "If",
+      "occurrences": 43,
+      "highlighted": true,
+      "example_line": 52
+    },
+    {
+      "word": "Ink",
+      "occurrences": 12,
+      "highlighted": false,
+      "example_line": 29
+    },
+    {
+      "word": "Locate",
+      "occurrences": 25,
+      "highlighted": false,
+      "example_line": 27
+    },
+    {
+      "word": "Next",
+      "occurrences": 4,
+      "highlighted": true,
+      "example_line": 68
+    },
+    {
+      "word": "Palette",
+      "occurrences": 1,
+      "highlighted": false,
+      "example_line": 7
+    },
+    {
+      "word": "Paper",
+      "occurrences": 9,
+      "highlighted": false,
+      "example_line": 8
+    },
+    {
+      "word": "Pen",
+      "occurrences": 30,
+      "highlighted": false,
+      "example_line": 9
+    },
+    {
+      "word": "Play",
+      "occurrences": 9,
+      "highlighted": false,
+      "example_line": 10
+    },
+    {
+      "word": "Print",
+      "occurrences": 33,
+      "highlighted": true,
+      "example_line": 28
+    },
+    {
+      "word": "Randomize",
+      "occurrences": 1,
+      "highlighted": false,
+      "example_line": 57
+    },
+    {
+      "word": "Repeat",
+      "occurrences": 8,
+      "highlighted": true,
+      "example_line": 49
+    },
+    {
+      "word": "Return",
+      "occurrences": 6,
+      "highlighted": false,
+      "example_line": 300
+    },
+    {
+      "word": "Screen",
+      "occurrences": 2,
+      "highlighted": false,
+      "example_line": 412
+    },
+    {
+      "word": "Set",
+      "occurrences": 7,
+      "highlighted": false,
+      "example_line": 13
+    },
+    {
+      "word": "Show",
+      "occurrences": 4,
+      "highlighted": false,
+      "example_line": 54
+    },
+    {
+      "word": "Until",
+      "occurrences": 8,
+      "highlighted": true,
+      "example_line": 51
+    },
+    {
+      "word": "Volume",
+      "occurrences": 1,
+      "highlighted": false,
+      "example_line": 12
+    },
+    {
+      "word": "Wait",
+      "occurrences": 4,
+      "highlighted": false,
+      "example_line": 306
+    },
+    {
+      "word": "Wave",
+      "occurrences": 1,
+      "highlighted": false,
+      "example_line": 11
+    }
+  ]
+}

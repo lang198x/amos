@@ -69,10 +69,22 @@ Compatibility with other engines must be tested before it is advertised.
 
 ## VS Code
 
+Download the [AMOS 0.1.0 VSIX](https://github.com/lang198x/amos/releases/download/v0.1.0/lang198x-amos-0.1.0.vsix),
+then run **Extensions: Install from VSIX** from VS Code's Command Palette and
+select the downloaded file. Open a plain-text `.amos.txt` listing; its language
+mode should be **AMOS**. For text listings with another suffix, choose **Change
+Language Mode → AMOS** explicitly. Native tokenised `.AMOS` files need decoding
+and are deliberately not associated automatically.
+
+The preview uses your editor's active theme. It colours the documented subset;
+it does not provide compiler errors, completion or a language server. Marketplace
+publication is pending publisher sign-in; the downloadable VSIX works separately.
+
 `editors/vscode/` is a thin declarative extension. Its grammar is generated from
 the canonical file; `npm run check:editor` fails on drift. Build an installable
 VSIX with `python3 scripts/package-editor.py`; this uses only Python's standard
-library. No Marketplace publication is implied by a local package.
+library. The [game baseline](audit/2026-10-highlighting/README.md) identifies the
+next highlighting groups without claiming full language coverage.
 
 ## Verify packages
 
