@@ -382,3 +382,32 @@ with expected function scopes. No package is published or versioned asset
 replaced. Released 0.2.0 retains its 452-entry BASIC inventory. No file/device
 operations, include expansion, native execution, parser validation or new editor
 installation is claimed for this continuation. Marketplace stays private.
+
+
+## Unreleased standalone AMAL highlighting
+
+The canonical standalone AMAL grammar and explicit registration cover all 36
+inventory records: 16 command/structure records, 15 functions and five register
+families expanding to 39 members. Eight exact lexical excerpt ranges and their
+printed-page bindings match the hash-pinned Professional extract. The later
+Autotest section explicitly supplies the extended If/eXit signature.
+
+Twenty-two package/inventory checks and editor sync pass. Eighty-eight
+highlighting integrations pass in each existing consumer installation, using
+Shiki 4.4.3 with shiki-highlight-api 1.3.0 and 2.0.0, in dark-plus/light-plus.
+The focused suite checks every inventory spelling/code, every register member
+in normal and Autotest expressions, significant-capital variants, label targets,
+A/X roles, grouping, resumed context after Autotest and neutral ambiguous compact
+transitions. Basic AMOS/AMOS 3D grammar and registration bytes are unchanged,
+and their string payloads remain opaque. Removing VU from the expression rules
+makes the inventory check fail; canonical/editor files were restored before the
+passing checks.
+
+Actual disposable npm/VSIX builds contain all three exact grammars, the separate
+AMAL parentheses configuration and expected icon/registration bytes, without
+public gallery flags or executable extension code. Extracted npm imports render
+the independent AMAL listing in both themes and preserve both BASIC modes;
+all three declarations pass strict TypeScript NodeNext checking. Ruff checks
+and formatting pass for the modified packager. These are grammar-engine and
+package-content checks, not an installed editor visual review or native AMAL
+execution. No versions, published 0.2.0 assets or Marketplace state change.

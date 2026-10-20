@@ -1,0 +1,399 @@
+{
+  "name": "AMAL",
+  "scopeName": "source.amal",
+  "fileTypes": [],
+  "patterns": [
+    {
+      "include": "#statements"
+    }
+  ],
+  "repository": {
+    "statements": {
+      "patterns": [
+        {
+          "include": "#labels"
+        },
+        {
+          "include": "#autotest"
+        },
+        {
+          "name": "keyword.control.amal",
+          "match": "[a-z]*A[a-z]*U[a-z]*"
+        },
+        {
+          "include": "#jump"
+        },
+        {
+          "include": "#arguments"
+        },
+        {
+          "name": "keyword.control.amal",
+          "match": "[a-z]*[EXOPW][a-z]*"
+        },
+        {
+          "include": "#separators"
+        },
+        {
+          "include": "#ignored"
+        },
+        {
+          "include": "#unknown"
+        }
+      ]
+    },
+    "labels": {
+      "match": "([a-z]*[A-Z][a-z]*)(:)",
+      "captures": {
+        "1": {
+          "name": "entity.name.label.amal"
+        },
+        "2": {
+          "name": "punctuation.definition.label.amal"
+        }
+      }
+    },
+    "autotest": {
+      "name": "meta.autotest.amal",
+      "begin": "([a-z]*A[a-z]*U[a-z]*)[ \\t]*(\\()",
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.control.amal"
+        },
+        "2": {
+          "name": "punctuation.section.group.begin.amal"
+        }
+      },
+      "end": "\\)",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.section.group.end.amal"
+        }
+      },
+      "patterns": [
+        {
+          "include": "#autotest-if"
+        },
+        {
+          "include": "#statements"
+        }
+      ]
+    },
+    "jump": {
+      "name": "meta.jump.amal",
+      "begin": "([a-z]*(?:J(?![a-z]*[01])|D)[a-z]*)",
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.control.amal"
+        }
+      },
+      "end": "([a-z]*[A-Z][a-z]*)|(?=;|\\)|$)",
+      "endCaptures": {
+        "1": {
+          "name": "entity.name.label.amal"
+        }
+      },
+      "patterns": [
+        {
+          "include": "#ignored"
+        },
+        {
+          "include": "#unknown"
+        }
+      ]
+    },
+    "arguments": {
+      "patterns": [
+        {
+          "name": "meta.instruction.play.amal",
+          "begin": "([a-z]*P[a-z]*L[a-z]*)",
+          "beginCaptures": {
+            "1": {
+              "name": "keyword.control.amal"
+            }
+          },
+          "end": "(?=;|\\)|$|[a-z]*(?:A[a-z]*U|J(?![a-z]*[01])|[MLIFTNDEOPW]))",
+          "patterns": [
+            {
+              "include": "#argument-value"
+            },
+            {
+              "include": "#expression"
+            }
+          ]
+        },
+        {
+          "name": "meta.instruction.move.amal",
+          "begin": "([a-z]*M[a-z]*)",
+          "beginCaptures": {
+            "1": {
+              "name": "keyword.control.amal"
+            }
+          },
+          "end": "(?=;|\\)|$|[a-z]*(?:A[a-z]*U|J(?![a-z]*[01])|[MLIFTNDEOPW]))",
+          "patterns": [
+            {
+              "include": "#argument-value"
+            },
+            {
+              "include": "#expression"
+            }
+          ]
+        },
+        {
+          "name": "meta.instruction.anim.amal",
+          "begin": "([a-z]*A[a-z]*)",
+          "beginCaptures": {
+            "1": {
+              "name": "keyword.control.amal"
+            }
+          },
+          "end": "(?=;|\\)|$|[a-z]*(?:A[a-z]*U|J(?![a-z]*[01])|[MLIFTNDEOPW]))",
+          "patterns": [
+            {
+              "include": "#argument-value"
+            },
+            {
+              "include": "#expression"
+            }
+          ]
+        },
+        {
+          "name": "meta.instruction.let.amal",
+          "begin": "([a-z]*L[a-z]*)",
+          "beginCaptures": {
+            "1": {
+              "name": "keyword.control.amal"
+            }
+          },
+          "end": "(?=;|\\)|$|[a-z]*(?:A[a-z]*U|J(?![a-z]*[01])|[MLIFTNDEOPW]))",
+          "patterns": [
+            {
+              "include": "#argument-value"
+            },
+            {
+              "include": "#expression"
+            }
+          ]
+        },
+        {
+          "name": "meta.instruction.if.amal",
+          "begin": "([a-z]*I[a-z]*)",
+          "beginCaptures": {
+            "1": {
+              "name": "keyword.control.amal"
+            }
+          },
+          "end": "(?=;|\\)|$|[a-z]*(?:A[a-z]*U|J(?![a-z]*[01])|[MLIFTNDEOPW]))",
+          "patterns": [
+            {
+              "include": "#argument-value"
+            },
+            {
+              "include": "#expression"
+            }
+          ]
+        },
+        {
+          "name": "meta.instruction.for.amal",
+          "begin": "([a-z]*F[a-z]*)",
+          "beginCaptures": {
+            "1": {
+              "name": "keyword.control.amal"
+            }
+          },
+          "end": "(?=;|\\)|$|[a-z]*(?:A[a-z]*U|J(?![a-z]*[01])|[MLIFTNDEOPW]))",
+          "patterns": [
+            {
+              "include": "#argument-value"
+            },
+            {
+              "include": "#expression"
+            }
+          ]
+        },
+        {
+          "name": "meta.instruction.to.amal",
+          "begin": "([a-z]*T[a-z]*)",
+          "beginCaptures": {
+            "1": {
+              "name": "keyword.control.amal"
+            }
+          },
+          "end": "(?=;|\\)|$|[a-z]*(?:A[a-z]*U|J(?![a-z]*[01])|[MLIFTNDEOPW]))",
+          "patterns": [
+            {
+              "include": "#argument-value"
+            },
+            {
+              "include": "#expression"
+            }
+          ]
+        },
+        {
+          "name": "meta.instruction.next.amal",
+          "begin": "([a-z]*N[a-z]*)",
+          "beginCaptures": {
+            "1": {
+              "name": "keyword.control.amal"
+            }
+          },
+          "end": "(?=;|\\)|$|[a-z]*(?:A[a-z]*U|J(?![a-z]*[01])|[MLIFTNDEOPW]))",
+          "patterns": [
+            {
+              "include": "#argument-value"
+            },
+            {
+              "include": "#expression"
+            }
+          ]
+        }
+      ]
+    },
+    "expression": {
+      "patterns": [
+        {
+          "include": "#functions"
+        },
+        {
+          "include": "#registers"
+        },
+        {
+          "include": "#group"
+        },
+        {
+          "name": "constant.numeric.decimal.amal",
+          "match": "[0-9]+"
+        },
+        {
+          "name": "keyword.operator.amal",
+          "match": "<>|[+*/=<>\\-&|]"
+        },
+        {
+          "name": "punctuation.separator.amal",
+          "match": ","
+        },
+        {
+          "include": "#ignored"
+        },
+        {
+          "include": "#unknown"
+        }
+      ]
+    },
+    "functions": {
+      "name": "support.function.amal",
+      "match": "[a-z]*(?:B[a-z]*C|S[a-z]*C|V[a-z]*U|X[a-z]*[HMS]|Y[a-z]*[HMS]|J[a-z]*[01]|K[a-z]*[12]|C|Z)[a-z]*"
+    },
+    "registers": {
+      "name": "variable.language.amal",
+      "match": "[a-z]*(?:R[a-z]*(?:[0-9]|[A-Z])(?![0-9])|[XYA])[a-z]*"
+    },
+    "group": {
+      "begin": "\\(",
+      "beginCaptures": {
+        "0": {
+          "name": "punctuation.section.group.begin.amal"
+        }
+      },
+      "end": "\\)",
+      "endCaptures": {
+        "0": {
+          "name": "punctuation.section.group.end.amal"
+        }
+      },
+      "patterns": [
+        {
+          "include": "#expression"
+        }
+      ]
+    },
+    "separators": {
+      "name": "punctuation.separator.amal",
+      "match": ";"
+    },
+    "ignored": {
+      "name": "meta.ignored.amal",
+      "match": "[a-z]+|[ \\t]+"
+    },
+    "unknown": {
+      "name": "meta.unclassified.amal",
+      "match": "."
+    },
+    "autotest-if": {
+      "name": "meta.instruction.autotest-if.amal",
+      "begin": "([a-z]*I[a-z]*)",
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.control.amal"
+        }
+      },
+      "end": "(?=;|\\)|$|[a-z]*(?:A[a-z]*U|J(?![a-z]*[01])|[MLIFTNDEOPW]))",
+      "patterns": [
+        {
+          "include": "#conditional-value"
+        },
+        {
+          "include": "#expression"
+        }
+      ]
+    },
+    "conditional-value": {
+      "name": "meta.condition.value.amal",
+      "begin": "(?:([a-z]*(?:B[a-z]*C|S[a-z]*C|V[a-z]*U|X[a-z]*[HMS]|Y[a-z]*[HMS]|J[a-z]*[01]|K[a-z]*[12]|C|Z)[a-z]*)|([a-z]*(?:R[a-z]*(?:[0-9]|[A-Z])(?![0-9])|[XYA])[a-z]*)|([0-9]+)|(?=\\())",
+      "beginCaptures": {
+        "1": {
+          "name": "support.function.amal"
+        },
+        "2": {
+          "name": "variable.language.amal"
+        },
+        "3": {
+          "name": "constant.numeric.decimal.amal"
+        }
+      },
+      "end": "(?=[+*/=<>\\-&|,])|(?=;|\\)|$|[a-z]*(?:A[a-z]*U|J(?![a-z]*[01])|[MLIFTNDEOPW]))",
+      "patterns": [
+        {
+          "include": "#group"
+        },
+        {
+          "name": "keyword.control.amal",
+          "match": "[a-z]*X(?![a-z]*[HMS])[a-z]*"
+        },
+        {
+          "include": "#ignored"
+        },
+        {
+          "include": "#unknown"
+        }
+      ]
+    },
+    "argument-value": {
+      "name": "meta.expression.value.amal",
+      "begin": "(?:([a-z]*(?:B[a-z]*C|S[a-z]*C|V[a-z]*U|X[a-z]*[HMS]|Y[a-z]*[HMS]|J[a-z]*[01]|K[a-z]*[12]|C|Z)[a-z]*)|([a-z]*(?:R[a-z]*(?:[0-9]|[A-Z])(?![0-9])|[XYA])[a-z]*)|([0-9]+)|(?=\\())",
+      "beginCaptures": {
+        "1": {
+          "name": "support.function.amal"
+        },
+        "2": {
+          "name": "variable.language.amal"
+        },
+        "3": {
+          "name": "constant.numeric.decimal.amal"
+        }
+      },
+      "end": "(?=[+*/=<>\\-&|,])|(?=;|\\)|$|[a-z]*(?:A[a-z]*U|J(?![a-z]*[01])|[MLIFTNDEOPW]))",
+      "patterns": [
+        {
+          "include": "#group"
+        },
+        {
+          "include": "#ignored"
+        },
+        {
+          "include": "#unknown"
+        }
+      ]
+    }
+  }
+}

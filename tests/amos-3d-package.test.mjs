@@ -17,10 +17,10 @@ test('the opt-in profile shares every BASIC rule and adds only the canonical 3D 
   assert.deepEqual(amos3d.fileTypes, []);
 });
 
-test('both declarative editor modes use exact packaged grammars without stealing file associations', async () => {
+test('existing AMOS editor modes retain exact grammars and file associations', async () => {
   const editor = await json('editors/vscode/package.json');
   assert.equal(editor.main, undefined);
-  assert.deepEqual(editor.contributes.languages.map((item) => item.id), ['amos', 'amos-3d']);
+  assert.deepEqual(editor.contributes.languages.map((item) => item.id), ['amos', 'amos-3d', 'amal']);
   assert.deepEqual(editor.contributes.languages[0].extensions, ['.amos.txt']);
   assert.equal(editor.contributes.languages[1].extensions, undefined);
   for (const registration of [amos, amos3d]) {

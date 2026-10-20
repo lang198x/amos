@@ -282,3 +282,23 @@ This does not implement channel validation, file existence checks, actual
 filesystem operations, record layouts, include resolution, compiler or parser
 behaviour, or native release qualification. Both lexical profiles share the new
 BASIC rules. Published npm/VSIX 0.2.0 and Marketplace availability are unchanged.
+
+
+## Unreleased standalone AMAL
+
+The explicit `amal` registration covers the 36 §7.6 inventory records: 16 commands
+and structures, 15 functions and five register/family records expanding to 39
+members. Significant capitals and lowercase padding determine lexical codes;
+this grammar is case-sensitive. Instruction, expression, jump-target and Autotest
+contexts distinguish A/X register roles from instruction roles. Autotest If
+supports the documented eXit action after a completed expression value.
+
+Definitions and targets have label scopes without name resolution. Decimal
+integer text, signs/operators, grouping and separators are lexical only. No
+BASIC comments or strings are inherited; strings in both AMOS profiles stay
+opaque. Use semicolons or line boundaries for ambiguous A/X transitions after
+expressions; those separatorless transitions receive neutral scopes rather than
+invented acceptance. Full compact syntax, arities, loop/Autotest legality,
+numeric ranges, persistence, compilation and native execution remain unqualified.
+The default AMOS/AMOS 3D grammars and registrations are byte-for-byte unchanged
+by this milestone. Published 0.2.0 and Marketplace availability stay unchanged.

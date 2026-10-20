@@ -5,10 +5,12 @@
   "held_extract": "amos-pro-user-guide-1992-croucher-hill.txt",
   "extract_sha256": "b0bf946502ad3ce6534e13d620dd5c017f8f6a6cd7a4c4f99ced87b1d925715c",
   "chapter": "07.06",
-  "scope": "Documentary embedded AMAL inventory only; no AMAL grammar or runtime qualification",
+  "scope": "Professional manual inventory and standalone lexical highlighting; no AMAL parser or runtime qualification",
   "files": [
     "commands.json",
     "functions.json",
     "registers.json"
-  ]
+  ],
+  "lexical": "lexical.json",
+  "qualified_releases": []
 }

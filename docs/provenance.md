@@ -157,3 +157,12 @@ function wording (18675) remain discrepancies; the heading/example spellings and
 statement roles drive this lexical inventory. No native semantics follow from
 those documentary choices. The independent file-io fixture is newly authored
 under this repository's licence and was not executed as an AMOS program.
+
+
+Standalone AMAL lexical rules cite eight exact ranges in the same hash-pinned
+Professional manual extract. They cover significant capitals/padding, labels,
+separators, expressions, registers, Autotest and the extended If action signatures
+on 07.06.17. All range text and following page footers were checked against the
+held extract. This does not qualify a compiled program or individual release.
+The 36 documentary records remain separate from BASIC's 490 chapter entries;
+the new standalone fixture is authored here and is not a native execution claim.

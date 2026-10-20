@@ -34,3 +34,11 @@ bringing its BASIC inventory to 490 entries. This continuation is unreleased;
 the downloadable 0.2.0 preview retains its 452-entry inventory. Directory options,
 channel markers and record operations receive lexical scopes; file contents,
 paths and actual I/O are not checked or executed by the extension.
+
+
+Current source also adds standalone **AMAL** as an explicitly selected language
+mode. It respects significant capitals and register/instruction contexts, with
+no automatic file association or BASIC-string injection. This is unreleased;
+preview 0.2.0 does not include that mode. AMAL has its own parentheses configuration
+and inherits no BASIC comment or quote rules. This is lexical highlighting,
+not a compiler or validation of arbitrary compact AMAL programs.

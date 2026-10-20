@@ -1,7 +1,7 @@
 {
   "name": "lang198x-amos",
   "displayName": "AMOS \u2014 Lang198x",
-  "description": "Bounded AMOS syntax highlighting; no compiler or language server",
+  "description": "Bounded AMOS and standalone AMAL highlighting; no compiler or language server",
   "version": "0.2.0",
   "publisher": "lang198x",
   "license": "GPL-2.0-or-later",
@@ -34,6 +34,13 @@
           "AMOS + AMOS 3D"
         ],
         "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "amal",
+        "aliases": [
+          "AMAL"
+        ],
+        "configuration": "./amal-language-configuration.json"
       }
     ],
     "grammars": [
@@ -46,6 +53,11 @@
         "language": "amos-3d",
         "scopeName": "source.basic.amos.3d",
         "path": "./syntaxes/amos-3d.tmLanguage.json"
+      },
+      {
+        "language": "amal",
+        "scopeName": "source.amal",
+        "path": "./syntaxes/amal.tmLanguage.json"
       }
     ]
   },

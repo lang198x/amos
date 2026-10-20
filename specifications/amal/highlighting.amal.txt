@@ -1,0 +1,11 @@
+AUtotest (If X>XM Jump Update; If Y>YM Direct Move; eXit; Update: Let R0=XM; Let R1=YM; Direct Move)
+Move: Move R0-X,R1-Y,16; Wait
+Target: Let A=2; Let X=X+1; Let Y=Y-1
+For R2=0 To 4; Move 1,0,2; Next R2
+Anim 2,(1,4)(2,4); PLay 1; Pause
+Let R3=BC(1,2,4); Let R4=SC(8,9,12); Let R5=C(2)
+Let R6=J0|J1; Let R7=K1&K2; Let R8=VU(0)
+Let X=XH(0,80); Let X=XS(0,128); Let Y=YH(0,60); Let Y=YS(0,50)
+Let RA=Z(255); Let RZ=(RA+1)*2/3
+M1,0,4;P;JTarget
+On; eXit; End

@@ -10,8 +10,10 @@ EDITOR = ROOT / "editors" / "vscode"
 FILES = [
     "package.json",
     "language-configuration.json",
+    "amal-language-configuration.json",
     "syntaxes/amos.tmLanguage.json",
     "syntaxes/amos-3d.tmLanguage.json",
+    "syntaxes/amal.tmLanguage.json",
     "README.md",
     "LICENSE",
     "icon.png",
@@ -28,6 +30,10 @@ def main() -> None:
         (
             ROOT / "syntaxes/amos-3d.tmLanguage.json",
             EDITOR / "syntaxes/amos-3d.tmLanguage.json",
+        ),
+        (
+            ROOT / "syntaxes/amal.tmLanguage.json",
+            EDITOR / "syntaxes/amal.tmLanguage.json",
         ),
         (ROOT / "LICENSE", EDITOR / "LICENSE"),
     ]:

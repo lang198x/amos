@@ -1,7 +1,7 @@
 # AMOS language kit
 
 Parse small AMOS listings, check the supported opening-program surface, and
-highlight source in Shiki and TextMate-based editors.
+highlight AMOS and standalone AMAL source in Shiki and TextMate-based editors.
 
 This is the first bounded implementation. It builds a typed AST with complete
 source tokens and locations. It does not yet read/write native `.AMOS` files,
@@ -104,7 +104,8 @@ chapters 5.1–5.9, 6.1–6.5, 7.1–7.6 and 10.1–10.2, including AMAL control
 The file/directory I/O continuation is unreleased; preview 0.2.0 retains its
 452-entry BASIC inventory.
 Fourteen embedded menu commands and 36 [AMAL records](specifications/amal/README.md)
-are inventoried separately; their string payloads remain opaque.
+are inventoried separately. Current source adds standalone AMAL highlighting;
+BASIC string payloads remain opaque. This mode is not in preview 0.2.0.
 [AMOS 3D](specifications/extensions/amos-3d/README.md) is tracked as an optional
 extension with a 59-record manual inventory, three source-level answers and a pinned-binary
 answer to the collision-result question. The opt-in `amos-3d` profile highlights
@@ -139,6 +140,33 @@ In the 0.2.0 VS Code preview, choose **AMOS + AMOS 3D** from the language
 mode selector. To remember it for a project, add a workspace association such as
 `"files.associations": { "*.amos.txt": "amos-3d" }`. The profile selects vocabulary;
 it does not install the extension, qualify a release or validate a program.
+
+## Standalone AMAL highlighting
+
+Current source adds `@lang198x/amos/amal`, the `amal` language registration and
+`@lang198x/amos/amal.tmLanguage.json`. These are unreleased additions; published
+0.2.0 does not export them. Load the registration with Shiki or
+shiki-highlight-api in the same way as the AMOS modes, selecting `lang: 'amal'`:
+
+```js
+import amal from '@lang198x/amos/amal';
+
+await highlighter.loadLanguage(amal);
+const html = highlighter.codeToHtml('Target: Move 1,0,4; Pause; Jump Target', {
+  lang: 'amal', theme: 'dark-plus',
+});
+```
+
+For Astro, add `amal` to `markdown.shikiConfig.langs` and use `amal` code fences.
+The source-built VS Code extension adds an explicit **AMAL** language mode.
+Automatic file associations stay unchanged. This mode highlights standalone plain
+text, not native animation banks or AMAL strings inside BASIC.
+
+Capitalization carries meaning: `Anim`, `Animate` and `Anything` all reduce to
+`A`, while `IF` is not the same significant-code sequence as `If`. Labels also
+have one significant capital. The [AMAL scope and limits](specifications/amal/README.md)
+describe register/instruction contexts and the neutral fallback for ambiguous
+compact input. Colour does not establish syntax, label resolution or execution.
 
 ## Verify packages
 

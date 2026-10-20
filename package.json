@@ -1,7 +1,7 @@
 {
   "name": "@lang198x/amos",
   "version": "0.2.0",
-  "description": "AMOS TextMate grammar for Shiki and editor integrations",
+  "description": "AMOS and standalone AMAL TextMate grammars for Shiki and editors",
   "type": "module",
   "license": "GPL-2.0-or-later",
   "repository": {
@@ -18,11 +18,19 @@
       "types": "./amos-3d.d.ts",
       "import": "./amos-3d.mjs"
     },
-    "./amos-3d.tmLanguage.json": "./syntaxes/amos-3d.tmLanguage.json"
+    "./amos-3d.tmLanguage.json": "./syntaxes/amos-3d.tmLanguage.json",
+    "./amal": {
+      "types": "./amal.d.ts",
+      "import": "./amal.mjs"
+    },
+    "./amal.tmLanguage.json": "./syntaxes/amal.tmLanguage.json"
   },
   "files": [
     "index.mjs",
     "index.d.ts",
+    "amal.mjs",
+    "amal.d.ts",
+    "syntaxes/amal.tmLanguage.json",
     "amos-3d.mjs",
     "amos-3d.d.ts",
     "syntaxes/amos-3d.tmLanguage.json",
@@ -33,7 +41,7 @@
     "docs/verification.md"
   ],
   "scripts": {
-    "test": "node --test tests/package.test.mjs tests/manual-core.test.mjs tests/language-inventories.test.mjs tests/amos-3d-inventory.test.mjs tests/amos-3d-source.test.mjs tests/amos-3d-package.test.mjs",
+    "test": "node --test tests/package.test.mjs tests/manual-core.test.mjs tests/language-inventories.test.mjs tests/amos-3d-inventory.test.mjs tests/amos-3d-source.test.mjs tests/amos-3d-package.test.mjs tests/amal-package.test.mjs",
     "test:integrations": "node --test tests/highlighting*.test.mjs",
     "check:editor": "node scripts/sync-editor.mjs --check",
     "prepack": "node scripts/sync-editor.mjs --check"
