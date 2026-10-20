@@ -53,6 +53,14 @@ Key$ is documented as a reserved variable. Macro payloads and formatting masks
 remain strings. These citations do not qualify other I/O overloads or execute
 the described keyboard operations.
 
+The window/input/screen continuation cites §§5.7, 5.8 and 6.1–6.3, bringing the
+inventory to 262 chapter entries. Screen's separate command and function headings
+are retained with a common neutral lexical scope. X Mouse, Y Mouse and Laced
+are labelled reserved variables; Read Text$ is labelled an instruction. The
+manual labels Spack, Pack and Unpack as picture-compactor extension commands;
+the inventory preserves that component evidence without inferring availability.
+All entry lines/pages and both held-extract hashes were crosschecked.
+
 [Opening sources](../corpus/opening/README.md) retain their upstream MIT licence
 and immutable provenance. [New native probes](../corpus/probes/README.md) record
 exact input hashes, screenshots and a pinned runtime profile. Host parser tests

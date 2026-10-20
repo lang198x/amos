@@ -2,8 +2,10 @@
 
 This inventory follows the **AMOS Professional User Guide**: 109 entries from
 chapters 5.1–5.5 (basics, strings, maths, control and procedures), 48 from chapter
-5.6 (text), and 14 from chapter 10.1 (keyboard input). The 171 entries include
-grouped headings, connective words, typed forms and the `?` print shortcut.
+5.6 (text), 14 from chapter 10.1 (keyboard input), 17 from 5.7 (windows), 20 from
+5.8 (joystick/mouse), and 54 from 6.1–6.3 (screen setup/use/effects). The 262
+entries include grouped headings, connective words, typed forms and the `?`
+print shortcut.
 Each entry cites a printed page and a line in the hash-pinned held extract
 identified by `source.json`. Examples are freshly authored, not copied listings.
 
@@ -14,8 +16,8 @@ lexical examples here before changing coverage claims.
 
 The inventory covers named core forms, not every lexical rule, command mentioned
 in an example, or every argument overload. Print and Input receive their own
-instruction entries in the text and keyboard chapters. AMAL, extensions and
-Creator/Easy editions require their own inventories. A 1992 Professional manual
+instruction entries in the text and keyboard chapters. AMAL, broader extension
+vocabularies and Creator/Easy editions require their own inventories. A 1992 Professional manual
 is not evidence that every release accepts every listed form.
 
 The held extract has visible typesetting/transcription defects: examples lose
@@ -50,3 +52,12 @@ The `?` entry is the manual's keyboard shorthand, which the original editor
 expands to Print; colouring it does not establish native persistence of the raw
 shortcut. Print Using masks and Key$ macro payloads remain ordinary strings.
 The keyboard inventory does not qualify disc input overloads or execute macros.
+
+`Screen` is documented as both a command and function. Both records are retained,
+with an explicit neutral `keyword.other.amos` scope; specific phrases such as
+Screen Open and Screen Width keep command and function scopes. The inventory
+key includes kind so these distinct uses cannot silently overwrite each other.
+X Mouse/Y Mouse and Laced are reserved variables; Read Text$ is a command.
+Spack, Pack and Unpack retain the manual's picture-compactor extension label.
+Their lexical recognition does not establish installation availability. Filenames,
+Flash sequences and Rainbow component patterns remain opaque strings.

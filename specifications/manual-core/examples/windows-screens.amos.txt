@@ -1,0 +1,20 @@
+Rem Fresh lexical example; not a runtime-qualified program.
+Screen Open 1,320,200,16,Lowres
+Screen 1 : Default Palette
+MC_CURRENT=Screen : MC_WIDTH=Screen Width : MC_HEIGHT=Screen Height
+MC_MODE=Screen Mode : MC_COLOURS=Screen Colour
+Wind Open 1,1,1,30,10
+Title Top "WINDOW AND SCREEN" : Title Bottom "Screen Width stays literal"
+MC_WINDOW=Windon : Scroll Off
+Read Text$ "notes.txt"
+MC_X=X Mouse : MC_Y=Y Mouse
+X Mouse=100 : Y Mouse=80
+MC_FIRE=Fire(1) : MC_LEFT=Jleft(1) : MC_CLICK=Mouse Click
+Hide On : Show On : Limit Mouse 0,0 To 319,199
+Screen Copy 1 To 2 : Screen Swap
+Flash 1,"($FFF,5)($000,5)" : Flash Off
+Set Rainbow 1,1,100,"(1,1,1)","(1,1,1)","(1,1,1)"
+Rain(1,0)=$FFF : Rainbow 1,0,50,100 : Rainbow Del 1
+Load Iff "Screen Width.iff",1 : Save Iff "Flash Off.iff",1
+Rem Screen Open Mouse Click Wind Close
+Wind Close : Screen Close 1

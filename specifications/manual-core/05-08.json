@@ -1,0 +1,25 @@
+{
+  "chapter": "05.08",
+  "entries": [
+    {"spelling": "Joy", "kind": "function", "page": "05.08.01", "extract_line": 6588, "example": "MC_J=Joy(1)"},
+    {"spelling": "Jleft", "kind": "function", "page": "05.08.01", "extract_line": 6616, "example": "MC_J=Jleft(1)"},
+    {"spelling": "Jright", "kind": "function", "page": "05.08.02", "extract_line": 6631, "example": "MC_J=Jright(1)"},
+    {"spelling": "Jup", "kind": "function", "page": "05.08.02", "extract_line": 6635, "example": "MC_J=Jup(1)"},
+    {"spelling": "Jdown", "kind": "function", "page": "05.08.02", "extract_line": 6639, "example": "MC_J=Jdown(1)"},
+    {"spelling": "Fire", "kind": "function", "page": "05.08.02", "extract_line": 6652, "example": "MC_FIRE=Fire(1)"},
+    {"spelling": "Change Mouse", "kind": "command", "page": "05.08.03", "extract_line": 6687, "example": "Change Mouse 1"},
+    {"spelling": "Hide", "kind": "command", "page": "05.08.03", "extract_line": 6708, "example": "Hide"},
+    {"spelling": "Hide On", "kind": "command", "page": "05.08.03", "extract_line": 6711, "example": "Hide On"},
+    {"spelling": "Show", "kind": "command", "page": "05.08.03", "extract_line": 6722, "example": "Show"},
+    {"spelling": "Show On", "kind": "command", "page": "05.08.03", "extract_line": 6725, "example": "Show On"},
+    {"spelling": "X Mouse", "kind": "reserved", "page": "05.08.04", "extract_line": 6751, "example": "MC_X=X Mouse"},
+    {"spelling": "Y Mouse", "kind": "reserved", "page": "05.08.04", "extract_line": 6773, "example": "Y Mouse=100"},
+    {"spelling": "Mouse Key", "kind": "function", "page": "05.08.05", "extract_line": 6793, "example": "MC_BUTTON=Mouse Key"},
+    {"spelling": "Mouse Click", "kind": "function", "page": "05.08.05", "extract_line": 6814, "example": "MC_CLICK=Mouse Click"},
+    {"spelling": "Limit Mouse", "kind": "command", "page": "05.08.06", "extract_line": 6847, "example": "Limit Mouse 0,0 To 319,199"},
+    {"spelling": "Mouse Zone", "kind": "function", "page": "05.08.06", "extract_line": 6872, "example": "MC_ZONE=Mouse Zone"},
+    {"spelling": "Mouse Screen", "kind": "function", "page": "05.08.06", "extract_line": 6881, "example": "MC_SCREEN=Mouse Screen"},
+    {"spelling": "Menu Mouse On", "kind": "command", "page": "05.08.07", "extract_line": 6904, "example": "Menu Mouse On"},
+    {"spelling": "Menu Mouse Off", "kind": "command", "page": "05.08.07", "extract_line": 6905, "example": "Menu Mouse Off"}
+  ]
+}

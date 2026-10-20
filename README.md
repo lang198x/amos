@@ -98,9 +98,9 @@ Released npm 0.1.0 and editor 0.1.1 retain the earlier grammar. The Rust parser'
 opening-program surface is unchanged, and the Marketplace preview stays private.
 
 The [manual-led core inventory](specifications/manual-core/README.md) now drives
-broader coverage: current source highlights 171 entries from Professional manual
-chapters 5.1–5.6 and 10.1, including typed forms, declaration names, text facilities
-and keyboard input. This is unreleased lexical coverage; other manual chapters
+broader coverage: current source highlights 262 entries from Professional manual
+chapters 5.1–5.8, 6.1–6.3 and 10.1, including typed forms, declaration names, text,
+keyboard and pointer input, windows and screens. This is unreleased lexical coverage; other manual chapters
 and edition/extension qualification remain separate work.
 
 ## Verify packages

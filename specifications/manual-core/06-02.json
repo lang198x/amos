@@ -1,0 +1,18 @@
+{
+  "chapter": "06.02",
+  "entries": [
+    {"spelling": "Screen Copy", "kind": "command", "page": "06.02.01", "extract_line": 8216, "example": "Screen Copy 0 To 1"},
+    {"spelling": "Def Scroll", "kind": "command", "page": "06.02.02", "extract_line": 8283, "example": "Def Scroll 1,0,0 To 100,100,1,0"},
+    {"spelling": "Scroll", "kind": "command", "page": "06.02.02", "extract_line": 8297, "example": "Scroll 1"},
+    {"spelling": "Zoom", "kind": "command", "page": "06.02.03", "extract_line": 8313, "example": "Zoom 0,0,0,20,20 To 1,0,0,40,40"},
+    {"spelling": "Screen Swap", "kind": "command", "page": "06.02.03", "extract_line": 8350, "example": "Screen Swap"},
+    {"spelling": "Logbase", "kind": "function", "page": "06.02.04", "extract_line": 8366, "example": "MC_P=Logbase(0)"},
+    {"spelling": "Phybase", "kind": "function", "page": "06.02.04", "extract_line": 8374, "example": "MC_P=Phybase(0)"},
+    {"spelling": "Physic", "kind": "function", "page": "06.02.04", "extract_line": 8383, "example": "MC_P=Physic"},
+    {"spelling": "Logic", "kind": "function", "page": "06.02.04", "extract_line": 8394, "example": "MC_L=Logic"},
+    {"spelling": "Wait Vbl", "kind": "command", "page": "06.02.05", "extract_line": 8425, "example": "Wait Vbl"},
+    {"spelling": "Spack", "kind": "command", "page": "06.02.05", "extract_line": 8439, "example": "Spack 0 To 20", "component": "picture-compactor extension (as labelled by the manual)"},
+    {"spelling": "Pack", "kind": "command", "page": "06.02.06", "extract_line": 8476, "example": "Pack 0 To 20", "component": "picture-compactor extension (as labelled by the manual)"},
+    {"spelling": "Unpack", "kind": "command", "page": "06.02.06", "extract_line": 8493, "example": "Unpack 20 To 1", "component": "picture-compactor extension (as labelled by the manual)"}
+  ]
+}

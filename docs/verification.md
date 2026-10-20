@@ -121,3 +121,24 @@ the exact Key$ range; it was restored before the passing run. The `?` shortcut
 has a lexical scope, without a claim about native persistence. No original AMOS
 code or keyboard macro was executed, and no editor/system setting was changed.
 Published packages and the private Marketplace preview are unchanged.
+
+## Unreleased windows, input and screen highlighting
+
+The five new inventories (§§5.7, 5.8, 6.1–6.3) add 91 entries; nine passed the
+previous complete checks. All 262 entries now pass in both themes. Each cited
+line/page and both source hashes match the held extracts. The earlier 109/171
+inventory checks and all 398 pinned game ranges remain intact.
+
+Forty integration tests pass against Shiki 4.4.3 with existing shiki-highlight-api
+1.3.0 and local 2.0.0 consumers. Five package/inventory checks and exact editor
+synchronisation pass. Focused checks cover Screen's dual documented role, full
+phrases, coordinate reads/assignments, suffix boundaries, Read Text$, literal
+filenames and effect strings. Removing the X Mouse reserved-variable rule fails
+on `MC_VALUE=X Mouse`; the original rule was restored before passing checks.
+
+The built npm tarball and VSIX contain the exact canonical grammar; VSIX icon
+bytes/metadata match and no public gallery flags are present. The extracted npm
+registration preserves the fresh mixed listing and new scopes in both themes.
+These are disposable build checks at existing version numbers, not publications
+or replacement release assets. No original AMOS code was executed. Parser scope,
+edition qualification and private Marketplace availability remain unchanged.

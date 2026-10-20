@@ -1,0 +1,16 @@
+{
+  "chapter": "06.03",
+  "entries": [
+    {"spelling": "Appear", "kind": "command", "page": "06.03.01", "extract_line": 8546, "example": "Appear 0 To 1,10"},
+    {"spelling": "Fade", "kind": "command", "page": "06.03.01", "extract_line": 8573, "example": "Fade 3"},
+    {"spelling": "Flash", "kind": "command", "page": "06.03.03", "extract_line": 8646, "example": "Flash 1,\"($FFF,5)($000,5)\""},
+    {"spelling": "Flash Off", "kind": "command", "page": "06.03.03", "extract_line": 8649, "example": "Flash Off"},
+    {"spelling": "Shift Up", "kind": "command", "page": "06.03.03", "extract_line": 8669, "example": "Shift Up 5,1,7,1"},
+    {"spelling": "Shift Down", "kind": "command", "page": "06.03.03", "extract_line": 8688, "example": "Shift Down 5,1,7,1"},
+    {"spelling": "Shift Off", "kind": "command", "page": "06.03.04", "extract_line": 8704, "example": "Shift Off"},
+    {"spelling": "Set Rainbow", "kind": "command", "page": "06.03.04", "extract_line": 8718, "example": "Set Rainbow 1,1,100,\"(1,1,1)\",\"(1,1,1)\",\"(1,1,1)\""},
+    {"spelling": "Rainbow", "kind": "command", "page": "06.03.05", "extract_line": 8762, "example": "Rainbow 1,0,50,100"},
+    {"spelling": "Rainbow Del", "kind": "command", "page": "06.03.05", "extract_line": 8784, "example": "Rainbow Del 1"},
+    {"spelling": "Rain", "kind": "function", "page": "06.03.05", "extract_line": 8792, "example": "Rain(1,0)=$FFF"}
+  ]
+}

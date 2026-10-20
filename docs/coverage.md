@@ -9,7 +9,7 @@ Published npm 0.1.0 and editor 0.1.1 retain their original grammar.
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Professional core/text/keyboard forms from §§5.1–5.6 and 10.1, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional forms from §§5.1–5.8, 6.1–6.3 and 10.1, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -106,6 +106,25 @@ Print Using masks and Key$ payloads remain strings, without embedded execution
 or format validation. A fresh text/keyboard listing checks these contexts and
 exact text preservation in both themes and existing consumers.
 
-Windows, mouse/joystick and broader screen/object/file facilities remain later
-sweeps. Keyboard vocabulary does not qualify disc input overloads. No new parser
+Keyboard vocabulary does not qualify disc input overloads. No new parser
 behaviour, runtime/edition qualification or public Marketplace release follows.
+
+## Windows, input and screens milestone
+
+Five further chapters add 91 entries: windows (§5.7), joystick/mouse (§5.8), and
+screen setup, use and effects (§§6.1–6.3). The inventory now has 262 entries
+across 12 chapters. Nine of the new entries passed the previous complete
+phrase/boundary checks; all 91 now pass. These are chapter entries, including
+overlapping references and two documented roles for Screen, rather than a count
+of unique commands.
+
+Bare Screen has a neutral built-in scope for its command and function uses;
+Screen Open and Screen Width retain their specific command/function scopes.
+X Mouse/Y Mouse keep reserved-variable scopes in reads and assignments. Read
+Text$ is a command. Spack, Pack and Unpack carry the manual's picture-compactor
+extension label, without qualifying availability. Filename and effect payloads
+remain strings. A fresh mixed listing checks these contexts in both consumers.
+
+Memory banks (§5.9), drawing (§6.4), menus (§6.5), objects, general file I/O and
+broader extensions remain later work. No runtime, parser or edition qualification
+is added. Published packages and Marketplace availability are unchanged.

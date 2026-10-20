@@ -17,16 +17,17 @@ export const scopeFor = (kind) => ({
 
 export const checkEntry = (entry) => {
   const { spelling, example, kind } = entry;
+  const scope = entry.lexical_scope ?? scopeFor(kind);
   const start = example.indexOf(spelling);
   assert.ok(start >= 0 && spelling.length > 0 && scopeFor(kind));
   assert.match(entry.page, /^\d{2}\.\d{2}\.\d{2}$/);
   for (const theme of ['dark-plus', 'light-plus']) {
     for (const change of [(s) => s, (s) => s.toLowerCase(), (s) => s.toUpperCase()]) {
       const source = change(example);
-      assertScope(tokens(source, theme)[0], start, start + spelling.length, scopeFor(kind), `${spelling}: ${source}`);
+      assertScope(tokens(source, theme)[0], start, start + spelling.length, scope, `${spelling}: ${source}`);
     }
     const tabbed = spelling.replaceAll(' ', '\t');
-    assertScope(tokens(tabbed, theme)[0], 0, tabbed.length, scopeFor(kind), tabbed);
+    assertScope(tokens(tabbed, theme)[0], 0, tabbed.length, scope, tabbed);
     if (kind === 'comment' || kind === 'shortcut') continue;
     for (const suffix of ['Extra', '_VALUE', '$', '#']) {
       const name = spelling.replaceAll(' ', '_').replace(/[$#]$/, '') + suffix;
@@ -34,7 +35,7 @@ export const checkEntry = (entry) => {
       assertScope(tokens(`${name}=1`, theme)[0], 0, name.length, 'variable.other.amos', name);
     }
     if (!spelling.includes(' ')) {
-      assertScope(tokens(`${spelling}:`, theme)[0], 0, spelling.length, scopeFor(kind), `${spelling}:`);
+      assertScope(tokens(`${spelling}:`, theme)[0], 0, spelling.length, scope, `${spelling}:`);
     }
   }
 };

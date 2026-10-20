@@ -27,6 +27,9 @@
       "include": "#functions"
     },
     {
+      "include": "#ambiguous"
+    },
+    {
       "include": "#numbers"
     },
     {
@@ -74,6 +77,10 @@
       "patterns": [
         {
           "name": "keyword.control.amos",
+          "match": "(?i:(?<![A-Za-z0-9_$#])(?:Wind[ \\t]+(?:Open|Save|Close|Move|Size)|Title[ \\t]+(?:Top|Bottom)|Scroll[ \\t]+(?:On|Off)|Set[ \\t]+Slider|Read[ \\t]+Text\\$|Change[ \\t]+Mouse|(?:Hide|Show)[ \\t]+On|Limit[ \\t]+Mouse|Menu[ \\t]+Mouse[ \\t]+(?:On|Off)|Screen[ \\t]+(?:To[ \\t]+(?:Front|Back)|Open|Close|Display|Offset|Clone|Hide|Show|Copy|Swap)|Default[ \\t]+Palette|Auto[ \\t]+View[ \\t]+(?:On|Off)|Dual[ \\t]+(?:Playfield|Priority)|Get[ \\t]+Palette|(?:Load|Save)[ \\t]+Iff|Def[ \\t]+Scroll|Flash[ \\t]+Off|Shift[ \\t]+(?:Up|Down|Off)|Set[ \\t]+Rainbow|Rainbow[ \\t]+Del|Window|Border|Clw|Hslider|Vslider|Default|View|Scroll|Zoom|Spack|Pack|Unpack|Appear|Fade|Flash|Rainbow)(?![A-Za-z0-9_$#]))"
+        },
+        {
+          "name": "keyword.control.amos",
           "match": "(?i:(?<![A-Za-z0-9_$#])(?:(?:Inverse|Shade|Under|Curs)[ \\t]+(?:On|Off)|Set[ \\t]+(?:Text|Tab|Curs)|(?:Memorize|Remember)[ \\t]+(?:X|Y)|Curs[ \\t]+Pen|Line[ \\t]+Input|Put[ \\t]+Key|Key[ \\t]+Speed|Writing|Home|Cmove|Centre|Cdown|Cup|Cleft|Cright|Cline|Hscroll|Vscroll|Using|Lprint|Input)(?![A-Za-z0-9_$#]))"
         },
         {
@@ -100,6 +107,10 @@
     },
     "functions": {
       "patterns": [
+        {
+          "name": "support.function.amos",
+          "match": "(?i:(?<![A-Za-z0-9_$#])(?:Screen[ \\t]+(?:Height|Width|Colour|Mode)|Mouse[ \\t]+(?:Key|Click|Zone|Screen)|Windon|Joy|Jleft|Jright|Jup|Jdown|Fire|Lowres|Hires|Scin|Logbase|Phybase|Rain)(?![A-Za-z0-9_$#]))"
+        },
         {
           "name": "support.function.amos",
           "match": "(?i:(?<![A-Za-z0-9_$#])(?:Text[ \\t]+Styles|Key[ \\t]+Shift|Pen\\$|Paper\\$|Cmove\\$|At|Tab\\$|Cdown\\$|Cup\\$|Cleft\\$|Cright\\$|Xcurs|Ycurs|Zone\\$|Border\\$|Scanshift|Input\\$|Scan\\$)(?![A-Za-z0-9_$#]))"
@@ -156,10 +167,10 @@
     },
     "reserved": {
       "name": "variable.language.amos",
-      "match": "(?i:(?<![A-Za-z0-9_$#])(?:Timer|Key\\$)(?![A-Za-z0-9_$#]))"
+      "match": "(?i:(?<![A-Za-z0-9_$#])(?:X[ \\t]+Mouse|Y[ \\t]+Mouse|Laced|Timer|Key\\$)(?![A-Za-z0-9_$#]))"
     },
     "labels": {
-      "match": "^[ \\t]*(?!(?i:Cls|Print|End|If|Then|Else|Do|Loop|For|To|Step|Next|Repeat|Until|While|Wend|Procedure|Gosub|Return|Dim|Randomize|Wait|Autoback|Palette|Paper|Pen|Locate|Ink|Bar|Box|Hide|Show|Play|Wave|Volume|Rnd|Scancode|Physic|Logic|Timer|And|Or|Mod|Xor|Inc|Dec|Add|Max|Min|Sgn|Abs|Int|Fix|Sqr|Exp|Log|Ln|Pi\\#|Degree|Radian|Sin|Cos|Tan|Acos|Asin|Atan|Hsin|Hcos|Htan|Left\\$|Right\\$|Mid\\$|Instr|Upper\\$|Lower\\$|Str\\$|Val|String\\$|Space\\$|Flip\\$|Repeat\\$|Chr\\$|Asc|Len|Sort|Match|Proc|Shared|Global|Param|Param\\#|Param\\$|Goto|Pop|True|False|Not|Swap|Exit|On|Every|Data|Read|Restore|Free|Fn|Stop|Edit|Direct|System|Rem|Pen\\$|Paper\\$|Writing|Home|Cmove|Cmove\\$|At|Centre|Tab\\$|Cdown|Cdown\\$|Cup|Cleft|Cright|Cup\\$|Cleft\\$|Cright\\$|Cline|Xcurs|Ycurs|Zone\\$|Border\\$|Hscroll|Vscroll|Using|Lprint|Inkey\\$|Scanshift|Input\\$|Input|Key\\$|Scan\\$)[ \\t]*:)([A-Za-z_][A-Za-z0-9_]*)([ \\t]*)(:)[ \\t]*$",
+      "match": "^[ \\t]*(?!(?i:Cls|Print|End|If|Then|Else|Do|Loop|For|To|Step|Next|Repeat|Until|While|Wend|Procedure|Gosub|Return|Dim|Randomize|Wait|Autoback|Palette|Paper|Pen|Locate|Ink|Bar|Box|Hide|Show|Play|Wave|Volume|Rnd|Scancode|Physic|Logic|Timer|And|Or|Mod|Xor|Inc|Dec|Add|Max|Min|Sgn|Abs|Int|Fix|Sqr|Exp|Log|Ln|Pi\\#|Degree|Radian|Sin|Cos|Tan|Acos|Asin|Atan|Hsin|Hcos|Htan|Left\\$|Right\\$|Mid\\$|Instr|Upper\\$|Lower\\$|Str\\$|Val|String\\$|Space\\$|Flip\\$|Repeat\\$|Chr\\$|Asc|Len|Sort|Match|Proc|Shared|Global|Param|Param\\#|Param\\$|Goto|Pop|True|False|Not|Swap|Exit|On|Every|Data|Read|Restore|Free|Fn|Stop|Edit|Direct|System|Rem|Pen\\$|Paper\\$|Writing|Home|Cmove|Cmove\\$|At|Centre|Tab\\$|Cdown|Cdown\\$|Cup|Cleft|Cright|Cup\\$|Cleft\\$|Cright\\$|Cline|Xcurs|Ycurs|Zone\\$|Border\\$|Hscroll|Vscroll|Using|Lprint|Inkey\\$|Scanshift|Input\\$|Input|Key\\$|Scan\\$|Window|Border|Windon|Clw|Hslider|Vslider|Joy|Jleft|Jright|Jup|Jdown|Fire|Lowres|Hires|Default|View|Screen|Scin|Laced|Scroll|Zoom|Logbase|Phybase|Spack|Pack|Unpack|Appear|Fade|Flash|Rainbow|Rain)[ \\t]*:)([A-Za-z_][A-Za-z0-9_]*)([ \\t]*)(:)[ \\t]*$",
       "captures": {
         "1": {
           "name": "entity.name.label.amos"
@@ -179,6 +190,10 @@
           "name": "entity.name.function.amos"
         }
       }
+    },
+    "ambiguous": {
+      "name": "keyword.other.amos",
+      "match": "(?i:(?<![A-Za-z0-9_$#])(?:Screen)(?![A-Za-z0-9_$#]))"
     }
   }
 }

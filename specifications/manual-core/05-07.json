@@ -1,0 +1,22 @@
+{
+  "chapter": "05.07",
+  "entries": [
+    {"spelling": "Wind Open", "kind": "command", "page": "05.07.01", "extract_line": 6270, "example": "Wind Open 1,1,1,30,10"},
+    {"spelling": "Window", "kind": "command", "page": "05.07.01", "extract_line": 6295, "example": "Window 1"},
+    {"spelling": "Border", "kind": "command", "page": "05.07.02", "extract_line": 6321, "example": "Border 1,0,2"},
+    {"spelling": "Title Top", "kind": "command", "page": "05.07.02", "extract_line": 6335, "example": "Title Top \"status\""},
+    {"spelling": "Title Bottom", "kind": "command", "page": "05.07.02", "extract_line": 6345, "example": "Title Bottom \"ready\""},
+    {"spelling": "Windon", "kind": "function", "page": "05.07.03", "extract_line": 6364, "example": "MC_W=Windon"},
+    {"spelling": "Wind Save", "kind": "command", "page": "05.07.03", "extract_line": 6376, "example": "Wind Save"},
+    {"spelling": "Wind Close", "kind": "command", "page": "05.07.03", "extract_line": 6394, "example": "Wind Close"},
+    {"spelling": "Wind Move", "kind": "command", "page": "05.07.03", "extract_line": 6406, "example": "Wind Move 2,3"},
+    {"spelling": "Scroll On", "kind": "command", "page": "05.07.04", "extract_line": 6429, "example": "Scroll On"},
+    {"spelling": "Scroll Off", "kind": "command", "page": "05.07.04", "extract_line": 6430, "example": "Scroll Off"},
+    {"spelling": "Wind Size", "kind": "command", "page": "05.07.04", "extract_line": 6437, "example": "Wind Size 30,10"},
+    {"spelling": "Clw", "kind": "command", "page": "05.07.04", "extract_line": 6454, "example": "Clw"},
+    {"spelling": "Hslider", "kind": "command", "page": "05.07.05", "extract_line": 6478, "example": "Hslider 0,0 To 100,10,10,1,2"},
+    {"spelling": "Vslider", "kind": "command", "page": "05.07.05", "extract_line": 6496, "example": "Vslider 0,0 To 10,100,10,1,2"},
+    {"spelling": "Set Slider", "kind": "command", "page": "05.07.05", "extract_line": 6509, "example": "Set Slider 1,0,2,0,1,0,2,0"},
+    {"spelling": "Read Text$", "kind": "command", "page": "05.07.06", "extract_line": 6547, "example": "Read Text$ \"notes\""}
+  ]
+}
