@@ -1,0 +1,39 @@
+{
+  "source_commit": "d30eb0c7160e95be9b1e4eb7729226319bfe642d",
+  "version": "0.2.0",
+  "artifacts": {
+    "lang198x-amos-0.2.0.tgz": {
+      "size": 29291,
+      "sha256": "7b219a51111612697a89d4aa8d2eee906557b3236f2a5d5fa794ab8cf6b0ca64",
+      "integrity": "sha512-lL3ALSYCjdgeP9wIzXGna81ib0kKZiYMCz1oTU5XiKg7VmqdNCj4iXZvLEHR0AJDHZVgBV4uwacmpZPzW4Y5hQ=="
+    },
+    "lang198x-lang198x-amos-0.2.0.vsix": {
+      "size": 17429,
+      "sha256": "743e685c46de5b951ba61a83da806a5a8e5b1bb1e1fdb6d5d07c949bea1a5a31",
+      "integrity": "sha512-IIzmREy8UwJH3uq/rNWpba7aIG1pgPO5bU9rp6R5sxNfDs6cn06PY85a49qVthaFSsahts3JfwW3i/mIxhVmEA=="
+    }
+  },
+  "ci": "https://github.com/lang198x/amos/actions/runs/39445017882",
+  "github_release": "https://github.com/lang198x/amos/releases/tag/v0.2.0",
+  "github_prerelease": true,
+  "github_downloads_verified": true,
+  "marketplace_upload": false,
+  "rust_version": "0.1.0",
+  "package_checks": 20,
+  "integration_checks_per_consumer": 74,
+  "installed_vscode_version": "1.142.0",
+  "installed_manifest_release_fields_match": true,
+  "installed_grammars_and_icon_match": true,
+  "native_visual_review": false,
+  "native_amos_execution": false,
+  "npm_tarball": "https://registry.npmjs.org/@lang198x/amos/-/amos-0.2.0.tgz",
+  "npm_registry_integrity": "sha512-lL3ALSYCjdgeP9wIzXGna81ib0kKZiYMCz1oTU5XiKg7VmqdNCj4iXZvLEHR0AJDHZVgBV4uwacmpZPzW4Y5hQ==",
+  "npm_download_verified": true,
+  "npm_dist_tags": {
+    "latest": "0.1.0",
+    "next": "0.2.0"
+  },
+  "npm_registry_consumer_rendered": true,
+  "npm_registry_consumer_types_checked": true,
+  "github_tag_commit_verified": true
+}

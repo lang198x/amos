@@ -339,4 +339,18 @@ isolated CLI installation passed outside the sandbox. This verifies package
 installation and contents, not native visual review or original AMOS execution.
 The npm release uses `next`; `latest` stays at 0.1.0. Marketplace privacy and the
 existing Marketplace submission are unchanged. Publication bindings and download
-checks are recorded separately with the release evidence after publication.
+checks are recorded in [the release evidence](releases/0.2.0-evidence.json).
+
+
+The GitHub prerelease tag points to the verified source commit. Its npm archive,
+VSIX and SHA256SUMS were downloaded again and match the tested bytes. The npm
+registry's SHA-512 integrity and independently downloaded tarball match the same
+archive. A fresh registry-delivered consumer renders both profiles in both themes
+and passes strict declaration checking. Authenticated npm tag inspection confirms
+`next: 0.2.0` and `latest: 0.1.0`; an earlier cached registry read still showed the
+old next tag, so publication success alone was not treated as tag verification.
+
+npm required a manual publishing authentication. The host browser launcher
+failed; an interactive publish with `--browser=false` kept the security flow
+waiting without invoking that launcher. No authentication links or tokens are
+retained in the repository. Marketplace received no upload or availability change.

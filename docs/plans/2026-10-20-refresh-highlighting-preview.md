@@ -22,3 +22,13 @@ This releases highlighting only. Rust parser and crate versions stay unchanged.
 
 Workspace: `/private/tmp/lang198x-preview-0.2.0/`. If authentication requires user
 interaction, finish independent checks and present the specific security prompt.
+
+
+Outcome: npm 0.2.0 is published under `next`, with `latest` retained at 0.1.0.
+GitHub prerelease v0.2.0 retains the exact npm/VSIX archives and SHA256SUMS.
+Both GitHub downloads and the registry tarball match the verified bytes; fresh
+registry-delivered imports render and type-check. The VSIX installs in isolated
+VS Code 1.142.0 settings, with exact grammars/icon and unchanged manifest release
+fields (VS Code adds its own installation metadata). Release evidence binds the
+source commit, CI, archive hashes, registry integrity and observed tags.
+Marketplace, old releases and Rust parser/version remain unchanged.
