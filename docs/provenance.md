@@ -46,6 +46,13 @@ Professional coverage from Creator/Easy, individual release and extension
 qualification. Suspect range/comparison prose and lost underscores in the held
 extract are recorded rather than converted into language semantics.
 
+The continuation inventories §5.6 (text output, cursor/control strings,
+formatting and the keyboard `?` shortcut) and §10.1 (keyboard functions, input,
+buffer controls and macros). Pen/Paper/Cmove have distinct dollar-valued forms;
+Key$ is documented as a reserved variable. Macro payloads and formatting masks
+remain strings. These citations do not qualify other I/O overloads or execute
+the described keyboard operations.
+
 [Opening sources](../corpus/opening/README.md) retain their upstream MIT licence
 and immutable provenance. [New native probes](../corpus/probes/README.md) record
 exact input hashes, screenshots and a pinned runtime profile. Host parser tests

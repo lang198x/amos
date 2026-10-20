@@ -9,7 +9,7 @@ test('manual inventory has cited, nonempty examples for every declared chapter',
   const source = await json('source.json');
   assert.equal(source.product, 'AMOS Professional');
   assert.match(source.extract_sha256, /^[0-9a-f]{64}$/);
-  assert.equal(source.chapters.length, 5);
+  assert.deepEqual(source.chapters, ['05-01', '05-02', '05-03', '05-04', '05-05', '05-06', '10-01']);
   const seen = new Set();
   let checked = 0;
   for (const id of source.chapters) {
@@ -22,12 +22,13 @@ test('manual inventory has cited, nonempty examples for every declared chapter',
       assert.ok(entry.example.includes(entry.spelling));
       assert.ok(entry.page.startsWith(`${chapter.chapter}.`));
       assert.ok(Number.isInteger(entry.extract_line) && entry.extract_line > 0);
-      assert.ok(['command', 'comment', 'function', 'operator', 'reserved'].includes(entry.kind));
+      assert.ok(['command', 'comment', 'function', 'operator', 'reserved', 'shortcut'].includes(entry.kind));
+      if (entry.kind === 'shortcut') assert.equal(entry.spelling, '?');
       seen.add(key);
       checked++;
     }
   }
-  assert.equal(checked, 109);
+  assert.equal(checked, 171);
   const maths = await json('05-03.json');
   const crosschecked = maths.entries.filter((entry) => entry.held_retypeset_page);
   assert.deepEqual(crosschecked.map((entry) => entry.spelling), ['Degree', 'Radian', 'Sin', 'Cos']);

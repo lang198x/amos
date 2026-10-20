@@ -1,15 +1,19 @@
 import test from 'node:test';
 import { highlighter, tokens, assertScope } from './helpers/highlighter.mjs';
+import { entries } from './helpers/manual-core.mjs';
+
+const known = new Set(entries.map((entry) => entry.spelling.toLowerCase()));
 
 const checkForms = (forms, scope) => {
   for (const form of forms) {
     for (const source of [form, form.toLowerCase(), form.toUpperCase(), form.replaceAll(' ', '\t')]) {
       for (const theme of ['dark-plus', 'light-plus']) {
         assertScope(tokens(source, theme)[0], 0, source.length, scope, source);
-        // Every longer word, including either AMOS type suffix, stays an identifier.
+        // A suffixed name stays an identifier unless it is a documented builtin.
         for (const suffix of ['Extra', '_VALUE', '$', '#']) {
           const name = form.replaceAll(' ', '_').replace(/[$#]$/, '') + suffix;
           if (name === form) continue; // The actual builtin is a positive case above.
+          if (known.has(name.toLowerCase())) continue; // Pen$/Paper$ have their own positive tests.
           assertScope(tokens(`${name}=1`, theme)[0], 0, name.length, 'variable.other.amos', name);
         }
       }

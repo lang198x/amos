@@ -12,13 +12,14 @@ export const scopeFor = (kind) => ({
   command: 'keyword.control.amos', comment: 'keyword.control.amos',
   function: 'support.function.amos', operator: 'keyword.operator.amos',
   reserved: 'variable.language.amos',
+  shortcut: 'keyword.control.amos',
 })[kind];
 
 export const checkEntry = (entry) => {
   const { spelling, example, kind } = entry;
   const start = example.indexOf(spelling);
   assert.ok(start >= 0 && spelling.length > 0 && scopeFor(kind));
-  assert.match(entry.page, /^05\.0[1-5]\.\d\d$/);
+  assert.match(entry.page, /^\d{2}\.\d{2}\.\d{2}$/);
   for (const theme of ['dark-plus', 'light-plus']) {
     for (const change of [(s) => s, (s) => s.toLowerCase(), (s) => s.toUpperCase()]) {
       const source = change(example);
@@ -26,7 +27,7 @@ export const checkEntry = (entry) => {
     }
     const tabbed = spelling.replaceAll(' ', '\t');
     assertScope(tokens(tabbed, theme)[0], 0, tabbed.length, scopeFor(kind), tabbed);
-    if (kind === 'comment') continue;
+    if (kind === 'comment' || kind === 'shortcut') continue;
     for (const suffix of ['Extra', '_VALUE', '$', '#']) {
       const name = spelling.replaceAll(' ', '_').replace(/[$#]$/, '') + suffix;
       if (known.has(name.toLowerCase())) continue; // Param$/Param# are positive entries.

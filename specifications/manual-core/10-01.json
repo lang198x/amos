@@ -1,0 +1,19 @@
+{
+  "chapter": "10.01",
+  "entries": [
+    {"spelling": "Inkey$", "kind": "function", "page": "10.01.01", "extract_line": 17727, "example": "MC_K$=Inkey$"},
+    {"spelling": "Scancode", "kind": "function", "page": "10.01.01", "extract_line": 17759, "example": "MC_SC=Scancode"},
+    {"spelling": "Scanshift", "kind": "function", "page": "10.01.02", "extract_line": 17783, "example": "MC_SHIFT=Scanshift"},
+    {"spelling": "Key State", "kind": "function", "page": "10.01.02", "extract_line": 17806, "example": "MC_DOWN=Key State(69)"},
+    {"spelling": "Key Shift", "kind": "function", "page": "10.01.03", "extract_line": 17826, "example": "MC_SHIFT=Key Shift"},
+    {"spelling": "Clear Key", "kind": "command", "page": "10.01.03", "extract_line": 17858, "example": "Clear Key"},
+    {"spelling": "Wait Key", "kind": "command", "page": "10.01.04", "extract_line": 17877, "example": "Wait Key"},
+    {"spelling": "Input$", "kind": "function", "page": "10.01.04", "extract_line": 17885, "example": "MC_S$=Input$(3)"},
+    {"spelling": "Input", "kind": "command", "page": "10.01.04", "extract_line": 17899, "example": "Input \"Value\";MC_N"},
+    {"spelling": "Line Input", "kind": "command", "page": "10.01.05", "extract_line": 17937, "example": "Line Input \"Name\";MC_NAME$"},
+    {"spelling": "Put Key", "kind": "command", "page": "10.01.05", "extract_line": 17948, "example": "Put Key \"yes\""},
+    {"spelling": "Key$", "kind": "reserved", "page": "10.01.06", "extract_line": 17982, "example": "Key$(1)=\"Print\""},
+    {"spelling": "Scan$", "kind": "function", "page": "10.01.06", "extract_line": 18003, "example": "MC_S$=Scan$(69)"},
+    {"spelling": "Key Speed", "kind": "command", "page": "10.01.06", "extract_line": 18018, "example": "Key Speed 25,5"}
+  ]
+}

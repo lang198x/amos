@@ -74,6 +74,10 @@
       "patterns": [
         {
           "name": "keyword.control.amos",
+          "match": "(?i:(?<![A-Za-z0-9_$#])(?:(?:Inverse|Shade|Under|Curs)[ \\t]+(?:On|Off)|Set[ \\t]+(?:Text|Tab|Curs)|(?:Memorize|Remember)[ \\t]+(?:X|Y)|Curs[ \\t]+Pen|Line[ \\t]+Input|Put[ \\t]+Key|Key[ \\t]+Speed|Writing|Home|Cmove|Centre|Cdown|Cup|Cleft|Cright|Cline|Hscroll|Vscroll|Using|Lprint|Input)(?![A-Za-z0-9_$#]))"
+        },
+        {
+          "name": "keyword.control.amos",
           "match": "(?i:(?<![A-Za-z0-9_$#])(?:Set[ \\t]+Double[ \\t]+Precision|On[ \\t]+Break[ \\t]+Proc|Break[ \\t]+(?:On|Off)|Every[ \\t]+(?:On|Off)|Def[ \\t]+Fn|Set[ \\t]+(?:Buffer|Stack)|Else[ \\t]+If|Exit[ \\t]+If|Pop[ \\t]+Proc|Stop|Edit|Direct|System|Fn|Sort|Inc|Dec|Add|Fix|Degree|Radian|Goto|Pop|Swap|Exit|On|Every|Data|Read|Restore|Proc|Shared|Global)(?![A-Za-z0-9_$#]))"
         },
         {
@@ -87,11 +91,19 @@
         {
           "name": "keyword.control.amos",
           "match": "(?i:(?<![A-Za-z0-9_$#])(?:Play[ \\t]+Off|Clear[ \\t]+Key|Set[ \\t]+Envel|Play|Wave|Volume)(?![A-Za-z0-9_$#]))"
+        },
+        {
+          "name": "keyword.control.amos",
+          "match": "\\?"
         }
       ]
     },
     "functions": {
       "patterns": [
+        {
+          "name": "support.function.amos",
+          "match": "(?i:(?<![A-Za-z0-9_$#])(?:Text[ \\t]+Styles|Key[ \\t]+Shift|Pen\\$|Paper\\$|Cmove\\$|At|Tab\\$|Cdown\\$|Cup\\$|Cleft\\$|Cright\\$|Xcurs|Ycurs|Zone\\$|Border\\$|Scanshift|Input\\$|Scan\\$)(?![A-Za-z0-9_$#]))"
+        },
         {
           "name": "support.function.amos",
           "match": "(?i:(?<![A-Za-z0-9_$#])(?:Param[$#]?|Pi\\#|Free|Left\\$|Right\\$|Mid\\$|Instr|Lower\\$|Val|String\\$|Space\\$|Flip\\$|Repeat\\$|Asc|Len|Match|Max|Min|Sgn|Abs|Int|Sqr|Exp|Log|Ln|Sin|Cos|Tan|Acos|Asin|Atan|Hsin|Hcos|Htan|True|False)(?![A-Za-z0-9_$#]))"
@@ -144,10 +156,10 @@
     },
     "reserved": {
       "name": "variable.language.amos",
-      "match": "(?i:(?<![A-Za-z0-9_$#])Timer(?![A-Za-z0-9_$#]))"
+      "match": "(?i:(?<![A-Za-z0-9_$#])(?:Timer|Key\\$)(?![A-Za-z0-9_$#]))"
     },
     "labels": {
-      "match": "^[ \\t]*(?!(?i:Cls|Print|End|If|Then|Else|Do|Loop|For|To|Step|Next|Repeat|Until|While|Wend|Procedure|Gosub|Return|Dim|Randomize|Wait|Autoback|Palette|Paper|Pen|Locate|Ink|Bar|Box|Hide|Show|Play|Wave|Volume|Rnd|Scancode|Physic|Logic|Timer|And|Or|Mod|Xor|Inc|Dec|Add|Max|Min|Sgn|Abs|Int|Fix|Sqr|Exp|Log|Ln|Pi\\#|Degree|Radian|Sin|Cos|Tan|Acos|Asin|Atan|Hsin|Hcos|Htan|Left\\$|Right\\$|Mid\\$|Instr|Upper\\$|Lower\\$|Str\\$|Val|String\\$|Space\\$|Flip\\$|Repeat\\$|Chr\\$|Asc|Len|Sort|Match|Proc|Shared|Global|Param|Param\\#|Param\\$|Goto|Pop|True|False|Not|Swap|Exit|On|Every|Data|Read|Restore|Free|Fn|Stop|Edit|Direct|System|Rem)[ \\t]*:)([A-Za-z_][A-Za-z0-9_]*)([ \\t]*)(:)[ \\t]*$",
+      "match": "^[ \\t]*(?!(?i:Cls|Print|End|If|Then|Else|Do|Loop|For|To|Step|Next|Repeat|Until|While|Wend|Procedure|Gosub|Return|Dim|Randomize|Wait|Autoback|Palette|Paper|Pen|Locate|Ink|Bar|Box|Hide|Show|Play|Wave|Volume|Rnd|Scancode|Physic|Logic|Timer|And|Or|Mod|Xor|Inc|Dec|Add|Max|Min|Sgn|Abs|Int|Fix|Sqr|Exp|Log|Ln|Pi\\#|Degree|Radian|Sin|Cos|Tan|Acos|Asin|Atan|Hsin|Hcos|Htan|Left\\$|Right\\$|Mid\\$|Instr|Upper\\$|Lower\\$|Str\\$|Val|String\\$|Space\\$|Flip\\$|Repeat\\$|Chr\\$|Asc|Len|Sort|Match|Proc|Shared|Global|Param|Param\\#|Param\\$|Goto|Pop|True|False|Not|Swap|Exit|On|Every|Data|Read|Restore|Free|Fn|Stop|Edit|Direct|System|Rem|Pen\\$|Paper\\$|Writing|Home|Cmove|Cmove\\$|At|Centre|Tab\\$|Cdown|Cdown\\$|Cup|Cleft|Cright|Cup\\$|Cleft\\$|Cright\\$|Cline|Xcurs|Ycurs|Zone\\$|Border\\$|Hscroll|Vscroll|Using|Lprint|Inkey\\$|Scanshift|Input\\$|Input|Key\\$|Scan\\$)[ \\t]*:)([A-Za-z_][A-Za-z0-9_]*)([ \\t]*)(:)[ \\t]*$",
       "captures": {
         "1": {
           "name": "entity.name.label.amos"
