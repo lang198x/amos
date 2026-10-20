@@ -71,6 +71,10 @@
       "patterns": [
         {
           "name": "keyword.control.amos",
+          "match": "(?i:(?<![A-Za-z0-9_$#])(?:Set[ \\t]+Double[ \\t]+Precision|On[ \\t]+Break[ \\t]+Proc|Break[ \\t]+(?:On|Off)|Every[ \\t]+(?:On|Off)|Def[ \\t]+Fn|Set[ \\t]+(?:Buffer|Stack)|Else[ \\t]+If|Exit[ \\t]+If|Pop[ \\t]+Proc|Stop|Edit|Direct|System|Fn|Sort|Inc|Dec|Add|Fix|Degree|Radian|Goto|Pop|Swap|Exit|On|Every|Data|Read|Restore|Proc|Shared|Global)(?![A-Za-z0-9_$#]))"
+        },
+        {
+          "name": "keyword.control.amos",
           "match": "(?i:(?<![A-Za-z0-9_$#])(?:Wait[ \\t]+(?:Key|Vbl)|End[ \\t]+(?:If|Proc)|Cls|Print|End|If|Then|Else|Do|Loop|For|To|Step|Next|Repeat|Until|While|Wend|Procedure|Gosub|Return|Dim|Randomize|Wait)(?![A-Za-z0-9_$#]))"
         },
         {
@@ -85,6 +89,10 @@
     },
     "functions": {
       "patterns": [
+        {
+          "name": "support.function.amos",
+          "match": "(?i:(?<![A-Za-z0-9_$#])(?:Param[$#]?|Pi\\#|Free|Left\\$|Right\\$|Mid\\$|Instr|Lower\\$|Val|String\\$|Space\\$|Flip\\$|Repeat\\$|Asc|Len|Match|Max|Min|Sgn|Abs|Int|Sqr|Exp|Log|Ln|Sin|Cos|Tan|Acos|Asin|Atan|Hsin|Hcos|Htan|True|False)(?![A-Za-z0-9_$#]))"
+        },
         {
           "name": "support.function.amos",
           "match": "(?i:(?<![A-Za-z0-9_$#])(?:Key[ \\t]+State|Upper\\$|Inkey\\$|Chr\\$|Str\\$|Rnd|Scancode|Physic|Logic)(?![A-Za-z0-9_$#]))"
@@ -111,7 +119,7 @@
       "patterns": [
         {
           "name": "keyword.operator.amos",
-          "match": "(?i:(?<![A-Za-z0-9_$#])(?:And|Or)(?![A-Za-z0-9_$#]))"
+          "match": "(?i:(?<![A-Za-z0-9_$#])(?:And|Or|Xor|Mod|Not)(?![A-Za-z0-9_$#]))"
         },
         {
           "name": "keyword.operator.amos",
@@ -136,7 +144,7 @@
       "match": "(?i:(?<![A-Za-z0-9_$#])Timer(?![A-Za-z0-9_$#]))"
     },
     "labels": {
-      "match": "^[ \\t]*(?!(?i:Cls|Print|End|If|Then|Else|Do|Loop|For|To|Step|Next|Repeat|Until|While|Wend|Procedure|Gosub|Return|Dim|Randomize|Wait|Autoback|Palette|Paper|Pen|Locate|Ink|Bar|Box|Hide|Show|Play|Wave|Volume|Rnd|Scancode|Physic|Logic|Timer|And|Or)[ \\t]*:)([A-Za-z_][A-Za-z0-9_]*)([ \\t]*)(:)[ \\t]*$",
+      "match": "^[ \\t]*(?!(?i:Cls|Print|End|If|Then|Else|Do|Loop|For|To|Step|Next|Repeat|Until|While|Wend|Procedure|Gosub|Return|Dim|Randomize|Wait|Autoback|Palette|Paper|Pen|Locate|Ink|Bar|Box|Hide|Show|Play|Wave|Volume|Rnd|Scancode|Physic|Logic|Timer|And|Or|Mod|Xor|Inc|Dec|Add|Max|Min|Sgn|Abs|Int|Fix|Sqr|Exp|Log|Ln|Pi\\#|Degree|Radian|Sin|Cos|Tan|Acos|Asin|Atan|Hsin|Hcos|Htan|Left\\$|Right\\$|Mid\\$|Instr|Upper\\$|Lower\\$|Str\\$|Val|String\\$|Space\\$|Flip\\$|Repeat\\$|Chr\\$|Asc|Len|Sort|Match|Proc|Shared|Global|Param|Param\\#|Param\\$|Goto|Pop|True|False|Not|Swap|Exit|On|Every|Data|Read|Restore|Free|Fn|Stop|Edit|Direct|System|Rem)[ \\t]*:)([A-Za-z_][A-Za-z0-9_]*)([ \\t]*)(:)[ \\t]*$",
       "captures": {
         "1": {
           "name": "entity.name.label.amos"

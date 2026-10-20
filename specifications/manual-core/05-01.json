@@ -1,0 +1,19 @@
+{
+  "chapter": "05.01",
+  "entries": [
+    {"spelling": "Set Buffer", "kind": "command", "page": "05.01.04", "extract_line": 3125, "example": "Set Buffer 16"},
+    {"spelling": "Dim", "kind": "command", "page": "05.01.04", "extract_line": 3144, "example": "Dim VALUES(8)"},
+    {"spelling": "Free", "kind": "function", "page": "05.01.05", "extract_line": 3210, "example": "Print Free"},
+    {"spelling": "Def Fn", "kind": "command", "page": "05.01.06", "extract_line": 3237, "example": "Def Fn TWICE(V)=V*2"},
+    {"spelling": "Fn", "kind": "command", "page": "05.01.06", "extract_line": 3251, "example": "Print Fn TWICE(7)"},
+    {"spelling": "Wait", "kind": "command", "page": "05.01.07", "extract_line": 3309, "example": "Wait 25"},
+    {"spelling": "End", "kind": "command", "page": "05.01.07", "extract_line": 3323, "example": "End"},
+    {"spelling": "Stop", "kind": "command", "page": "05.01.08", "extract_line": 3340, "example": "Stop"},
+    {"spelling": "Edit", "kind": "command", "page": "05.01.08", "extract_line": 3351, "example": "Edit"},
+    {"spelling": "Direct", "kind": "command", "page": "05.01.08", "extract_line": 3363, "example": "Direct"},
+    {"spelling": "Break Off", "kind": "command", "page": "05.01.08", "extract_line": 3377, "example": "Break Off"},
+    {"spelling": "Break On", "kind": "command", "page": "05.01.08", "extract_line": 3378, "example": "Break On"},
+    {"spelling": "System", "kind": "command", "page": "05.01.09", "extract_line": 3412, "example": "System"},
+    {"spelling": "Rem", "kind": "comment", "page": "05.01.10", "extract_line": 3454, "example": "Rem explanatory note"}
+  ]
+}

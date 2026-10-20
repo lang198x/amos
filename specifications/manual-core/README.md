@@ -1,0 +1,30 @@
+# Manual-led core vocabulary
+
+This inventory follows chapters **5.1–5.5 of the AMOS Professional User Guide**:
+basics, string functions, maths, control structures and procedures. It contains
+109 chapter entries, including grouped headings, connective words and typed
+forms. Each entry cites a printed page and a line in the hash-pinned held extract
+identified by `source.json`. Examples are freshly authored, not copied listings.
+
+The chapter files are the review checklist and test inputs. They are not generated
+from the grammar. The grammar remains the canonical TextMate asset; this work adds
+no grammar generator or second parser. Record spelling, documented category and
+lexical examples here before changing coverage claims.
+
+The inventory covers named core forms, not every lexical rule, command mentioned
+in an example, or every argument overload. Print and Input, for example, receive
+their own instruction entries in later chapters. Likewise AMAL, extensions and
+Creator/Easy editions require their own inventories. A 1992 Professional manual
+is not evidence that every release accepts every listed form.
+
+The held extract has visible typesetting/transcription defects: examples lose
+underscores, the integer-range paragraph is suspect, and a comparison table uses
+`>` twice. Do not turn these into executable rules. Command-prefix restrictions
+in §5.1 concern original editor acceptance; conservative whole-word highlighting
+of a command-like identifier is not a validity judgement. No new native tests
+are claimed by this documentary inventory.
+
+Tests check complete phrases, letter case, spaces/tabs, typed builtin variants,
+suffix and identifier boundaries, comments/strings and unchanged full-game
+coverage. Passing entries mean lexical coverage of the recorded forms, not
+complete syntax, semantics, runtime compatibility or public-release readiness.

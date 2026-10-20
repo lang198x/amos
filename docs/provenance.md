@@ -38,6 +38,14 @@ standalone definition; Gosub targets and procedure invocations are not resolved.
 These are language facts, not a claim that every edition behaves identically.
 The AMOS-specific grammar is deliberately partial; it is not copied manual text.
 
+The [manual-led core inventory](../specifications/manual-core/README.md) covers
+named forms and connective words in §§5.1–5.5, including grouped headings and
+typed variants. Each entry cites its printed page and exact line in a hash-pinned
+primary extract. Examples are newly authored. It distinguishes documentary
+Professional coverage from Creator/Easy, individual release and extension
+qualification. Suspect range/comparison prose and lost underscores in the held
+extract are recorded rather than converted into language semantics.
+
 [Opening sources](../corpus/opening/README.md) retain their upstream MIT licence
 and immutable provenance. [New native probes](../corpus/probes/README.md) record
 exact input hashes, screenshots and a pinned runtime profile. Host parser tests
