@@ -36,10 +36,15 @@ existing installations; CI does not download unapproved test dependencies or
 silently skip a missing highlighter. Its supported-version matrix can grow once
 those test dependencies are explicitly adopted.
 
-Installable tarball and VSIX assets can be distributed through GitHub. npm
-publication is pending: the authenticated npm lookup for the `lang198x`
-organisation returned `Scope not found`. No substitute scope or Marketplace
-publisher was created, and no npm/Marketplace publication is claimed.
+The identical verified tarball is published as `@lang198x/amos@0.1.0` on npm
+under the preview `next` tag. Registry integrity matches the GitHub preview;
+a fresh registry install was compared with the canonical grammar and rendered
+through the existing Shiki installation. No dependency was added to this project.
+The versioned tarball retains the original pre-publication documentation.
+Current availability and installation instructions are maintained in this repo.
+
+The VSIX remains available through GitHub downloads. No Marketplace publication
+is claimed.
 
 Native file codecs/output, execution, complete name/type analysis, LSP and
 qualification of Creator/Easy/other releases remain future work.

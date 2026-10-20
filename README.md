@@ -28,10 +28,15 @@ in its own small Rust module under `src/instructions/`.
 
 ## Highlight a listing
 
-The npm package has no dependencies. Build a local installable tarball with
-`npm pack --pack-destination dist` after creating `dist/`. Install that tarball
-in a consumer which already uses Shiki. Registry availability is separate from
-repository availability; do not assume the npm name has been published.
+The dependency-free grammar package is published on npm under the preview
+`next` tag. Install it in a consumer which already uses Shiki:
+
+```sh
+npm install @lang198x/amos@next
+```
+
+Use `@lang198x/amos@0.1.0` to pin this first preview. A local tarball can also be
+built with `npm pack --pack-destination dist` after creating `dist/`.
 
 ```js
 import { createHighlighter } from 'shiki';
