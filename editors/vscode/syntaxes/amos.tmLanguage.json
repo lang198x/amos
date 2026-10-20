@@ -66,6 +66,10 @@
         {
           "name": "keyword.control.amos",
           "match": "(?i:(?<![A-Za-z0-9_$#])(?:Wait[ \\t]+(?:Key|Vbl)|End[ \\t]+(?:If|Proc)|Cls|Print|End|If|Then|Else|Do|Loop|For|To|Step|Next|Repeat|Until|While|Wend|Procedure|Gosub|Return|Dim|Randomize|Wait)(?![A-Za-z0-9_$#]))"
+        },
+        {
+          "name": "keyword.control.amos",
+          "match": "(?i:(?<![A-Za-z0-9_$#])(?:Bob[ \\t]+Update[ \\t]+Off|Double[ \\t]+Buffer|Screen[ \\t]+(?:Swap|Copy)|Curs[ \\t]+Off|Flash[ \\t]+Off|Autoback|Palette|Paper|Pen|Locate|Ink|Bar|Box|Hide|Show)(?![A-Za-z0-9_$#]))"
         }
       ]
     },

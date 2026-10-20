@@ -24,6 +24,11 @@ The [full-game fixture](../corpus/highlighting/README.md) retains its pinned
 upstream source and MIT attribution. These facts identify vocabulary, not a new
 parser capability or cross-release qualification.
 
+Display forms come from §5.6 (Pen, Paper, Locate, Curs Off), §5.8 (Hide/Show),
+§6.2 (Screen Copy/Swap, Physic/Logic and Wait Vbl), §6.3 (Flash Off), §6.4
+(Ink, Palette, Bar and Box), §7.2 (Double Buffer and Bob Update Off), and §7.3
+(Autoback). Multiword forms are matched as complete lexical phrases.
+
 These are language facts, not a claim that every edition behaves identically.
 The AMOS-specific grammar is deliberately partial; it is not copied manual text.
 
