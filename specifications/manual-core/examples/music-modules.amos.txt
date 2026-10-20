@@ -1,0 +1,15 @@
+Rem Lexical music board: modules and the MED library must be supplied separately
+Music Off
+Track Load "RAM:theme.mod",9
+Track Play 9,2 : Track Loop On
+Track Loop Off : Track Stop
+Track Play ,2 : Track Stop
+Med Midi On
+Med Load "RAM:theme.med",12
+Med Play 12,1 : Med Stop : Med Cont
+Sam Play %0001,2,8000 : Med Stop
+Med Play ,1 : Med Stop
+Music 2 : Mvolume 40 : Tempo 30 : Music Stop : Music Off
+MC_MODULE$="Track Loop On: Med Midi On"
+' Track Play Med Cont Music Stop
+MC_TRACK_VALUE=9 : MC_MED_VALUE=12

@@ -86,6 +86,10 @@
       "patterns": [
         {
           "name": "keyword.control.amos",
+          "match": "(?i:(?<![A-Za-z0-9_$#])(?:Track[ \\t]+(?:Loop[ \\t]+(?:On|Off)|Load|Play|Stop)|Med[ \\t]+(?:Midi[ \\t]+On|Load|Play|Stop|Cont))(?![A-Za-z0-9_$#]))"
+        },
+        {
+          "name": "keyword.control.amos",
           "match": "(?i:(?<![A-Za-z0-9_$#])(?:Sam[ \\t]+(?:Loop[ \\t]+(?:On|Off)|Play|Stop|Bank|Raw|Swap)|Sload|Ssave)(?![A-Za-z0-9_$#]))"
         },
         {

@@ -1,0 +1,26 @@
+{
+  "chapter": "08.03",
+  "entries": [
+    {"spelling": "Music", "kind": "command", "page": "08.03.01", "extract_line": 15125, "example": "Music 2"},
+    {"spelling": "Music Stop", "kind": "command", "page": "08.03.01", "extract_line": 15140, "example": "Music Stop"},
+    {"spelling": "Music Off", "kind": "command", "page": "08.03.01", "extract_line": 15147, "example": "Music Off"},
+    {"spelling": "Mvolume", "kind": "command", "page": "08.03.01", "extract_line": 15155, "example": "Mvolume 40"},
+    {"spelling": "Tempo", "kind": "command", "page": "08.03.02", "extract_line": 15167, "example": "Tempo 30"},
+    {"spelling": "Track Load", "kind": "command", "page": "08.03.02", "extract_line": 15200, "example": "Track Load \"RAM:theme.mod\",9"},
+    {"spelling": "Track Play", "kind": "command", "page": "08.03.02", "extract_line": 15208, "example": "Track Play 9,2"},
+    {"spelling": "Track Loop On", "kind": "command", "page": "08.03.03", "extract_line": 15230, "example": "Track Loop On"},
+    {"spelling": "Track Loop Off", "kind": "command", "page": "08.03.03", "extract_line": 15231, "example": "Track Loop Off"},
+    {"spelling": "Track Stop", "kind": "command", "page": "08.03.03", "extract_line": 15243, "example": "Track Stop"},
+    {"spelling": "Med Load", "kind": "command", "page": "08.03.03", "extract_line": 15254, "example": "Med Load \"RAM:theme.med\",12"},
+    {"spelling": "Med Play", "kind": "command", "page": "08.03.04", "extract_line": 15275, "example": "Med Play 12,1"},
+    {"spelling": "Med Stop", "kind": "command", "page": "08.03.04", "extract_line": 15289, "example": "Med Stop"},
+    {"spelling": "Med Cont", "kind": "command", "page": "08.03.04", "extract_line": 15296, "example": "Med Cont"},
+    {"spelling": "Med Midi On", "kind": "command", "page": "08.03.04", "extract_line": 15303, "example": "Med Midi On"}
+  ],
+  "notes": [
+    "Music, Music Stop, Music Off, Mvolume and Tempo also appear in the 08.01 inventory; these are chapter entries, not unique instruction counts.",
+    "Track Load signature names a bank number, while the looping example on 08.03.03 omits it. Examples here supply a bank; no default loading bank is inferred.",
+    "The MED prose prints MMDO alongside MMD1. This is retained as written, not promoted to format-version or native compatibility evidence.",
+    "MED library presence, module bank layout, playback defaults, effect interaction and MIDI output remain unqualified by lexical highlighting."
+  ]
+}

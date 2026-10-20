@@ -459,3 +459,28 @@ Extracted npm registrations render all three modes in both themes; the sample
 listing retains Sam Swapped's function scope. No installed editor review, native
 audio, streaming or I/O result is claimed. Versions, published preview 0.2.0,
 parser and private Marketplace availability are unchanged.
+
+
+## Unreleased tracker and MED highlighting
+
+Fifteen §8.3 chapter entries bring BASIC to 536 across 25 chapters, retaining
+five AMOS music forms already inventoried in §8.1. Five passed before the change;
+all 15 pass now. Each heading/page binding matches the pinned Professional
+extract. Track Load's bank example discrepancy and the MMDO wording are retained
+without deriving native defaults or format compatibility.
+
+Twenty-two package/inventory checks and editor sync pass. One hundred and six
+highlighting integrations pass in each existing consumer (Shiki 4.4.3 with
+shiki-highlight-api 1.3.0 and 2.0.0), using dark-plus/light-plus. Focused checks
+cover every form in both BASIC profiles, complete phrases, case/tabs, omitted
+playback arguments, ordinary identifiers and payload protection, plus existing
+music/sample commands. The mixed listing preserves exact source and emits styled
+HTML/CSS. Removing Med Midi On causes the focused suite to fail in both profiles;
+restoring and synchronising the grammar makes it pass again.
+
+Disposable npm/VSIX archives contain exact source grammars, icon, configuration
+and manifest files, without public gallery flags or executable extension code.
+Extracted npm registrations render all three modes in both themes and retain Med
+Midi On's command scope. These checks do not establish installed-editor appearance,
+native module playback, library loading or MIDI behavior. Versions, parser,
+published preview 0.2.0 and private Marketplace availability are unchanged.

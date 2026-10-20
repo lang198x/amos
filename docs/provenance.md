@@ -185,3 +185,12 @@ from Sam Swap. The latter's signature and 08.02.07 listing use To, while its
 reference is retained as a discrepancy; the heading/signature give Sam Raw.
 The newly authored samples fixture follows the signatures and is a lexical
 input, without native sample playback, streaming or filesystem execution.
+
+
+Music-module coverage cites all 15 named headings in Professional §8.3,
+pp.08.03.01–04, in the same pinned extract. Each heading and following page footer
+was checked. Five AMOS music entries overlap §8.1's cross-references. Track Load's
+signature includes a bank while its looping example omits one; no loading default
+is inferred. MED prose prints MMDO beside MMD1; this is retained as source wording,
+not format qualification. The independent music-modules fixture is authored here
+and was not executed with a tracker module, MED library or MIDI device.

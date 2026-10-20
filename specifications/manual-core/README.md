@@ -7,8 +7,8 @@ chapters 5.1–5.5 (basics, strings, maths, control and procedures), 48 from cha
 (memory banks), 27 from 6.4 (drawing), 35 from 6.5 (menus), 19 from 7.1
 (sprites), 21 from 7.2 (Bobs), 13 from 7.3 (object updating), 14 from 7.4
 (collisions), 12 from 7.5 (IFF animation), 24 from 7.6 (BASIC AMAL controls),
-38 from 10.2 (file/directory I/O) 21 from 8.1 (music/basic sound) and ten from 8.2 (samples).
-The 521 BASIC entries include grouped headings, connective words, typed forms and the `?`
+38 from 10.2 (file/directory I/O) 21 from 8.1 (music/basic sound) ten from 8.2 (samples) and 15 from 8.3 (music modules).
+The 536 BASIC entries include grouped headings, connective words, typed forms and the `?`
 print shortcut. Fourteen embedded menu commands are recorded separately in
 `06-05.json`, outside the BASIC vocabulary count.
 Each entry cites a printed page and a line in the hash-pinned held extract
@@ -161,3 +161,13 @@ explicit; the fresh examples follow the signature without qualifying either
 syntax natively. Ssave's start To end is distinct from Sload's address,length.
 Highlighting does not validate data bounds, CHIP memory, audio frequency,
 refill timing, swap results or sample bank availability.
+
+
+The music-module chapter adds 15 chapter entries: five AMOS music controls already
+recorded in §8.1 and ten Track/Med forms. Counts retain chapter overlap rather
+than reporting unique instructions. All are commands. Track/Med Play include
+omitted-bank examples; highlighting does not validate playback defaults.
+Track Load's signature supplies a bank, while a later example omits it. The MED
+prose prints MMDO alongside MMD1; neither this spelling nor the library discussion
+qualifies module versions, native loading, playback interaction or MIDI output.
+Module filenames remain opaque strings. Speech remains a separate sweep.
