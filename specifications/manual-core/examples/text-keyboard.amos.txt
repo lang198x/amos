@@ -1,0 +1,38 @@
+Rem Fresh lexical fixture; no native execution is claimed.
+Curs Off
+Paper 0
+Pen 1
+Home
+Centre "TEXT AND INPUT"
+Set Text 2
+MC_STYLE=Text Styles
+Inverse On
+Print Pen$(2);Paper$(0);At(2,3);"ready"
+Inverse Off
+Memorize X
+Memorize Y
+MC_X=Xcurs
+MC_Y=Ycurs
+Cmove 1,1
+Print Cmove$(-1,0);Tab$;"label"
+Remember X
+Remember Y
+MC_SCORE#=12.5
+Print Using "###.##";MC_SCORE#
+Input "Count";MC_COUNT
+Line Input "Label";MC_LABEL$
+MC_PREFIX$=Input$(2)
+Clear Key
+Wait Key
+MC_PRESSED$=Inkey$
+MC_SCAN=Scancode
+MC_SHIFT=Key Shift
+MC_DOWN=Key State(69)
+MC_OLD_SHIFT=Scanshift
+Key$(1)="Print 7"+Chr$(13)
+MC_MACRO$=Key$(1)
+MC_SCAN_TEXT$=Scan$(69)
+Put Key "yes"+Chr$(13)
+Key Speed 25,5
+? "Key$ Input$ ? remain text here"
+End

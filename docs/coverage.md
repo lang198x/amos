@@ -9,7 +9,7 @@ Published npm 0.1.0 and editor 0.1.1 retain their original grammar.
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Professional core forms from §§5.1–5.5, plus Bank or Risk display/sound/input vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional core/text/keyboard forms from §§5.1–5.6 and 10.1, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -85,8 +85,27 @@ identifiers. Two fresh mixed listings exercise these constructs independently of
 Bank or Risk.
 
 The inventory is documentary Professional coverage, not native release or
-Creator/Easy qualification. Print/Input/text facilities defined in later chapters,
-broader screen/object/file facilities, numeric notation, numeric/inline labels,
+Creator/Easy qualification. Broader screen/object/file facilities, numeric notation, numeric/inline labels,
 AMAL/Interface and extension vocabularies remain separate sweeps. The existing
 game milestone still passes. Published packages and the private Marketplace
 preview retain their earlier grammar; this source expansion is unreleased.
+
+## Text and keyboard milestone
+
+The inventory additionally covers 48 named text entries from §5.6 and 14 keyboard
+entries from §10.1, for 171 chapter entries in total. Ten of these 62 entries
+passed the previous full phrase/boundary checks; all 62 now pass. New forms
+include text styles and cursor controls, string-valued text functions, formatted
+output, Input/Line Input/Input$, keyboard state/scan functions and macros.
+
+Pen/Paper/Cmove and their dollar forms keep distinct command/function scopes.
+Key$ has a reserved-variable scope in assignments and expressions. The `?`
+keyboard shortcut is coloured as a lexical print abbreviation; the manual says
+the original editor expands it to Print. No raw-shortcut persistence is inferred.
+Print Using masks and Key$ payloads remain strings, without embedded execution
+or format validation. A fresh text/keyboard listing checks these contexts and
+exact text preservation in both themes and existing consumers.
+
+Windows, mouse/joystick and broader screen/object/file facilities remain later
+sweeps. Keyboard vocabulary does not qualify disc input overloads. No new parser
+behaviour, runtime/edition qualification or public Marketplace release follows.

@@ -27,3 +27,24 @@ Files: chapter JSONs/source metadata and README, existing manual test helpers,
 canonical and synchronised editor grammar, coverage/provenance/verification docs.
 Windows, mouse/joystick, remaining screen/object/file commands and other editions
 are later sweeps; §10.1 does not qualify disc/printer/serial input overloads.
+
+## Outcome
+
+The inventory has 48 text and 14 keyboard entries, making 171 overall. Each new
+chapter previously passed five full lexical checks; all 62 entries now pass.
+The initial red run failed on Pen$ and Scanshift, and disabling the new Key$
+reserved-variable pattern fails its exact-range context check. The original rule
+was restored before the passing run. The prior 109 core entries and 398 full-game
+occurrences still pass; documented Pen$/Paper$ forms have positive checks rather
+than being incorrectly asserted to be ordinary names by the game helper.
+
+Thirty integration tests pass with both existing consumers in both themes; five
+package/inventory checks pass. All 171 source-line/page bindings and both held
+source hashes were checked. Actual npm/VSIX grammar bytes, icon metadata and
+absence of Public gallery flags were inspected. The built tarball registration
+renders the new mixed listing with expected scopes and exact text preservation.
+No dependency, Rust/parser change, registry release or Marketplace upload occurred.
+
+Disposable files: `dist/` and `/private/tmp/lang198x-text-keyboard-packages/`
+(consumer and task npm cache). Remove after the source commit is retained on the
+verified remote. No background process or temporary worktree was created.

@@ -104,3 +104,20 @@ check passes without suppressing mismatches.
 
 These are lexical/documentary checks, not new runtime acceptance observations.
 Parser scope, original execution and edition qualification are unchanged.
+
+## Unreleased text and keyboard highlighting
+
+The §5.6 and §10.1 inventories add 48 text and 14 keyboard entries, retaining
+the earlier five-chapter/109-entry check. All 171 entries have source-line/page
+bindings and pass lexical checks. Thirty integration tests pass against Shiki
+4.4.3 with both existing shiki-highlight-api 1.3.0 and local 2.0.0 consumers;
+five package/inventory checks pass. Tests distinguish commands, dollar-valued
+functions and Key$ assignments/reads, guard multiword endings and macro/format
+strings, and preserve a fresh mixed listing in both themes. Existing game and
+core expectations still pass.
+
+Disabling Key$'s reserved-variable pattern makes the new context test fail on
+the exact Key$ range; it was restored before the passing run. The `?` shortcut
+has a lexical scope, without a claim about native persistence. No original AMOS
+code or keyboard macro was executed, and no editor/system setting was changed.
+Published packages and the private Marketplace preview are unchanged.
