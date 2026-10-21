@@ -98,5 +98,23 @@
         255
       ]
     }
-  ]
+  ],
+  "completion_followup": {
+    "case": "paper-4-explicit-zero",
+    "first_space": {
+      "hold_frames": 3,
+      "run_frames": 100,
+      "observed": "End of program at line 4; offers Escape to direct mode or Space to editor."
+    },
+    "second_space": {
+      "hold_frames": 3,
+      "run_frames": 100,
+      "observed": "Editor reappears with the same four source lines."
+    },
+    "captures": {
+      "after-wait-release.png": "8974dac73a8d12b04d134389d9ccf08097e3b31dd9a22050a149d45d725aa531",
+      "after-return-editor.png": "8639e2a88aa5d7534d1691bf61fceaef44ea54ca2aeef1c09c1ef043bb9348ad"
+    },
+    "scope": "This one follow-up verifies progression beyond Wait Key to End and return to editor; it does not qualify every End or Wait form."
+  }
 }

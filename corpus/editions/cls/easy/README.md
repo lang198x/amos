@@ -61,9 +61,15 @@ background colour away from the pointer; `cases.json` binds every source and
 capture hash. RPC responses, error flags and process exit codes were checked;
 each RPC had a 50-second response bound.
 
-The capture is taken while the program waits at Wait Key. It does not verify End
-execution, native source-file Save/Load, rectangular Cls, extensions or other
-revisions. These four results agree with the Easy glossary's current-paper
+The four result captures are taken while the programs wait at Wait Key.
+A separate follow-up on `paper-4-explicit-zero` presses Space (hold 3, run 100):
+the native display reports "End of program at line 4". Another Space with the
+same timing returns to the editor with the source intact. Those two captures
+are bound separately in `cases.json`. They establish that one completion path,
+not every Wait or End form.
+
+These trials do not verify native source-file Save/Load, rectangular Cls,
+extensions or other revisions. The four colour results agree with the Easy glossary's current-paper
 wording (printed page 347), the [Creator 1.1 trial](../creator/README.md) and the
 [Professional 2.00 trial](../README.md). No parser semantics, recognised CLI
 compatibility profile, grammar or release channel changes.
