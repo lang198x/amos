@@ -112,6 +112,8 @@ answer to the collision-result question. The opt-in `amos-3d` profile highlights
 those records in preview 0.2.0. Other manual chapters and edition/extension
 qualification remain separate work. See the [remaining-gap review](docs/highlighting-gaps.md)
 for the proposed next sweeps and unresolved surfaces.
+The [I/O boundary review](docs/io-extension-boundary.md) records 28 serial/parallel
+forms separately from highlighting, with unresolved spelling and component questions.
 
 ## Optional AMOS 3D highlighting
 

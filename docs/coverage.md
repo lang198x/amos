@@ -415,3 +415,10 @@ Existing file channels and error commands remain covered. The independent
 listing preserves strings and escape payloads; no printer/device is accessed.
 Pointer ranges, buffer lifetimes, status values and actual output remain
 unqualified. These additions are unreleased.
+
+
+The [I/O boundary review](io-extension-boundary.md) records 18 serial and ten
+parallel forms separately from the 594 BASIC chapter entries. It recommends
+existing lexical modes with component provenance for a later implementation;
+Serial Buf/Buffer spelling, handshake semantics and parallel component ownership
+remain unresolved. No serial/parallel rules or new mode are added by the review.

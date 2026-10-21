@@ -1,0 +1,15 @@
+{
+  "chapter": "10.05",
+  "entries": [
+    {"spelling": "Parallel Open", "kind": "command", "page": "10.05.01", "extract_line": 19572, "example": "Parallel Open"},
+    {"spelling": "Parallel Close", "kind": "command", "page": "10.05.01", "extract_line": 19580, "example": "Parallel Close"},
+    {"spelling": "Parallel Send", "kind": "command", "page": "10.05.01", "extract_line": 19586, "example": "Parallel Send \"Ready\"+Chr$(10)"},
+    {"spelling": "Parallel Out", "kind": "command", "page": "10.05.02", "extract_line": 19609, "example": "Parallel Out Start(10),Length(10)"},
+    {"spelling": "Parallel Input$", "kind": "function", "page": "10.05.02", "extract_line": 19616, "example": "MC_TEXT$=Parallel Input$(16)"},
+    {"spelling": "Parallel Abort", "kind": "command", "page": "10.05.02", "extract_line": 19633, "example": "Parallel Abort"},
+    {"spelling": "Parallel Check", "kind": "function", "page": "10.05.02", "extract_line": 19641, "example": "MC_READY=Parallel Check"},
+    {"spelling": "Parallel Error", "kind": "function", "page": "10.05.02", "extract_line": 19648, "example": "MC_CODE=Parallel Error"},
+    {"spelling": "Parallel Status", "kind": "function", "page": "10.05.03", "extract_line": 19664, "example": "MC_FLAGS=Parallel Status"},
+    {"spelling": "Parallel Base", "kind": "function", "page": "10.05.03", "extract_line": 19677, "example": "MC_ADDRESS=Parallel Base"}
+  ]
+}

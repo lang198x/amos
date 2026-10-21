@@ -103,7 +103,7 @@ review; they are not silently excluded from a future coverage claim.
 | Route | Remaining review |
 | --- | --- |
 | §§9.1–9.4 Interface | Separate BASIC Dialog/resource controls from the embedded Interface language. Inventory both before deciding any standalone mode or string injection. The existing AMAL mode is not Interface coverage. |
-| §§10.4–10.5 serial/parallel | Device commands, functions and transfer/status forms; the manual labels serial facilities an I/O Extension, which needs explicit profile review. §10.3 printer/general-port forms now have a 12-entry inventory; escape payloads stay opaque. |
+| §§10.4–10.5 serial/parallel | Device commands, functions and transfer/status forms; the [boundary review](io-extension-boundary.md) recommends existing lexical modes with component provenance; 28 documentary records are separate from highlighting, and buffer spelling remains unresolved. §10.3 printer/general-port forms now have a 12-entry inventory; escape payloads stay opaque. |
 | §10.6 AREXX | BASIC integration commands and external script payload boundaries; no AREXX language implementation is implied. |
 | §11.3 floating point | Reconcile repeated precision/maths vocabulary with existing §5.3; distinguish library/number-representation facts from missing lexical forms. |
 | §11.4 multitasking | AMOS front/back/lock, waiting and inter-program communication forms. |

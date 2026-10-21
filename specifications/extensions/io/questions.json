@@ -1,0 +1,23 @@
+[
+  {
+    "id": "buffer-spelling",
+    "status": "unresolved",
+    "page": "10.04.04",
+    "extract_line": 19453,
+    "detail": "Heading and index use Serial Buf; signature and later error text use Serial Buffer. Neither alias is qualified by this review."
+  },
+  {
+    "id": "serial-x-semantics",
+    "status": "unresolved",
+    "page": "10.04.03",
+    "extract_line": 19401,
+    "detail": "The formula prints XON110000000; toggle prose and Serial Open wording require separate verification. Do not derive a mask or corrected arithmetic."
+  },
+  {
+    "id": "parallel-component",
+    "status": "unresolved",
+    "page": "10.05.01",
+    "extract_line": 19572,
+    "detail": "The parallel chapter follows serial but does not explicitly attribute its commands to the I/O Extension. Grouping is documentary, not module ownership evidence."
+  }
+]

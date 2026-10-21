@@ -1,0 +1,23 @@
+{
+  "chapter": "10.04",
+  "entries": [
+    {"spelling": "Serial Open", "kind": "command", "page": "10.04.01", "extract_line": 19284, "example": "Serial Open 0,0"},
+    {"spelling": "Serial Close", "kind": "command", "page": "10.04.02", "extract_line": 19326, "example": "Serial Close 0"},
+    {"spelling": "Serial Speed", "kind": "command", "page": "10.04.02", "extract_line": 19349, "example": "Serial Speed 0,1200"},
+    {"spelling": "Serial Bits", "kind": "command", "page": "10.04.02", "extract_line": 19357, "example": "Serial Bits 0,8,1"},
+    {"spelling": "Serial Parity", "kind": "command", "page": "10.04.02", "extract_line": 19365, "example": "Serial Parity 0,-1"},
+    {"spelling": "Serial X", "kind": "command", "page": "10.04.03", "extract_line": 19392, "example": "Serial X 0,MC_XMODE"},
+    {"spelling": "Serial Send", "kind": "command", "page": "10.04.03", "extract_line": 19404, "example": "Serial Send 0,\"Ready\""},
+    {"spelling": "Serial Out", "kind": "command", "page": "10.04.03", "extract_line": 19412, "example": "Serial Out 0,Start(10),Length(10)"},
+    {"spelling": "Serial Get", "kind": "function", "page": "10.04.03", "extract_line": 19420, "example": "MC_BYTE=Serial Get(0)"},
+    {"spelling": "Serial Input$", "kind": "function", "page": "10.04.04", "extract_line": 19430, "example": "MC_TEXT$=Serial Input$(0)"},
+    {"spelling": "Serial Buf", "kind": "command", "page": "10.04.04", "extract_line": 19453, "example": "Serial Buf 0,1024", "spelling_status": "unresolved", "held_signature": "Serial Buffer Channel number,length", "signature_line": 19455},
+    {"spelling": "Serial Fast", "kind": "command", "page": "10.04.04", "extract_line": 19461, "example": "Serial Fast 0"},
+    {"spelling": "Serial Slow", "kind": "command", "page": "10.04.04", "extract_line": 19470, "example": "Serial Slow 0"},
+    {"spelling": "Serial Check", "kind": "function", "page": "10.04.05", "extract_line": 19483, "example": "MC_READY=Serial Check(0)"},
+    {"spelling": "Serial Status", "kind": "function", "page": "10.04.05", "extract_line": 19492, "example": "MC_FLAGS=Serial Status(0)"},
+    {"spelling": "Serial Error", "kind": "function", "page": "10.04.05", "extract_line": 19522, "example": "MC_CODE=Serial Error(0)"},
+    {"spelling": "Serial Abort", "kind": "command", "page": "10.04.06", "extract_line": 19533, "example": "Serial Abort(0)"},
+    {"spelling": "Serial Base", "kind": "function", "page": "10.04.06", "extract_line": 19541, "example": "MC_ADDRESS=Serial Base"}
+  ]
+}
