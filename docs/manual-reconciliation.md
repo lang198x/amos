@@ -1,4 +1,4 @@
-# Floating-point and monitor reconciliation
+# Manual vocabulary reconciliation
 
 Professional §11.3 introduces no new named BASIC definitions. Its one content
 page, 11.03.01 (extract lines 20329–20377), discusses floating-point libraries and
@@ -25,10 +25,32 @@ Wait, Default, Flash and Fade mentions remain references to their earlier forms.
 [page-by-page vocabulary review](error-catalogue-review.md). Covered BASIC
 references, an original 17-gap baseline, spelling discrepancies, editor UI and
 embedded languages are routed separately. Five §13.1 gaps, Kill Editor and three Interface-facing BASIC
-gaps and four Appendix A memory forms are covered from their definitions;
-four Copper forms remain. No catalogue wording becomes a new alias or
+gaps, four Appendix A memory forms and four Copper forms are covered from their
+definitions. All 17 original gaps now have definition-led lexical coverage. No catalogue wording becomes a new alias or
 inventory entry. Error-code behavior and historical advice remain unqualified.
 
 Highlighting checks prove lexical scopes and source preservation. They do not
 execute the monitor, test debugger UI, qualify floating-point results, resolve
 expressions or establish original-runtime acceptance.
+
+
+## Appendix C display modes
+
+Appendix C spans pp.14.C.01–06, extract lines 26104–26331; the final page is
+blank. Its only new named BASIC headings are Display Height (26145, 14.C.01)
+and Ntsc (26219, 14.C.03). Both are functions. They now have explicit records
+in 14-C.json and complete lexical scopes, bringing BASIC to 728 entries across
+44 partial/full chapter/appendix sections. The same source record/hash applies.
+
+| Appendix C context | Existing definition | Disposition |
+| --- | --- | --- |
+| Screen Open with Display Height and Lowres, 26159; Screen Open/Display, 26246–47 | Screen Open 7574; Lowres 7609; Screen Display 7709 (§6.1) | Retain existing roles; query expressions and omitted Screen Display arguments receive lexical checks. |
+| Global variables, 26241 | Global 5388 (§5.5) | Existing command; no duplicate entry. |
+| For/To/Wait Vbl/Next, 26167–69 | Existing §§5.4/6.2 forms; Wait Vbl 8425 | Test scopes without asserting loop duration or refresh cadence. |
+| If/End If and Print/End, 26228–32; branching, 26243–45 | Existing §§5.1/5.4 forms | Existing control and output vocabulary; Ntsc remains a function in conditions. |
+| PAL/NTSC/SECAM territory lists, 26286–26319 | Television-standard labels; NTSC also has its separate BASIC definition above | No PAL/SECAM command, regional alias or geography-derived profile. |
+
+Display heights, safe margins, rates, audio/AMAL speed and the A3000 front-screen
+account are historical manual claims. They do not establish native results,
+compatibility rules, recommended timing algorithms or model/edition profiles.
+Neither the manual's loop example nor the fresh lexical notebook is executed.

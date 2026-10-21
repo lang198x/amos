@@ -1,0 +1,15 @@
+Rem Lexical notebook only; no screen size or timing result is asserted
+MC_HEIGHT=Display Height
+Global MC_HEIGHT,MC_POSITION
+If Ntsc
+  MC_POSITION=55
+Else
+  MC_POSITION=49
+End If
+Screen Open 0,320,MC_HEIGHT-56,16,Lowres
+Screen Display 0,,MC_POSITION,,
+For MC_TICK=0 To MC_LIMIT
+  Wait Vbl
+Next MC_TICK
+Print "PAL NTSC SECAM Display Height"
+'Ntsc : Display Height

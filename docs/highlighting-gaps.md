@@ -1,8 +1,8 @@
 # Remaining highlighting work
 
 The approved sequence is complete: **§7.7 Icons and Blocks**, **§11.1 Fonts**,
-then **§12.2 Error Handling**. Current BASIC coverage is 726 chapter entries across
-43 partially or fully inventoried chapter/appendix sections, including the subsequent printer/general-port sweep. The audit baseline and representative probes below retain their
+then **§12.2 Error Handling**. Current BASIC coverage is 728 chapter entries across
+44 partially or fully inventoried chapter/appendix sections, including the subsequent printer/general-port sweep. The audit baseline and representative probes below retain their
 pre-implementation results; the completion record follows them. Publication
 remains separate.
 
@@ -111,7 +111,7 @@ Uninventoried sections need explicit review; they are not silently excluded from
 | §§12.1 and 12.3 monitor/errors | Monitor from §12.1 now has lexical coverage. Buttons/shortcuts are UI controls. The complete [catalogue vocabulary review](error-catalogue-review.md) records an original 17-gap baseline; all 17 now have definition-led lexical coverage, including Appendix F Copper. Spelling conflicts and embedded/UI vocabulary stay distinct. |
 | §§1–4 and 13 installation/editor/accessories | Five §13.1 forms now have lexical coverage: Set Accessory, Call/Ask Editor and Close Workbench/Editor. Review other examples and editor/direct-mode facilities at their own definitions; menus/shortcuts are not automatically BASIC instructions. |
 | Appendix A machine code | Twenty-eight memory/block/address/conversion/bit/call/register forms are covered. Pload/Call and Areg/Dreg now have scopes. Procedure insertion UI, assembly examples and cross-reference reconciliation remain separate. |
-| Appendix C PAL/NTSC | Reconcile display queries and timing vocabulary against screen chapters. |
+| Appendix C PAL/NTSC | Display Height and Ntsc now have function scopes. Existing screen/control/Wait Vbl references are [reconciled](manual-reconciliation.md); historical display/timing and A3000 advice remain unqualified. |
 | Appendix F Copper | All eight named BASIC control/list/query headings now have lexical coverage. Cop Logic’s signature/index resolves its instruction-label conflict for highlighting. Hardware behaviour remains a separate claim. |
 | Appendices B, D and E | Kill Editor from Appendix B now has lexical coverage. Review other runtime distribution, extension boundaries and bank-layout reference material for additional forms; format layouts do not become parser rules. |
 | Appendix G command index | Final crosscheck for missed names, aliases and roles after chapter inventories. It is a locator, not sufficient syntax or edition evidence by itself. |

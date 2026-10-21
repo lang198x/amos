@@ -11,7 +11,7 @@ The table describes current source.
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 19 BASIC dialogue/value/control/resource forms from 9.1/9.3/9.4, 10.1–10.6, 11.1–11.2, 11.4, 12.1–12.2 and five §13.1 accessory/configuration forms, Appendix B’s Kill Editor and twenty-eight Appendix A memory/block/address/conversion/bit/call/register forms and eight Appendix F Copper forms, plus library/equate/structure/device/requester forms from 11.5 and Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 19 BASIC dialogue/value/control/resource forms from 9.1/9.3/9.4, 10.1–10.6, 11.1–11.2, 11.4, 12.1–12.2 and five §13.1 accessory/configuration forms, Appendix B’s Kill Editor and twenty-eight Appendix A memory/block/address/conversion/bit/call/register forms and eight Appendix F Copper forms and two Appendix C display-mode queries, plus library/equate/structure/device/requester forms from 11.5 and Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -681,3 +681,17 @@ capacity, address lifetime, screen interactions and timing remain unqualified.
 No copper list is built or executed. The four Copper catalogue gaps close the
 original 17-form audit; this is not a whole-language or release-readiness claim.
 The additions remain unreleased and Marketplace availability is unchanged.
+
+
+## Appendix C display-mode queries
+
+Display Height and Ntsc bring BASIC to 728 entries across 44 partial/full
+chapter/appendix sections. Both receive function scopes in expressions, branch
+conditions and screen arguments; typed identifiers and strings/comments retain
+their scopes. Existing Screen Open/Display, Lowres, Global and Wait Vbl examples
+are reconciled without duplicate entries. PAL and SECAM gain no command aliases.
+
+The manual's display heights, margins, refresh rates, loop duration, music/AMAL
+speed and A3000 switching advice remain unqualified. No screen or timing routine
+executes in the lexical checks. The original 17 catalogue gaps remain closed;
+these additions are unreleased and Marketplace availability is unchanged.

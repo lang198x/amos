@@ -32,9 +32,9 @@ installs AMOS 3D nor validates compatibility or execution.
 Current source additionally covers the Professional file/directory, music/basic sound,
 sample, music-module, speech, icon/block, font, error-handling, printer/port, serial, parallel, AREXX and multitasking chapters, plus the library/equate/structure/device/requester forms
 of §11.5, Monitor from §12.1 and five §13.1 accessory/configuration forms, bringing
-its BASIC inventory to 726 entries with Appendix B’s Kill Editor and 19
+its BASIC inventory to 728 entries with Appendix B’s Kill Editor and 19
 Interface-facing BASIC dialogue/value/control/resource forms and twenty-eight
-memory, conversion, bit-operation, call and register forms from Appendix A, plus eight Copper forms from Appendix F. These continuations are unreleased;
+memory, conversion, bit-operation, call and register forms from Appendix A, plus eight Copper forms from Appendix F and two display-mode queries from Appendix C. These continuations are unreleased;
 the downloadable 0.2.0 preview retains its 452-entry inventory. Directory options,
 channel markers and record operations receive lexical scopes; file contents,
 paths and actual I/O are not checked or executed by the extension.

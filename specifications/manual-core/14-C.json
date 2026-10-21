@@ -1,0 +1,26 @@
+{
+  "chapter": "14.C",
+  "scope": "Two named display-mode query functions; existing display/timing examples are reconciled without duplicate entries. Historical hardware and territory prose remains separate.",
+  "entries": [
+    {
+      "spelling": "Display Height",
+      "kind": "function",
+      "page": "14.C.01",
+      "extract_line": 26145,
+      "example": "MC_HEIGHT=Display Height"
+    },
+    {
+      "spelling": "Ntsc",
+      "kind": "function",
+      "page": "14.C.03",
+      "extract_line": 26219,
+      "example": "MC_MODE=Ntsc"
+    }
+  ],
+  "notes": [
+    "Appendix C spans 26104–26331, pp.14.C.01–06; page 14.C.06 is blank. Only Display Height and Ntsc have new named BASIC definitions.",
+    "Screen Open/Display, Lowres, Global, If/End If, For/To/Next, Print, End and Wait Vbl refer to existing inventory entries; no duplicate forms or extra counts are added for those references.",
+    "PAL, PAL(I), PAL(B/G/H), NTSC(M) and SECAM in headings/territory lists are standards labels, not additional BASIC instruction spellings.",
+    "Reported heights, safe margins, refresh rates, loop durations, music/AMAL speed, A3000 screen switching and geographic advice are documentary context, not implemented semantics or original-runtime qualification. No screen/timing operation executes in lexical fixtures."
+  ]
+}

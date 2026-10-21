@@ -395,3 +395,15 @@ The Cop Wait example at 27429 uses 130 while the comment says 100. No corrected
 coordinate or hardware semantics are inferred. Copper hardware MOVE/WAIT/SKIP
 are not additional BASIC aliases. PAL/NTSC rates, address ranges/masks, capacity,
 list lifetime, display restrictions and native execution require separate evidence.
+
+
+Appendix C's Display Height and Ntsc headings bind to 26145 (14.C.01) and
+26219 (14.C.03), verified against the hash-pinned extract. The six-page appendix
+spans 26104–26331, with its final page blank. Screen Open/Display, Lowres, Global,
+control structures and Wait Vbl examples map to their existing definitions in
+§§5.1/5.4/5.5/6.1/6.2; the reconciliation record preserves their source lines.
+
+The appendix's display-height, safe-margin, refresh-rate, audio/AMAL speed,
+territory and A3000 screen-switching descriptions are historical prose, not
+new runtime or compatibility evidence. No PAL/SECAM alias, timing algorithm,
+region profile or native numeric result is inferred from lexical highlighting.

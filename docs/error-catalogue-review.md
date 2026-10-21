@@ -4,7 +4,7 @@ The complete Professional §12.3 catalogue, pp.12.03.01–22 (extract lines
 21473–22628), has been reviewed. It supplies references and spelling conflicts,
 not additional instruction definitions. The review baseline was 665 entries
 across 36 chapters at `5b7d6f2`; the review itself changed no grammar. Current
-source has 726 entries across 43 partial/full chapter/appendix sections. All 17
+source has 728 entries across 44 partial/full chapter/appendix sections. All 17
 original missing forms now have definition-led lexical coverage: five §13.1
 forms, Kill Editor, three Interface entry points, four memory-access forms and
 four Copper forms. This closes that bounded audit, not whole-language coverage.

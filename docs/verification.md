@@ -998,3 +998,28 @@ mask/range, timing, capacity or address-lifetime behavior is qualified. Parser,
 versions, published 0.2.0 and private Marketplace availability are unchanged.
 The four Copper definitions close all 17 gaps from the original bounded error-
 catalogue audit; this does not establish whole-language or release readiness.
+
+
+## Appendix C PAL/NTSC continuation
+
+Display Height and Ntsc lacked function scopes before implementation. Both
+headings/pages match the hash-pinned extract: 26145 at 14.C.01 and 26219 at
+14.C.03. The appendix spans 26104–26331, including blank page 14.C.06. BASIC now
+has 728 entries across 44 partial/full chapter/appendix sections. Screen Open/
+Display, Lowres, Global, control structures and Wait Vbl references map to
+existing definitions without duplicate entries; the reconciliation records lines.
+
+All 25 package checks and 246 integrations per existing consumer pass. Both BASIC
+profiles/themes cover query expressions and branch conditions, complete phrase
+scopes including tabs/cases, omitted screen arguments, existing screen/timing
+forms, typed identifiers, opaque strings/comments and line recovery. Removing
+the new function rule fails both profiles; restoration and editor sync pass.
+The fresh notebook preserves exact source and emits styled HTML/CSS.
+
+All 17 npm files and nine VSIX source assets match source bytes. Extracted exports
+render all three modes in both themes, preserve source and retain complete
+Display Height and Ntsc function scopes. No screen or timing operation executes;
+reported sizes, margins, cadence, loop duration, music/AMAL speed and A3000
+switching remain historical prose, not native qualification or compatibility
+policy. PAL/SECAM supply no aliases. Parser, versions, published 0.2.0 and private
+Marketplace availability are unchanged; the original 17 catalogue gaps stay closed.
