@@ -42,3 +42,5 @@ Captures document the original environment and are evidence, not newly licensed
 Lang198x software. No runtime media, snapshots, registration data or private
 locator paths are published. Task copies can be regenerated from the bound
 source image; they need not remain after this investigation.
+
+The focused native-workflow investigation is [Emu198x #1960](https://github.com/emu198x/emu198x/issues/1960).
