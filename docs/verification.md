@@ -586,3 +586,21 @@ opaque payloads and existing printer/port forms. Removing the serial command rul
 fails; restoration passes. npm/VSIX bytes match source and have no public flag or
 executable host. Extracted modes render both themes and preserve the fresh listing.
 Versions, parser, published preview 0.2.0 and Marketplace are unchanged.
+
+
+## Source-backed parallel continuation
+
+Ten §10.5 entries bring BASIC to 622 across 32 chapters. All 28 serial/parallel
+heading/page bindings, retained source excerpts and licence bytes were checked
+against the held manual and verified original source download. Parallel's token
+table corroborates Input$ spelling and component grouping; no Inputs alias is
+introduced. None of the ten forms passed complete scopes before this change.
+
+All 25 package/inventory checks and 149 integrations per existing consumer pass
+in both modes/themes. Checks include typed/suffixed boundaries, both Input$
+contexts, Trap composition, opaque payloads and existing serial/printer forms.
+Removing the parallel command rule fails; restoration passes. npm/VSIX source
+bytes match with no public flag or executable host, and extracted modes render
+both themes while preserving source. No native transfer, timeout, status or
+installed-release qualification follows. Versions, parser, published preview
+0.2.0 and Marketplace are unchanged.

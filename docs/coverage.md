@@ -11,7 +11,7 @@ The table describes current source.
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 10.1–10.4, 11.1–11.2 and 12.2, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 10.1–10.5, 11.1–11.2 and 12.2, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -419,8 +419,7 @@ unqualified. These additions are unreleased.
 
 The [I/O boundary review](io-extension-boundary.md) records the 18 serial and ten
 parallel forms. Pinned original source resolves buffer spelling and component
-grouping. Serial is now included in BASIC lexical coverage; parallel follows
-separately. Handshake semantics and Serial Base arity remain unqualified.
+grouping. Both are now included in BASIC lexical coverage. Handshake semantics and Serial Base arity remain unqualified.
 
 
 ## Serial
@@ -431,3 +430,14 @@ source resolves Serial Buf and the I/O component grouping, without qualifying
 installation/releases. Serial Buffer stays ordinary, Input$ remains typed and
 Serial Base's arity conflict is explicit. Serial X semantics, buffers, driver
 status and actual traffic remain unqualified. Coverage is unreleased.
+
+
+## Parallel
+
+Ten §10.5 entries bring BASIC to 622 across 32 chapters. None passed complete
+scopes before this change; all pass in both modes/themes. Commands and queries
+keep separate scopes; Input$ is recognised while Inputs remains ordinary.
+Source corroborates component grouping and optional argument contexts, without
+qualifying default installations, blocking, timeouts or status values. Fresh
+examples preserve strings/comments and existing serial/printer roles. No devices
+are accessed. These additions remain unreleased.

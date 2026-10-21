@@ -30,3 +30,8 @@ Serial outcome: source resolves Serial Buf and component grouping, while retaini
 Serial Base arity and Serial X semantic uncertainty. Eighteen serial entries bring
 BASIC to 612 across 31 chapters. All 25 package checks and 143 integrations per
 consumer pass, with failing-rule control, exact archive bytes and extracted modes.
+
+Parallel outcome: ten entries bring BASIC to 622 across 32 chapters. All 25 package
+checks and 149 integrations per consumer pass, plus missing-rule control, archive
+byte checks and extracted rendering. All 28 manual heading/page bindings and the
+retained original-source/licence bytes were rechecked before cleanup.

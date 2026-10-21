@@ -57,7 +57,7 @@ test('I/O documentary records retain provenance when promoted to lexical coverag
   assert.equal(source.extract_sha256, core.extract_sha256);
   assert.deepEqual(source.files, ['serial.json', 'parallel.json']);
   assert.deepEqual(source.qualified_releases, []);
-  assert.ok(core.chapters.includes('10-04') && !core.chapters.includes('10-05'));
+  assert.ok(core.chapters.includes('10-04') && core.chapters.includes('10-05'));
   const serialCore = await json('manual-core/10-04.json');
   const inventories = await Promise.all(source.files.map((file) => json(`extensions/io/${file}`)));
   assert.deepEqual(inventories.map((file) => file.entries.length), [18, 10]);
@@ -80,6 +80,8 @@ test('I/O documentary records retain provenance when promoted to lexical coverag
   assert.equal(buffer.spelling_status, 'source-resolved');
   assert.equal(buffer.source_evidence, 'original-source.json#buffer-spelling');
   assert.deepEqual(serialCore.entries.map(({ component, ...entry }) => entry), inventories[0].entries);
+  const parallelCore = await json('manual-core/10-05.json');
+  assert.deepEqual(parallelCore.entries.map(({ component, ...entry }) => entry), inventories[1].entries);
   assert.equal(buffer.held_signature, 'Serial Buffer Channel number,length');
   assert.equal(buffer.signature_line, buffer.extract_line + 2);
   assert.ok(!seen.has('Serial Buffer'));

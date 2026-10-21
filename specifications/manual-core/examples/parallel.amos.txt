@@ -1,0 +1,11 @@
+Rem Lexical parallel board; no device or traffic is accessed
+Trap Parallel Open
+Parallel Send "Ready"+Chr$(10)
+Parallel Out Start(10),Length(10)
+MC_TEXT$=Parallel Input$(16)
+MC_LINE$=Parallel Input$(32,10)
+MC_READY=Parallel Check : MC_CODE=Parallel Error
+MC_FLAGS=Parallel Status : MC_ADDRESS=Parallel Base
+Parallel Abort : Parallel Close
+MC_NOTE$="Parallel Input$: Parallel Inputs Printer Error"
+' Parallel Send Parallel Base

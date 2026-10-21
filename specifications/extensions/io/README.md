@@ -1,8 +1,7 @@
 # I/O documentary inventory
 
 This inventory records 18 serial and ten parallel headings from Professional
-§§10.4–10.5. Serial is now included in the 612-entry BASIC lexical inventory;
-parallel implementation follows separately. No native release is qualified.
+§§10.4–10.5. Both chapters are included in the 622-entry BASIC lexical inventory. No native release is qualified.
 
 `source.json` binds the pinned manual and boundary excerpts. `original-source.json`
 retains a complete token-table excerpt and narrow dispatch/component evidence from

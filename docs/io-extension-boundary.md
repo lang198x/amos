@@ -1,7 +1,7 @@
 # I/O Extension boundary review
 
 Approved 21 October 2026: use the existing manual-led lexical modes with explicit
-component provenance. Serial coverage is implemented; parallel follows separately.
+component provenance. Serial and parallel coverage are implemented.
 No new mode or runtime availability claim is introduced.
 
 Pinned original source resolves Serial Buf and the serial/printer/parallel
@@ -34,8 +34,8 @@ The [documentary inventory](../specifications/extensions/io/README.md) has 28
 records: 18 serial (12 commands, six functions) and ten parallel (five commands,
 five functions). Each heading and following printed-page footer was checked
 against the held extract. Fresh examples illustrate lexical contexts only.
-The 18 serial records are now included in 612 BASIC chapter entries; the ten
-parallel records remain documentary until their separate sweep.
+All 28 records are now included in the 622-entry BASIC lexical inventory, with
+component provenance retained in each promoted record.
 
 Source findings and remaining limits:
 
@@ -72,5 +72,5 @@ product, revisit profile selection with that evidence. Do not infer a profile
 from the union of highlighted names.
 
 The serial sweep uses source-resolved spelling, complete phrases, dollar
-boundaries, command/function roles and existing port/printer regressions. Parallel
-is the next separate sweep. Hardware semantics and publication remain separate.
+boundaries, command/function roles and existing port/printer regressions. The parallel sweep is also complete, preserving Input$ spelling and opaque
+payloads. Hardware semantics and publication remain separate.

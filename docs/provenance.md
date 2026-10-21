@@ -241,3 +241,10 @@ token-table and narrow component/dispatch excerpts are hash-bound with the MIT
 licence. Serial Buf is a token; Serial Buffer is absent. The same source groups
 serial/printer/parallel. Serial Base takes a channel there, unlike the manual
 signature. No native arity, handshake, driver or release qualification follows.
+
+
+Parallel uses ten exact §10.5 heading/page citations and the retained original
+I/O token table. Both Input$ signatures are visible in the source; the manual's
+PARALLEL INPUTS prose does not establish an alias. Pinned source places parallel
+in the same I/O component as serial/printer. That evidence does not qualify
+native device traffic, buffer/pointer behavior, timeouts or installed releases.
