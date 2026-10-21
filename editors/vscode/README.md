@@ -1,14 +1,15 @@
-# AMOS highlighting preview 0.3.0
+# AMOS highlighting preview 0.3.1
 
 Professional-based AMOS syntax highlighting from Lang198x, with optional AMOS
 3D, standalone AMAL and standalone Interface modes. This is a preview: colour
 identifies lexical forms, not valid arguments, native execution or compatibility
 with every AMOS edition. No compiler or language server is included.
 
-Install the candidate VSIX with **Extensions: Install from VSIX**. It carries
-both a Preview label and prerelease-channel metadata. Preparation does not change
-Marketplace availability. The extension identifier remains
-`lang198x.lang198x-amos`.
+Install **AMOS — Lang198x** from the Marketplace and select its pre-release
+version, or use **Extensions: Install from VSIX** with the GitHub preview download.
+Version 0.3.1 adds public-listing metadata to the reviewed 0.3.0 grammars; both
+the Preview label and prerelease-channel metadata remain. The extension
+identifier is `lang198x.lang198x-amos`.
 
 ## Choose a language mode
 
@@ -43,11 +44,11 @@ See the repository's [release notes](https://github.com/lang198x/amos/blob/main/
 [coverage](https://github.com/lang198x/amos/blob/main/docs/coverage.md) and
 [readiness review](https://github.com/lang198x/amos/blob/main/docs/highlighting-readiness.md)
 for exact evidence and remaining limits. Published 0.2.0 retains its older assets;
-this candidate is prepared for publication.
+0.3.1 contains the same grammars as the 0.3.0 highlighting preview.
 
 ## Build and licence
 
-Build with `python3 scripts/package-editor.py --pre-release` from the repository
+Build with `python3 scripts/package-editor.py --pre-release --public` from the repository
 root. The declarative extension contains no executable extension code. Its
 canonical grammars are verified byte for byte against the npm assets; missing
 prerelease-channel selection fails packaging.

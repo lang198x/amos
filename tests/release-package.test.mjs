@@ -20,18 +20,18 @@ with zipfile.ZipFile(sys.argv[1]) as archive:
         'package': json.loads(archive.read('extension/package.json')),
     }))
 `, file], { encoding: 'utf8' }));
-const assertPreview = (archive) => {
-  assert.deepEqual(archive.flags, ['Preview']);
+const assertPreview = (archive, flags = ['Preview']) => {
+  assert.deepEqual(archive.flags, flags);
   assert.equal(archive.properties['Microsoft.VisualStudio.Code.PreRelease'], 'true');
   assert.equal(archive.properties['Microsoft.VisualStudio.Code.ExecutesCode'], 'false');
   assert.equal(archive.package.preview, true);
   assert.equal(archive.identity.Version, archive.package.version);
 };
 
-test('preview package defaults keep npm on next and the editor on a numeric matching version', async () => {
+test('preview package defaults keep npm on next and the editor on a numeric preview version', async () => {
   const npm = JSON.parse(await readFile(new URL('package.json', repository), 'utf8'));
   const editor = JSON.parse(await readFile(new URL('editors/vscode/package.json', repository), 'utf8'));
-  assert.equal(npm.version, editor.version);
+  assert.match(npm.version, /^[0-9]+\.[0-9]+\.[0-9]+$/);
   assert.match(editor.version, /^[0-9]+\.[0-9]+\.[0-9]+$/);
   assert.equal(npm.publishConfig.tag, 'next');
   assert.equal(editor.preview, true);
@@ -58,6 +58,26 @@ test('preview packaging refuses to silently build without the prerelease channel
       assert.ok(error.stderr.toString().includes('preview extension requires --pre-release'));
       return true;
     });
+  } finally {
+    await rm(output, { recursive: true });
+  }
+});
+
+
+test('public preview packaging explicitly adds discovery without changing the channel or grammars', async () => {
+  const output = await mkdtemp(join(tmpdir(), 'amos-preview-package-'));
+  try {
+    const name = execFileSync('python3', [builder.pathname, '--pre-release', '--public', '--output-directory', output], { encoding: 'utf8' }).trim();
+    assertPreview(inspect(join(output, name)), ['Public', 'Preview']);
+    execFileSync('python3', ['-c', `
+import pathlib, sys, zipfile
+root = pathlib.Path(sys.argv[2])
+with zipfile.ZipFile(sys.argv[1]) as archive:
+    for name in ['amos', 'amos-3d', 'amal', 'interface']:
+        relative = 'syntaxes/' + name + '.tmLanguage.json'
+        if archive.read('extension/' + relative) != (root / relative).read_bytes():
+            raise ValueError('public package grammar mismatch: ' + name)
+`, join(output, name), repository.pathname]);
   } finally {
     await rm(output, { recursive: true });
   }

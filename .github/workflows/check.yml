@@ -23,5 +23,5 @@ jobs:
       - run: python3 -m unittest discover -s tests -p test_preview_release.py
       - run: npm test
       - run: npm run check:editor
-      - run: python3 scripts/package-editor.py --pre-release
+      - run: python3 scripts/package-editor.py --pre-release --public
       - run: npm pack --pack-destination dist

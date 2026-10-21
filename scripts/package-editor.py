@@ -27,6 +27,9 @@ FILES = [
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--pre-release", action="store_true")
+    parser.add_argument(
+        "--public", action="store_true", help="Make the Marketplace listing public"
+    )
     parser.add_argument("--output-directory", type=Path, default=ROOT / "dist")
     args = parser.parse_args()
     package = json.loads((EDITOR / "package.json").read_text())
@@ -59,9 +62,10 @@ def main() -> None:
         escape(package[key], {'"': "&quot;"})
         for key in ["name", "version", "publisher"]
     ]
-    gallery_flags = (
-        "<GalleryFlags>Preview</GalleryFlags>" if package.get("preview") else ""
+    flags = (["Public"] if args.public else []) + (
+        ["Preview"] if package.get("preview") else []
     )
+    gallery_flags = f"<GalleryFlags>{' '.join(flags)}</GalleryFlags>" if flags else ""
     pre_release = (
         '<Property Id="Microsoft.VisualStudio.Code.PreRelease" Value="true" />'
         if args.pre_release

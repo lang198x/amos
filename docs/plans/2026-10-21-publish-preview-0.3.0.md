@@ -26,3 +26,15 @@ Steve explicitly approved publishing everything after the coverage review.
 
 No new package dependency, parser change, stable npm promotion, native codec or
 new runtime qualification is part of this publication.
+
+## Marketplace visibility finding
+
+The exact 0.3.0 upload validates successfully but stays Private. After validation
+its available actions are Reports, View Extension, Update and Remove; there is
+no Make Public action. The retained VSIX intentionally has no Public flag.
+Preserve that published artifact. Add explicit --public packaging and publish an
+editor-only 0.3.1 preview with Public + Preview and the same prerelease property.
+Update the editor README for actual installation; keep all four grammars intact.
+Verify both private/public packaging and unchanged grammar bytes, commit/push,
+then attach the distinct 0.3.1 VSIX/checksum to a GitHub prerelease and upload it.
+npm stays 0.3.0; release-only editor patches have independent version numbers.

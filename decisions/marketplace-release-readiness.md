@@ -40,3 +40,9 @@ docs/releases/0.3.0-evidence.json. This remains Professional-based lexical
 highlighting with optional 3D and standalone AMAL/Interface modes. Creator, Easy,
 other revisions, parser completeness and native execution remain unqualified.
 Future scope claims and stable releases still require their own review.
+
+The approved 0.3.0 VSIX validates but retains its intentional private flag state.
+The editor-only 0.3.1 publication patch adds explicit Public + Preview metadata
+with the same prerelease channel and grammar bytes. npm remains 0.3.0. Editor
+and npm versions may differ for publication-only patches; both retain their
+profile-specific scope. Public packaging requires the explicit --public flag.
