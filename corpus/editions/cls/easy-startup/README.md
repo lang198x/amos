@@ -1,4 +1,4 @@
-# Easy AMOS: work-disk creation remains unqualified
+# Easy AMOS: keyboard selection verified; working disks unqualified
 
 The selected Master Disc 1 boots its **Easy AMOS Work Disc Creator**, not the
 language editor. No Easy Cls source is entered or executed. The media catalogue
@@ -11,12 +11,29 @@ attempt, source/firmware/tool hashes and four inspected captures are bound in
 `observations.json`. Snapshots between intervals belong to this same cold boot;
 none comes from Pro, Creator or an older emulator build.
 
-After the welcome click, the keyboard menu appears. A mouse-motion/button
-attempt aimed at English leaves a blank blue panel. It remains blank after
-another 1,000 frames. Disk queries report writable media and an idle motor;
-a CIA-A port read has bit 6 high (left button released). Exec reports the AMOS
-task waiting on signal $10. These observations do not identify a cause or prove
-that the intended GUI control received the click.
+The keyboard menu accepts an English selection through MCP. Ten small motion
+steps of (16, 20), followed by (0, 12), place the visible pointer tip inside
+English and produce its native hover highlight (`english-hover.png`). A click
+held for three frames, followed by release and 200 frames, advances to the
+instructions to write-protect both master disks. The input query reports the
+button released, pressed and released; CIA-A PRA reads 188 while pressed and
+204 after release, with active-low bit 6 changing accordingly. The exact sequence
+and capture hashes are in `input-delivery.json`.
+
+The pointer tip before the final downward adjustment sits above the button,
+even though its lower pixels overlap the label. That click does not advance.
+The verified hover and successful selection resolve the input-delivery question
+without an emulator change. The source image already contains personalisation;
+the post-selection screen is excluded rather than publishing its displayed name.
+This is not evidence of pristine factory media or an identified editor release.
+
+Blank captures alone cannot establish installer failure. `motion-menu.png` and
+`motion-blank.png` come from one uninterrupted cold-boot session before a
+selection click. Both full and blank menu captures occur during those small
+movements. Snapshot restoration is not required to observe this. No display
+mechanism or rendering regression is established. The earlier blank-panel
+observations in `observations.json` remain bounded observations, not proof of a
+failed control or a language rejection.
 
 Earlier diagnostic attempts used a read-only master copy, an older snapshot or
 uncalibrated pointer movements; they are not the controlled evidence above.
@@ -33,8 +50,7 @@ are unchanged; the reference uses its own disposable writable copy and isolated
 base directory. FS-UAE documents its [base-directory options](https://fs-uae.net/docs/paths-and-directories/)
 and [input-capture shortcuts](https://fs-uae.net/docs/keyboard-shortcuts/).
 
-Next: establish native mouse coordinates/button delivery and a completed
-keyboard selection, then finish the original work-disk creator and independently
+Next: finish the original work-disk creator and independently
 boot its Programs disk. Only then run the shared four Cls probes. Do not use a
 modified preinstalled disk as evidence for an unidentified stock release.
 
@@ -43,4 +59,4 @@ Lang198x software. No runtime media, snapshots, registration data or private
 locator paths are published. Task copies can be regenerated from the bound
 source image; they need not remain after this investigation.
 
-The focused native-workflow investigation is [Emu198x #1960](https://github.com/emu198x/emu198x/issues/1960).
+The input-delivery investigation is [Emu198x #1960](https://github.com/emu198x/emu198x/issues/1960).

@@ -1,0 +1,75 @@
+{
+  "status": "keyboard_selection_completed_not_language_qualification",
+  "environment": "Same source media, firmware, release binary and machine as observations.json; new cold boot.",
+  "boot_and_welcome": "Same frame intervals and welcome button sequence as observations.json.",
+  "pointer_delivery": {
+    "device": "mouse-1",
+    "steps": [
+      {
+        "dx": 16,
+        "dy": 20,
+        "run_frames": 3,
+        "repeat": 10
+      },
+      {
+        "dx": 0,
+        "dy": 12,
+        "run_frames": 3
+      }
+    ],
+    "capture_dimensions": [
+      768,
+      576
+    ],
+    "visible_pointer_tip_approx": [
+      244,
+      262
+    ],
+    "english_button_rectangle_approx": [
+      199,
+      254,
+      309,
+      278
+    ],
+    "native_hover_highlight_observed": true
+  },
+  "button_sequence": {
+    "restore": "Own same-build state at verified English hover; run two frames before button.",
+    "press_frames": 3,
+    "release_frames": 200,
+    "port0_primary_button_pressed": [
+      false,
+      true,
+      false
+    ],
+    "ciaa_pra_during_and_after": [
+      188,
+      204
+    ],
+    "ciaa_pra_address": "0xBFE001",
+    "left_button_bit": 6,
+    "active_low": true
+  },
+  "counter_samples": {
+    "joy0_x": [
+      128,
+      128,
+      128
+    ],
+    "joy0_y": [
+      128,
+      128,
+      128
+    ],
+    "limit": "Samples follow run steps; they do not expose transient counter values within a frame."
+  },
+  "native_outcome": "The installer advances to instructions to write-protect both master disks and click OK. No work disk or editor boot is verified.",
+  "media_provenance_limit": "The source image already contains personalisation. Its displayed name is neither transcribed nor published; no claim of pristine factory media is made.",
+  "display_observation": "Cold-boot live-session captures before any selection button include complete and blank menu states. Snapshot restoration is not necessary to observe a blank capture. No rendering mechanism or regression is established.",
+  "captures": {
+    "motion-menu.png": "bb54c443574364ac250546d54bb8f55d4621347d728e40c5e99c0edb015eec7e",
+    "motion-blank.png": "9a53b58ad0375f751837e89ebe24ed735ab8ab543f65c017012867c256df0bae",
+    "english-hover.png": "716d0504ca0a1a0b1ad0164fc57acb362bd0e0e4fddfca3202ee6e31e9460704"
+  },
+  "private_artifacts": "Post-selection personalisation screen, media, snapshots, diagnostic logs and locator paths are excluded."
+}
