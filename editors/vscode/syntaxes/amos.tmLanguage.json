@@ -86,6 +86,10 @@
       "patterns": [
         {
           "name": "keyword.control.amos",
+          "match": "(?i:(?<![A-Za-z0-9_$#])(?:Copper[ \\t]+(?:Off|On)|Cop[ \\t]+(?:Movel|Move|Wait|Reset|Swap))(?![A-Za-z0-9_$#]))"
+        },
+        {
+          "name": "keyword.control.amos",
           "match": "(?i:(?<![A-Za-z0-9_$#.])(?:(?:Rol|Ror)\\.[BWL]|Bset|Bchg|Bclr)(?![A-Za-z0-9_$#.]))"
         },
         {
@@ -244,6 +248,10 @@
     },
     "functions": {
       "patterns": [
+        {
+          "name": "support.function.amos",
+          "match": "(?i:(?<![A-Za-z0-9_$#])Cop[ \\t]+Logic(?![A-Za-z0-9_$#]))"
+        },
         {
           "name": "support.function.amos",
           "match": "(?i:(?<![A-Za-z0-9_$#])(?:Bin\\$|Hex\\$|Btst)(?![A-Za-z0-9_$#]))"

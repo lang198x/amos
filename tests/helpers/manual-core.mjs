@@ -20,7 +20,7 @@ export const checkEntry = (entry) => {
   const scope = entry.lexical_scope ?? scopeFor(kind);
   const start = example.indexOf(spelling);
   assert.ok(start >= 0 && spelling.length > 0 && scopeFor(kind));
-  assert.match(entry.page, /^(?:\d{2}\.\d{2}|14\.[AB])\.\d{2}$/);
+  assert.match(entry.page, /^(?:\d{2}\.\d{2}|14\.[ABF])\.\d{2}$/);
   for (const theme of ['dark-plus', 'light-plus']) {
     for (const change of [(s) => s, (s) => s.toLowerCase(), (s) => s.toUpperCase()]) {
       const source = change(example);

@@ -3,10 +3,12 @@
 The complete Professional §12.3 catalogue, pp.12.03.01–22 (extract lines
 21473–22628), has been reviewed. It supplies references and spelling conflicts,
 not additional instruction definitions. The review baseline was 665 entries
-across 36 chapters at `5b7d6f2`; the review itself changed no grammar. Current source covers five §13.1 follow-ups, Kill Editor and the three
-Interface follow-ups, plus Appendix A memory/conversion/bit/call/register forms, bringing BASIC to 718 entries across 42 partial/full chapter
-and appendix sections. Four memory-access gaps are now covered too, leaving
-four Copper forms from the original 17-gap baseline. Parser behavior is unchanged.
+across 36 chapters at `5b7d6f2`; the review itself changed no grammar. Current
+source has 726 entries across 43 partial/full chapter/appendix sections. All 17
+original missing forms now have definition-led lexical coverage: five §13.1
+forms, Kill Editor, three Interface entry points, four memory-access forms and
+four Copper forms. This closes that bounded audit, not whole-language coverage.
+Parser behavior is unchanged.
 
 The [source record](../specifications/manual-core/source.json) identifies the
 held extract and SHA-256. Line numbers count newlines, preserving formfeeds.
@@ -14,6 +16,9 @@ The next section starts with Accessories at line 22629. References below describ
 vocabulary, not validation of error codes, recovery advice or runtime semantics.
 
 ## Page-by-page reconciliation
+
+This table retains the review-baseline routing; the completed follow-ups below
+record the subsequent definition-led coverage.
 
 | Page | Extract lines | Vocabulary disposition |
 | --- | --- | --- |
@@ -44,10 +49,9 @@ vocabulary, not validation of error codes, recovery advice or runtime semantics.
 
 These 17 referenced forms have named definitions elsewhere in the held manual
 and lacked complete expected scopes at the review baseline. Five §13.1 forms,
-Kill Editor, three Interface entry points and four memory-access forms are now
-covered; four Copper forms remain. Heading lines
-below locate the definitions; remaining forms still need a bounded inventory
-of their signatures and surrounding context before implementation.
+Kill Editor, three Interface entry points, four memory-access forms and the
+final four Copper forms from Appendix F are now covered. Heading lines
+below locate the definitions used by those completed inventories.
 
 | Route | Forms and definition-heading lines | Catalogue examples |
 | --- | --- | --- |
@@ -61,7 +65,7 @@ of their signatures and surrounding context before implementation.
 with Appendix B’s runtime conditions retained separately. The three Interface
 follow-ups are now covered from their §9.3 definitions, with embedded Interface
 kept separate. Deek/Doke/Leek/Loke now have Appendix A coverage; the four Copper
-forms remain on their existing route.
+forms now have Appendix F inventory and scope checks in both BASIC profiles/themes.
 Neither this ordering nor the gap probes commission native execution.
 
 ## Spelling and context discrepancies

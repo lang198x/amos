@@ -1,0 +1,12 @@
+Rem Lexical notebook only; no copper list is built or executed
+Copper Off
+MC_LIST=Cop Logic
+Cop Wait MC_X,MC_Y
+Cop Move MC_REGISTER,MC_WORD
+Cop Movel MC_REGISTER,MC_LONG
+Cop Wait MC_X,MC_Y,$1FF,%11
+Cop Reset
+Cop Swap : Wait Vbl
+Copper On
+Print "Cop Move Cop Logic Copper Off"
+'Cop Swap

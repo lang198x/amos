@@ -11,7 +11,7 @@ The table describes current source.
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 19 BASIC dialogue/value/control/resource forms from 9.1/9.3/9.4, 10.1–10.6, 11.1–11.2, 11.4, 12.1–12.2 and five §13.1 accessory/configuration forms, Appendix B’s Kill Editor and twenty-eight Appendix A memory/block/address/conversion/bit/call/register forms, plus library/equate/structure/device/requester forms from 11.5 and Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 19 BASIC dialogue/value/control/resource forms from 9.1/9.3/9.4, 10.1–10.6, 11.1–11.2, 11.4, 12.1–12.2 and five §13.1 accessory/configuration forms, Appendix B’s Kill Editor and twenty-eight Appendix A memory/block/address/conversion/bit/call/register forms and eight Appendix F Copper forms, plus library/equate/structure/device/requester forms from 11.5 and Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -527,8 +527,8 @@ It lacked command scope before the change; both profiles/themes now retain its
 command role, including beside colon separators. Monitor lookalikes stay ordinary
 names, while UI labels in strings/comments remain opaque. Buttons and shortcuts
 are not extra BASIC forms. The full [§12.3 catalogue review](error-catalogue-review.md)
-routes vocabulary to existing coverage and definitions; its original 17-gap baseline now has five §13.1 forms, Kill Editor and three Interface entry points covered; four
-Copper gaps remain after direct-memory coverage. No monitor execution,
+routes vocabulary to existing coverage and definitions; its original 17 gaps
+now have definition-led lexical coverage, including the Copper forms below. No monitor execution,
 stepping, breakpoint, evaluation or return-to-program behavior is qualified.
 The additions remain unreleased.
 
@@ -613,7 +613,7 @@ These additions remain unreleased.
 Eight forms bring BASIC to 698 entries across 42 partial/full chapter/appendix
 sections. Peek/Deek/Leek/Peek$ are functions; Poke/Doke/Loke/Poke$ are commands.
 Dollar-bearing forms retain complete scopes and typed lookalikes stay ordinary.
-Four original catalogue gaps close here, leaving four Copper forms. Appendix A
+Four original catalogue gaps close here; the Copper follow-up is covered below. Appendix A
 remains partial: block/address, conversion and bit forms are covered below; calls and registers
 are covered below.
 
@@ -633,8 +633,7 @@ existing direct read/write forms while preserving strings/comments.
 
 INSTR$ in Hunt’s prose creates no alias for Instr. No range endpoint, overlap,
 alignment, pattern, search result, variable representation or address lifetime
-is qualified, and no memory operation executes. Four Copper catalogue gaps
-remain. The additions are unreleased.
+is qualified, and no memory operation executes. The Copper catalogue follow-up is covered below. The additions are unreleased.
 
 
 ## Appendix A conversions and bit operations
@@ -648,7 +647,7 @@ identifier boundaries and existing binary/hexadecimal notation are checked.
 The manual's Bin$ digit prose and later 32-digit example disagree; no validated
 limit is inferred. Rotate-as-multiply/divide prose and Btst memory-width prose
 supply no implemented arithmetic or address semantics. No native operation
-executes. Machine-code calls/registers are covered below; four Copper catalogue gaps remain.
+executes. Machine-code calls/registers are covered below; the Copper catalogue follow-up is covered below.
 These additions are unreleased; Marketplace availability is unchanged.
 
 
@@ -664,4 +663,21 @@ The manual's reserved-variable headings govern register classification despite
 nearby function prose. Insert Program is an Editor action; assembly mnemonics,
 register names and stack-format prose add no BASIC definitions. No file loads,
 code execution, ABI, register access limits or bank lifetime are qualified.
-The additions remain unreleased; four Copper catalogue gaps remain.
+The additions remain unreleased; the Copper catalogue follow-up is covered below.
+
+
+## Appendix F Copper
+
+Eight named headings bring BASIC to 726 entries across 43 partial/full chapter/
+appendix sections. Copper On/Off and Cop Move/Movel/Wait/Reset/Swap are commands;
+Cop Logic is a function. Complete phrase scopes include separators, optional
+mask arguments remain ordinary expressions, and Move/Movel retain boundaries.
+Both BASIC profiles preserve strings/comments and recover at line boundaries.
+
+Cop Logic's definition says instruction, but its return-value signature and
+Command Index say function. The Cop Wait example uses y=130 while its comment
+says 100; no native result is inferred. Hardware MOVE/WAIT/SKIP, registers,
+capacity, address lifetime, screen interactions and timing remain unqualified.
+No copper list is built or executed. The four Copper catalogue gaps close the
+original 17-form audit; this is not a whole-language or release-readiness claim.
+The additions remain unreleased and Marketplace availability is unchanged.

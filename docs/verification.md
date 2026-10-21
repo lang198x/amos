@@ -972,3 +972,29 @@ gallery flag. No file is loaded or code executed; ABI, parameter formats,
 relocation, register limits and bank persistence remain unqualified. Parser,
 versions, published 0.2.0 and private Marketplace availability are unchanged.
 Four Copper catalogue gaps remain.
+
+
+## Appendix F Copper continuation
+
+Eight named forms lacked complete scopes before implementation. All heading/page
+bindings match the hash-pinned extract: Copper Off at 14.F.01, Copper On and
+Cop Move/Movel/Wait at 14.F.03, Cop Reset/Swap/Logic at 14.F.04. BASIC now has
+726 entries across 43 partial/full chapter/appendix sections. Cop Logic follows
+its return-value signature and function index entry, retaining the conflicting
+instruction label. Cop Wait's 130/100 example discrepancy is documented.
+
+All 25 package checks and 240 integrations per existing consumer pass. Checks
+cover both BASIC profiles/themes, complete phrase scopes including tabs/cases,
+Move/Movel boundaries, optional masks, nested memory queries, existing Logic and
+Wait Vbl, typed identifiers, opaque strings/comments and line recovery. Removing
+the Copper command rule fails both profiles; restoration and editor sync pass.
+The fresh notebook preserves exact source and emits styled HTML/CSS.
+
+All 17 npm files and nine VSIX source assets match source bytes. Extracted exports
+render all three modes in both themes, preserve source and retain complete
+Copper Off, Cop Movel and Cop Logic scopes. The extension remains declarative
+without a public gallery flag. No list is built or executed, and no hardware,
+mask/range, timing, capacity or address-lifetime behavior is qualified. Parser,
+versions, published 0.2.0 and private Marketplace availability are unchanged.
+The four Copper definitions close all 17 gaps from the original bounded error-
+catalogue audit; this does not establish whole-language or release readiness.

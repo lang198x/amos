@@ -1,0 +1,67 @@
+{
+  "chapter": "14.F",
+  "scope": "Eight named BASIC Copper control, list-building and address-query headings; hardware instruction encoding and execution remain separate.",
+  "entries": [
+    {
+      "spelling": "Copper Off",
+      "kind": "command",
+      "page": "14.F.01",
+      "extract_line": 27304,
+      "example": "Copper Off"
+    },
+    {
+      "spelling": "Copper On",
+      "kind": "command",
+      "page": "14.F.03",
+      "extract_line": 27373,
+      "example": "Copper On"
+    },
+    {
+      "spelling": "Cop Move",
+      "kind": "command",
+      "page": "14.F.03",
+      "extract_line": 27380,
+      "example": "Cop Move MC_REGISTER,MC_WORD"
+    },
+    {
+      "spelling": "Cop Movel",
+      "kind": "command",
+      "page": "14.F.03",
+      "extract_line": 27389,
+      "example": "Cop Movel MC_REGISTER,MC_LONG"
+    },
+    {
+      "spelling": "Cop Wait",
+      "kind": "command",
+      "page": "14.F.03",
+      "extract_line": 27397,
+      "example": "Cop Wait MC_X,MC_Y,MC_XMASK,MC_YMASK"
+    },
+    {
+      "spelling": "Cop Reset",
+      "kind": "command",
+      "page": "14.F.04",
+      "extract_line": 27438,
+      "example": "Cop Reset"
+    },
+    {
+      "spelling": "Cop Swap",
+      "kind": "command",
+      "page": "14.F.04",
+      "extract_line": 27445,
+      "example": "Cop Swap"
+    },
+    {
+      "spelling": "Cop Logic",
+      "kind": "function",
+      "page": "14.F.04",
+      "extract_line": 27455,
+      "example": "MC_LIST=Cop Logic"
+    }
+  ],
+  "notes": [
+    "Cop Logic has an instruction label at 27456 but a return-value signature at 27457 and function classification in the Command Index at 27633. Function scope follows that signature/index; no execution is qualified.",
+    "The Cop Wait example at 27429 uses y=130 while its comment says 100; no coordinate equivalence or corrected native result is inferred.",
+    "Hardware MOVE/WAIT/SKIP, copper registers, address ranges, masks, list capacity/lifetime, display interactions and timing are documentary context, not implemented semantics. No list is built or executed by lexical fixtures."
+  ]
+}

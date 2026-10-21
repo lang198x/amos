@@ -9,7 +9,7 @@ test('manual inventory has cited, nonempty examples for every declared chapter',
   const source = await json('source.json');
   assert.equal(source.product, 'AMOS Professional');
   assert.match(source.extract_sha256, /^[0-9a-f]{64}$/);
-  assert.deepEqual(source.chapters, ['05-01', '05-02', '05-03', '05-04', '05-05', '05-06', '10-01', '05-07', '05-08', '06-01', '06-02', '06-03', '05-09', '06-04', '06-05', '07-01', '07-02', '07-03', '07-04', '07-05', '07-06', '10-02', '08-01', '08-02', '08-03', '11-02', '07-07', '11-01', '12-02', '10-03', '10-04', '10-05', '10-06', '11-04', '11-05', '12-01', '13-01', '14-B', '09-01', '09-03', '09-04', '14-A']);
+  assert.deepEqual(source.chapters, ['05-01', '05-02', '05-03', '05-04', '05-05', '05-06', '10-01', '05-07', '05-08', '06-01', '06-02', '06-03', '05-09', '06-04', '06-05', '07-01', '07-02', '07-03', '07-04', '07-05', '07-06', '10-02', '08-01', '08-02', '08-03', '11-02', '07-07', '11-01', '12-02', '10-03', '10-04', '10-05', '10-06', '11-04', '11-05', '12-01', '13-01', '14-B', '09-01', '09-03', '09-04', '14-A', '14-F']);
   const seen = new Set();
   let checked = 0;
   for (const id of source.chapters) {
@@ -54,7 +54,7 @@ test('manual inventory has cited, nonempty examples for every declared chapter',
       checked++;
     }
   }
-  assert.equal(checked, 718);
+  assert.equal(checked, 726);
   const requesters = (await json('11-05.json')).entries.filter((entry) => entry.spelling.startsWith('Request '));
   assert.deepEqual(requesters.map((entry) => entry.component), Array(3).fill('Requester Extension (as labelled by the manual)'));
   const music = await json('08-01.json');

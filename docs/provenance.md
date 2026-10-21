@@ -382,3 +382,16 @@ an Editor menu action. Assembly CODE/RTS, literal register names, procedure
 insertion and the SET STACK cross-reference supply no new BASIC definitions.
 Parameter layout, relocation, register transfer/access limits, bank persistence
 and native execution are not qualified by lexical fixtures.
+
+
+Appendix F binds Copper Off at 27304 (14.F.01), Copper On/Cop Move/Cop Movel/
+Cop Wait at 27373/27380/27389/27397 (14.F.03), and Cop Reset/Swap/Logic at
+27438/27445/27455 (14.F.04), all verified against the pinned primary extract.
+Cop Logic's instruction label at 27456 conflicts with the returned address
+signature at 27457 and function entry at 27633. The inventory follows the
+signature/index for lexical classification and retains the discrepancy.
+
+The Cop Wait example at 27429 uses 130 while the comment says 100. No corrected
+coordinate or hardware semantics are inferred. Copper hardware MOVE/WAIT/SKIP
+are not additional BASIC aliases. PAL/NTSC rates, address ranges/masks, capacity,
+list lifetime, display restrictions and native execution require separate evidence.
