@@ -295,5 +295,6 @@ The floating-point reconciliation reads §11.3's single content page 11.03.01
 evidence without duplicate entries. The Monitor record binds the exact heading
 at line 21029 to following page 12.01.01. The full §12.1 chapter distinguishes
 that BASIC definition from the monitor UI. The [reconciliation](manual-reconciliation.md)
-retains the reviewed ranges and a limited §12.3 catalogue-reference boundary.
+retains the reviewed ranges; the complete [§12.3 review](error-catalogue-review.md)
+now records all 22 page ranges, definition-led gaps and catalogue discrepancies.
 No library-performance, debugger UI or native execution evidence is added.

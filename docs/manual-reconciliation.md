@@ -21,12 +21,11 @@ points, VAL, help and quit controls. Their button labels, keyboard shortcuts and
 descriptive headings are not additional BASIC definitions. Existing Load, Print,
 Wait, Default, Flash and Fade mentions remain references to their earlier forms.
 
-§12.3 starts at line 21473 as an error-message catalogue. Its editor references
-include Kill Editor (21499), Ask Editor and Call Editor (21527), and Set Editor
-(21528). These mentions are routed to their own editor/accessory definitions;
-they are not promoted from error prose. Error-handling definitions already live
-in §12.2. This is a boundary review of catalogue references, not a complete
-command-by-command reconciliation of the entire error catalogue.
+§12.3, pp.12.03.01–22 (lines 21473–22628), now has a full
+[page-by-page vocabulary review](error-catalogue-review.md). Covered BASIC
+references, 17 definition-led gaps, spelling discrepancies, editor UI and embedded
+languages are routed separately. No catalogue wording becomes a new alias or
+inventory entry. Error-code behavior and historical advice remain unqualified.
 
 Highlighting checks prove lexical scopes and source preservation. They do not
 execute the monitor, test debugger UI, qualify floating-point results, resolve

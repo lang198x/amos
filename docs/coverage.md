@@ -527,7 +527,8 @@ Monitor from §12.1 brings BASIC to 665 entries across 36 inventoried chapters.
 It lacked command scope before the change; both profiles/themes now retain its
 command role, including beside colon separators. Monitor lookalikes stay ordinary
 names, while UI labels in strings/comments remain opaque. Buttons and shortcuts
-are not extra BASIC forms. §12.3 catalogue editor references await their own
-definitions; the entire catalogue has not been reconciled. No monitor execution,
+are not extra BASIC forms. The full [§12.3 catalogue review](error-catalogue-review.md)
+routes vocabulary to existing coverage and definitions; its 17 gaps add no aliases
+or inventory entries. No monitor execution,
 stepping, breakpoint, evaluation or return-to-program behavior is qualified.
 The additions remain unreleased.

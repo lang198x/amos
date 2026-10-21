@@ -740,3 +740,24 @@ source assets. The VSIX has no public gallery flag or executable host. Extracted
 exports render all three modes in both themes, preserve exact source and retain
 Monitor's command scope. Versions, parser, published preview 0.2.0 and private
 Marketplace availability are unchanged.
+
+
+## Full error-catalogue vocabulary reconciliation
+
+All 22 contiguous §12.3 page ranges (lines 21473–22628), the pinned extract hash
+and 17 referenced definition headings were checked. The complete page-by-page
+review separates covered forms, definition-led gaps, spelling conflicts, editor
+UI, external utilities and embedded AMAL/Interface references. It adds no entries
+or aliases: BASIC remains 665 across 36 chapters, with grammar/parser unchanged.
+
+Both BASIC profiles and themes passed 68 missing-scope assertions for 17 gaps,
+120 positive assertions for 30 covered forms and 40 assertions rejecting complete
+command scopes for ten conflicting catalogue spellings. These selected probes
+support the reading; they are not a whole-language coverage metric. All 25 package
+checks and editor synchronization pass. No error codes, native diagnostics,
+recovery advice or historical limits were tested or adopted as semantic rules.
+
+The disposable npm archive includes the full review; all 17 packaged source files
+match current bytes. Grammar and editor assets are unchanged, so no new VSIX or
+full integration rerun was needed for this documentation slice. Versions, parser,
+published previews and private Marketplace availability remain unchanged.
