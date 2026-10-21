@@ -26,3 +26,24 @@ codecs, runtime execution and further publication are separate milestones.
 No reference text or runtime media is copied into distributable assets. Existing
 consumer shapes and UI styles remain unchanged. The parser is not expanded by
 this documentary inventory.
+
+## Outcome
+
+The reviewed website change is retained in PR #902, not merged/deployed. The
+exact approved registry integrity, failing baseline regression, passing real
+lesson source/rendering checks and isolated Marketplace editor views are recorded
+in docs/consumer-adoption.md. All 478 browser checks pass in the correctly
+configured rerun; offline links have zero errors. The original homepage timeout
+and invalid manual-run environment are retained, not hidden.
+
+The first edition inventory is committed at 9e7859161d4659b4f3336181f69dcb4eb0838dde:
+21 documentary records, three exact source hashes and an altered-source negative
+control. Software revisions and native behaviour remain unqualified. Roadmap
+#5 and issues #1–4 track further work; website #900 owns adoption and #901 tracks
+the observed unrelated homepage navigation timeout. No parser or grammar profile
+change follows from the manual comparison.
+
+The finished linked worktree is removed after verifying its exact remote commit.
+Only task-owned unchanged files are restored in the shared website checkout;
+unrelated review files remain intact. Temporary editor/profile/log processes and
+files are cleaned after their results are retained.

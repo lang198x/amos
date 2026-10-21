@@ -8,7 +8,7 @@ part of the current work. The GitHub tracker is
 
 | Milestone | Current evidence and next boundary | Issue |
 | --- | --- | --- |
-| Published consumer adoption | Pin the approved registry grammar in both Code198x loaders; verify real built lessons and the Marketplace editor. | [website #900](https://github.com/code198x/website/issues/900) |
+| Published consumer adoption | Verified adoption in [PR #902](https://github.com/code198x/website/pull/902); all 478 browser checks pass locally. Merge/deployment is separate. | [website #900](https://github.com/code198x/website/issues/900) |
 | Editions and releases | First 21 documentary form records across three manuals; exact software revisions and runtime differences remain unqualified. | [#1](https://github.com/lang198x/amos/issues/1) |
 | Bare Cls disagreement | Creator says zero; Easy/Professional say paper colour. Needs separately identified native trials. | [#2](https://github.com/lang198x/amos/issues/2) |
 | Useful parser slice | Agree one small real fragment, expression operators, conditional form, typed AST and diagnostic expectations before code. | [#3](https://github.com/lang198x/amos/issues/3) |
