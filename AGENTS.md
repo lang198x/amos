@@ -15,7 +15,7 @@ Keep source files small and focused. Each supported AMOS instruction has its own
 module under src/instructions/. Keep the dispatcher explicit; no registration or
 plugin framework is needed. Split tests by concern as coverage grows.
 
-Keep the Marketplace preview private until coverage is reviewed; consult
-[release readiness](decisions/marketplace-release-readiness.md) before changing
-availability or adding public gallery flags. Microsoft validation is not release
-approval.
+Consult [release readiness](decisions/marketplace-release-readiness.md) before
+changing Marketplace availability or adding public gallery flags. The reviewed
+0.3.0 public preview is explicitly approved; broader scope and stable releases
+require their own review. Microsoft validation is not release approval.

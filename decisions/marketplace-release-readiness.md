@@ -26,3 +26,17 @@ previously authorised previews.
 
 Reconsult before uploading an extension with public gallery flags, changing
 Marketplace availability, or claiming the editor is ready for public discovery.
+
+## Public preview 0.3.0 approval
+
+On 21 October 2026, after the bounded highlighting readiness review and verified
+0.3.0 draft preparation, Steve instructed: “Let's publish it all. And set up
+trusted publishing”. This authorizes public Marketplace availability of the
+scoped 0.3.0 preview, alongside the GitHub prerelease and npm next publication.
+It supersedes the private-only restriction above for this reviewed preview.
+
+The evidence is docs/highlighting-readiness.md and
+docs/releases/0.3.0-evidence.json. This remains Professional-based lexical
+highlighting with optional 3D and standalone AMAL/Interface modes. Creator, Easy,
+other revisions, parser completeness and native execution remain unqualified.
+Future scope claims and stable releases still require their own review.
