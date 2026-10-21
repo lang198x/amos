@@ -46,3 +46,8 @@ The editor-only 0.3.1 publication patch adds explicit Public + Preview metadata
 with the same prerelease channel and grammar bytes. npm remains 0.3.0. Editor
 and npm versions may differ for publication-only patches; both retain their
 profile-specific scope. Public packaging requires the explicit --public flag.
+
+Steve explicitly approved publishing the editor-only 0.3.1 preview to GitHub and
+making it public on Marketplace after automatic approval review requested
+version-specific authorization. The earlier restriction is resolved for this
+reviewed artifact; npm remains at preview 0.3.0.

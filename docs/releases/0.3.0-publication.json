@@ -46,10 +46,12 @@
   "marketplace": {
     "uploaded_version": "0.3.0",
     "validation": "passed",
-    "availability": "Private",
+    "availability": "Public",
     "uploaded_archive_matches_preparation_evidence": true,
     "public_followup_version": "0.3.1",
-    "public_followup_approval": "pending"
+    "public_followup_approval": "explicitly approved",
+    "public_followup_evidence": "0.3.1-editor-evidence.json",
+    "initial_availability": "Private"
   },
   "verification": {
     "publication_guard_tests": 7,

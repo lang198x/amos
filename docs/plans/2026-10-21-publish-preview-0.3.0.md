@@ -38,3 +38,14 @@ Update the editor README for actual installation; keep all four grammars intact.
 Verify both private/public packaging and unchanged grammar bytes, commit/push,
 then attach the distinct 0.3.1 VSIX/checksum to a GitHub prerelease and upload it.
 npm stays 0.3.0; release-only editor patches have independent version numbers.
+
+## Outcome
+
+GitHub preview 0.3.0 and npm next=0.3.0 are published; latest remains 0.1.0.
+The npm trusted connection is Valid and its real workflow publication has
+verified registry signature/provenance. The editor-only 0.3.1 follow-up received
+explicit approval, is published on GitHub and Marketplace, and is Public with
+prerelease-channel metadata. Anonymous download bytes and a fresh gallery install
+match the approved VSIX. Evidence is retained in the publication/editor JSON
+records; the original 0.3.0 archive/source binding is preserved. Temporary task
+workspaces, installation profiles and Python caches are removed after retention.

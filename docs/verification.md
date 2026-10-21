@@ -1323,3 +1323,26 @@ source assets match its committed source; all four grammars match the original
 DEP0169 warning. All 39 package checks, seven publication-guard checks and source
 CI pass. Automatic approval review rejects publishing this new version pending
 explicit user approval; no 0.3.1 release or upload has occurred at this point.
+
+Steve explicitly approved publishing the 0.3.1 editor-only preview on GitHub and
+making it public on Marketplace. Both published GitHub assets match their
+retained bytes after download. Marketplace validates 0.3.1 and shows Public;
+an anonymous gallery query reports validated/public/preview flags and the
+0.3.1 Microsoft.VisualStudio.Code.PreRelease=true property. Its anonymous CDN
+VSIX download matches the approved SHA-256 and every archive entry exactly.
+
+The first isolated gallery install returned
+`Extension 'lang198x.lang198x-amos' not found.` during index propagation. After
+validation completes, the same prerelease install succeeds and all eleven source
+assets match. The real receipt records version=0.3.1, source=gallery,
+private=false, isPreReleaseVersion=true, hasPreReleaseVersion=true and
+preRelease=true. Installation metadata is kept separate from declared manifest
+fields. The existing external DEP0169 warning remains; no user editor profile
+is changed. The browser Install button was not used after automatic review
+rejected potentially launching the active editor; the isolated CLI verifies the
+actual Marketplace path instead.
+
+Public release notes and installation instructions now distinguish npm 0.3.0
+from editor-only 0.3.1. The original 0.3.0 files remain byte-identical. npm trusted
+publishing is verified through the actual OIDC publish and signature/attestation
+check; Marketplace currently uses its separate authenticated upload procedure.

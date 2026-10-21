@@ -32,6 +32,10 @@ A repeated run fails on an already-published version; do not repack or overwrite
 a release to make a retry succeed.
 
 Marketplace upload is currently a separate authenticated browser operation.
+Build a publicly discoverable VSIX with
+`python3 scripts/package-editor.py --pre-release --public`. Omitting --public
+keeps the archive private. Preserve prior release artifacts when changing
+visibility; use a distinct editor version for a publication-only patch.
 Verify version, prerelease-channel property and public/private availability
 independently. A Preview label alone proves neither prerelease-channel selection
 nor public visibility. Record the exact uploaded archive and the observed result.

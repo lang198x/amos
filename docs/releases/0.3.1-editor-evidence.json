@@ -1,7 +1,7 @@
 {
   "version": "0.3.1",
   "surface": "editor-only",
-  "state": "verified-awaiting-publication-approval",
+  "state": "published-public-prerelease",
   "source_commit": "3cd907c22e2b68bf47008c55ae0828a49b216ed7",
   "source_ci": {
     "url": "https://github.com/lang198x/amos/actions/runs/39610232256",
@@ -26,7 +26,37 @@
     "isolated_vscode_installation": true
   },
   "npm_version_unchanged": "0.3.0",
-  "github_published": false,
-  "marketplace_uploaded": false,
-  "approval_review": "Rejected new-version publication pending explicit user approval"
+  "github_published": true,
+  "marketplace_uploaded": true,
+  "approval_review": "Initial rejection resolved by explicit user approval to publish 0.3.1 on GitHub and make it public on Marketplace",
+  "github_release": {
+    "url": "https://github.com/lang198x/amos/releases/tag/v0.3.1",
+    "prerelease": true,
+    "draft": false,
+    "downloaded_archive_and_checksum_match": true
+  },
+  "marketplace_availability": "Public",
+  "marketplace_validation": "passed",
+  "marketplace": {
+    "url": "https://marketplace.visualstudio.com/items?itemName=lang198x.lang198x-amos",
+    "anonymous_query_url": "https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery",
+    "query_filter": {
+      "filterType": 7,
+      "value": "lang198x.lang198x-amos"
+    },
+    "extension_flags": "validated, public, preview",
+    "version": "0.3.1",
+    "prerelease_property": "true",
+    "public_download_url": "https://lang198x.gallerycdn.vsassets.io/extensions/lang198x/lang198x-amos/0.3.1/1792590560108/Microsoft.VisualStudio.Services.VSIXPackage",
+    "public_download_matches_approved_archive": true,
+    "public_cli_installation_version": "0.3.1",
+    "public_cli_installation_metadata": {
+      "source": "gallery",
+      "private": false,
+      "isPreReleaseVersion": true,
+      "hasPreReleaseVersion": true,
+      "preRelease": true
+    },
+    "installed_source_assets_match": 11
+  }
 }

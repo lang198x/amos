@@ -78,24 +78,27 @@ Compatibility with other engines must be tested before it is advertised.
 
 ## VS Code
 
-Download the [AMOS editor 0.3.0 VSIX](https://github.com/lang198x/amos/releases/download/v0.3.0/lang198x-lang198x-amos-0.3.0.vsix),
-then run **Extensions: Install from VSIX** from VS Code's Command Palette and
-select the downloaded file. Open a plain-text `.amos.txt` listing; its language
-mode should be **AMOS**. For text listings with another suffix, choose **Change
-Language Mode → AMOS** explicitly. Native tokenised `.AMOS` files need decoding
-and are deliberately not associated automatically.
+Install [AMOS — Lang198x](https://marketplace.visualstudio.com/items?itemName=lang198x.lang198x-amos)
+and select **Install Pre-Release Version** (0.3.1). The editor-only patch adds
+public-listing metadata and installation text; its four grammars match npm
+preview 0.3.0 exactly.
 
-The preview uses your editor's active theme. It colours the documented subset;
-it does not provide compiler errors, completion or a language server. The package
-uses identifier `lang198x.lang198x-amos` and the approved L icon. The Marketplace
-0.3.0 submission is validated but remains private. Public visibility is a
-separate release property; see the
-[release decision](decisions/marketplace-release-readiness.md). The downloadable
-VSIX works separately.
+Alternatively, download the [0.3.1 VSIX](https://github.com/lang198x/amos/releases/download/v0.3.1/lang198x-lang198x-amos-0.3.1.vsix),
+then use **Extensions: Install from VSIX**. Open a plain-text `.amos.txt` listing;
+its mode should be **AMOS**. For another suffix, choose **Change Language Mode →
+AMOS** explicitly. Native tokenised `.AMOS` files require decoding and are not
+associated automatically. Select the optional 3D, AMAL and Interface modes
+explicitly as described below.
+
+The preview uses the active theme and colours the documented lexical subset.
+It does not provide compiler errors, completion or a language server. Its
+identifier is `lang198x.lang198x-amos`, with the approved L icon. Public preview
+approval is recorded in the
+[release decision](decisions/marketplace-release-readiness.md).
 
 `editors/vscode/` is a thin declarative extension. Its grammar is generated from
 the canonical file; `npm run check:editor` fails on drift. Build an installable
-VSIX with `python3 scripts/package-editor.py --pre-release`; this uses only Python's standard
+VSIX with `python3 scripts/package-editor.py --pre-release --public`; this uses only Python's standard
 library. The [game baseline](audit/2026-10-highlighting/README.md) identifies the
 next highlighting groups without claiming full language coverage.
 
