@@ -1,0 +1,138 @@
+{
+  "status": "checker_policy_disagreement_isolated_cause_of_native_tail_unestablished",
+  "geometry": {
+    "blocks": 1760,
+    "reserved": 2,
+    "bitmap_allocation_bits": 1758,
+    "bitmap_allocation_words": 55,
+    "unused_whole_words": 72
+  },
+  "cases": [
+    {
+      "case": "initial",
+      "sha256": "5a5d9621abc1b3e71d06628136194cd240766a5bddc76a7f460b24bb4f82bcd8",
+      "root_block": 880,
+      "bitmap_block": 881,
+      "root_checksum_sum_mod_2_32": 0,
+      "bitmap_checksum_sum_mod_2_32": 0,
+      "bitmap_valid_flag": 4294967295,
+      "allocated_real_blocks": [
+        880,
+        881
+      ],
+      "final_allocation_word": "3fffffff",
+      "nonzero_unused_word_offsets": [],
+      "first_unused_set_bit_block": null
+    },
+    {
+      "case": "native_save",
+      "sha256": "75180c1a34cc5e2577780da52f22856ce11d6238818e3ec41063444c7d0e8363",
+      "root_block": 880,
+      "bitmap_block": 884,
+      "root_checksum_sum_mod_2_32": 0,
+      "bitmap_checksum_sum_mod_2_32": 0,
+      "bitmap_valid_flag": 4294967295,
+      "allocated_real_blocks": [
+        880,
+        882,
+        883,
+        884
+      ],
+      "final_allocation_word": "3fffffff",
+      "nonzero_unused_word_offsets": [
+        76,
+        77,
+        81,
+        105,
+        106,
+        107,
+        108,
+        109,
+        125,
+        127
+      ],
+      "first_unused_set_bit_block": 2402
+    },
+    {
+      "case": "reference_dos_write",
+      "sha256": "9cb287f3376ec6b3d681ff794dcd3536c5f0ec21f562ec117e2c13060805558f",
+      "root_block": 880,
+      "bitmap_block": 883,
+      "root_checksum_sum_mod_2_32": 0,
+      "bitmap_checksum_sum_mod_2_32": 0,
+      "bitmap_valid_flag": 4294967295,
+      "allocated_real_blocks": [
+        880,
+        882,
+        883
+      ],
+      "final_allocation_word": "3fffffff",
+      "nonzero_unused_word_offsets": [],
+      "first_unused_set_bit_block": null
+    }
+  ],
+  "initial_to_native_changed_blocks": [
+    880,
+    882,
+    883,
+    884
+  ],
+  "independent_validator": {
+    "name": "amitools xdfscan",
+    "version": "0.8.1",
+    "initial": "boot ok",
+    "native_save": "boot ok",
+    "reference_dos_write": "boot ok",
+    "negative_control": "E001 boot NOK",
+    "process_exit_code_for_both_ok_and_NOK": 0,
+    "limitation": "The final-word mask uses padding-bit count rather than valid-bit count for this geometry; this pass alone does not validate all 30 real bits in the final word.",
+    "bitmap_scan_source_sha256": "01f5496a75b28597ab484e76cccb437c5b752ebf523ad5d6dd0cbb972aa6babe"
+  },
+  "controls": {
+    "live_header_marked_free": {
+      "block": 882,
+      "bitmap_checksum_recomputed": true,
+      "format_verify_exit": 1,
+      "xdfscan_output": "E001 boot NOK"
+    },
+    "unused_tail_cleared": {
+      "preserve_first_1758_bits": true,
+      "bitmap_checksum_recomputed": true,
+      "format_verify_exit": 0,
+      "xdfscan_output": "boot ok",
+      "original_image_modified": false
+    },
+    "last_real_block_held": {
+      "block": 1759,
+      "bitmap_checksum_recomputed": true,
+      "format_manifest_additional_problem": "block 1759: held by the bitmap, but nothing reaches it",
+      "xdfscan_output": "boot ok"
+    }
+  },
+  "reference_scope": "Empty output file created by native AmigaDOS redirection in FS-UAE; not the same AMOS Save workflow.",
+  "format_checker": {
+    "cli": "build198x-adf",
+    "cli_version": "0.2.12",
+    "library_version": "0.3.2"
+  },
+  "reference_runtime": {
+    "name": "FS-UAE",
+    "version": "3.2.35",
+    "binary_sha256": "86e3f01623cb13bff537903a07a6c4fcfdc4b7fc4baee723cfb6eb4f28f6de8d",
+    "model": "PAL A500",
+    "chip_bytes": 524288,
+    "slow_bytes": 524288,
+    "kickstart_sha256": "ee05862d8102a08436ac4056da7d549db31625c7d47b24dfb7b3c9a5c113ca53",
+    "startup_sequence": "C/AddBuffers >DF1:PROBE DF0: 0\n",
+    "boot_disk_sha256": "b7ee962523d2ce2036c09b3b6283bd097b54bbe0e921f36702fe92fdc6b6bed0",
+    "work_initial_sha256": "5a5d9621abc1b3e71d06628136194cd240766a5bddc76a7f460b24bb4f82bcd8",
+    "writable_floppy_images": true,
+    "result_file": {
+      "name": "PROBE",
+      "bytes": 0,
+      "header_block": 882
+    },
+    "no_amos_execution": true,
+    "after_exit_hash_verified": true
+  }
+}

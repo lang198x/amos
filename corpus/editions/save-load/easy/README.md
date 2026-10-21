@@ -65,6 +65,11 @@ bytes. Successful native reload is not proof of filesystem integrity. Issue #6
 tracks comparison with independent evidence and the existing checker policy
 before any component is changed.
 
+The [bitmap investigation](bitmap-investigation.md) isolates the disagreement
+to the unused tail and records independent-validator controls plus a smaller
+native DOS write in FS-UAE. That write does not reproduce the tail finding;
+the same AMOS Save workflow still needs an independent comparison.
+
 ## Scope
 
 The Easy manual documents these editor controls in First Steps, printed pages
