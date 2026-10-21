@@ -1,7 +1,8 @@
 # Highlighting preview readiness
 
 The readiness pass supports a public preview under the bounded scope below.
-It does not authorise publication.
+The separate release approval is recorded in
+[release readiness](../decisions/marketplace-release-readiness.md).
 
 The recommended public scope is **Professional-based lexical highlighting for
 plain-text listings**, with opt-in AMOS 3D, standalone AMAL and standalone AMOS
@@ -86,10 +87,9 @@ BASIC-string injection or complete extension catalogue. Those remain separately
 scoped work. BASIC vocabulary remains 728 documentary entries across 44 sections;
 AMAL, AMOS 3D and Interface keep separate inventories and limitations.
 
-Preview 0.3.0 is now prepared with versioned archives, explicit preview metadata
-and [release notes](releases/0.3.0.md) naming this scope. Actual publication remains
-a separate action. Published 0.2.0 must retain its
-existing assets. The current review does not change Marketplace availability,
-upload an archive or publish to npm. The
-[private-preview decision](../decisions/marketplace-release-readiness.md) remains
-binding until a public-release decision is explicitly adopted.
+Preview 0.3.0 is published on npm next and as a GitHub prerelease with
+[release notes](releases/0.3.0.md) naming this scope. Previous releases retain
+their existing assets. The separate
+[release decision](../decisions/marketplace-release-readiness.md) records
+approval; [publication evidence](releases/0.3.0-publication.json) distinguishes
+registry publication from Marketplace validation and visibility.

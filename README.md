@@ -33,18 +33,18 @@ in its own small Rust module under `src/instructions/`.
 
 ## Highlight a listing
 
-Highlighting preview **0.3.0 is prepared for publication**; see the
+Highlighting preview **0.3.0 is published**; see the
 [release notes](docs/releases/0.3.0.md) for scope and limits. It adds standalone
-AMAL/Interface and the readiness fixes. Publication has not happened yet.
+AMAL/Interface and the readiness fixes.
 
 The currently published dependency-free grammar package is available on npm
-under the preview `next` tag (0.2.0). Install it in a consumer which already uses Shiki:
+under the preview `next` tag (0.3.0). Install it in a consumer which already uses Shiki:
 
 ```sh
 npm install @lang198x/amos@next
 ```
 
-Use `@lang198x/amos@0.2.0` to pin this highlighting preview. A local tarball can also be
+Use `@lang198x/amos@0.3.0` to pin this highlighting preview. A local tarball can also be
 built with `npm pack --pack-destination dist` after creating `dist/`.
 
 ```js
@@ -78,7 +78,7 @@ Compatibility with other engines must be tested before it is advertised.
 
 ## VS Code
 
-Download the [AMOS editor 0.2.0 VSIX](https://github.com/lang198x/amos/releases/download/v0.2.0/lang198x-lang198x-amos-0.2.0.vsix),
+Download the [AMOS editor 0.3.0 VSIX](https://github.com/lang198x/amos/releases/download/v0.3.0/lang198x-lang198x-amos-0.3.0.vsix),
 then run **Extensions: Install from VSIX** from VS Code's Command Palette and
 select the downloaded file. Open a plain-text `.amos.txt` listing; its language
 mode should be **AMOS**. For text listings with another suffix, choose **Change
@@ -88,8 +88,8 @@ and are deliberately not associated automatically.
 The preview uses your editor's active theme. It colours the documented subset;
 it does not provide compiler errors, completion or a language server. The package
 uses identifier `lang198x.lang198x-amos` and the approved L icon. The Marketplace
-submission remains private while coverage is developed and reviewed;
-Microsoft validation does not trigger a public release. See the
+0.3.0 submission is validated but remains private. Public visibility is a
+separate release property; see the
 [release decision](decisions/marketplace-release-readiness.md). The downloadable
 VSIX works separately.
 
@@ -104,17 +104,17 @@ The 0.2.0 highlighting preview includes the
 Its pinned source and independently reviewed scope inventory check all 398
 builtin/control-word and label occurrences in Bank or Risk in two themes.
 Earlier preview assets retain their original grammar. The Rust parser remains
-at 0.1.0 with its opening-program surface, and the Marketplace preview stays
-private. See the [0.2.0 release notes](docs/releases/0.2.0.md).
+at 0.1.0 with its opening-program surface. See the
+[0.2.0 release notes](docs/releases/0.2.0.md) for that earlier milestone.
 
 The [manual-led core inventory](specifications/manual-core/README.md) now drives
 broader coverage: current source highlights 728 BASIC entries from Professional manual
 chapters 5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 19 Interface-facing BASIC forms from 9.1/9.3/9.4, 10.1–10.6, 11.1–11.2, 11.4–11.5, 12.1–12.2 and five §13.1 accessory/configuration forms, Appendix B’s Kill Editor and twenty-eight Appendix A memory/conversion/bit/call/register forms, plus eight Appendix F Copper forms and two Appendix C display-mode queries.
 The file/directory I/O, music/basic sound, sample, music-module, speech, icon/block, font, error-handling, printer/port, serial, parallel, AREXX, multitasking, library/equate/structure/device/requester, Monitor, accessory/configuration, Kill Editor, dialogue, zone/value, resource, direct-memory, block/address, conversion, bit-operation, machine-code call, register, Copper and display-mode continuations are
-in the prepared 0.3.0 candidate; published 0.2.0 retains its 452-entry BASIC inventory.
+in preview 0.3.0; published 0.2.0 retains its 452-entry BASIC inventory.
 Fourteen embedded menu commands and 36 [AMAL records](specifications/amal/README.md)
 are inventoried separately. Current source adds standalone AMAL highlighting;
-BASIC string payloads remain opaque. The prepared 0.3.0 candidate includes this
+BASIC string payloads remain opaque. Preview 0.3.0 includes this
 mode; published 0.2.0 does not.
 [AMOS 3D](specifications/extensions/amos-3d/README.md) is tracked as an optional
 extension with a 59-record manual inventory, three source-level answers and a pinned-binary
@@ -171,7 +171,7 @@ it does not install the extension, qualify a release or validate a program.
 ## Standalone AMAL highlighting
 
 Current source adds `@lang198x/amos/amal`, the `amal` language registration and
-`@lang198x/amos/amal.tmLanguage.json`. These are included in the prepared 0.3.0 candidate; published
+`@lang198x/amos/amal.tmLanguage.json`. These are included in preview 0.3.0; published
 0.2.0 does not export them. Load the registration with Shiki or
 shiki-highlight-api in the same way as the AMOS modes, selecting `lang: 'amal'`:
 
@@ -195,11 +195,11 @@ have one significant capital. The [AMAL scope and limits](specifications/amal/RE
 describe register/instruction contexts and the neutral fallback for ambiguous
 compact input. Colour does not establish syntax, label resolution or execution.
 
-## Standalone Interface (0.3.0 candidate)
+## Standalone Interface (preview 0.3.0)
 
 Current source provides `@lang198x/amos/interface` and the explicit **AMOS
-Interface** editor mode (`amos-interface`). The prepared 0.3.0 candidate includes
-these; published 0.2.0 does not. Build the candidate to try the mode:
+Interface** editor mode (`amos-interface`). Preview 0.3.0 includes
+these; published 0.2.0 does not. Use the preview to try the mode:
 
 ```js
 import { createHighlighter } from 'shiki';
@@ -250,3 +250,11 @@ milestone, with direct compilation beyond the initial need.
 New implementation and grammar: GPL-2.0-or-later, see LICENSE. Retained teaching
 sources under `corpus/opening/`: MIT, see `corpus/LICENSE`. Runtime screenshots
 are evidence of original software, not newly licensed Lang198x code.
+
+## Preview publication
+
+The npm preview uses GitHub Actions OIDC trusted publishing, bound to
+`lang198x/amos` and `publish-preview.yml`. The successful 0.3.0 publication
+verified the retained archive before publishing to next. Registry download bytes,
+signature and provenance attestation are verified; latest remains 0.1.0.
+See the [publishing procedure](docs/releases/publishing.md) for future previews.

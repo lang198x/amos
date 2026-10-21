@@ -1,0 +1,32 @@
+{
+  "version": "0.3.1",
+  "surface": "editor-only",
+  "state": "verified-awaiting-publication-approval",
+  "source_commit": "3cd907c22e2b68bf47008c55ae0828a49b216ed7",
+  "source_ci": {
+    "url": "https://github.com/lang198x/amos/actions/runs/39610232256",
+    "conclusion": "success"
+  },
+  "artifact": {
+    "name": "lang198x-lang198x-amos-0.3.1.vsix",
+    "size": 23997,
+    "sha256": "56e767c87612d0e4aac11ac6616e7f057aef9df02d4b61e89017c57f68cd9d00",
+    "sha512_integrity": "sha512-jKYuATJzL32iJAAkhnyCSiT8siWr3x3nuamalSChviZJgSIwwZbSlV2mTX1jF+SnuYt8OjILbYeEws8DTCfjQQ=="
+  },
+  "verification": {
+    "source_assets_match": 11,
+    "all_four_grammars_identical_to_0_3_0": true,
+    "gallery_flags": [
+      "Public",
+      "Preview"
+    ],
+    "prerelease_property": "true",
+    "package_tests": 39,
+    "publication_guard_tests": 7,
+    "isolated_vscode_installation": true
+  },
+  "npm_version_unchanged": "0.3.0",
+  "github_published": false,
+  "marketplace_uploaded": false,
+  "approval_review": "Rejected new-version publication pending explicit user approval"
+}

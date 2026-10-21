@@ -1,7 +1,7 @@
 # Coverage and result meanings
 
-Prepared preview 0.3.0 includes current BASIC, optional AMOS 3D and standalone
-AMAL/Interface highlighting. It is not published yet. Published preview 0.2.0
+Published preview 0.3.0 includes current BASIC, optional AMOS 3D and standalone
+AMAL/Interface highlighting. Earlier preview 0.2.0
 retains its earlier BASIC/3D assets.
 The Rust parser remains at 0.1.0 with its opening-program subset. Neither surface
 is complete AMOS support. Current source additionally covers §10.2 file/directory

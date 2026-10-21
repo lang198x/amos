@@ -1303,3 +1303,23 @@ ssh://git@github.com/artifacts/lang198x-amos-0.3.0.tgz.git`. npm interpreted the
 bare relative path as a repository shorthand. An explicit `./` local archive
 path passes a dry run; the workflow now uses that form. No package was written
 by the failed attempt.
+
+The corrected [OIDC publication](https://github.com/lang198x/amos/actions/runs/39609298977)
+succeeds. npm marks the trusted connection Valid. After processing, registry
+readback has next=0.3.0 and latest=0.1.0; the downloaded tarball matches the
+approved SHA-256/SHA-512 and original archive bytes. An isolated registry consumer
+reports `1 package has a verified registry signature` and
+`1 package has a verified attestation` through npm audit signatures. The signed
+subject digest matches the exact archive. Provenance identifies the publishing
+workflow commit e679bd3, while preparation evidence binds artifact source a9f02b8.
+These are deliberately distinct: the workflow publishes the retained archive.
+
+Marketplace accepts and validates the exact 0.3.0 VSIX but retains Private
+availability. The management actions expose no Make Public control. The retained
+VSIX's GalleryFlags contains Preview alone. A separate editor-only 0.3.1 build
+adds Public + Preview explicitly, retaining the prerelease property. All eleven
+source assets match its committed source; all four grammars match the original
+0.3.0 archive. Isolated VS Code installation succeeds with the same external
+DEP0169 warning. All 39 package checks, seven publication-guard checks and source
+CI pass. Automatic approval review rejects publishing this new version pending
+explicit user approval; no 0.3.1 release or upload has occurred at this point.

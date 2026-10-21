@@ -1,0 +1,62 @@
+{
+  "version": "0.3.0",
+  "state": "published-preview",
+  "source_commit": "a9f02b8cd8f0792cc17a245e35ec90272d0329c1",
+  "preparation_evidence": "0.3.0-evidence.json",
+  "github": {
+    "url": "https://github.com/lang198x/amos/releases/tag/v0.3.0",
+    "id": 419556013,
+    "prerelease": true,
+    "draft": false,
+    "published_at": "2026-10-21T13:33:16Z"
+  },
+  "npm": {
+    "url": "https://www.npmjs.com/package/@lang198x/amos/v/0.3.0",
+    "dist_tags": {
+      "latest": "0.1.0",
+      "next": "0.3.0"
+    },
+    "published_at": "2026-10-21T13:39:47.662Z",
+    "integrity": "sha512-ThD6Dy1bNgmsIulJV5F3EqaZV3VlUX1b+bWq/D2k7zGKx2eKUYSfDsyWsj70gLarZxJ1If+PnEUj6WZ+DBviOg==",
+    "registry_archive_matches_approved_bytes": true,
+    "registry_signature_verified": true,
+    "provenance_attestation_verified": true,
+    "attestations": {
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/@lang198x%2famos@0.3.0",
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v1"
+      }
+    },
+    "signature_verification_output": "audited 1 package in 0s\n\n1 package has a verified registry signature\n\n1 package has a verified attestation\n(use --json --include-attestations to view attestation details)\n\n"
+  },
+  "npm_trusted_publisher": {
+    "repository": "lang198x/amos",
+    "workflow_filename": "publish-preview.yml",
+    "status": "Valid",
+    "allow_publish": true,
+    "allow_stage_publish": true,
+    "allow_dist_tag": false,
+    "long_lived_npm_secret_in_workflow": false,
+    "run_url": "https://github.com/lang198x/amos/actions/runs/39609298977",
+    "publishing_workflow_commit": "e679bd312cf66f5b630c044209aa616b7e7f7c40",
+    "provenance_subject_matches_archive_digest": true,
+    "note": "Provenance identifies the publishing workflow commit. The retained artifact source commit is separately hash-bound by preparation evidence and the publication guard.",
+    "screenshot": "0.3.0/npm-trusted-publisher.png"
+  },
+  "marketplace": {
+    "uploaded_version": "0.3.0",
+    "validation": "passed",
+    "availability": "Private",
+    "uploaded_archive_matches_preparation_evidence": true,
+    "public_followup_version": "0.3.1",
+    "public_followup_approval": "pending"
+  },
+  "verification": {
+    "publication_guard_tests": 7,
+    "package_tests_at_npm_publication": 38,
+    "editor_only_followup_package_tests": 39,
+    "editor_only_followup_ci": "https://github.com/lang198x/amos/actions/runs/39610232256",
+    "editor_only_followup_grammar_bytes_match_0_3_0": true,
+    "editor_only_followup_isolated_installation": true
+  }
+}
