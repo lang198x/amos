@@ -1,0 +1,70 @@
+{
+  "profile": "amos-pro-2.00-observed",
+  "emulator_sha256": "a3acfa056fb38e68752ca1e6b7c9c349f3312e582e20cfc209aeda1e783b202a",
+  "snapshot_sha256": "a475cd230c402b47a050a0355fcb3a1d2bf90ed369c8e5941d27fbc35cad3a86",
+  "cases": [
+    {
+      "id": "paper-2-bare",
+      "source_sha256": "c8bb176e0c51ff768740068c17966a23f483e84edfef2a1abf6d0fe4dc65d6f2",
+      "capture_sha256": "b6068070940ac413cd4fa4510dfc38c23538ec74356a7000e46651f0aa416956",
+      "sample_xy": [
+        800,
+        250
+      ],
+      "sample_rgba": [
+        255,
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "id": "paper-4-bare",
+      "source_sha256": "70c225b0d31cec88bf910a3908b2e0badb3749d67eb4540c462a2159072d4b96",
+      "capture_sha256": "a1dfb3f5c14a8c142d303fc0d967651daf1c92ee5e230e2a4108e783710679cb",
+      "sample_xy": [
+        800,
+        250
+      ],
+      "sample_rgba": [
+        255,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "id": "paper-2-explicit-zero",
+      "source_sha256": "00cf6fff6b8612d87bc120cf329a29715f9be0f1b0f1ac761d3db4f7a23978b4",
+      "capture_sha256": "5f022a80b032f9d9745c219b1472410794e491085c776070a28d2762914d13bf",
+      "sample_xy": [
+        800,
+        250
+      ],
+      "sample_rgba": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "id": "paper-4-explicit-zero",
+      "source_sha256": "b464715ceb635409d4496b0844d4671e861cd040554c72fad446051fba70e9ee",
+      "capture_sha256": "5f022a80b032f9d9745c219b1472410794e491085c776070a28d2762914d13bf",
+      "sample_xy": [
+        800,
+        250
+      ],
+      "sample_rgba": [
+        0,
+        0,
+        0,
+        255
+      ]
+    }
+  ],
+  "emulator_revision": "6ff929f366e8762d5d5b9dadf53367b2cc692821",
+  "machine": "PAL A1200, 2 MiB chip RAM, no fast RAM",
+  "observation": "executed_from_restored_blank_editor; capture inspected at Wait Key"
+}

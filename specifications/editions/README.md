@@ -31,6 +31,10 @@ Creator's Cls definition (lines 7046–7061) says colour zero. Easy's glossary
 This is a manual-wording difference, not an established runtime difference. A
 bounded trial should select a non-zero paper colour, clear without an argument,
 and inspect the resulting colour under separately identified installations.
+A [four-case native trial](../../corpus/editions/cls/README.md) now confirms
+paper-colour behaviour in the previously identified Professional 2.00
+installation, with two non-zero paper values and explicit-zero controls.
+Creator and Easy remain untested; the cross-edition disagreement is still open.
 Do not change compiler/parser semantics from this observation alone.
 
 Professional's editor section explicitly describes Check 1.3 (lines 2084–2092):

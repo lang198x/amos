@@ -1,0 +1,4 @@
+Paper 4
+Cls
+Wait Key
+End
