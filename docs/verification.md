@@ -1274,3 +1274,19 @@ No new native-runtime, cross-platform or accessibility qualification follows.
 The exact source commit, CI and retained draft artifacts are recorded separately
 in docs/releases/0.3.0-evidence.json after the release inputs are committed.
 Preparation does not publish to npm or change private Marketplace availability.
+
+The release inputs are committed at a9f02b8cd8f0792cc17a245e35ec90272d0329c1.
+[Source CI](https://github.com/lang198x/amos/actions/runs/39603146035) passes
+38 package checks, 14 Rust integration tests, formatting, Clippy, editor sync
+and both packaging steps. The exact committed inputs produce 24 npm files and
+eleven VSIX source assets, each compared byte for byte. The final exact npm
+archive also passes the next-tag dry run and strict declaration check.
+
+[Draft preview 0.3.0](https://github.com/lang198x/amos/releases/tag/untagged-60f4b74a51934b7693b7)
+retains the npm archive, VSIX and SHA256SUMS. Downloaded copies match local bytes
+and hashes. The release API reports draft=true, prerelease=true and no published
+time, targeting the exact source commit above. The separate evidence JSON holds
+archive sizes, SHA-256 and SHA-512 integrity values without a self-referential
+archive hash. Later evidence-only commits do not replace these retained archives.
+The registry still has latest=0.1.0 and next=0.2.0; 0.3.0 is absent. No Marketplace
+upload or public-availability change occurred.

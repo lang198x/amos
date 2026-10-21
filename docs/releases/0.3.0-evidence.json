@@ -1,0 +1,86 @@
+{
+  "version": "0.3.0",
+  "state": "prepared-unpublished-preview",
+  "source_commit": "a9f02b8cd8f0792cc17a245e35ec90272d0329c1",
+  "source_ci": {
+    "url": "https://github.com/lang198x/amos/actions/runs/39603146035",
+    "conclusion": "success",
+    "rust_tests_passed": 14,
+    "clippy_warnings": 0,
+    "package_tests_passed": 38
+  },
+  "github_release": {
+    "id": 419556013,
+    "url": "https://github.com/lang198x/amos/releases/tag/untagged-60f4b74a51934b7693b7",
+    "tag_name": "v0.3.0",
+    "target_commitish": "a9f02b8cd8f0792cc17a245e35ec90272d0329c1",
+    "draft": true,
+    "prerelease": true,
+    "published_at": null,
+    "downloaded_assets_byte_verified": true,
+    "checksum_asset": "SHA256SUMS"
+  },
+  "artifacts": [
+    {
+      "name": "lang198x-amos-0.3.0.tgz",
+      "size": 80330,
+      "sha256": "0bae2337f0d77d6962ca4e49f7ba24051bc6d27cec1dfcbe8a73a1fceaf90d98",
+      "sha512_integrity": "sha512-ThD6Dy1bNgmsIulJV5F3EqaZV3VlUX1b+bWq/D2k7zGKx2eKUYSfDsyWsj70gLarZxJ1If+PnEUj6WZ+DBviOg=="
+    },
+    {
+      "name": "lang198x-lang198x-amos-0.3.0.vsix",
+      "size": 23935,
+      "sha256": "f9cc05403c8353ca5300f594240b204fb4ab3b05189218fbf97f8c912da5db06",
+      "sha512_integrity": "sha512-hf7my3juUf4A1Dzd0MwLq1XSxCHVUfH7HaXfArx1hw/gqruNJbD5euJQSWCRQNlyVvvbg4iP1gbFOYV7odDjVQ=="
+    }
+  ],
+  "verification": {
+    "npm_source_files_compared": 24,
+    "vsix_source_assets_compared": 11,
+    "editor_sync": true,
+    "ruff_lint_and_format": true,
+    "guarded_consumer_integrations": {
+      "api_1_3_0": 264,
+      "local_api_2_0_0": 264,
+      "shiki_version": "4.4.3",
+      "serial": true
+    },
+    "extracted_four_mode_exports_render_in_both_consumers_and_themes": true,
+    "strict_types_against_shiki_language_registration": true,
+    "typecheck_libraries": [
+      "ES2022",
+      "ESNext.Disposable",
+      "DOM"
+    ],
+    "missing_export_negative_control_rejected": true,
+    "vsix_isolated_cli_installation": true,
+    "installed_declared_manifest_and_grammar_icon_bytes_match": true,
+    "vsix_gallery_flags": [
+      "Preview"
+    ],
+    "vsix_prerelease_property": "true",
+    "missing_channel_negative_controls_rejected": true,
+    "marketplace_channel_acceptance_verified": false,
+    "eight_grammar_files_unchanged_from_readiness_commit": "3fc6ced6ec41758710eedcf859ae34c627476671",
+    "native_visual_review": "Prior readiness review; unchanged grammars in all four modes, dark/light themes",
+    "npm_exact_archive_dry_run_tag": "next"
+  },
+  "publication": {
+    "npm_published": false,
+    "registry_observed": {
+      "dist_tags": {
+        "latest": "0.1.0",
+        "next": "0.2.0"
+      },
+      "version_0_3_0_present": false
+    },
+    "marketplace_uploaded": false,
+    "marketplace_availability_changed": false,
+    "rust_version_unchanged": "0.1.0"
+  },
+  "limits": [
+    "Professional-based lexical preview; Creator, Easy and other revisions remain unqualified",
+    "No native AMOS import/execution, compiler or language server",
+    "VSIX metadata verified; no Marketplace upload/channel acceptance test"
+  ]
+}
