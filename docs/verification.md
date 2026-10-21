@@ -1023,3 +1023,29 @@ reported sizes, margins, cadence, loop duration, music/AMAL speed and A3000
 switching remain historical prose, not native qualification or compatibility
 policy. PAL/SECAM supply no aliases. Parser, versions, published 0.2.0 and private
 Marketplace availability are unchanged; the original 17 catalogue gaps stay closed.
+
+
+## Appendices D/E extension/bank reconciliation
+
+The hash-pinned manual establishes Appendix D at 26332–26387 (14.D.01–02)
+and E at 26388–27264 (14.E.01–18), including their blank final pages. No new
+named BASIC definitions follow. Bell's existing heading at 14323 now retains
+the Music Extension label from 26354–56; E's Music-system passage is at 26764–67.
+Inventory totals remain 728 across 44 sections. This is manual provenance,
+not source-level family ownership, installed-release or codec qualification.
+
+Removing Bell's component label makes the required-attribution check fail;
+restoration passes all 25 package checks. Editor sync and 60 affected music,
+sample, music-module and full-manual integrations per existing consumer pass
+in both BASIC profiles/themes. All six canonical/editor grammar hashes match
+the pre-change baseline. No complete 246-check consumer rerun is claimed for
+this metadata/documentation-only change; those suites passed at the preceding
+Appendix C commit.
+
+All 17 npm source files and nine VSIX source assets match source bytes. Extracted
+exports render all three modes in both themes, preserve exact source and retain
+Bell's command scope. The extension remains declarative without public gallery
+flags. Memory/disk layouts, bank-data labels, stored AMAL/Interface programs,
+original-AMOS/V1.21 claims and suspect marker/range prose stay documentary.
+No memory, file, sound or embedded program operation executes. Parser, versions,
+published 0.2.0 and private Marketplace availability are unchanged.

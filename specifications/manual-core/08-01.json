@@ -3,7 +3,7 @@
   "entries": [
     {"spelling": "Boom", "kind": "command", "page": "08.01.01", "extract_line": 14300, "example": "Boom"},
     {"spelling": "Shoot", "kind": "command", "page": "08.01.01", "extract_line": 14314, "example": "Shoot"},
-    {"spelling": "Bell", "kind": "command", "page": "08.01.01", "extract_line": 14323, "example": "Bell 49"},
+    {"spelling": "Bell", "kind": "command", "page": "08.01.01", "extract_line": 14323, "example": "Bell 49", "component": "Music Extension (as labelled by the manual)"},
     {"spelling": "Volume", "kind": "command", "page": "08.01.03", "extract_line": 14387, "example": "Volume %0011,40"},
     {"spelling": "Voice", "kind": "command", "page": "08.01.03", "extract_line": 14403, "example": "Voice %0011"},
     {"spelling": "Play", "kind": "command", "page": "08.01.04", "extract_line": 14444, "example": "Play %0001,49,5"},
@@ -26,6 +26,7 @@
   "notes": [
     "Line 14729 repeats MVOLUME for speed; the Tempo example at 14743 and its definition at 15167 identify Tempo. No alternate speed semantics are inferred.",
     "The voice table at 14431 says 2,4 for mask 6, despite the preceding zero-based 0–3 voice description. No channel mapping or argument limits are inferred.",
-    "Sample assigns a bank sample to a wave here; sample management and playback from chapter 8.2 are outside this inventory."
+    "Sample assigns a bank sample to a wave here; sample management and playback from chapter 8.2 are outside this inventory.",
+    "Appendix D explicitly attributes Bell to the Music extension at 26354–56 (14.D.01); Appendix E repeats the Music-system boundary at 26764–67 (14.E.08). This is documentary provenance, not an installed-release qualification or a source-level ownership map for every sound/sample/module form."
   ]
 }

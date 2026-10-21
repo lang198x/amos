@@ -407,3 +407,13 @@ The appendix's display-height, safe-margin, refresh-rate, audio/AMAL speed,
 territory and A3000 screen-switching descriptions are historical prose, not
 new runtime or compatibility evidence. No PAL/SECAM alias, timing algorithm,
 region profile or native numeric result is inferred from lexical highlighting.
+
+
+The complete D/E review covers 26332–26387 (14.D.01–02) and 26388–27264
+(14.E.01–18), including each blank final page. Bell's existing definition at
+14323 retains the explicit Music component attribution from 26354–56, supported
+by the Music-system passage at 26764–67. These use the same hash-pinned manual;
+they do not qualify a shipped binary, extension revision or all family ownership.
+The reconciliation retains memory/disk/embedded distinctions and original-AMOS/
+V1.21 statements, the Amlc marker and seven-bit movement-range questions without
+turning them into source-language forms or validated native-format semantics.

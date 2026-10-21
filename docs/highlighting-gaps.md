@@ -113,7 +113,7 @@ Uninventoried sections need explicit review; they are not silently excluded from
 | Appendix A machine code | Twenty-eight memory/block/address/conversion/bit/call/register forms are covered. Pload/Call and Areg/Dreg now have scopes. Procedure insertion UI, assembly examples and cross-reference reconciliation remain separate. |
 | Appendix C PAL/NTSC | Display Height and Ntsc now have function scopes. Existing screen/control/Wait Vbl references are [reconciled](manual-reconciliation.md); historical display/timing and A3000 advice remain unqualified. |
 | Appendix F Copper | All eight named BASIC control/list/query headings now have lexical coverage. Cop Logic’s signature/index resolves its instruction-label conflict for highlighting. Hardware behaviour remains a separate claim. |
-| Appendices B, D and E | Kill Editor from Appendix B now has lexical coverage. Review other runtime distribution, extension boundaries and bank-layout reference material for additional forms; format layouts do not become parser rules. |
+| Appendices B, D and E | Kill Editor from Appendix B has lexical coverage. D/E are [reconciled](manual-reconciliation.md): no new named BASIC definitions, Bell retains its manual Music component label, and memory/disk/embedded layouts remain separate. Release ownership and codec semantics need independent evidence. Other runtime/editor examples remain a separate route. |
 | Appendix G command index | Final crosscheck for missed names, aliases and roles after chapter inventories. It is a locator, not sufficient syntax or edition evidence by itself. |
 | Appendices H and I | Distribution/support reference; check any language mentions during final reconciliation, without treating catalogue entries as commands. |
 

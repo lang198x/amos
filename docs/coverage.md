@@ -695,3 +695,17 @@ The manual's display heights, margins, refresh rates, loop duration, music/AMAL
 speed and A3000 switching advice remain unqualified. No screen or timing routine
 executes in the lexical checks. The original 17 catalogue gaps remain closed;
 these additions are unreleased and Marketplace availability is unchanged.
+
+
+## Appendices D/E component and bank boundaries
+
+Appendices D/E add no named BASIC forms; totals remain 728 entries across
+44 sections. Bell now retains its explicit manual-labelled Music Extension
+provenance. A component label within the ordinary lexical inventory is not an
+installed-release or source-module qualification, and creates no new mode.
+
+The reconciliation distinguishes memory headers, disk bank structures, music
+labels, stored AMAL/Interface text and packed-image headers from BASIC definitions.
+Version-sensitive and suspect layout prose remains documented without inferred
+codec rules. Grammar, parser and published artifacts are unchanged; Marketplace
+availability stays private. No bank, sound or embedded program is executed.

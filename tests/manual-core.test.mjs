@@ -35,7 +35,10 @@ test('manual inventory has cited, nonempty examples for every declared chapter',
         if (entry.spelling === 'Menu$') assert.equal(entry.kind, 'command');
       }
       if (entry.component !== undefined) {
-        if (id === '11-05') {
+        if (id === '08-01') {
+          assert.equal(entry.spelling, 'Bell');
+          assert.equal(entry.component, 'Music Extension (as labelled by the manual)');
+        } else if (id === '11-05') {
           assert.ok(['Request Wb', 'Request On', 'Request Off'].includes(entry.spelling));
           assert.equal(entry.component, 'Requester Extension (as labelled by the manual)');
         } else if (id === '10-05') {
@@ -58,6 +61,9 @@ test('manual inventory has cited, nonempty examples for every declared chapter',
   const requesters = (await json('11-05.json')).entries.filter((entry) => entry.spelling.startsWith('Request '));
   assert.deepEqual(requesters.map((entry) => entry.component), Array(3).fill('Requester Extension (as labelled by the manual)'));
   const music = await json('08-01.json');
+  const attributed = music.entries.filter((entry) => entry.component !== undefined);
+  assert.deepEqual(attributed.map((entry) => [entry.spelling, entry.component]),
+    [['Bell', 'Music Extension (as labelled by the manual)']]);
   const playback = music.entries.filter((entry) => entry.definition);
   assert.deepEqual(playback.map((entry) => entry.spelling), ['Music', 'Music Stop', 'Music Off', 'Mvolume', 'Tempo']);
   for (const entry of playback) {

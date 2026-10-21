@@ -321,3 +321,11 @@ control and Wait Vbl examples refer to existing entries rather than introducing
 duplicates. The [reconciliation](../../docs/manual-reconciliation.md) retains
 source lines and separates television-standard labels and historical hardware/
 timing advice from BASIC definitions and original-runtime qualification.
+
+
+Appendices D/E introduce no new named BASIC definitions. Bell retains its manual
+Music Extension label (14.D.01), using the existing component-provenance field.
+The [reconciliation](../../docs/manual-reconciliation.md) separates extension
+setup UI, memory/disk layouts, binary music labels and embedded AMAL/Interface
+programs from source-language definitions. Counts stay 728 across 44 sections;
+no grammar, native codec or installed-release qualification follows.
