@@ -1,0 +1,103 @@
+{
+  "profile": "amos-creator-1.1-cls-observed",
+  "observation_date": "2026-10-21",
+  "boot_run_frames": [
+    500,
+    500,
+    500,
+    500
+  ],
+  "dismiss": {
+    "key": "space",
+    "hold_frames": 3,
+    "run_frames": 150
+  },
+  "identity_capture_sha256": "725db3b21e01e5a68998547e94e60015f986e4269e3b015d04c8610d1b486dcd",
+  "blank_editor_capture_sha256": "b4449e71589e5eda45d1335d5f24258e9c519feb68d6e0fb6e865395cba8f69a",
+  "blank_snapshot_sha256": "92a96581a6bf63a1546e11ed9d3ba9d3ec33a7e09d431158db6afe9f25a857cc",
+  "input_method": {
+    "type_hold_frames": 3,
+    "type_settle_frames": 30,
+    "run_key": "f1",
+    "run_hold_frames": 3,
+    "run_frames": 100
+  },
+  "cases": [
+    {
+      "id": "paper-2-bare",
+      "source": "../paper-2-bare.amos.txt",
+      "source_sha256": "c8bb176e0c51ff768740068c17966a23f483e84edfef2a1abf6d0fe4dc65d6f2",
+      "editor_capture": "paper-2-bare-editor.png",
+      "editor_capture_sha256": "88211e22bedd61ad20846d2694f51a5e8d45b35b9d3671b6a90fb38b760932cb",
+      "capture": "paper-2-bare.png",
+      "capture_sha256": "85cb9aa9a8239584d4810041d4b59441733c761c1a43c21f6b0000dca930c165",
+      "sample_xy": [
+        400,
+        250
+      ],
+      "sample_rgba": [
+        255,
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "id": "paper-4-bare",
+      "source": "../paper-4-bare.amos.txt",
+      "source_sha256": "70c225b0d31cec88bf910a3908b2e0badb3749d67eb4540c462a2159072d4b96",
+      "editor_capture": "paper-4-bare-editor.png",
+      "editor_capture_sha256": "5f534cc519aea00a2998a34f9101c61bf66fe849dee29fdddf1751ad8e9238dc",
+      "capture": "paper-4-bare.png",
+      "capture_sha256": "2a552ed738b17dbc92a1539c9f0c2955a690cb9e624fac4b4c0b4694c052115f",
+      "sample_xy": [
+        400,
+        250
+      ],
+      "sample_rgba": [
+        255,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "id": "paper-2-explicit-zero",
+      "source": "../paper-2-explicit-zero.amos.txt",
+      "source_sha256": "00cf6fff6b8612d87bc120cf329a29715f9be0f1b0f1ac761d3db4f7a23978b4",
+      "editor_capture": "paper-2-explicit-zero-editor.png",
+      "editor_capture_sha256": "5a0295c07d010fd55577a46253bc56369439fbbde767ac0cc76537ca688f1cb8",
+      "capture": "paper-2-explicit-zero.png",
+      "capture_sha256": "2fb0e4c9f319d92c5681b19d8ee2d7f538cab7a0b3d22f710ad77db8f6522754",
+      "sample_xy": [
+        400,
+        250
+      ],
+      "sample_rgba": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "id": "paper-4-explicit-zero",
+      "source": "../paper-4-explicit-zero.amos.txt",
+      "source_sha256": "b464715ceb635409d4496b0844d4671e861cd040554c72fad446051fba70e9ee",
+      "editor_capture": "paper-4-explicit-zero-editor.png",
+      "editor_capture_sha256": "74cfd46331b82718e68cce584d8dc11c83ef90d19ae867609df4237acbaa23a1",
+      "capture": "paper-4-explicit-zero.png",
+      "capture_sha256": "2fb0e4c9f319d92c5681b19d8ee2d7f538cab7a0b3d22f710ad77db8f6522754",
+      "sample_xy": [
+        400,
+        250
+      ],
+      "sample_rgba": [
+        0,
+        0,
+        0,
+        255
+      ]
+    }
+  ]
+}

@@ -34,7 +34,10 @@ and inspect the resulting colour under separately identified installations.
 A [four-case native trial](../../corpus/editions/cls/README.md) now confirms
 paper-colour behaviour in the previously identified Professional 2.00
 installation, with two non-zero paper values and explicit-zero controls.
-Creator and Easy remain untested; the cross-edition disagreement is still open.
+The independently booted [Creator 1.1 trial](../../corpus/editions/cls/creator/README.md)
+also follows paper colour in those same four controls, contradicting the Creator
+manual wording for this tested revision. Easy remains unqualified; other Creator
+revisions and the origin of the wording difference are still open.
 Do not change compiler/parser semantics from this observation alone.
 
 Professional's editor section explicitly describes Check 1.3 (lines 2084–2092):
@@ -48,8 +51,9 @@ The opening-program agreement cannot qualify all Creator programs for Pro.
 A manual copyright year does not identify the software build tested. All three
 records therefore leave software_revision unqualified. The existing observed
 Professional 2.00 runtime profile belongs to its own source/configuration
-evidence, not to the entire Professional family. No Creator/Easy native trial
-has been performed here.
+evidence, not to the entire Professional family. Creator 1.1 now has a separate, independently booted four-case Cls observation.
+That does not qualify the seven documentary forms as a whole. Easy native Cls
+execution remains unqualified here.
 
 The Pro v2.0 Interface Summary Rev 3, Creator/Pro compiler manuals and release
 notes need separate revision-scoped comparison. AMOS 3D retains its own

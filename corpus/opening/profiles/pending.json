@@ -1,10 +1,13 @@
 {
-  "status": "not_executed_by_this_corpus",
+  "status": "opening_programs_not_executed_for_these_product_lines",
   "product_lines": [
     "AMOS / The Creator",
     "Easy AMOS"
   ],
   "release_selection": "See the reference investigation; no latest-release default.",
   "extensions": "Supplied and third-party extension/version combinations require separate evidence.",
-  "other_releases": "Other Professional releases and later derivatives remain unqualified here."
+  "other_releases": "Other Professional releases and later derivatives remain unqualified here.",
+  "bounded_other_evidence": {
+    "AMOS / The Creator": "../../editions/cls/creator/README.md"
+  }
 }
