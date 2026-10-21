@@ -114,7 +114,7 @@ Uninventoried sections need explicit review; they are not silently excluded from
 | Appendix C PAL/NTSC | Display Height and Ntsc now have function scopes. Existing screen/control/Wait Vbl references are [reconciled](manual-reconciliation.md); historical display/timing and A3000 advice remain unqualified. |
 | Appendix F Copper | All eight named BASIC control/list/query headings now have lexical coverage. Cop Logic’s signature/index resolves its instruction-label conflict for highlighting. Hardware behaviour remains a separate claim. |
 | Appendices B, D and E | Kill Editor from Appendix B has lexical coverage. D/E are [reconciled](manual-reconciliation.md): no new named BASIC definitions, Bell retains its manual Music component label, and memory/disk/embedded layouts remain separate. Release ownership and codec semantics need independent evidence. Other runtime/editor examples remain a separate route. |
-| Appendix G command index | Final crosscheck for missed names, aliases and roles after chapter inventories. It is a locator, not sufficient syntax or edition evidence by itself. |
+| Appendix G command index | All 818 rows across 20 pages are [reconciled](command-index-review.md): existing BASIC/AMAL/Menu references, 69 separate Interface rows and 30 flagged conflicts. No new indivisible BASIC vocabulary follows; definitions govern spelling/role and the index supplies no edition or native qualification. |
 | Appendices H and I | Distribution/support reference; check any language mentions during final reconciliation, without treating catalogue entries as commands. |
 
 ## Gaps that a chapter sweep cannot close

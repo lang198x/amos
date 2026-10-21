@@ -417,3 +417,12 @@ they do not qualify a shipped binary, extension revision or all family ownership
 The reconciliation retains memory/disk/embedded distinctions and original-AMOS/
 V1.21 statements, the Amlc marker and seven-bit movement-range questions without
 turning them into source-language forms or validated native-format semantics.
+
+
+Appendix G's complete 20-page index spans 27469–28484; H begins at 28485.
+The same hash-pinned primary extract supplies all 818 retained rows in
+specifications/command-index/. The review baseline is 6091e09. Printed names,
+roles and target locators remain distinct from resolved language surfaces and
+existing definition references. Thirty flagged rows include role/spacing and
+locator conflicts, malformed If/PI# rows and generic Exit/Wait labels that target
+AMAL Autotest. No index wording overrides a definition or qualifies a release.

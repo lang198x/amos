@@ -104,3 +104,15 @@ codec or semantic implementation.
 Lang198x owns source-language analysis and highlighting. Native format codecs
 belong to Format198x, and media construction belongs to Build198x. This review
 creates no codec, media, parser, extension loader or new lexical mode.
+
+
+## Appendix G command index
+
+The complete [command-index review](command-index-review.md) retains all 818 rows
+from 27469–28484 (14.G.01–20). It resolves 702 BASIC references, 33 AMAL references
+and 14 embedded Menu references against existing inventories, keeping 69 Interface
+rows separate. Thirty rows carry source spelling/role/locator/formatting or
+surface findings. Generic Exit/Wait rows target AMAL Autotest; On … Proc is a
+composite of existing tokens. No new aliases, inventory entries, grammar or
+parser behavior follows. BASIC stays 728 across 44 sections. Appendix G is a
+locator, not independent syntax, native or edition evidence.

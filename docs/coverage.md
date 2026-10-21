@@ -709,3 +709,15 @@ labels, stored AMAL/Interface text and packed-image headers from BASIC definitio
 Version-sensitive and suspect layout prose remains documented without inferred
 codec rules. Grammar, parser and published artifacts are unchanged; Marketplace
 availability stays private. No bank, sound or embedded program is executed.
+
+
+## Complete command-index cross-check
+
+All 818 Appendix G rows are reconciled: 702 BASIC, 33 AMAL, 14 embedded Menu
+and 69 Interface references. The latter remain a separate inventory route.
+Thirty flagged rows preserve spelling, role, locator, formatting and surface
+conflicts. Definition-backed references cover the BASIC vocabulary, including
+On … Proc as existing tokens. Generic Exit/Wait entries point to AMAL Autotest.
+No new aliases or grammar behavior follows; BASIC remains 728 entries across
+44 sections. The report and all row records retain their source provenance.
+This bounded audit establishes neither whole-language nor release readiness.

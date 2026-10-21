@@ -1,0 +1,52 @@
+{
+  "title": "AMOS Professional User Guide",
+  "product": "AMOS Professional",
+  "source": "https://gitlab.com/amigasourcecodepreservation/amos-classic-documentation",
+  "held_extract": "amos-pro-user-guide-1992-croucher-hill.txt",
+  "extract_sha256": "b0bf946502ad3ce6534e13d620dd5c017f8f6a6cd7a4c4f99ced87b1d925715c",
+  "extract_lines": [
+    27469,
+    28484
+  ],
+  "baseline_commit": "6091e09e5c57fd54957b275595d56d4e9e54f337",
+  "scope": "Complete index locator reconciliation, not new syntax, aliases, native or edition qualification; Interface rows await a separate inventory",
+  "files": [
+    "14-G-01.json",
+    "14-G-02.json",
+    "14-G-03.json",
+    "14-G-04.json",
+    "14-G-05.json",
+    "14-G-06.json",
+    "14-G-07.json",
+    "14-G-08.json",
+    "14-G-09.json",
+    "14-G-10.json",
+    "14-G-11.json",
+    "14-G-12.json",
+    "14-G-13.json",
+    "14-G-14.json",
+    "14-G-15.json",
+    "14-G-16.json",
+    "14-G-17.json",
+    "14-G-18.json",
+    "14-G-19.json",
+    "14-G-20.json"
+  ],
+  "entries": 818,
+  "surfaces": {
+    "amal": 33,
+    "basic": 702,
+    "interface": 69,
+    "menu": 14
+  },
+  "findings": {
+    "capitalisation": 1,
+    "composite": 1,
+    "locator": 11,
+    "missing-colon": 1,
+    "role": 4,
+    "spelling": 11,
+    "surface-label": 2,
+    "target-decoration": 1
+  }
+}

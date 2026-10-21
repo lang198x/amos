@@ -1049,3 +1049,38 @@ flags. Memory/disk layouts, bank-data labels, stored AMAL/Interface programs,
 original-AMOS/V1.21 claims and suspect marker/range prose stay documentary.
 No memory, file, sound or embedded program operation executes. Parser, versions,
 published 0.2.0 and private Marketplace availability are unchanged.
+
+
+## Complete Appendix G command-index audit
+
+All 818 rows across 20 nonempty ordered pages (27469–28484, 14.G.01–20)
+reproduce from the hash-pinned extract. Retained records resolve 702 BASIC,
+33 AMAL and 14 Menu references, keeping 69 Interface rows separate. Thirty
+flagged rows retain definition-backed conflict routes. No new vocabulary,
+parser or grammar behavior follows; counts remain 728 BASIC entries/44 sections.
+
+Dropping the first retained row makes source replay fail with
+`stale or missing audit: 14-G-01.json` and the package audit fails with
+`817 !== 818`. Restoration passes source replay, all 27 package checks, editor
+sync and Ruff lint/format. Every retained inventory reference resolves by file,
+spelling and role, including legitimate same-spelling records with different
+roles. All six grammar hashes match the pre-change baseline.
+
+Consumer verification remains limited by host load. The first full consumer
+run passed 245/246, failing with `TypeError: Cannot read properties of undefined
+(reading 'startIndex')` in Shiki's explanation path. An isolated unchanged-file
+run passed 4/6, repeating that exception and failing
+`assert.ok(result.stats.uniqueStyles >= 2)`. A diagnostic of the exact first
+source line observed the scope-token pass at 4054 ms with a 500 ms limit,
+`stoppedEarly: true` and one scoped token; the encoded pass completed in 114 ms
+with seven spans. Shiki then crashed while combining unequal passes. Host load
+was approximately 195. No third-party code, deadlines or assertions were changed,
+and unrelated processes were left alone. The second full consumer and fresh
+extracted-render reruns were not attempted after this diagnosis. The style-count
+failure is recorded, not independently assigned a mechanism. No full green
+consumer result is claimed for this audit.
+
+All 18 npm files (including the new report) and nine VSIX source assets match
+source bytes; the extension remains declarative with no public gallery flag.
+Package registration/grammar assets are unchanged. No native operation or
+publication occurred. Versions and private Marketplace availability are unchanged.

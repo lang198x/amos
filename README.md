@@ -113,6 +113,10 @@ those records in preview 0.2.0. Other manual chapters and edition/extension
 qualification remain separate work. See the [remaining-gap review](docs/highlighting-gaps.md)
 for the proposed next sweeps and unresolved surfaces.
 
+The [command-index review](docs/command-index-review.md) reconciles all 818 Appendix G
+rows against the existing inventories, retaining conflicts and separate Interface
+references. It adds no grammar rules or vocabulary.
+
 The [appendix reconciliation](docs/manual-reconciliation.md) records Bell’s explicit
 Music Extension provenance and separates memory-bank layouts from BASIC source.
 It adds no vocabulary, native codec or installed-extension qualification.
