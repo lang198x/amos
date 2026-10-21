@@ -945,3 +945,30 @@ Rol.B command scope. No native numeric/memory operation, width/range rule or
 runtime compatibility is qualified. The Bin$ digit and Btst address passages
 remain documented source questions. Parser, versions, published 0.2.0 preview
 and private Marketplace availability are unchanged; four Copper gaps remain.
+
+
+## Appendix A call/register continuation
+
+Four new forms lacked scopes before implementation. All 28 retained/new Appendix A
+heading/page bindings match the hash-pinned extract. Pload/Call are on 14.A.14;
+Areg/Dreg reserved-variable headings are on 14.A.15. BASIC now has 718 entries
+across 42 partial/full chapter/appendix sections. Read and assignment register
+contexts follow the same classification; assembly and Editor UI remain separate.
+
+All 25 package checks and 234 integrations per existing consumer pass. Both BASIC
+profiles/themes cover calls by bank/address, optional typed arguments, nested
+address queries, register reads/assignments, complete Call Editor and Lib Call
+phrases, identifier boundaries, opaque strings/comments and line recovery.
+Removing the new command rule fails both profiles; restoration and sync pass.
+The initial full-suite failure, `Call=1: "Call" lacks variable.other.amos`, came
+from the earlier accessory missing-form expectation; it now checks CallExtra's
+identifier boundary. A focused DO-as-register expectation was corrected to
+retain the existing BASIC Do command scope.
+
+All 17 npm files and nine VSIX source assets match source bytes. Extracted exports
+render all three modes in both themes, preserve source and retain Pload/Dreg and
+complete Call Editor scopes. The extension remains declarative with no public
+gallery flag. No file is loaded or code executed; ABI, parameter formats,
+relocation, register limits and bank persistence remain unqualified. Parser,
+versions, published 0.2.0 and private Marketplace availability are unchanged.
+Four Copper catalogue gaps remain.

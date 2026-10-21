@@ -368,3 +368,17 @@ Bin$ prose gives 1–31 digits at 25268–69, but the rotation example requests
 qualification; Btst's address passage combines LEEK(value) with an eight-bit
 bound. Retain these as source questions, without inferred widths, counts,
 masking, aliases or native acceptance.
+
+
+Pload and Call bind to Appendix A headings 25897/25918 (14.A.14), and Areg/Dreg
+to 25974/25993 (14.A.15), verified against the same hash-pinned extract. Areg/Dreg
+follow explicit reserved-variable headings in both read and assignment contexts;
+nearby function prose does not override them. The continuation on 14.A.16 adds
+examples rather than another heading. DO in register prose is not a new register
+alias; existing BASIC Do highlighting remains unchanged.
+
+The Inset Program typo at 25801 and subsequent Insert Program references name
+an Editor menu action. Assembly CODE/RTS, literal register names, procedure
+insertion and the SET STACK cross-reference supply no new BASIC definitions.
+Parameter layout, relocation, register transfer/access limits, bank persistence
+and native execution are not qualified by lexical fixtures.

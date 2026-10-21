@@ -7,7 +7,7 @@ import amos3d from '../amos-3d.mjs';
 import { highlighter, assertScope, scopes } from './helpers/highlighter.mjs';
 
 const chapter = JSON.parse(await readFile(new URL('../specifications/manual-core/14-A.json', import.meta.url), 'utf8'));
-const entries = chapter.entries.slice(12);
+const entries = chapter.entries.slice(12, 24);
 assert.equal(entries.length, 12);
 await highlighter.loadLanguage(amos3d);
 const render = (source, lang, theme) => highlighter.codeToTokensBase(source, { lang, theme, includeExplanation: true });

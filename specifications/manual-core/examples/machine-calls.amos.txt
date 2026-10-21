@@ -1,0 +1,11 @@
+Rem Lexical notebook only; no machine code is loaded or executed
+Pload "routine.bin",MC_BANK
+Dreg(0)=MC_INTEGER
+Areg(0)=Varptr(MC_TEXT$)
+Call MC_BANK,MC_INTEGER,MC_REAL#,MC_TEXT$
+MC_ADDRESS=Areg(0) : MC_RESULT=Dreg(0)
+Call MC_ADDRESS
+Call Editor,MC_VALUE
+MC_RETURN=Lib Call(1,MC_OFFSET)
+Print "Call Areg Dreg Pload"
+'Call MC_BANK

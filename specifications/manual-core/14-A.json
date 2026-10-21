@@ -1,6 +1,6 @@
 {
   "chapter": "14.A",
-  "scope": "Partial appendix: twenty-four direct memory, block/address, conversion and bit-operation forms. Machine-code calls and registers remain later work.",
+  "scope": "Twenty-eight memory, block/address, conversion, bit-operation, machine-code call and register forms. Procedure insertion UI, assembly examples and cross-references are not additional BASIC definitions.",
   "entries": [
     {
       "spelling": "Peek",
@@ -169,16 +169,47 @@
       "page": "14.A.11",
       "extract_line": 25745,
       "example": "Bclr 1,BIT_VALUE"
+    },
+    {
+      "spelling": "Pload",
+      "kind": "command",
+      "page": "14.A.14",
+      "extract_line": 25897,
+      "example": "Pload \"routine.bin\",MC_BANK"
+    },
+    {
+      "spelling": "Call",
+      "kind": "command",
+      "page": "14.A.14",
+      "extract_line": 25918,
+      "example": "Call MC_BANK,MC_INTEGER,MC_REAL#,MC_TEXT$"
+    },
+    {
+      "spelling": "Areg",
+      "kind": "reserved",
+      "page": "14.A.15",
+      "extract_line": 25974,
+      "example": "MC_ADDRESS=Areg(0)"
+    },
+    {
+      "spelling": "Dreg",
+      "kind": "reserved",
+      "page": "14.A.15",
+      "extract_line": 25993,
+      "example": "Dreg(0)=MC_INTEGER"
     }
   ],
   "notes": [
     "PEEKS in prose at line 25444 does not override the Peek$ heading/signatures at 25433–36. No Peeks alias is introduced.",
     "Address validity/alignment, numeric widths/signedness, string bounds/stop behavior and original runtime acceptance require separate evidence. No memory read/write executes in the lexical fixtures.",
-    "The arithmetic example at 25391–94 is not adopted as a conversion algorithm. Copy/Fill/Hunt and Varptr have lexical coverage; remaining Appendix A forms require their own inventories.",
+    "The arithmetic example at 25391–94 is not adopted as a conversion algorithm. Copy/Fill/Hunt and Varptr have lexical coverage; machine-code procedure UI and assembly examples remain distinct from BASIC definitions.",
     "Hunt prose at 25489 refers to INSTR$; the existing §5.2 heading is Instr. No Instr$ alias or equivalence of search semantics is inferred.",
     "Range endpoints, overlap/alignment, pattern representation, search results, variable layout/address lifetime and native memory effects remain unqualified.",
     "Rol.B/W/L and Ror.B/W/L are separate sized signatures under the ROL/ROR headings; bare Rol/Ror and undocumented sizes are not added.",
     "The Bin$ digit prose gives 1–31 at 25268–69, while the rotation example uses Bin$(B,32) at 25674. This discrepancy supplies no validated limit. Rotation-as-multiply/divide prose is not adopted as an arithmetic guarantee.",
-    "Btst address prose mentions LEEK(value) alongside an eight-bit bound. Widths, position masking, address interpretation, rotation counts and native results remain unqualified."
+    "Btst address prose mentions LEEK(value) alongside an eight-bit bound. Widths, position masking, address interpretation, rotation counts and native results remain unqualified.",
+    "Areg and Dreg follow the reserved-variable headings at 25974/25993, in both read and assignment contexts. Nearby prose calling them functions does not override that classification.",
+    "Pload/Call examples are lexical only; no file is loaded or machine code executed. Register transfer/access limits, parameter stack layouts, relocation and original runtime acceptance are unqualified.",
+    "Insert Program (including the Inset Program typo at 25801) is an Editor menu action, not a new BASIC instruction. Assembly RTS/CODE/register names and SET STACK cross-reference prose are not newly inventoried definitions."
   ]
 }

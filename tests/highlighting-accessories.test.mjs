@@ -30,7 +30,7 @@ for (const lang of ['amos', 'amos-3d']) {
           check(source, source.split(' ').at(-1), 'variable.other.amos', lang, theme);
         }
       }
-      for (const word of ['Accessory', 'Editor', 'Workbench', 'Call', 'Ask']) check(`${word}=1`, word, 'variable.other.amos', lang, theme);
+      for (const word of ['Accessory', 'Editor', 'Workbench', 'CallExtra', 'Ask']) check(`${word}=1`, word, 'variable.other.amos', lang, theme);
       check('Set Editor', 'Editor', 'variable.other.amos', lang, theme);
       check('Kill Extra', 'Extra', 'variable.other.amos', lang, theme);
       for (const word of ['Call Editor', 'Ask Editor']) {
