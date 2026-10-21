@@ -717,3 +717,26 @@ public gallery flag or executable host. Extracted exports render all three modes
 in both themes, preserve exact source and retain Request Wb's command scope.
 Versions, parser, published preview 0.2.0 and private Marketplace availability
 remain unchanged.
+
+
+## Floating-point reconciliation and Monitor
+
+§11.3 adds no named BASIC definitions or inventory count; its Sin/Cos/Sqr prose
+references reuse §5.3 evidence. The cited reconciliation separates format labels,
+library claims and monitor UI controls from language definitions. §12.3 review
+is limited to catalogue boundaries/editor references, not every catalogue mention.
+
+Monitor's exact heading/page binding adds one entry, bringing BASIC to 665 across
+36 chapters. It lacked command scope before implementation. All 25 package checks
+and 183 integrations per existing consumer pass in both modes/themes. Checks cover
+standalone/colon contexts, label protection, suffixed names, existing maths scopes,
+opaque UI/library payloads and line recovery. Removing the Monitor command rule
+fails both profiles; restoration and editor sync pass. The fresh notebook preserves
+source and emits styled HTML/CSS. No native monitor, numeric result, breakpoint,
+evaluation, stepping or library behavior is qualified.
+
+All 16 npm source files match, including the reconciliation, as do the nine VSIX
+source assets. The VSIX has no public gallery flag or executable host. Extracted
+exports render all three modes in both themes, preserve exact source and retain
+Monitor's command scope. Versions, parser, published preview 0.2.0 and private
+Marketplace availability are unchanged.

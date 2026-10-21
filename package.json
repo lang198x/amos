@@ -37,6 +37,7 @@
     "syntaxes/amos.tmLanguage.json",
     "docs/coverage.md",
     "docs/provenance.md",
+    "docs/manual-reconciliation.md",
     "LICENSE",
     "docs/verification.md"
   ],

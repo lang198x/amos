@@ -288,3 +288,12 @@ The requester slice binds Request Wb/On/Off to exact headings at lines
 Requester Extension section heading at line 20850 supplies the component
 attribution. It is documentary evidence, not an installed binary or release
 qualification. No requester, cancellation or Workbench-state behavior was tested.
+
+
+The floating-point reconciliation reads §11.3's single content page 11.03.01
+(lines 20329–20377) and blank 11.03.02. Its Sin/Cos/Sqr references reuse §5.3
+evidence without duplicate entries. The Monitor record binds the exact heading
+at line 21029 to following page 12.01.01. The full §12.1 chapter distinguishes
+that BASIC definition from the monitor UI. The [reconciliation](manual-reconciliation.md)
+retains the reviewed ranges and a limited §12.3 catalogue-reference boundary.
+No library-performance, debugger UI or native execution evidence is added.

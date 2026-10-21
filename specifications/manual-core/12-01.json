@@ -1,0 +1,16 @@
+{
+  "chapter": "12.01",
+  "entries": [
+    {
+      "spelling": "Monitor",
+      "kind": "command",
+      "page": "12.01.01",
+      "extract_line": 21029,
+      "example": "Monitor"
+    }
+  ],
+  "notes": [
+    "Monitor is explicitly described as a BASIC instruction usable from Direct Mode or program listings. Monitor buttons, shortcuts and UI labels are not additional BASIC definitions.",
+    "Host scope tests do not establish stepping, evaluation, breakpoint behavior, native return-to-program semantics or runtime compatibility."
+  ]
+}

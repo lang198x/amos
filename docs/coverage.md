@@ -11,7 +11,7 @@ The table describes current source.
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 10.1–10.6, 11.1–11.2, 11.4 and 12.2, plus library/equate/structure/device/requester forms from 11.5 and Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 10.1–10.6, 11.1–11.2, 11.4 and 12.1–12.2, plus library/equate/structure/device/requester forms from 11.5 and Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -513,4 +513,21 @@ and AMOS display queries. Strings/comments remain opaque. No requester setting
 is changed, and no visibility, cancellation, Workbench routing or installed release
 is qualified. Dev D0's example mention still needs its own definition-led review;
 coverage of these named headings is not whole-chapter semantic validation.
+The additions remain unreleased.
+
+
+## Floating-point reconciliation and Monitor
+
+[Reconciliation](manual-reconciliation.md) records no new named BASIC definition
+in §11.3. Sin/Cos/Sqr already have §5.3 scopes; Single/Double Precision are format
+labels. Library files, number-format claims and co-processor behavior are not
+new runtime qualifications. No numeric-notation or parser change follows.
+
+Monitor from §12.1 brings BASIC to 665 entries across 36 inventoried chapters.
+It lacked command scope before the change; both profiles/themes now retain its
+command role, including beside colon separators. Monitor lookalikes stay ordinary
+names, while UI labels in strings/comments remain opaque. Buttons and shortcuts
+are not extra BASIC forms. §12.3 catalogue editor references await their own
+definitions; the entire catalogue has not been reconciled. No monitor execution,
+stepping, breakpoint, evaluation or return-to-program behavior is qualified.
 The additions remain unreleased.

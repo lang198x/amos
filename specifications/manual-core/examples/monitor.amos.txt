@@ -1,0 +1,10 @@
+Rem Lexical inspection notebook; no monitor or maths runtime is executed
+Set Double Precision
+MC_ANGLE#=30
+MC_SINE#=Sin(MC_ANGLE#) : MC_COSINE#=Cos(MC_ANGLE#)
+MC_ROOT#=Sqr(9)
+Monitor
+Print MC_ROOT#
+Trap Request On : MC_CODE=Errtrap
+MC_NOTE$="Monitor: INIT VAL; Single Precision"
+' Monitor Sin Cos Sqr
