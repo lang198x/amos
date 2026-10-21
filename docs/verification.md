@@ -1113,3 +1113,31 @@ claim. No standalone Interface mode, string injection, parsing, original executi
 resource access or edition qualification follows. BASIC remains 728 entries
 across 44 sections. Versions, published 0.2.0 and private Marketplace availability
 are unchanged.
+
+## Explicit Shiki early-stop failures
+
+Integration runs now preload test-only instrumentation around both methods of
+that installed TextMate grammar prototype. Any `stoppedEarly` result throws
+`Incomplete Shiki tokenization` before Shiki combines scope and encoded passes.
+The same prototype covers later direct and shiki-highlights instances; controlled
+starvation verifies that route against each existing consumer. An incompatible
+prototype fails installation. This relies on the inspected Shiki implementation,
+not a new production API guarantee. Direct ad hoc test commands must include
+`--import ./tests/helpers/install-tokenization-guard.mjs`; the maintained
+`npm run test:integrations` command includes it automatically.
+
+The guard preserves arguments, receivers, completed results and original errors.
+Neither the 500 ms deadline nor any highlighting assertion is changed. No retry,
+limit disabling, installed dependency edit or upstream bug fix is claimed.
+Controlled clock jumps make each real pass stop early and make each HTML consumer
+reject incomplete output. Omitting the preload makes both controlled tests fail
+with `Missing expected exception` / `Missing expected rejection`, establishing
+that the checks detect the missing protection rather than passing vacuously.
+
+All 32 package checks and editor sync pass. Both full serial consumer suites pass
+248/248: Shiki 4.4.3 with the existing API 1.3.0 and local API 2.0.0 build. These
+runs include all previous 246 checks plus two early-stop controls. The previously
+recorded failures remain valid observations under earlier host load; their
+assertions pass unchanged in these runs. No host-process changes were made.
+All 19 npm source files and nine VSIX source assets match source bytes. No grammar,
+registration, parser, version, publication or private-availability change follows.

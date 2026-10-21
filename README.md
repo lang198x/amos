@@ -197,6 +197,9 @@ npm run check:editor
 Integration tests require existing installations, not hidden downloads. Set
 `AMOS_SHIKI_MODULE` to Shiki's module entry file and `AMOS_HIGHLIGHT_API_MODULE`
 to shiki-highlight-api's ESM entry file, then run `npm run test:integrations`.
+The integration preloader rejects incomplete Shiki tokenization before it can
+count as verification evidence; a timeout remains a failed check. For a single
+test file, retain `node --import ./tests/helpers/install-tokenization-guard.mjs --test tests/highlighting.test.mjs`.
 Missing integrations fail the check; the suite never silently skips them.
 See [verification](docs/verification.md) for versions actually exercised.
 
