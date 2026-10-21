@@ -43,4 +43,4 @@ jobs:
           gh api "repos/lang198x/amos/releases/tags/$RELEASE_TAG" > artifacts/release.json
           gh release download "$RELEASE_TAG" --repo lang198x/amos --dir artifacts
           python3 scripts/verify-preview-release.py "$RELEASE_TAG" artifacts
-          npm publish "artifacts/lang198x-amos-${RELEASE_TAG#v}.tgz" --tag next --access public
+          npm publish "./artifacts/lang198x-amos-${RELEASE_TAG#v}.tgz" --tag next --access public

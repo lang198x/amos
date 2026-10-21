@@ -1290,3 +1290,16 @@ archive sizes, SHA-256 and SHA-512 integrity values without a self-referential
 archive hash. Later evidence-only commits do not replace these retained archives.
 The registry still has latest=0.1.0 and next=0.2.0; 0.3.0 is absent. No Marketplace
 upload or public-availability change occurred.
+
+
+## Trusted preview publication
+
+Seven publication-guard tests pass, including same-size tampering of either
+archive, wrong source/release, draft/stable release rejection, empty evidence
+and a changed checksum file. All 38 package checks and editor sync still pass;
+CI also passes. The first real publication run verified the retained artifacts
+then failed before authentication: `git --no-replace-objects ls-remote
+ssh://git@github.com/artifacts/lang198x-amos-0.3.0.tgz.git`. npm interpreted the
+bare relative path as a repository shorthand. An explicit `./` local archive
+path passes a dry run; the workflow now uses that form. No package was written
+by the failed attempt.
