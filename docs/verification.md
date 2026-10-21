@@ -604,3 +604,22 @@ bytes match with no public flag or executable host, and extracted modes render
 both themes while preserving source. No native transfer, timeout, status or
 installed-release qualification follows. Versions, parser, published preview
 0.2.0 and Marketplace are unchanged.
+
+
+## AREXX integration continuation
+
+Seven §10.6 named headings/page bindings bring BASIC to 629 across 33 chapters.
+The bare Arexx function is distinguished from repeated page headers; all seven
+entries were checked against the pinned extract. None passed complete scopes
+before this change. All 25 package checks and 155 integrations per existing
+consumer pass in both modes/themes. Checks include Arexx/Arexx$ roles, complete
+command/function phrases, typed boundaries, reply variants, nested queries,
+Trap composition, opaque script-like payloads and line recovery. Removing the
+command rule fails the focused suite; restoration and editor sync pass.
+No native process, port, message exchange or script execution is claimed.
+
+Disposable npm/VSIX contents match source, including all grammars, icon and
+configuration, without public flags or executable host code. Extracted modes
+render both themes and retain Arexx$'s function scope. No installed-editor or
+native communication review is claimed. Versions, parser, published preview
+0.2.0 and Marketplace are unchanged.

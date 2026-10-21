@@ -248,3 +248,11 @@ I/O token table. Both Input$ signatures are visible in the source; the manual's
 PARALLEL INPUTS prose does not establish an alias. Pinned source places parallel
 in the same I/O component as serial/printer. That evidence does not qualify
 native device traffic, buffer/pointer behavior, timeouts or installed releases.
+
+
+AREXX integration uses seven exact named headings and following printed-page
+bindings from §10.6, pp.10.06.02–04, in the same pinned extract. The bare Arexx
+function heading is distinguished from repeated page headers. The chapter names
+AMOS-facing functions/commands, not the separate AREXX language. Blank CLI
+example blocks on 10.06.02 are not reconstructed. The fresh fixture is a lexical
+input; no library, process or communication port was accessed.

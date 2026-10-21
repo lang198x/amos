@@ -1,0 +1,10 @@
+Rem Lexical AREXX board; no communication port or script is executed
+MC_READY=Arexx Exist("MC_PORT")
+Arexx Open "MC_PORT"
+Arexx Wait : MC_STATUS=Arexx
+MC_MESSAGE$=Arexx$(0)
+If MC_STATUS=2 Then Arexx Answer 0,"Ready"
+Arexx Answer 0 : Arexx Close
+MC_NOTE$="Arexx Open: ADDRESS MC_PORT; SAY 'Ready'"
+' Arexx Exist Arexx$ Arexx Answer
+MC_AREXX_VALUE=1 : MC_MESSAGE_COUNT=2

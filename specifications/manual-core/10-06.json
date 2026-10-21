@@ -1,0 +1,17 @@
+{
+  "chapter": "10.06",
+  "entries": [
+    {"spelling": "Arexx Open", "kind": "command", "page": "10.06.02", "extract_line": 19770, "example": "Arexx Open \"MC_PORT\""},
+    {"spelling": "Arexx Close", "kind": "command", "page": "10.06.03", "extract_line": 19796, "example": "Arexx Close"},
+    {"spelling": "Arexx Exist", "kind": "function", "page": "10.06.03", "extract_line": 19805, "example": "MC_READY=Arexx Exist(\"MC_PORT\")"},
+    {"spelling": "Arexx Wait", "kind": "command", "page": "10.06.03", "extract_line": 19823, "example": "Arexx Wait"},
+    {"spelling": "Arexx", "kind": "function", "page": "10.06.03", "extract_line": 19831, "example": "MC_STATUS=Arexx"},
+    {"spelling": "Arexx$", "kind": "function", "page": "10.06.04", "extract_line": 19860, "example": "MC_MESSAGE$=Arexx$(0)"},
+    {"spelling": "Arexx Answer", "kind": "command", "page": "10.06.04", "extract_line": 19870, "example": "Arexx Answer 0,\"Ready\""}
+  ],
+  "notes": [
+    "The chapter distinguishes AMOS integration from the separate AREXX language. Port names, command messages and return strings remain opaque.",
+    "The held extract has blank CLI example blocks on 10.06.02; no missing shell or script command is reconstructed.",
+    "Startup Exec and Ask/Call Editor references are not named definitions here and remain later inventory work. OS libraries, message indexes/status values, response obligations and native availability are not validated."
+  ]
+}

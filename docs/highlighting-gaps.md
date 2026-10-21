@@ -1,8 +1,8 @@
 # Remaining highlighting work
 
 The approved sequence is complete: **§7.7 Icons and Blocks**, **§11.1 Fonts**,
-then **§12.2 Error Handling**. Current BASIC coverage is 622 chapter entries across
-32 chapters, including the subsequent printer/general-port sweep. The audit baseline and representative probes below retain their
+then **§12.2 Error Handling**. Current BASIC coverage is 629 chapter entries across
+33 chapters, including the subsequent printer/general-port sweep. The audit baseline and representative probes below retain their
 pre-implementation results; the completion record follows them. Publication
 remains separate.
 
@@ -104,7 +104,7 @@ Uninventoried sections need explicit review; they are not silently excluded from
 | --- | --- |
 | §§9.1–9.4 Interface | Separate BASIC Dialog/resource controls from the embedded Interface language. Inventory both before deciding any standalone mode or string injection. The existing AMAL mode is not Interface coverage. |
 | §§10.3–10.5 device I/O | Printer/general-port, serial and parallel lexical sweeps are complete. The [boundary review](io-extension-boundary.md) records source-resolved spelling/component provenance and remaining semantic/release limits. |
-| §10.6 AREXX | BASIC integration commands and external script payload boundaries; no AREXX language implementation is implied. |
+| §10.6 AREXX | Seven AMOS-facing forms now have lexical coverage. External script payloads remain strings; startup Exec and editor control references remain later definition-led work. No AREXX language implementation is implied. |
 | §11.3 floating point | Reconcile repeated precision/maths vocabulary with existing §5.3; distinguish library/number-representation facts from missing lexical forms. |
 | §11.4 multitasking | AMOS front/back/lock, waiting and inter-program communication forms. |
 | §11.5 libraries/devices | Calls, bases, equates, structure access and requester/device forms. Keep the manual's Requester Extension boundary explicit. |

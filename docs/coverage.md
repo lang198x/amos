@@ -11,7 +11,7 @@ The table describes current source.
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 10.1–10.5, 11.1–11.2 and 12.2, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 10.1–10.6, 11.1–11.2 and 12.2, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -441,3 +441,15 @@ Source corroborates component grouping and optional argument contexts, without
 qualifying default installations, blocking, timeouts or status values. Fresh
 examples preserve strings/comments and existing serial/printer roles. No devices
 are accessed. These additions remain unreleased.
+
+
+## AREXX integration
+
+Seven §10.6 entries bring BASIC to 629 across 33 chapters. None passed complete
+scopes before the change; all now pass in both modes/themes. Arexx Open/Close/
+Wait/Answer are commands; Arexx Exist, Arexx and Arexx$ are functions. Complete
+phrases, dollars and identifier boundaries retain their scopes beside existing
+port and error controls. The fresh listing preserves port names and script-like
+payloads as strings. No process, message port or script is executed. Exec startup
+and editor-integration references need their own later definitions. OS/library
+availability and message protocols remain unqualified. Coverage is unreleased.
