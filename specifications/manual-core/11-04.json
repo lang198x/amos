@@ -1,0 +1,20 @@
+{
+  "chapter": "11.04",
+  "entries": [
+    {"spelling": "Multi Wait", "kind": "command", "page": "11.04.01", "extract_line": 20396, "example": "Multi Wait"},
+    {"spelling": "Amos To Back", "kind": "command", "page": "11.04.01", "extract_line": 20409, "example": "Amos To Back"},
+    {"spelling": "Amos To Front", "kind": "command", "page": "11.04.01", "extract_line": 20416, "example": "Amos To Front"},
+    {"spelling": "Amos Lock", "kind": "command", "page": "11.04.01", "extract_line": 20423, "example": "Amos Lock"},
+    {"spelling": "Amos Unlock", "kind": "command", "page": "11.04.02", "extract_line": 20439, "example": "Amos Unlock"},
+    {"spelling": "Amos Here", "kind": "function", "page": "11.04.02", "extract_line": 20446, "example": "MC_FRONT=Amos Here"},
+    {"spelling": "Prun", "kind": "command", "page": "11.04.02", "extract_line": 20457, "example": "Prun \"MC_CHILD.AMOS\""},
+    {"spelling": "Prg Under", "kind": "function", "page": "11.04.03", "extract_line": 20522, "example": "MC_PARENT=Prg Under"},
+    {"spelling": "Exec", "kind": "command", "page": "11.04.04", "extract_line": 20546, "example": "Exec \"Echo Ready\",\"NIL:\""},
+    {"spelling": "Prg State", "kind": "function", "page": "11.04.04", "extract_line": 20569, "example": "MC_MODE=Prg State"}
+  ],
+  "notes": [
+    "The Prun prose prints COMMAND LINES; existing heading/signature evidence establishes Command Line$. No Lines alias is introduced.",
+    "The Exec heading shows command and output arguments; the AREXX chapter shows Exec with one argument. Both are lexical contexts here, not qualified argument overloads.",
+    "Multi Wait is explicitly distinct from accurate screen synchronisation. Timing, task/display state, program lifecycle, process results and file/bank effects remain unqualified."
+  ]
+}

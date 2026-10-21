@@ -256,3 +256,11 @@ function heading is distinguished from repeated page headers. The chapter names
 AMOS-facing functions/commands, not the separate AREXX language. Blank CLI
 example blocks on 10.06.02 are not reconstructed. The fresh fixture is a lexical
 input; no library, process or communication port was accessed.
+
+
+Multitasking uses ten exact named headings and following printed-page bindings
+from §11.4, pp.11.04.01–04, in the pinned extract. COMMAND LINES in the Prun prose
+is retained as a discrepancy beside the existing Command Line$ evidence. Exec's
+signature supplies command/output strings while §10.6 shows a one-argument startup
+example; neither context establishes native arity acceptance here. The authored
+multitasking fixture is a lexical input with no scheduler or process execution.

@@ -623,3 +623,28 @@ configuration, without public flags or executable host code. Extracted modes
 render both themes and retain Arexx$'s function scope. No installed-editor or
 native communication review is claimed. Versions, parser, published preview
 0.2.0 and Marketplace are unchanged.
+
+
+## Multitasking continuation
+
+Ten §11.4 heading/page bindings bring BASIC to 639 entries across 34 chapters.
+None passed complete scopes before the change. All 25 package checks and 161
+integrations per existing consumer pass in both modes/themes. Checks cover all
+ten forms, typed boundaries, nested queries, Trap composition, Exec command/output
+strings, existing AREXX/bank vocabulary and line recovery. Removing the command
+rule fails the focused suite; restoration and editor sync pass. No native process,
+program, device, scheduler or display-state behavior is qualified.
+
+Parallel file workers intermittently exposed Shiki 4.4.3's explanation error:
+`Cannot read properties of undefined (reading 'startIndex')`. Inspection found
+separate scope/encoded tokenisation passes with a default 500 ms deadline. A
+controlled 1 ms diagnostic observed scope-tokenisation `stoppedEarly` and reproduced
+the same exception. Full suites pass with one file worker per run; the integration
+command now bounds concurrency without removing tests or changing the deadline.
+No third-party installation or dependency was changed.
+
+Disposable npm and VSIX contents match source bytes, including all grammars and
+editor assets. The VSIX has no public gallery flag or executable host. Extracted
+npm exports render AMOS, AMOS + 3D and AMAL in both themes, preserve exact source
+and retain Prg State's function scope. Versions, parser, published preview 0.2.0
+and private Marketplace availability are unchanged.

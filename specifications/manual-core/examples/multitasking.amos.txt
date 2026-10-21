@@ -1,0 +1,13 @@
+Rem Lexical task board; no program or CLI command is executed
+MC_FRONT=Amos Here : MC_PARENT=Prg Under : MC_MODE=Prg State
+Multi Wait
+Amos Lock : Amos Unlock
+Amos To Back
+Exec "Echo Ready","NIL:"
+Amos To Front
+Trap Prun "MC_CHILD.AMOS"
+MC_CODE=Errtrap : MC_RESULT=Param
+Command Line$="stage=2" : Bgrab 10
+If Arexx Exist("REXX")=0 Then Trap Exec "RexxMast"
+MC_NOTE$="Amos To Front: Exec Echo; Prg State"
+' Multi Wait Prun Amos Here

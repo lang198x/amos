@@ -11,7 +11,7 @@ The table describes current source.
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 10.1–10.6, 11.1–11.2 and 12.2, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 10.1–10.6, 11.1–11.2, 11.4 and 12.2, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -451,5 +451,20 @@ Wait/Answer are commands; Arexx Exist, Arexx and Arexx$ are functions. Complete
 phrases, dollars and identifier boundaries retain their scopes beside existing
 port and error controls. The fresh listing preserves port names and script-like
 payloads as strings. No process, message port or script is executed. Exec startup
-and editor-integration references need their own later definitions. OS/library
-availability and message protocols remain unqualified. Coverage is unreleased.
+is covered by §11.4 below; editor-integration references need their own later
+definitions. OS/library availability and message protocols remain unqualified.
+Coverage is unreleased.
+
+
+## Multitasking and inter-program communication
+
+Ten §11.4 entries bring BASIC to 639 across 34 chapters. None passed complete
+scopes before the change; all pass in both modes/themes. Multi Wait, Amos display/
+toggle controls, Prun and Exec have command scopes; Amos Here and Prg Under/State
+are functions. Exec completes the startup-command vocabulary referenced by AREXX.
+Ask/Call Editor references remain later work at their own definitions.
+
+The fresh listing checks command/output strings and status queries beside existing
+AREXX, Trap, Param, Command Line$ and Bgrab forms. No process, program or device is
+launched, and no display/system setting is changed. Timing, task state, lifecycle
+and native parameter effects remain unqualified. These additions are unreleased.
