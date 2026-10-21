@@ -1,8 +1,8 @@
 # Remaining highlighting work
 
 The approved sequence is complete: **§7.7 Icons and Blocks**, **§11.1 Fonts**,
-then **§12.2 Error Handling**. Current BASIC coverage is 671 chapter entries across
-38 inventoried chapters/appendix sections, including the subsequent printer/general-port sweep. The audit baseline and representative probes below retain their
+then **§12.2 Error Handling**. Current BASIC coverage is 677 chapter entries across
+40 partially or fully inventoried chapter/appendix sections, including the subsequent printer/general-port sweep. The audit baseline and representative probes below retain their
 pre-implementation results; the completion record follows them. Publication
 remains separate.
 
@@ -102,13 +102,13 @@ Uninventoried sections need explicit review; they are not silently excluded from
 
 | Route | Remaining review |
 | --- | --- |
-| §§9.1–9.4 Interface | Separate BASIC Dialog/resource controls from the embedded Interface language. Inventory both before deciding any standalone mode or string injection. The existing AMAL mode is not Interface coverage. |
+| §§9.1–9.4 Interface | Six BASIC entry points from §§9.1/9.3 now have lexical coverage. Zone values, Array, update/freeze/clear and §9.4 resource controls remain. Embedded Interface stays opaque; inventory it separately before deciding a mode or string injection. |
 | §§10.3–10.5 device I/O | Printer/general-port, serial and parallel lexical sweeps are complete. The [boundary review](io-extension-boundary.md) records source-resolved spelling/component provenance and remaining semantic/release limits. |
-| §10.6 AREXX | Seven AMOS-facing forms now have lexical coverage. External script payloads remain strings; startup Exec is now covered by §11.4; editor control references remain later definition-led work. No AREXX language implementation is implied. |
+| §10.6 AREXX | Seven AMOS-facing forms now have lexical coverage. External script payloads remain strings; startup Exec is now covered by §11.4; Ask/Call Editor are covered from their §13.1 definitions. No AREXX language implementation is implied. |
 | §11.3 floating point | [Reconciled](manual-reconciliation.md): existing §5.3 covers Sin/Cos/Sqr and Set Double Precision. No new named definition or extra inventory count; library/number-format facts remain separate. |
 | §11.4 multitasking | Ten task/display, waiting, program/CLI and status-query forms now have lexical coverage. Timing, lifecycle and process effects remain unqualified. |
 | §11.5 libraries/devices | Thirteen library/equate/structure forms and nine device forms now have lexical coverage. The three requester controls on p.11.05.06 now have lexical coverage with explicit manual-labelled Requester Extension attribution. Dev D0's example mention awaits its own definition-led review. |
-| §§12.1 and 12.3 monitor/errors | Monitor from §12.1 now has lexical coverage. Buttons/shortcuts are UI controls. The complete [catalogue vocabulary review](error-catalogue-review.md) records an original 17-gap baseline; five §13.1 forms and Appendix B’s Kill Editor are now covered; eleven gaps remain. Spelling conflicts and embedded/UI vocabulary stay distinct. |
+| §§12.1 and 12.3 monitor/errors | Monitor from §12.1 now has lexical coverage. Buttons/shortcuts are UI controls. The complete [catalogue vocabulary review](error-catalogue-review.md) records an original 17-gap baseline; five §13.1 forms, Kill Editor and three Interface entry points are now covered; eight gaps remain. Spelling conflicts and embedded/UI vocabulary stay distinct. |
 | §§1–4 and 13 installation/editor/accessories | Five §13.1 forms now have lexical coverage: Set Accessory, Call/Ask Editor and Close Workbench/Editor. Review other examples and editor/direct-mode facilities at their own definitions; menus/shortcuts are not automatically BASIC instructions. |
 | Appendix A machine code | Conversion, memory, bit operations, machine-code calls and registers; substantial BASIC vocabulary remains outside the current inventory. |
 | Appendix C PAL/NTSC | Reconcile display queries and timing vocabulary against screen chapters. |

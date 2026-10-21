@@ -1,0 +1,19 @@
+{
+  "chapter": "09.01",
+  "scope": "Partial chapter: BASIC-facing dialogue entry points only. Embedded Interface instructions/functions are not BASIC vocabulary.",
+  "entries": [
+    {
+      "spelling": "Dialog Box",
+      "kind": "function",
+      "page": "09.01.06",
+      "extract_line": 15599,
+      "example": "MC_BUTTON=Dialog Box(MC_UI$)"
+    }
+  ],
+  "notes": [
+    "Dialog Box, Dialog Run, Edialog and Dialog retain function roles; Dialog Open/Close are instructions. Later prose calling a function a command does not override its definition.",
+    "Interface programs and their significant capitals, separators, registers, labels and embedded commands stay opaque inside BASIC strings.",
+    "Zone queries/values (Rdialog/Rdialog$/Vdialog/Vdialog$), Array and Dialog Update/Freeze/Unfreeze/Clr remain later §9.3 work; resource controls remain §9.4 work.",
+    "Channel validity, optional parameter semantics, status/error results, event handling and original execution are unqualified."
+  ]
+}

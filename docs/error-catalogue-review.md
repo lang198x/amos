@@ -3,9 +3,9 @@
 The complete Professional §12.3 catalogue, pp.12.03.01–22 (extract lines
 21473–22628), has been reviewed. It supplies references and spelling conflicts,
 not additional instruction definitions. The review baseline was 665 entries
-across 36 chapters at `5b7d6f2`; the review itself changed no grammar. Current source covers the five §13.1 follow-ups and Appendix B’s Kill Editor,
-bringing BASIC to 671 entries across 38 chapters/appendix sections, with eleven
-of the original 17 gaps remaining. Parser behavior is unchanged.
+across 36 chapters at `5b7d6f2`; the review itself changed no grammar. Current source covers five §13.1 follow-ups, Kill Editor and the three
+Interface follow-ups, bringing BASIC to 677 entries across 40 partial/full chapter
+and appendix sections, with eight of the original 17 gaps remaining. Parser behavior is unchanged.
 
 The [source record](../specifications/manual-core/source.json) identifies the
 held extract and SHA-256. Line numbers count newlines, preserving formfeeds.
@@ -42,8 +42,8 @@ vocabulary, not validation of error codes, recovery advice or runtime semantics.
 ## Definition-led follow-ups
 
 These 17 referenced forms have named definitions elsewhere in the held manual
-and lacked complete expected scopes at the review baseline. Five §13.1 forms and
-Appendix B’s Kill Editor are now covered; the other eleven remain. Heading lines
+and lacked complete expected scopes at the review baseline. Five §13.1 forms,
+Kill Editor and three Interface entry points are now covered; eight remain. Heading lines
 below locate the definitions; remaining forms still need a bounded inventory
 of their signatures and surrounding context before implementation.
 
@@ -56,8 +56,9 @@ of their signatures and surrounding context before implementation.
 | Appendix F Copper | Copper Off 27304; Cop Move 27380; Cop Movel 27389; Cop Swap 27445 | 22071–72, 22233 |
 
 §13.1’s five forms and Kill Editor are now covered from their own headings,
-with Appendix B’s runtime conditions retained separately. Interface, memory
-access and Copper remain their own existing routes.
+with Appendix B’s runtime conditions retained separately. The three Interface
+follow-ups are now covered from their §9.3 definitions, with embedded Interface
+kept separate. Memory access and Copper remain their existing routes.
 Neither this ordering nor the gap probes commission native execution.
 
 ## Spelling and context discrepancies

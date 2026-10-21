@@ -805,3 +805,26 @@ All 17 npm source files and nine VSIX source assets match, with no public galler
 flag or executable host. Extracted exports render all three modes in both themes,
 preserve exact source and retain Kill Editor's command scope. Versions, parser,
 published preview 0.2.0 and private Marketplace availability are unchanged.
+
+
+## Interface-facing BASIC dialogue entry points
+
+Six exact heading/page bindings from §§9.1/9.3 match the pinned extract. All six
+lacked complete expected scopes before implementation. BASIC now has 677 entries
+across 40 partial/full chapter/appendix sections. Dialog Box/Run, Edialog and Dialog
+are functions; Open/Close are commands. Three further catalogue gaps are covered,
+leaving eight of its original seventeen. The embedded Interface language remains
+opaque, with no standalone mode or string injection.
+
+All 25 package checks and 202 integrations per existing consumer pass in both
+profiles/themes. Checks cover complete/partial phrases, typed and label boundaries,
+nested queries, close/signature variants, Trap/Request/error composition, opaque
+Interface payloads and line recovery. Removing the dialogue command rule fails
+both profiles; restoration and editor sync pass. The fresh notebook preserves
+source and emits styled HTML/CSS. No channel validity, event/status/error result,
+parameter meaning, timing or native UI execution is qualified.
+
+All 17 npm source files and nine VSIX source assets match, with no public gallery
+flag or executable host. Extracted exports render all three modes in both themes,
+preserve exact source and retain Dialog Run's function scope. Versions, parser,
+published preview 0.2.0 and private Marketplace availability remain unchanged.

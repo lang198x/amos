@@ -11,7 +11,7 @@ The table describes current source.
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 10.1–10.6, 11.1–11.2, 11.4, 12.1–12.2 and five §13.1 accessory/configuration forms and Appendix B’s Kill Editor, plus library/equate/structure/device/requester forms from 11.5 and Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, six BASIC entry points from 9.1/9.3, 10.1–10.6, 11.1–11.2, 11.4, 12.1–12.2 and five §13.1 accessory/configuration forms and Appendix B’s Kill Editor, plus library/equate/structure/device/requester forms from 11.5 and Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -451,8 +451,7 @@ Wait/Answer are commands; Arexx Exist, Arexx and Arexx$ are functions. Complete
 phrases, dollars and identifier boundaries retain their scopes beside existing
 port and error controls. The fresh listing preserves port names and script-like
 payloads as strings. No process, message port or script is executed. Exec startup
-is covered by §11.4 below; editor-integration references need their own later
-definitions. OS/library availability and message protocols remain unqualified.
+is covered by §11.4 below; Ask/Call Editor are covered by their §13.1 definitions. OS/library availability and message protocols remain unqualified.
 Coverage is unreleased.
 
 
@@ -462,7 +461,7 @@ Ten §11.4 entries bring BASIC to 639 across 34 chapters. None passed complete
 scopes before the change; all pass in both modes/themes. Multi Wait, Amos display/
 toggle controls, Prun and Exec have command scopes; Amos Here and Prg Under/State
 are functions. Exec completes the startup-command vocabulary referenced by AREXX.
-Ask/Call Editor references remain later work at their own definitions.
+Ask/Call Editor have separate §13.1 coverage below.
 
 The fresh listing checks command/output strings and status queries beside existing
 AREXX, Trap, Param, Command Line$ and Bgrab forms. No process, program or device is
@@ -528,8 +527,8 @@ It lacked command scope before the change; both profiles/themes now retain its
 command role, including beside colon separators. Monitor lookalikes stay ordinary
 names, while UI labels in strings/comments remain opaque. Buttons and shortcuts
 are not extra BASIC forms. The full [§12.3 catalogue review](error-catalogue-review.md)
-routes vocabulary to existing coverage and definitions; its original 17-gap baseline now has five §13.1 forms plus Kill Editor covered and eleven
-gaps remaining. No monitor execution,
+routes vocabulary to existing coverage and definitions; its original 17-gap baseline now has five §13.1 forms, Kill Editor and three Interface entry points covered; eight
+gaps remain. No monitor execution,
 stepping, breakpoint, evaluation or return-to-program behavior is qualified.
 The additions remain unreleased.
 
@@ -561,3 +560,19 @@ The manual requires configuration enablement and excludes accessory/Prun-launche
 programs. The notebook executes none of these operations. Eligibility, editor
 unload, warm-start/session restoration, memory effects and runtime distribution
 remain unqualified. The addition is unreleased.
+
+
+## Interface-facing BASIC dialogue entry points
+
+Six forms from partial §§9.1/9.3 inventories bring BASIC to 677 entries across
+40 chapter/appendix sections. Dialog Open/Close are commands; Dialog Box/Run,
+Edialog and Dialog are functions. Longer phrases win over the Dialog status
+query; bare function labels and typed lookalikes retain their intended boundaries.
+
+Interface programs remain opaque strings, including significant capitals,
+separators, quoted payloads and embedded commands. The mixed notebook checks
+Trap, nested queries and existing Request/error forms without opening a native
+UI. Channel validity, parameter meanings, event/status/error results and timing
+remain unqualified. Zone/value queries, Array, update/freeze/clear and resource
+controls remain later work, as does any embedded Interface lexical mode.
+These additions are unreleased.

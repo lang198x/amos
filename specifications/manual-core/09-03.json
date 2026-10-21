@@ -1,0 +1,47 @@
+{
+  "chapter": "09.03",
+  "scope": "Partial chapter: BASIC-facing dialogue entry points only. Embedded Interface instructions/functions are not BASIC vocabulary.",
+  "entries": [
+    {
+      "spelling": "Dialog Open",
+      "kind": "command",
+      "page": "09.03.01",
+      "extract_line": 16573,
+      "example": "Dialog Open 1,MC_UI$"
+    },
+    {
+      "spelling": "Dialog Run",
+      "kind": "function",
+      "page": "09.03.02",
+      "extract_line": 16608,
+      "example": "MC_BUTTON=Dialog Run(1)"
+    },
+    {
+      "spelling": "Dialog Close",
+      "kind": "command",
+      "page": "09.03.02",
+      "extract_line": 16651,
+      "example": "Dialog Close 1"
+    },
+    {
+      "spelling": "Edialog",
+      "kind": "function",
+      "page": "09.03.03",
+      "extract_line": 16672,
+      "example": "MC_POSITION=Edialog"
+    },
+    {
+      "spelling": "Dialog",
+      "kind": "function",
+      "page": "09.03.03",
+      "extract_line": 16688,
+      "example": "MC_BUTTON=Dialog(1)"
+    }
+  ],
+  "notes": [
+    "Dialog Box, Dialog Run, Edialog and Dialog retain function roles; Dialog Open/Close are instructions. Later prose calling a function a command does not override its definition.",
+    "Interface programs and their significant capitals, separators, registers, labels and embedded commands stay opaque inside BASIC strings.",
+    "Zone queries/values (Rdialog/Rdialog$/Vdialog/Vdialog$), Array and Dialog Update/Freeze/Unfreeze/Clr remain later §9.3 work; resource controls remain §9.4 work.",
+    "Channel validity, optional parameter semantics, status/error results, event handling and original execution are unqualified."
+  ]
+}

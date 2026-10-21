@@ -313,3 +313,11 @@ Kill Editor binds to the exact heading at line 26057 and following printed page
 conditions and describes unload/restoration effects. The [Set Editor] mention
 at 26084 is explicitly a menu option, not a language definition. No native
 execution, media build, eligibility or distribution qualification is added.
+
+
+The first Interface-facing BASIC slice binds Dialog Box to §9.1 p.09.01.06
+(line 15599), then Dialog Open/Run/Close, Edialog and Dialog to exact §9.3
+headings on pp.09.03.01–03. Roles follow definition headings: Open/Close are
+instructions; the other four are functions. Both chapter inventories are partial
+and keep embedded Interface vocabulary distinct. No channel/event/native UI
+behavior is qualified by the authored lexical notebook.

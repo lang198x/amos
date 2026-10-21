@@ -1,0 +1,12 @@
+Rem Lexical dialogue notebook; no Interface program or UI is executed
+MC_UI$="BA 10,10;SI 120,40;PR 4,4,'Ready',2;EXit;"
+MC_BUTTON=Dialog Box(MC_UI$)
+Trap Dialog Open 1,MC_UI$
+MC_BUTTON=Dialog Run(1)
+MC_BUTTON=Dialog(1)
+MC_POSITION=Edialog
+MC_LAST=Max(0,Dialog(1))
+Dialog Close 1 : Dialog Close
+Request On : MC_CODE=Errtrap
+MC_NOTE$="Dialog Open: ED 1; VA; RunUntil; Dialog Box"
+' Dialog Run Dialog Close Edialog
