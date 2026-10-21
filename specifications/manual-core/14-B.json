@@ -1,0 +1,17 @@
+{
+  "chapter": "14.B",
+  "entries": [
+    {
+      "spelling": "Kill Editor",
+      "kind": "command",
+      "page": "14.B.01",
+      "extract_line": 26057,
+      "example": "Kill Editor"
+    }
+  ],
+  "notes": [
+    "Appendix B p.14.B.02 (lines 26069–85) requires configuration enablement and excludes accessories and programs launched by Prun. These are documentary conditions, not native eligibility checks.",
+    "Set Editor at line 26084 is explicitly a configuration menu option, not a BASIC alias.",
+    "The warm-start, memory removal and Editor reload/session-restoration description at lines 26074–82 is retained as manual context, not host-test evidence. No runtime media or distribution/license qualification is added."
+  ]
+}

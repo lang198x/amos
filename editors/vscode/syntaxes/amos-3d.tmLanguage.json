@@ -90,6 +90,10 @@
       "patterns": [
         {
           "name": "keyword.control.amos",
+          "match": "(?i:(?<![A-Za-z0-9_$#])Kill[ \\t]+Editor(?![A-Za-z0-9_$#]))"
+        },
+        {
+          "name": "keyword.control.amos",
           "match": "(?i:(?<![A-Za-z0-9_$#])(?:Set[ \\t]+Accessory|(?:Call|Ask)[ \\t]+Editor|Close[ \\t]+(?:Workbench|Editor))(?![A-Za-z0-9_$#]))"
         },
         {

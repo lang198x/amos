@@ -305,4 +305,11 @@ p.13.01.01, Ask Editor to p.13.01.02 and Close Workbench/Editor to p.13.01.07.
 Ask Editor is labelled instruction with statement signatures. Set Editor in
 §12.3 remains a discrepancy against Set Accessory; it creates no alias. Function
 IDs/parameters and native editor or Workbench effects remain unqualified.
-Kill Editor retains its separate Appendix B definition and is not included here.
+Kill Editor has the separate Appendix B record described below.
+
+
+Kill Editor binds to the exact heading at line 26057 and following printed page
+14.B.01. Context at lines 26069–85 on 14.B.02 supplies configuration/eligibility
+conditions and describes unload/restoration effects. The [Set Editor] mention
+at 26084 is explicitly a menu option, not a language definition. No native
+execution, media build, eligibility or distribution qualification is added.

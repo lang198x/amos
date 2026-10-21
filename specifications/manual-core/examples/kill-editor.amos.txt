@@ -1,0 +1,9 @@
+Rem Lexical runtime notebook; no editor or configuration is changed
+MC_STATE=Prg State
+Kill Editor
+Print "Runtime notebook"
+Close Editor : Close Workbench
+Ask Editor MC_FUNCTION
+Kill "RAM:MC_TEMP.TXT"
+MC_NOTE$="Kill Editor: [Set Editor]; Prg State"
+' Kill Editor Close Editor

@@ -1,8 +1,8 @@
 # Remaining highlighting work
 
 The approved sequence is complete: **§7.7 Icons and Blocks**, **§11.1 Fonts**,
-then **§12.2 Error Handling**. Current BASIC coverage is 670 chapter entries across
-37 inventoried chapters, including the subsequent printer/general-port sweep. The audit baseline and representative probes below retain their
+then **§12.2 Error Handling**. Current BASIC coverage is 671 chapter entries across
+38 inventoried chapters/appendix sections, including the subsequent printer/general-port sweep. The audit baseline and representative probes below retain their
 pre-implementation results; the completion record follows them. Publication
 remains separate.
 
@@ -108,12 +108,12 @@ Uninventoried sections need explicit review; they are not silently excluded from
 | §11.3 floating point | [Reconciled](manual-reconciliation.md): existing §5.3 covers Sin/Cos/Sqr and Set Double Precision. No new named definition or extra inventory count; library/number-format facts remain separate. |
 | §11.4 multitasking | Ten task/display, waiting, program/CLI and status-query forms now have lexical coverage. Timing, lifecycle and process effects remain unqualified. |
 | §11.5 libraries/devices | Thirteen library/equate/structure forms and nine device forms now have lexical coverage. The three requester controls on p.11.05.06 now have lexical coverage with explicit manual-labelled Requester Extension attribution. Dev D0's example mention awaits its own definition-led review. |
-| §§12.1 and 12.3 monitor/errors | Monitor from §12.1 now has lexical coverage. Buttons/shortcuts are UI controls. The complete [catalogue vocabulary review](error-catalogue-review.md) records an original 17-gap baseline; five §13.1 forms are now covered and twelve gaps remain. Spelling conflicts and embedded/UI vocabulary stay distinct. |
+| §§12.1 and 12.3 monitor/errors | Monitor from §12.1 now has lexical coverage. Buttons/shortcuts are UI controls. The complete [catalogue vocabulary review](error-catalogue-review.md) records an original 17-gap baseline; five §13.1 forms and Appendix B’s Kill Editor are now covered; eleven gaps remain. Spelling conflicts and embedded/UI vocabulary stay distinct. |
 | §§1–4 and 13 installation/editor/accessories | Five §13.1 forms now have lexical coverage: Set Accessory, Call/Ask Editor and Close Workbench/Editor. Review other examples and editor/direct-mode facilities at their own definitions; menus/shortcuts are not automatically BASIC instructions. |
 | Appendix A machine code | Conversion, memory, bit operations, machine-code calls and registers; substantial BASIC vocabulary remains outside the current inventory. |
 | Appendix C PAL/NTSC | Reconcile display queries and timing vocabulary against screen chapters. |
 | Appendix F Copper | BASIC Copper controls and queries; hardware behaviour remains a separate claim. |
-| Appendices B, D and E | Review runtime distribution, extension boundaries and bank-layout reference material for additional forms; format layouts do not become parser rules. |
+| Appendices B, D and E | Kill Editor from Appendix B now has lexical coverage. Review other runtime distribution, extension boundaries and bank-layout reference material for additional forms; format layouts do not become parser rules. |
 | Appendix G command index | Final crosscheck for missed names, aliases and roles after chapter inventories. It is a locator, not sufficient syntax or edition evidence by itself. |
 | Appendices H and I | Distribution/support reference; check any language mentions during final reconciliation, without treating catalogue entries as commands. |
 

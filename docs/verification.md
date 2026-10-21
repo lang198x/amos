@@ -783,3 +783,25 @@ All 17 npm source files and nine VSIX source assets match. The VSIX has no publi
 gallery flag or executable host. Extracted exports render all three modes in both
 themes, preserve exact source and retain Ask Editor's command scope. Versions,
 parser, published preview 0.2.0 and private Marketplace availability are unchanged.
+
+
+## Appendix B Kill Editor continuation
+
+Kill Editor's exact heading binds to 14.B.01; configuration/eligibility context
+at lines 26069–85 binds to 14.B.02 in the pinned extract. Citation validation
+accepts this explicit appendix page format. The phrase lacked complete command
+scope before implementation. BASIC now has 671 entries across 38 chapter/appendix
+sections; six original catalogue gaps are covered and eleven remain.
+
+All 25 package checks and 195 integrations per existing consumer pass in both
+profiles/themes. Checks cover case/tab/colon contexts, phrase suffixes, file Kill,
+previous editor forms, Prg State, opaque payloads and line recovery. Removing
+the runtime-phrase rule fails both profiles despite bare Kill still highlighting;
+restoration and editor sync pass. The fresh notebook preserves source and emits
+styled HTML/CSS. No native configuration, eligibility, unload, warm-start/session
+restoration, memory effect or runtime distribution is qualified.
+
+All 17 npm source files and nine VSIX source assets match, with no public gallery
+flag or executable host. Extracted exports render all three modes in both themes,
+preserve exact source and retain Kill Editor's command scope. Versions, parser,
+published preview 0.2.0 and private Marketplace availability are unchanged.

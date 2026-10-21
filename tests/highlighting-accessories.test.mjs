@@ -32,7 +32,7 @@ for (const lang of ['amos', 'amos-3d']) {
       }
       for (const word of ['Accessory', 'Editor', 'Workbench', 'Call', 'Ask']) check(`${word}=1`, word, 'variable.other.amos', lang, theme);
       check('Set Editor', 'Editor', 'variable.other.amos', lang, theme);
-      check('Kill Editor', 'Editor', 'variable.other.amos', lang, theme);
+      check('Kill Extra', 'Extra', 'variable.other.amos', lang, theme);
       for (const word of ['Call Editor', 'Ask Editor']) {
         for (const args of ['MC_FUNCTION', 'MC_FUNCTION,MC_VALUE,MC_TEXT$']) check(`${word} ${args}`, word, 'keyword.control.amos', lang, theme);
       }
