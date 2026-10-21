@@ -11,7 +11,7 @@ The table describes current source.
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 10.1–10.6, 11.1–11.2, 11.4 and 12.2, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 10.1–10.6, 11.1–11.2, 11.4, library/equate/structure forms from 11.5 and 12.2, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -468,3 +468,18 @@ The fresh listing checks command/output strings and status queries beside existi
 AREXX, Trap, Param, Command Line$ and Bgrab forms. No process, program or device is
 launched, and no display/system setting is changed. Timing, task state, lifecycle
 and native parameter effects remain unqualified. These additions are unreleased.
+
+
+## Library calls, equates and structure access
+
+Thirteen named forms from §11.5, pp.11.05.01–05, bring BASIC to 652 entries
+across 35 partially or fully inventoried chapters. Lib Open/Close and Set Equate
+Bank are commands; library calls/bases and Lvo/Equ are functions. Struc retains
+the reserved-variable scope; Struc$ retains the heading's function scope in both
+read and assignment contexts. Colour does not validate an assignment or type.
+
+Equate/offset names stay opaque strings, including case distinctions. No library
+is opened or called by the fresh notebook. Registers, ABI, memory access, name
+resolution and runtime availability remain unqualified. Requester controls and
+device forms on pp.11.05.06–08 remain outside this partial chapter slice. These
+additions are unreleased.

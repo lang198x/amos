@@ -264,3 +264,11 @@ is retained as a discrepancy beside the existing Command Line$ evidence. Exec's
 signature supplies command/output strings while §10.6 shows a one-argument startup
 example; neither context establishes native arity acceptance here. The authored
 multitasking fixture is a lexical input with no scheduler or process execution.
+
+
+The library/equate/structure slice retains thirteen exact §11.5 headings and
+following printed pages 11.05.01–05 in the pinned extract. The chapter inventory
+is explicitly partial: requester/device headings on pp.11.05.06–08 are later work.
+Struc is labelled reserved variable, whereas Struc$ is labelled function despite
+its write signature. Those heading roles are preserved lexically in reads and
+assignments. Name strings stay opaque; no equate or library call is resolved.

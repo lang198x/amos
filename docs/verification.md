@@ -648,3 +648,25 @@ editor assets. The VSIX has no public gallery flag or executable host. Extracted
 npm exports render AMOS, AMOS + 3D and AMAL in both themes, preserve exact source
 and retain Prg State's function scope. Versions, parser, published preview 0.2.0
 and private Marketplace availability are unchanged.
+
+
+## Library, equate and structure continuation
+
+Thirteen exact heading/page bindings from §11.5, pp.11.05.01–05, were checked
+against the SHA-256-pinned extract. All thirteen lacked complete scopes before
+the change. BASIC now has 652 entries across 35 partially or fully inventoried
+chapters; requester/device forms on pp.11.05.06–08 remain pending.
+
+All 25 package checks and 167 integrations per existing consumer pass in both
+profiles/themes. Tests cover complete phrases, typed/label boundaries, Struc and
+Struc$ reads/assignments, nested calls, adjacent AREXX/task controls, opaque
+case-sensitive name strings and line recovery. Removing the library command rule
+fails both profiles; restoration and editor sync pass. The fresh notebook preserves
+exact source and renders styled output. No library or memory operation executes,
+and no ABI, equate-name resolution, structure typing or native release is qualified.
+
+All npm and VSIX source-file bytes match, including the three grammars and editor
+assets; the VSIX has no public gallery flag or executable host. Extracted exports
+render all three modes in both themes, preserve exact source and retain the two
+structure roles. Versions, parser, published preview 0.2.0 and private Marketplace
+availability remain unchanged.

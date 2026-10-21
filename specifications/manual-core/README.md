@@ -7,8 +7,8 @@ chapters 5.1–5.5 (basics, strings, maths, control and procedures), 48 from cha
 (memory banks), 27 from 6.4 (drawing), 35 from 6.5 (menus), 19 from 7.1
 (sprites), 21 from 7.2 (Bobs), 13 from 7.3 (object updating), 14 from 7.4
 (collisions), 12 from 7.5 (IFF animation), 24 from 7.6 (BASIC AMAL controls),
-38 from 10.2 (file/directory I/O) 21 from 8.1 (music/basic sound) ten from 8.2 (samples) 15 from 8.3 (music modules) and seven from 11.2 (speech) and 15 from 7.7 (icons/blocks) and 13 from 11.1 (fonts) and 11 from 12.2 (error handling) and 12 from 10.3 (printer/ports) and 18 from 10.4 (serial) and ten from 10.5 (parallel) and seven from 10.6 (AREXX integration) and ten from 11.4 (multitasking).
-The 639 BASIC entries include grouped headings, connective words, typed forms and the `?`
+38 from 10.2 (file/directory I/O) 21 from 8.1 (music/basic sound) ten from 8.2 (samples) 15 from 8.3 (music modules) and seven from 11.2 (speech) and 15 from 7.7 (icons/blocks) and 13 from 11.1 (fonts) and 11 from 12.2 (error handling) and 12 from 10.3 (printer/ports) and 18 from 10.4 (serial) and ten from 10.5 (parallel) and seven from 10.6 (AREXX integration) and ten from 11.4 (multitasking), plus thirteen from the library/equate/structure part of 11.5 (pp.11.05.01–05).
+The 652 BASIC entries include grouped headings, connective words, typed forms and the `?`
 print shortcut. Fourteen embedded menu commands are recorded separately in
 `06-05.json`, outside the BASIC vocabulary count.
 Each entry cites a printed page and a line in the hash-pinned held extract
@@ -222,3 +222,10 @@ and the earlier one-argument AREXX startup example are lexical contexts, not
 qualified overloads. CLI commands, output-device names and program filenames
 stay strings. Scheduler timing, display changes, program lifecycle, file/bank
 sharing and process results remain unqualified.
+
+
+The §11.5 inventory is partial. Its first thirteen named forms cover library
+open/close/calls/bases, equates and structure access. Requester/device forms on
+pp.11.05.06–08 remain for later inventories. Struc's reserved-variable role and
+Struc$'s function heading are retained even in write contexts. This does not
+validate data types, equate-name case, library availability or calling conventions.

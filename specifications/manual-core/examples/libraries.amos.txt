@@ -1,0 +1,17 @@
+Rem Lexical library notebook; no library is opened or called
+Set Equate Bank 12
+Lib Open 1,"dos.library",0
+MC_BASE=Lib Base(1) : MC_OFFSET=Lvo("FindTask")
+MC_TASK=Execall(Lvo("FindTask"))
+MC_RESULT=Lib Call(1,MC_OFFSET)
+MC_RESULT=Doscall(MC_OFFSET)+Gfxcall(MC_OFFSET)+Intcall(MC_OFFSET)
+MC_COMMAND=Equ("CMD_WRITE")
+Struc(MC_BASE,"IO_LENGTH")=MC_SIZE
+MC_SIZE=Struc(MC_BASE,"IO_LENGTH")
+Struc$(MC_BASE,"ln_Name")="Ready"
+MC_NAME$=Struc$(MC_BASE,"ln_Name")
+Trap Lib Close 1
+Lib Close
+MC_MODE=Prg State : MC_PORT=Arexx Exist("REXX")
+MC_NOTE$="Lib Call: Struc$; FindTask and findtask"
+' Set Equate Bank Lvo Equ Struc

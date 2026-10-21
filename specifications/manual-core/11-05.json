@@ -1,0 +1,102 @@
+{
+  "chapter": "11.05",
+  "scope": "Partial chapter: library calls, equates and structure access on pp.11.05.01–05; requester/device forms on pp.11.05.06–08 remain uninventoried here.",
+  "entries": [
+    {
+      "spelling": "Lib Open",
+      "kind": "command",
+      "page": "11.05.01",
+      "extract_line": 20605,
+      "example": "Lib Open 1,\"dos.library\",0"
+    },
+    {
+      "spelling": "Lib Close",
+      "kind": "command",
+      "page": "11.05.01",
+      "extract_line": 20623,
+      "example": "Lib Close 1"
+    },
+    {
+      "spelling": "Lib Call",
+      "kind": "function",
+      "page": "11.05.01",
+      "extract_line": 20632,
+      "example": "MC_RESULT=Lib Call(1,MC_OFFSET)"
+    },
+    {
+      "spelling": "Lib Base",
+      "kind": "function",
+      "page": "11.05.02",
+      "extract_line": 20655,
+      "example": "MC_BASE=Lib Base(1)"
+    },
+    {
+      "spelling": "Doscall",
+      "kind": "function",
+      "page": "11.05.02",
+      "extract_line": 20663,
+      "example": "MC_RESULT=Doscall(MC_OFFSET)"
+    },
+    {
+      "spelling": "Execall",
+      "kind": "function",
+      "page": "11.05.02",
+      "extract_line": 20678,
+      "example": "MC_TASK=Execall(Lvo(\"FindTask\"))"
+    },
+    {
+      "spelling": "Gfxcall",
+      "kind": "function",
+      "page": "11.05.03",
+      "extract_line": 20693,
+      "example": "MC_RESULT=Gfxcall(MC_OFFSET)"
+    },
+    {
+      "spelling": "Intcall",
+      "kind": "function",
+      "page": "11.05.03",
+      "extract_line": 20701,
+      "example": "MC_RESULT=Intcall(MC_OFFSET)"
+    },
+    {
+      "spelling": "Set Equate Bank",
+      "kind": "command",
+      "page": "11.05.03",
+      "extract_line": 20729,
+      "example": "Set Equate Bank 12"
+    },
+    {
+      "spelling": "Lvo",
+      "kind": "function",
+      "page": "11.05.04",
+      "extract_line": 20745,
+      "example": "MC_OFFSET=Lvo(\"FindTask\")"
+    },
+    {
+      "spelling": "Equ",
+      "kind": "function",
+      "page": "11.05.04",
+      "extract_line": 20767,
+      "example": "MC_VALUE=Equ(\"CMD_WRITE\")"
+    },
+    {
+      "spelling": "Struc",
+      "kind": "reserved",
+      "page": "11.05.04",
+      "extract_line": 20784,
+      "example": "MC_VALUE=Struc(MC_BASE,\"IO_LENGTH\")"
+    },
+    {
+      "spelling": "Struc$",
+      "kind": "function",
+      "page": "11.05.05",
+      "extract_line": 20820,
+      "example": "MC_NAME$=Struc$(MC_BASE,\"ln_Name\")"
+    }
+  ],
+  "notes": [
+    "Struc is labelled reserved variable; Struc$ is labelled function, although its signature also shows assignment. Retain these documentary lexical roles in reads and writes without validating data types.",
+    "Lvo, Equ and structure offset names stay opaque strings. BASIC keyword case folding does not qualify case-sensitive equate names, constant-string requirements or name resolution.",
+    "Register setup, calling conventions, offsets, library/device availability and structure-memory behavior require separate evidence. No library is called by these fixtures."
+  ]
+}
