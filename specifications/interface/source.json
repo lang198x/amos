@@ -1,0 +1,49 @@
+{
+  "title": "AMOS Professional User Guide",
+  "product": "AMOS Professional",
+  "source": "https://gitlab.com/amigasourcecodepreservation/amos-classic-documentation",
+  "held_extract": "amos-pro-user-guide-1992-croucher-hill.txt",
+  "extract_sha256": "b0bf946502ad3ce6534e13d620dd5c017f8f6a6cd7a4c4f99ced87b1d925715c",
+  "scope": "Separate documentary Interface inventory; no parser, standalone mode, BASIC injection or native qualification",
+  "qualified_releases": [],
+  "files": [
+    "09-01.json",
+    "09-02.json",
+    "09-03.json",
+    "09-04.json"
+  ],
+  "chapters": [
+    {
+      "chapter": "09.01",
+      "extract_lines": [
+        15327,
+        16043
+      ]
+    },
+    {
+      "chapter": "09.02",
+      "extract_lines": [
+        16044,
+        16554
+      ]
+    },
+    {
+      "chapter": "09.03",
+      "extract_lines": [
+        16555,
+        17463
+      ]
+    },
+    {
+      "chapter": "09.04",
+      "extract_lines": [
+        17464,
+        17706
+      ]
+    }
+  ],
+  "entries": 69,
+  "unique_codes": 68,
+  "index": "index.json",
+  "lexical": "lexical.json"
+}

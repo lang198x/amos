@@ -714,10 +714,24 @@ availability stays private. No bank, sound or embedded program is executed.
 ## Complete command-index cross-check
 
 All 818 Appendix G rows are reconciled: 702 BASIC, 33 AMAL, 14 embedded Menu
-and 69 Interface references. The latter remain a separate inventory route.
+and 69 Interface references. The latter now have the separate inventory below.
 Thirty flagged rows preserve spelling, role, locator, formatting and surface
 conflicts. Definition-backed references cover the BASIC vocabulary, including
 On … Proc as existing tokens. Generic Exit/Wait entries point to AMAL Autotest.
 No new aliases or grammar behavior follows; BASIC remains 728 entries across
 44 sections. The report and all row records retain their source provenance.
 This bounded audit establishes neither whole-language nor release readiness.
+
+
+## Reference appendices and Interface documentary inventory
+
+H/I's complete library/distribution/support material introduces no new language
+forms. Historical service/licence wording and product names remain context.
+The separate Interface inventory now contains 69 forms (46 commands, 22 functions,
+one structure) and maps every index row. Its 68 distinct codes preserve SW's
+two roles and the AR/AS index conflicts. All definition/signature bindings and
+lexical-context evidence are retained separately from BASIC and operators.
+
+BASIC stays 728 entries across 44 sections; grammar/parser and published assets
+are unchanged. No Interface language registration, editor mode, string injection,
+resource access, native execution or release qualification is introduced.

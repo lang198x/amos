@@ -1,0 +1,630 @@
+{
+  "scope": "Definition-led overlay on the frozen Appendix G audit; not grammar or native qualification",
+  "entries": [
+    {
+      "index_line": 27489,
+      "index_spelling": "AL",
+      "index_role": "Interface Instruction",
+      "chapter": "09.03",
+      "code": "AL",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 27510,
+      "index_spelling": "AR",
+      "index_role": "Interface Instruction",
+      "chapter": "09.03",
+      "code": "AR",
+      "kind": "function",
+      "findings": [
+        "role"
+      ]
+    },
+    {
+      "index_line": 27529,
+      "index_spelling": "AS",
+      "index_role": "Interface Instruction",
+      "chapter": "09.03",
+      "code": "AS",
+      "kind": "function",
+      "findings": [
+        "role"
+      ]
+    },
+    {
+      "index_line": 27541,
+      "index_spelling": "BA",
+      "index_role": "Interface Instruction",
+      "chapter": "09.01",
+      "code": "BA",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 27548,
+      "index_spelling": "BC",
+      "index_role": "Interface Instruction",
+      "chapter": "09.01",
+      "code": "BC",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 27556,
+      "index_spelling": "BO",
+      "index_role": "Interface Instruction",
+      "chapter": "09.04",
+      "code": "BO",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 27579,
+      "index_spelling": "BP",
+      "index_role": "Interface Function",
+      "chapter": "09.01",
+      "code": "BP",
+      "kind": "function",
+      "findings": []
+    },
+    {
+      "index_line": 27580,
+      "index_spelling": "BQ",
+      "index_role": "Interface Instruction",
+      "chapter": "09.01",
+      "code": "BQ",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 27581,
+      "index_spelling": "BR",
+      "index_role": "Interface Instruction",
+      "chapter": "09.01",
+      "code": "BR",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 27589,
+      "index_spelling": "BU",
+      "index_role": "Interface Instruction",
+      "chapter": "09.01",
+      "code": "BU",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 27590,
+      "index_spelling": "BX",
+      "index_role": "Interface Function",
+      "chapter": "09.02",
+      "code": "BX",
+      "kind": "function",
+      "findings": []
+    },
+    {
+      "index_line": 27591,
+      "index_spelling": "BY",
+      "index_role": "Interface Function",
+      "chapter": "09.02",
+      "code": "BY",
+      "kind": "function",
+      "findings": []
+    },
+    {
+      "index_line": 27596,
+      "index_spelling": "CAll",
+      "index_role": "Interface Instruction",
+      "chapter": "09.02",
+      "code": "CA",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 27650,
+      "index_spelling": "CX",
+      "index_role": "Interface Function",
+      "chapter": "09.02",
+      "code": "CX",
+      "kind": "function",
+      "findings": []
+    },
+    {
+      "index_line": 27684,
+      "index_spelling": "DI",
+      "index_role": "Interface Instruction",
+      "chapter": "09.03",
+      "code": "DI",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 27714,
+      "index_spelling": "ED",
+      "index_role": "Interface Instruction",
+      "chapter": "09.03",
+      "code": "ED",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 27745,
+      "index_spelling": "EX",
+      "index_role": "Interface Instruction",
+      "chapter": "09.01",
+      "code": "EX",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 27785,
+      "index_spelling": "GB",
+      "index_role": "Interface Instruction",
+      "chapter": "09.02",
+      "code": "GB",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 27786,
+      "index_spelling": "GE",
+      "index_role": "Interface Instruction",
+      "chapter": "09.02",
+      "code": "GE",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 27801,
+      "index_spelling": "GL",
+      "index_role": "Interface Instruction",
+      "chapter": "09.02",
+      "code": "GL",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 27807,
+      "index_spelling": "GS",
+      "index_role": "Interface Instruction",
+      "chapter": "09.02",
+      "code": "GS",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 27819,
+      "index_spelling": "HS",
+      "index_role": "Interface Instruction",
+      "chapter": "09.03",
+      "code": "HS",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 27823,
+      "index_spelling": "HT",
+      "index_role": "Interface Instruction",
+      "chapter": "09.03",
+      "code": "HT",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 27841,
+      "index_spelling": "IF",
+      "index_role": "Interface Structure",
+      "chapter": "09.02",
+      "code": "IF",
+      "kind": "structure",
+      "findings": []
+    },
+    {
+      "index_line": 27844,
+      "index_spelling": "IL",
+      "index_role": "Interface Instruction",
+      "chapter": "09.03",
+      "code": "IL",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 27845,
+      "index_spelling": "IN",
+      "index_role": "Interface Instruction",
+      "chapter": "09.02",
+      "code": "IN",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 27869,
+      "index_spelling": "JS",
+      "index_role": "Interface Instruction",
+      "chapter": "09.02",
+      "code": "JS",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 27870,
+      "index_spelling": "JP",
+      "index_role": "Interface Instruction",
+      "chapter": "09.02",
+      "code": "JP",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 27890,
+      "index_spelling": "KY",
+      "index_role": "Interface Instruction",
+      "chapter": "09.01",
+      "code": "KY",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 27892,
+      "index_spelling": "LA",
+      "index_role": "Interface Instruction",
+      "chapter": "09.02",
+      "code": "LA",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 27909,
+      "index_spelling": "LIne",
+      "index_role": "Interface Instruction",
+      "chapter": "09.04",
+      "code": "LI",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 27942,
+      "index_spelling": "ME",
+      "index_role": "Interface Function",
+      "chapter": "09.04",
+      "code": "ME",
+      "kind": "function",
+      "findings": []
+    },
+    {
+      "index_line": 28013,
+      "index_spelling": "NW",
+      "index_role": "Interface Instruction",
+      "chapter": "09.01",
+      "code": "NW",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 28077,
+      "index_spelling": "PO",
+      "index_role": "Interface Instruction",
+      "chapter": "09.02",
+      "code": "PO",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 28095,
+      "index_spelling": "PR",
+      "index_role": "Interface Instruction",
+      "chapter": "09.01",
+      "code": "PR",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 28118,
+      "index_spelling": "PU",
+      "index_role": "Interface Instruction",
+      "chapter": "09.04",
+      "code": "PU",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 28176,
+      "index_spelling": "RT",
+      "index_role": "Interface Instruction",
+      "chapter": "09.02",
+      "code": "RT",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 28177,
+      "index_spelling": "RU",
+      "index_role": "Interface Instruction",
+      "chapter": "09.01",
+      "code": "RU",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 28180,
+      "index_spelling": "SA",
+      "index_role": "Interface Instruction",
+      "chapter": "09.01",
+      "code": "SA",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 28279,
+      "index_spelling": "SF",
+      "index_role": "Interface Instruction",
+      "chapter": "09.02",
+      "code": "SF",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 28281,
+      "index_spelling": "SH",
+      "index_role": "Interface Function",
+      "chapter": "09.02",
+      "code": "SH",
+      "kind": "function",
+      "findings": []
+    },
+    {
+      "index_line": 28291,
+      "index_spelling": "SI",
+      "index_role": "Interface Instruction",
+      "chapter": "09.01",
+      "code": "SI",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 28301,
+      "index_spelling": "SL",
+      "index_role": "Interface Instruction",
+      "chapter": "09.02",
+      "code": "SL",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 28304,
+      "index_spelling": "SM",
+      "index_role": "Interface Instruction",
+      "chapter": "09.03",
+      "code": "SM",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 28306,
+      "index_spelling": "SP",
+      "index_role": "Interface Instruction",
+      "chapter": "09.02",
+      "code": "SP",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 28327,
+      "index_spelling": "SV",
+      "index_role": "Interface Instruction",
+      "chapter": "09.01",
+      "code": "SV",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 28328,
+      "index_spelling": "SW",
+      "index_role": "Interface Function",
+      "chapter": "09.02",
+      "code": "SW",
+      "kind": "function",
+      "findings": []
+    },
+    {
+      "index_line": 28329,
+      "index_spelling": "SW",
+      "index_role": "Interface Instruction",
+      "chapter": "09.02",
+      "code": "SW",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 28331,
+      "index_spelling": "SX",
+      "index_role": "Interface Function",
+      "chapter": "09.02",
+      "code": "SX",
+      "kind": "function",
+      "findings": []
+    },
+    {
+      "index_line": 28332,
+      "index_spelling": "SY",
+      "index_role": "Interface Function",
+      "chapter": "09.02",
+      "code": "SY",
+      "kind": "function",
+      "findings": []
+    },
+    {
+      "index_line": 28337,
+      "index_spelling": "SZ",
+      "index_role": "Interface Instruction",
+      "chapter": "09.02",
+      "code": "SZ",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 28356,
+      "index_spelling": "TH",
+      "index_role": "Interface Function",
+      "chapter": "09.02",
+      "code": "TH",
+      "kind": "function",
+      "findings": []
+    },
+    {
+      "index_line": 28361,
+      "index_spelling": "TL",
+      "index_role": "Interface Function",
+      "chapter": "09.02",
+      "code": "TL",
+      "kind": "function",
+      "findings": []
+    },
+    {
+      "index_line": 28371,
+      "index_spelling": "TW",
+      "index_role": "Interface Function",
+      "chapter": "09.02",
+      "code": "TW",
+      "kind": "function",
+      "findings": []
+    },
+    {
+      "index_line": 28373,
+      "index_spelling": "UI",
+      "index_role": "Interface Instruction",
+      "chapter": "09.02",
+      "code": "UI",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 28374,
+      "index_spelling": "UN",
+      "index_role": "Interface Instruction",
+      "chapter": "09.04",
+      "code": "UN",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 28387,
+      "index_spelling": "VA",
+      "index_role": "Interface Function",
+      "chapter": "09.01",
+      "code": "VA",
+      "kind": "function",
+      "findings": []
+    },
+    {
+      "index_line": 28393,
+      "index_spelling": "VLine",
+      "index_role": "Interface Instruction",
+      "chapter": "09.04",
+      "code": "VL",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 28406,
+      "index_spelling": "VS",
+      "index_role": "Interface Instruction",
+      "chapter": "09.03",
+      "code": "VS",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 28409,
+      "index_spelling": "VT",
+      "index_role": "Interface Instruction",
+      "chapter": "09.02",
+      "code": "VT",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 28438,
+      "index_spelling": "XA",
+      "index_role": "Interface Function",
+      "chapter": "09.02",
+      "code": "XA",
+      "kind": "function",
+      "findings": []
+    },
+    {
+      "index_line": 28439,
+      "index_spelling": "XB",
+      "index_role": "Interface Function",
+      "chapter": "09.02",
+      "code": "XB",
+      "kind": "function",
+      "findings": []
+    },
+    {
+      "index_line": 28444,
+      "index_spelling": "XY",
+      "index_role": "Interface Instruction",
+      "chapter": "09.02",
+      "code": "XY",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 28463,
+      "index_spelling": "YA",
+      "index_role": "Interface Function",
+      "chapter": "09.02",
+      "code": "YA",
+      "kind": "function",
+      "findings": []
+    },
+    {
+      "index_line": 28464,
+      "index_spelling": "YB",
+      "index_role": "Interface Function",
+      "chapter": "09.02",
+      "code": "YB",
+      "kind": "function",
+      "findings": []
+    },
+    {
+      "index_line": 28471,
+      "index_spelling": "ZC",
+      "index_role": "Interface Instruction",
+      "chapter": "09.03",
+      "code": "ZC",
+      "kind": "command",
+      "findings": []
+    },
+    {
+      "index_line": 28472,
+      "index_spelling": "ZN",
+      "index_role": "Interface Function",
+      "chapter": "09.03",
+      "code": "ZN",
+      "kind": "function",
+      "findings": []
+    },
+    {
+      "index_line": 28476,
+      "index_spelling": "ZP",
+      "index_role": "Interface Function",
+      "chapter": "09.03",
+      "code": "ZP",
+      "kind": "function",
+      "findings": []
+    },
+    {
+      "index_line": 28477,
+      "index_spelling": "ZV",
+      "index_role": "Interface Function",
+      "chapter": "09.02",
+      "code": "ZV",
+      "kind": "function",
+      "findings": []
+    }
+  ]
+}

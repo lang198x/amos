@@ -1,0 +1,99 @@
+{
+  "chapter": "09.04",
+  "entries": [
+    {
+      "code": "ME",
+      "kind": "function",
+      "heading": "MEssage",
+      "page": "09.04.01",
+      "extract_line": 17482,
+      "role_line": 17483,
+      "signatures": [
+        {
+          "extract_line": 17484,
+          "text": "message=number ME"
+        }
+      ],
+      "example": "2 ME"
+    },
+    {
+      "code": "UN",
+      "kind": "command",
+      "heading": "UNpack",
+      "page": "09.04.01",
+      "extract_line": 17497,
+      "role_line": 17498,
+      "signatures": [
+        {
+          "extract_line": 17499,
+          "text": "UN x,y,image number;"
+        }
+      ],
+      "example": "UN 8,8,2;"
+    },
+    {
+      "code": "LI",
+      "kind": "command",
+      "heading": "LIne",
+      "page": "09.04.02",
+      "extract_line": 17520,
+      "role_line": 17521,
+      "signatures": [
+        {
+          "extract_line": 17522,
+          "text": "LI x,y,first image,width;"
+        }
+      ],
+      "example": "LI 8,8,2,96;"
+    },
+    {
+      "code": "VL",
+      "kind": "command",
+      "heading": "VLine",
+      "page": "09.04.02",
+      "extract_line": 17543,
+      "role_line": 17544,
+      "signatures": [
+        {
+          "extract_line": 17545,
+          "text": "VL x,y,first image,height"
+        }
+      ],
+      "example": "VL 8,8,2,48;"
+    },
+    {
+      "code": "BO",
+      "kind": "command",
+      "heading": "BOx",
+      "page": "09.04.02",
+      "extract_line": 17552,
+      "role_line": 17553,
+      "signatures": [
+        {
+          "extract_line": 17554,
+          "text": "BO x,y,first image,width,height;"
+        }
+      ],
+      "example": "BO 8,8,2,96,48;"
+    },
+    {
+      "code": "PU",
+      "kind": "command",
+      "heading": "PUsh",
+      "page": "09.04.03",
+      "extract_line": 17587,
+      "role_line": 17588,
+      "signatures": [
+        {
+          "extract_line": 17589,
+          "text": "PU offset;"
+        }
+      ],
+      "example": "PU 2;"
+    }
+  ],
+  "notes": [
+    "These embedded Resource operations are distinct from BASIC Resource$/Screen Open/Unpack controls and from memory-bank formats.",
+    "Resource images, offsets and markup are not read or executed; shared spellings with BASIC or Menu commands do not create aliases."
+  ]
+}

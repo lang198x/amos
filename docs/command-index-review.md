@@ -18,7 +18,7 @@ is a separate file. Descriptive synopses are not treated as definitions.
 | BASIC | 702 | Existing inventory references, including one composite On … Proc context. |
 | AMAL | 33 | 31 explicitly labelled rows plus two generic labels resolved by Autotest definitions. |
 | Embedded Menu | 14 | Existing documentary inventory; BASIC string payloads remain opaque. |
-| Interface | 69 | Retained as a separate definition-led inventory route; no lexical mode or BASIC alias is added. |
+| Interface | 69 | Now mapped by the separate Interface definition inventory; no lexical mode or BASIC alias is added. |
 | Total | 818 | All rows accounted for; counts are index rows, not unique words or a coverage percentage. |
 
 ## Conflicts retained
@@ -72,6 +72,11 @@ change significant AMAL/Menu capitals or accept new BASIC spacing.
 Package tests validate page continuity, unique ordered row lines, all inventory
 references (including role), surface totals and exceptional routing. The complete
 source replay additionally checks that no source row was omitted. Original
-runtime acceptance, version/extension availability, Interface definitions and
+runtime acceptance, version/extension availability, Interface highlighting and
 public Marketplace readiness remain separate work. The index adds no syntax,
 semantic analysis or native execution evidence.
+
+
+The later [Interface inventory](interface-inventory.md) now supplies a separate
+mapping for all 69 Interface rows. It preserves the frozen baseline references
+here and records AR/AS's instruction-versus-function conflicts at their definitions.

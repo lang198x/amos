@@ -116,3 +116,31 @@ surface findings. Generic Exit/Wait rows target AMAL Autotest; On … Proc is a
 composite of existing tokens. No new aliases, inventory entries, grammar or
 parser behavior follows. BASIC stays 728 across 44 sections. Appendix G is a
 locator, not independent syntax, native or edition evidence.
+
+
+## Appendices H/I reference material
+
+H spans 28485–28627 (14.H.01–04, final page blank); I spans 28628–28723
+(14.I.01–02). The Main Index starts at 28724. Both complete sections have been
+reviewed against the pinned extract and introduce no named BASIC or embedded
+language definitions. BASIC remains 728 entries across 44 sections.
+
+H describes the historical public-domain library, submission/source-code rules,
+catalogue, updater discs and magazine. HELP accessories and AMOS/Easy/Professional
+product names are context, not new commands or edition qualification. Public-
+domain/library wording does not establish a blanket licence for individual
+programs. I describes historical support, update and club arrangements; its
+Rem-statement mention refers to the existing §5.1 definition at 3454. No prices,
+addresses, service availability, support promise or distribution claim is presented
+as current. No external service was contacted or media acquired.
+
+## Interface definition inventory
+
+The separate [Interface inventory](interface-inventory.md) now maps all 69 index
+references to definition-backed records: 15/35/13/6 by chapter, 46 commands,
+22 functions and one structure. All 64 role blocks and 70 signature lines are
+retained; SW's function/instruction collision yields 68 distinct codes. AR/AS
+follow their function definitions despite index labels. Operators, lexical
+conventions and contextual limits remain separate. The frozen index audit gains
+a separate mapping overlay, not rewritten baseline rows. No BASIC entry, parser,
+grammar, Interface mode or string injection is added.

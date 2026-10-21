@@ -102,7 +102,7 @@ Uninventoried sections need explicit review; they are not silently excluded from
 
 | Route | Remaining review |
 | --- | --- |
-| §§9.1–9.4 Interface | Nineteen BASIC forms from §§9.1/9.3/9.4 now have lexical coverage: entry points, zone/value queries, Array, update/freeze/clear and resource controls. Embedded Interface stays opaque; inventory it separately before deciding a mode or string injection. |
+| §§9.1–9.4 Interface | Nineteen BASIC forms from §§9.1/9.3/9.4 now have lexical coverage: entry points, zone/value queries, Array, update/freeze/clear and resource controls. The separate [69-form inventory](interface-inventory.md) now maps all index rows and retains lexical/role conflicts. BASIC strings stay opaque; a highlighting mode or injection still needs a design decision. |
 | §§10.3–10.5 device I/O | Printer/general-port, serial and parallel lexical sweeps are complete. The [boundary review](io-extension-boundary.md) records source-resolved spelling/component provenance and remaining semantic/release limits. |
 | §10.6 AREXX | Seven AMOS-facing forms now have lexical coverage. External script payloads remain strings; startup Exec is now covered by §11.4; Ask/Call Editor are covered from their §13.1 definitions. No AREXX language implementation is implied. |
 | §11.3 floating point | [Reconciled](manual-reconciliation.md): existing §5.3 covers Sin/Cos/Sqr and Set Double Precision. No new named definition or extra inventory count; library/number-format facts remain separate. |
@@ -115,7 +115,7 @@ Uninventoried sections need explicit review; they are not silently excluded from
 | Appendix F Copper | All eight named BASIC control/list/query headings now have lexical coverage. Cop Logic’s signature/index resolves its instruction-label conflict for highlighting. Hardware behaviour remains a separate claim. |
 | Appendices B, D and E | Kill Editor from Appendix B has lexical coverage. D/E are [reconciled](manual-reconciliation.md): no new named BASIC definitions, Bell retains its manual Music component label, and memory/disk/embedded layouts remain separate. Release ownership and codec semantics need independent evidence. Other runtime/editor examples remain a separate route. |
 | Appendix G command index | All 818 rows across 20 pages are [reconciled](command-index-review.md): existing BASIC/AMAL/Menu references, 69 separate Interface rows and 30 flagged conflicts. No new indivisible BASIC vocabulary follows; definitions govern spelling/role and the index supplies no edition or native qualification. |
-| Appendices H and I | Distribution/support reference; check any language mentions during final reconciliation, without treating catalogue entries as commands. |
+| Appendices H and I | Fully [reconciled](manual-reconciliation.md): historical library/distribution/support context and an existing Rem reference, with no new language definitions or current service/licence claims. |
 
 ## Gaps that a chapter sweep cannot close
 

@@ -113,6 +113,11 @@ those records in preview 0.2.0. Other manual chapters and edition/extension
 qualification remain separate work. See the [remaining-gap review](docs/highlighting-gaps.md)
 for the proposed next sweeps and unresolved surfaces.
 
+The separate [Interface inventory](docs/interface-inventory.md) maps 69 embedded-language
+forms to their definitions, retaining role collisions and lexical questions.
+It adds no highlighting mode or injection into BASIC strings. H/I’s historical
+reference material is reconciled without adding vocabulary.
+
 The [command-index review](docs/command-index-review.md) reconciles all 818 Appendix G
 rows against the existing inventories, retaining conflicts and separate Interface
 references. It adds no grammar rules or vocabulary.

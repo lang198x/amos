@@ -1,0 +1,204 @@
+{
+  "chapter": "09.03",
+  "entries": [
+    {
+      "code": "ED",
+      "kind": "command",
+      "heading": "EDit",
+      "page": "09.03.05",
+      "extract_line": 16790,
+      "role_line": 16791,
+      "signatures": [
+        {
+          "extract_line": 16792,
+          "text": "ED zone number,x,y,width,max,'string',paper,pen;"
+        }
+      ],
+      "example": "ED 2,16,8,12,24,'Ready',0,3;"
+    },
+    {
+      "code": "DI",
+      "kind": "command",
+      "heading": "DIgit",
+      "page": "09.03.07",
+      "extract_line": 16868,
+      "role_line": 16869,
+      "signatures": [
+        {
+          "extract_line": 16870,
+          "text": "DI zone number,x,y,width,value,flag,paper,pen;"
+        }
+      ],
+      "example": "DI 2,16,8,8,12,0,0,3;"
+    },
+    {
+      "code": "HS",
+      "kind": "command",
+      "heading": "HorizontalSlider",
+      "page": "09.03.07",
+      "extract_line": 16912,
+      "role_line": 16913,
+      "signatures": [
+        {
+          "extract_line": 16914,
+          "text": "HS zone number,x,y,width,height,position,trigger,total,step;[changes]"
+        }
+      ],
+      "example": "HS 2,8,8,96,16,0,1,16,1;[]"
+    },
+    {
+      "code": "VS",
+      "kind": "command",
+      "heading": "VerticalSlider",
+      "page": "09.03.09",
+      "extract_line": 16980,
+      "role_line": 16981,
+      "signatures": [
+        {
+          "extract_line": 16982,
+          "text": "VS zone number,x,y,width,height,position,trigger,total,step;[changes]"
+        }
+      ],
+      "example": "VS 2,8,8,16,96,0,1,16,1;[]"
+    },
+    {
+      "code": "AR",
+      "kind": "function",
+      "heading": "ArrayRead",
+      "page": "09.03.09",
+      "extract_line": 17015,
+      "role_line": 17016,
+      "signatures": [
+        {
+          "extract_line": 17017,
+          "text": "item=address,element number AR"
+        }
+      ],
+      "example": "0 VA,1 AR"
+    },
+    {
+      "code": "AS",
+      "kind": "function",
+      "heading": "ArraySize",
+      "page": "09.03.10",
+      "extract_line": 17032,
+      "role_line": 17033,
+      "signatures": [
+        {
+          "extract_line": 17034,
+          "text": "size=address AS"
+        }
+      ],
+      "example": "0 VA AS"
+    },
+    {
+      "code": "AL",
+      "kind": "command",
+      "heading": "ActiveList",
+      "page": "09.03.10",
+      "extract_line": 17044,
+      "role_line": 17045,
+      "signatures": [
+        {
+          "extract_line": 17046,
+          "text": "AL zone number,x,y,width,height,address,index,flag,paper,pen;[changes]"
+        }
+      ],
+      "example": "AL 2,16,8,12,4,0 VA,0,0,0,3;[]"
+    },
+    {
+      "code": "IL",
+      "kind": "command",
+      "heading": "InactiveList",
+      "page": "09.03.11",
+      "extract_line": 17107,
+      "role_line": 17108,
+      "signatures": [
+        {
+          "extract_line": 17109,
+          "text": "IL zone number,x,y,width,height,address,index,flag,paper,pen;"
+        }
+      ],
+      "example": "IL 2,16,8,12,4,0 VA,0,0,0,3;"
+    },
+    {
+      "code": "ZP",
+      "kind": "function",
+      "heading": "ZonePosition",
+      "page": "09.03.12",
+      "extract_line": 17152,
+      "role_line": 17153,
+      "signatures": [
+        {
+          "extract_line": 17154,
+          "text": "value=ZP"
+        }
+      ],
+      "example": "ZP"
+    },
+    {
+      "code": "ZC",
+      "kind": "command",
+      "heading": "ZoneChange",
+      "page": "09.03.12",
+      "extract_line": 17159,
+      "role_line": 17160,
+      "signatures": [
+        {
+          "extract_line": 17161,
+          "text": "ZC zone number,new data;"
+        }
+      ],
+      "example": "ZC 2,1;"
+    },
+    {
+      "code": "ZN",
+      "kind": "function",
+      "heading": "ZoneNumber",
+      "page": "09.03.14",
+      "extract_line": 17242,
+      "role_line": 17243,
+      "signatures": [
+        {
+          "extract_line": 17244,
+          "text": "number=ZN"
+        }
+      ],
+      "example": "ZN"
+    },
+    {
+      "code": "HT",
+      "kind": "command",
+      "heading": "HyperText",
+      "page": "09.03.15",
+      "extract_line": 17330,
+      "role_line": 17331,
+      "signatures": [
+        {
+          "extract_line": 17332,
+          "text": "HT zone number,x,y,width,height,address,line number,buffer,paper,pen;[changes]"
+        }
+      ],
+      "example": "HT 2,16,8,12,4,0 VA,0,0,0,3;[]"
+    },
+    {
+      "code": "SM",
+      "kind": "command",
+      "heading": "ScreenMove",
+      "page": "09.03.17",
+      "extract_line": 17441,
+      "role_line": 17442,
+      "signatures": [
+        {
+          "extract_line": 17443,
+          "text": "SM;"
+        }
+      ],
+      "example": "SM;"
+    }
+  ],
+  "notes": [
+    "AR and AS follow function definitions despite instruction labels in the command index. The AR comma-bearing signature is retained without implementing an argument parser.",
+    "Editing, slider, list and HyperText examples require resources/zone contexts; addresses, callback behavior, text layouts and native results are unqualified."
+  ]
+}

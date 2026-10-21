@@ -1,0 +1,124 @@
+{
+  "scope": "Documentary Interface lexical/structural evidence only; no lexer, grammar, parser or runtime acceptance",
+  "qualified_releases": [],
+  "citations": [
+    {
+      "id": "host-and-capitals",
+      "page": "09.01.02",
+      "extract_lines": [
+        15411,
+        15420
+      ],
+      "finding": "Programs are held in BASIC strings. Two capital letters identify instructions; lower-case padding and lower-case comments are described. Semicolon/colon separators are required; spaces alone do not separate commands."
+    },
+    {
+      "id": "strings-numbers-postfix",
+      "page": "09.01.04",
+      "extract_lines": [
+        15483,
+        15535
+      ],
+      "finding": "Single quotes are recommended within BASIC string payloads. Binary/hex notation and postfix expressions are illustrated. Do not infer digit splitting from collapsed numeric spacing in examples."
+    },
+    {
+      "id": "stack-and-operators",
+      "page": "09.01.05",
+      "extract_lines": [
+        15545,
+        15584
+      ],
+      "finding": "Operators consume stack values; the arithmetic table includes inconsistent spacing/omitted operators and unclear Min/Max capitalisation. Preserve the source question rather than adopting a tokenizer."
+    },
+    {
+      "id": "button-brackets",
+      "page": "09.01.10",
+      "extract_lines": [
+        15816,
+        15840
+      ],
+      "finding": "BU draw/change routines use two bracket groups with a semicolon before the first. Their execution contexts differ."
+    },
+    {
+      "id": "button-final-terminator",
+      "page": "09.01.11",
+      "extract_lines": [
+        15847,
+        15849
+      ],
+      "finding": "The button discussion explicitly forbids a semicolon after the final bracket group; the general terminator rule cannot be applied blindly."
+    },
+    {
+      "id": "conditional-operators",
+      "page": "09.02.07",
+      "extract_lines": [
+        16378,
+        16407
+      ],
+      "finding": "IF has a bracketed routine and postfix test. Backslash means not-equal; ampersand and vertical bar are logical operators."
+    },
+    {
+      "id": "user-parameters",
+      "page": "09.02.08",
+      "extract_lines": [
+        16417,
+        16435
+      ],
+      "finding": "UI defines user instructions with a two-capital-letter name and parameter functions P1 through P9. Custom names must not collide with existing instructions."
+    },
+    {
+      "id": "zone-context",
+      "page": "09.02.09",
+      "extract_lines": [
+        16489,
+        16513
+      ],
+      "finding": "SZ/ZV preserve zone data; ZV is documented for draw/change bracket contexts, not arbitrary global evaluation."
+    },
+    {
+      "id": "hypertext-payload",
+      "page": "09.03.16",
+      "extract_lines": [
+        17374,
+        17398
+      ],
+      "finding": "HyperText embeds active-zone markup in separate text data; it is not automatically an Interface or BASIC token stream."
+    }
+  ],
+  "arithmetic": [
+    "+",
+    "-",
+    "*",
+    "/",
+    "Neg",
+    "!",
+    "#",
+    "Min",
+    "Max"
+  ],
+  "conditional": [
+    "=",
+    "\\",
+    "<",
+    ">",
+    "&",
+    "|"
+  ],
+  "parameter_family": {
+    "spelling": "P1–P9",
+    "members": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8",
+      "P9"
+    ],
+    "extract_lines": [
+      16425,
+      16430
+    ]
+  }
+}

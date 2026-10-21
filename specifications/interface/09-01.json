@@ -1,0 +1,238 @@
+{
+  "chapter": "09.01",
+  "entries": [
+    {
+      "code": "EX",
+      "kind": "command",
+      "heading": "EXit",
+      "page": "09.01.03",
+      "extract_line": 15432,
+      "role_line": 15433,
+      "signatures": [
+        {
+          "extract_line": 15434,
+          "text": "EX;"
+        }
+      ],
+      "example": "EX;"
+    },
+    {
+      "code": "VA",
+      "kind": "function",
+      "heading": "VAriable",
+      "page": "09.01.03",
+      "extract_line": 15457,
+      "role_line": 15458,
+      "signatures": [
+        {
+          "extract_line": 15459,
+          "text": "value=index number VA;"
+        }
+      ],
+      "example": "0 VA"
+    },
+    {
+      "code": "SV",
+      "kind": "command",
+      "heading": "Set Variable",
+      "page": "09.01.03",
+      "extract_line": 15466,
+      "role_line": 15467,
+      "signatures": [
+        {
+          "extract_line": 15468,
+          "text": "SV index number,value;"
+        }
+      ],
+      "example": "SV 2,'Ready';"
+    },
+    {
+      "code": "PR",
+      "kind": "command",
+      "heading": "PRint",
+      "page": "09.01.04",
+      "extract_line": 15493,
+      "role_line": 15494,
+      "signatures": [
+        {
+          "extract_line": 15495,
+          "text": "PR x,y,number,ink;"
+        },
+        {
+          "extract_line": 15496,
+          "text": "PR x,y,'text',ink;"
+        }
+      ],
+      "example": "PR 8,12,'Ready',3;"
+    },
+    {
+      "code": "BA",
+      "kind": "command",
+      "heading": "BAse",
+      "page": "09.01.07",
+      "extract_line": 15655,
+      "role_line": 15656,
+      "signatures": [
+        {
+          "extract_line": 15657,
+          "text": "BA x,y;"
+        }
+      ],
+      "example": "BA 24,32;"
+    },
+    {
+      "code": "SI",
+      "kind": "command",
+      "heading": "SIze",
+      "page": "09.01.07",
+      "extract_line": 15679,
+      "role_line": 15680,
+      "signatures": [
+        {
+          "extract_line": 15681,
+          "text": "SI width,height;"
+        }
+      ],
+      "example": "SI 144,64;"
+    },
+    {
+      "code": "SA",
+      "kind": "command",
+      "heading": "SAve",
+      "page": "09.01.08",
+      "extract_line": 15692,
+      "role_line": 15693,
+      "signatures": [
+        {
+          "extract_line": 15694,
+          "text": "SA block number;"
+        }
+      ],
+      "example": "SA 2;"
+    },
+    {
+      "code": "RU",
+      "kind": "command",
+      "heading": "RunUntil",
+      "page": "09.01.08",
+      "extract_line": 15724,
+      "role_line": 15725,
+      "signatures": [
+        {
+          "extract_line": 15726,
+          "text": "RU delay,flags;"
+        }
+      ],
+      "example": "RU 0,4;"
+    },
+    {
+      "code": "BU",
+      "kind": "command",
+      "heading": "BUtton",
+      "page": "09.01.09",
+      "extract_line": 15784,
+      "role_line": 15785,
+      "signatures": [
+        {
+          "extract_line": 15786,
+          "text": "BU number,x,y,width,height,setting,minimum,maximum;[][]"
+        }
+      ],
+      "example": "BU 2,8,8,64,16,0,0,1;[PR 2,2,'Ready',3;][]"
+    },
+    {
+      "code": "BQ",
+      "kind": "command",
+      "heading": "ButtonQuit",
+      "page": "09.01.11",
+      "extract_line": 15869,
+      "role_line": 15870,
+      "signatures": [
+        {
+          "extract_line": 15871,
+          "text": "BQ;"
+        }
+      ],
+      "example": "BQ;"
+    },
+    {
+      "code": "BP",
+      "kind": "function",
+      "heading": "BPosition",
+      "page": "09.01.12",
+      "extract_line": 15923,
+      "role_line": 15924,
+      "signatures": [
+        {
+          "extract_line": 15925,
+          "text": "setting=BP"
+        }
+      ],
+      "example": "BP"
+    },
+    {
+      "code": "BR",
+      "kind": "command",
+      "heading": "BReturn",
+      "page": "09.01.13",
+      "extract_line": 15968,
+      "role_line": 15969,
+      "signatures": [
+        {
+          "extract_line": 15970,
+          "text": "BR new setting;"
+        }
+      ],
+      "example": "BR 1;"
+    },
+    {
+      "code": "BC",
+      "kind": "command",
+      "heading": "BChange",
+      "page": "09.01.13",
+      "extract_line": 15983,
+      "role_line": 15984,
+      "signatures": [
+        {
+          "extract_line": 15985,
+          "text": "BC number,new setting"
+        }
+      ],
+      "example": "BC 2,0;"
+    },
+    {
+      "code": "KY",
+      "kind": "command",
+      "heading": "KY",
+      "page": "09.01.14",
+      "extract_line": 16011,
+      "role_line": 16012,
+      "signatures": [
+        {
+          "extract_line": 16013,
+          "text": "KY ascii,shift"
+        }
+      ],
+      "example": "KY 32,0;"
+    },
+    {
+      "code": "NW",
+      "kind": "command",
+      "heading": "NoWait",
+      "page": "09.01.14",
+      "extract_line": 16027,
+      "role_line": 16028,
+      "signatures": [
+        {
+          "extract_line": 16029,
+          "text": "NW;"
+        }
+      ],
+      "example": "NW;"
+    }
+  ],
+  "notes": [
+    "Examples are illustrative fragments, not native-qualified full programs. BU draw/change bracket contexts and the final-terminator exception must be considered separately from the general separator rule.",
+    "Postfix numeric/operator spacing in the held prose is inconsistent. No token splitting, numeric result, timing or button behavior is implemented."
+  ]
+}

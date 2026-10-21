@@ -426,3 +426,14 @@ roles and target locators remain distinct from resolved language surfaces and
 existing definition references. Thirty flagged rows include role/spacing and
 locator conflicts, malformed If/PI# rows and generic Exit/Wait labels that target
 AMAL Autotest. No index wording overrides a definition or qualifies a release.
+
+
+The H/I review covers 28485–28627 and 28628–28723, ending before the Main Index.
+Neither section introduces a named definition. Historical library, licence,
+update/support and product wording is not current availability or qualification.
+The Interface inventory independently binds 69 forms to all 64 explicit role
+blocks and 70 signature lines across §§9.1–9.4. The same pinned extract supports
+the exact headings/pages/signatures and separate lexical ranges. A definition-
+led overlay maps the 69 index rows and retains AR/AS role conflicts; SW has
+function and instruction definitions, and SH shares the ScreenWidth heading.
+Examples remain illustrative fragments, not original-runtime evidence.

@@ -1,0 +1,535 @@
+{
+  "chapter": "09.02",
+  "entries": [
+    {
+      "code": "BX",
+      "kind": "function",
+      "heading": "BaseX",
+      "page": "09.02.01",
+      "extract_line": 16061,
+      "role_line": 16063,
+      "signatures": [
+        {
+          "extract_line": 16064,
+          "text": "x=BX"
+        }
+      ],
+      "example": "BX"
+    },
+    {
+      "code": "BY",
+      "kind": "function",
+      "heading": "BaseY",
+      "page": "09.02.01",
+      "extract_line": 16062,
+      "role_line": 16063,
+      "signatures": [
+        {
+          "extract_line": 16065,
+          "text": "y=BY"
+        }
+      ],
+      "example": "BY"
+    },
+    {
+      "code": "SX",
+      "kind": "function",
+      "heading": "SizeX",
+      "page": "09.02.01",
+      "extract_line": 16071,
+      "role_line": 16073,
+      "signatures": [
+        {
+          "extract_line": 16074,
+          "text": "width=SX"
+        }
+      ],
+      "example": "SX"
+    },
+    {
+      "code": "SY",
+      "kind": "function",
+      "heading": "SizeY",
+      "page": "09.02.01",
+      "extract_line": 16072,
+      "role_line": 16073,
+      "signatures": [
+        {
+          "extract_line": 16075,
+          "text": "height=SY"
+        }
+      ],
+      "example": "SY"
+    },
+    {
+      "code": "SW",
+      "kind": "function",
+      "heading": "ScreenWidth",
+      "page": "09.02.01",
+      "extract_line": 16080,
+      "role_line": 16081,
+      "signatures": [
+        {
+          "extract_line": 16082,
+          "text": "width=SW"
+        }
+      ],
+      "example": "SW"
+    },
+    {
+      "code": "SH",
+      "kind": "function",
+      "heading": "ScreenWidth",
+      "page": "09.02.01",
+      "extract_line": 16080,
+      "role_line": 16081,
+      "signatures": [
+        {
+          "extract_line": 16083,
+          "text": "height=SH"
+        }
+      ],
+      "example": "SH"
+    },
+    {
+      "code": "XA",
+      "kind": "function",
+      "heading": "XA",
+      "page": "09.02.02",
+      "extract_line": 16101,
+      "role_line": 16103,
+      "signatures": [
+        {
+          "extract_line": 16104,
+          "text": "x=XA"
+        }
+      ],
+      "example": "XA"
+    },
+    {
+      "code": "YA",
+      "kind": "function",
+      "heading": "YA",
+      "page": "09.02.02",
+      "extract_line": 16102,
+      "role_line": 16103,
+      "signatures": [
+        {
+          "extract_line": 16105,
+          "text": "y=YA"
+        }
+      ],
+      "example": "YA"
+    },
+    {
+      "code": "XB",
+      "kind": "function",
+      "heading": "XB",
+      "page": "09.02.02",
+      "extract_line": 16115,
+      "role_line": 16117,
+      "signatures": [
+        {
+          "extract_line": 16118,
+          "text": "x=XB"
+        }
+      ],
+      "example": "XB"
+    },
+    {
+      "code": "YB",
+      "kind": "function",
+      "heading": "YB",
+      "page": "09.02.02",
+      "extract_line": 16116,
+      "role_line": 16117,
+      "signatures": [
+        {
+          "extract_line": 16119,
+          "text": "y=YB"
+        }
+      ],
+      "example": "YB"
+    },
+    {
+      "code": "GB",
+      "kind": "command",
+      "heading": "GraphicBox",
+      "page": "09.02.02",
+      "extract_line": 16137,
+      "role_line": 16138,
+      "signatures": [
+        {
+          "extract_line": 16139,
+          "text": "GB x1,y1,x2,y2;"
+        }
+      ],
+      "example": "GB 8,8,96,40;"
+    },
+    {
+      "code": "IN",
+      "kind": "command",
+      "heading": "INk",
+      "page": "09.02.03",
+      "extract_line": 16155,
+      "role_line": 16156,
+      "signatures": [
+        {
+          "extract_line": 16157,
+          "text": "IN pen,background,outline;"
+        }
+      ],
+      "example": "IN 3,0,1;"
+    },
+    {
+      "code": "SP",
+      "kind": "command",
+      "heading": "SetPattern",
+      "page": "09.02.03",
+      "extract_line": 16174,
+      "role_line": 16175,
+      "signatures": [
+        {
+          "extract_line": 16176,
+          "text": "SP pattern number,outline mode;"
+        }
+      ],
+      "example": "SP 2,1;"
+    },
+    {
+      "code": "GS",
+      "kind": "command",
+      "heading": "GraphicSquare",
+      "page": "09.02.03",
+      "extract_line": 16188,
+      "role_line": 16189,
+      "signatures": [
+        {
+          "extract_line": 16190,
+          "text": "GS x1,y1,x2,y2;"
+        }
+      ],
+      "example": "GS 8,8,96,40;"
+    },
+    {
+      "code": "SL",
+      "kind": "command",
+      "heading": "SetLine",
+      "page": "09.02.04",
+      "extract_line": 16204,
+      "role_line": 16205,
+      "signatures": [
+        {
+          "extract_line": 16206,
+          "text": "SL pattern;"
+        }
+      ],
+      "example": "SL $AAAA;"
+    },
+    {
+      "code": "GL",
+      "kind": "command",
+      "heading": "GraphicLine",
+      "page": "09.02.04",
+      "extract_line": 16214,
+      "role_line": 16215,
+      "signatures": [
+        {
+          "extract_line": 16216,
+          "text": "GL x1,y1,x2,y2;"
+        }
+      ],
+      "example": "GL 8,8,96,40;"
+    },
+    {
+      "code": "GE",
+      "kind": "command",
+      "heading": "GraphicEllipse",
+      "page": "09.02.04",
+      "extract_line": 16224,
+      "role_line": 16225,
+      "signatures": [
+        {
+          "extract_line": 16226,
+          "text": "GE x,y,radius1,radius2;"
+        }
+      ],
+      "example": "GE 48,32,16,8;"
+    },
+    {
+      "code": "PO",
+      "kind": "command",
+      "heading": "PrintOutline",
+      "page": "09.02.04",
+      "extract_line": 16238,
+      "role_line": 16239,
+      "signatures": [
+        {
+          "extract_line": 16240,
+          "text": "PO x,y,'text',outline colour,text colour;"
+        }
+      ],
+      "example": "PO 8,12,'Ready',1,3;"
+    },
+    {
+      "code": "SW",
+      "kind": "command",
+      "heading": "SetWriting",
+      "page": "09.02.05",
+      "extract_line": 16258,
+      "role_line": 16259,
+      "signatures": [
+        {
+          "extract_line": 16260,
+          "text": "SW mode;"
+        }
+      ],
+      "example": "SW 1;"
+    },
+    {
+      "code": "SF",
+      "kind": "command",
+      "heading": "SetFont",
+      "page": "09.02.05",
+      "extract_line": 16269,
+      "role_line": 16270,
+      "signatures": [
+        {
+          "extract_line": 16271,
+          "text": "SF number,style;"
+        }
+      ],
+      "example": "SF 2,0;"
+    },
+    {
+      "code": "TW",
+      "kind": "function",
+      "heading": "TextWidth",
+      "page": "09.02.05",
+      "extract_line": 16283,
+      "role_line": 16284,
+      "signatures": [
+        {
+          "extract_line": 16285,
+          "text": "width=“text” TW"
+        }
+      ],
+      "example": "'Ready' TW"
+    },
+    {
+      "code": "TH",
+      "kind": "function",
+      "heading": "TextHeight",
+      "page": "09.02.05",
+      "extract_line": 16287,
+      "role_line": 16288,
+      "signatures": [
+        {
+          "extract_line": 16289,
+          "text": "height=TH"
+        }
+      ],
+      "example": "TH"
+    },
+    {
+      "code": "TL",
+      "kind": "function",
+      "heading": "TextLength",
+      "page": "09.02.05",
+      "extract_line": 16291,
+      "role_line": 16292,
+      "signatures": [
+        {
+          "extract_line": 16293,
+          "text": "number=“text” TL"
+        }
+      ],
+      "example": "'Ready' TL"
+    },
+    {
+      "code": "CX",
+      "kind": "function",
+      "heading": "CentreX",
+      "page": "09.02.05",
+      "extract_line": 16295,
+      "role_line": 16296,
+      "signatures": [
+        {
+          "extract_line": 16297,
+          "text": "position=“text” CX"
+        }
+      ],
+      "example": "'Ready' CX"
+    },
+    {
+      "code": "VT",
+      "kind": "command",
+      "heading": "VertText",
+      "page": "09.02.06",
+      "extract_line": 16308,
+      "role_line": 16309,
+      "signatures": [
+        {
+          "extract_line": 16310,
+          "text": "VT x,y,'text',colour"
+        }
+      ],
+      "example": "VT 8,8,'Ready',3;"
+    },
+    {
+      "code": "LA",
+      "kind": "command",
+      "heading": "LAbel",
+      "page": "09.02.06",
+      "extract_line": 16320,
+      "role_line": 16321,
+      "signatures": [
+        {
+          "extract_line": 16322,
+          "text": "LA label;"
+        }
+      ],
+      "example": "LA 2;"
+    },
+    {
+      "code": "JP",
+      "kind": "command",
+      "heading": "JmP",
+      "page": "09.02.06",
+      "extract_line": 16338,
+      "role_line": 16339,
+      "signatures": [
+        {
+          "extract_line": 16340,
+          "text": "JP label;"
+        }
+      ],
+      "example": "JP 2;"
+    },
+    {
+      "code": "JS",
+      "kind": "command",
+      "heading": "JumpSubroutine",
+      "page": "09.02.07",
+      "extract_line": 16359,
+      "role_line": 16360,
+      "signatures": [
+        {
+          "extract_line": 16361,
+          "text": "JS label;"
+        }
+      ],
+      "example": "JS 2;"
+    },
+    {
+      "code": "RT",
+      "kind": "command",
+      "heading": "ReTurn",
+      "page": "09.02.07",
+      "extract_line": 16367,
+      "role_line": 16368,
+      "signatures": [
+        {
+          "extract_line": 16369,
+          "text": "RT;"
+        }
+      ],
+      "example": "RT;"
+    },
+    {
+      "code": "IF",
+      "kind": "structure",
+      "heading": "IF",
+      "page": "09.02.07",
+      "extract_line": 16378,
+      "role_line": 16379,
+      "signatures": [
+        {
+          "extract_line": 16380,
+          "text": "IF expression;[routine]"
+        }
+      ],
+      "example": "IF 0 VA 1 =;[PR 8,8,'Ready',3;]"
+    },
+    {
+      "code": "UI",
+      "kind": "command",
+      "heading": "UserInstruction",
+      "page": "09.02.08",
+      "extract_line": 16417,
+      "role_line": 16418,
+      "signatures": [
+        {
+          "extract_line": 16419,
+          "text": "UI XX,number of parameters;[instruction definition]"
+        }
+      ],
+      "example": "UI ZZ,1;[PR 8,8,P1,3;]"
+    },
+    {
+      "code": "XY",
+      "kind": "command",
+      "heading": "XY",
+      "page": "09.02.08",
+      "extract_line": 16454,
+      "role_line": 16455,
+      "signatures": [
+        {
+          "extract_line": 16456,
+          "text": "XY xa,ya,xb,yb"
+        }
+      ],
+      "example": "XY 8,8,96,40;"
+    },
+    {
+      "code": "SZ",
+      "kind": "command",
+      "heading": "SetZonevariable",
+      "page": "09.02.09",
+      "extract_line": 16489,
+      "role_line": 16490,
+      "signatures": [
+        {
+          "extract_line": 16491,
+          "text": "SZ value;"
+        }
+      ],
+      "example": "SZ 'Ready';"
+    },
+    {
+      "code": "ZV",
+      "kind": "function",
+      "heading": "ZoneVariable",
+      "page": "09.02.09",
+      "extract_line": 16499,
+      "role_line": 16500,
+      "signatures": [
+        {
+          "extract_line": 16501,
+          "text": "value=ZV"
+        }
+      ],
+      "example": "ZV"
+    },
+    {
+      "code": "CA",
+      "kind": "command",
+      "heading": "CAll",
+      "page": "09.02.10",
+      "extract_line": 16525,
+      "role_line": 16526,
+      "signatures": [
+        {
+          "extract_line": 16527,
+          "text": "CA address;"
+        }
+      ],
+      "example": "CA 0 VA;"
+    }
+  ],
+  "notes": [
+    "SW has two distinct roles: screen-width function and SetWriting command. SH shares the printed ScreenWidth heading but has its own signature.",
+    "The CAll/CA heading/signature differs in capitals from the Call example at 16536. No new alias or native acceptance follows.",
+    "User parameters P1–P9 and custom names are documented in lexical.json, not expanded into named builtins. Arithmetic and conditional operators are separate."
+  ]
+}

@@ -1084,3 +1084,32 @@ All 18 npm files (including the new report) and nine VSIX source assets match
 source bytes; the extension remains declarative with no public gallery flag.
 Package registration/grammar assets are unchanged. No native operation or
 publication occurred. Versions and private Marketplace availability are unchanged.
+
+
+## H/I reference review and Interface inventory
+
+The pinned extract verifies H at 28485–28627 and I at 28628–28723, ending before
+the Main Index. Neither introduces a named definition. The separate Interface
+inventory covers all 64 explicitly labelled definition blocks and all 70 signature
+lines, expanded into 69 code/role records (15/35/13/6 by chapter). There are
+46 commands, 22 functions and one structure, with 68 distinct codes. SW keeps
+both roles; SH retains its actual shared ScreenWidth heading. All 69 index rows
+map to one definition each, with AR/AS's two role conflicts retained. Operator/
+parameter/lexical evidence remains outside the named-form count.
+
+Removing the grouped SH record makes the primary source checker fail with
+`incomplete or duplicated Interface definitions` and breaks inventory/index
+checks. Restoration passes exact heading/role/signature/page checks, complete
+source-block/signature coverage and H/I boundaries. The frozen 818-row command-
+index source replay also passes. All 29 package checks, editor sync and Ruff
+lint/format pass. All six grammar hashes match HEAD and the pre-change baseline.
+
+All 19 npm source files (including the Interface report) and nine VSIX source
+assets match source bytes. Registrations/grammars remain unchanged and the
+extension remains declarative with no public gallery flag. Consumer/render
+reruns were not attempted for this documentary-only change; the prior diagnosed
+Shiki early-stop/explanation failure remains recorded above, without a new green
+claim. No standalone Interface mode, string injection, parsing, original execution,
+resource access or edition qualification follows. BASIC remains 728 entries
+across 44 sections. Versions, published 0.2.0 and private Marketplace availability
+are unchanged.
