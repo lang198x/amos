@@ -1,13 +1,14 @@
 # AMOS highlighting
 
-Partial AMOS TextMate syntax highlighting from Lang198x. This extension contains
+Professional-based AMOS TextMate syntax highlighting from Lang198x. This extension contains
 no executable extension code, compiler or language server. It associates plain
 UTF-8 `.amos.txt` listings; native tokenised `.AMOS` files need a separate decoder.
 
 Install the packaged VSIX with VS Code's **Extensions: Install from VSIX**.
 Common controls, opening message commands, selected functions, names, numbers,
 strings and comments are highlighted. Colour does not indicate language validity
-or release compatibility. See https://github.com/lang198x/amos for exact coverage.
+or release compatibility. Creator, Easy and other release/extension revisions
+remain unqualified. See https://github.com/lang198x/amos for exact coverage.
 
 The packaged grammar is generated from the repository's canonical grammar and
 verified byte for byte. Newly authored extension files use GPL-2.0-or-later.
@@ -56,3 +57,10 @@ SW uses a neutral builtin scope; disputed Min/Max/Call spellings remain neutral.
 Its square-bracket configuration inherits no BASIC comments. There is no new
 file association, BASIC-string injection, expression/terminator validation,
 custom-name resolution, resource loading or execution.
+
+
+Current source additionally recognises selected decimal/scientific literals,
+line-head named labels followed by inline statements, numeric line identifiers,
+and both quoted-string forms. Apostrophe comments still begin physical lines;
+numbered Rem lines remain comments. This extends highlighting only. The repository's
+readiness review records independent inputs and dark/light native-editor checks.

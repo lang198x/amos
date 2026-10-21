@@ -50,10 +50,11 @@
     "docs/command-index-review.md",
     "docs/interface-inventory.md",
     "LICENSE",
+    "docs/highlighting-readiness.md",
     "docs/verification.md"
   ],
   "scripts": {
-    "test": "node --test tests/package.test.mjs tests/manual-core.test.mjs tests/language-inventories.test.mjs tests/amos-3d-inventory.test.mjs tests/amos-3d-source.test.mjs tests/amos-3d-package.test.mjs tests/amal-package.test.mjs tests/io-source.test.mjs tests/command-index.test.mjs tests/interface-inventory.test.mjs tests/tokenization-guard.test.mjs tests/interface-package.test.mjs",
+    "test": "node --test tests/package.test.mjs tests/manual-core.test.mjs tests/language-inventories.test.mjs tests/amos-3d-inventory.test.mjs tests/amos-3d-source.test.mjs tests/amos-3d-package.test.mjs tests/amal-package.test.mjs tests/io-source.test.mjs tests/command-index.test.mjs tests/interface-inventory.test.mjs tests/tokenization-guard.test.mjs tests/interface-package.test.mjs tests/readiness-source.test.mjs",
     "test:integrations": "node --import ./tests/helpers/install-tokenization-guard.mjs --test --test-concurrency=1 tests/highlighting*.test.mjs",
     "check:editor": "node scripts/sync-editor.mjs --check",
     "prepack": "node scripts/sync-editor.mjs --check"

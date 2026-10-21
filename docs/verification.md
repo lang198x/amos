@@ -1176,3 +1176,65 @@ No postfix evaluation, terminator/argument validation, custom-name resolution,
 zone-context qualification, HyperText injection, native operation or release
 qualification follows. Parser, versions, published 0.2.0 and private Marketplace
 availability remain unchanged. No new dependency or installed consumer edit.
+
+
+## Bounded highlighting readiness review
+
+The six focused lexical regressions fail before the BASIC changes (0/6) and
+pass after them in both profiles/themes. Reproduced gaps cover whole leading/
+trailing-dot/scientific literals, inline statements after line-head labels,
+numeric line identifiers, single-quoted strings and numbered Rem comments.
+The first broad run passed 260/261: the old `other_label :` positive expectation
+failed with `"other_label" lacks entity.name.label.amos`. Original tokenizer
+spacing evidence requires an immediate colon, so the positive now uses
+`other_label:` and the spaced form is a negative identifier case. Existing
+command/function precedence remains explicit, including Start's function role.
+
+The independent corpus initially failed with
+`tiny-shell.interface.txt:14: "SM" lacks support.function.amos-interface`.
+Its handwritten annotation was wrong: the source definition at 17441–43 names
+SM as ScreenMove instruction. Correcting that annotation leaves the grammar
+unchanged and passes the independent corpus. Two small programs contribute 116
+reviewed ranges; the separate numeric fixture checks 76 whole numeric fragments.
+All source bytes, immutable revisions and both MIT notices are retained.
+
+A final interaction check independently reproduced a colon-consumption bug:
+`RC_BEGIN: Rem Print "ignored"` failed with `lacks comment.line.rem.amos` in both
+profiles. Leaving the colon unconsumed by label recognition restores the existing
+Rem recognizer; the focused checks pass. This explains the fix rather than
+accepting the earlier green cases as sufficient evidence.
+
+Both pinned original files/four excerpts replay against their complete hashes,
+and the held manual hash matches. Appending a newline to the original-source
+input makes replay fail with `original source hash mismatch`; restoration passes.
+All 35 package checks, editor sync and Ruff lint/format pass. AMAL and Interface
+canonical/editor grammars remain unchanged; BASIC and composed 3D copies change
+together. Parser, version, inventory totals and published artifacts are unchanged.
+
+Native visual checks used an isolated VS Code 1.142.0 arm64 installation with
+built-in Dark Modern and Light Modern. Automatic .amos.txt mode selection and
+explicit 3D/AMAL/Interface workspace selections show the intended status labels.
+All four modes render readable code with opaque strings/comments and expected
+neutral fallbacks. This closes the previous unperformed visual-review item for
+these views only; no screen-reader, contrast, cross-platform or native-runtime
+qualification follows. The CLI reports the external warning
+`[DEP0169] DeprecationWarning: url.parse()`; install succeeds. No editor dependency
+or global/user setting is changed by this task.
+
+After the final label/Rem correction, both complete guarded suites pass 264/264
+with Shiki 4.4.3 and existing API 1.3.0/local API 2.0.0, serially. The final VSIX
+was reinstalled into the isolated profile; its grammar bytes match canonical.
+Reloading the editor changed the exact reproduced inline Rem payload from code
+colours to comment colours in both light and dark views. All 23 final npm files
+and eleven VSIX source assets match source; extracted four-mode exports preserve
+source/scopes/styles through both existing consumers in both themes. No native
+program executes and no package is published. The retained readiness review
+recommends a scoped public preview, subject to a separate release decision.
+
+A byte comparison against the installed package manifest initially failed with
+`AssertionError: extension/package.json`. Inspection shows VS Code adds only
+`__metadata` (installation timestamp, platform and size). Every declared source
+field matches, all other installed source assets match exactly, and every one
+of the eleven archive source assets matches repository bytes. The archive itself
+is not rewritten by installation. Upstream whitespace in the three hash-pinned
+independent text fixtures is retained rather than edited to satisfy patch style.

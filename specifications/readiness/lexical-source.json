@@ -1,0 +1,77 @@
+{
+  "repository": "https://github.com/AOZ-Studio/AMOS-Professional-Official",
+  "commit": "533b4b1f5acd604814513f78e02c7b4796cb0531",
+  "encoding": "ISO-8859-1",
+  "licence": "../extensions/amos-3d/original-source-LICENSE",
+  "qualified_releases": [],
+  "files": [
+    {
+      "path": "AMOSPro Sources/+Token.s",
+      "sha256": "b3c1b4b03aa80f217e7188f98aa2331e68f23fd6a7dbb32e78a5979a70fea56c",
+      "excerpts": [
+        {
+          "id": "line-start-numbers",
+          "first_line": 65,
+          "last_line": 77,
+          "text": "******* Un chiffre au debut de la ligne?\n\tmove.b\t(a3),d0\n\tcmp.b\t#\"0\",d0\n\tbcs.s\tTokT2\n\tcmp.b\t#\"9\",d0\n\tbhi.s\tTokT2\n\tbset\t#1,d5\t\t* Flag VARIABLE\n\tbset \t#4,d5\t\t* Flag LABEL\n\tmove.l\ta4,TkAd(a5)\n\tmove.w\t#_TkVar,(a4)+\n\tclr.l\t(a4)+\n\tmove.b\t(a3)+,(a4)+\n"
+        },
+        {
+          "id": "quoted-strings",
+          "first_line": 122,
+          "last_line": 137,
+          "text": "* Debut d'une chaine alphanumerique?\nTkC2:\tcmp.b\t#'\"',d0\n\tbeq \tTkC2a\n\tcmp.b\t#\"'\",d0\n\tbne\tTkOtre\nTkC2a:\tmove.b\td0,TkChCar(a5)\n\tmove.l\ta4,TkAd(a5)\n\tcmp.b\t#\"'\",d0\n\tbeq.s\tTkC2b\n\tmove.w\t#_TkCh1,(a4)+\n\tbra.s\tTkC2c\nTkC2b:\tmove.w\t#_TkCh2,(a4)+\nTkC2c:\tclr.w\t(a4)+\n\tbset\t#0,d5\n\tbra.s\tTokLoop\n"
+        },
+        {
+          "id": "named-labels",
+          "first_line": 170,
+          "last_line": 177,
+          "text": "* Fin de la variable/label/label goto\nTkV4:\tbset\t#3,d5\t\t* Si pas debut de ligne\n\tbne.s\tTkV5\n\tcmp.b\t#\":\",d0\t\t* Si :\n\tbne.s\tTkV5\nTkV1:\tmove.w\t#_TkLab,(a0)\n\tbra.s\tTkV7\t\t\n\t"
+        }
+      ]
+    },
+    {
+      "path": "+ILib.s",
+      "sha256": "8ef862422c98afc62beb460ccb9bd77ab185922b97f871e8e0b0a82e2e407282",
+      "excerpts": [
+        {
+          "id": "numeric-reader",
+          "first_line": 7047,
+          "last_line": 7122,
+          "text": "\tLib_Def\tValRout\n; - - - - - - - - - - - - -\n        movem.l a1-a2/d5-d7,-(sp)\n\tmove.l\ta0,d7\n\tmoveq\t#0,d4\n\tmove.l\ta0,a2\n\ttst.w\td0\n\tbeq.s\tval1c\n; y-a-t'il un signe devant?\nval1:   move.b \t(a0)+,d0\n        beq \tval10\n        cmp.b \t#32,d0\n        beq.s \tval1\n        move.l \ta0,a2\n        subq.l \t#1,a2\n        cmp.b \t#\"-\",d0\n        bne.s \tval1a\n        not \td4\n        bra.s \tval1c\nval1a:  cmp.b \t#\"+\",d0\n        beq.s \tval1c\nval1b:  subq.l \t#1,a0\nval1c\n; Explore le chiffre\n; ~~~~~~~~~~~~~~~~~~\n\tmove.b \t(a0)+,d0\n        beq \tval10\n        cmp.b \t#32,d0\n        beq.s \tval1c\n        cmp.b \t#\"$\",d0      \t;chiffre HEXA\n        beq \tval5\n        cmp.b\t#\"%\",d0       \t;chiffre BINAIRE\n        beq \tval6\n        cmp.b \t#\".\",d0\n        beq.s \tval2\n        cmp.b \t#\"0\",d0\n        bcs \tval10\n        cmp.b \t#\"9\",d0\n        bhi \tval10\n; c'estn chiffre DECIMAL: entier ou float?\nval2:   subq.l\t#1,a0\n\tmove.l \ta0,a1        \t;si float: trouve la fin du chiffre\n        clr \td3\nval3:   move.b \t(a1)+,d0\n        beq.s \tval4\n        cmp.b \t#32,d0\n        beq.s \tval3\n        cmp.b \t#\"0\",d0\n        bcs.s \tval3z\n        cmp.b \t#\"9\",d0\n        bls.s \tval3\nval3z:  cmp.b \t#\".\",d0       \t;cherche une \"virgule\"\n        bne.s\tval3a\n        bset \t#0,d3          \t;si deux virgules: fin du chiffre\n        beq.s \tval3\n        bne.s \tval4\nval3a:  cmp.b \t#\"e\",d0       \t;cherche un exposant\n        beq.s \tval3b\n        cmp.b \t#\"E\",d0       \t;autre caractere: fin du chiffre\n        bne.s \tval4\nval3ab: move.b \t#\"e\",-1(a1)  \t;met un E minuscule!!!\nval3b:  move.b \t(a1)+,d0     \t;apres un E, accepte -/+ et chiffres\n        cmp.b \t#32,d0\n        beq.s \tval3b\n        cmp.b \t#\"+\",d0\n        beq.s \tval3c\n        cmp.b \t#\"-\",d0\n        bne.s \tval3e\nval3c:  bset \t#1,d3          \t;+ ou -: c'est un float!\nval3d:  move.b \t(a1)+,d0     \t;puis cherche la fin de l'exposant\n        cmp.b \t#32,d0\n        beq.s \tval3d\nval3e:  cmp.b \t#\"0\",d0\n        bcs.s \tval4\n        cmp.b \t#\"9\",d0       \t;chiffre! c'est un float\n        bls.s \tval3c"
+        }
+      ]
+    }
+  ],
+  "manual": {
+    "file": "amos-pro-user-guide-1992-croucher-hill.txt",
+    "sha256": "b0bf946502ad3ce6534e13d620dd5c017f8f6a6cd7a4c4f99ced87b1d925715c",
+    "ranges": {
+      "fractional-constants": [
+        3187,
+        3203
+      ],
+      "separators-spacing": [
+        3423,
+        3437
+      ],
+      "comments": [
+        3454,
+        3480
+      ],
+      "labels": [
+        4419,
+        4436
+      ],
+      "procedure-label-spacing": [
+        5160,
+        5164
+      ]
+    }
+  },
+  "limits": [
+    "Source evidence for one pinned revision, not native execution or all-edition qualification.",
+    "ASCII digits/identifiers and selected decimal/exponent forms; no full scanner or numeric range validation.",
+    "Spaces before an exponent/sign are recognised; arbitrary spaces within digits and uncommon detokenizer spellings remain outside the preview claim.",
+    "Named labels require a physical-line head and immediate colon. Keywords retain precedence; jump targets and later colon-separated names are unresolved."
+  ]
+}

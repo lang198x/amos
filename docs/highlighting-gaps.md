@@ -119,17 +119,21 @@ Uninventoried sections need explicit review; they are not silently excluded from
 
 ## Gaps that a chapter sweep cannot close
 
-- **Lexical forms:** full numeric notation, inline/numeric labels and original-editor
-  spacing/prefix rules need their own source-backed review. Current highlighting
-  accepts selected forms without proving native import acceptance.
+- **Lexical forms:** the [readiness review](highlighting-readiness.md) covers
+  selected decimal/scientific forms, inline statements after line-head labels,
+  numeric line identifiers, quotes and comments. Arbitrary spacing, extended
+  identifiers, unusual detokenizer spellings and original-editor rewrites remain
+  unqualified; highlighting does not prove native import acceptance.
 - **Embedded languages:** BASIC strings remain opaque. Menu, standalone AMAL and
   standalone Interface coverage do not establish arbitrary compact-program
   acceptance or injection into BASIC strings.
 - **Versions and extensions:** this Professional manual does not qualify Creator,
   Easy, every Professional release or extensions through their lifetimes. Retain
   separate evidence records and unknowns, including optional 3D profile boundaries.
-- **Native/editor evidence:** token scopes and archive checks do not establish a
-  visual editor review, original-runtime acceptance or educational effectiveness.
+- **Native/editor evidence:** the readiness review includes a native VS Code
+  dark/light check for all four modes on macOS. This does not establish cross-
+  platform behavior, a contrast/screen-reader audit, original-runtime acceptance
+  or educational effectiveness.
 - **Parser and services:** the opening-program Rust subset, native codecs, analysis,
   LSP and compilation are separate deliverables. More coloured vocabulary does
   not enlarge their implemented surface.

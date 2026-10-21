@@ -3,6 +3,11 @@
 Parse small AMOS listings, check the supported opening-program surface, and
 highlight AMOS, standalone AMAL and Interface source in Shiki and TextMate-based editors.
 
+Highlighting follows the Professional manual, with opt-in AMOS 3D, standalone
+AMAL and standalone Interface modes. Creator, Easy and other release/extension
+revisions remain unqualified. The [readiness review](docs/highlighting-readiness.md)
+states the tested scope and remaining limits.
+
 This is the first bounded implementation. It builds a typed AST with complete
 source tokens and locations. It does not yet read/write native `.AMOS` files,
 compile programs or provide an LSP server. [Coverage](docs/coverage.md) names the

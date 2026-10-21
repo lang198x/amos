@@ -44,7 +44,7 @@ test('sound, input and screen functions retain their complete forms', () => {
 });
 
 test('standalone labels differ from commands, array names and unresolved invocations', () => {
-  for (const source of ['BR_DRAW_STATE:', 'Other_Label:', '  other_label :']) {
+  for (const source of ['BR_DRAW_STATE:', 'Other_Label:', '  other_label:']) {
     const start = source.search(/[A-Za-z_]/);
     const end = source.indexOf(':');
     assertScope(tokens(source)[0], start, source.slice(0, end).trimEnd().length, 'entity.name.label.amos');
@@ -52,7 +52,7 @@ test('standalone labels differ from commands, array names and unresolved invocat
   for (const source of ['Print:', 'End:', 'Return:', 'Wait:']) {
     assertScope(tokens(source)[0], 0, source.length - 1, 'keyword.control.amos');
   }
-  for (const source of ['BR_MARK(1)=2', 'BR_DRAW_STATE', 'Gosub TARGET+1', 'MY_PROC[1]']) {
+  for (const source of ['BR_MARK(1)=2', 'BR_DRAW_STATE', 'Gosub TARGET+1', 'MY_PROC[1]', 'other_label :']) {
     const name = source.startsWith('Gosub') ? 'TARGET' : source.match(/^[A-Za-z_]+/)[0];
     const start = source.indexOf(name);
     assertScope(tokens(source)[0], start, start + name.length, 'variable.other.amos');

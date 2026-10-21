@@ -10,7 +10,7 @@ The table describes current source.
 | --- | --- |
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
-| Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
+| Parser lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
 | Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 19 BASIC dialogue/value/control/resource forms from 9.1/9.3/9.4, 10.1–10.6, 11.1–11.2, 11.4, 12.1–12.2 and five §13.1 accessory/configuration forms, Appendix B’s Kill Editor and twenty-eight Appendix A memory/block/address/conversion/bit/call/register forms and eight Appendix F Copper forms and two Appendix C display-mode queries, plus library/equate/structure/device/requester forms from 11.5 and Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
@@ -64,8 +64,9 @@ Additional vocabulary, beyond the released opening/control set:
 
 This does not cover the whole AMOS vocabulary, AMAL/Interface languages inside
 strings, all numeric representations, extension commands or edition differences.
-Only standalone named label definitions get a label scope; inline/numeric labels,
-procedure resolution and target resolution remain outside this milestone.
+The original game milestone covers standalone named labels. Current source also
+recognises line-head labels followed by statements and numeric line identifiers,
+as described in the readiness review; procedure/target resolution remains separate.
 TextMate accepts spaced/tabbed spellings lexically, without qualifying how each
 original runtime imports them. Parser coverage is unchanged. Public Marketplace
 release still requires a separate review.
@@ -745,3 +746,21 @@ resolution, ZV context qualification or HyperText injection. BASIC strings remai
 opaque. Existing BASIC/3D/AMAL grammars, parser and published assets are unchanged.
 No resource access, native execution or release qualification follows. Marketplace
 availability stays private.
+
+
+## Readiness lexical review
+
+The [bounded readiness review](highlighting-readiness.md) records pinned original
+source evidence and fixes for selected leading/trailing-dot and scientific
+literals, inline statements after line-head labels, numeric line identifiers,
+single-quoted BASIC strings and numbered Rem comments. A space before a named
+label's colon retains an unresolved name. Commands/functions retain precedence.
+Both quotes are opaque with line recovery; line-start apostrophes remain comments.
+
+These changes affect both BASIC highlighting profiles, not the Rust parser.
+Scientific values are not range-checked, jump targets remain unresolved, and
+arbitrary spacing, original-editor rewrites, extended identifiers/encodings and
+all-edition equivalence remain unqualified. The independent corpus contains two
+small external programs plus a numeric regression fixture; it is not a whole-
+language or representative-software coverage percentage. Publication remains
+separate from the readiness recommendation.
