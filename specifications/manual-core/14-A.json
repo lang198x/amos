@@ -1,0 +1,67 @@
+{
+  "chapter": "14.A",
+  "scope": "Partial appendix: eight direct byte/word/longword/string memory read/write headings. Bulk operations, variable addresses, bits and machine-code calls remain later work.",
+  "entries": [
+    {
+      "spelling": "Peek",
+      "kind": "function",
+      "page": "14.A.03",
+      "extract_line": 25345,
+      "example": "MC_BYTE=Peek(MC_ADDRESS)"
+    },
+    {
+      "spelling": "Poke",
+      "kind": "command",
+      "page": "14.A.03",
+      "extract_line": 25351,
+      "example": "Poke MC_ADDRESS,MC_BYTE"
+    },
+    {
+      "spelling": "Deek",
+      "kind": "function",
+      "page": "14.A.04",
+      "extract_line": 25366,
+      "example": "MC_WORD=Deek(MC_ADDRESS)"
+    },
+    {
+      "spelling": "Doke",
+      "kind": "command",
+      "page": "14.A.04",
+      "extract_line": 25373,
+      "example": "Doke MC_ADDRESS,MC_WORD"
+    },
+    {
+      "spelling": "Leek",
+      "kind": "function",
+      "page": "14.A.04",
+      "extract_line": 25381,
+      "example": "MC_LONG=Leek(MC_ADDRESS)"
+    },
+    {
+      "spelling": "Loke",
+      "kind": "command",
+      "page": "14.A.04",
+      "extract_line": 25396,
+      "example": "Loke MC_ADDRESS,MC_LONG"
+    },
+    {
+      "spelling": "Poke$",
+      "kind": "command",
+      "page": "14.A.04",
+      "extract_line": 25404,
+      "example": "Poke$ MC_ADDRESS,MC_TEXT$"
+    },
+    {
+      "spelling": "Peek$",
+      "kind": "function",
+      "page": "14.A.05",
+      "extract_line": 25433,
+      "example": "MC_TEXT$=Peek$(MC_ADDRESS,8)"
+    }
+  ],
+  "notes": [
+    "PEEKS in prose at line 25444 does not override the Peek$ heading/signatures at 25433–36. No Peeks alias is introduced.",
+    "Address validity/alignment, numeric widths/signedness, string bounds/stop behavior and original runtime acceptance require separate evidence. No memory read/write executes in the lexical fixtures.",
+    "The manual arithmetic example at 25391–94 is not reproduced or adopted as a conversion algorithm. Copy/Fill/Hunt, Varptr and the rest of Appendix A are not covered by this slice."
+  ]
+}

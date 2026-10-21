@@ -25,7 +25,8 @@ Wait, Default, Flash and Fade mentions remain references to their earlier forms.
 [page-by-page vocabulary review](error-catalogue-review.md). Covered BASIC
 references, an original 17-gap baseline, spelling discrepancies, editor UI and
 embedded languages are routed separately. Five §13.1 gaps, Kill Editor and three Interface-facing BASIC
-gaps are now covered from their definitions; eight remain. No catalogue wording becomes a new alias or
+gaps and four Appendix A memory forms are covered from their definitions;
+four Copper forms remain. No catalogue wording becomes a new alias or
 inventory entry. Error-code behavior and historical advice remain unqualified.
 
 Highlighting checks prove lexical scopes and source preservation. They do not

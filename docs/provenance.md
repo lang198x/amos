@@ -340,3 +340,11 @@ page, following the existing maths-page crosscheck convention. RESOURCES at
 17495 conflicts with the Resource$ heading at 17619 and supplies no alias.
 Embedded resource definitions stay separate; no native bank/graphics evidence
 or message-index semantics follow from lexical checks.
+
+
+The first Appendix A memory slice binds eight exact headings to pp.14.A.03–05.
+Peek/Poke, Deek/Doke, Leek/Loke and Peek$/Poke$ retain their read/function versus
+write/instruction roles. PEEKS at line 25444 does not override the Peek$ heading
+at 25433. The arithmetic example at 25391–94 is not copied or qualified. No
+native address/alignment, numeric representation, string behavior or memory
+operation is established by the authored lexical notebook.

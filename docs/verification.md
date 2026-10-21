@@ -874,3 +874,26 @@ All 17 npm source files and nine VSIX source assets match, with no public galler
 flag or executable host. Extracted exports render all three modes in both themes,
 preserve exact source and retain Resource$'s function scope. Versions, parser,
 published preview 0.2.0 and private Marketplace availability remain unchanged.
+
+
+## Appendix A direct memory continuation
+
+Eight exact headings bind to pp.14.A.03–05 in the pinned extract and lacked
+complete scopes before implementation. Explicit Appendix A citations are accepted
+beside Appendix B. BASIC now has 698 entries across 42 partial/full chapter/appendix
+sections. Four catalogue memory gaps close; four Copper forms remain. PEEKS prose
+supplies no alias for Peek$ and the manual conversion example is not adopted.
+
+All 25 package checks and 219 integrations per existing consumer pass in both
+profiles/themes. Checks cover read/function versus write/command roles, typed
+variants and labels, nested expressions, Trap and prior resource/error forms,
+opaque strings/comments and line recovery. Removing the memory command rule
+fails both profiles; restoration and editor sync pass. The fresh notebook
+preserves source and emits styled HTML/CSS. No memory operation, address validity/
+alignment, numeric width/signedness, string bounds/stop behavior or native runtime
+compatibility is qualified.
+
+All 17 npm source files and nine VSIX source assets match, with no public gallery
+flag or executable host. Extracted exports render all three modes in both themes,
+preserve exact source and retain Poke$'s command scope. Versions, parser, published
+preview 0.2.0 and private Marketplace availability remain unchanged.

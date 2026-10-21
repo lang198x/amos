@@ -1,0 +1,12 @@
+Rem Lexical memory notebook; no memory operation is executed
+MC_BYTE=Peek(MC_ADDRESS)
+Poke MC_ADDRESS,MC_BYTE
+MC_WORD=Deek(MC_ADDRESS) : Doke MC_ADDRESS,MC_WORD
+MC_LONG=Leek(MC_ADDRESS) : Loke MC_ADDRESS,MC_LONG
+MC_TEXT$=Peek$(MC_ADDRESS,8)
+Poke$ MC_ADDRESS,MC_TEXT$
+MC_PREFIX$=Left$(Peek$(MC_ADDRESS,8,";"),4)
+Trap Poke MC_ADDRESS,MC_BYTE
+MC_CODE=Errtrap : MC_RESOURCE$=Resource$(1)
+MC_NOTE$="Peek$ Poke$: Peeks; Deek Leek"
+' Poke Doke Loke Peek$

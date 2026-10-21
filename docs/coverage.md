@@ -11,7 +11,7 @@ The table describes current source.
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 19 BASIC dialogue/value/control/resource forms from 9.1/9.3/9.4, 10.1–10.6, 11.1–11.2, 11.4, 12.1–12.2 and five §13.1 accessory/configuration forms and Appendix B’s Kill Editor, plus library/equate/structure/device/requester forms from 11.5 and Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 19 BASIC dialogue/value/control/resource forms from 9.1/9.3/9.4, 10.1–10.6, 11.1–11.2, 11.4, 12.1–12.2 and five §13.1 accessory/configuration forms, Appendix B’s Kill Editor and eight Appendix A memory forms, plus library/equate/structure/device/requester forms from 11.5 and Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -527,8 +527,8 @@ It lacked command scope before the change; both profiles/themes now retain its
 command role, including beside colon separators. Monitor lookalikes stay ordinary
 names, while UI labels in strings/comments remain opaque. Buttons and shortcuts
 are not extra BASIC forms. The full [§12.3 catalogue review](error-catalogue-review.md)
-routes vocabulary to existing coverage and definitions; its original 17-gap baseline now has five §13.1 forms, Kill Editor and three Interface entry points covered; eight
-gaps remain. No monitor execution,
+routes vocabulary to existing coverage and definitions; its original 17-gap baseline now has five §13.1 forms, Kill Editor and three Interface entry points covered; four
+Copper gaps remain after direct-memory coverage. No monitor execution,
 stepping, breakpoint, evaluation or return-to-program behavior is qualified.
 The additions remain unreleased.
 
@@ -606,3 +606,17 @@ The six embedded resource definitions remain separate Interface vocabulary; thei
 BASIC string payloads stay opaque. No resource availability, bank fallback, message
 index/content, screen/image/memory effect or native execution is qualified.
 These additions remain unreleased.
+
+
+## Appendix A direct memory reads and writes
+
+Eight forms bring BASIC to 698 entries across 42 partial/full chapter/appendix
+sections. Peek/Deek/Leek/Peek$ are functions; Poke/Doke/Loke/Poke$ are commands.
+Dollar-bearing forms retain complete scopes and typed lookalikes stay ordinary.
+Four original catalogue gaps close here, leaving four Copper forms. Appendix A
+remains partial: bulk operations, variable addresses, bits and calls need later work.
+
+The notebook checks expressions, Trap and prior resource/error forms with no
+memory operation executed. PEEKS prose supplies no alias. Address validity/
+alignment, widths, signed results, string bounds/stop behavior and runtime
+compatibility remain unqualified. The addition is unreleased.

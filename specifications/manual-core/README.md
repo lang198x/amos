@@ -7,8 +7,8 @@ chapters 5.1–5.5 (basics, strings, maths, control and procedures), 48 from cha
 (memory banks), 27 from 6.4 (drawing), 35 from 6.5 (menus), 19 from 7.1
 (sprites), 21 from 7.2 (Bobs), 13 from 7.3 (object updating), 14 from 7.4
 (collisions), 12 from 7.5 (IFF animation), 24 from 7.6 (BASIC AMAL controls),
-38 from 10.2 (file/directory I/O) 21 from 8.1 (music/basic sound) ten from 8.2 (samples) 15 from 8.3 (music modules) and seven from 11.2 (speech) and 15 from 7.7 (icons/blocks) and 13 from 11.1 (fonts) and 11 from 12.2 (error handling) and 12 from 10.3 (printer/ports) and 18 from 10.4 (serial) and ten from 10.5 (parallel) and seven from 10.6 (AREXX integration) and ten from 11.4 (multitasking), plus 25 named library/equate/structure/device/requester headings from 11.5 (pp.11.05.01–08), plus Monitor from 12.1 and five accessory/configuration forms from 13.1, Kill Editor from Appendix B and 19 Interface-facing BASIC forms from 9.1/9.3/9.4.
-The 690 BASIC entries include grouped headings, connective words, typed forms and the `?`
+38 from 10.2 (file/directory I/O) 21 from 8.1 (music/basic sound) ten from 8.2 (samples) 15 from 8.3 (music modules) and seven from 11.2 (speech) and 15 from 7.7 (icons/blocks) and 13 from 11.1 (fonts) and 11 from 12.2 (error handling) and 12 from 10.3 (printer/ports) and 18 from 10.4 (serial) and ten from 10.5 (parallel) and seven from 10.6 (AREXX integration) and ten from 11.4 (multitasking), plus 25 named library/equate/structure/device/requester headings from 11.5 (pp.11.05.01–08), plus Monitor from 12.1 and five accessory/configuration forms from 13.1, Kill Editor from Appendix B and 19 Interface-facing BASIC forms from 9.1/9.3/9.4 and eight direct memory forms from Appendix A.
+The 698 BASIC entries include grouped headings, connective words, typed forms and the `?`
 print shortcut. Fourteen embedded menu commands are recorded separately in
 `06-05.json`, outside the BASIC vocabulary count.
 Each entry cites a printed page and a line in the hash-pinned held extract
@@ -290,3 +290,11 @@ vocabulary. The retypeset footer 09.03.04 conflicts with original-manual page
 09.04.04 for Screen Open/Unpack; both page identities are retained. RESOURCES
 in introductory prose supplies no alias for Resource$. Bank defaults, indices,
 messages and screen/image effects remain unqualified.
+
+
+Appendix A is partial: eight direct byte/word/longword/string read/write forms
+(Peek/Poke, Deek/Doke, Leek/Loke, Peek$/Poke$) have lexical coverage. Copy/Fill/Hunt,
+Varptr and later bit/machine-code forms remain for their own inventories. PEEKS
+in prose supplies no alias for Peek$. Address alignment, widths/signedness, string
+limits and stop rules remain documentary context, not implemented semantics.
+No memory is read or written by the fixtures.
