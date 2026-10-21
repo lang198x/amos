@@ -2,7 +2,7 @@
   "name": "lang198x-amos",
   "displayName": "AMOS \u2014 Lang198x",
   "description": "Professional-based AMOS highlighting with optional AMOS 3D, AMAL and Interface; no compiler or language server",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "publisher": "lang198x",
   "license": "GPL-2.0-or-later",
   "engines": {
@@ -73,5 +73,6 @@
       }
     ]
   },
-  "icon": "icon.png"
+  "icon": "icon.png",
+  "preview": true
 }

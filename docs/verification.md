@@ -1238,3 +1238,39 @@ field matches, all other installed source assets match exactly, and every one
 of the eleven archive source assets matches repository bytes. The archive itself
 is not rewritten by installation. Upstream whitespace in the three hash-pinned
 independent text fixtures is retained rather than edited to satisfy patch style.
+
+
+## Preview 0.3.0 preparation
+
+All 38 package checks, editor sync and Ruff lint/format pass. Both complete
+guarded consumer suites pass 264/264 serially with Shiki 4.4.3 and the existing
+API 1.3.0/local API 2.0.0 consumers. The eight canonical/editor grammar files
+are byte-identical to the reviewed readiness baseline; the Rust parser remains
+0.1.0. No dependency is added.
+
+The npm archive contains 24 source-matching files. The VSIX contains eleven
+source-matching assets and passes ZIP integrity checks. Its actual XML carries
+GalleryFlags=Preview and Microsoft.VisualStudio.Code.PreRelease=true, without
+Public. Removing the channel property fails the archive assertion; omitting
+--pre-release fails packaging with `preview extension requires --pre-release`.
+An npm publish dry run selects next; no registry write occurs.
+
+All four exports from the extracted npm archive render through both consumers
+in both themes with expected scopes and preserved source. Strict TypeScript
+checks against Shiki's LanguageRegistration pass. The first test configuration
+failed with `Property 'dispose' does not exist on type 'SymbolConstructor'`;
+adding ESNext.Disposable to the test's libraries resolves Shiki's requirement
+without skipping declaration checks. An intentionally missing export fails
+with TS2614, and the original test input is restored.
+
+The VSIX installs through the real VS Code CLI into an isolated profile. All
+declared manifest fields, four grammars and the icon match source; VS Code adds
+installation metadata. The external CLI emits `[DEP0169] DeprecationWarning:
+url.parse()` and exits successfully. Local installation does not establish
+Marketplace channel acceptance; only the archive's channel property is verified.
+The prior native dark/light visual review applies to the unchanged grammars.
+No new native-runtime, cross-platform or accessibility qualification follows.
+
+The exact source commit, CI and retained draft artifacts are recorded separately
+in docs/releases/0.3.0-evidence.json after the release inputs are committed.
+Preparation does not publish to npm or change private Marketplace availability.

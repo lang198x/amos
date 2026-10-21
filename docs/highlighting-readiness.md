@@ -86,8 +86,9 @@ BASIC-string injection or complete extension catalogue. Those remain separately
 scoped work. BASIC vocabulary remains 728 documentary entries across 44 sections;
 AMAL, AMOS 3D and Interface keep separate inventories and limitations.
 
-Before publishing, prepare a new versioned archive and release notes that name
-this scope, then approve the actual release. Published 0.2.0 must retain its
+Preview 0.3.0 is now prepared with versioned archives, explicit preview metadata
+and [release notes](releases/0.3.0.md) naming this scope. Actual publication remains
+a separate action. Published 0.2.0 must retain its
 existing assets. The current review does not change Marketplace availability,
 upload an archive or publish to npm. The
 [private-preview decision](../decisions/marketplace-release-readiness.md) remains

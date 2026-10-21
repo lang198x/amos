@@ -22,5 +22,5 @@ jobs:
       - run: cargo +stable clippy --all-targets --locked -- -D warnings
       - run: npm test
       - run: npm run check:editor
-      - run: python3 scripts/package-editor.py
+      - run: python3 scripts/package-editor.py --pre-release
       - run: npm pack --pack-destination dist

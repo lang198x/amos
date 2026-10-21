@@ -1,6 +1,8 @@
 """Package the declarative extension without downloading a packaging tool."""
 
+import argparse
 import json
+import re
 import zipfile
 from pathlib import Path
 from xml.sax.saxutils import escape
@@ -23,7 +25,15 @@ FILES = [
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--pre-release", action="store_true")
+    parser.add_argument("--output-directory", type=Path, default=ROOT / "dist")
+    args = parser.parse_args()
     package = json.loads((EDITOR / "package.json").read_text())
+    if not re.fullmatch(r"[0-9]+\.[0-9]+\.[0-9]+", package["version"]):
+        raise ValueError("VS Code requires a numeric major.minor.patch version")
+    if package.get("preview") is True and not args.pre_release:
+        raise ValueError("preview extension requires --pre-release")
     for source, packaged in [
         (
             ROOT / "syntaxes/amos.tmLanguage.json",
@@ -49,6 +59,14 @@ def main() -> None:
         escape(package[key], {'"': "&quot;"})
         for key in ["name", "version", "publisher"]
     ]
+    gallery_flags = (
+        "<GalleryFlags>Preview</GalleryFlags>" if package.get("preview") else ""
+    )
+    pre_release = (
+        '<Property Id="Microsoft.VisualStudio.Code.PreRelease" Value="true" />'
+        if args.pre_release
+        else ""
+    )
     manifest = f'''<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
   <Metadata>
@@ -56,9 +74,11 @@ def main() -> None:
     <DisplayName>{escape(package["displayName"])}</DisplayName>
     <Description xml:space="preserve">{escape(package["description"])}</Description>
     <Categories>Programming Languages</Categories>
+    {gallery_flags}
     <Properties>
       <Property Id="Microsoft.VisualStudio.Code.Engine" Value="{escape(package["engines"]["vscode"])}" />
       <Property Id="Microsoft.VisualStudio.Code.ExecutesCode" Value="false" />
+      {pre_release}
     </Properties>
     <License>extension/LICENSE</License>
     <Icon>extension/icon.png</Icon>
@@ -82,8 +102,8 @@ def main() -> None:
   <Override PartName="/extension/LICENSE" ContentType="text/plain" />
 </Types>
 """
-    output = ROOT / "dist" / f"{publisher}-{name}-{version}.vsix"
-    output.parent.mkdir(exist_ok=True)
+    output = args.output_directory / f"{publisher}-{name}-{version}.vsix"
+    output.parent.mkdir(parents=True, exist_ok=True)
     entries = {
         "extension.vsixmanifest": manifest.encode(),
         "[Content_Types].xml": content_types.encode(),

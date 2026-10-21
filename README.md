@@ -33,8 +33,12 @@ in its own small Rust module under `src/instructions/`.
 
 ## Highlight a listing
 
-The dependency-free grammar package is published on npm under the preview
-`next` tag. Install it in a consumer which already uses Shiki:
+Highlighting preview **0.3.0 is prepared for publication**; see the
+[release notes](docs/releases/0.3.0.md) for scope and limits. It adds standalone
+AMAL/Interface and the readiness fixes. Publication has not happened yet.
+
+The currently published dependency-free grammar package is available on npm
+under the preview `next` tag (0.2.0). Install it in a consumer which already uses Shiki:
 
 ```sh
 npm install @lang198x/amos@next
@@ -91,7 +95,7 @@ VSIX works separately.
 
 `editors/vscode/` is a thin declarative extension. Its grammar is generated from
 the canonical file; `npm run check:editor` fails on drift. Build an installable
-VSIX with `python3 scripts/package-editor.py`; this uses only Python's standard
+VSIX with `python3 scripts/package-editor.py --pre-release`; this uses only Python's standard
 library. The [game baseline](audit/2026-10-highlighting/README.md) identifies the
 next highlighting groups without claiming full language coverage.
 
@@ -107,10 +111,11 @@ The [manual-led core inventory](specifications/manual-core/README.md) now drives
 broader coverage: current source highlights 728 BASIC entries from Professional manual
 chapters 5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 19 Interface-facing BASIC forms from 9.1/9.3/9.4, 10.1–10.6, 11.1–11.2, 11.4–11.5, 12.1–12.2 and five §13.1 accessory/configuration forms, Appendix B’s Kill Editor and twenty-eight Appendix A memory/conversion/bit/call/register forms, plus eight Appendix F Copper forms and two Appendix C display-mode queries.
 The file/directory I/O, music/basic sound, sample, music-module, speech, icon/block, font, error-handling, printer/port, serial, parallel, AREXX, multitasking, library/equate/structure/device/requester, Monitor, accessory/configuration, Kill Editor, dialogue, zone/value, resource, direct-memory, block/address, conversion, bit-operation, machine-code call, register, Copper and display-mode continuations are
-unreleased; preview 0.2.0 retains its 452-entry BASIC inventory.
+in the prepared 0.3.0 candidate; published 0.2.0 retains its 452-entry BASIC inventory.
 Fourteen embedded menu commands and 36 [AMAL records](specifications/amal/README.md)
 are inventoried separately. Current source adds standalone AMAL highlighting;
-BASIC string payloads remain opaque. This mode is not in preview 0.2.0.
+BASIC string payloads remain opaque. The prepared 0.3.0 candidate includes this
+mode; published 0.2.0 does not.
 [AMOS 3D](specifications/extensions/amos-3d/README.md) is tracked as an optional
 extension with a 59-record manual inventory, three source-level answers and a pinned-binary
 answer to the collision-result question. The opt-in `amos-3d` profile highlights
@@ -166,7 +171,7 @@ it does not install the extension, qualify a release or validate a program.
 ## Standalone AMAL highlighting
 
 Current source adds `@lang198x/amos/amal`, the `amal` language registration and
-`@lang198x/amos/amal.tmLanguage.json`. These are unreleased additions; published
+`@lang198x/amos/amal.tmLanguage.json`. These are included in the prepared 0.3.0 candidate; published
 0.2.0 does not export them. Load the registration with Shiki or
 shiki-highlight-api in the same way as the AMOS modes, selecting `lang: 'amal'`:
 
@@ -190,11 +195,11 @@ have one significant capital. The [AMAL scope and limits](specifications/amal/RE
 describe register/instruction contexts and the neutral fallback for ambiguous
 compact input. Colour does not establish syntax, label resolution or execution.
 
-## Standalone Interface (unreleased)
+## Standalone Interface (0.3.0 candidate)
 
 Current source provides `@lang198x/amos/interface` and the explicit **AMOS
-Interface** editor mode (`amos-interface`). These are absent from published
-0.2.0. Build from current source to try the mode:
+Interface** editor mode (`amos-interface`). The prepared 0.3.0 candidate includes
+these; published 0.2.0 does not. Build the candidate to try the mode:
 
 ```js
 import { createHighlighter } from 'shiki';

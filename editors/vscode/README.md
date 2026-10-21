@@ -1,66 +1,57 @@
-# AMOS highlighting
+# AMOS highlighting preview 0.3.0
 
-Professional-based AMOS TextMate syntax highlighting from Lang198x. This extension contains
-no executable extension code, compiler or language server. It associates plain
-UTF-8 `.amos.txt` listings; native tokenised `.AMOS` files need a separate decoder.
+Professional-based AMOS syntax highlighting from Lang198x, with optional AMOS
+3D, standalone AMAL and standalone Interface modes. This is a preview: colour
+identifies lexical forms, not valid arguments, native execution or compatibility
+with every AMOS edition. No compiler or language server is included.
 
-Install the packaged VSIX with VS Code's **Extensions: Install from VSIX**.
-Common controls, opening message commands, selected functions, names, numbers,
-strings and comments are highlighted. Colour does not indicate language validity
-or release compatibility. Creator, Easy and other release/extension revisions
-remain unqualified. See https://github.com/lang198x/amos for exact coverage.
+Install the candidate VSIX with **Extensions: Install from VSIX**. It carries
+both a Preview label and prerelease-channel metadata. Preparation does not change
+Marketplace availability. The extension identifier remains
+`lang198x.lang198x-amos`.
 
-The packaged grammar is generated from the repository's canonical grammar and
-verified byte for byte. Newly authored extension files use GPL-2.0-or-later.
+## Choose a language mode
 
-The publisher is Lang198x; the extension identifier is `lang198x.lang198x-amos`.
-Preview 0.2.0 includes the full Bank or Risk highlighting milestone, the
-452-entry Professional BASIC inventory, and the optional 59-record AMOS 3D
-profile. See the repository's coverage document for exact forms and limits.
-Marketplace availability remains private until a separate coverage review
-approves public release; install this preview using its downloadable VSIX.
-The icon comes from https://github.com/lang198x/.github/tree/main/branding;
-its lettering uses Oxanium under the SIL Open Font License recorded there.
+- **AMOS** selects the Professional-based BASIC vocabulary. Plain UTF-8
+  `.amos.txt` listings select this mode automatically.
+- **AMOS + AMOS 3D** adds the optional extension vocabulary. Select it explicitly
+  or associate a workspace filename pattern with `amos-3d`.
+- **AMAL** highlights standalone AMAL text using significant capitals and
+  register/instruction contexts. Select `amal` explicitly.
+- **AMOS Interface** highlights standalone Interface text with significant
+  capital pairs, lowercase padding, quotes and punctuation. Select
+  `amos-interface` explicitly. SW retains a neutral builtin scope.
 
+Native tokenised `.AMOS` files require a separate decoder. BASIC string payloads
+remain opaque; selecting a mode does not install a runtime or an extension.
 
-Preview 0.2.0 also adds the opt-in **AMOS + AMOS 3D** language mode, covering
-59 inventoried extension records alongside BASIC. Select it from the language
-mode selector, or set a workspace file association to `amos-3d`. Automatic
-`.amos.txt` detection still selects AMOS. Movement strings stay opaque; the mode neither
-installs AMOS 3D nor validates compatibility or execution.
+## Scope and limits
 
+The inventories retain 728 BASIC entries across 44 partial/full manual sections,
+59 AMOS 3D records, 36 AMAL records and 69 Interface records/68 codes. These are
+not unique-instruction totals or a whole-language coverage percentage. Selected
+decimal/scientific literals, line-head inline/numeric labels, both BASIC quote
+forms and corrected numbered/inline Rem comments are included.
 
-Current source additionally covers the Professional file/directory, music/basic sound,
-sample, music-module, speech, icon/block, font, error-handling, printer/port, serial, parallel, AREXX and multitasking chapters, plus the library/equate/structure/device/requester forms
-of §11.5, Monitor from §12.1 and five §13.1 accessory/configuration forms, bringing
-its BASIC inventory to 728 entries with Appendix B’s Kill Editor and 19
-Interface-facing BASIC dialogue/value/control/resource forms and twenty-eight
-memory, conversion, bit-operation, call and register forms from Appendix A, plus eight Copper forms from Appendix F and two display-mode queries from Appendix C. These continuations are unreleased;
-the downloadable 0.2.0 preview retains its 452-entry inventory. Directory options,
-channel markers and record operations receive lexical scopes; file contents,
-paths and actual I/O are not checked or executed by the extension.
+Creator, Easy, other Professional revisions and extension versions remain
+unqualified. There is no postfix/argument/terminator validation, custom-name
+resolution, resource loading or execution. The Rust parser remains separate and
+limited to its opening-program subset.
 
+All four modes have bounded native VS Code dark/light review and consumer tests.
+See the repository's [release notes](https://github.com/lang198x/amos/blob/main/docs/releases/0.3.0.md),
+[coverage](https://github.com/lang198x/amos/blob/main/docs/coverage.md) and
+[readiness review](https://github.com/lang198x/amos/blob/main/docs/highlighting-readiness.md)
+for exact evidence and remaining limits. Published 0.2.0 retains its older assets;
+this candidate is prepared for publication.
 
-Current source also adds standalone **AMAL** as an explicitly selected language
-mode. It respects significant capitals and register/instruction contexts, with
-no automatic file association or BASIC-string injection. This is unreleased;
-preview 0.2.0 does not include that mode. AMAL has its own parentheses configuration
-and inherits no BASIC comment or quote rules. This is lexical highlighting,
-not a compiler or validation of arbitrary compact AMAL programs.
+## Build and licence
 
+Build with `python3 scripts/package-editor.py --pre-release` from the repository
+root. The declarative extension contains no executable extension code. Its
+canonical grammars are verified byte for byte against the npm assets; missing
+prerelease-channel selection fails packaging.
 
-Current source also provides opt-in **AMOS Interface** (`amos-interface`), absent
-from preview 0.2.0. Select it explicitly for standalone text. It highlights the
-manual's 68 distinct codes behind 69 records, with significant capital pairs,
-lowercase padding, quoted strings, integers/binary/hex, P1–P9 and punctuation.
-SW uses a neutral builtin scope; disputed Min/Max/Call spellings remain neutral.
-Its square-bracket configuration inherits no BASIC comments. There is no new
-file association, BASIC-string injection, expression/terminator validation,
-custom-name resolution, resource loading or execution.
-
-
-Current source additionally recognises selected decimal/scientific literals,
-line-head named labels followed by inline statements, numeric line identifiers,
-and both quoted-string forms. Apostrophe comments still begin physical lines;
-numbered Rem lines remain comments. This extends highlighting only. The repository's
-readiness review records independent inputs and dark/light native-editor checks.
+Newly authored extension files use GPL-2.0-or-later. The approved L icon comes
+from https://github.com/lang198x/.github/tree/main/branding; its lettering uses
+Oxanium under the SIL Open Font License recorded there.
