@@ -35,7 +35,10 @@ test('manual inventory has cited, nonempty examples for every declared chapter',
         if (entry.spelling === 'Menu$') assert.equal(entry.kind, 'command');
       }
       if (entry.component !== undefined) {
-        if (id === '10-05') {
+        if (id === '11-05') {
+          assert.ok(['Request Wb', 'Request On', 'Request Off'].includes(entry.spelling));
+          assert.equal(entry.component, 'Requester Extension (as labelled by the manual)');
+        } else if (id === '10-05') {
           assert.ok(entry.spelling.startsWith('Parallel '));
           assert.equal(entry.component, 'I/O Extension (pinned original-source grouping)');
         } else if (id === '10-04') {
@@ -51,7 +54,9 @@ test('manual inventory has cited, nonempty examples for every declared chapter',
       checked++;
     }
   }
-  assert.equal(checked, 661);
+  assert.equal(checked, 664);
+  const requesters = (await json('11-05.json')).entries.filter((entry) => entry.spelling.startsWith('Request '));
+  assert.deepEqual(requesters.map((entry) => entry.component), Array(3).fill('Requester Extension (as labelled by the manual)'));
   const music = await json('08-01.json');
   const playback = music.entries.filter((entry) => entry.definition);
   assert.deepEqual(playback.map((entry) => entry.spelling), ['Music', 'Music Stop', 'Music Off', 'Mvolume', 'Tempo']);

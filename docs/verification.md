@@ -693,3 +693,27 @@ All npm/VSIX source-file bytes match, including editor assets, with no public
 gallery flag or executable host. Extracted exports render all three modes in
 both themes, preserve exact source and retain Dev Check's function scope. Versions,
 parser, published preview 0.2.0 and private Marketplace availability are unchanged.
+
+
+## Requester Extension continuation
+
+Three requester controls bring BASIC to 664 entries across 35 inventoried chapters.
+All 25 §11.5 named headings/page bindings match the SHA-256-pinned extract. The
+Requester Extension heading at line 20850 supplies the three component labels.
+Dev D0's example mention still awaits its own definition; named-heading coverage
+does not establish whole-chapter semantics or native compatibility.
+
+All three forms lacked complete scopes before the change. All 25 package checks
+and 177 integrations per existing consumer pass in both profiles/themes. Checks
+cover case/spacing, suffixed phrases, bare Request, prior On behavior, Trap and
+device/library composition, comments/strings and line recovery. Removing the
+requester rule fails both profiles; restoration and editor sync pass. The fresh
+notebook preserves exact source and emits styled HTML/CSS. No requester setting
+is changed and no visibility, cancellation, Workbench routing or installed
+extension version is qualified.
+
+All npm/VSIX source-file bytes match, including grammars/editor assets, with no
+public gallery flag or executable host. Extracted exports render all three modes
+in both themes, preserve exact source and retain Request Wb's command scope.
+Versions, parser, published preview 0.2.0 and private Marketplace availability
+remain unchanged.

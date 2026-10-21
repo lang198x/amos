@@ -8,7 +8,7 @@ import { highlighter, assertScope } from './helpers/highlighter.mjs';
 
 const chapter = JSON.parse(await readFile(new URL('../specifications/manual-core/11-05.json', import.meta.url), 'utf8'));
 const scopeFor = (kind) => ({ command: 'keyword.control.amos', function: 'support.function.amos', reserved: 'variable.language.amos' })[kind];
-const libraryEntries = chapter.entries.filter((entry) => !entry.spelling.startsWith('Dev '));
+const libraryEntries = chapter.entries.filter((entry) => !entry.spelling.startsWith('Dev ') && !entry.spelling.startsWith('Request '));
 assert.equal(libraryEntries.length, 13);
 await highlighter.loadLanguage(amos3d);
 const render = (source, lang, theme) => highlighter.codeToTokensBase(source, { lang, theme, includeExplanation: true });

@@ -1,6 +1,6 @@
 {
   "chapter": "11.05",
-  "scope": "Partial chapter: library/equate/structure forms on pp.11.05.01–05 and nine device forms on pp.11.05.06–08; three Requester Extension controls remain uninventoried here.",
+  "scope": "Twenty-five named library/equate/structure, device and Requester Extension headings in §11.5. Dev D0 in an earlier example remains for its own definition-led review.",
   "entries": [
     {
       "spelling": "Lib Open",
@@ -155,6 +155,30 @@
       "page": "11.05.08",
       "extract_line": 20995,
       "example": "MC_BASE=Dev Base(1)"
+    },
+    {
+      "spelling": "Request Wb",
+      "kind": "command",
+      "page": "11.05.06",
+      "extract_line": 20854,
+      "example": "Request Wb",
+      "component": "Requester Extension (as labelled by the manual)"
+    },
+    {
+      "spelling": "Request On",
+      "kind": "command",
+      "page": "11.05.06",
+      "extract_line": 20866,
+      "example": "Request On",
+      "component": "Requester Extension (as labelled by the manual)"
+    },
+    {
+      "spelling": "Request Off",
+      "kind": "command",
+      "page": "11.05.06",
+      "extract_line": 20872,
+      "example": "Request Off",
+      "component": "Requester Extension (as labelled by the manual)"
     }
   ],
   "notes": [
@@ -162,6 +186,7 @@
     "Lvo, Equ and structure offset names stay opaque strings. BASIC keyword case folding does not qualify case-sensitive equate names, constant-string requirements or name resolution.",
     "Register setup, calling conventions, offsets, library/device availability and structure-memory behavior require separate evidence. No library is called by these fixtures.",
     "Dev First$ heading and examples retain the dollar sign; the signature at extract line 20888 omits it. No dollar-less Dev First alias is introduced.",
-    "Dev D0 appears in an earlier equate example but is not a named device heading here; retain it for definition-led review. Device lifecycle, status values, channels and IO memory effects remain unqualified."
+    "Dev D0 appears in an earlier equate example but is not a named device heading here; retain it for definition-led review. Device lifecycle, status values, channels and IO memory effects remain unqualified.",
+    "The Requester Extension heading at extract line 20850 groups Request Wb/On/Off. This documentary component label does not qualify installed extension versions, requester routing/visibility or cancellation effects."
   ]
 }

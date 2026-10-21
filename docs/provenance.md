@@ -268,8 +268,8 @@ multitasking fixture is a lexical input with no scheduler or process execution.
 
 The library/equate/structure slice retains thirteen exact §11.5 headings and
 following printed pages 11.05.01–05 in the pinned extract. The chapter inventory
-is explicitly partial; nine device headings on pp.11.05.06–08 are covered below,
-while requester controls remain later work.
+also includes nine device headings on pp.11.05.06–08 and three requester headings
+on p.11.05.06, detailed below.
 Struc is labelled reserved variable, whereas Struc$ is labelled function despite
 its write signature. Those heading roles are preserved lexically in reads and
 assignments. Name strings stay opaque; no equate or library call is resolved.
@@ -281,3 +281,10 @@ and examples (20893–94); its signature (20888) omits the dollar sign. No alias
 is inferred. Dev D0 at line 20782 is an earlier example mention, not one of these
 nine headings, and awaits its own definition-led review. Requester controls are
 separate. The authored device notebook supplies no native IO or lifecycle evidence.
+
+
+The requester slice binds Request Wb/On/Off to exact headings at lines
+20854/20866/20872 and the following page 11.05.06 in the pinned extract. The
+Requester Extension section heading at line 20850 supplies the component
+attribution. It is documentary evidence, not an installed binary or release
+qualification. No requester, cancellation or Workbench-state behavior was tested.

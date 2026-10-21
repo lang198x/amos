@@ -7,8 +7,8 @@ chapters 5.1–5.5 (basics, strings, maths, control and procedures), 48 from cha
 (memory banks), 27 from 6.4 (drawing), 35 from 6.5 (menus), 19 from 7.1
 (sprites), 21 from 7.2 (Bobs), 13 from 7.3 (object updating), 14 from 7.4
 (collisions), 12 from 7.5 (IFF animation), 24 from 7.6 (BASIC AMAL controls),
-38 from 10.2 (file/directory I/O) 21 from 8.1 (music/basic sound) ten from 8.2 (samples) 15 from 8.3 (music modules) and seven from 11.2 (speech) and 15 from 7.7 (icons/blocks) and 13 from 11.1 (fonts) and 11 from 12.2 (error handling) and 12 from 10.3 (printer/ports) and 18 from 10.4 (serial) and ten from 10.5 (parallel) and seven from 10.6 (AREXX integration) and ten from 11.4 (multitasking), plus 22 from the library/equate/structure/device parts of 11.5 (pp.11.05.01–08; requester controls pending).
-The 661 BASIC entries include grouped headings, connective words, typed forms and the `?`
+38 from 10.2 (file/directory I/O) 21 from 8.1 (music/basic sound) ten from 8.2 (samples) 15 from 8.3 (music modules) and seven from 11.2 (speech) and 15 from 7.7 (icons/blocks) and 13 from 11.1 (fonts) and 11 from 12.2 (error handling) and 12 from 10.3 (printer/ports) and 18 from 10.4 (serial) and ten from 10.5 (parallel) and seven from 10.6 (AREXX integration) and ten from 11.4 (multitasking), plus 25 named library/equate/structure/device/requester headings from 11.5 (pp.11.05.01–08).
+The 664 BASIC entries include grouped headings, connective words, typed forms and the `?`
 print shortcut. Fourteen embedded menu commands are recorded separately in
 `06-05.json`, outside the BASIC vocabulary count.
 Each entry cites a printed page and a line in the hash-pinned held extract
@@ -224,10 +224,10 @@ stay strings. Scheduler timing, display changes, program lifecycle, file/bank
 sharing and process results remain unqualified.
 
 
-The §11.5 inventory is partial. Its first thirteen named forms cover library
+The §11.5 inventory contains 25 named headings. Its first thirteen forms cover library
 open/close/calls/bases, equates and structure access; nine further entries cover
 device enumeration, control and status on pp.11.05.06–08. The three Requester
-Extension controls on p.11.05.06 remain for a later inventory. Struc's reserved-variable role and
+Extension controls on p.11.05.06 retain their manual-labelled component. Struc's reserved-variable role and
 Struc$'s function heading are retained even in write contexts. This does not
 validate data types, equate-name case, library availability or calling conventions.
 
@@ -236,3 +236,10 @@ Dev First$ follows its heading and examples despite the dollar-less signature
 at extract line 20888. No Dev First alias is added. Dev D0 in an earlier equate
 example remains for review at its own definition. Device names, path masks and
 equate names stay strings; status, lifecycle and native IO effects are unqualified.
+
+
+Request Wb, Request On and Request Off have command scopes in both BASIC modes.
+Their Requester Extension attribution comes from the section heading at extract
+line 20850. Neither that label nor lexical coverage qualifies installed extension
+versions, requester visibility, cancellation or Workbench routing. The fixture
+changes no settings. Example-only forms such as Dev D0 still need definition review.

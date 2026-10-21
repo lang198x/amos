@@ -90,6 +90,10 @@
       "patterns": [
         {
           "name": "keyword.control.amos",
+          "match": "(?i:(?<![A-Za-z0-9_$#])Request[ \\t]+(?:Wb|On|Off)(?![A-Za-z0-9_$#]))"
+        },
+        {
+          "name": "keyword.control.amos",
           "match": "(?i:(?<![A-Za-z0-9_$#])Dev[ \\t]+(?:Open|Close|Do|Send|Abort)(?![A-Za-z0-9_$#]))"
         },
         {

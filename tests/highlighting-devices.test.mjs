@@ -35,7 +35,7 @@ for (const lang of ['amos', 'amos-3d']) {
       }
       for (const source of ['Dev Close', 'Dev Close 1']) check(source, 'Dev Close', 'keyword.control.amos', lang, theme);
       check('Dev=1', 'Dev', 'variable.other.amos', lang, theme);
-      check('Request Off', 'Request', 'variable.other.amos', lang, theme);
+      check('Request Extra', 'Request', 'variable.other.amos', lang, theme);
       check('MC_NAME$=Struc$(Dev Base(1),"ln_Name")', 'Dev Base', 'support.function.amos', lang, theme);
       check('Struc(Dev Base(1),"IO_LENGTH")=MC_SIZE', 'Struc', 'variable.language.amos', lang, theme);
       for (const word of ['Trap', 'Dev Open']) check('Trap Dev Open 1,"trackdisk.device",256,0,0', word, 'keyword.control.amos', lang, theme);

@@ -1,0 +1,11 @@
+Rem Lexical requester notebook; no requester settings are changed
+Request Wb
+Request On
+Request Off : Trap Dev Open 1,"trackdisk.device",256,0,0
+MC_CODE=Errtrap
+Request On
+Dev Close 1
+MC_FRONT=Amos Here : Amos To Front
+MC_BASE=Lib Base(1)
+MC_NOTE$="Request Off: Request Wb; Request On"
+' Request Wb Request On Request Off
