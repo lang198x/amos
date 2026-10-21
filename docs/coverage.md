@@ -11,7 +11,7 @@ The table describes current source.
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 10.1–10.6, 11.1–11.2, 11.4, library/equate/structure forms from 11.5 and 12.2, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 10.1–10.6, 11.1–11.2, 11.4 and 12.2, plus library/equate/structure/device forms from 11.5 and Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -480,6 +480,21 @@ read and assignment contexts. Colour does not validate an assignment or type.
 
 Equate/offset names stay opaque strings, including case distinctions. No library
 is opened or called by the fresh notebook. Registers, ABI, memory access, name
-resolution and runtime availability remain unqualified. Requester controls and
-device forms on pp.11.05.06–08 remain outside this partial chapter slice. These
-additions are unreleased.
+resolution and runtime availability remain unqualified. Device forms are covered
+below; requester controls remain outside this partial chapter slice. These additions
+are unreleased.
+
+
+## Device I/O
+
+Nine named §11.5 device forms bring BASIC to 661 entries across 35 partial/full
+chapters. Dev Open/Close/Do/Send/Abort have command scopes; Dev First$/Next$/Check/
+Base are functions. Dev First$ keeps its heading/example spelling; the signature
+that omits the dollar sign supplies no alias. All nine lacked complete scopes
+before the change and pass in both profiles/themes.
+
+The mixed notebook nests Dev Base inside Struc/Struc$ and places Equ beside device
+commands. Device names, path masks and command/equate strings remain opaque. No
+device is accessed and no status, timing, memory layout, channel validity or IO
+lifecycle is qualified. Dev D0's earlier example mention awaits its own definition.
+The three Requester Extension controls remain pending. Additions are unreleased.

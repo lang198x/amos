@@ -8,6 +8,8 @@ import { highlighter, assertScope } from './helpers/highlighter.mjs';
 
 const chapter = JSON.parse(await readFile(new URL('../specifications/manual-core/11-05.json', import.meta.url), 'utf8'));
 const scopeFor = (kind) => ({ command: 'keyword.control.amos', function: 'support.function.amos', reserved: 'variable.language.amos' })[kind];
+const libraryEntries = chapter.entries.filter((entry) => !entry.spelling.startsWith('Dev '));
+assert.equal(libraryEntries.length, 13);
 await highlighter.loadLanguage(amos3d);
 const render = (source, lang, theme) => highlighter.codeToTokensBase(source, { lang, theme, includeExplanation: true });
 const check = (source, word, scope, lang, theme) => {
@@ -19,13 +21,13 @@ const check = (source, word, scope, lang, theme) => {
 for (const lang of ['amos', 'amos-3d']) {
   test(`${lang} library forms preserve roles, complete phrases and typed boundaries`, () => {
     for (const theme of ['dark-plus', 'light-plus']) {
-      for (const entry of chapter.entries) {
+      for (const entry of libraryEntries) {
         for (const change of [(s) => s, (s) => s.toUpperCase(), (s) => s.toLowerCase(), (s) => s.replaceAll(' ', '\t')]) {
           check(change(entry.example), change(entry.spelling), scopeFor(entry.kind), lang, theme);
         }
         for (const suffix of ['Extra', '_VALUE', '$', '#']) {
           const word = entry.spelling.replaceAll(' ', '_').replace(/[$#]$/, '') + suffix;
-          if (chapter.entries.some((item) => item.spelling.toLowerCase() === word.toLowerCase())) continue;
+          if (libraryEntries.some((item) => item.spelling.toLowerCase() === word.toLowerCase())) continue;
           check(`${word}=1`, word, 'variable.other.amos', lang, theme);
         }
         if (!entry.spelling.includes(' ')) check(`${entry.spelling}:`, entry.spelling, scopeFor(entry.kind), lang, theme);
@@ -48,7 +50,7 @@ for (const lang of ['amos', 'amos-3d']) {
 
   test(`${lang} equate names and library-like payloads stay opaque with line recovery`, () => {
     for (const theme of ['dark-plus', 'light-plus']) {
-      for (const entry of chapter.entries) {
+      for (const entry of libraryEntries) {
         check(`Print "${entry.spelling}"`, entry.spelling, 'string.quoted.double.amos', lang, theme);
         check(`Rem ${entry.example}`, entry.example, 'comment.line.rem.amos', lang, theme);
         check(`'${entry.example}`, entry.example, 'comment.line.apostrophe.amos', lang, theme);

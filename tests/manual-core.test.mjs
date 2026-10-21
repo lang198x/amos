@@ -51,7 +51,7 @@ test('manual inventory has cited, nonempty examples for every declared chapter',
       checked++;
     }
   }
-  assert.equal(checked, 652);
+  assert.equal(checked, 661);
   const music = await json('08-01.json');
   const playback = music.entries.filter((entry) => entry.definition);
   assert.deepEqual(playback.map((entry) => entry.spelling), ['Music', 'Music Stop', 'Music Off', 'Mvolume', 'Tempo']);

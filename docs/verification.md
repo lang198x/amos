@@ -670,3 +670,26 @@ assets; the VSIX has no public gallery flag or executable host. Extracted export
 render all three modes in both themes, preserve exact source and retain the two
 structure roles. Versions, parser, published preview 0.2.0 and private Marketplace
 availability remain unchanged.
+
+
+## Device I/O continuation
+
+Nine new device forms bring BASIC to 661 entries across 35 partial/full chapters.
+All 22 §11.5 library/device headings and following page bindings were checked
+against the SHA-256-pinned extract. Dev First$ follows heading/examples despite
+the dollar-less signature; no alias is added. Dev D0's earlier example mention
+remains for definition-led review. The three requester controls remain pending.
+
+All nine device forms lacked complete scopes before the change. All 25 package
+checks and 172 integrations per existing consumer pass in both profiles/themes.
+Checks cover complete phrases, typed boundaries, close variants, nested structure
+access, Equ composition, opaque device names/path masks, comments and line recovery.
+Removing the device command rule fails both profiles; restoration and editor sync
+pass. The fresh notebook preserves exact source and emits styled HTML/CSS. No
+device is accessed and no native timing, status, structure layout, channel validity
+or IO lifecycle is qualified.
+
+All npm/VSIX source-file bytes match, including editor assets, with no public
+gallery flag or executable host. Extracted exports render all three modes in
+both themes, preserve exact source and retain Dev Check's function scope. Versions,
+parser, published preview 0.2.0 and private Marketplace availability are unchanged.

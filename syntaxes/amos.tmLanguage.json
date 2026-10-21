@@ -86,6 +86,10 @@
       "patterns": [
         {
           "name": "keyword.control.amos",
+          "match": "(?i:(?<![A-Za-z0-9_$#])Dev[ \\t]+(?:Open|Close|Do|Send|Abort)(?![A-Za-z0-9_$#]))"
+        },
+        {
+          "name": "keyword.control.amos",
           "match": "(?i:(?<![A-Za-z0-9_$#])(?:Lib[ \\t]+(?:Open|Close)|Set[ \\t]+Equate[ \\t]+Bank)(?![A-Za-z0-9_$#]))"
         },
         {
@@ -196,6 +200,10 @@
     },
     "functions": {
       "patterns": [
+        {
+          "name": "support.function.amos",
+          "match": "(?i:(?<![A-Za-z0-9_$#])Dev[ \\t]+(?:First\\$|Next\\$|Check|Base)(?![A-Za-z0-9_$#]))"
+        },
         {
           "name": "support.function.amos",
           "match": "(?i:(?<![A-Za-z0-9_$#])(?:Lib[ \\t]+(?:Call|Base)|Doscall|Execall|Gfxcall|Intcall|Lvo|Equ|Struc\\$)(?![A-Za-z0-9_$#]))"

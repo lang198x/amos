@@ -30,8 +30,8 @@ installs AMOS 3D nor validates compatibility or execution.
 
 
 Current source additionally covers the Professional file/directory, music/basic sound,
-sample, music-module, speech, icon/block, font, error-handling, printer/port, serial, parallel, AREXX and multitasking chapters, plus the library/equate/structure part
-of §11.5, bringing its BASIC inventory to 652 entries. These continuations are unreleased;
+sample, music-module, speech, icon/block, font, error-handling, printer/port, serial, parallel, AREXX and multitasking chapters, plus the library/equate/structure/device parts
+of §11.5, bringing its BASIC inventory to 661 entries. These continuations are unreleased;
 the downloadable 0.2.0 preview retains its 452-entry inventory. Directory options,
 channel markers and record operations receive lexical scopes; file contents,
 paths and actual I/O are not checked or executed by the extension.

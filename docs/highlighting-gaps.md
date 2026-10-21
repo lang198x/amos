@@ -1,7 +1,7 @@
 # Remaining highlighting work
 
 The approved sequence is complete: **§7.7 Icons and Blocks**, **§11.1 Fonts**,
-then **§12.2 Error Handling**. Current BASIC coverage is 652 chapter entries across
+then **§12.2 Error Handling**. Current BASIC coverage is 661 chapter entries across
 35 partially or fully inventoried chapters, including the subsequent printer/general-port sweep. The audit baseline and representative probes below retain their
 pre-implementation results; the completion record follows them. Publication
 remains separate.
@@ -107,7 +107,7 @@ Uninventoried sections need explicit review; they are not silently excluded from
 | §10.6 AREXX | Seven AMOS-facing forms now have lexical coverage. External script payloads remain strings; startup Exec is now covered by §11.4; editor control references remain later definition-led work. No AREXX language implementation is implied. |
 | §11.3 floating point | Reconcile repeated precision/maths vocabulary with existing §5.3; distinguish library/number-representation facts from missing lexical forms. |
 | §11.4 multitasking | Ten task/display, waiting, program/CLI and status-query forms now have lexical coverage. Timing, lifecycle and process effects remain unqualified. |
-| §11.5 libraries/devices | Thirteen library-call, base, equate and structure-access forms on pp.11.05.01–05 now have lexical coverage. Requester/device forms on pp.11.05.06–08 remain; keep the manual's Requester Extension boundary explicit. |
+| §11.5 libraries/devices | Thirteen library/equate/structure forms and nine device forms now have lexical coverage. The three requester controls on p.11.05.06 remain; keep the manual's Requester Extension boundary explicit. Dev D0's example mention awaits its own definition-led review. |
 | §§12.1 and 12.3 monitor/errors | Review any BASIC-facing monitor forms separately from editor UI, message catalogues and explanatory examples. |
 | §§1–4 and 13 installation/editor/accessories | Reconcile language forms encountered in examples and editor/direct-mode facilities; menus, shortcuts and accessory workflows are not automatically BASIC instructions. |
 | Appendix A machine code | Conversion, memory, bit operations, machine-code calls and registers; substantial BASIC vocabulary remains outside the current inventory. |

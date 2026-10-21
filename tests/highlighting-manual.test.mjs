@@ -3,9 +3,9 @@ import assert from 'node:assert/strict';
 import { highlighter } from './helpers/highlighter.mjs';
 import { chapters, entries, checkEntry } from './helpers/manual-core.mjs';
 
-test('manual checklist retains the core sweep and adds cited library/equate/structure slice', () => {
+test('manual checklist retains the core sweep and adds cited library and device slices', () => {
   assert.equal(chapters.length, 35);
-  assert.equal(entries.length, 652);
+  assert.equal(entries.length, 661);
   assert.equal(chapters.slice(0, 5).flatMap((chapter) => chapter.entries).length, 109);
   assert.equal(chapters.slice(0, 7).flatMap((chapter) => chapter.entries).length, 171);
   assert.equal(chapters.slice(0, 12).flatMap((chapter) => chapter.entries).length, 262);
@@ -26,7 +26,7 @@ test('manual checklist retains the core sweep and adds cited library/equate/stru
   assert.equal(chapters.slice(0, 32).flatMap((chapter) => chapter.entries).length, 622);
   assert.equal(chapters.slice(0, 33).flatMap((chapter) => chapter.entries).length, 629);
   assert.equal(chapters.slice(0, 34).flatMap((chapter) => chapter.entries).length, 639);
-  assert.equal(chapters.at(-1).entries.length, 13);
+  assert.equal(chapters.at(-1).entries.length, 22);
   for (const chapter of chapters) assert.ok(chapter.entries.length > 0);
   for (const spelling of ['Param', 'Param#', 'Param$', 'Pi#', 'Break Off', 'Break On']) {
     assert.ok(entries.some((entry) => entry.spelling === spelling));

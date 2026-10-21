@@ -1,0 +1,16 @@
+Rem Lexical device notebook; no device is opened or accessed
+MC_DEVICE$=Dev First$("D/**")
+MC_DEVICE$=Dev Next$
+Trap Dev Open 1,"trackdisk.device",256,0,0
+MC_BASE=Dev Base(1)
+MC_COMMAND=Equ("CMD_READ")
+Struc(Dev Base(1),"IO_LENGTH")=MC_SIZE
+MC_NAME$=Struc$(Dev Base(1),"ln_Name")
+Dev Do 1,MC_COMMAND
+Dev Send 1,MC_COMMAND
+MC_STATE=Dev Check(1)
+Dev Abort 1
+Dev Close 1 : Dev Close
+MC_LIBRARY=Lib Base(1) : MC_MODE=Prg State
+MC_NOTE$="Dev Do: Dev First$; Request Off"
+' Dev Open Dev Send Dev Check

@@ -268,7 +268,16 @@ multitasking fixture is a lexical input with no scheduler or process execution.
 
 The library/equate/structure slice retains thirteen exact §11.5 headings and
 following printed pages 11.05.01–05 in the pinned extract. The chapter inventory
-is explicitly partial: requester/device headings on pp.11.05.06–08 are later work.
+is explicitly partial; nine device headings on pp.11.05.06–08 are covered below,
+while requester controls remain later work.
 Struc is labelled reserved variable, whereas Struc$ is labelled function despite
 its write signature. Those heading roles are preserved lexically in reads and
 assignments. Name strings stay opaque; no equate or library call is resolved.
+
+
+Device I/O adds nine exact named headings and following printed-page bindings
+from §11.5, pp.11.05.06–08. Dev First$ is supported by its heading (line 20886)
+and examples (20893–94); its signature (20888) omits the dollar sign. No alias
+is inferred. Dev D0 at line 20782 is an earlier example mention, not one of these
+nine headings, and awaits its own definition-led review. Requester controls are
+separate. The authored device notebook supplies no native IO or lifecycle evidence.
