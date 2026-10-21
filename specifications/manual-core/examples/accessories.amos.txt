@@ -1,0 +1,11 @@
+Rem Lexical accessory notebook; no editor or Workbench state is changed
+Set Buffer 8
+Set Accessory
+Call Editor MC_FUNCTION
+Ask Editor MC_FUNCTION,MC_VALUE,MC_TEXT$
+MC_NOTE$="Call Editor: Set Editor; Close Workbench"
+Trap Request On : MC_CODE=Errtrap
+MC_PARENT=Prg Under : MC_RESULT=Param
+Close #1
+Close Editor : Close Workbench
+' Ask Editor Close Workbench Set Accessory

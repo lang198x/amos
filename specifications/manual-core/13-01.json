@@ -1,0 +1,47 @@
+{
+  "chapter": "13.01",
+  "scope": "Five named accessory/configuration BASIC forms; configuration menus/options are not additional language definitions. Kill Editor belongs to its separate Appendix B definition.",
+  "entries": [
+    {
+      "spelling": "Set Accessory",
+      "kind": "command",
+      "page": "13.01.01",
+      "extract_line": 22672,
+      "example": "Set Accessory"
+    },
+    {
+      "spelling": "Call Editor",
+      "kind": "command",
+      "page": "13.01.01",
+      "extract_line": 22680,
+      "example": "Call Editor MC_FUNCTION,MC_VALUE,MC_TEXT$"
+    },
+    {
+      "spelling": "Ask Editor",
+      "kind": "command",
+      "page": "13.01.02",
+      "extract_line": 22696,
+      "example": "Ask Editor MC_FUNCTION,MC_VALUE,MC_TEXT$"
+    },
+    {
+      "spelling": "Close Workbench",
+      "kind": "command",
+      "page": "13.01.07",
+      "extract_line": 22956,
+      "example": "Close Workbench"
+    },
+    {
+      "spelling": "Close Editor",
+      "kind": "command",
+      "page": "13.01.07",
+      "extract_line": 22974,
+      "example": "Close Editor"
+    }
+  ],
+  "notes": [
+    "Ask Editor is labelled instruction, with statement signatures, despite returning editor parameters. It retains command scope rather than being inferred as an expression function.",
+    "Call Editor and Ask Editor show function-only and three-parameter statements. Function IDs and parameter meanings are not validated here.",
+    "Set Editor in the error catalogue conflicts with the Set Accessory definition. No Set Editor alias is added.",
+    "Native accessory eligibility, editor communication, Workbench/editor window state, memory savings and runtime compatibility remain unqualified."
+  ]
+}

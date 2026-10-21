@@ -11,7 +11,7 @@ The table describes current source.
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 10.1–10.6, 11.1–11.2, 11.4 and 12.1–12.2, plus library/equate/structure/device/requester forms from 11.5 and Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 10.1–10.6, 11.1–11.2, 11.4, 12.1–12.2 and five §13.1 accessory/configuration forms, plus library/equate/structure/device/requester forms from 11.5 and Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -528,7 +528,22 @@ It lacked command scope before the change; both profiles/themes now retain its
 command role, including beside colon separators. Monitor lookalikes stay ordinary
 names, while UI labels in strings/comments remain opaque. Buttons and shortcuts
 are not extra BASIC forms. The full [§12.3 catalogue review](error-catalogue-review.md)
-routes vocabulary to existing coverage and definitions; its 17 gaps add no aliases
-or inventory entries. No monitor execution,
+routes vocabulary to existing coverage and definitions; its original 17-gap baseline now has five §13.1 forms covered and twelve
+gaps remaining. No monitor execution,
 stepping, breakpoint, evaluation or return-to-program behavior is qualified.
 The additions remain unreleased.
+
+
+## Accessory and configuration statements
+
+Five named §13.1 forms bring BASIC to 670 entries across 37 chapters. Set Accessory,
+Call Editor, Ask Editor and Close Workbench/Editor receive complete command scopes
+in both BASIC modes/themes. Ask Editor follows its instruction heading and statement
+signatures; a return role does not turn it into an expression function.
+
+The notebook checks one/three-parameter editor statement contexts, file Close, Trap,
+Request On and existing task/error queries. Strings/comments remain opaque.
+Set Editor is not an alias; Kill Editor remains separate. No editor/accessory
+function ID, parameter semantics, eligibility, memory saving or native Workbench/
+editor state change is qualified. Configuration UI options are not additional
+language definitions. Additions remain unreleased.

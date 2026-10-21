@@ -7,8 +7,8 @@ chapters 5.1–5.5 (basics, strings, maths, control and procedures), 48 from cha
 (memory banks), 27 from 6.4 (drawing), 35 from 6.5 (menus), 19 from 7.1
 (sprites), 21 from 7.2 (Bobs), 13 from 7.3 (object updating), 14 from 7.4
 (collisions), 12 from 7.5 (IFF animation), 24 from 7.6 (BASIC AMAL controls),
-38 from 10.2 (file/directory I/O) 21 from 8.1 (music/basic sound) ten from 8.2 (samples) 15 from 8.3 (music modules) and seven from 11.2 (speech) and 15 from 7.7 (icons/blocks) and 13 from 11.1 (fonts) and 11 from 12.2 (error handling) and 12 from 10.3 (printer/ports) and 18 from 10.4 (serial) and ten from 10.5 (parallel) and seven from 10.6 (AREXX integration) and ten from 11.4 (multitasking), plus 25 named library/equate/structure/device/requester headings from 11.5 (pp.11.05.01–08), plus Monitor from 12.1.
-The 665 BASIC entries include grouped headings, connective words, typed forms and the `?`
+38 from 10.2 (file/directory I/O) 21 from 8.1 (music/basic sound) ten from 8.2 (samples) 15 from 8.3 (music modules) and seven from 11.2 (speech) and 15 from 7.7 (icons/blocks) and 13 from 11.1 (fonts) and 11 from 12.2 (error handling) and 12 from 10.3 (printer/ports) and 18 from 10.4 (serial) and ten from 10.5 (parallel) and seven from 10.6 (AREXX integration) and ten from 11.4 (multitasking), plus 25 named library/equate/structure/device/requester headings from 11.5 (pp.11.05.01–08), plus Monitor from 12.1 and five accessory/configuration forms from 13.1.
+The 670 BASIC entries include grouped headings, connective words, typed forms and the `?`
 print shortcut. Fourteen embedded menu commands are recorded separately in
 `06-05.json`, outside the BASIC vocabulary count.
 Each entry cites a printed page and a line in the hash-pinned held extract
@@ -250,3 +250,11 @@ instructions. [Reconciliation](../../docs/manual-reconciliation.md) records why
 §11.3 adds no entries: Sin/Cos/Sqr already have §5.3 coverage, precision labels
 are not definitions, and library facts remain documentary context. §12.3 catalogue
 references await definition-led review rather than becoming new aliases.
+
+
+The §13.1 slice contains Set Accessory, Call Editor, Ask Editor, Close Workbench
+and Close Editor. Ask Editor follows its instruction heading and statement
+signatures despite returning editor parameters. Function IDs, parameter meanings,
+accessory eligibility and native display/memory effects remain unqualified.
+Set Editor is not introduced as an alias. Kill Editor remains separate Appendix B
+work, and configuration UI choices are not additional BASIC definitions.

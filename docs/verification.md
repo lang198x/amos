@@ -761,3 +761,25 @@ The disposable npm archive includes the full review; all 17 packaged source file
 match current bytes. Grammar and editor assets are unchanged, so no new VSIX or
 full integration rerun was needed for this documentation slice. Versions, parser,
 published previews and private Marketplace availability remain unchanged.
+
+
+## Accessory/configuration continuation
+
+Five §13.1 headings/pages match the SHA-256-pinned extract and lacked complete
+scopes before implementation. BASIC now has 670 entries across 37 chapters.
+The catalogue's original 17-gap baseline remains recorded; five are now covered
+and twelve remain. Ask Editor retains its instruction/statement role. Set Editor
+is not an alias and Kill Editor awaits its separate Appendix B slice.
+
+All 25 package checks and 189 integrations per existing consumer pass in both
+profiles/themes. Checks cover case/spacing, complete phrases, typed lookalikes,
+one/three-parameter statements, existing file Close, Trap/Request composition,
+strings/comments and line recovery. Removing the accessory command rule fails
+both profiles; restoration and editor sync pass. The mixed notebook preserves
+exact source and emits styled HTML/CSS. No editor function IDs, parameter semantics,
+accessory eligibility, memory saving or native display/editor behavior is qualified.
+
+All 17 npm source files and nine VSIX source assets match. The VSIX has no public
+gallery flag or executable host. Extracted exports render all three modes in both
+themes, preserve exact source and retain Ask Editor's command scope. Versions,
+parser, published preview 0.2.0 and private Marketplace availability are unchanged.

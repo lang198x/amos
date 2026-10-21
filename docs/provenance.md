@@ -298,3 +298,11 @@ that BASIC definition from the monitor UI. The [reconciliation](manual-reconcili
 retains the reviewed ranges; the complete [§12.3 review](error-catalogue-review.md)
 now records all 22 page ranges, definition-led gaps and catalogue discrepancies.
 No library-performance, debugger UI or native execution evidence is added.
+
+
+The §13.1 accessory slice binds Set Accessory/Call Editor to exact headings on
+p.13.01.01, Ask Editor to p.13.01.02 and Close Workbench/Editor to p.13.01.07.
+Ask Editor is labelled instruction with statement signatures. Set Editor in
+§12.3 remains a discrepancy against Set Accessory; it creates no alias. Function
+IDs/parameters and native editor or Workbench effects remain unqualified.
+Kill Editor retains its separate Appendix B definition and is not included here.
