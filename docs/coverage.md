@@ -11,7 +11,7 @@ The table describes current source.
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 15 BASIC dialogue/value/control forms from 9.1/9.3, 10.1–10.6, 11.1–11.2, 11.4, 12.1–12.2 and five §13.1 accessory/configuration forms and Appendix B’s Kill Editor, plus library/equate/structure/device/requester forms from 11.5 and Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 19 BASIC dialogue/value/control/resource forms from 9.1/9.3/9.4, 10.1–10.6, 11.1–11.2, 11.4, 12.1–12.2 and five §13.1 accessory/configuration forms and Appendix B’s Kill Editor, plus library/equate/structure/device/requester forms from 11.5 and Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -574,7 +574,8 @@ separators, quoted payloads and embedded commands. The mixed notebook checks
 Trap, nested queries and existing Request/error forms without opening a native
 UI. Channel validity, parameter meanings, event/status/error results and timing
 remain unqualified. Zone/value queries, Array and update/freeze/clear are covered
-below; resource controls and any embedded Interface lexical mode remain later work.
+below; resource controls have separate coverage below. An embedded Interface lexical
+mode remains later work.
 These additions are unreleased.
 
 
@@ -590,5 +591,18 @@ and prose; highlighting does not validate those data types.
 The mixed notebook checks nested Array calls, optional channel/update contexts
 and existing dialogue queries. ArrayRead and other embedded Interface vocabulary
 remain separate; all BASIC string payloads stay opaque. No native channel, zone,
-event, array-memory or update/freeze behavior is qualified. §9.4 resource controls
-remain later work. Additions are unreleased.
+event, array-memory or update/freeze behavior is qualified. §9.4 resource controls have separate coverage below. Additions are unreleased.
+
+
+## Interface-facing BASIC resources
+
+Four §9.4 forms bring BASIC to 690 entries across 41 partial/full chapter/appendix
+sections. Resource Bank, Resource Screen Open and Resource Unpack are commands;
+Resource$ is a function. The retypeset page misprint 09.03.04 is retained beside
+the original-manual page 09.04.04 for Screen Open/Unpack. Prose RESOURCES creates
+no alias. Existing BASIC Unpack and Screen Open retain their scopes.
+
+The six embedded resource definitions remain separate Interface vocabulary; their
+BASIC string payloads stay opaque. No resource availability, bank fallback, message
+index/content, screen/image/memory effect or native execution is qualified.
+These additions remain unreleased.

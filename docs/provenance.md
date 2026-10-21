@@ -330,3 +330,13 @@ prose at 16765–81 describe numeric/string values respectively. Both keep their
 function heading role in reads/writes without implementing types. ArrayRead at
 17015 is explicitly an Interface function, separate from BASIC Array at 16999.
 The fixture supplies no native Interface, memory or event evidence.
+
+
+The §9.4 inventory adds four exact BASIC headings. Resource Bank/Resource$ bind
+to 09.04.03. Resource Screen Open/Unpack follow a retypeset footer reading
+09.03.04; the independently pinned original extract places their headings at
+15861/15879 on 09.04.04. Entries retain held_retypeset_page alongside the original
+page, following the existing maths-page crosscheck convention. RESOURCES at
+17495 conflicts with the Resource$ heading at 17619 and supplies no alias.
+Embedded resource definitions stay separate; no native bank/graphics evidence
+or message-index semantics follow from lexical checks.

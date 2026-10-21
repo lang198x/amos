@@ -104,7 +104,7 @@
   "notes": [
     "Dialog Box, Dialog Run, Edialog and Dialog retain function roles; Dialog Open/Close are instructions. Later prose calling a function a command does not override its definition.",
     "Interface programs and their significant capitals, separators, registers, labels and embedded commands stay opaque inside BASIC strings.",
-    "Rdialog/Rdialog$/Vdialog/Vdialog$, Array and Dialog Update/Freeze/Unfreeze/Clr now have BASIC lexical coverage. Resource controls remain §9.4 work.",
+    "Rdialog/Rdialog$/Vdialog/Vdialog$, Array and Dialog Update/Freeze/Unfreeze/Clr now have BASIC lexical coverage. BASIC resource controls have a separate §9.4 inventory.",
     "Channel validity, optional parameter semantics, status/error results, event handling and original execution are unqualified.",
     "Vdialog and Vdialog$ retain their function heading roles in both read and assignment contexts. Their short descriptions at 16764/16773 say string/value respectively, whereas signatures and prose at 16765–81 distinguish numeric Vdialog and string Vdialog$. Preserve the discrepancy without implementing type rules.",
     "Array is the BASIC function at 16999; ArrayRead at 17015 is an embedded Interface function, not a BASIC alias."

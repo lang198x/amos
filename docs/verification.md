@@ -852,3 +852,25 @@ flag or executable host. Extracted exports render all three modes in both themes
 preserve exact source and retain Vdialog$'s function scope in assignment context.
 Versions, parser, published preview 0.2.0 and private Marketplace availability
 remain unchanged.
+
+
+## BASIC resource continuation
+
+Four exact §9.4 BASIC headings lacked complete scopes before implementation.
+Both pinned extracts were hash-checked; Screen Open/Unpack bind to original page
+09.04.04 while retaining the retypeset footer 09.03.04. Resource Bank/Resource$
+bind to 09.04.03. BASIC now has 690 entries across 41 partial/full chapter/appendix
+sections. The original catalogue still has eight unresolved definition-led gaps.
+
+All 25 package checks and 213 integrations per existing consumer pass in both
+profiles/themes. Checks cover complete phrases, dollar/suffix boundaries, nested
+Resource$, Trap, prior Unpack/Screen/dialogue forms, opaque resource/Interface
+payloads and line recovery. Removing the resource command rule fails both
+profiles; restoration and editor sync pass. The mixed notebook preserves source
+and emits styled HTML/CSS. No bank fallback, availability, message-index/content,
+graphics/memory effect or native runtime compatibility is qualified.
+
+All 17 npm source files and nine VSIX source assets match, with no public gallery
+flag or executable host. Extracted exports render all three modes in both themes,
+preserve exact source and retain Resource$'s function scope. Versions, parser,
+published preview 0.2.0 and private Marketplace availability remain unchanged.

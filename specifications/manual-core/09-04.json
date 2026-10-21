@@ -1,0 +1,42 @@
+{
+  "chapter": "09.04",
+  "scope": "Four named BASIC resource forms. Embedded MEssage/UNpack/LIne/VLine/BOx/PUsh belong to Interface and remain separate.",
+  "entries": [
+    {
+      "spelling": "Resource Bank",
+      "kind": "command",
+      "page": "09.04.03",
+      "extract_line": 17606,
+      "example": "Resource Bank 16"
+    },
+    {
+      "spelling": "Resource$",
+      "kind": "function",
+      "page": "09.04.03",
+      "extract_line": 17619,
+      "example": "MC_MESSAGE$=Resource$(1)"
+    },
+    {
+      "spelling": "Resource Screen Open",
+      "kind": "command",
+      "page": "09.04.04",
+      "extract_line": 17653,
+      "example": "Resource Screen Open 0,320,200,0",
+      "held_retypeset_page": "09.03.04"
+    },
+    {
+      "spelling": "Resource Unpack",
+      "kind": "command",
+      "page": "09.04.04",
+      "extract_line": 17672,
+      "example": "Resource Unpack 1,16,16",
+      "held_retypeset_page": "09.03.04"
+    }
+  ],
+  "notes": [
+    "The retypeset footer after Resource Screen Open/Unpack reads 09.03.04; the independently pinned original extract places both on 09.04.04 (heading lines 15861/15879). Retain both page identities.",
+    "RESOURCES in prose at line 17495 is not the Resource$ heading at 17619. No Resources or dollar-less Resource alias is introduced.",
+    "Embedded Interface instructions/functions stay opaque in BASIC strings; existing BASIC Unpack and Box are not reinterpreted as their embedded namesakes.",
+    "Resource bank fallback, message indices and contents, screen/image effects, memory layout and native runtime compatibility are unqualified."
+  ]
+}

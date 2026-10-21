@@ -90,6 +90,10 @@
       "patterns": [
         {
           "name": "keyword.control.amos",
+          "match": "(?i:(?<![A-Za-z0-9_$#])Resource[ \\t]+(?:Screen[ \\t]+Open|Bank|Unpack)(?![A-Za-z0-9_$#]))"
+        },
+        {
+          "name": "keyword.control.amos",
           "match": "(?i:(?<![A-Za-z0-9_$#])Dialog[ \\t]+(?:Update|Freeze|Unfreeze|Clr)(?![A-Za-z0-9_$#]))"
         },
         {
@@ -228,6 +232,10 @@
     },
     "functions": {
       "patterns": [
+        {
+          "name": "support.function.amos",
+          "match": "(?i:(?<![A-Za-z0-9_$#])Resource\\$(?![A-Za-z0-9_$#]))"
+        },
         {
           "name": "support.function.amos",
           "match": "(?i:(?<![A-Za-z0-9_$#])(?:Rdialog\\$?|Vdialog\\$?|Array)(?![A-Za-z0-9_$#]))"

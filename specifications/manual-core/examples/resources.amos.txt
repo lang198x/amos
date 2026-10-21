@@ -1,0 +1,11 @@
+Rem Lexical resource notebook; no bank, screen or image operation is executed
+Resource Bank 16
+MC_MESSAGE$=Resource$(1)
+Resource Screen Open 0,320,200,0
+Resource Unpack 1,16,16
+MC_UI$="PR 0,0,7 ME,2;UN 8,8,1;EXit;"
+MC_BUTTON=Dialog Box(MC_UI$)
+MC_TEXT$=Left$(Resource$(1),12)
+Trap Resource Bank 0
+MC_NOTE$="Resource Screen Open: Resources; PUsh; VLine"
+' Resource$ Resource Unpack

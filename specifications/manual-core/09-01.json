@@ -13,7 +13,7 @@
   "notes": [
     "Dialog Box, Dialog Run, Edialog and Dialog retain function roles; Dialog Open/Close are instructions. Later prose calling a function a command does not override its definition.",
     "Interface programs and their significant capitals, separators, registers, labels and embedded commands stay opaque inside BASIC strings.",
-    "The separate §9.3 inventory now covers zone/value queries, Array and channel controls. Resource controls remain §9.4 work; embedded Interface remains separate.",
+    "The separate §9.3 inventory now covers zone/value queries, Array and channel controls. BASIC resource controls have a separate §9.4 inventory; embedded Interface remains separate.",
     "Channel validity, optional parameter semantics, status/error results, event handling and original execution are unqualified."
   ]
 }
