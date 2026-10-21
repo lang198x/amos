@@ -50,14 +50,15 @@ test('AMOS 3D scope retains extension sources and unresolved spelling evidence w
   assert.equal(find('relative-angle-signature'), 'Td ANGEL REL n,dA,dB,dC');
 });
 
-test('I/O documentary records remain separate from BASIC coverage and qualified releases', async () => {
+test('I/O documentary records retain provenance when promoted to lexical coverage', async () => {
   const source = await json('extensions/io/source.json');
   const core = await json('manual-core/source.json');
   assert.equal(source.product, core.product);
   assert.equal(source.extract_sha256, core.extract_sha256);
   assert.deepEqual(source.files, ['serial.json', 'parallel.json']);
   assert.deepEqual(source.qualified_releases, []);
-  assert.ok(!core.chapters.includes('10-04') && !core.chapters.includes('10-05'));
+  assert.ok(core.chapters.includes('10-04') && !core.chapters.includes('10-05'));
+  const serialCore = await json('manual-core/10-04.json');
   const inventories = await Promise.all(source.files.map((file) => json(`extensions/io/${file}`)));
   assert.deepEqual(inventories.map((file) => file.entries.length), [18, 10]);
   assert.deepEqual(inventories.map((file) => file.entries.filter((entry) => entry.kind === 'function').length), [6, 5]);
@@ -76,7 +77,9 @@ test('I/O documentary records remain separate from BASIC coverage and qualified 
   assert.ok(seen.has('Serial Input$') && seen.has('Parallel Input$'));
   assert.ok(!seen.has('Serial Inputs') && !seen.has('Parallel Inputs'));
   const buffer = inventories[0].entries.find((entry) => entry.spelling === 'Serial Buf');
-  assert.equal(buffer.spelling_status, 'unresolved');
+  assert.equal(buffer.spelling_status, 'source-resolved');
+  assert.equal(buffer.source_evidence, 'original-source.json#buffer-spelling');
+  assert.deepEqual(serialCore.entries.map(({ component, ...entry }) => entry), inventories[0].entries);
   assert.equal(buffer.held_signature, 'Serial Buffer Channel number,length');
   assert.equal(buffer.signature_line, buffer.extract_line + 2);
   assert.ok(!seen.has('Serial Buffer'));
@@ -101,9 +104,10 @@ test('I/O boundary evidence preserves exact excerpts and unresolved questions', 
   assert.match(text('buffer-heading-signature'), /Serial Buffer/);
   assert.match(text('music-component'), /separate MUSIC extension/);
   assert.match(text('serial-handshake-formula'), /XON110000000/);
-  assert.deepEqual(questions.map((entry) => entry.id), ['buffer-spelling', 'serial-x-semantics', 'parallel-component']);
+  assert.deepEqual(questions.map((entry) => entry.id), ['buffer-spelling', 'serial-x-semantics', 'parallel-component', 'serial-base-arity']);
   for (const entry of questions) {
-    assert.equal(entry.status, 'unresolved');
+    const status = { 'buffer-spelling': 'source-resolved', 'serial-x-semantics': 'unresolved', 'parallel-component': 'source-resolved', 'serial-base-arity': 'source-conflict' };
+    assert.equal(entry.status, status[entry.id]);
     assert.ok(entry.extract_line > 0 && entry.detail.length > 0);
     assert.match(entry.page, /^10\.0[45]\.\d{2}$/);
   }

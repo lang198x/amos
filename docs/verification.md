@@ -567,3 +567,22 @@ with no public gallery flags or executable host. Extracted registrations render
 all modes in both themes and retain Printer Error's function scope. No installed
 editor review or native device test is claimed. Versions, parser, published
 preview 0.2.0 and Marketplace state are unchanged.
+
+
+## Source-resolved serial continuation
+
+The official I/O source at revision 533b4b1f5acd604814513f78e02c7b4796cb0531 was
+fetched as a Git blob and verified by Git SHA-1 and SHA-256. Four hash-bound
+excerpts retain the complete token table, component header, buffer dispatch and
+Serial Base routine, with the upstream MIT licence. Source resolves Serial Buf
+and serial/printer/parallel grouping; it exposes a Serial Base argument conflict.
+No release compatibility, installed binary or native behavior is qualified.
+
+All 18 §10.4 heading/page citations and 25 package/inventory checks pass. None
+passed complete scopes before this change. Both existing consumers pass 143
+highlighting integrations in both modes/themes. Checks retain Serial Buf versus
+Buffer, Input$ boundaries, command/function roles, source/manual Base contexts,
+opaque payloads and existing printer/port forms. Removing the serial command rule
+fails; restoration passes. npm/VSIX bytes match source and have no public flag or
+executable host. Extracted modes render both themes and preserve the fresh listing.
+Versions, parser, published preview 0.2.0 and Marketplace are unchanged.

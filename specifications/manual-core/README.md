@@ -7,8 +7,8 @@ chapters 5.1–5.5 (basics, strings, maths, control and procedures), 48 from cha
 (memory banks), 27 from 6.4 (drawing), 35 from 6.5 (menus), 19 from 7.1
 (sprites), 21 from 7.2 (Bobs), 13 from 7.3 (object updating), 14 from 7.4
 (collisions), 12 from 7.5 (IFF animation), 24 from 7.6 (BASIC AMAL controls),
-38 from 10.2 (file/directory I/O) 21 from 8.1 (music/basic sound) ten from 8.2 (samples) 15 from 8.3 (music modules) and seven from 11.2 (speech) and 15 from 7.7 (icons/blocks) and 13 from 11.1 (fonts) and 11 from 12.2 (error handling) and 12 from 10.3 (printer/ports).
-The 594 BASIC entries include grouped headings, connective words, typed forms and the `?`
+38 from 10.2 (file/directory I/O) 21 from 8.1 (music/basic sound) ten from 8.2 (samples) 15 from 8.3 (music modules) and seven from 11.2 (speech) and 15 from 7.7 (icons/blocks) and 13 from 11.1 (fonts) and 11 from 12.2 (error handling) and 12 from 10.3 (printer/ports) and 18 from 10.4 (serial).
+The 612 BASIC entries include grouped headings, connective words, typed forms and the `?`
 print shortcut. Fourteen embedded menu commands are recorded separately in
 `06-05.json`, outside the BASIC vocabulary count.
 Each entry cites a printed page and a line in the hash-pinned held extract
@@ -190,3 +190,10 @@ $FFFF and $FFF while describing half width, and an example describes ten lines
 while looping 0 To 10; neither discrepancy becomes an executable rule.
 No driver status, buffer, pointer, printout or device-readiness behavior is
 qualified. Serial/parallel extension commands need their own review.
+
+
+Serial forms carry the manual's I/O Extension label corroborated by pinned source.
+Serial Buf is the source token; Serial Buffer is not an accepted alias. Serial
+Base's source argument conflicts with the manual's omitted channel. Serial X
+semantics remain unresolved. Scope coverage establishes none of these runtime
+rules, device availability or edition/release compatibility.

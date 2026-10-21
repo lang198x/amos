@@ -11,7 +11,7 @@ The table describes current source.
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 10.1–10.3, 11.1–11.2 and 12.2, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 10.1–10.4, 11.1–11.2 and 12.2, plus Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -417,8 +417,17 @@ Pointer ranges, buffer lifetimes, status values and actual output remain
 unqualified. These additions are unreleased.
 
 
-The [I/O boundary review](io-extension-boundary.md) records 18 serial and ten
-parallel forms separately from the 594 BASIC chapter entries. It recommends
-existing lexical modes with component provenance for a later implementation;
-Serial Buf/Buffer spelling, handshake semantics and parallel component ownership
-remain unresolved. No serial/parallel rules or new mode are added by the review.
+The [I/O boundary review](io-extension-boundary.md) records the 18 serial and ten
+parallel forms. Pinned original source resolves buffer spelling and component
+grouping. Serial is now included in BASIC lexical coverage; parallel follows
+separately. Handshake semantics and Serial Base arity remain unqualified.
+
+
+## Serial
+
+Eighteen §10.4 entries bring BASIC to 612 across 31 chapters. None passed complete
+scopes before this change; all now pass in both modes/themes. Pinned official
+source resolves Serial Buf and the I/O component grouping, without qualifying
+installation/releases. Serial Buffer stays ordinary, Input$ remains typed and
+Serial Base's arity conflict is explicit. Serial X semantics, buffers, driver
+status and actual traffic remain unqualified. Coverage is unreleased.

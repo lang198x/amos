@@ -1,7 +1,7 @@
 {
   "product": "AMOS Professional",
-  "component": "I/O Extension (explicit serial label; parallel ownership unconfirmed)",
-  "scope": "Documentary boundary review only; no lexical/parser/native qualification",
+  "component": "I/O Extension (manual serial label; source-revision grouping includes printer and parallel)",
+  "scope": "Documentary inventory and source-backed lexical coverage; no parser/native qualification",
   "source": "https://gitlab.com/amigasourcecodepreservation/amos-classic-documentation",
   "held_extract": "amos-pro-user-guide-1992-croucher-hill.txt",
   "extract_sha256": "b0bf946502ad3ce6534e13d620dd5c017f8f6a6cd7a4c4f99ced87b1d925715c",
@@ -37,14 +37,14 @@
       "extract_line": 26341,
       "end_line": 26344,
       "page": "14.D.01",
-      "text": "These additional features are called “extensions”, they are written in machine code, and they can be\npermanently installed into AMOS Professional using [Set Editor Setup] from the Configuration Menu.\nOnce loaded, they extend the power of the system even further, providing any number of new\ninstructions for the use of the professional programmer."
+      "text": "These additional features are called \u201cextensions\u201d, they are written in machine code, and they can be\npermanently installed into AMOS Professional using [Set Editor Setup] from the Configuration Menu.\nOnce loaded, they extend the power of the system even further, providing any number of new\ninstructions for the use of the professional programmer."
     },
     {
       "id": "music-component",
       "extract_line": 26354,
       "end_line": 26356,
       "page": "14.D.01",
-      "text": "BELL is not a built-in command at all! In actual fact, it is part of a separate MUSIC extension, which\ncontains all of the music, sound and sample commands used by AMOS Professional. The full source\ncode for these instructions can be examined in the “AMOSPro_Tutorial:Extensions/Music.s” file."
+      "text": "BELL is not a built-in command at all! In actual fact, it is part of a separate MUSIC extension, which\ncontains all of the music, sound and sample commands used by AMOS Professional. The full source\ncode for these instructions can be examined in the \u201cAMOSPro_Tutorial:Extensions/Music.s\u201d file."
     },
     {
       "id": "extension-configuration",
@@ -53,5 +53,6 @@
       "page": "13.01.05",
       "text": "[Set Loaded Extensions]\nWhenever a new extension file is added to the system, AMOS Professional must be informed of its\nexact location on the disc. This is achieved via the extension list, and you should move the cursor over\nthe appropriate position, and click on the left mouse button. Enter the path and file names of the\nextension from the keyboard, and press [Return]."
     }
-  ]
+  ],
+  "original_source": "original-source.json"
 }

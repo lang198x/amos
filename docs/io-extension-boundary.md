@@ -1,10 +1,13 @@
 # I/O Extension boundary review
 
-I recommend adding the documented serial/parallel vocabulary to the existing
-manual-led AMOS lexical surface, with explicit component provenance and unresolved
-availability. The word “extension” alone does not justify another editor mode.
-This is a recommendation for the next implementation, not an adopted new profile
-or evidence that every AMOS installation supplies these commands.
+Approved 21 October 2026: use the existing manual-led lexical modes with explicit
+component provenance. Serial coverage is implemented; parallel follows separately.
+No new mode or runtime availability claim is introduced.
+
+Pinned original source resolves Serial Buf and the serial/printer/parallel
+implementation grouping. [Source evidence](../specifications/extensions/io/original-source.json)
+retains token/dispatch excerpts and the upstream licence. It does not qualify an
+installed binary or individual release.
 
 ## What the manual establishes
 
@@ -31,14 +34,14 @@ The [documentary inventory](../specifications/extensions/io/README.md) has 28
 records: 18 serial (12 commands, six functions) and ten parallel (five commands,
 five functions). Each heading and following printed-page footer was checked
 against the held extract. Fresh examples illustrate lexical contexts only.
-These records do not increase the 594-entry BASIC highlighting count.
+The 18 serial records are now included in 612 BASIC chapter entries; the ten
+parallel records remain documentary until their separate sweep.
 
-Before implementing new rules:
+Source findings and remaining limits:
 
-- Resolve **Serial Buf versus Serial Buffer**. The §10.4 heading and index say
-  Serial Buf; the signature at line 19455 and error discussion at 22020 say
-  Serial Buffer. Use pinned original token/source evidence rather than silently
-  accepting both as aliases. The current record retains the conflict.
+- **Serial Buf** is resolved by the pinned original token table and InSerialBuf
+  dispatch. No Serial Buffer token is present. Conflicting manual wording remains
+  recorded; the longer spelling is not promoted to an alias.
 - Preserve **Serial X** uncertainty. The formula at line 19401 prints
   `Xmode=XON110000000+XOFF*$1000`. The toggle wording and Serial Open explanation
   also need separate semantic verification. This blocks claims about handshake
@@ -46,9 +49,12 @@ Before implementing new rules:
 - Keep **Parallel Input$** distinct from the nearby `PARALLEL INPUTS` prose.
   The heading/signature establish the dollar spelling; the prose does not justify
   an Inputs alias or optional-parameter semantics.
-- Keep **parallel component ownership** unknown until original source/configuration
-  evidence identifies it. A chapter label can be retained without inventing a
-  module name or release profile.
+- **Parallel component ownership** is source-resolved: the same I/O source contains
+  all serial, printer and parallel token tables. This settles grouping at that
+  revision, not distribution across every edition or installation.
+- **Serial Base arity** conflicts: the manual omits an argument, while the token
+  table and routine use a channel. Both lexical contexts are checked without
+  claiming native acceptance.
 
 The review has not examined runtime media, sent bytes, opened a device, checked
 handshake flags or qualified Creator/Easy/individual Professional releases.
@@ -57,7 +63,7 @@ handshake flags or qualified Creator/Easy/individual Professional releases.
 
 | Approach | Tradeoff |
 | --- | --- |
-| **Recommended: existing lexical modes, explicit documentary provenance.** Add serial/parallel rules using the current inventory-and-test process; carry the serial component label and parallel unknown separately. | Consistent with Music/picture compaction and useful for listings. The modes must continue to describe lexical vocabulary rather than installed capabilities. |
+| **Adopted: existing lexical modes, explicit documentary provenance.** Add serial/parallel rules using the current inventory-and-test process; carry the serial component label and parallel unknown separately. | Consistent with Music/picture compaction and useful for listings. The modes must continue to describe lexical vocabulary rather than installed capabilities. |
 | Separate opt-in I/O mode. | Could be appropriate if source/version research establishes a meaningful user-facing profile. It adds mode/composition/packaging choices now, without evidence that the manual's extension label alone requires them. |
 
 No generic extension selector or framework is proposed. If later research shows
@@ -65,8 +71,6 @@ colliding tokens, incompatible syntax or a separately distributed optional
 product, revisit profile selection with that evidence. Do not infer a profile
 from the union of highlighted names.
 
-The next bounded implementation can resolve the buffer spelling from original
-source first, then add serial and parallel sweeps with complete phrases, dollar
-boundaries, command/function roles, typed identifiers, opaque strings, nested
-expressions and existing port/printer regressions. Neither hardware transfer
-semantics nor publication follows from passing those checks.
+The serial sweep uses source-resolved spelling, complete phrases, dollar
+boundaries, command/function roles and existing port/printer regressions. Parallel
+is the next separate sweep. Hardware semantics and publication remain separate.

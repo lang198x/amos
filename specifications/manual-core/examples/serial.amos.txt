@@ -1,0 +1,12 @@
+Rem Lexical serial board; no device or traffic is accessed
+Serial Open 0,0 : Serial Buf 0,1024
+Serial Speed 0,1200 : Serial Bits 0,8,1 : Serial Parity 0,-1
+Serial X 0,MC_XMODE
+Serial Send 0,"Ready" : MC_READY=Serial Check(0)
+Serial Out 0,Start(10),Length(10)
+MC_BYTE=Serial Get(0) : MC_TEXT$=Serial Input$(0)
+MC_FLAGS=Serial Status(0) : MC_CODE=Serial Error(0)
+MC_ADDRESS=Serial Base(0)
+Serial Fast 0 : Serial Slow 0 : Serial Abort(0) : Serial Close 0
+MC_NOTE$="Serial Buf: Serial Input$ Serial Buffer"
+' Serial Error Serial X

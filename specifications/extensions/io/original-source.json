@@ -1,0 +1,60 @@
+{
+  "repository": "https://github.com/AOZ-Studio/AMOS-Professional-Official",
+  "commit": "533b4b1f5acd604814513f78e02c7b4796cb0531",
+  "path": "extensions/+IO_Ports.s",
+  "git_blob": "59162d7c0d6790a338fb2e1095db47a539cb56fa",
+  "sha256": "12e3c62ee4dbc537fc64a2288e380c57e8937c9dc47736fd0c9f1a344285594a",
+  "excerpt_encoding": "latin-1 byte mapping; not an original-runtime encoding qualification",
+  "scope": "Pinned source spelling/component evidence only; no build, native execution or release compatibility qualification",
+  "qualified_releases": [],
+  "citations": [
+    {
+      "id": "token-table",
+      "line": 105,
+      "end_line": 202,
+      "text": "C_Tk\n\t\tdc.w \t1,0\n\t\tdc.b \t$80,-1\n\t\tdc.w\tL_InSerialOpen2,L_Nul\n\t\tdc.b\t\"!serial ope\",\"n\"+$80,\"I0,0\",-2\n\t\tdc.w\tL_InSerialOpen5,L_Nul\n\t\tdc.b\t$80,\"I0,0,0,0,0\",-1\n\t\tdc.w\tL_InSerialClose0,L_Nul\n\t\tdc.b\t\"!serial clos\",\"e\"+$80,\"I\",-2\n\t\tdc.w\tL_InSerialClose1,L_Nul\n\t\tdc.b\t$80,\"I0\",-1\n\t\tdc.w\tL_InSerialSpeed,L_Nul\n\t\tdc.b\t\"serial spee\",\"d\"+$80,\"I0,0\",-1\n\t\tdc.w\tL_Nul,L_FnSerialCheck\n\t\tdc.b\t\"serial chec\",\"k\"+$80,\"00\",-1\n\t\tdc.w \tL_InSerialSend,L_Nul\n\t\tdc.b\t\"serial sen\",\"d\"+$80,\"I0,2\",-1\n\t\tdc.w \tL_InSerialSpeed,L_Nul\n\t\tdc.b\t\"serial spee\",\"d\"+$80,\"I0,0\",-1\n\t\tdc.w \tL_InSerialBits,L_Nul\n\t\tdc.b\t\"serial bit\",\"s\"+$80,\"I0,0,0\",-1\n\t\tdc.w \tL_InSerialX,L_Nul\n\t\tdc.b\t\"serial \",\"x\"+$80,\"I0,0\",-1\n\t\tdc.w \tL_InSerialBuf,L_Nul\n\t\tdc.b\t\"serial bu\",\"f\"+$80,\"I0,0\",-1\n\t\tdc.w \tL_InSerialParity,L_Nul\n\t\tdc.b\t\"serial parit\",\"y\"+$80,\"I0,0\",-1\n\t\tdc.w\tL_Nul,L_FnSerialGet\n\t\tdc.b\t\"serial ge\",\"t\"+$80,\"00\",-1\n\t\tdc.w\tL_Nul,L_FnSerialInput\n\t\tdc.b\t\"serial input\",\"$\"+$80,\"20\",-1\n\t\tdc.w\tL_InSerialFast,L_Nul\n\t\tdc.b\t\"serial fas\",\"t\"+$80,\"I0\",-1\n\t\tdc.w\tL_InSerialSlow,L_Nul\n\t\tdc.b\t\"serial slo\",\"w\"+$80,\"I0\",-1\n\t\tdc.w\tL_Nul,L_FnSerialError\n\t\tdc.b\t\"serial erro\",\"r\"+$80,\"00\",-1\n\t\tdc.w\tL_InSerialOut,L_Nul\n\t\tdc.b\t\"serial ou\",\"t\"+$80,\"I0,0,0\",-1\n\t\tdc.w\tL_Nul,L_FnSerialStatus\n\t\tdc.b\t\"serial statu\",\"s\"+$80,\"00\",-1\n\t\tdc.w\tL_Nul,L_FnSerialBase\n\t\tdc.b\t\"serial bas\",\"e\"+$80,\"00\",-1\n\t\tdc.w\tL_InSerialAbort,L_Nul\n\t\tdc.b\t\"serial abor\",\"t\"+$80,\"I0\",-1\n\n; Printer commands\n; ~~~~~~~~~~~~~~~~\n\t\tdc.w   \tL_InPrinterOpen,L_Nul\n\t\tdc.b\t\"printer ope\",\"n\"+$80,\"I\",-1\n\t\tdc.w\tL_InPrinterClose,L_Nul\n\t\tdc.b\t\"printer clos\",\"e\"+$80,\"I\",-1\n\t\tdc.w\tL_InPrinterSend,L_Nul\n\t\tdc.b\t\"printer sen\",\"d\"+$80,\"I2\",-1\n\t\tdc.w\tL_InPrinterOut,L_Nul\n\t\tdc.b\t\"printer ou\",\"t\"+$80,\"I0,0\",-1\n\t\tdc.w\tL_InPrinterDump0,L_Nul\n\t\tdc.b\t\"!printer dum\",\"p\"+$80,\"I\",-2\n\t\tdc.w\tL_InPrinterDump4,L_Nul\n\t\tdc.b\t$80,\"I0,0t0,0\",-2\n\t\tdc.w\tL_InPrinterDump7,L_Nul\n\t\tdc.b\t$80,\"I0,0t0,0,0,0,0\",-1\n\t\tdc.w\tL_InPrinterAbort,L_Nul\n\t\tdc.b\t\"printer abor\",\"t\"+$80,\"I\",-1\n\t\tdc.w\tL_Nul,L_FnPrinterCheck\n\t\tdc.b \t\"printer chec\",\"k\"+$80,\"0\",-1\n\t\tdc.w\tL_Nul,L_FnPrinterOnline\n\t\tdc.b\t\"printer onlin\",\"e\"+$80,\"0\",-1\n\t\tdc.w\tL_Nul,L_FnPrinterBase\n\t\tdc.b\t\"printer bas\",\"e\"+$80,\"0\",-1\n\t\tdc.w\tL_Nul,L_FnPrinterError\n\t\tdc.b\t\"printer erro\",\"r\"+$80,\"0\",-1\n\n; Parallel commands\n; ~~~~~~~~~~~~~~~~~\n\t\tdc.w   \tL_InParallelOpen,L_Nul\n\t\tdc.b\t\"parallel ope\",\"n\"+$80,\"I\",-1\n\t\tdc.w\tL_InParallelClose,L_Nul\n\t\tdc.b\t\"parallel clos\",\"e\"+$80,\"I\",-1\n\t\tdc.w\tL_InParallelSend,L_Nul\n\t\tdc.b\t\"parallel sen\",\"d\"+$80,\"I2\",-1\n\t\tdc.w\tL_InParallelOut,L_Nul\n\t\tdc.b\t\"parallel ou\",\"t\"+$80,\"I0,0\",-1\n\t\tdc.w\tL_InParallelAbort,L_Nul\n\t\tdc.b\t\"parallel abor\",\"t\"+$80,\"I\",-1\n\t\tdc.w\tL_Nul,L_FnParallelCheck\n\t\tdc.b \t\"parallel chec\",\"k\"+$80,\"0\",-1\n\t\tdc.w\tL_Nul,L_FnParallelStatus\n\t\tdc.b\t\"parallel statu\",\"s\"+$80,\"0\",-1\n\t\tdc.w\tL_Nul,L_FnParallelBase\n\t\tdc.b\t\"parallel bas\",\"e\"+$80,\"0\",-1\n\t\tdc.w\tL_Nul,L_FnParallelError\n\t\tdc.b\t\"parallel erro\",\"r\"+$80,\"0\",-1\n\t\tdc.w\tL_Nul,L_FnParallelInput1\n\t\tdc.b\t\"!parallel input\",\"$\"+$80,\"20\",-2\n\t\tdc.w\tL_Nul,L_FnParallelInput2\n\t\tdc.b\t$80,\"20,0\",-2\n;\t\tTOKEN_END",
+      "sha256": "828c36f558785e7ac45c26642f8ef05d2b60d52cdbc1ce79c179de450128b26b"
+    },
+    {
+      "id": "component-header",
+      "line": 10,
+      "end_line": 13,
+      "text": "; Serial / Parallel / Printer extension source code\n; By Fran\u00ef\u00bf\u00bdois Lionet\n; AMOS, AMOSPro, AMOS Compiler (c) Europress Software 1990-1992\n; To be used with AMOSPro V2.0 and over",
+      "sha256": "d4082b3dcc85f7d578edce317fcd716ca8628641f35c19158b357c775ba5370f"
+    },
+    {
+      "id": "buffer-dispatch",
+      "line": 535,
+      "end_line": 543,
+      "text": ";\tSerial Buf ser,length\n; - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n\tLib_Par\tInSerialBuf\n; - - - - - - - - - - - - -\n\tmove.l\td3,d1\n\tmove.l\t(a3)+,d0\n\tRbsr\tL_GetSerA1\n\tmove.l\td1,IO_RBUFLEN(a1)\n\tRbra\tL_Stpar",
+      "sha256": "13c868bccfea2733a9131430ca70b233943d85dd5a2a4d60979907440bbeeb70"
+    },
+    {
+      "id": "serial-base",
+      "line": 609,
+      "end_line": 619,
+      "text": "; - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n;\t=SERIAL BASE\n; - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -\n\tLib_Par\tFnSerialBase\n; - - - - - - - - - - - - -\n\tmove.l\td3,d0\n\tRbsr\tL_GetSerA1\n\tmove.l\ta1,d3\n\tRet_Int\n\n; - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -",
+      "sha256": "b0394e9cf5f018ea01127a953fb5a2a817ff85113d95b85fa627e5087fadc991"
+    }
+  ],
+  "findings": [
+    {
+      "id": "buffer-spelling",
+      "status": "source-resolved",
+      "conclusion": "The complete token table names serial buf, dispatching InSerialBuf. No serial buffer token is present.",
+      "native_verified": false
+    },
+    {
+      "id": "parallel-component",
+      "status": "source-resolved",
+      "conclusion": "This I/O source contains serial, printer and parallel token tables. This identifies implementation grouping at this revision, not default installation or release availability.",
+      "native_verified": false
+    },
+    {
+      "id": "serial-base-arity",
+      "status": "source-conflict",
+      "conclusion": "The token table encodes one numeric argument and FnSerialBase passes d3 to GetSerA1. The manual signature omits the argument. Both lexical contexts may be coloured without asserting acceptance.",
+      "native_verified": false
+    }
+  ]
+}

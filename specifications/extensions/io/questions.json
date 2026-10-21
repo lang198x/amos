@@ -1,10 +1,11 @@
 [
   {
     "id": "buffer-spelling",
-    "status": "unresolved",
+    "status": "source-resolved",
     "page": "10.04.04",
     "extract_line": 19453,
-    "detail": "Heading and index use Serial Buf; signature and later error text use Serial Buffer. Neither alias is qualified by this review."
+    "detail": "Pinned original token table spells Serial Buf and dispatches InSerialBuf. Serial Buffer is absent. The manual discrepancy is retained.",
+    "source_evidence": "original-source.json#buffer-spelling"
   },
   {
     "id": "serial-x-semantics",
@@ -15,9 +16,18 @@
   },
   {
     "id": "parallel-component",
-    "status": "unresolved",
+    "status": "source-resolved",
     "page": "10.05.01",
     "extract_line": 19572,
-    "detail": "The parallel chapter follows serial but does not explicitly attribute its commands to the I/O Extension. Grouping is documentary, not module ownership evidence."
+    "detail": "Pinned I/O source contains the serial, printer and parallel token tables. No default installation or release availability is established.",
+    "source_evidence": "original-source.json#parallel-component"
+  },
+  {
+    "id": "serial-base-arity",
+    "status": "source-conflict",
+    "page": "10.04.06",
+    "extract_line": 19541,
+    "detail": "Manual signature omits the channel; pinned token table and routine take a channel argument. Highlighting is not arity validation.",
+    "source_evidence": "original-source.json#serial-base-arity"
   }
 ]

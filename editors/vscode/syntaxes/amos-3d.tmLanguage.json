@@ -90,6 +90,10 @@
       "patterns": [
         {
           "name": "keyword.control.amos",
+          "match": "(?i:(?<![A-Za-z0-9_$#])(?:Serial[ \\t]+(?:Open|Close|Speed|Bits|Parity|X|Send|Out|Buf|Fast|Slow|Abort))(?![A-Za-z0-9_$#]))"
+        },
+        {
+          "name": "keyword.control.amos",
           "match": "(?i:(?<![A-Za-z0-9_$#])(?:Printer[ \\t]+(?:Open|Close|Send|Dump|Out|Abort)|Open[ \\t]+Port)(?![A-Za-z0-9_$#]))"
         },
         {
@@ -180,6 +184,10 @@
     },
     "functions": {
       "patterns": [
+        {
+          "name": "support.function.amos",
+          "match": "(?i:(?<![A-Za-z0-9_$#])(?:Serial[ \\t]+(?:Input\\$|Get|Check|Status|Error|Base))(?![A-Za-z0-9_$#]))"
+        },
         {
           "name": "support.function.amos",
           "match": "(?i:(?<![A-Za-z0-9_$#])(?:Printer[ \\t]+(?:Check|Online|Error|Base)|Port)(?![A-Za-z0-9_$#]))"

@@ -232,3 +232,12 @@ Open Port loop's ten-line description versus 0 To 10 are retained without
 inferring semantics. Embedded printer controls and dump labels are distinct
 from BASIC forms. The fresh printer fixture is a lexical input, not hardware,
 device-driver, pointer or output evidence.
+
+
+Serial uses 18 exact §10.4 heading/page citations and the pinned official
+extensions/+IO_Ports.s revision recorded in specifications/extensions/io/
+original-source.json. Raw Git blob and SHA-256 were verified; retained complete
+token-table and narrow component/dispatch excerpts are hash-bound with the MIT
+licence. Serial Buf is a token; Serial Buffer is absent. The same source groups
+serial/printer/parallel. Serial Base takes a channel there, unlike the manual
+signature. No native arity, handshake, driver or release qualification follows.
