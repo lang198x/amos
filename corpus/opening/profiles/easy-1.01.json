@@ -8,7 +8,7 @@
     "byte_offset": 2275,
     "text": "$VER: 1.01"
   },
-  "scope": "Four Cls display probes only; not a recognised CLI compatibility profile.",
+  "scope": "Four Cls display probes and one native Save/Load round trip; not a recognised CLI compatibility profile.",
   "emulator_source": "a79a843334dcfe3d62413e73eb6c8c710824aeb7",
   "emulator_sha256": "547b79c075c189f5f0f2e1f38c19f267c4aefe7d8486e019da6aaf70d47396f4",
   "machine": "PAL A500 with A501; 512 KiB chip and 512 KiB slow RAM",
@@ -210,5 +210,6 @@
     ]
   },
   "complete_extension_qualification": false,
-  "evidence": "../../editions/cls/easy/README.md"
+  "evidence": "../../editions/cls/easy/README.md",
+  "native_save_load_evidence": "../../editions/save-load/easy/README.md"
 }

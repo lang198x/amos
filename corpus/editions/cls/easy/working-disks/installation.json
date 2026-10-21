@@ -50,7 +50,7 @@
   },
   "programs_captures_reference": "../cases.json",
   "limits": [
-    "Native program-file Save/Load remains unverified.",
+    "This installation record does not exercise native program-file Save/Load; see the separate bounded round-trip evidence.",
     "Examples and Tutorial installation is not execution coverage of supplied content.",
     "Filesystem-verifier findings are retained without disk repair.",
     "Personalisation, registration data, media, snapshots and private locators are excluded."
@@ -62,5 +62,6 @@
       "run_frames": 200
     },
     "native_outcome": "Running Easy AMOS screen instructs insertion of Programs and Control-Amiga-Amiga reboot; offers Create again."
-  }
+  },
+  "native_program_save_load_evidence": "../../../save-load/easy/README.md"
 }

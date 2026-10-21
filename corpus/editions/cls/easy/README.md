@@ -77,6 +77,10 @@ wording (printed page 347), the [Creator 1.1 trial](../creator/README.md) and th
 [Professional 2.00 trial](../README.md). No parser semantics, recognised CLI
 compatibility profile, grammar or release channel changes.
 
+The separate [native Save/Load trial](../../save-load/easy/README.md) uses the
+Paper 4 / bare Cls source, a disposable work disk and a fresh reader boot. Its
+successful round trip and unresolved integrity finding have their own evidence.
+
 Sources are newly authored under the root software licence. Captures document
 original software as evidence. No runtime media, snapshots, tokenised programs,
 registration data or private locator paths are included.

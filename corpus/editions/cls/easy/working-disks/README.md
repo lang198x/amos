@@ -28,8 +28,10 @@ archive reconstruction or native program conversion is used.
 
 After Tutorial completion, the installer offers an optional fourth disk for the
 learner's own programs. Pass skips that optional formatting. These three system
-disks should remain read-only; program-file Save/Load needs a separate working
-disk and remains unverified here.
+disks should remain read-only. A separate working disk now supports one
+[native program Save/Load trial](../../../save-load/easy/README.md); it preserves
+the exact four-line source and execution after a fresh boot. That trial retains
+its own filesystem-integrity finding.
 
 ## Provenance and verifier limits
 

@@ -1,0 +1,174 @@
+{
+  "status": "one_native_save_load_round_trip_observed_with_integrity_finding",
+  "profile": "../../../opening/profiles/easy-1.01.json",
+  "source": "../../cls/paper-4-bare.amos.txt",
+  "source_sha256": "70c225b0d31cec88bf910a3908b2e0badb3749d67eb4540c462a2159072d4b96",
+  "source_bytes": 25,
+  "native_file": {
+    "path": "ROUNDTRIP.AMOS",
+    "bytes": 56,
+    "sha256": "72b16ac6f6c1a01d9274f2af68427b688f064c8b33544796d16f4674c258910a"
+  },
+  "initial_work_disk": {
+    "disk": {
+      "sha256": "5a5d9621abc1b3e71d06628136194cd240766a5bddc76a7f460b24bb4f82bcd8",
+      "bytes": 901120,
+      "geometry": {
+        "cylinders": 80,
+        "heads": 2,
+        "sectors_per_track": 11,
+        "blocks": 1760
+      },
+      "filesystem": "ofs",
+      "label": "My_Programs"
+    },
+    "verification": {
+      "sound": true,
+      "problems": []
+    },
+    "root": {
+      "block": 880,
+      "bitmap_valid_flag": 4294967295,
+      "bitmap_blocks": [
+        881
+      ],
+      "bitmap_extension": null
+    }
+  },
+  "saved_work_disk": {
+    "disk": {
+      "sha256": "75180c1a34cc5e2577780da52f22856ce11d6238818e3ec41063444c7d0e8363",
+      "bytes": 901120,
+      "geometry": {
+        "cylinders": 80,
+        "heads": 2,
+        "sectors_per_track": 11,
+        "blocks": 1760
+      },
+      "filesystem": "ofs",
+      "label": "My_Programs"
+    },
+    "verification": {
+      "sound": false,
+      "problems": [
+        "bitmap block 884: non-existent block 2402 is marked free"
+      ]
+    },
+    "root": {
+      "block": 880,
+      "bitmap_valid_flag": 4294967295,
+      "bitmap_blocks": [
+        884
+      ],
+      "bitmap_extension": null
+    },
+    "entry_count": 1
+  },
+  "reader_after_run_image_sha256": "75180c1a34cc5e2577780da52f22856ce11d6238818e3ec41063444c7d0e8363",
+  "fresh_boots": {
+    "writer_and_reader_frames": [
+      500,
+      500,
+      1000,
+      1000
+    ],
+    "no_snapshot_loaded_at_either_boot": true,
+    "blank_capture_bytes_identical": true,
+    "checkpoint_use": "Each process exits after bounded RPC batches; its own same-build checkpoint continues that session. Reader starts fresh with only Programs and firmware, not a writer checkpoint."
+  },
+  "input": {
+    "source_type_hold_frames": 3,
+    "source_type_settle_frames": 30,
+    "disk_swap_empty_frames": 100,
+    "after_disk_insertion_frames": 100,
+    "save_keys": [
+      "LAmiga",
+      "s"
+    ],
+    "load_keys": [
+      "LAmiga",
+      "l"
+    ],
+    "key_hold_frames": 3,
+    "selector_open_run_frames": 100,
+    "filename_entry": "ROUNDTRIP.AMOS followed by Return",
+    "filename_hold_frames": 3,
+    "filename_settle_frames": 30,
+    "save_wait_frames": 1000,
+    "load_wait_frames": 200,
+    "reader_mount_writable": false,
+    "run_key": "f1",
+    "run_wait_frames": 100,
+    "completion_key": "space",
+    "completion_wait_frames": 100,
+    "completion_presses": 2,
+    "source_compare_after_return": "Four Down keypresses (hold 3 each), run 30; cursor is below the four source lines."
+  },
+  "pixel_checks": {
+    "source_region_xyxy": [
+      82,
+      154,
+      240,
+      218
+    ],
+    "source_region_rgba_sha256": "a1951db32ce438688c73c5e11ad5e9ebcaf9b663ab66784049e6c91ae58f515e",
+    "original_and_reloaded_match": true,
+    "blank_editor_negative_control_differs": true,
+    "reloaded_run_sample_xy": [
+      400,
+      250
+    ],
+    "reloaded_run_sample_rgba": [
+      255,
+      0,
+      0,
+      255
+    ]
+  },
+  "captures": {
+    "writer-boot.png": "ebe639b2d7e0d698f2d216e07b4eda8d0a3b8fe145576ab269e3b02d65f7aea1",
+    "source-before-save.png": "e2bdc7030e114ae01371c1866fff3003806685e470dd3fdce6c23bb7cdf7828a",
+    "save-selector.png": "12708a8c2e419e9307dda0f331e8183015ed52bf4122e36178f26d8747de7fde",
+    "save-complete.png": "d43d83a46a16a238ce6e7d5c2c27abc4320e530554b26b83f995b7a875f231bb",
+    "reader-blank.png": "ebe639b2d7e0d698f2d216e07b4eda8d0a3b8fe145576ab269e3b02d65f7aea1",
+    "load-selector.png": "c5a108f13e6fa4a854df5678295ba7796e776df2ed59baad4607407fc37795df",
+    "source-after-load.png": "5dc8655eb22e1380b2264d132501eb0ac26664558b6102690c3f1c04eb6a5fa2",
+    "reloaded-run.png": "fbdefb4cefab1ae739e184e634a71e7eff4ecb44aa59082fa36ae51e63411d99",
+    "reloaded-end.png": "59068658b66840d66702a5e04c5c550131ec9864b918a66cd96316a6fba4501e",
+    "reloaded-return.png": "ff8f8ab73ee6400e8a3c876161f1b536bcc9cfcfd45b55e899d849fe0271cfda",
+    "reloaded-source-compare.png": "5dbb4dc0ec0b3d83482f03b7cc2ea8cc1e55c3489ee90326a3f67f5c62ddf6f3"
+  },
+  "manual": {
+    "source_record": "../../../../specifications/editions/sources.json",
+    "id": "easy",
+    "printed_pages": "First Steps 25\u201329",
+    "extract_lines": [
+      1185,
+      1342
+    ]
+  },
+  "integrity_checker": {
+    "command": "build198x-adf verify <saved-work.adf>",
+    "exit_code": 1,
+    "stderr": "build198x-adf: corrupt ADF: filesystem structure",
+    "manifest_finding": [
+      "bitmap block 884: non-existent block 2402 is marked free"
+    ],
+    "disk_repaired": false,
+    "cause": "unestablished"
+  },
+  "limits": [
+    "One program, same installed Easy 1.01, same firmware/model/runtime.",
+    "No cross-version import, other Save/Load forms, memory banks or extensions qualified.",
+    "No native codec, parser behaviour or recognised CLI compatibility profile added.",
+    "No tokenised program, runtime media, snapshots, private locator, registration or personalisation data published."
+  ],
+  "disk_tool": {
+    "cli_version": "0.2.12",
+    "library": {
+      "name": "format198x-commodore-amiga-adf",
+      "version": "0.3.2"
+    }
+  },
+  "integrity_investigation": "https://github.com/lang198x/amos/issues/6"
+}
