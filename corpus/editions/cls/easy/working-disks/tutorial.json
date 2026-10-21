@@ -1,0 +1,314 @@
+{
+  "native_transfers": 2,
+  "source_master": 2,
+  "entry_count": 62,
+  "file_count": 55,
+  "disk": {
+    "sha256": "83287e6936f9891b0822e71cdd7b2c7e928015d8e71952a98f04c0124b1ea4ac",
+    "bytes": 901120,
+    "geometry": {
+      "cylinders": 80,
+      "heads": 2,
+      "sectors_per_track": 11,
+      "blocks": 1760
+    },
+    "filesystem": "ofs",
+    "label": "Easy_Tutorial"
+  },
+  "boot": {
+    "checksum_valid": true
+  },
+  "verification": {
+    "sound": false,
+    "problems": [
+      "bitmap block 1027: non-existent block 1766 is marked free"
+    ]
+  },
+  "components": [
+    {
+      "path": "Bob_Tutorials/Bob_Tutorial01.AMOS",
+      "bytes": 672,
+      "sha256": "4fe73e3f5682066f145c9d933205c65a0b939afaec855086d00c9b18c3ce7704"
+    },
+    {
+      "path": "Bob_Tutorials/Bob_Tutorial02.AMOS",
+      "bytes": 542,
+      "sha256": "2d062790fe9f0c7d3519fb9260f0b130630ec300fae53268af9d573b4df060d6"
+    },
+    {
+      "path": "Bob_Tutorials/Bob_Tutorial03.AMOS",
+      "bytes": 428,
+      "sha256": "e32cfdcf9c63716a62efad40b570925be0b8f647c5f856936a518c98c2bafdb9"
+    },
+    {
+      "path": "Bob_Tutorials/Bob_Tutorial04.AMOS",
+      "bytes": 572,
+      "sha256": "592512a586348d0504489ee8f613c2730c39c06dd82159f0746c04dd2a855e73"
+    },
+    {
+      "path": "Bob_Tutorials/Bob_Tutorial05.AMOS",
+      "bytes": 586,
+      "sha256": "4626d098b1ffa2d1228e16289ef0b9f39c53eb7de69e921c9a56776f60258485"
+    },
+    {
+      "path": "Bob_Tutorials/Bob_Tutorial06.AMOS",
+      "bytes": 682,
+      "sha256": "189804d125e46100dcf43f2c3b9e38e33342bd90503231ad094cf4322e529323"
+    },
+    {
+      "path": "Bob_Tutorials/Bob_Tutorial07.AMOS",
+      "bytes": 1952,
+      "sha256": "610ec7c00e5218dc447aa9c024407349cae788334a677616d7317a54bf3a6e11"
+    },
+    {
+      "path": "Bob_Tutorials/Bob_Tutorial08.AMOS",
+      "bytes": 890,
+      "sha256": "797c064a5cd1005dc77a512b5ca91b74427b7aabfe44c750d22a4ce1a202434f"
+    },
+    {
+      "path": "Bob_Tutorials/Bob_Tutorial09.AMOS",
+      "bytes": 1854,
+      "sha256": "2d612a71dd75e63f3e6624500dca67adec388f2ba8c578531f139a3c25f656b0"
+    },
+    {
+      "path": "Bob_Tutorials/Bob_Tutorial10.AMOS",
+      "bytes": 1076,
+      "sha256": "8ee2875b197c04d30ac220e56fcaa6043296c054eb33e7d16c894ecfd0d1ca0e"
+    },
+    {
+      "path": "Bob_Tutorials/Bob_Tutorial11.AMOS",
+      "bytes": 706,
+      "sha256": "89bdacaf8e314296517517e26beaa743399c01ea1b6829a05dfbe1b491ba8c82"
+    },
+    {
+      "path": "Bob_Tutorials/Bob_Tutorial12.AMOS",
+      "bytes": 704,
+      "sha256": "f7a840280249af20d220c6b99f71c1f0d1b841c2a99ab87ff4a6a951b04cb9d7"
+    },
+    {
+      "path": "Bob_Tutorials/Bob_Tutorial13.AMOS",
+      "bytes": 1342,
+      "sha256": "2cfa37e9d1f0c06543e775740e236465d06006a3080e33f1e32618e6596da633"
+    },
+    {
+      "path": "Bob_Tutorials/Bob_Tutorial14.AMOS",
+      "bytes": 1222,
+      "sha256": "4a09cd7440a0e73edd333a8a425259259ddca57c4fc9f89c431ad39d7c61c345"
+    },
+    {
+      "path": "Bob_Tutorials/Bob_Tutorial15.AMOS",
+      "bytes": 746,
+      "sha256": "e7b6199f383695e7a480ec459054186cca69cd6b59baf6b52cefc5c2a9553629"
+    },
+    {
+      "path": "Bob_Tutorials/Bob_Tutorial16.AMOS",
+      "bytes": 398,
+      "sha256": "c5870a7130f1d8798bd4043414c06961babfe76d55b408666c55221d23b8e737"
+    },
+    {
+      "path": "Bobs/Baby_AMOS.Abk",
+      "bytes": 24592,
+      "sha256": "3d414a7bf246ce761d393d76080b9b265a98aeb39a0ff9c96d17d8afe7d9d675"
+    },
+    {
+      "path": "Bobs/Collide.Abk",
+      "bytes": 2158,
+      "sha256": "fa9f88ea130fafc65390528acecb77dbcbe1c2a6e22c4094868ced4c5b245118"
+    },
+    {
+      "path": "Bobs/Colours.Abk",
+      "bytes": 3074,
+      "sha256": "40e9be1ce790052e85ba937f326c5271009fbe636b09f3d410b0d276d258c105"
+    },
+    {
+      "path": "Bobs/Mix.Abk",
+      "bytes": 13710,
+      "sha256": "81133d5bb460c57f0bfc462878955f8cdab8c45751fe0f8a8272c534e60501ee"
+    },
+    {
+      "path": "Challenge/Challengepic.Abk",
+      "bytes": 9246,
+      "sha256": "aeb8c548c3c47756185f665b783ac36fb896cce6a6d6a71009ba2cdefbeedeb1"
+    },
+    {
+      "path": "Challenge/Graduate.AMOS",
+      "bytes": 86408,
+      "sha256": "c8a50fe7fea1b974b6fbc5f5a550e11667be01ea1441bf75922bf6d86aae69dc"
+    },
+    {
+      "path": "Challenge/Questdata",
+      "bytes": 45200,
+      "sha256": "821267d3fd7495c4a0d772d088e6c5ac125a6f7c2c05e3a3d7e8ddcabc95593c"
+    },
+    {
+      "path": "Challenge/Scrollpic.Abk",
+      "bytes": 5236,
+      "sha256": "a6f52586d4d92b99418d4b24cd475f603555eda1fa21bdc7a811a9443e058dc5"
+    },
+    {
+      "path": "Challenge/Stagepic.Abk",
+      "bytes": 10678,
+      "sha256": "233c0b4f96d5c764c4eb8a9cca23ffb75a2fc41f8f169c0eae01b0ad9f47c037"
+    },
+    {
+      "path": "Challenge.AMOS",
+      "bytes": 57370,
+      "sha256": "b1fe76389e635e31fd8fbd9b34f9c1cdef9e83bc444220680f6fc8fe5062eb16"
+    },
+    {
+      "path": "Disk.info",
+      "bytes": 1743,
+      "sha256": "d49ce9bb18b004cebe87f2b169b8021693a34df0059350185acbdb4f9b5bffb2"
+    },
+    {
+      "path": "Iff/Grab_Me.Iff",
+      "bytes": 11000,
+      "sha256": "0b4be21814ed282733a4d674c810e8d8599cb3580fcf8d2cf28cf3f8a4619a2f"
+    },
+    {
+      "path": "Screens_Tutorials/Screen_Tutorial01.AMOS",
+      "bytes": 612,
+      "sha256": "cebdcd012fa4c7065c669b1b1a4aac31763242dbdd0606f4928fa3fe92e1f93a"
+    },
+    {
+      "path": "Screens_Tutorials/Screen_Tutorial02.AMOS",
+      "bytes": 2022,
+      "sha256": "907d064afc3145dc7bcf77ac123b3f8200ea3998e1329348f00a6f07d62fa0b4"
+    },
+    {
+      "path": "Screens_Tutorials/Screen_Tutorial03.AMOS",
+      "bytes": 1832,
+      "sha256": "1a785eed8d4fe2ebe4a256360cc26997430c2ba94134804919059c3da46bfda9"
+    },
+    {
+      "path": "Screens_Tutorials/Screen_Tutorial04.AMOS",
+      "bytes": 714,
+      "sha256": "c4d2aee4dfe0dda70e6d2cf0b2b3d0cb6c87eca59f40fb0f7f925bb561946028"
+    },
+    {
+      "path": "Screens_Tutorials/Screen_Tutorial05.AMOS",
+      "bytes": 1092,
+      "sha256": "15fd9cc98efa87d467a7bb8fe0c68801183b7a2e8742f763cee1f6515be54bc5"
+    },
+    {
+      "path": "Screens_Tutorials/Screen_Tutorial06.AMOS",
+      "bytes": 628,
+      "sha256": "76fdbe98df18460ef106a9b6a8d8e5d424e9940640c8eb1db10f79b371d319ad"
+    },
+    {
+      "path": "Screens_Tutorials/Screen_Tutorial07.AMOS",
+      "bytes": 548,
+      "sha256": "bd3fc1342447b203962b53668c9789e988e5c136144b97bf09ad5229c8246fbe"
+    },
+    {
+      "path": "Screens_Tutorials/Screen_Tutorial08.AMOS",
+      "bytes": 2580,
+      "sha256": "7f1aa03d32b336ee268fc9082d820029c330d02b7459b93c1c60bc06ea7e8939"
+    },
+    {
+      "path": "Screens_Tutorials/Screen_Tutorial09.AMOS",
+      "bytes": 482,
+      "sha256": "22d062ff542b290d31e69a8cace8a08e90fda51717dc08269e507a0f06c4549c"
+    },
+    {
+      "path": "Screens_Tutorials/Screen_Tutorial10.AMOS",
+      "bytes": 572,
+      "sha256": "02e907ccad004fff777863af654c9172211b081d602f804df21bdb70dd56cb9d"
+    },
+    {
+      "path": "Screens_Tutorials/Screen_Tutorial11.AMOS",
+      "bytes": 1328,
+      "sha256": "de7563854629fb34d73cee605fbc029687d240a469e71fd1afaf74308e888e51"
+    },
+    {
+      "path": "Screens_Tutorials/Screen_Tutorial12.AMOS",
+      "bytes": 888,
+      "sha256": "fe3ab981cd424d87eb835d5a10cc6d3bae145f5501ebbb96594d7650cd4a0923"
+    },
+    {
+      "path": "Screens_Tutorials/Screen_Tutorial13.AMOS",
+      "bytes": 1534,
+      "sha256": "6285531320ddeb338c06fac62a3ef706bb8b092cbbd7630206aa98f3ef4062eb"
+    },
+    {
+      "path": "Screens_Tutorials/Screen_Tutorial14.AMOS",
+      "bytes": 2916,
+      "sha256": "011cf81e0c2b746708b9aba831e2429a6eba5d4e172607eadc89f098e7ca65fb"
+    },
+    {
+      "path": "Sound_Tutorials/Music_Tutorial01.AMOS",
+      "bytes": 424,
+      "sha256": "9edd5fadd59cf3f4d59b33efb1fb9858d75bed6b39beea1e3ae0aeb7d1929905"
+    },
+    {
+      "path": "Sound_Tutorials/Music_Tutorial02.AMOS",
+      "bytes": 410,
+      "sha256": "383728fb23e7482f6194f2360ed8d37d2523eb6355ba5f4fadb8472068b5cdf7"
+    },
+    {
+      "path": "Sound_Tutorials/Music_Tutorial03.AMOS",
+      "bytes": 288,
+      "sha256": "a667049f73f92415cd9a1d9b719dac2acb8d0ed69ec78b4bab1f9dc9352a5222"
+    },
+    {
+      "path": "TB_Step_1.AMOS",
+      "bytes": 12426,
+      "sha256": "14d6e08cc895d85d6eb9d1ff6f7e8bb9c8eb95df344256f3b78b40265f262d3b"
+    },
+    {
+      "path": "TB_Step_2.AMOS",
+      "bytes": 13972,
+      "sha256": "9291924b2618c88371e3f4097a990cc33d364facb556e5e994c7c177059cb19c"
+    },
+    {
+      "path": "TB_Step_3.AMOS",
+      "bytes": 11518,
+      "sha256": "e9cb1ee61df337deec0a86ba28c78001a07bf40b6ab62dd9cdbf69209b12bff9"
+    },
+    {
+      "path": "TB_Step_4.AMOS",
+      "bytes": 20988,
+      "sha256": "54c4b42155187f13f363c4a4e427863c8db6d2d1abdc66331665707ff452fcdf"
+    },
+    {
+      "path": "TB_Step_5.AMOS",
+      "bytes": 33310,
+      "sha256": "98a74ebbccb24e95f00e9d8fac7ca5ade157eef1ea6470cdca9a0a798e866c37"
+    },
+    {
+      "path": "TB_Step_6.AMOS",
+      "bytes": 33704,
+      "sha256": "cf0eadae59a26901e8c4bd37c654a48f5ca069d5ed475fa196eb21346204b59c"
+    },
+    {
+      "path": "TB_Step_7.AMOS",
+      "bytes": 33306,
+      "sha256": "df8df33ff7826e474e597fa2de3cbe3e3657f49621589c612e12a6e198863ba4"
+    },
+    {
+      "path": "TB_Step_8.AMOS",
+      "bytes": 10630,
+      "sha256": "a2999901e867ae8cada0bfa29601fa865c917f431cb95f7db8a005fc1fd2206f"
+    },
+    {
+      "path": "Text_Tutorials/Text_Tutorial01.AMOS",
+      "bytes": 2318,
+      "sha256": "fba30efa47cc4eaec09b1e76d3b0497c65bd744a96f4d1898ff2f2b846527cc7"
+    },
+    {
+      "path": "Typing_Tutor.AMOS",
+      "bytes": 10886,
+      "sha256": "e5e516c38c8c12c49214dadf5cf7a91e2ee472ddbc861634611df3ce5631b8bd"
+    }
+  ],
+  "qualification": "Native creator reports ready; contents resolve through the filesystem manifest. Supplied programs and lessons have not been executed.",
+  "directories": [
+    "Bob_Tutorials",
+    "Bobs",
+    "Challenge",
+    "Iff",
+    "Screens_Tutorials",
+    "Sound_Tutorials",
+    "Text_Tutorials"
+  ]
+}

@@ -26,6 +26,9 @@ installer's Programs-ready prompt is retained in `programs-finish.png`; a full
 progress bar alone was not treated as completion. The original instructions
 are the Easy AMOS User Guide (1992), Introduction, printed pages 4–11.
 
+The full [working-disk record](working-disks/README.md) also documents completed
+Examples and Tutorial creation, their source limits and per-file identities.
+
 An explicit eject, 100 frames with an empty drive, and insertion allow the
 creator to recognise the requested source/work disk. A direct replacement at
 the first master prompt did not advance during 1,000 frames; no cause is claimed.

@@ -1,0 +1,221 @@
+{
+  "native_transfers": 4,
+  "source_master": 2,
+  "entry_count": 41,
+  "file_count": 37,
+  "disk": {
+    "sha256": "7fbad01bba443f45b8d8cec3c7e8d3e193b5e3b2a126ef3a553991178477b8d4",
+    "bytes": 901120,
+    "geometry": {
+      "cylinders": 80,
+      "heads": 2,
+      "sectors_per_track": 11,
+      "blocks": 1760
+    },
+    "filesystem": "ofs",
+    "label": "Easy_Examples"
+  },
+  "boot": {
+    "checksum_valid": true
+  },
+  "verification": {
+    "sound": false,
+    "problems": [
+      "bitmap block 1380: non-existent block 1764 is marked free"
+    ]
+  },
+  "components": [
+    {
+      "path": "Block_BrickData.ABK",
+      "bytes": 21020,
+      "sha256": "adf637326102f6cbc3e198d31a1336a5f9b84353bfd15d00b1c5b1b2b1a24e89"
+    },
+    {
+      "path": "Block_Buster.AMOS",
+      "bytes": 14232,
+      "sha256": "fd2ebbef7935aab49b167cce26cf1739605bf87a2576f6d3d5e244b06c72b1c3"
+    },
+    {
+      "path": "Block_Buster_HELP.AMOS",
+      "bytes": 11844,
+      "sha256": "54e0ac5e2534fd74031fae5691853f08bc3f7005b347d11aa72ddfa61bdc9a13"
+    },
+    {
+      "path": "Block_Buster_NTSC.AMOS",
+      "bytes": 14254,
+      "sha256": "cf51704e475b995f75fac5fd375996f67284431945b0fc0f73ed8d29c3630f4d"
+    },
+    {
+      "path": "Block_Buster_NTSC_HELP.AMOS",
+      "bytes": 11790,
+      "sha256": "9ff170800aecf31555c9d7929ee89f1a8a775d9bed461057548c056b11769d90"
+    },
+    {
+      "path": "Bobs/Baby_AMOS.Abk",
+      "bytes": 2864,
+      "sha256": "36b67ac73498b225275e504da3360d4f4f25e05641a81651b3f5c53adc1fd196"
+    },
+    {
+      "path": "Bobs/Block_Bobs.abk",
+      "bytes": 2960,
+      "sha256": "0199ac2abc7a6b56abd254824148566007910e4364b5c21533923c93a44484a2"
+    },
+    {
+      "path": "Bobs/Collide.Abk",
+      "bytes": 2158,
+      "sha256": "fa9f88ea130fafc65390528acecb77dbcbe1c2a6e22c4094868ced4c5b245118"
+    },
+    {
+      "path": "Bobs/Drink_Bobs.Abk",
+      "bytes": 9366,
+      "sha256": "2013e5a0989ddd08722fe168e5076cc17f6fdeda0e75716749188b09783f6415"
+    },
+    {
+      "path": "Bobs/TRace_Bobs.Abk",
+      "bytes": 6744,
+      "sha256": "aca519a9fb32e232a1faccee15ab489dbcd3b91d296cf6b1fac133cb53d805a4"
+    },
+    {
+      "path": "Bobs/Tricycle_Bobs.Abk",
+      "bytes": 9100,
+      "sha256": "41a5e660cca7fc35eb65212f6e8a81d0c3e608b9a4fd2d2773e2fd247661657f"
+    },
+    {
+      "path": "Disk.info",
+      "bytes": 1743,
+      "sha256": "d49ce9bb18b004cebe87f2b169b8021693a34df0059350185acbdb4f9b5bffb2"
+    },
+    {
+      "path": "Easy_Database.AMOS",
+      "bytes": 42636,
+      "sha256": "d8d6781fec1187966f91044a26d1fbaaa3036997f472833203225a35c5e1f2e9"
+    },
+    {
+      "path": "Europress_Dbase.DBS",
+      "bytes": 492,
+      "sha256": "43faf21626cc2f9e183f3e03646f21bc886f897f1cf39b95b19e3b677accc41d"
+    },
+    {
+      "path": "Font_Creator.AMOS",
+      "bytes": 13820,
+      "sha256": "92a045314668c7e403b94e2eec84213e182c0c64acf5a2f133b0b65163894129"
+    },
+    {
+      "path": "Hi_Scores.AMOS",
+      "bytes": 23194,
+      "sha256": "67850d139d71976fbb8b92e62d3bb56540effd5a6a4cf767aad3be86462bcffc"
+    },
+    {
+      "path": "Hiscores.SCR",
+      "bytes": 188,
+      "sha256": "5de7592b86e784779e289721d2c0cb74793e68606297aa331249ad0e4147c169"
+    },
+    {
+      "path": "Pictures/Block_GamePic.iff",
+      "bytes": 17722,
+      "sha256": "a5f73f60163e08e22ab1a335303c01bd1a25942cdbbb2460acd53a5b531c03b5"
+    },
+    {
+      "path": "Pictures/Block_GamePic_NTSC.iff",
+      "bytes": 14874,
+      "sha256": "2a5fed04f5340051fecdd29ec60d0033e5ae4c7f6146ac999432fae06e86920d"
+    },
+    {
+      "path": "Pictures/Score.IFF",
+      "bytes": 18502,
+      "sha256": "01cf4c58d0d5a573e54803788810de1d418f4b1aaa7d1192d34c4539484dbf32"
+    },
+    {
+      "path": "Pictures/TRace_Ground.Abk",
+      "bytes": 27266,
+      "sha256": "0d1d24e15777371a41f173cff18e5bed97a27128c5bdbf91592e553a1fd3a75a"
+    },
+    {
+      "path": "Pictures/TRace_Screen_1.Abk",
+      "bytes": 3088,
+      "sha256": "8d95c9289ed794ba46e8873ec43a8c96a4fe2874cae1f8b265a4b4e60aaa9b8b"
+    },
+    {
+      "path": "Pictures/TRace_Screen_2.Abk",
+      "bytes": 3504,
+      "sha256": "be25a91575b6a301ce0323a13b2436bfc5a56c3bf2316549fc39b3b2ef0ceace"
+    },
+    {
+      "path": "Pictures/Tricycle_Choice.Abk",
+      "bytes": 10992,
+      "sha256": "948e36e9010588222a7506dfd46a8b023d4b0582592e1bd4c3ae35887af3953e"
+    },
+    {
+      "path": "Pictures/Tricycle_Credits.Abk",
+      "bytes": 13520,
+      "sha256": "0b91bf676b98dcb435605743ba1d000dcd75b1cb943ddf3adc6848bad682229c"
+    },
+    {
+      "path": "Pictures/Tricycle_Main.Abk",
+      "bytes": 14070,
+      "sha256": "264392a832d26b7aecfefa1c16dd26341b84aaf6d07bcd7c2316267891ffb569"
+    },
+    {
+      "path": "Pictures/Tricycle_Playfield.Abk",
+      "bytes": 13070,
+      "sha256": "fc37aa97feaec3cc247b910e27d7280755923ddbded9203f083a0356f03709e5"
+    },
+    {
+      "path": "Pictures/Tricycle_Screen.Abk",
+      "bytes": 8834,
+      "sha256": "c3876341f67cce5a5d8d416f5bbd0637bb78ad02f7a84fa3eed6ecfbd7821154"
+    },
+    {
+      "path": "Pictures/Tricycle_Tricycle.Abk",
+      "bytes": 6810,
+      "sha256": "193b2eb95fc99be6df3f6209a0cf0d9cf7baa47d030cd024e3a1d1954c9fdd3a"
+    },
+    {
+      "path": "Scrolling_Text.AMOS",
+      "bytes": 143384,
+      "sha256": "6d5b7979ae1f7837e3b11f66ba8a27258617d207c40601ed421a7ec3acdba2fc"
+    },
+    {
+      "path": "Songs/mod.jazzy",
+      "bytes": 43380,
+      "sha256": "49906a4a783b6bd0a783f070b887752131ef2250b570eafdfebf7e50ddf83558"
+    },
+    {
+      "path": "Songs/mod.laugh",
+      "bytes": 111764,
+      "sha256": "c4a98fc920d3adeb407868652ea62c59bfbe04eb1748a8749e6182a8a0e0c63e"
+    },
+    {
+      "path": "Sounds/Block_Samples.Abk",
+      "bytes": 21450,
+      "sha256": "507c3413bd370f5d6f114424c30dc3bcec6c45b4d4825dbd47d40baa3caf3c83"
+    },
+    {
+      "path": "Sounds/Tricycle_Music.Abk",
+      "bytes": 35672,
+      "sha256": "4f3dee6431aa83b947fa70e949680d6d47bae8367f47afc5e97fd4016c70c51b"
+    },
+    {
+      "path": "Sounds/Tricycle_Samples.Abk",
+      "bytes": 36332,
+      "sha256": "c380a4b156be8552a27368a0d9da219d0f1d81516c7dacf59655e7ecd7c5980a"
+    },
+    {
+      "path": "Tricycle_Ball.AMOS",
+      "bytes": 33230,
+      "sha256": "78ab6b9213342fa9642146fb4ce8bc2d30c7ef66232837101b0e59c0c73e2e57"
+    },
+    {
+      "path": "Tricycle_Race.AMOS",
+      "bytes": 14538,
+      "sha256": "18ab27b6b582d437e29ed356256d138120900d3c2f86307cbd6efeef329d848f"
+    }
+  ],
+  "qualification": "Native creator reports ready; contents resolve through the filesystem manifest. Supplied programs and lessons have not been executed.",
+  "directories": [
+    "Bobs",
+    "Pictures",
+    "Songs",
+    "Sounds"
+  ]
+}

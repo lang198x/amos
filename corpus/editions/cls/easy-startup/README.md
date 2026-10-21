@@ -54,9 +54,10 @@ base directory. FS-UAE documents its [base-directory options](https://fs-uae.net
 and [input-capture shortcuts](https://fs-uae.net/docs/keyboard-shortcuts/).
 
 The [Programs-disk trial](../easy/README.md) follows this input route through the
-native formatter and three transfers. Examples and Tutorial installation are
-separate work. Do not use a modified preinstalled disk as evidence for an
-unidentified stock release.
+native formatter and three transfers. The [working-disk record](../easy/working-disks/README.md)
+also documents completed Examples and Tutorial installation; those supplied
+programs and lessons remain unexecuted. Do not use a modified preinstalled disk
+as evidence for an unidentified stock release.
 
 Captures document the original environment and are evidence, not newly licensed
 Lang198x software. No runtime media, snapshots, registration data or private

@@ -1,0 +1,66 @@
+{
+  "status": "native_creator_reports_ready_for_all_three_work_disks",
+  "observation_date": "2026-10-21",
+  "environment_reference": "../../../../opening/profiles/easy-1.01.json",
+  "manual": {
+    "sources": "../../../../../specifications/editions/sources.json",
+    "id": "easy",
+    "printed_pages": "Introduction 4\u201311",
+    "extract_lines": [
+      425,
+      695
+    ]
+  },
+  "master_1": "Canonical source hash and already-personalised provenance in environment_reference; Programs uses this source only.",
+  "master_2": {
+    "label": "Easy AMOS v1.01 (1992), Master Disc 2 [m bamcopy]",
+    "bytes": 901120,
+    "sha256": "81e0ff921ff203009195ce6e614b01232d3c55e5fa9298aa2ff2eb069a1fdc43",
+    "catalogue_sha1": "1efd3baf802dc813908dab79726eaab54be792cc",
+    "catalogue": "TOSEC Amiga Applications ADF 2023-06-15",
+    "archive_crc_checked": true,
+    "verification": {
+      "sound": false,
+      "problems": [
+        "boot block: checksum does not match its bootstrap"
+      ]
+    },
+    "limit": "Explicitly catalogued as modified; not pristine stock evidence. Only Examples and Tutorial use this image."
+  },
+  "swap_method": {
+    "steps": [
+      "Export the completed writable work disk before removal.",
+      "Eject the current disk.",
+      "Run 100 frames with the drive empty.",
+      "Load the requested image; masters read-only, working disks writable.",
+      "Run bounded intervals and inspect the native prompt before the next action."
+    ],
+    "direct_swap_observation": "At the first Master Disc 1 prompt, replacement without an empty interval and 1,000 frames did not advance; explicit eject/100 empty frames/insertion did. No mechanism is established."
+  },
+  "records": {
+    "programs": "programs.json",
+    "examples": "examples.json",
+    "tutorial": "tutorial.json"
+  },
+  "captures": {
+    "examples-ready.png": "5cedbd5d42fb47b9dd70763d02802ef9d29afad8b244488cb65def58b6252d05",
+    "tutorial-ready.png": "e7f9dc78be70010f305fa0bc474e454d9b8df8dda438709b93ca05394b0937c6",
+    "optional-programs-disk.png": "c9c6c67b649f33194dd6f6bfe860c4b3b9b02b9ed69022f4177e1a7cdfc33f89",
+    "installer-finished.png": "70916923a3544559262ed97d6ebfcbe80a9f3148baa1e691b214ad5c3bd4d60a"
+  },
+  "programs_captures_reference": "../cases.json",
+  "limits": [
+    "Native program-file Save/Load remains unverified.",
+    "Examples and Tutorial installation is not execution coverage of supplied content.",
+    "Filesystem-verifier findings are retained without disk repair.",
+    "Personalisation, registration data, media, snapshots and private locators are excluded."
+  ],
+  "completion": {
+    "optional_fourth_disk": "Pass selected; no fourth disk formatted.",
+    "pass_click": {
+      "hold_frames": 3,
+      "run_frames": 200
+    },
+    "native_outcome": "Running Easy AMOS screen instructs insertion of Programs and Control-Amiga-Amiga reboot; offers Create again."
+  }
+}

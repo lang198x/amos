@@ -1,0 +1,21 @@
+{
+  "native_transfers": 3,
+  "source_master": 1,
+  "entry_count": 47,
+  "file_count": 36,
+  "identity_and_components": "../../../../opening/profiles/easy-1.01.json",
+  "qualification": "../README.md",
+  "directories": [
+    "c",
+    "devs",
+    "devs/Printers",
+    "fonts",
+    "fonts/diamond",
+    "fonts/easyamos",
+    "fonts/helvetica",
+    "fonts/sapphire",
+    "l",
+    "libs",
+    "s"
+  ]
+}
