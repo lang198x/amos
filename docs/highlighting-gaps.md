@@ -1,7 +1,7 @@
 # Remaining highlighting work
 
 The approved sequence is complete: **§7.7 Icons and Blocks**, **§11.1 Fonts**,
-then **§12.2 Error Handling**. Current BASIC coverage is 677 chapter entries across
+then **§12.2 Error Handling**. Current BASIC coverage is 686 chapter entries across
 40 partially or fully inventoried chapter/appendix sections, including the subsequent printer/general-port sweep. The audit baseline and representative probes below retain their
 pre-implementation results; the completion record follows them. Publication
 remains separate.
@@ -102,7 +102,7 @@ Uninventoried sections need explicit review; they are not silently excluded from
 
 | Route | Remaining review |
 | --- | --- |
-| §§9.1–9.4 Interface | Six BASIC entry points from §§9.1/9.3 now have lexical coverage. Zone values, Array, update/freeze/clear and §9.4 resource controls remain. Embedded Interface stays opaque; inventory it separately before deciding a mode or string injection. |
+| §§9.1–9.4 Interface | Fifteen BASIC forms from §§9.1/9.3 now have lexical coverage: entry points, zone/value queries, Array and update/freeze/clear. §9.4 resource controls remain. Embedded Interface stays opaque; inventory it separately before deciding a mode or string injection. |
 | §§10.3–10.5 device I/O | Printer/general-port, serial and parallel lexical sweeps are complete. The [boundary review](io-extension-boundary.md) records source-resolved spelling/component provenance and remaining semantic/release limits. |
 | §10.6 AREXX | Seven AMOS-facing forms now have lexical coverage. External script payloads remain strings; startup Exec is now covered by §11.4; Ask/Call Editor are covered from their §13.1 definitions. No AREXX language implementation is implied. |
 | §11.3 floating point | [Reconciled](manual-reconciliation.md): existing §5.3 covers Sin/Cos/Sqr and Set Double Precision. No new named definition or extra inventory count; library/number-format facts remain separate. |

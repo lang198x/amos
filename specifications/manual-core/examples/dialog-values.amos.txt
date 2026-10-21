@@ -1,0 +1,14 @@
+Rem Lexical zone notebook; no Interface or memory operation is executed
+MC_VALUE=Rdialog(1,2) : MC_TEXT$=Rdialog$(1,3)
+Vdialog(1,0)=MC_VALUE
+MC_VALUE=Vdialog(1,0)
+Vdialog$(1,1)="Ready"
+MC_TEXT$=Vdialog$(1,1)
+MC_ADDRESS=Array(MC_ITEMS$(0))
+Vdialog(1,0)=Array(MC_ITEMS$(0))
+Dialog Update 1,2,MC_VALUE
+Dialog Freeze : Dialog Unfreeze 1
+Dialog Clr 1
+MC_BUTTON=Dialog(1) : MC_POSITION=Edialog
+MC_UI$="AR 0,0 VA;ED 1,0,0,10,20,'Ready',0,2;EXit;"
+' Dialog Freeze Rdialog$ ArrayRead

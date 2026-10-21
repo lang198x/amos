@@ -54,7 +54,7 @@ test('manual inventory has cited, nonempty examples for every declared chapter',
       checked++;
     }
   }
-  assert.equal(checked, 677);
+  assert.equal(checked, 686);
   const requesters = (await json('11-05.json')).entries.filter((entry) => entry.spelling.startsWith('Request '));
   assert.deepEqual(requesters.map((entry) => entry.component), Array(3).fill('Requester Extension (as labelled by the manual)'));
   const music = await json('08-01.json');

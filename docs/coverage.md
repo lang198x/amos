@@ -11,7 +11,7 @@ The table describes current source.
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, six BASIC entry points from 9.1/9.3, 10.1–10.6, 11.1–11.2, 11.4, 12.1–12.2 and five §13.1 accessory/configuration forms and Appendix B’s Kill Editor, plus library/equate/structure/device/requester forms from 11.5 and Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 15 BASIC dialogue/value/control forms from 9.1/9.3, 10.1–10.6, 11.1–11.2, 11.4, 12.1–12.2 and five §13.1 accessory/configuration forms and Appendix B’s Kill Editor, plus library/equate/structure/device/requester forms from 11.5 and Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -573,6 +573,22 @@ Interface programs remain opaque strings, including significant capitals,
 separators, quoted payloads and embedded commands. The mixed notebook checks
 Trap, nested queries and existing Request/error forms without opening a native
 UI. Channel validity, parameter meanings, event/status/error results and timing
-remain unqualified. Zone/value queries, Array, update/freeze/clear and resource
-controls remain later work, as does any embedded Interface lexical mode.
+remain unqualified. Zone/value queries, Array and update/freeze/clear are covered
+below; resource controls and any embedded Interface lexical mode remain later work.
 These additions are unreleased.
+
+
+## Interface-facing zone values and channel controls
+
+Nine more §9.3 forms bring BASIC to 686 entries across 40 chapter/appendix
+sections, including fourteen BASIC headings in §9.3. Rdialog/Rdialog$,
+Vdialog/Vdialog$ and Array are functions; Dialog Update/Freeze/Unfreeze/Clr
+are commands. Vdialog/Vdialog$ keep function scopes in reads and assignments.
+Their short heading descriptions conflict with the numeric/string signatures
+and prose; highlighting does not validate those data types.
+
+The mixed notebook checks nested Array calls, optional channel/update contexts
+and existing dialogue queries. ArrayRead and other embedded Interface vocabulary
+remain separate; all BASIC string payloads stay opaque. No native channel, zone,
+event, array-memory or update/freeze behavior is qualified. §9.4 resource controls
+remain later work. Additions are unreleased.

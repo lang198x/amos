@@ -3,9 +3,9 @@ import assert from 'node:assert/strict';
 import { highlighter } from './helpers/highlighter.mjs';
 import { chapters, entries, checkEntry } from './helpers/manual-core.mjs';
 
-test('manual checklist retains the core sweep and adds cited Interface-facing BASIC slices', () => {
+test('manual checklist retains the core sweep and adds cited Interface zone/value controls', () => {
   assert.equal(chapters.length, 40);
-  assert.equal(entries.length, 677);
+  assert.equal(entries.length, 686);
   assert.equal(chapters.slice(0, 5).flatMap((chapter) => chapter.entries).length, 109);
   assert.equal(chapters.slice(0, 7).flatMap((chapter) => chapter.entries).length, 171);
   assert.equal(chapters.slice(0, 12).flatMap((chapter) => chapter.entries).length, 262);
@@ -31,7 +31,7 @@ test('manual checklist retains the core sweep and adds cited Interface-facing BA
   assert.equal(chapters.slice(0, 37).flatMap((chapter) => chapter.entries).length, 670);
   assert.equal(chapters.slice(0, 38).flatMap((chapter) => chapter.entries).length, 671);
   assert.equal(chapters.at(-2).entries.length, 1);
-  assert.equal(chapters.at(-1).entries.length, 5);
+  assert.equal(chapters.at(-1).entries.length, 14);
   for (const chapter of chapters) assert.ok(chapter.entries.length > 0);
   for (const spelling of ['Param', 'Param#', 'Param$', 'Pi#', 'Break Off', 'Break On']) {
     assert.ok(entries.some((entry) => entry.spelling === spelling));

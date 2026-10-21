@@ -7,7 +7,7 @@ import amos3d from '../amos-3d.mjs';
 import { highlighter, assertScope } from './helpers/highlighter.mjs';
 
 const chapters = await Promise.all(['09-01', '09-03'].map(async (id) => JSON.parse(await readFile(new URL(`../specifications/manual-core/${id}.json`, import.meta.url), 'utf8'))));
-const entries = chapters.flatMap((chapter) => chapter.entries);
+const entries = chapters.flatMap((chapter) => chapter.entries).filter((entry) => ['Dialog Box', 'Dialog Open', 'Dialog Run', 'Dialog Close', 'Edialog', 'Dialog'].includes(entry.spelling));
 assert.equal(entries.length, 6);
 await highlighter.loadLanguage(amos3d);
 const render = (source, lang, theme) => highlighter.codeToTokensBase(source, { lang, theme, includeExplanation: true });
@@ -37,7 +37,7 @@ for (const lang of ['amos', 'amos-3d']) {
       check('MC_BUTTON=Max(0,Dialog(1))', 'Dialog', 'support.function.amos', lang, theme);
       for (const word of ['Trap', 'Dialog Open']) check('Trap Dialog Open 1,MC_UI$,17,1024', word, 'keyword.control.amos', lang, theme);
       check('MC_POSITION=Edialog', 'Edialog', 'support.function.amos', lang, theme);
-      for (const word of ['VA', 'BA', 'RunUntil', 'SetVar', 'Rdialog', 'Vdialog']) check(`${word}=1`, word, 'variable.other.amos', lang, theme);
+      for (const word of ['VA', 'BA', 'RunUntil', 'SetVar', 'RdialogExtra', 'VdialogExtra']) check(`${word}=1`, word, 'variable.other.amos', lang, theme);
       check('Request On', 'Request On', 'keyword.control.amos', lang, theme);
       check('MC_CODE=Errtrap', 'Errtrap', 'support.function.amos', lang, theme);
     }

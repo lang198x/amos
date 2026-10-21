@@ -13,7 +13,7 @@
   "notes": [
     "Dialog Box, Dialog Run, Edialog and Dialog retain function roles; Dialog Open/Close are instructions. Later prose calling a function a command does not override its definition.",
     "Interface programs and their significant capitals, separators, registers, labels and embedded commands stay opaque inside BASIC strings.",
-    "Zone queries/values (Rdialog/Rdialog$/Vdialog/Vdialog$), Array and Dialog Update/Freeze/Unfreeze/Clr remain later §9.3 work; resource controls remain §9.4 work.",
+    "The separate §9.3 inventory now covers zone/value queries, Array and channel controls. Resource controls remain §9.4 work; embedded Interface remains separate.",
     "Channel validity, optional parameter semantics, status/error results, event handling and original execution are unqualified."
   ]
 }

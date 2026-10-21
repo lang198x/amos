@@ -828,3 +828,27 @@ All 17 npm source files and nine VSIX source assets match, with no public galler
 flag or executable host. Extracted exports render all three modes in both themes,
 preserve exact source and retain Dialog Run's function scope. Versions, parser,
 published preview 0.2.0 and private Marketplace availability remain unchanged.
+
+
+## Interface-facing zone/value continuation
+
+Nine new forms lacked complete scopes before implementation. All fourteen §9.3
+BASIC heading/page bindings match the SHA-256-pinned extract. BASIC now has 686
+entries across 40 partial/full chapter/appendix sections. Vdialog/Vdialog$ retain
+function scopes in reads/writes; the short-description/signature discrepancy is
+recorded without adopting type rules. BASIC Array stays distinct from embedded
+ArrayRead. The original catalogue still has eight unresolved definition-led gaps.
+
+All 25 package checks and 207 integrations per existing consumer pass in both
+profiles/themes. Tests cover typed variants and labels, read/write/nested Array
+contexts, update/freeze variants, partial phrases, existing dialogue entry points,
+opaque Interface strings and line recovery. Removing the zone-control rule fails
+both profiles; restoration and editor sync pass. The fresh notebook preserves
+source and emits styled HTML/CSS. No native zone/channel validity, data types,
+array-address stability, event results or update/freeze behavior is qualified.
+
+All 17 npm source files and nine VSIX source assets match, with no public gallery
+flag or executable host. Extracted exports render all three modes in both themes,
+preserve exact source and retain Vdialog$'s function scope in assignment context.
+Versions, parser, published preview 0.2.0 and private Marketplace availability
+remain unchanged.

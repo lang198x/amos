@@ -1,6 +1,6 @@
 {
   "chapter": "09.03",
-  "scope": "Partial chapter: BASIC-facing dialogue entry points only. Embedded Interface instructions/functions are not BASIC vocabulary.",
+  "scope": "Fourteen BASIC-facing named headings: dialogue entry points, zone/value access, array address and channel controls. Embedded Interface instructions/functions are separate and remain uninventoried here.",
   "entries": [
     {
       "spelling": "Dialog Open",
@@ -36,12 +36,77 @@
       "page": "09.03.03",
       "extract_line": 16688,
       "example": "MC_BUTTON=Dialog(1)"
+    },
+    {
+      "spelling": "Rdialog",
+      "kind": "function",
+      "page": "09.03.04",
+      "extract_line": 16725,
+      "example": "MC_VALUE=Rdialog(1,2)"
+    },
+    {
+      "spelling": "Rdialog$",
+      "kind": "function",
+      "page": "09.03.04",
+      "extract_line": 16744,
+      "example": "MC_TEXT$=Rdialog$(1,2)"
+    },
+    {
+      "spelling": "Vdialog",
+      "kind": "function",
+      "page": "09.03.05",
+      "extract_line": 16763,
+      "example": "MC_VALUE=Vdialog(1,0)"
+    },
+    {
+      "spelling": "Vdialog$",
+      "kind": "function",
+      "page": "09.03.05",
+      "extract_line": 16772,
+      "example": "MC_TEXT$=Vdialog$(1,1)"
+    },
+    {
+      "spelling": "Array",
+      "kind": "function",
+      "page": "09.03.09",
+      "extract_line": 16999,
+      "example": "MC_ADDRESS=Array(MC_ITEMS$(0))"
+    },
+    {
+      "spelling": "Dialog Update",
+      "kind": "command",
+      "page": "09.03.14",
+      "extract_line": 17253,
+      "example": "Dialog Update 1,2,MC_VALUE"
+    },
+    {
+      "spelling": "Dialog Freeze",
+      "kind": "command",
+      "page": "09.03.15",
+      "extract_line": 17295,
+      "example": "Dialog Freeze 1"
+    },
+    {
+      "spelling": "Dialog Unfreeze",
+      "kind": "command",
+      "page": "09.03.15",
+      "extract_line": 17303,
+      "example": "Dialog Unfreeze 1"
+    },
+    {
+      "spelling": "Dialog Clr",
+      "kind": "command",
+      "page": "09.03.15",
+      "extract_line": 17310,
+      "example": "Dialog Clr 1"
     }
   ],
   "notes": [
     "Dialog Box, Dialog Run, Edialog and Dialog retain function roles; Dialog Open/Close are instructions. Later prose calling a function a command does not override its definition.",
     "Interface programs and their significant capitals, separators, registers, labels and embedded commands stay opaque inside BASIC strings.",
-    "Zone queries/values (Rdialog/Rdialog$/Vdialog/Vdialog$), Array and Dialog Update/Freeze/Unfreeze/Clr remain later §9.3 work; resource controls remain §9.4 work.",
-    "Channel validity, optional parameter semantics, status/error results, event handling and original execution are unqualified."
+    "Rdialog/Rdialog$/Vdialog/Vdialog$, Array and Dialog Update/Freeze/Unfreeze/Clr now have BASIC lexical coverage. Resource controls remain §9.4 work.",
+    "Channel validity, optional parameter semantics, status/error results, event handling and original execution are unqualified.",
+    "Vdialog and Vdialog$ retain their function heading roles in both read and assignment contexts. Their short descriptions at 16764/16773 say string/value respectively, whereas signatures and prose at 16765–81 distinguish numeric Vdialog and string Vdialog$. Preserve the discrepancy without implementing type rules.",
+    "Array is the BASIC function at 16999; ArrayRead at 17015 is an embedded Interface function, not a BASIC alias."
   ]
 }

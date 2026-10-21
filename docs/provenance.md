@@ -321,3 +321,12 @@ headings on pp.09.03.01–03. Roles follow definition headings: Open/Close are
 instructions; the other four are functions. Both chapter inventories are partial
 and keep embedded Interface vocabulary distinct. No channel/event/native UI
 behavior is qualified by the authored lexical notebook.
+
+
+Nine further §9.3 BASIC headings bind zone/value queries on pp.09.03.04–05,
+Array on 09.03.09 and update/freeze/clear controls on pp.09.03.14–15. Vdialog/
+Vdialog$ short descriptions at 16764/16773 say string/value; signatures and
+prose at 16765–81 describe numeric/string values respectively. Both keep their
+function heading role in reads/writes without implementing types. ArrayRead at
+17015 is explicitly an Interface function, separate from BASIC Array at 16999.
+The fixture supplies no native Interface, memory or event evidence.
