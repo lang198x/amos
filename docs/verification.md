@@ -897,3 +897,25 @@ All 17 npm source files and nine VSIX source assets match, with no public galler
 flag or executable host. Extracted exports render all three modes in both themes,
 preserve exact source and retain Poke$'s command scope. Versions, parser, published
 preview 0.2.0 and private Marketplace availability remain unchanged.
+
+
+## Appendix A block/address continuation
+
+Four new forms lacked complete scopes before implementation. All twelve retained/
+new Appendix A heading/page bindings match the pinned extract. Copy/Fill bind to
+14.A.05; Hunt/Varptr to 14.A.06. BASIC now has 702 entries across 42 partial/full
+chapter/appendix sections. INSTR$ in Hunt prose creates no alias for Instr.
+Four Copper catalogue gaps remain.
+
+All 25 package checks and 224 integrations per existing consumer pass in both
+profiles/themes. Checks cover To range connectives, nested queries, typed variable
+arguments, label/identifier boundaries, Trap and prior direct-memory/error forms,
+strings/comments and line recovery. Removing the block command rule fails both
+profiles; restoration and editor sync pass. The fresh notebook preserves source
+and emits styled HTML/CSS. No endpoint, overlap/alignment, pattern, search result,
+variable layout/address lifetime or native memory effect is qualified.
+
+All 17 npm source files and nine VSIX source assets match, with no public gallery
+flag or executable host. Extracted exports render all three modes in both themes,
+preserve exact source and retain Varptr's function scope. Versions, parser,
+published preview 0.2.0 and private Marketplace availability remain unchanged.

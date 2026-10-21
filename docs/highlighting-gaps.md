@@ -1,7 +1,7 @@
 # Remaining highlighting work
 
 The approved sequence is complete: **§7.7 Icons and Blocks**, **§11.1 Fonts**,
-then **§12.2 Error Handling**. Current BASIC coverage is 698 chapter entries across
+then **§12.2 Error Handling**. Current BASIC coverage is 702 chapter entries across
 42 partially or fully inventoried chapter/appendix sections, including the subsequent printer/general-port sweep. The audit baseline and representative probes below retain their
 pre-implementation results; the completion record follows them. Publication
 remains separate.
@@ -110,7 +110,7 @@ Uninventoried sections need explicit review; they are not silently excluded from
 | §11.5 libraries/devices | Thirteen library/equate/structure forms and nine device forms now have lexical coverage. The three requester controls on p.11.05.06 now have lexical coverage with explicit manual-labelled Requester Extension attribution. Dev D0's example mention awaits its own definition-led review. |
 | §§12.1 and 12.3 monitor/errors | Monitor from §12.1 now has lexical coverage. Buttons/shortcuts are UI controls. The complete [catalogue vocabulary review](error-catalogue-review.md) records an original 17-gap baseline; five §13.1 forms, Kill Editor and three Interface entry points are now covered; four Copper gaps remain after direct-memory coverage. Spelling conflicts and embedded/UI vocabulary stay distinct. |
 | §§1–4 and 13 installation/editor/accessories | Five §13.1 forms now have lexical coverage: Set Accessory, Call/Ask Editor and Close Workbench/Editor. Review other examples and editor/direct-mode facilities at their own definitions; menus/shortcuts are not automatically BASIC instructions. |
-| Appendix A machine code | Eight direct byte/word/longword/string memory forms are covered. Conversion, bulk Copy/Fill/Hunt, variable addresses, bit operations, machine-code calls and registers remain; the appendix inventory is partial. |
+| Appendix A machine code | Twelve direct read/write/block/address forms are covered, including Copy/Fill/Hunt and Varptr. Conversion, bit operations, machine-code calls and registers remain; the appendix inventory is partial. |
 | Appendix C PAL/NTSC | Reconcile display queries and timing vocabulary against screen chapters. |
 | Appendix F Copper | BASIC Copper controls and queries; hardware behaviour remains a separate claim. |
 | Appendices B, D and E | Kill Editor from Appendix B now has lexical coverage. Review other runtime distribution, extension boundaries and bank-layout reference material for additional forms; format layouts do not become parser rules. |

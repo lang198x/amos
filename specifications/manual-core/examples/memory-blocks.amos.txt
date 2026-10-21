@@ -1,0 +1,11 @@
+Rem Lexical block notebook; no memory operation is executed
+MC_ADDRESS=Varptr(MC_VALUE)
+Copy MC_START,MC_FINISH To MC_DESTINATION
+Fill MC_START To MC_FINISH,MC_PATTERN
+MC_MATCH=Hunt(MC_START To MC_FINISH,MC_FIND$)
+MC_BYTE=Peek(Varptr(MC_VALUE))
+MC_MATCH=Max(0,Hunt(MC_START To MC_FINISH,"Ready"))
+Trap Copy MC_START,MC_FINISH To MC_DESTINATION
+MC_CODE=Errtrap
+MC_NOTE$="Copy To Fill; Hunt Instr$ Varptr"
+' Copy Fill Hunt Varptr

@@ -348,3 +348,10 @@ write/instruction roles. PEEKS at line 25444 does not override the Peek$ heading
 at 25433. The arithmetic example at 25391–94 is not copied or qualified. No
 native address/alignment, numeric representation, string behavior or memory
 operation is established by the authored lexical notebook.
+
+
+Copy/Fill bind to exact Appendix A headings on 14.A.05 (lines 25450/25459);
+Hunt/Varptr bind to 14.A.06 (25485/25498). Their range/variable argument contexts
+come from signatures, without adopting native endpoint or layout semantics.
+INSTR$ at 25489 differs from the existing §5.2 Instr heading; no alias or search
+equivalence is inferred. The lexical notebook executes no memory operation.

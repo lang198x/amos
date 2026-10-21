@@ -1,6 +1,6 @@
 {
   "chapter": "14.A",
-  "scope": "Partial appendix: eight direct byte/word/longword/string memory read/write headings. Bulk operations, variable addresses, bits and machine-code calls remain later work.",
+  "scope": "Partial appendix: twelve direct read/write, bulk copy/fill/search and variable-address headings. Conversion, bits, machine-code calls and registers remain later work.",
   "entries": [
     {
       "spelling": "Peek",
@@ -57,11 +57,41 @@
       "page": "14.A.05",
       "extract_line": 25433,
       "example": "MC_TEXT$=Peek$(MC_ADDRESS,8)"
+    },
+    {
+      "spelling": "Copy",
+      "kind": "command",
+      "page": "14.A.05",
+      "extract_line": 25450,
+      "example": "Copy MC_START,MC_FINISH To MC_DESTINATION"
+    },
+    {
+      "spelling": "Fill",
+      "kind": "command",
+      "page": "14.A.05",
+      "extract_line": 25459,
+      "example": "Fill MC_START To MC_FINISH,MC_PATTERN"
+    },
+    {
+      "spelling": "Hunt",
+      "kind": "function",
+      "page": "14.A.06",
+      "extract_line": 25485,
+      "example": "MC_MATCH=Hunt(MC_START To MC_FINISH,MC_FIND$)"
+    },
+    {
+      "spelling": "Varptr",
+      "kind": "function",
+      "page": "14.A.06",
+      "extract_line": 25498,
+      "example": "MC_ADDRESS=Varptr(MC_VALUE)"
     }
   ],
   "notes": [
     "PEEKS in prose at line 25444 does not override the Peek$ heading/signatures at 25433–36. No Peeks alias is introduced.",
     "Address validity/alignment, numeric widths/signedness, string bounds/stop behavior and original runtime acceptance require separate evidence. No memory read/write executes in the lexical fixtures.",
-    "The manual arithmetic example at 25391–94 is not reproduced or adopted as a conversion algorithm. Copy/Fill/Hunt, Varptr and the rest of Appendix A are not covered by this slice."
+    "The arithmetic example at 25391–94 is not adopted as a conversion algorithm. Copy/Fill/Hunt and Varptr have lexical coverage; remaining Appendix A forms require their own inventories.",
+    "Hunt prose at 25489 refers to INSTR$; the existing §5.2 heading is Instr. No Instr$ alias or equivalence of search semantics is inferred.",
+    "Range endpoints, overlap/alignment, pattern representation, search results, variable layout/address lifetime and native memory effects remain unqualified."
   ]
 }
