@@ -919,3 +919,29 @@ All 17 npm source files and nine VSIX source assets match, with no public galler
 flag or executable host. Extracted exports render all three modes in both themes,
 preserve exact source and retain Varptr's function scope. Versions, parser,
 published preview 0.2.0 and private Marketplace availability remain unchanged.
+
+
+## Appendix A conversion/bit continuation
+
+All twelve new forms lacked their intended scopes before implementation. The
+hash-pinned extract verifies all 24 retained/new Appendix A heading/page bindings.
+Bin$/Hex$ bind to 14.A.02; sized Rol forms to 14.A.09; Ror/Btst/Bset/Bchg to
+14.A.10; Bclr to 14.A.11. BASIC now has 714 entries across 42 partial/full
+chapter/appendix sections. Sized forms share the ROL/ROR parent headings.
+
+All 25 package checks and 229 integrations per existing consumer pass. Tests
+cover both BASIC profiles/themes, complete sized spellings, cases, identifier
+lookalikes, malformed dotted boundaries, bare-name non-aliases, optional conversion
+arguments, nested calls, unchanged binary/hex notation, opaque strings/comments
+and line recovery. Removing the new command rule fails both profiles; restoration
+and editor sync pass. The fresh notebook preserves exact source and emits styled
+HTML/CSS. The initial fixture failures (a lowercase keyword search matching inside
+a variable name and incorrect generic numeric-scope expectations) were corrected.
+
+All 17 npm files and nine VSIX source assets match source bytes; the extension
+remains declarative and has no public gallery flag. Extracted package exports
+render all three modes in both themes, preserve source and retain the complete
+Rol.B command scope. No native numeric/memory operation, width/range rule or
+runtime compatibility is qualified. The Bin$ digit and Btst address passages
+remain documented source questions. Parser, versions, published 0.2.0 preview
+and private Marketplace availability are unchanged; four Copper gaps remain.

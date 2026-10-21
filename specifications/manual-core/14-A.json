@@ -1,6 +1,6 @@
 {
   "chapter": "14.A",
-  "scope": "Partial appendix: twelve direct read/write, bulk copy/fill/search and variable-address headings. Conversion, bits, machine-code calls and registers remain later work.",
+  "scope": "Partial appendix: twenty-four direct memory, block/address, conversion and bit-operation forms. Machine-code calls and registers remain later work.",
   "entries": [
     {
       "spelling": "Peek",
@@ -85,6 +85,90 @@
       "page": "14.A.06",
       "extract_line": 25498,
       "example": "MC_ADDRESS=Varptr(MC_VALUE)"
+    },
+    {
+      "spelling": "Bin$",
+      "kind": "function",
+      "page": "14.A.02",
+      "extract_line": 25258,
+      "example": "BIT_TEXT$=Bin$(BIT_VALUE,8)"
+    },
+    {
+      "spelling": "Hex$",
+      "kind": "function",
+      "page": "14.A.02",
+      "extract_line": 25296,
+      "example": "BIT_CODE$=Hex$(BIT_VALUE,2)"
+    },
+    {
+      "spelling": "Rol.B",
+      "kind": "command",
+      "page": "14.A.09",
+      "extract_line": 25635,
+      "example": "Rol.B 1,BIT_VALUE"
+    },
+    {
+      "spelling": "Rol.W",
+      "kind": "command",
+      "page": "14.A.09",
+      "extract_line": 25635,
+      "example": "Rol.W 1,BIT_VALUE"
+    },
+    {
+      "spelling": "Rol.L",
+      "kind": "command",
+      "page": "14.A.09",
+      "extract_line": 25635,
+      "example": "Rol.L 1,BIT_VALUE"
+    },
+    {
+      "spelling": "Ror.B",
+      "kind": "command",
+      "page": "14.A.10",
+      "extract_line": 25688,
+      "example": "Ror.B 1,BIT_VALUE"
+    },
+    {
+      "spelling": "Ror.W",
+      "kind": "command",
+      "page": "14.A.10",
+      "extract_line": 25688,
+      "example": "Ror.W 1,BIT_VALUE"
+    },
+    {
+      "spelling": "Ror.L",
+      "kind": "command",
+      "page": "14.A.10",
+      "extract_line": 25688,
+      "example": "Ror.L 1,BIT_VALUE"
+    },
+    {
+      "spelling": "Btst",
+      "kind": "function",
+      "page": "14.A.10",
+      "extract_line": 25703,
+      "example": "BIT_SET=Btst(3,BIT_VALUE)"
+    },
+    {
+      "spelling": "Bset",
+      "kind": "command",
+      "page": "14.A.10",
+      "extract_line": 25719,
+      "example": "Bset 3,BIT_VALUE"
+    },
+    {
+      "spelling": "Bchg",
+      "kind": "command",
+      "page": "14.A.10",
+      "extract_line": 25727,
+      "example": "Bchg 2,BIT_VALUE"
+    },
+    {
+      "spelling": "Bclr",
+      "kind": "command",
+      "page": "14.A.11",
+      "extract_line": 25745,
+      "example": "Bclr 1,BIT_VALUE"
     }
   ],
   "notes": [
@@ -92,6 +176,9 @@
     "Address validity/alignment, numeric widths/signedness, string bounds/stop behavior and original runtime acceptance require separate evidence. No memory read/write executes in the lexical fixtures.",
     "The arithmetic example at 25391–94 is not adopted as a conversion algorithm. Copy/Fill/Hunt and Varptr have lexical coverage; remaining Appendix A forms require their own inventories.",
     "Hunt prose at 25489 refers to INSTR$; the existing §5.2 heading is Instr. No Instr$ alias or equivalence of search semantics is inferred.",
-    "Range endpoints, overlap/alignment, pattern representation, search results, variable layout/address lifetime and native memory effects remain unqualified."
+    "Range endpoints, overlap/alignment, pattern representation, search results, variable layout/address lifetime and native memory effects remain unqualified.",
+    "Rol.B/W/L and Ror.B/W/L are separate sized signatures under the ROL/ROR headings; bare Rol/Ror and undocumented sizes are not added.",
+    "The Bin$ digit prose gives 1–31 at 25268–69, while the rotation example uses Bin$(B,32) at 25674. This discrepancy supplies no validated limit. Rotation-as-multiply/divide prose is not adopted as an arithmetic guarantee.",
+    "Btst address prose mentions LEEK(value) alongside an eight-bit bound. Widths, position masking, address interpretation, rotation counts and native results remain unqualified."
   ]
 }

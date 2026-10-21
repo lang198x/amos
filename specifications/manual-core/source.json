@@ -2,7 +2,7 @@
   "title": "AMOS Professional User Guide",
   "year": 1992,
   "product": "AMOS Professional",
-  "scope": "Named BASIC core, input, graphics, object/icon/block, collision, IFF, AMAL-control, file/directory/printer/port/serial/parallel I/O, music/basic sound, sample, music-module, speech, font, error-handling, Monitor, direct memory read/write and block/address forms, Interface-facing BASIC dialogue/value/control/resource forms, accessory/configuration, Kill Editor runtime control, AREXX-integration, multitasking and library/equate/structure/device/requester forms (§11.5 named headings); lexical highlighting only; embedded menu and AMAL vocabularies recorded separately",
+  "scope": "Named BASIC core, input, graphics, object/icon/block, collision, IFF, AMAL-control, file/directory/printer/port/serial/parallel I/O, music/basic sound, sample, music-module, speech, font, error-handling, Monitor, direct memory read/write, block/address, conversion and bit-operation forms, Interface-facing BASIC dialogue/value/control/resource forms, accessory/configuration, Kill Editor runtime control, AREXX-integration, multitasking and library/equate/structure/device/requester forms (\u00a711.5 named headings); lexical highlighting only; embedded menu and AMAL vocabularies recorded separately",
   "source": "https://gitlab.com/amigasourcecodepreservation/amos-classic-documentation",
   "held_extract": "amos-pro-user-guide-1992-croucher-hill.txt",
   "extract_sha256": "b0bf946502ad3ce6534e13d620dd5c017f8f6a6cd7a4c4f99ced87b1d925715c",

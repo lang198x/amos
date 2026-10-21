@@ -99,9 +99,9 @@ at 0.1.0 with its opening-program surface, and the Marketplace preview stays
 private. See the [0.2.0 release notes](docs/releases/0.2.0.md).
 
 The [manual-led core inventory](specifications/manual-core/README.md) now drives
-broader coverage: current source highlights 702 BASIC entries from Professional manual
-chapters 5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 19 Interface-facing BASIC forms from 9.1/9.3/9.4, 10.1–10.6, 11.1–11.2, 11.4–11.5, 12.1–12.2 and five §13.1 accessory/configuration forms, Appendix B’s Kill Editor and twelve Appendix A memory/address forms, including AMAL control commands.
-The file/directory I/O, music/basic sound, sample, music-module, speech, icon/block, font, error-handling, printer/port, serial, parallel, AREXX, multitasking, library/equate/structure/device/requester, Monitor, accessory/configuration, Kill Editor, dialogue, zone/value, resource, direct-memory and block/address continuations are
+broader coverage: current source highlights 714 BASIC entries from Professional manual
+chapters 5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 19 Interface-facing BASIC forms from 9.1/9.3/9.4, 10.1–10.6, 11.1–11.2, 11.4–11.5, 12.1–12.2 and five §13.1 accessory/configuration forms, Appendix B’s Kill Editor and twenty-four Appendix A memory/conversion/bit forms, including AMAL control commands.
+The file/directory I/O, music/basic sound, sample, music-module, speech, icon/block, font, error-handling, printer/port, serial, parallel, AREXX, multitasking, library/equate/structure/device/requester, Monitor, accessory/configuration, Kill Editor, dialogue, zone/value, resource, direct-memory, block/address, conversion and bit-operation continuations are
 unreleased; preview 0.2.0 retains its 452-entry BASIC inventory.
 Fourteen embedded menu commands and 36 [AMAL records](specifications/amal/README.md)
 are inventoried separately. Current source adds standalone AMAL highlighting;

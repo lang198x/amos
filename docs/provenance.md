@@ -355,3 +355,16 @@ Hunt/Varptr bind to 14.A.06 (25485/25498). Their range/variable argument context
 come from signatures, without adopting native endpoint or layout semantics.
 INSTR$ at 25489 differs from the existing §5.2 Instr heading; no alias or search
 equivalence is inferred. The lexical notebook executes no memory operation.
+
+
+The Appendix A conversion/bit slice binds Bin$/Hex$ headings at 25258/25296
+(14.A.02); the Rol.B/W/L signatures follow ROL at 25635 (14.A.09), and
+Ror.B/W/L follow ROR at 25688 (14.A.10). Btst/Bset/Bchg headings are
+25703/25719/25727 (14.A.10); Bclr is 25745 (14.A.11). All bindings use the
+same hash-pinned primary extract. Sized forms share their parent heading.
+
+Bin$ prose gives 1–31 digits at 25268–69, but the rotation example requests
+32 at 25674. Rotation-as-multiply/divide descriptions are not arithmetic
+qualification; Btst's address passage combines LEEK(value) with an eight-bit
+bound. Retain these as source questions, without inferred widths, counts,
+masking, aliases or native acceptance.

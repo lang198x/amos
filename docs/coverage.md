@@ -11,7 +11,7 @@ The table describes current source.
 | Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
-| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 19 BASIC dialogue/value/control/resource forms from 9.1/9.3/9.4, 10.1–10.6, 11.1–11.2, 11.4, 12.1–12.2 and five §13.1 accessory/configuration forms, Appendix B’s Kill Editor and twelve Appendix A memory/block/address forms, plus library/equate/structure/device/requester forms from 11.5 and Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
+| Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 19 BASIC dialogue/value/control/resource forms from 9.1/9.3/9.4, 10.1–10.6, 11.1–11.2, 11.4, 12.1–12.2 and five §13.1 accessory/configuration forms, Appendix B’s Kill Editor and twenty-four Appendix A memory/block/address/conversion/bit forms, plus library/equate/structure/device/requester forms from 11.5 and Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
@@ -614,7 +614,7 @@ Eight forms bring BASIC to 698 entries across 42 partial/full chapter/appendix
 sections. Peek/Deek/Leek/Peek$ are functions; Poke/Doke/Loke/Poke$ are commands.
 Dollar-bearing forms retain complete scopes and typed lookalikes stay ordinary.
 Four original catalogue gaps close here, leaving four Copper forms. Appendix A
-remains partial: block/address forms are covered below; conversion, bits and calls
+remains partial: block/address, conversion and bit forms are covered below; calls and registers
 need later work.
 
 The notebook checks expressions, Trap and prior resource/error forms with no
@@ -635,3 +635,18 @@ INSTR$ in Hunt’s prose creates no alias for Instr. No range endpoint, overlap,
 alignment, pattern, search result, variable representation or address lifetime
 is qualified, and no memory operation executes. Four Copper catalogue gaps
 remain. The additions are unreleased.
+
+
+## Appendix A conversions and bit operations
+
+Bin$/Hex$, Rol.B/W/L, Ror.B/W/L, Btst, Bset, Bchg and Bclr bring BASIC to
+714 entries across 42 partial/full chapter/appendix sections. Dollar suffixes
+and complete sized rotate spellings retain scopes in both BASIC profiles;
+bare Rol/Ror and unsupported sizes gain no command alias. Strings/comments,
+identifier boundaries and existing binary/hexadecimal notation are checked.
+
+The manual's Bin$ digit prose and later 32-digit example disagree; no validated
+limit is inferred. Rotate-as-multiply/divide prose and Btst memory-width prose
+supply no implemented arithmetic or address semantics. No native operation
+executes. Machine-code calls/registers and four Copper catalogue gaps remain.
+These additions are unreleased; Marketplace availability is unchanged.

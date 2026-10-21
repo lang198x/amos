@@ -4,7 +4,7 @@ The complete Professional §12.3 catalogue, pp.12.03.01–22 (extract lines
 21473–22628), has been reviewed. It supplies references and spelling conflicts,
 not additional instruction definitions. The review baseline was 665 entries
 across 36 chapters at `5b7d6f2`; the review itself changed no grammar. Current source covers five §13.1 follow-ups, Kill Editor and the three
-Interface follow-ups, bringing BASIC to 702 entries across 42 partial/full chapter
+Interface follow-ups, plus Appendix A memory/conversion/bit forms, bringing BASIC to 714 entries across 42 partial/full chapter
 and appendix sections. Four memory-access gaps are now covered too, leaving
 four Copper forms from the original 17-gap baseline. Parser behavior is unchanged.
 

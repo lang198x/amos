@@ -1,0 +1,10 @@
+Rem Lexical notebook; no native arithmetic or memory result is asserted
+BIT_VALUE=%1010
+Rol.B 1,BIT_VALUE : Ror.B 1,BIT_VALUE
+Rol.W 2,BIT_VALUE : Ror.W 2,BIT_VALUE
+Rol.L 3,BIT_VALUE : Ror.L 3,BIT_VALUE
+Bset 3,BIT_VALUE : Bchg 2,BIT_VALUE : Bclr 1,BIT_VALUE
+BIT_SET=Btst(3,BIT_VALUE)
+Print Bin$(BIT_VALUE);Hex$(BIT_VALUE,2)
+Print "Rol.B Ror.W Btst Bin$ Hex$"
+'Bset 1,BIT_VALUE : Bclr 2,BIT_VALUE

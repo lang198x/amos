@@ -30,7 +30,7 @@ export const checkEntry = (entry) => {
     assertScope(tokens(tabbed, theme)[0], 0, tabbed.length, scope, tabbed);
     if (kind === 'comment' || kind === 'shortcut') continue;
     for (const suffix of ['Extra', '_VALUE', '$', '#']) {
-      const name = spelling.replace(/[ /]/g, '_').replace(/[$#]$/, '') + suffix;
+      const name = spelling.replace(/[ /.]/g, '_').replace(/[$#]$/, '') + suffix;
       if (known.has(name.toLowerCase())) continue; // Param$/Param# are positive entries.
       assertScope(tokens(`${name}=1`, theme)[0], 0, name.length, 'variable.other.amos', name);
     }
