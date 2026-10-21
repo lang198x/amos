@@ -36,7 +36,8 @@ paper-colour behaviour in the previously identified Professional 2.00
 installation, with two non-zero paper values and explicit-zero controls.
 The independently booted [Creator 1.1 trial](../../corpus/editions/cls/creator/README.md)
 also follows paper colour in those same four controls, contradicting the Creator
-manual wording for this tested revision. Easy remains unqualified; other Creator
+manual wording for this tested revision. The [Easy startup investigation](../../corpus/editions/cls/easy-startup/README.md)
+reaches the work-disk creator but does not execute Cls. Easy remains unqualified; other Creator
 revisions and the origin of the wording difference are still open.
 Do not change compiler/parser semantics from this observation alone.
 

@@ -1,0 +1,56 @@
+{
+  "status": "startup_and_input_investigation_not_language_qualification",
+  "media_label": "Easy AMOS v1.01, Master Disc 1",
+  "editor_release": "unobserved",
+  "media_sha256": "c6d5acf5befcb9c2988caed131b7e20c11cd96b41dd1ebc12b8dcfbb274b1023",
+  "emulator_release": "0.43.0",
+  "emulator_source": "a79a843334dcfe3d62413e73eb6c8c710824aeb7",
+  "emulator_sha256": "547b79c075c189f5f0f2e1f38c19f267c4aefe7d8486e019da6aaf70d47396f4",
+  "machine": "PAL A500 with A501; 512 KiB chip and 512 KiB slow RAM",
+  "kickstart_label": "1.3",
+  "kickstart_sha256": "ee05862d8102a08436ac4056da7d549db31625c7d47b24dfb7b3c9a5c113ca53",
+  "writable_from_cold_boot": true,
+  "boot_run_frames": [
+    500,
+    500,
+    1000,
+    1000
+  ],
+  "welcome_click": {
+    "button": "left",
+    "hold_frames": 30,
+    "release_run_frames": 200
+  },
+  "selection_attempt": {
+    "pointer_dx": 85,
+    "pointer_dy": 108,
+    "move_run_frames": 2,
+    "button": "left",
+    "hold_frames": 30,
+    "release_run_frames": 500
+  },
+  "subsequent_wait_frames": 1000,
+  "after_wait_observations": {
+    "disk_writable": true,
+    "disk_motor_on": false,
+    "ciaa_pra": 252,
+    "left_mouse_button_released_bit6": true,
+    "amos_task_state": "WAIT",
+    "amos_task_wait_signal": "$00000010"
+  },
+  "subprocess_timeout_seconds": 50,
+  "captures": {
+    "welcome.png": "71e162c4b0801b28f8d80c4676a68f74634a4dab0bc14a27d655431fc4b43e07",
+    "keyboard.png": "32503d7dbcea9fa0fe5b4589fbadfa01daa9d416197804601c2126c8f57fc506",
+    "after-selection.png": "68ed96de8f23a657d28563f007964ca1c45db91686c3dd584319c016c14e35ad",
+    "after-wait.png": "68ed96de8f23a657d28563f007964ca1c45db91686c3dd584319c016c14e35ad"
+  },
+  "reference": {
+    "product": "FS-UAE",
+    "version": "3.2.35",
+    "cold_boot_same_source_image": true,
+    "machine_configuration": "A500, 512 KiB chip, 512 KiB slow, same Kickstart 1.3",
+    "observed": "welcome and keyboard-selection menu",
+    "selection_result": "not established through native automation; comparison inconclusive"
+  }
+}

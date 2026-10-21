@@ -39,3 +39,20 @@ Easy's work-disk creator has reached keyboard selection. The first copy was
 mounted read-only despite the installer's documented write-enabled requirement;
 retests use a writable disposable copy. Current-stable cold-boot investigation
 is in progress before any emulator bug is claimed.
+
+## Easy investigation outcome
+
+A new cold boot in official stable Emu198x 0.43.0 uses a writable disposable
+Master Disc 1 copy from startup. The keyboard menu is reached, but the attempted
+selection leads to a blank panel that persists across another 1,000 frames. The
+button is released and the disk writable. FS-UAE 3.2.35 independently reaches the
+same menu; native automation does not establish a selection there either. A core
+regression is not established. Retain the bounded startup captures and observation
+record; no Easy Cls result or editor revision is claimed. Continue with the input
+workflow before implementing any emulator or parser change.
+
+Website #902 passed all checks, but GitHub cannot rebase its conflict-resolution
+history under the repository's rebase-only policy. The identical eight-file diff
+is retained as one clean commit in #905; all 230 unit tests pass after bundle
+preparation. #902 is closed only after verifying the replacement exists. Both
+branches remain on the remote; no shared history is rewritten.
