@@ -1,8 +1,11 @@
-# Easy AMOS: keyboard selection verified; working disks unqualified
+# Easy AMOS: verified route through keyboard selection
 
 The selected Master Disc 1 boots its **Easy AMOS Work Disc Creator**, not the
-language editor. No Easy Cls source is entered or executed. The media catalogue
-labels this image v1.01; that is not an observed editor revision.
+language editor. This startup record does not execute language probes. The
+separate [Programs-disk trial](../easy/README.md) creates the disk through the
+original installer, cold-boots it independently and executes four Cls probes.
+The media catalogue labels the master v1.01; editor identity has its own evidence
+in that trial.
 
 The controlled current-stable trial cold-boots Emu198x 0.43.0 with a disposable
 copy writable from the start, A500+A501 PAL and Kickstart 1.3. The source image
@@ -50,9 +53,10 @@ are unchanged; the reference uses its own disposable writable copy and isolated
 base directory. FS-UAE documents its [base-directory options](https://fs-uae.net/docs/paths-and-directories/)
 and [input-capture shortcuts](https://fs-uae.net/docs/keyboard-shortcuts/).
 
-Next: finish the original work-disk creator and independently
-boot its Programs disk. Only then run the shared four Cls probes. Do not use a
-modified preinstalled disk as evidence for an unidentified stock release.
+The [Programs-disk trial](../easy/README.md) follows this input route through the
+native formatter and three transfers. Examples and Tutorial installation are
+separate work. Do not use a modified preinstalled disk as evidence for an
+unidentified stock release.
 
 Captures document the original environment and are evidence, not newly licensed
 Lang198x software. No runtime media, snapshots, registration data or private

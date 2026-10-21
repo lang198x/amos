@@ -1,0 +1,102 @@
+{
+  "profile": "easy-1.01-cls-observed",
+  "observation_date": "2026-10-21",
+  "boot_run_frames": [
+    500,
+    500,
+    1000,
+    1000
+  ],
+  "boot": "Fresh process with firmware and exported Programs disk; no installer state restored.",
+  "blank_snapshot_sha256": "5ae447f57d69e64501f034649c78b5100dbd5838e3f9b9b201793315111c8842",
+  "input_method": {
+    "type_hold_frames": 3,
+    "type_settle_frames": 30,
+    "run_key": "f1",
+    "run_hold_frames": 3,
+    "run_frames": 100
+  },
+  "setup_captures": {
+    "programs-cold-boot.png": "ebe639b2d7e0d698f2d216e07b4eda8d0a3b8fe145576ab269e3b02d65f7aea1",
+    "programs-finish.png": "931f7e5808b8859fa2112c32ef97cc43b9ffacda7c83f9dfe0b5fa9e8aa6a484",
+    "install-menu-ready.png": "783ef8fd21aab5587244489cd1e979bffcb118e3fd7254f05d9382b13e92db8a"
+  },
+  "cases": [
+    {
+      "id": "paper-2-bare",
+      "source": "../paper-2-bare.amos.txt",
+      "source_sha256": "c8bb176e0c51ff768740068c17966a23f483e84edfef2a1abf6d0fe4dc65d6f2",
+      "editor_capture": "paper-2-bare-editor.png",
+      "editor_capture_sha256": "d41c9aab608ba42b8ce9960c092fceaa1d93fcead4c921be803e394ed6c0a933",
+      "capture": "paper-2-bare.png",
+      "capture_sha256": "b97bae6da0791383c9116b7d8fd7e45d4e800ca022351d975d9a2bdafef9065a",
+      "sample_xy": [
+        400,
+        250
+      ],
+      "sample_rgba": [
+        255,
+        255,
+        255,
+        255
+      ]
+    },
+    {
+      "id": "paper-4-bare",
+      "source": "../paper-4-bare.amos.txt",
+      "source_sha256": "70c225b0d31cec88bf910a3908b2e0badb3749d67eb4540c462a2159072d4b96",
+      "editor_capture": "paper-4-bare-editor.png",
+      "editor_capture_sha256": "e2bdc7030e114ae01371c1866fff3003806685e470dd3fdce6c23bb7cdf7828a",
+      "capture": "paper-4-bare.png",
+      "capture_sha256": "84f52ab95bb743a4f52bdc96f0b845c74242bfb4df875e9db27e6999eea03c2f",
+      "sample_xy": [
+        400,
+        250
+      ],
+      "sample_rgba": [
+        255,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "id": "paper-2-explicit-zero",
+      "source": "../paper-2-explicit-zero.amos.txt",
+      "source_sha256": "00cf6fff6b8612d87bc120cf329a29715f9be0f1b0f1ac761d3db4f7a23978b4",
+      "editor_capture": "paper-2-explicit-zero-editor.png",
+      "editor_capture_sha256": "1db848eda8422718e89626c3cf2b780d269e564830b9b7b245d22a572aa0fb45",
+      "capture": "paper-2-explicit-zero.png",
+      "capture_sha256": "26d16bc182323b2da9f86ae29b05c3d2f9c40c28cf40342f03042b57b168d322",
+      "sample_xy": [
+        400,
+        250
+      ],
+      "sample_rgba": [
+        0,
+        0,
+        0,
+        255
+      ]
+    },
+    {
+      "id": "paper-4-explicit-zero",
+      "source": "../paper-4-explicit-zero.amos.txt",
+      "source_sha256": "b464715ceb635409d4496b0844d4671e861cd040554c72fad446051fba70e9ee",
+      "editor_capture": "paper-4-explicit-zero-editor.png",
+      "editor_capture_sha256": "0d1dae5f057a888522ee19db3d4feebfe100d94fc186839445a025053bae7a8b",
+      "capture": "paper-4-explicit-zero.png",
+      "capture_sha256": "26d16bc182323b2da9f86ae29b05c3d2f9c40c28cf40342f03042b57b168d322",
+      "sample_xy": [
+        400,
+        250
+      ],
+      "sample_rgba": [
+        0,
+        0,
+        0,
+        255
+      ]
+    }
+  ]
+}

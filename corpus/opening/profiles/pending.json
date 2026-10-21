@@ -8,6 +8,7 @@
   "extensions": "Supplied and third-party extension/version combinations require separate evidence.",
   "other_releases": "Other Professional releases and later derivatives remain unqualified here.",
   "bounded_other_evidence": {
-    "AMOS / The Creator": "../../editions/cls/creator/README.md"
+    "AMOS / The Creator": "../../editions/cls/creator/README.md",
+    "Easy AMOS": "../../editions/cls/easy/README.md"
   }
 }

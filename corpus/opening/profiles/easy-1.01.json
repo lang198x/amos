@@ -1,0 +1,214 @@
+{
+  "id": "easy-1.01-cls-observed",
+  "product": "Easy AMOS",
+  "release_label": "1.01",
+  "identity_status": "Easy AMOS editor brand observed; installed executable has embedded version marker",
+  "identity_marker": {
+    "component": "EasyAMOS",
+    "byte_offset": 2275,
+    "text": "$VER: 1.01"
+  },
+  "scope": "Four Cls display probes only; not a recognised CLI compatibility profile.",
+  "emulator_source": "a79a843334dcfe3d62413e73eb6c8c710824aeb7",
+  "emulator_sha256": "547b79c075c189f5f0f2e1f38c19f267c4aefe7d8486e019da6aaf70d47396f4",
+  "machine": "PAL A500 with A501; 512 KiB chip and 512 KiB slow RAM",
+  "kickstart_label": "1.3",
+  "kickstart_sha256": "ee05862d8102a08436ac4056da7d549db31625c7d47b24dfb7b3c9a5c113ca53",
+  "system_media_sha256": "b940e6432f94bddf0ecaf3d271e2b237a3bda0e33d136bf61ba0be4138a5b925",
+  "installation_source": {
+    "master_1_sha256": "c6d5acf5befcb9c2988caed131b7e20c11cd96b41dd1ebc12b8dcfbb274b1023",
+    "provenance_limit": "Already personalised source image; no pristine factory-media claim. Programs uses Master Disc 1 only.",
+    "native_creator": "Easy AMOS Work Disc Creator, displayed Version 1.01",
+    "method": "Original single-drive installation; native format and three read/unpack/write transfers; no payload reconstruction or disk repair."
+  },
+  "components": [
+    {
+      "path": "AMOS_Disc.AMOS",
+      "bytes": 101444,
+      "sha256": "53a5eea0a943d9439a69f24c9a9864a6418e9ad2a20c0d2dec5799de8361b145"
+    },
+    {
+      "path": "Bob_Editor.AMOS",
+      "bytes": 108846,
+      "sha256": "b5293106f10af9d87351e926d99b8183043ee6364db1d249aca2375222ab0c43"
+    },
+    {
+      "path": "c/AddBuffers",
+      "bytes": 876,
+      "sha256": "cf2d6b4e60202e21d660fb32f9e9638dd3eccc1df4999bfa35a390522e90bbaa"
+    },
+    {
+      "path": "c/endcli",
+      "bytes": 696,
+      "sha256": "642198ff18c68943f3a7b80b2360b5ab9df85d738b0c3dec12462473929583a0"
+    },
+    {
+      "path": "c/Run",
+      "bytes": 2568,
+      "sha256": "63c3616e49ec1a46da10b5fd57277cf1ad91b41083346ee361e65c392d1a58be"
+    },
+    {
+      "path": "devs/narrator.device",
+      "bytes": 23280,
+      "sha256": "1e9f46e052e7eb90549fde8a634c462fa0a547c4eb896cf5fe10ff8b61464880"
+    },
+    {
+      "path": "devs/parallel.device",
+      "bytes": 1812,
+      "sha256": "30dd3a9a691e79ecd1f41d93f74a43dd9dbb07edf0a271286270c9927894ccb7"
+    },
+    {
+      "path": "devs/printer.device",
+      "bytes": 26904,
+      "sha256": "d60405ab691b9ddeafc961789176bb2320b4f98a29bbfc94044122ef80c744ad"
+    },
+    {
+      "path": "devs/Printers/generic",
+      "bytes": 1096,
+      "sha256": "a47fe47a5c0111d704362f8b953ddcfff3ad20f11c6096c94cea8ce5f4a124e9"
+    },
+    {
+      "path": "devs/serial.device",
+      "bytes": 5340,
+      "sha256": "382ea79412996aa5bf8408269b07064732c35bd4a2c5d968ac0237a2e59a52a4"
+    },
+    {
+      "path": "devs/system-configuration",
+      "bytes": 232,
+      "sha256": "683044449957b5755eea9055a2972d4f51fa0ec3d09954e857d56da6db0196c4"
+    },
+    {
+      "path": "Disk.info",
+      "bytes": 1743,
+      "sha256": "d49ce9bb18b004cebe87f2b169b8021693a34df0059350185acbdb4f9b5bffb2"
+    },
+    {
+      "path": "EasyAMOS",
+      "bytes": 184704,
+      "sha256": "ecd833b656d8c117c47e708d90f621625009a5604fcc1483a6eea5242cddc763"
+    },
+    {
+      "path": "EasyAMOS.Help",
+      "bytes": 76859,
+      "sha256": "e2b33f3f666680649fec15e3e2de7a4a0f2f742009e66658eb72713cc7a56465"
+    },
+    {
+      "path": "EasyAMOS.info",
+      "bytes": 2426,
+      "sha256": "617711121ae2a70580cb7bd45f01c68d589aeec3ad0cd6b62487c7bcca3accd4"
+    },
+    {
+      "path": "EasyAMOS.Map",
+      "bytes": 4743,
+      "sha256": "b45b42ea3cf02821c987abe00f8dc67f0a69ec5901680a414f79abcf0a561fcc"
+    },
+    {
+      "path": "fonts/diamond/12",
+      "bytes": 3884,
+      "sha256": "dece386dfe76f6f5b89c33c0393c8e2888970495d5dc102f2f3109e2bc68a2e2"
+    },
+    {
+      "path": "fonts/diamond.font",
+      "bytes": 264,
+      "sha256": "ff0e915c712befc682febdfef6f0080a2b3d9a530cd5b87dcc84206d54d411eb"
+    },
+    {
+      "path": "fonts/easyamos/8",
+      "bytes": 2600,
+      "sha256": "5b7765198d8c11ae4cdb989d39042e081da781bf83cec0fc9af609227f1be9ed"
+    },
+    {
+      "path": "fonts/easyamos.font",
+      "bytes": 264,
+      "sha256": "cab795f3f3924eb5fe3e17d7b1eaab71447b5c41c143239901ff9a8006004c30"
+    },
+    {
+      "path": "fonts/helvetica/24",
+      "bytes": 8180,
+      "sha256": "262362ae7fff3b0fc266c119738a9966468e339ce118a3a3d8e850a973a6b1ac"
+    },
+    {
+      "path": "fonts/helvetica.font",
+      "bytes": 264,
+      "sha256": "7a5d47abd833b0d11b7d17983ed71c909f0e3897c393bf9eadb03c6cf0879b03"
+    },
+    {
+      "path": "fonts/sapphire/14",
+      "bytes": 5040,
+      "sha256": "69ae5852e17ed262aa65ea0c132904cd997021278b4c0b5fc884d00e32e53deb"
+    },
+    {
+      "path": "fonts/sapphire.font",
+      "bytes": 264,
+      "sha256": "b8cacccb9b86834f838bb75527509d06f8aef284a8fc269763f6d6cd9aad70cc"
+    },
+    {
+      "path": "IFF_Compactor.AMOS",
+      "bytes": 26230,
+      "sha256": "73c3b670cdf943375365f58312b4e652f224a1958fcf0bcb28b75159c6f711c3"
+    },
+    {
+      "path": "l/Disk-Validator",
+      "bytes": 1848,
+      "sha256": "d5e7f814a99b0e01c5a51ed5c991f82cb239927e5672d5a207717f55e8dd94c5"
+    },
+    {
+      "path": "l/FastFileSystem",
+      "bytes": 12204,
+      "sha256": "dfd75ae218357f6f4b62024008942d6fbf11ed9a44825030d827b18a7c087619"
+    },
+    {
+      "path": "l/Port-Handler",
+      "bytes": 1364,
+      "sha256": "084d93dcfbca78cbe82a6be78f82edf54093d9ef3383ceaeca25a14f0a7853b5"
+    },
+    {
+      "path": "l/Speak-Handler",
+      "bytes": 4212,
+      "sha256": "c9e5dba3cbc218f5306ffb628bc11e06a9920a34c3e62820c5ab65011fbca9f9"
+    },
+    {
+      "path": "libs/diskfont.library",
+      "bytes": 4964,
+      "sha256": "fcc73ffe9ad54d8625bf6dc53314b06771a90f0d3bb9e310438efdcb2d1bf1d0"
+    },
+    {
+      "path": "libs/icon.library",
+      "bytes": 5688,
+      "sha256": "bba2d46e7c0e3a6a485d6a9a8b719ad0ea6965eb04bc6dd9c11eec2797a81b77"
+    },
+    {
+      "path": "libs/mathieeedoubbas.library",
+      "bytes": 4688,
+      "sha256": "785de17c92e8361d66c9da83b5f8ede825bae93899cab2fc84216a1df6201aab"
+    },
+    {
+      "path": "libs/mathtrans.library",
+      "bytes": 4280,
+      "sha256": "211e317a0dc22293496e632efc012d7aa60f0ecba603f108e028508157061ba5"
+    },
+    {
+      "path": "libs/translator.library",
+      "bytes": 10592,
+      "sha256": "11997e3c8e77e5805a478ad3e7fb7b3114b7c88b1e9a160586b74e18d9353ff6"
+    },
+    {
+      "path": "s/Startup-Sequence",
+      "bytes": 45,
+      "sha256": "c6b1777d5c15ec23e5f4cbe4bad1d08b7d91cb8a70d612585a7f1f76fd44dca3"
+    },
+    {
+      "path": "Sample_Bank_Maker.AMOS",
+      "bytes": 62884,
+      "sha256": "714dad56d57d8385fae24fd20c851e3a63fa481d8877f1ce5b38315138e884ff"
+    }
+  ],
+  "media_verification": {
+    "sound": false,
+    "problems": [
+      "bitmap block 1020: non-existent block 1978 is marked free"
+    ]
+  },
+  "complete_extension_qualification": false,
+  "evidence": "../../editions/cls/easy/README.md"
+}
