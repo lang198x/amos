@@ -1,0 +1,98 @@
+{
+  "edition": "easy",
+  "software_revision": "unqualified",
+  "runtime_verified": false,
+  "facts": [
+    {
+      "id": "cls",
+      "surface": "documentary",
+      "form": "Cls; Cls colour; Cls colour,x1,y1 To x2,y2",
+      "finding": "The glossary says bare Cls uses the current paper colour. The other forms select a colour or a rectangular region.",
+      "citation": {
+        "source": "easy",
+        "line_start": 13393,
+        "line_end": 13399,
+        "anchor_line": 13393,
+        "anchor": "CLS"
+      }
+    },
+    {
+      "id": "print",
+      "surface": "documentary",
+      "form": "Print items; ? items",
+      "finding": "The glossary documents variable/constant lists separated by commas or semicolons and the question-mark shortcut.",
+      "citation": {
+        "source": "easy",
+        "line_start": 14514,
+        "line_end": 14519,
+        "anchor_line": 14514,
+        "anchor": "PRINT"
+      }
+    },
+    {
+      "id": "wait-key",
+      "surface": "documentary",
+      "form": "Wait Key",
+      "finding": "Waits for one keypress before continuing.",
+      "citation": {
+        "source": "easy",
+        "line_start": 15290,
+        "line_end": 15292,
+        "anchor_line": 15290,
+        "anchor": "WAIT KEY"
+      }
+    },
+    {
+      "id": "end",
+      "surface": "documentary",
+      "form": "End",
+      "finding": "Ends the program; Space returns to the editor and Escape to direct mode.",
+      "citation": {
+        "source": "easy",
+        "line_start": 13672,
+        "line_end": 13674,
+        "anchor_line": 13672,
+        "anchor": "END"
+      }
+    },
+    {
+      "id": "assignment",
+      "surface": "documentary",
+      "form": "name=value; name#=fraction; name$=\"text\"",
+      "finding": "The variable section shows equals assignments and distinguishes integer, hash-suffixed real and dollar-suffixed string variables. Its printed numeric limits and malformed spaced example are not adopted as validation rules.",
+      "citation": {
+        "source": "easy",
+        "line_start": 2080,
+        "line_end": 2122,
+        "anchor_line": 2080,
+        "anchor": "Types of    There are three types of variable that you can use in your"
+      }
+    },
+    {
+      "id": "inline-if",
+      "surface": "documentary",
+      "form": "If condition Then statements",
+      "finding": "Chapter 5 introduces a conditional instruction and explicitly shows Goto for a label. The Else glossary definition at 13668-13670 supplies the alternative form.",
+      "citation": {
+        "source": "easy",
+        "line_start": 2511,
+        "line_end": 2528,
+        "anchor_line": 2511,
+        "anchor": "IF"
+      }
+    },
+    {
+      "id": "block-if",
+      "surface": "documentary",
+      "form": "If condition / End If",
+      "finding": "Chapter 5 says a structured test omits Then and pairs each If with its own End If.",
+      "citation": {
+        "source": "easy",
+        "line_start": 2560,
+        "line_end": 2567,
+        "anchor_line": 2560,
+        "anchor": "IF"
+      }
+    }
+  ]
+}

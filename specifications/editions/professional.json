@@ -1,0 +1,98 @@
+{
+  "edition": "professional",
+  "software_revision": "unqualified",
+  "runtime_verified": false,
+  "facts": [
+    {
+      "id": "cls",
+      "surface": "documentary",
+      "form": "Cls; Cls colour; Cls colour,x1,y1 To x2,y2",
+      "finding": "The definition says bare Cls uses the current paper colour. Colour and rectangular overloads are also documented.",
+      "citation": {
+        "source": "professional",
+        "line_start": 7878,
+        "line_end": 7897,
+        "anchor_line": 7878,
+        "anchor": "CLS"
+      }
+    },
+    {
+      "id": "print",
+      "surface": "documentary",
+      "form": "Print items",
+      "finding": "The definition describes variables/constants, comma tab stops, adjacent semicolon output and final-separator effects.",
+      "citation": {
+        "source": "professional",
+        "line_start": 5535,
+        "line_end": 5565,
+        "anchor_line": 5535,
+        "anchor": "PRINT"
+      }
+    },
+    {
+      "id": "wait-key",
+      "surface": "documentary",
+      "form": "Wait Key",
+      "finding": "Waits for one keypress before the following instruction.",
+      "citation": {
+        "source": "professional",
+        "line_start": 17877,
+        "line_end": 17883,
+        "anchor_line": 17877,
+        "anchor": "WAIT KEY"
+      }
+    },
+    {
+      "id": "end",
+      "surface": "documentary",
+      "form": "End",
+      "finding": "Stops execution; the manual describes Escape for direct mode and Space for the editor. This is not a claim about every later runtime editor screen.",
+      "citation": {
+        "source": "professional",
+        "line_start": 3323,
+        "line_end": 3333,
+        "anchor_line": 3323,
+        "anchor": "END"
+      }
+    },
+    {
+      "id": "assignment",
+      "surface": "documentary",
+      "form": "name=value; name$=\"text\"",
+      "finding": "Chapter 5.1 shows equals assignment and typed variable names. Retypeset identifier spacing and number-range prose need independent evidence before validation.",
+      "citation": {
+        "source": "professional",
+        "line_start": 3055,
+        "line_end": 3110,
+        "anchor_line": 3055,
+        "anchor": "contain a blank space. So the next name is allowed:"
+      }
+    },
+    {
+      "id": "inline-if",
+      "surface": "documentary",
+      "form": "If condition Then statements Else statements",
+      "finding": "The inline form occupies one line; explicit Goto is required for a label instead of a procedure name.",
+      "citation": {
+        "source": "professional",
+        "line_start": 4530,
+        "line_end": 4588,
+        "anchor_line": 4530,
+        "anchor": "IF"
+      }
+    },
+    {
+      "id": "block-if",
+      "surface": "documentary",
+      "form": "If condition / Else / End If",
+      "finding": "Structured tests pair If with End If and may span lines; the manual prohibits Then inside such a test.",
+      "citation": {
+        "source": "professional",
+        "line_start": 4591,
+        "line_end": 4606,
+        "anchor_line": 4591,
+        "anchor": "Structured tests"
+      }
+    }
+  ]
+}

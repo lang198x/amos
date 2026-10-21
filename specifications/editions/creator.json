@@ -1,0 +1,98 @@
+{
+  "edition": "creator",
+  "software_revision": "unqualified",
+  "runtime_verified": false,
+  "facts": [
+    {
+      "id": "cls",
+      "surface": "documentary",
+      "form": "Cls; Cls colour; Cls colour,x1,y1 To x2,y2",
+      "finding": "The definition says bare Cls fills the current screen with colour zero; the other forms choose a colour or rectangle.",
+      "citation": {
+        "source": "creator",
+        "line_start": 7046,
+        "line_end": 7061,
+        "anchor_line": 7046,
+        "anchor": "II   CLS       (Clear the screen)"
+      }
+    },
+    {
+      "id": "print",
+      "surface": "documentary",
+      "form": "Print items; ? items",
+      "finding": "Print accepts item lists; semicolons keep adjacent output and commas move to tab positions. A trailing separator changes the final cursor advance.",
+      "citation": {
+        "source": "creator",
+        "line_start": 13244,
+        "line_end": 13260,
+        "anchor_line": 13244,
+        "anchor": "PRINT or ? (Print a list of variables to the screen)"
+      }
+    },
+    {
+      "id": "wait-key",
+      "surface": "documentary",
+      "form": "Wait Key",
+      "finding": "Waits for one keypress before the following statement.",
+      "citation": {
+        "source": "creator",
+        "line_start": 13120,
+        "line_end": 13124,
+        "anchor_line": 13120,
+        "anchor": "WAIT KEY (Wait for a keypress)"
+      }
+    },
+    {
+      "id": "end",
+      "surface": "documentary",
+      "form": "End",
+      "finding": "Ends execution; the described choices are Space for the editor and Escape for direct mode.",
+      "citation": {
+        "source": "creator",
+        "line_start": 4592,
+        "line_end": 4598,
+        "anchor_line": 4592,
+        "anchor": "END (Exit from the program)"
+      }
+    },
+    {
+      "id": "assignment",
+      "surface": "documentary",
+      "form": "name=value; name$=\"text\"",
+      "finding": "The variable section describes assignment with equals and a dollar suffix for string variables.",
+      "citation": {
+        "source": "creator",
+        "line_start": 2332,
+        "line_end": 2345,
+        "anchor_line": 2332,
+        "anchor": "Giving a variable a value"
+      }
+    },
+    {
+      "id": "inline-if",
+      "surface": "documentary",
+      "form": "If condition Then statements Else statements",
+      "finding": "The inline form is limited to one line. Branching to a label requires an explicit Goto; otherwise the name is treated as a procedure.",
+      "citation": {
+        "source": "creator",
+        "line_start": 4309,
+        "line_end": 4330,
+        "anchor_line": 4309,
+        "anchor": "IF ... TH EN ... [E LS E] (Choose between alternative actions)"
+      }
+    },
+    {
+      "id": "block-if",
+      "surface": "documentary",
+      "form": "If condition / Else / End If",
+      "finding": "Structured tests contain instruction lists and may nest; the text forbids an ordinary If Then inside the structured test.",
+      "citation": {
+        "source": "creator",
+        "line_start": 4337,
+        "line_end": 4355,
+        "anchor_line": 4337,
+        "anchor": "IF ... [ELSE] ... ENDIF (Structuredtestj"
+      }
+    }
+  ]
+}
