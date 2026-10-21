@@ -1,0 +1,87 @@
+{
+  "status": "native_save_bitmap_reproduced_in_independent_emulator",
+  "profile": "../../../opening/profiles/easy-1.01.json",
+  "source": "../../cls/paper-4-bare.amos.txt",
+  "source_sha256": "70c225b0d31cec88bf910a3908b2e0badb3749d67eb4540c462a2159072d4b96",
+  "runtime": {
+    "name": "FS-UAE",
+    "version": "3.2.35",
+    "binary_sha256": "86e3f01623cb13bff537903a07a6c4fcfdc4b7fc4baee723cfb6eb4f28f6de8d",
+    "core_banner": "WinUAE 3300b2",
+    "model": "PAL A500",
+    "chip_bytes": 524288,
+    "slow_bytes": 524288,
+    "kickstart_sha256": "ee05862d8102a08436ac4056da7d549db31625c7d47b24dfb7b3c9a5c113ca53",
+    "fresh_process": true,
+    "snapshot_loaded": false,
+    "boot_writable": false,
+    "one_floppy_drive": true,
+    "work_writable": true,
+    "writable_floppy_images": true,
+    "boot_disk_sha256": "b940e6432f94bddf0ecaf3d271e2b237a3bda0e33d136bf61ba0be4138a5b925"
+  },
+  "checkpoints": {
+    "initial_work_sha256": "5a5d9621abc1b3e71d06628136194cd240766a5bddc76a7f460b24bb4f82bcd8",
+    "after_insert_sha256": "5a5d9621abc1b3e71d06628136194cd240766a5bddc76a7f460b24bb4f82bcd8",
+    "selector_open_before_save_sha256": "5a5d9621abc1b3e71d06628136194cd240766a5bddc76a7f460b24bb4f82bcd8",
+    "after_save_sha256": "5ae75d75b4c96b2eff321e6ae5f2a962ace382b5e8ae088e98329773e74040e6",
+    "after_save_bitmap_block": 884,
+    "allocated_real_blocks": [
+      880,
+      882,
+      883,
+      884
+    ],
+    "root_checksum_sum_mod_2_32": 0,
+    "bitmap_checksum_sum_mod_2_32": 0,
+    "bitmap_valid_flag": 4294967295,
+    "bitmap_sha256": "1775673bbbbca6308df97726dc92371569f1cd87493d9f71b45235f4af723517",
+    "bitmap_byte_identical_to_emu198x": true,
+    "unused_whole_word_tail_sha256": "e816885fea9fba9cb0b89b4557dd7ed606a9d694761b926e874ef845ce76b25d"
+  },
+  "native_file": {
+    "path": "ROUNDTRP.AMOS",
+    "bytes": 56,
+    "sha256": "72b16ac6f6c1a01d9274f2af68427b688f064c8b33544796d16f4674c258910a",
+    "byte_identical_to_emu198x": true
+  },
+  "checker": {
+    "cli_version": "0.2.12",
+    "library_version": "0.3.2",
+    "verify_exit_code": 1,
+    "stderr": "build198x-adf: corrupt ADF: filesystem structure",
+    "problems": [
+      "bitmap block 884: non-existent block 2402 is marked free"
+    ]
+  },
+  "input": {
+    "source_hold_ms": 80,
+    "filename_hold_ms": 80,
+    "empty_drive_interval": "Separate eject and insert UI calls, over two seconds apart; not frame-counted.",
+    "save_guest_keys": [
+      "Left Amiga",
+      "S"
+    ],
+    "temporary_host_mappings": {
+      "F5": "warp",
+      "F6": "screenshot",
+      "F8": "eject drive 0",
+      "F9": "insert Programs in drive 0",
+      "F10": "insert work disk in drive 0",
+      "Left Control": "Left Amiga"
+    },
+    "warp": "Used during boot; disabled before source entry."
+  },
+  "captures": {
+    "reference-source.png": "182eaaf7dd56cd8d656d57bb9be54eebd4c94fe864fd3f0678ea0afc3357835a",
+    "reference-save-selector.png": "45882625b99d8d1cd8c718c240afbd2b17ff48c1e61f9f8cdea3d28a16ed7284",
+    "reference-save-complete.png": "602ff4abfde9ddbfe299901ac5d3629468841364627c41bef8f9b5eca8cf19d4"
+  },
+  "limits": [
+    "The saved filename is ROUNDTRP.AMOS: one I key was not accepted. Program and entire bitmap still match the original byte for byte.",
+    "A fresh repeat reproduced the filename input difficulty and was stopped before Save; its work disk remained identical to baseline.",
+    "No native reload/run was repeated in FS-UAE; the earlier Emu198x reader evidence remains separately scoped.",
+    "This establishes native production outside Emu198x, not every original filesystem revision or the precise buffer-reuse mechanism.",
+    "No parser, codec, checker behaviour or release changes."
+  ]
+}

@@ -66,9 +66,10 @@ tracks comparison with independent evidence and the existing checker policy
 before any component is changed.
 
 The [bitmap investigation](bitmap-investigation.md) isolates the disagreement
-to the unused tail and records independent-validator controls plus a smaller
-native DOS write in FS-UAE. That write does not reproduce the tail finding;
-the same AMOS Save workflow still needs an independent comparison.
+to the unused tail. The [independent native Save comparison](reference-save.md)
+reproduces the same native program and entire bitmap in FS-UAE. It retains an
+explicit filename-input difference; the unused words are produced outside
+Emu198x and its export path. A narrow checker correction is proposed.
 
 ## Scope
 

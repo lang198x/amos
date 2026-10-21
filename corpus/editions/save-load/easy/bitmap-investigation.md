@@ -2,7 +2,9 @@
 
 The saved Easy AMOS image has a consistent allocation map for all real disk
 blocks. Format198x rejects nonzero bits beyond that map. The origin and required
-contents of those unused bytes remain unresolved; no disk or checker was fixed.
+contents of those unused bytes are examined further in the
+[independent native Save comparison](reference-save.md); no disk or checker
+was fixed in this investigation.
 This is evidence for [issue #6](https://github.com/lang198x/amos/issues/6).
 
 The machine-readable results are in [bitmap-investigation.json](bitmap-investigation.json).
@@ -97,10 +99,8 @@ block count and the whole-block checksum. It does not state that the unused
 tail must be zero. This later manual is supporting evidence, rather than proof
 of every Kickstart 1.3 behaviour.
 
-The next discriminating experiment is the original four-line AMOS Save in
-FS-UAE, with an image captured after writable insertion and before Save, then
-after Save. Repeat those observation points in Emu198x if the independent
-result differs. This separates mount handling, the native write and export.
-Until then, neither an Emu198x corruption bug nor a Format198x false positive is
-established. Do not relax the intentional tail rule or repair the source image
-on this evidence alone.
+The [native Save comparison](reference-save.md) supplies the discriminating
+experiment: the work image is unchanged before Save, and FS-UAE produces the
+same complete bitmap afterwards. This establishes native production outside
+Emu198x and supports a narrower checker policy. Its filename-input difference,
+remaining mechanism uncertainty and proposed checks are explicit in that report.
