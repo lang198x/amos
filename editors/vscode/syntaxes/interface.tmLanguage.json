@@ -1,0 +1,135 @@
+{
+  "name": "AMOS Interface",
+  "scopeName": "source.amos-interface",
+  "fileTypes": [],
+  "patterns": [
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#numbers"
+    },
+    {
+      "include": "#parameters"
+    },
+    {
+      "include": "#builtins"
+    },
+    {
+      "include": "#operators"
+    },
+    {
+      "include": "#punctuation"
+    },
+    {
+      "include": "#ignored"
+    },
+    {
+      "include": "#unknown"
+    }
+  ],
+  "repository": {
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.single.amos-interface",
+          "begin": "'",
+          "end": "'|$",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.string.begin.amos-interface"
+            }
+          },
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.definition.string.end.amos-interface"
+            }
+          }
+        },
+        {
+          "name": "string.quoted.double.amos-interface",
+          "begin": "\"",
+          "end": "\"|$",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.string.begin.amos-interface"
+            }
+          },
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.definition.string.end.amos-interface"
+            }
+          }
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.hex.amos-interface",
+          "match": "\\$[0-9A-Fa-f]+"
+        },
+        {
+          "name": "constant.numeric.binary.amos-interface",
+          "match": "%[01]+"
+        },
+        {
+          "name": "constant.numeric.decimal.amos-interface",
+          "match": "[0-9]+"
+        }
+      ]
+    },
+    "parameters": {
+      "name": "variable.parameter.amos-interface",
+      "match": "[a-z]*P[a-z]*[1-9](?![0-9])[a-z]*"
+    },
+    "builtins": {
+      "patterns": [
+        {
+          "name": "support.other.builtin.amos-interface",
+          "match": "[a-z]*(?:S[a-z]*W)[a-z]*"
+        },
+        {
+          "name": "keyword.control.amos-interface",
+          "match": "[a-z]*(?:E[a-z]*X|S[a-z]*V|P[a-z]*R|B[a-z]*A|S[a-z]*I|S[a-z]*A|R[a-z]*U|B[a-z]*U|B[a-z]*Q|B[a-z]*R|B[a-z]*C|K[a-z]*Y|N[a-z]*W|G[a-z]*B|I[a-z]*N|S[a-z]*P|G[a-z]*S|S[a-z]*L|G[a-z]*L|G[a-z]*E|P[a-z]*O|S[a-z]*F|V[a-z]*T|L[a-z]*A|J[a-z]*P|J[a-z]*S|R[a-z]*T|I[a-z]*F|U[a-z]*I|X[a-z]*Y|S[a-z]*Z|C[a-z]*A|E[a-z]*D|D[a-z]*I|H[a-z]*S|V[a-z]*S|A[a-z]*L|I[a-z]*L|Z[a-z]*C|H[a-z]*T|S[a-z]*M|U[a-z]*N|L[a-z]*I|V[a-z]*L|B[a-z]*O|P[a-z]*U)[a-z]*"
+        },
+        {
+          "name": "support.function.amos-interface",
+          "match": "[a-z]*(?:V[a-z]*A|B[a-z]*P|B[a-z]*X|B[a-z]*Y|S[a-z]*X|S[a-z]*Y|S[a-z]*H|X[a-z]*A|Y[a-z]*A|X[a-z]*B|Y[a-z]*B|T[a-z]*W|T[a-z]*H|T[a-z]*L|C[a-z]*X|Z[a-z]*V|A[a-z]*R|A[a-z]*S|Z[a-z]*P|Z[a-z]*N|M[a-z]*E)[a-z]*"
+        },
+        {
+          "name": "keyword.operator.amos-interface",
+          "match": "[a-z]*(?:N[a-z]*E)[a-z]*"
+        }
+      ]
+    },
+    "operators": {
+      "name": "keyword.operator.amos-interface",
+      "match": "[+*/!#=\\\\<>&|\\-]"
+    },
+    "punctuation": {
+      "patterns": [
+        {
+          "name": "punctuation.separator.amos-interface",
+          "match": "[;:,]"
+        },
+        {
+          "name": "punctuation.section.brackets.begin.amos-interface",
+          "match": "\\["
+        },
+        {
+          "name": "punctuation.section.brackets.end.amos-interface",
+          "match": "\\]"
+        }
+      ]
+    },
+    "ignored": {
+      "name": "meta.ignored.amos-interface",
+      "match": "[a-z]+"
+    },
+    "unknown": {
+      "name": "meta.unclassified.amos-interface",
+      "match": "[A-Z][a-z]*(?:[A-Z][a-z]*)?|[^\\s]"
+    }
+  }
+}

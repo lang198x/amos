@@ -102,7 +102,7 @@ Uninventoried sections need explicit review; they are not silently excluded from
 
 | Route | Remaining review |
 | --- | --- |
-| §§9.1–9.4 Interface | Nineteen BASIC forms from §§9.1/9.3/9.4 now have lexical coverage: entry points, zone/value queries, Array, update/freeze/clear and resource controls. The separate [69-form inventory](interface-inventory.md) now maps all index rows and retains lexical/role conflicts. BASIC strings stay opaque; a highlighting mode or injection still needs a design decision. |
+| §§9.1–9.4 Interface | Nineteen BASIC forms from §§9.1/9.3/9.4 now have lexical coverage: entry points, zone/value queries, Array, update/freeze/clear and resource controls. The separate [69-form inventory](interface-inventory.md) now maps all index rows and retains lexical/role conflicts. Standalone opt-in Interface now covers those records with neutral SW and retained disputed spellings. BASIC strings stay opaque; injection needs a separate design. |
 | §§10.3–10.5 device I/O | Printer/general-port, serial and parallel lexical sweeps are complete. The [boundary review](io-extension-boundary.md) records source-resolved spelling/component provenance and remaining semantic/release limits. |
 | §10.6 AREXX | Seven AMOS-facing forms now have lexical coverage. External script payloads remain strings; startup Exec is now covered by §11.4; Ask/Call Editor are covered from their §13.1 definitions. No AREXX language implementation is implied. |
 | §11.3 floating point | [Reconciled](manual-reconciliation.md): existing §5.3 covers Sin/Cos/Sqr and Set Double Precision. No new named definition or extra inventory count; library/number-format facts remain separate. |
@@ -122,9 +122,9 @@ Uninventoried sections need explicit review; they are not silently excluded from
 - **Lexical forms:** full numeric notation, inline/numeric labels and original-editor
   spacing/prefix rules need their own source-backed review. Current highlighting
   accepts selected forms without proving native import acceptance.
-- **Embedded languages:** BASIC strings remain opaque. Menu and standalone AMAL
-  coverage do not supply Interface highlighting, arbitrary compact AMAL acceptance
-  or injection into BASIC strings.
+- **Embedded languages:** BASIC strings remain opaque. Menu, standalone AMAL and
+  standalone Interface coverage do not establish arbitrary compact-program
+  acceptance or injection into BASIC strings.
 - **Versions and extensions:** this Professional manual does not qualify Creator,
   Easy, every Professional release or extensions through their lifetimes. Retain
   separate evidence records and unknowns, including optional 3D profile boundaries.

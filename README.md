@@ -1,7 +1,7 @@
 # AMOS language kit
 
 Parse small AMOS listings, check the supported opening-program surface, and
-highlight AMOS and standalone AMAL source in Shiki and TextMate-based editors.
+highlight AMOS, standalone AMAL and Interface source in Shiki and TextMate-based editors.
 
 This is the first bounded implementation. It builds a typed AST with complete
 source tokens and locations. It does not yet read/write native `.AMOS` files,
@@ -115,8 +115,8 @@ for the proposed next sweeps and unresolved surfaces.
 
 The separate [Interface inventory](docs/interface-inventory.md) maps 69 embedded-language
 forms to their definitions, retaining role collisions and lexical questions.
-It adds no highlighting mode or injection into BASIC strings. H/I’s historical
-reference material is reconciled without adding vocabulary.
+Current source exposes a separate opt-in Interface mode; BASIC strings remain
+opaque. H/I’s historical reference material is reconciled without adding vocabulary.
 
 The [command-index review](docs/command-index-review.md) reconciles all 818 Appendix G
 rows against the existing inventories, retaining conflicts and separate Interface
@@ -184,6 +184,34 @@ Capitalization carries meaning: `Anim`, `Animate` and `Anything` all reduce to
 have one significant capital. The [AMAL scope and limits](specifications/amal/README.md)
 describe register/instruction contexts and the neutral fallback for ambiguous
 compact input. Colour does not establish syntax, label resolution or execution.
+
+## Standalone Interface (unreleased)
+
+Current source provides `@lang198x/amos/interface` and the explicit **AMOS
+Interface** editor mode (`amos-interface`). These are absent from published
+0.2.0. Build from current source to try the mode:
+
+```js
+import { createHighlighter } from 'shiki';
+import amosInterface from '@lang198x/amos/interface';
+
+const highlighter = await createHighlighter({
+  langs: [amosInterface],
+  themes: ['dark-plus'],
+});
+const html = highlighter.codeToHtml("BAse 24,32; PRint 8,12,'Ready',3; EXit;", {
+  lang: 'amos-interface', theme: 'dark-plus',
+});
+highlighter.dispose();
+```
+
+The mode recognises the 68 distinct codes behind 69 manual records, significant
+capitals/lowercase padding, quotes, integer/binary/hex literals, P1–P9, operators
+and punctuation. SW keeps a neutral builtin scope because it has two roles.
+Min/Max and Call remain unresolved spellings; CAll/CA follows its definition.
+No automatic association or BASIC-string injection is added. Colour does not
+validate postfix expressions, terminators, custom names or native execution.
+See the [Interface inventory and limits](docs/interface-inventory.md).
 
 ## Verify packages
 

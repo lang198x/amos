@@ -18,7 +18,7 @@ is a separate file. Descriptive synopses are not treated as definitions.
 | BASIC | 702 | Existing inventory references, including one composite On … Proc context. |
 | AMAL | 33 | 31 explicitly labelled rows plus two generic labels resolved by Autotest definitions. |
 | Embedded Menu | 14 | Existing documentary inventory; BASIC string payloads remain opaque. |
-| Interface | 69 | Now mapped by the separate Interface definition inventory; no lexical mode or BASIC alias is added. |
+| Interface | 69 | Mapped by the separate Interface definition inventory and opt-in lexical mode; the index itself adds no BASIC alias. |
 | Total | 818 | All rows accounted for; counts are index rows, not unique words or a coverage percentage. |
 
 ## Conflicts retained

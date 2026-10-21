@@ -1,7 +1,7 @@
 {
   "name": "@lang198x/amos",
   "version": "0.2.0",
-  "description": "AMOS and standalone AMAL TextMate grammars for Shiki and editors",
+  "description": "AMOS, AMAL and Interface TextMate grammars for Shiki and editors",
   "type": "module",
   "license": "GPL-2.0-or-later",
   "repository": {
@@ -23,7 +23,12 @@
       "types": "./amal.d.ts",
       "import": "./amal.mjs"
     },
-    "./amal.tmLanguage.json": "./syntaxes/amal.tmLanguage.json"
+    "./amal.tmLanguage.json": "./syntaxes/amal.tmLanguage.json",
+    "./interface": {
+      "types": "./interface.d.ts",
+      "import": "./interface.mjs"
+    },
+    "./interface.tmLanguage.json": "./syntaxes/interface.tmLanguage.json"
   },
   "files": [
     "index.mjs",
@@ -31,6 +36,9 @@
     "amal.mjs",
     "amal.d.ts",
     "syntaxes/amal.tmLanguage.json",
+    "interface.mjs",
+    "interface.d.ts",
+    "syntaxes/interface.tmLanguage.json",
     "amos-3d.mjs",
     "amos-3d.d.ts",
     "syntaxes/amos-3d.tmLanguage.json",
@@ -45,7 +53,7 @@
     "docs/verification.md"
   ],
   "scripts": {
-    "test": "node --test tests/package.test.mjs tests/manual-core.test.mjs tests/language-inventories.test.mjs tests/amos-3d-inventory.test.mjs tests/amos-3d-source.test.mjs tests/amos-3d-package.test.mjs tests/amal-package.test.mjs tests/io-source.test.mjs tests/command-index.test.mjs tests/interface-inventory.test.mjs tests/tokenization-guard.test.mjs",
+    "test": "node --test tests/package.test.mjs tests/manual-core.test.mjs tests/language-inventories.test.mjs tests/amos-3d-inventory.test.mjs tests/amos-3d-source.test.mjs tests/amos-3d-package.test.mjs tests/amal-package.test.mjs tests/io-source.test.mjs tests/command-index.test.mjs tests/interface-inventory.test.mjs tests/tokenization-guard.test.mjs tests/interface-package.test.mjs",
     "test:integrations": "node --import ./tests/helpers/install-tokenization-guard.mjs --test --test-concurrency=1 tests/highlighting*.test.mjs",
     "check:editor": "node scripts/sync-editor.mjs --check",
     "prepack": "node scripts/sync-editor.mjs --check"

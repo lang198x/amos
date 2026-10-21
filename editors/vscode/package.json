@@ -1,7 +1,7 @@
 {
   "name": "lang198x-amos",
   "displayName": "AMOS \u2014 Lang198x",
-  "description": "Bounded AMOS and standalone AMAL highlighting; no compiler or language server",
+  "description": "Bounded AMOS, AMAL and Interface highlighting; no compiler or language server",
   "version": "0.2.0",
   "publisher": "lang198x",
   "license": "GPL-2.0-or-later",
@@ -41,6 +41,13 @@
           "AMAL"
         ],
         "configuration": "./amal-language-configuration.json"
+      },
+      {
+        "id": "amos-interface",
+        "aliases": [
+          "AMOS Interface"
+        ],
+        "configuration": "./interface-language-configuration.json"
       }
     ],
     "grammars": [
@@ -58,6 +65,11 @@
         "language": "amal",
         "scopeName": "source.amal",
         "path": "./syntaxes/amal.tmLanguage.json"
+      },
+      {
+        "language": "amos-interface",
+        "scopeName": "source.amos-interface",
+        "path": "./syntaxes/interface.tmLanguage.json"
       }
     ]
   },

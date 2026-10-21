@@ -142,5 +142,8 @@ references to definition-backed records: 15/35/13/6 by chapter, 46 commands,
 retained; SW's function/instruction collision yields 68 distinct codes. AR/AS
 follow their function definitions despite index labels. Operators, lexical
 conventions and contextual limits remain separate. The frozen index audit gains
-a separate mapping overlay, not rewritten baseline rows. No BASIC entry, parser,
-grammar, Interface mode or string injection is added.
+a separate mapping overlay, not rewritten baseline rows. Current source now
+exposes standalone opt-in Interface highlighting, following the definition roles
+with neutral SW, explicit capital pairs and preserved disputed spellings. It adds
+no BASIC vocabulary, parser behavior or string injection; validation and native
+qualification remain separate.

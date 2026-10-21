@@ -46,3 +46,13 @@ no automatic file association or BASIC-string injection. This is unreleased;
 preview 0.2.0 does not include that mode. AMAL has its own parentheses configuration
 and inherits no BASIC comment or quote rules. This is lexical highlighting,
 not a compiler or validation of arbitrary compact AMAL programs.
+
+
+Current source also provides opt-in **AMOS Interface** (`amos-interface`), absent
+from preview 0.2.0. Select it explicitly for standalone text. It highlights the
+manual's 68 distinct codes behind 69 records, with significant capital pairs,
+lowercase padding, quoted strings, integers/binary/hex, P1–P9 and punctuation.
+SW uses a neutral builtin scope; disputed Min/Max/Call spellings remain neutral.
+Its square-bracket configuration inherits no BASIC comments. There is no new
+file association, BASIC-string injection, expression/terminator validation,
+custom-name resolution, resource loading or execution.

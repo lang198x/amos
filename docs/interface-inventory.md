@@ -1,10 +1,10 @@
-# Interface documentary inventory
+# Interface inventory and standalone highlighting
 
 All 69 Interface references from the command index now map to definitions in
 §§9.1–9.4. This is a separate language inventory: 46 commands, 22 functions and
 one structure, using 68 distinct two-letter codes. BASIC remains 728 entries
-across 44 sections. No grammar, parser, editor mode or BASIC-string injection
-is added, and no original execution is qualified.
+across 44 sections. A standalone opt-in lexical mode now consumes these forms;
+BASIC strings remain opaque. No original execution is qualified.
 
 The source is the same hash-pinned 1992 Professional User Guide identified in
 `specifications/interface/source.json`. Four chapter files preserve exact
@@ -28,7 +28,7 @@ also distinct from the Interface source language.
 
 | Evidence | Treatment |
 | --- | --- |
-| SW is a screen-width function at 16080–83 and SetWriting instruction at 16258–60. | Preserve both code/role records. A context-free keyword rule cannot express the distinction reliably. |
+| SW is a screen-width function at 16080–83 and SetWriting instruction at 16258–60. | Preserve both code/role records and use a neutral builtin scope for SW. A context-free keyword rule cannot express the distinction reliably. |
 | The ScreenWidth heading supplies both SW and SH signatures. | Bind SH to its actual shared heading and signature; do not invent a ScreenHeight heading. |
 | AR/AS are instructions in Appendix G (27510/27529), but functions at 17015–17/17032–34. | Follow the definition roles and retain both index conflicts in the separate mapping overlay. |
 | General separators at 15418–20 versus the final BU bracket exception at 15847–49. | Preserve both. No universal rule to append semicolons is implemented. Some signatures omit terminators; their text is retained exactly. |
@@ -48,18 +48,32 @@ operators, bracket routines and the parameter family. Its nine arithmetic labels
 and six conditional symbols are separate from the 69 named forms. They do not
 constitute a lexer specification or compatibility profile.
 
-## Verification and next design decision
+## Standalone lexical mode
+
+Current source exposes the canonical `syntaxes/interface.tmLanguage.json`, npm
+`interface` subpath and explicitly selected `amos-interface` editor mode. No file
+association or BASIC-string injection is added. All 69 records have scope tests
+in dark-plus/light-plus, including lowercase padding and compact capital pairs.
+AR/AS follow their function definitions, while SW is a neutral builtin in either
+role. Unknown capital pairs remain unclassified, including user-defined names.
+Lowercase text is ignored padding; a capital inside a note is still significant.
+
+Single/double quoted strings are opaque and recover at the next line. Decimal
+integers retain all adjacent digits; binary/hex literals, P1–P9, symbolic
+operators and the explicitly printed NEg form receive lexical scopes. Min/Max,
+Neg with one capital and Call remain neutral. Semicolons, colons, commas and
+square brackets are punctuation; recognition does not validate their placement,
+the BU final-bracket exception, postfix stack effects, number ranges, custom
+names, parameter counts or callback/zone contexts. HyperText data stays quoted.
+The independent notebook is illustrative, not a native-qualified program.
+
+## Verification
 
 Run `python3 scripts/check-interface-source.py --source /path/to/the/pinned-extract`.
 The checker verifies the pinned hash, every heading/role/signature/page, all
 source definition blocks and signature lines, and H/I's appendix boundaries.
-Package checks validate unique code/role identities, complete index routing,
-source metadata and preserved conflicts. Neither check executes Interface code.
-
-The next choice is how to expose highlighting. I recommend a standalone opt-in
-mode first, following the existing AMAL separation: it can be tested directly
-without changing BASIC strings, while we investigate SW context and the lexical
-questions above. Automatic string injection would require a separate design for
-host boundaries, incomplete strings, nested payloads and BASIC regressions.
-Remaining documentation-only use is also possible. None of these options has
-been implemented or adopted by this inventory.
+Package checks validate exports, canonical/editor bytes, explicit mode selection,
+inventory identities, complete index routing and preserved conflicts. Integration
+checks exercise the lexical mode through the existing Shiki/HTML consumers;
+see [verification](verification.md) for actual runs. No check executes Interface.
+Published 0.2.0 and private Marketplace availability remain unchanged.

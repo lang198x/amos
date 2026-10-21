@@ -1141,3 +1141,38 @@ recorded failures remain valid observations under earlier host load; their
 assertions pass unchanged in these runs. No host-process changes were made.
 All 19 npm source files and nine VSIX source assets match source bytes. No grammar,
 registration, parser, version, publication or private-availability change follows.
+
+
+## Standalone opt-in Interface mode
+
+Current source adds a canonical Interface grammar, `interface` npm subpath and
+explicit `amos-interface` editor mode without file associations or BASIC-string
+injection. All 69 documentary records (68 distinct codes) retain scopes in both
+themes, including padded/compact capitals. SW is a neutral builtin in both roles;
+AR/AS follow their function definitions. Quoted text stays opaque, with line
+recovery; integers retain adjacent digits as one fragment. Binary/hex, P1–P9,
+symbolic operators/NEg and bracket/separator punctuation have separate checks.
+Min/Max/Call and unknown custom pairs stay neutral. Invalid parameter lookalikes
+receive no valid parameter scope. The illustrative notebook is not native evidence.
+
+Removing PR's canonical recognition makes the inventory integration fail with
+`PR 8,12,'Ready',3;: "PR" lacks keyword.control.amos-interface`. Adding a newline
+to the editor copy makes sync fail with `differs from canonical`. Both are
+restored. Package checks initially rejected the fourth mode against the old
+three-ID expectation; the exact list now includes amos-interface and all 33
+checks pass. Editor sync, primary replay (69 records/64 role blocks/70 signature
+lines), frozen 818-row index replay and Ruff lint/format pass. All six existing
+BASIC/3D/AMAL canonical/editor files match their pre-change bytes.
+
+Both guarded full consumer suites pass 255/255 with Shiki 4.4.3 and existing API
+1.3.0/local 2.0.0, serially. Strengthening the adjacent-digit assertion afterward
+passes all four affected lexical checks against each consumer. All 22 npm source
+files and eleven VSIX source assets match source bytes. Extracted npm exports
+render all four modes in both themes with exact source, expected builtin scopes
+and styled HTML through each consumer; extracted VSIX grammars match those npm
+bytes. This is archive/grammar-engine evidence, not a visual editor review.
+
+No postfix evaluation, terminator/argument validation, custom-name resolution,
+zone-context qualification, HyperText injection, native operation or release
+qualification follows. Parser, versions, published 0.2.0 and private Marketplace
+availability remain unchanged. No new dependency or installed consumer edit.

@@ -574,8 +574,8 @@ separators, quoted payloads and embedded commands. The mixed notebook checks
 Trap, nested queries and existing Request/error forms without opening a native
 UI. Channel validity, parameter meanings, event/status/error results and timing
 remain unqualified. Zone/value queries, Array and update/freeze/clear are covered
-below; resource controls have separate coverage below. An embedded Interface lexical
-mode remains later work.
+below; resource controls have separate coverage below. Standalone Interface
+highlighting is described below; injection into BASIC strings remains separate.
 These additions are unreleased.
 
 
@@ -723,7 +723,7 @@ No new aliases or grammar behavior follows; BASIC remains 728 entries across
 This bounded audit establishes neither whole-language nor release readiness.
 
 
-## Reference appendices and Interface documentary inventory
+## Reference appendices and standalone Interface
 
 H/I's complete library/distribution/support material introduces no new language
 forms. Historical service/licence wording and product names remain context.
@@ -732,6 +732,16 @@ one structure) and maps every index row. Its 68 distinct codes preserve SW's
 two roles and the AR/AS index conflicts. All definition/signature bindings and
 lexical-context evidence are retained separately from BASIC and operators.
 
-BASIC stays 728 entries across 44 sections; grammar/parser and published assets
-are unchanged. No Interface language registration, editor mode, string injection,
-resource access, native execution or release qualification is introduced.
+BASIC stays 728 entries across 44 sections. Current source adds a standalone
+`amos-interface` registration through the `interface` npm subpath and an explicitly
+selected editor mode, with exact canonical/editor bytes. Both themes recognise
+every inventory record, significant capitals/lowercase padding, opaque quoted
+strings, integer/binary/hex literals, P1–P9, symbolic operators/NEg and punctuation.
+SW remains a neutral builtin; AR/AS follow function definitions. Min/Max and Call
+are unresolved, unknown pairs stay neutral, and adjacent digits are not split.
+
+This is lexical coverage: no postfix/argument/terminator validation, custom-name
+resolution, ZV context qualification or HyperText injection. BASIC strings remain
+opaque. Existing BASIC/3D/AMAL grammars, parser and published assets are unchanged.
+No resource access, native execution or release qualification follows. Marketplace
+availability stays private.

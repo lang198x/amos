@@ -1,0 +1,16 @@
+lowercase notes stay ignored
+BAse 24,32; SIze 144,64; SAve 2;
+INk 3,0,1; GraphicBox 0,0,144,64;
+SetVar 2,'Ready'; PRint 8,12,2 VAriable,3;
+PRint 8,24,'SW; [IF] {zone} PR',3;
+SV 3,$2A; SV 4,%101010; SV 5,12 3 +;
+SW 1; PR 8,36,SW,3;
+IF 0 VA 1 =;[PR 8,48,'Go',3;]
+BU 2,8,8,64,16,0,0,1;[PR 2,2,'Go',3;][]
+UI ZZ,1;[PR 8,8,P1,3;]
+ZZ 42;
+LA 2; JP 2;
+PR 8,12,0 VA AS,3;
+PR 8,24,0 VA,1 AR,3;
+NEg; Min; Max; Call; CAll 0 VA;
+EXit;

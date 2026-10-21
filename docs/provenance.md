@@ -437,3 +437,13 @@ the exact headings/pages/signatures and separate lexical ranges. A definition-
 led overlay maps the 69 index rows and retains AR/AS role conflicts; SW has
 function and instruction definitions, and SH shares the ScreenWidth heading.
 Examples remain illustrative fragments, not original-runtime evidence.
+
+
+Standalone Interface highlighting follows those same §§9.1–9.4 records and
+lexical source ranges. Capital pairs/lowercase padding and command separators
+bind to 15414–20; quotes/binary/hex to 15484–91; symbolic arithmetic and explicit
+NEg to 15574–83; conditional symbols to 16378–16407; P1–P9 to 16426–29. These
+justify lexical scopes, not postfix evaluation or validation. SW stays neutral
+between its two roles; AR/AS follow definitions. Min/Max/Call and collapsed numeric
+spacing retain their documented uncertainty. No source/runtime/edition evidence
+is inferred from the independent notebook or editor configuration.

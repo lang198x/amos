@@ -5,6 +5,7 @@ const files = [
   ['syntaxes/amos.tmLanguage.json', 'editors/vscode/syntaxes/amos.tmLanguage.json'],
   ['syntaxes/amos-3d.tmLanguage.json', 'editors/vscode/syntaxes/amos-3d.tmLanguage.json'],
   ['syntaxes/amal.tmLanguage.json', 'editors/vscode/syntaxes/amal.tmLanguage.json'],
+  ['syntaxes/interface.tmLanguage.json', 'editors/vscode/syntaxes/interface.tmLanguage.json'],
   ['LICENSE', 'editors/vscode/LICENSE'],
 ];
 for (const [source, target] of files) {

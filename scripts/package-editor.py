@@ -11,9 +11,11 @@ FILES = [
     "package.json",
     "language-configuration.json",
     "amal-language-configuration.json",
+    "interface-language-configuration.json",
     "syntaxes/amos.tmLanguage.json",
     "syntaxes/amos-3d.tmLanguage.json",
     "syntaxes/amal.tmLanguage.json",
+    "syntaxes/interface.tmLanguage.json",
     "README.md",
     "LICENSE",
     "icon.png",
@@ -34,6 +36,10 @@ def main() -> None:
         (
             ROOT / "syntaxes/amal.tmLanguage.json",
             EDITOR / "syntaxes/amal.tmLanguage.json",
+        ),
+        (
+            ROOT / "syntaxes/interface.tmLanguage.json",
+            EDITOR / "syntaxes/interface.tmLanguage.json",
         ),
         (ROOT / "LICENSE", EDITOR / "LICENSE"),
     ]:
