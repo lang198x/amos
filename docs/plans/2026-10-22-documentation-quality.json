@@ -4,16 +4,16 @@
   "documents": [
     {
       "file": "README.md",
-      "flesch_kincaid": 9.61,
-      "words": 1246,
-      "sentences": 110,
+      "flesch_kincaid": 9.57,
+      "words": 1260,
+      "sentences": 111,
       "within_grade_10": true
     },
     {
       "file": "docs/roadmap.md",
-      "flesch_kincaid": 8.17,
-      "words": 147,
-      "sentences": 14,
+      "flesch_kincaid": 8.86,
+      "words": 174,
+      "sentences": 16,
       "within_grade_10": true
     },
     {
