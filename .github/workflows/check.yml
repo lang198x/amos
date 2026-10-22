@@ -25,3 +25,19 @@ jobs:
       - run: npm run check:editor
       - run: python3 scripts/package-editor.py --pre-release --public
       - run: npm pack --pack-destination dist
+  fuzz:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - name: Fuzz tools
+        run: |
+          rustup toolchain install nightly-2026-09-24 --profile minimal
+          cargo +stable install cargo-fuzz --version 0.13.2 --locked
+      - name: Check fuzz lockfile
+        run: cargo +nightly-2026-09-24 metadata --manifest-path fuzz/Cargo.toml --locked --format-version 1 > /dev/null
+      - name: Fuzz source contract for one minute
+        run: |
+          mkdir -p fuzz/corpus/source_contract
+          cargo +nightly-2026-09-24 fuzz run source_contract fuzz/corpus/source_contract fuzz/seeds/source_contract -- -max_total_time=60 -max_len=4096 -timeout=2 -rss_limit_mb=1024 -seed=1980
+          git diff --exit-code -- fuzz/Cargo.lock

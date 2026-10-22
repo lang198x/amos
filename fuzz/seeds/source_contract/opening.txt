@@ -1,0 +1,4 @@
+Cls 4
+Print "Hello: café"
+Wait Key
+End

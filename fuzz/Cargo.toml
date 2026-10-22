@@ -1,0 +1,22 @@
+[package]
+name = "lang198x-amos-fuzz"
+version = "0.0.0"
+publish = false
+edition = "2024"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4.13"
+lang198x-amos = { path = ".." }
+
+[[bin]]
+name = "source_contract"
+path = "fuzz_targets/source_contract.rs"
+test = false
+doc = false
+bench = false
+
+[workspace]
+members = ["."]

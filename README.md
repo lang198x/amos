@@ -226,6 +226,12 @@ No automatic association or BASIC-string injection is added. Colour does not
 validate postfix expressions, terminators, custom names or native execution.
 See the [Interface inventory and limits](docs/interface-inventory.md).
 
+## Verify source analysis
+
+See the [testing guide](docs/testing.md) for fixture checks, generated property
+tests and a bounded fuzz run. These checks test the host parser; native trials
+remain separate evidence.
+
 ## Verify packages
 
 Node 24 or later is required for package checks:
