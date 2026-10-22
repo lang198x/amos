@@ -2,8 +2,8 @@
 
 This first comparison records seven forms in each of three primary manuals:
 Creator (1990), Easy AMOS (1992) and Professional (1992). It establishes
-documentary overlap and one wording difference; it does not qualify software
-revisions, execute programs or introduce edition-specific grammar profiles.
+documentary overlap and one wording difference. Separate native trials below
+cover exact revisions and programs. Neither layer enables new CLI profiles.
 
 | Form | Creator | Easy | Professional |
 | --- | --- | --- | --- |
@@ -15,60 +15,58 @@ revisions, execute programs or introduce edition-specific grammar profiles.
 | Inline If | One line; explicit Goto for label | If Then and glossary Else | One line; explicit Goto for label |
 | Structured If | If / Else / End If; nested tests | Paired If / End If without Then | Paired If / End If without Then |
 
-Each cell is bounded by the explicit finding and extract line range in
+Each cell covers only the finding and source lines in
 [creator.json](creator.json), [easy.json](easy.json) or
-[professional.json](professional.json). A cell does not promise every overload.
-The normalized forms are newly written summaries, not verbatim tokenizer input.
-The three full extract hashes and bibliographic cautions are in
-[sources.json](sources.json). The preservation project's
-[book catalogue](https://amigasourcepres.gitlab.io/page/books/amos/) independently
-identifies the manuals; it does not prove our Creator scan matches its copy.
+[professional.json](professional.json). It does not promise every form of a command.
+The form names are our summaries, not source text to pass to a parser.
+[sources.json](sources.json) records the hashes of all three source extracts
+and known limits of each book. The
+[book catalogue](https://amigasourcepres.gitlab.io/page/books/amos/) lists the
+manuals. It does not prove that our Creator scan is the same copy.
 
-## Differences to investigate
+## Cls: manuals and native trials
 
 Creator's Cls definition (lines 7046–7061) says colour zero. Easy's glossary
 (lines 13393–13399) and Professional's definition (7878–7897) say current paper.
-This is a manual-wording difference, not an established runtime difference. A
-bounded trial should select a non-zero paper colour, clear without an argument,
-and inspect the resulting colour under separately identified installations.
-A [four-case native trial](../../corpus/editions/cls/README.md) now confirms
-paper-colour behaviour in the previously identified Professional 2.00
-installation, with two non-zero paper values and explicit-zero controls.
-The independently booted [Creator 1.1 trial](../../corpus/editions/cls/creator/README.md)
-also follows paper colour in those same four controls, contradicting the Creator
-manual wording for this tested revision. The independently booted
-[Easy 1.01 installation](../../corpus/editions/cls/easy/README.md) also follows
-paper colour in these four probes, agreeing with its glossary. Its native creator
-produced the Programs disk from the bound Master Disc 1; the executable's embedded
-version marker identifies the tested editor. Other revisions and the origin of
-the Creator wording difference are still open.
-Do not change compiler/parser semantics from this observation alone.
 
-Professional's editor section explicitly describes Check 1.3 (lines 2084–2092):
-it searches for commands unavailable in AMOS 1.3 and banks above index 16, then
-chooses a compatible file header. This establishes an intended compatibility
-boundary, not the complete changed-command set or successful native import.
-The opening-program agreement cannot qualify all Creator programs for Pro.
+Four controlled trials each in [Professional 2.00](../../corpus/editions/cls/README.md),
+[Creator 1.1](../../corpus/editions/cls/creator/README.md) and
+[Easy 1.01](../../corpus/editions/cls/easy/README.md) give the same result.
+Bare Cls follows paper colour at two non-zero paper values. Explicit Cls 0
+clears to black. The Creator 1.1 result contradicts its manual's wording.
+We have not established why that wording differs or how other revisions behave.
+These trials do not justify wider parser or compiler rules.
 
-## Revisions and extensions remain separate
+Easy's original installer produced its Programs, Examples and Tutorial disks.
+A separate [Save/Load trial](../../corpus/editions/save-load/easy/README.md)
+saved one 56-byte program, then loaded and ran it in a fresh editor.
+An [independent FS-UAE Save](../../corpus/editions/save-load/easy/reference-save.md)
+produced the same native program and bitmap bytes. This exposed a disk-checker
+policy bug, fixed in Format198x 0.3.4; [delivery](../../docs/roadmap.md) tracks
+its consumers. It does not qualify all native files or provide a Lang198x codec.
 
-A manual copyright year does not identify the software build tested. All three
-records therefore leave software_revision unqualified. The existing observed
-Professional 2.00 runtime profile belongs to its own source/configuration
-evidence, not to the entire Professional family. Creator 1.1 now has a separate, independently booted four-case Cls observation.
-Easy 1.01 has its own independently booted four-case observation as well.
-These observations do not qualify the seven documentary forms as a whole.
+The Professional editor's Check 1.3 command (lines 2084–2092) looks for commands
+absent from AMOS 1.3 and banks above index 16. It then chooses a file header.
+This describes an intended boundary between versions. It does not list all
+changed commands or prove that we can import a native file. Agreement on the
+opening forms cannot qualify every Creator program for Professional.
 
-The Pro v2.0 Interface Summary Rev 3, Creator/Pro compiler manuals and release
-notes need separate revision-scoped comparison. AMOS 3D retains its own
-[59-record inventory](../extensions/amos-3d/README.md); TOME, requesters and other
-extensions must retain component/version identities rather than being merged
-into an assumed stock dialect. Missing evidence means unknown, not unsupported.
+## Other versions and extensions
 
-The Creator extract contains OCR/layout artefacts, and the retypeset books have
-known numeric/identifier defects. Single quotes, spacing, numeric ranges and
-exact editor key behaviour need tokenizer/runtime evidence before analysis rules
-are adopted. Do not promote the manuals' suspect examples into parser tests.
+A book's year does not identify a software build. The three manual records
+therefore leave software_revision unknown. The native trials each bind their
+own software and setup. None covers all seven forms in the table.
+
+We still need to compare the Pro v2.0 Interface Summary Rev 3, compiler manuals
+and release notes. AMOS 3D has its own
+[59-record inventory](../extensions/amos-3d/README.md).
+Keep TOME, requesters and other extensions tied to their own versions.
+A gap in our evidence means unknown, not unsupported.
+
+The Creator scan has text and layout errors. The retypeset books also have
+known errors in numbers and names. Check quotes, spacing, number ranges and
+editor keys in the original software before adopting new analysis rules.
+Do not turn suspect book examples into parser tests.
 
 ## Replay the source bindings
 
@@ -78,7 +76,7 @@ With the three exact extracts available, run:
 python3 scripts/check-edition-sources.py --source-directory /path/to/manual-texts
 ```
 
-The checker requires all three source hashes and all 21 nonempty fact ranges;
-changed or absent text, duplicate/missing forms and anchor mismatches fail. It
-checks citation integrity, not the truth of a paraphrase or runtime behaviour.
-These research records are not added to the distributable npm/VSIX assets.
+The checker requires all three source hashes and all 21 fact ranges. It fails
+if text changes or is absent, a form is repeated or missing, or an anchor does
+not match. This checks the source links. It cannot prove that a summary is true
+or that a command runs. The research records do not ship in npm or the VSIX.

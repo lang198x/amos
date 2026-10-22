@@ -14,7 +14,7 @@ The table describes current source.
 | Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
 | Parser lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
 | Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 19 BASIC dialogue/value/control/resource forms from 9.1/9.3/9.4, 10.1–10.6, 11.1–11.2, 11.4, 12.1–12.2 and five §13.1 accessory/configuration forms, Appendix B’s Kill Editor and twenty-eight Appendix A memory/block/address/conversion/bit/call/register forms and eight Appendix F Copper forms and two Appendix C display-mode queries, plus library/equate/structure/device/requester forms from 11.5 and Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
-| Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy/other Pro/derivatives are unknown. |
+| Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy CLI profiles are not enabled. Separate native Cls trials cover Creator 1.1 and Easy 1.01; other forms and revisions remain unknown. |
 | Native files, LSP, compilation | Not implemented. A native .AMOS file must be decoded separately. |
 
 `SupportedStructure` means the parser understands the listing's forms. It does

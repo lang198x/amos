@@ -1,19 +1,27 @@
 # AMOS preview: next milestones
 
-The public releases are npm 0.3.0 and editor 0.3.1. The adopted sequence is
-consumer adoption, edition qualification, then a useful parser slice. Native
-import follows the proven plain-text workflow. Blitz follows AMOS; it is not
-part of the current work. The GitHub tracker is
-[roadmap #5](https://github.com/lang198x/amos/issues/5).
+The public previews are npm 0.3.0 and editor 0.3.1. Code198x now uses the npm
+package in its lesson listings. Next, we will extend the edition evidence and
+agree a useful parser slice. Native import follows that plain-text workflow.
+Blitz follows AMOS. Track the work in [roadmap #5](https://github.com/lang198x/amos/issues/5).
 
 | Milestone | Current evidence and next boundary | Issue |
 | --- | --- | --- |
-| Published consumer adoption | Verified adoption in [PR #905](https://github.com/code198x/website/pull/905), replacing the unmergeable history in #902. The original full browser CI passed; the clean replacement is awaiting its checks and merge. | [website #900](https://github.com/code198x/website/issues/900) |
-| Editions and releases | First 21 documentary form records across three manuals; exact software revisions and runtime differences remain unqualified. | [#1](https://github.com/lang198x/amos/issues/1) |
-| Bare Cls disagreement | Creator says zero; Easy/Professional say paper colour. Four controlled trials each in Pro 2.00 and Creator 1.1 confirm paper-colour behaviour; Easy work-disk creation is blocked at [native input/selection](https://github.com/emu198x/emu198x/issues/1960); other revisions remain open. | [#2](https://github.com/lang198x/amos/issues/2) |
-| Useful parser slice | Agree one small real fragment, expression operators, conditional form, typed AST and diagnostic expectations before code. | [#3](https://github.com/lang198x/amos/issues/3) |
-| Native AMOS import | Specify a Format198x codec / Lang198x analysis boundary, unknown-token handling and lawful fixtures before implementation. | [#4](https://github.com/lang198x/amos/issues/4) |
+| Published consumer adoption | Complete: [website PR #905](https://github.com/code198x/website/pull/905) is merged. Both loaders use the pinned npm 0.3.0 grammar. | [website #900](https://github.com/code198x/website/issues/900), closed |
+| Editions and releases | Seven forms are compared across three manuals. Separate native trials cover four Cls cases each in Creator 1.1, Easy 1.01 and Professional 2.00. Other forms and revisions remain open. | [#1](https://github.com/lang198x/amos/issues/1) |
+| Bare Cls disagreement | Resolved for the three tested revisions: bare Cls follows paper colour; explicit Cls 0 clears to black. Creator 1.1 contradicts its manual. The origin of that wording is unknown. | [#2](https://github.com/lang198x/amos/issues/2), closed |
+| Native Easy Save/Load | One 56-byte program saved, loaded and ran in a fresh Easy editor. FS-UAE independently produced the same program and bitmap bytes. Format198x 0.3.4 fixes the checker's bitmap policy; Build198x adoption is in [PR #76](https://github.com/build198x/build198x/pull/76). | [#6](https://github.com/lang198x/amos/issues/6) |
+| Useful parser slice | Agree a small Bank or Risk fragment, its expression operators, one conditional form, AST nodes and errors before code. First strengthen tests of the current parser. | [#3](https://github.com/lang198x/amos/issues/3) |
+| Native AMOS import | Define the Format198x codec and Lang198x analysis boundary, unknown-token handling and lawful fixtures before code. | [#4](https://github.com/lang198x/amos/issues/4) |
 
-See the [edition comparison](../specifications/editions/README.md) for cited
-findings and unknowns. Completing a row does not authorize a stable release,
-whole-language compatibility claim, new dependency or broader parser design.
+The [edition comparison](../specifications/editions/README.md) links the sources
+and native trials. These trials cover their exact programs and installations.
+They do not qualify a whole edition or enable Creator/Easy CLI profiles.
+
+The parser still handles only the four [opening forms](coverage.md). Broad
+highlighting does not prove that a program parses or runs. Property tests and
+fuzzing will test source preservation, spans, recovery and repeatable results.
+They cannot replace trials in the original software.
+
+Completing a milestone does not approve a stable release, broader parser design
+or new dependency. Native import, an LSP and compilation remain separate work.

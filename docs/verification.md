@@ -1,4 +1,17 @@
-# First kit verification
+# Verification evidence
+
+Current public previews are npm 0.3.0 and editor 0.3.1. Code198x has adopted
+the pinned npm package in both lesson loaders. See the [roadmap](roadmap.md)
+for delivery status and [coverage](coverage.md) for the parser and highlighting
+limits. The [edition comparison](../specifications/editions/README.md) links
+the exact native trials, including Easy Save/Load.
+
+The records below describe checks at each named milestone. Their package tags,
+private-gallery states and “unreleased” headings apply to those earlier checks.
+They do not describe current availability. A native trial proves only its exact
+program, software revision and machine setup.
+
+## Opening-kit checks: 20 October 2026
 
 Verified on 20 October 2026 with Rust 1.98.0 and Node 24.22.0. This records
 implemented scope and actual observations, not a whole-language conformance claim.
