@@ -52,3 +52,19 @@ A short run is a smoke test. It does not prove that all inputs work, that the
 whole grammar is covered, or that original AMOS accepts a program. Native
 trials and parser tests answer different questions. See [coverage](coverage.md)
 and the [edition evidence](../specifications/editions/README.md) for those limits.
+
+## Check the coverage guide
+
+With the existing Vale tool installed, run:
+
+```sh
+python3 scripts/check-coverage-docs.py
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -p test_coverage_docs.py
+```
+
+The guide must have measured prose and a Flesch–Kincaid grade at or below 10.
+The checker also requires local links and all 44 retained section addresses.
+The detailed vocabulary reference reports its score but has no grade gate;
+exact command names and source conflicts need manual review. Review code and
+tables too, since Vale leaves them out of prose metrics. A score cannot prove
+that a reader understands the page.

@@ -44,6 +44,7 @@
     "syntaxes/amos-3d.tmLanguage.json",
     "syntaxes/amos.tmLanguage.json",
     "docs/coverage.md",
+    "docs/highlighting-coverage.md",
     "docs/provenance.md",
     "docs/manual-reconciliation.md",
     "docs/error-catalogue-review.md",

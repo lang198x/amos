@@ -7,7 +7,7 @@ description = "Source-preserving AMOS parser and bounded checker"
 license = "GPL-2.0-or-later"
 repository = "https://github.com/lang198x/amos"
 readme = "README.md"
-include = ["src/**", "tests/**", "corpus/**/*.txt", "corpus/**/*.json", "corpus/**/README.md", "corpus/LICENSE", "Cargo.toml", "Cargo.lock", "README.md", "LICENSE", "docs/coverage.md", "docs/provenance.md", "docs/verification.md"]
+include = ["src/**", "tests/**", "corpus/**/*.txt", "corpus/**/*.json", "corpus/**/README.md", "corpus/LICENSE", "Cargo.toml", "Cargo.lock", "README.md", "LICENSE", "docs/coverage.md", "docs/highlighting-coverage.md", "docs/provenance.md", "docs/verification.md"]
 
 [lints.rust]
 unsafe_code = "forbid"
