@@ -51,6 +51,15 @@ This describes an intended boundary between versions. It does not list all
 changed commands or prove that we can import a native file. Agreement on the
 opening forms cannot qualify every Creator program for Professional.
 
+## Perfect 10 block
+
+The [bounded block trials](../../corpus/editions/perfect-ten/README.md) run the
+exact maintained fragment in Creator 1.1, Easy 1.01 and Professional 2.00. All
+three produce the expected values for equal and unequal totals. All reject a
+missing assignment value and a missing End If. Their error wording differs.
+The trials bind input, inspected captures and each environment. They do not
+qualify other forms, import native files or add CLI profiles.
+
 ## Other versions and extensions
 
 A book's year does not identify a software build. The three manual records

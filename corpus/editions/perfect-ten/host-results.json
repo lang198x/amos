@@ -1,0 +1,41 @@
+{
+  "parser_commit": "7938af84a7e8bf6d3ecfd850b8d66b3077ab68bd",
+  "scope": "Host source structure only; harness Print expressions are outside supported parser subset.",
+  "results": [
+    {
+      "source": "corpus/parser/perfect-ten.amos.txt",
+      "source_sha256": "e67749641446b9afb5da3f5d59b7cd429e74b092fea292f7650e5f858bec17d6",
+      "exit": 0,
+      "stdout": "supported source structure: 1 statements; profile amos-pro-2.00-observed; native compatibility not established by this check\n",
+      "stderr": ""
+    },
+    {
+      "source": "corpus/editions/perfect-ten/sources/equal.amos.txt",
+      "source_sha256": "73a77176fe2f4c393bd14c2e34b424cf97aa0ffd17fc127a5c28258fe1a107ea",
+      "exit": 2,
+      "stdout": "",
+      "stderr": "corpus/editions/perfect-ten/sources/equal.amos.txt:13:1: unsupported: form is outside the supported source surface\ncorpus/editions/perfect-ten/sources/equal.amos.txt:14:1: unsupported: form is outside the supported source surface\ncorpus/editions/perfect-ten/sources/equal.amos.txt:15:1: unsupported: form is outside the supported source surface\n"
+    },
+    {
+      "source": "corpus/editions/perfect-ten/sources/missing-end-if.amos.txt",
+      "source_sha256": "e5a642fe41bbfa6170b86065b4eaa137686be187e2fba684598c69c8b8f63e03",
+      "exit": 1,
+      "stdout": "",
+      "stderr": "corpus/editions/perfect-ten/sources/missing-end-if.amos.txt:1:1: invalid: missing End If; later statements retained for recovery\n"
+    },
+    {
+      "source": "corpus/editions/perfect-ten/sources/missing-value.amos.txt",
+      "source_sha256": "2d82eef97019434c4f29dadc9bec9adcce07ae201eab1142e979c34109230e76",
+      "exit": 1,
+      "stdout": "",
+      "stderr": "corpus/editions/perfect-ten/sources/missing-value.amos.txt:1:10: invalid: missing assignment value\n"
+    },
+    {
+      "source": "corpus/editions/perfect-ten/sources/unequal.amos.txt",
+      "source_sha256": "5b0851e0532ca863f183889c8e8e9c2c744169c98cda6bbb82532e8d71b6b047",
+      "exit": 2,
+      "stdout": "",
+      "stderr": "corpus/editions/perfect-ten/sources/unequal.amos.txt:13:1: unsupported: form is outside the supported source surface\ncorpus/editions/perfect-ten/sources/unequal.amos.txt:14:1: unsupported: form is outside the supported source surface\ncorpus/editions/perfect-ten/sources/unequal.amos.txt:15:1: unsupported: form is outside the supported source surface\n"
+    }
+  ]
+}

@@ -62,3 +62,15 @@ All 39 npm tests and editor sync pass. npm's dry-run file inventory and Cargo's
 package list both include the two coverage pages. The default npm cache was
 unwritable; the check used a task-owned cache without changing global settings.
 This changes documentation and its packaging, not grammar bytes or parser scope.
+
+## Native trial result
+
+All 12 edition/case observations are retained under `corpus/editions/perfect-ten/`.
+Both branches produce their expected values in Creator 1.1, Easy 1.01 and Pro 2.00.
+Both malformed controls are rejected in each. Creator/Easy's missing-End-If
+message says ELSE without ENDIF; Pro says If without Endif. Pro's missing-value
+error is visible at 0/10/30 added frames and absent at 100. The replay harness
+now records both immediate and settled frames. It checkpoints input in bounded
+chunks; the initial large calls hit the process timeout. A Creator US-keymap
+input failure was excluded after inspecting its missing quotes. No CLI profiles,
+parser forms, native codec or dependency were added.

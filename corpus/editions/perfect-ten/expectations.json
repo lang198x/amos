@@ -1,0 +1,18 @@
+{
+  "equal": {
+    "award": 10,
+    "handfin": -1,
+    "message": "Perfect 10. Secured automatically."
+  },
+  "unequal": {
+    "award": 99,
+    "handfin": 0,
+    "message": "unchanged"
+  },
+  "missing-value": {
+    "expectation": "native check rejects; exact message not presumed"
+  },
+  "missing-end-if": {
+    "expectation": "native check rejects; exact message not presumed"
+  }
+}

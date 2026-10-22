@@ -20,7 +20,7 @@ jobs:
       - run: cargo +stable fmt --check
       - run: cargo +stable test --locked
       - run: cargo +stable clippy --all-targets --locked -- -D warnings
-      - run: python3 -m unittest discover -s tests -p test_preview_release.py
+      - run: python3 -m unittest discover -s tests -p 'test_*.py'
       - run: npm test
       - run: npm run check:editor
       - run: python3 scripts/package-editor.py --pre-release --public

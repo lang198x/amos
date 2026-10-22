@@ -54,7 +54,7 @@ place. An unsupported form is not, on that basis alone, invalid AMOS.
 
 A profile must be explicit. The only enabled CLI profile is
 `amos-pro-2.00-observed`. Unknown releases do not default to it. Separate native
-Cls trials cover Creator 1.1 and Easy 1.01. They do not enable CLI profiles or
+trials cover Cls and the Perfect 10 block in Creator 1.1, Easy 1.01 and Pro 2.00. They do not enable CLI profiles or
 qualify other forms, revisions or extensions. See the
 [edition evidence](../specifications/editions/README.md).
 

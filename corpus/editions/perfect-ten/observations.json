@@ -1,0 +1,364 @@
+{
+  "date": "2026-10-22",
+  "scope": "Typed-source trials of these four authored probes only. No native file import, complete edition qualification or CLI profile change. Positive runs stop at Wait Key; End is not reached.",
+  "emulator": {
+    "release": "0.43.0",
+    "source": "a79a843334dcfe3d62413e73eb6c8c710824aeb7",
+    "sha256": "547b79c075c189f5f0f2e1f38c19f267c4aefe7d8486e019da6aaf70d47396f4"
+  },
+  "environments": {
+    "creator": {
+      "identity_record": "corpus/opening/profiles/creator-1.1.json",
+      "identity_record_sha256": "0e6664ad00f10c3782d7dd75d7f3a98fe84a5872e9d0a1d3eebf17427958c1d1",
+      "machine": "PAL A500 with A501; 512 KiB chip RAM and 512 KiB slow RAM",
+      "kickstart_sha256": "ee05862d8102a08436ac4056da7d549db31625c7d47b24dfb7b3c9a5c113ca53",
+      "runtime_media_sha256": "c9045afa08d662c9a2aebd648f613658d55572ced761af1a08b0fc7c8bff2247",
+      "blank_editor_snapshot_sha256": "85d5a621d87199efbc00db1f82925d350fff657c3b99dc56b26acee5196feafe",
+      "quote_input": "Shift+2",
+      "media_unchanged": true
+    },
+    "easy": {
+      "identity_record": "corpus/opening/profiles/easy-1.01.json",
+      "identity_record_sha256": "0334d62118b6ec14885514202f20524c8433daa2063816f3eeaa9a464967ed14",
+      "machine": "PAL A500 with A501; 512 KiB chip and 512 KiB slow RAM",
+      "kickstart_sha256": "ee05862d8102a08436ac4056da7d549db31625c7d47b24dfb7b3c9a5c113ca53",
+      "runtime_media_sha256": "b940e6432f94bddf0ecaf3d271e2b237a3bda0e33d136bf61ba0be4138a5b925",
+      "blank_editor_snapshot_sha256": "40bfa3b057e30afec618c9bee268cd411842e02d4b16434b31cc3c2ba4eb8f75",
+      "quote_input": "Shift+2",
+      "media_unchanged": true
+    },
+    "pro": {
+      "identity_record": "corpus/opening/profiles/pro-2.00.json",
+      "identity_record_sha256": "7e4fa7fc4afe76cfe77e91adc23b82f1c0c953fe566fa943a08c5d48f0ae0eb4",
+      "machine": "PAL A1200, 2 MiB chip RAM, no fast RAM",
+      "kickstart_sha256": "6d43840d4099a74170ea0f0425b6257c3891ebcaa39c4d1840075a9ab22b5707",
+      "runtime_media_sha256": "7ffbfb5ed5c28869e323a2bff9a591ce519727be2e0dd66972a86ebfe7bcbfdc",
+      "blank_editor_snapshot_sha256": "a69ac697b8c447f1e395337c10a3ac32f979b9ee32d538b5faced96a3bfa8e96",
+      "quote_input": "US Shift+apostrophe",
+      "media_unchanged": true
+    }
+  },
+  "cases": [
+    {
+      "edition": "creator",
+      "case": "equal",
+      "source": "sources/equal.amos.txt",
+      "source_sha256": "73a77176fe2f4c393bd14c2e34b424cf97aa0ffd17fc127a5c28258fe1a107ea",
+      "command": "F1 run",
+      "capture_after": "100 frames after command",
+      "observed": {
+        "award": 10,
+        "handfin": -1,
+        "message": "Perfect 10. Secured automatically."
+      },
+      "captures": {
+        "editor": {
+          "file": "captures/creator/equal-editor.png",
+          "sha256": "da854116cc4bbe853bc8f0ef8b7fd66db40669832ace410414db70ea028348f4",
+          "visually_inspected": true
+        },
+        "result": {
+          "file": "captures/creator/equal-result.png",
+          "sha256": "28134b48f4a0ace89c15ff3aee5c0f7feedd9583d1054b0cfb56d8814d2fd111",
+          "visually_inspected": true
+        }
+      }
+    },
+    {
+      "edition": "creator",
+      "case": "unequal",
+      "source": "sources/unequal.amos.txt",
+      "source_sha256": "5b0851e0532ca863f183889c8e8e9c2c744169c98cda6bbb82532e8d71b6b047",
+      "command": "F1 run",
+      "capture_after": "100 frames after command",
+      "observed": {
+        "award": 99,
+        "handfin": 0,
+        "message": "unchanged"
+      },
+      "captures": {
+        "editor": {
+          "file": "captures/creator/unequal-editor.png",
+          "sha256": "edddffc251a162d40d29b19819521cd20e5bc4e23e58b4746cccebf92b87b99c",
+          "visually_inspected": true
+        },
+        "result": {
+          "file": "captures/creator/unequal-result.png",
+          "sha256": "8f94a936ae4e77fd7d9629edcbb95510e9645bac72b9064045882fefb28bef35",
+          "visually_inspected": true
+        }
+      }
+    },
+    {
+      "edition": "creator",
+      "case": "missing-value",
+      "source": "sources/missing-value.amos.txt",
+      "source_sha256": "2d82eef97019434c4f29dadc9bec9adcce07ae201eab1142e979c34109230e76",
+      "command": "F2 check",
+      "capture_after": "100 frames after command",
+      "observed": {
+        "diagnostic": "Syntax error"
+      },
+      "captures": {
+        "editor": {
+          "file": "captures/creator/missing-value-editor.png",
+          "sha256": "c62971b0d4308c40966932e367957f61e5af09bf0deab1e7a91a022a76676108",
+          "visually_inspected": true
+        },
+        "result": {
+          "file": "captures/creator/missing-value-result.png",
+          "sha256": "44f5871b55c3b443d52045d0f631d8248e93b7a34fb73b23d036e3fa31460cf8",
+          "visually_inspected": true
+        }
+      }
+    },
+    {
+      "edition": "creator",
+      "case": "missing-end-if",
+      "source": "sources/missing-end-if.amos.txt",
+      "source_sha256": "e5a642fe41bbfa6170b86065b4eaa137686be187e2fba684598c69c8b8f63e03",
+      "command": "F2 check",
+      "capture_after": "100 frames after command",
+      "observed": {
+        "diagnostic": "ELSE without ENDIF"
+      },
+      "captures": {
+        "editor": {
+          "file": "captures/creator/missing-end-if-editor.png",
+          "sha256": "66ed1da8531de60c87ffbc569da59bfd85b4ef2acef80661950304a3877e1ac6",
+          "visually_inspected": true
+        },
+        "result": {
+          "file": "captures/creator/missing-end-if-result.png",
+          "sha256": "82132af47c31aec819f094a4917f835ee0f41b85761311fd3c57ffab27a370d4",
+          "visually_inspected": true
+        }
+      }
+    },
+    {
+      "edition": "easy",
+      "case": "equal",
+      "source": "sources/equal.amos.txt",
+      "source_sha256": "73a77176fe2f4c393bd14c2e34b424cf97aa0ffd17fc127a5c28258fe1a107ea",
+      "command": "F1 run",
+      "capture_after": "100 frames after command",
+      "observed": {
+        "award": 10,
+        "handfin": -1,
+        "message": "Perfect 10. Secured automatically."
+      },
+      "captures": {
+        "editor": {
+          "file": "captures/easy/equal-editor.png",
+          "sha256": "c01aa3032673a6f199e69a3cf8f313bf335e6e8f2bb50be47c210a17449be4ad",
+          "visually_inspected": true
+        },
+        "result": {
+          "file": "captures/easy/equal-result.png",
+          "sha256": "e706c904563e2b4c3f9d35716a141837efed7e9014aa075781c0a80dfe3cc54b",
+          "visually_inspected": true
+        }
+      }
+    },
+    {
+      "edition": "easy",
+      "case": "unequal",
+      "source": "sources/unequal.amos.txt",
+      "source_sha256": "5b0851e0532ca863f183889c8e8e9c2c744169c98cda6bbb82532e8d71b6b047",
+      "command": "F1 run",
+      "capture_after": "100 frames after command",
+      "observed": {
+        "award": 99,
+        "handfin": 0,
+        "message": "unchanged"
+      },
+      "captures": {
+        "editor": {
+          "file": "captures/easy/unequal-editor.png",
+          "sha256": "15a74a05d1aade453a6301a55381883d3f65a32f915d033205b7b05f30b90cc8",
+          "visually_inspected": true
+        },
+        "result": {
+          "file": "captures/easy/unequal-result.png",
+          "sha256": "5e4e6e6ba593c259db2e56bedb88b76fb18fb80f3c9a0dc2c0441962a0580cfb",
+          "visually_inspected": true
+        }
+      }
+    },
+    {
+      "edition": "easy",
+      "case": "missing-value",
+      "source": "sources/missing-value.amos.txt",
+      "source_sha256": "2d82eef97019434c4f29dadc9bec9adcce07ae201eab1142e979c34109230e76",
+      "command": "F2 check",
+      "capture_after": "100 frames after command",
+      "observed": {
+        "diagnostic": "Syntax error"
+      },
+      "captures": {
+        "editor": {
+          "file": "captures/easy/missing-value-editor.png",
+          "sha256": "e01ca3ce5c57f2e4341aedadfb2f1c422b1a1d5684c342a8bfbe2af6abcad651",
+          "visually_inspected": true
+        },
+        "result": {
+          "file": "captures/easy/missing-value-result.png",
+          "sha256": "bfb57df2ac0563edf3f6c2eb790338b06033f4fd0a4d0789215710813a89ab6e",
+          "visually_inspected": true
+        }
+      }
+    },
+    {
+      "edition": "easy",
+      "case": "missing-end-if",
+      "source": "sources/missing-end-if.amos.txt",
+      "source_sha256": "e5a642fe41bbfa6170b86065b4eaa137686be187e2fba684598c69c8b8f63e03",
+      "command": "F2 check",
+      "capture_after": "100 frames after command",
+      "observed": {
+        "diagnostic": "ELSE without ENDIF"
+      },
+      "captures": {
+        "editor": {
+          "file": "captures/easy/missing-end-if-editor.png",
+          "sha256": "4678a67764ad0178e43585f67bc742583bea536c2664af19a3d99127ae14682f",
+          "visually_inspected": true
+        },
+        "result": {
+          "file": "captures/easy/missing-end-if-result.png",
+          "sha256": "78a796f00b95f256a474680ea37eecfa4dc4321fb05c7f404ff97d4d75cacc18",
+          "visually_inspected": true
+        }
+      }
+    },
+    {
+      "edition": "pro",
+      "case": "equal",
+      "source": "sources/equal.amos.txt",
+      "source_sha256": "73a77176fe2f4c393bd14c2e34b424cf97aa0ffd17fc127a5c28258fe1a107ea",
+      "command": "F1 run",
+      "capture_after": "100 frames after command",
+      "observed": {
+        "award": 10,
+        "handfin": -1,
+        "message": "Perfect 10. Secured automatically."
+      },
+      "captures": {
+        "editor": {
+          "file": "captures/pro/equal-editor.png",
+          "sha256": "395ce7ccf5a05b8bdb753e3bd5ad6a04535bafea2d4284ebe37cb6ec547c82dc",
+          "visually_inspected": true
+        },
+        "result": {
+          "file": "captures/pro/equal-result.png",
+          "sha256": "52d69441583d2d2fee09fd21060694b7ea68fe4968e2017c435f85f99e512de8",
+          "visually_inspected": true
+        }
+      }
+    },
+    {
+      "edition": "pro",
+      "case": "unequal",
+      "source": "sources/unequal.amos.txt",
+      "source_sha256": "5b0851e0532ca863f183889c8e8e9c2c744169c98cda6bbb82532e8d71b6b047",
+      "command": "F1 run",
+      "capture_after": "100 frames after command",
+      "observed": {
+        "award": 99,
+        "handfin": 0,
+        "message": "unchanged"
+      },
+      "captures": {
+        "editor": {
+          "file": "captures/pro/unequal-editor.png",
+          "sha256": "126b02aa23d8f2306c406e581c9439160ad08fb6cfd8e487ea74dc49576fb197",
+          "visually_inspected": true
+        },
+        "result": {
+          "file": "captures/pro/unequal-result.png",
+          "sha256": "0fd7696f4a3eee985e201f955d6e16f7ed81634aec5c0ffcbb28aef67c6245a3",
+          "visually_inspected": true
+        }
+      }
+    },
+    {
+      "edition": "pro",
+      "case": "missing-value",
+      "source": "sources/missing-value.amos.txt",
+      "source_sha256": "2d82eef97019434c4f29dadc9bec9adcce07ae201eab1142e979c34109230e76",
+      "command": "F2 check",
+      "capture_after": "immediate after F2",
+      "observed": {
+        "diagnostic": "Syntax error."
+      },
+      "captures": {
+        "editor": {
+          "file": "captures/pro/missing-value-editor.png",
+          "sha256": "5c842e1b76deef6823dc73df672d3e2878f6efecf5ceb4a039e1d0bd966cc175",
+          "visually_inspected": true
+        },
+        "result": {
+          "file": "captures/pro/missing-value-result.png",
+          "sha256": "21d7d72c602c0cd303d2b46ac5a1526459be637a3bdb35f15185c70177895411",
+          "visually_inspected": true
+        }
+      }
+    },
+    {
+      "edition": "pro",
+      "case": "missing-end-if",
+      "source": "sources/missing-end-if.amos.txt",
+      "source_sha256": "e5a642fe41bbfa6170b86065b4eaa137686be187e2fba684598c69c8b8f63e03",
+      "command": "F2 check",
+      "capture_after": "immediate after F2",
+      "observed": {
+        "diagnostic": "If without Endif."
+      },
+      "captures": {
+        "editor": {
+          "file": "captures/pro/missing-end-if-editor.png",
+          "sha256": "6d9e45ff9534b4eece12cb2b9de21d0e89eec7d3704057d3e49513fb3ac22fc8",
+          "visually_inspected": true
+        },
+        "result": {
+          "file": "captures/pro/missing-end-if-result.png",
+          "sha256": "52d50d5186e792af11021a8326d569ec5da8f2a9869719b3dc335974739c9f77",
+          "visually_inspected": true
+        }
+      }
+    }
+  ],
+  "pro_error_timing": {
+    "case": "missing-value",
+    "additional_frames_after_press_key": [
+      0,
+      10,
+      30,
+      100
+    ],
+    "diagnostic_visible": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "captures": [
+      {
+        "file": "captures/pro/missing-value-after-0-frames.png",
+        "sha256": "21d7d72c602c0cd303d2b46ac5a1526459be637a3bdb35f15185c70177895411"
+      },
+      {
+        "file": "captures/pro/missing-value-after-10-frames.png",
+        "sha256": "4e7b7179a449b294ec52ba546da6e6fbfc0bb0baea7f805538c4a6d53cd88385"
+      },
+      {
+        "file": "captures/pro/missing-value-after-100-frames.png",
+        "sha256": "f6c88942fa8a460c8ab8fcfe5b5c0ed7c48df97e8f9ef762781ec27c8c28738a"
+      },
+      {
+        "file": "captures/pro/missing-value-after-30-frames.png",
+        "sha256": "937db73d63a55d3dd9a017b2f2e986d32a6e826626fe5200244396260a1ccfc4"
+      }
+    ]
+  }
+}

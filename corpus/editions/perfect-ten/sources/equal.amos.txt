@@ -1,0 +1,17 @@
+BR_TOTAL=10
+BR_CAP=10
+BR_AWARD=99
+BR_HANDFIN=0
+BR_MSG$="unchanged"
+               If BR_TOTAL=BR_CAP
+                  BR_AWARD=BR_TOTAL
+                  BR_HANDFIN=-1
+                  BR_MSG$="Perfect 10. Secured automatically."
+               End If
+
+Cls
+Print "AWARD ";BR_AWARD
+Print "HANDFIN ";BR_HANDFIN
+Print "MESSAGE ";BR_MSG$
+Wait Key
+End
