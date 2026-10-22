@@ -1,63 +1,61 @@
-use crate::{Diagnostic, DiagnosticKind, Statement, StatementKind, Token, TokenKind, instructions};
+use crate::{
+    Diagnostic, DiagnosticKind, Statement, StatementKind, Token, TokenKind, instructions, segments,
+};
 
 pub(crate) fn parse(
     source: &str,
     tokens: &[Token],
     diagnostics: &mut Vec<Diagnostic>,
 ) -> Vec<Statement> {
+    let segments = segments::collect(tokens, diagnostics);
     let mut statements = Vec::new();
-    let mut has_statement = false;
-    for token in tokens {
-        match token.kind {
-            TokenKind::Colon => {
-                if !has_statement {
-                    diagnostics.push(Diagnostic {
-                        kind: DiagnosticKind::Unsupported,
-                        span: token.span.clone(),
-                        message: "empty colon statement is not qualified",
-                    });
-                }
-                has_statement = false;
-            }
-            TokenKind::Newline => has_statement = false,
-            TokenKind::Whitespace | TokenKind::Comment => {}
-            _ => has_statement = true,
-        }
-    }
-    for segment in tokens.split(|t| matches!(t.kind, TokenKind::Colon | TokenKind::Newline)) {
-        let significant: Vec<_> = segment
-            .iter()
-            .filter(|t| !matches!(t.kind, TokenKind::Whitespace | TokenKind::Comment))
-            .collect();
-        let (Some(first), Some(last)) = (significant.first(), significant.last()) else {
-            continue;
-        };
-        let span = first.span.start..last.span.end;
-        let kind = instructions::parse(source, first, &significant[1..]);
-        let message = match kind {
-            StatementKind::Unsupported => {
-                Some("form is outside the supported opening-program surface")
-            }
-            StatementKind::UnresolvedInvocation { .. } => {
-                Some("unresolved statement; may require procedure or extension analysis")
-            }
-            _ => None,
-        };
-        if let Some(message) = message
-            && !significant.iter().any(|t| {
-                matches!(
-                    t.kind,
-                    TokenKind::UnterminatedString | TokenKind::InvalidControl
-                )
-            })
+    let mut index = 0;
+    while index < segments.len() {
+        if let Some((statement, consumed)) =
+            instructions::if_block::parse(source, &segments[index..], diagnostics)
         {
-            diagnostics.push(Diagnostic {
-                kind: DiagnosticKind::Unsupported,
-                span: span.clone(),
-                message,
-            });
+            statements.push(statement);
+            index += consumed;
+        } else {
+            statements.push(statement(source, &segments[index], diagnostics));
+            index += 1;
         }
-        statements.push(Statement { span, kind });
     }
     statements
+}
+
+pub(crate) fn statement(
+    source: &str,
+    segment: &segments::Segment<'_>,
+    diagnostics: &mut Vec<Diagnostic>,
+) -> Statement {
+    let first = segment.tokens[0];
+    let before = diagnostics.len();
+    let kind = instructions::parse(source, first, &segment.tokens[1..], diagnostics);
+    let message = match kind {
+        StatementKind::Unsupported => Some("form is outside the supported source surface"),
+        StatementKind::UnresolvedInvocation { .. } => {
+            Some("unresolved statement; may require procedure or extension analysis")
+        }
+        _ => None,
+    };
+    if let Some(message) = message
+        && diagnostics.len() == before
+        && !segment.tokens.iter().any(|t| {
+            matches!(
+                t.kind,
+                TokenKind::UnterminatedString | TokenKind::InvalidControl
+            )
+        })
+    {
+        diagnostics.push(Diagnostic {
+            kind: DiagnosticKind::Unsupported,
+            span: segment.span.clone(),
+            message,
+        });
+    }
+    Statement {
+        span: segment.span.clone(),
+        kind,
+    }
 }

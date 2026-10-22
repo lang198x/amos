@@ -3,15 +3,16 @@
 Published preview 0.3.0 includes current BASIC, optional AMOS 3D and standalone
 AMAL/Interface highlighting. Earlier preview 0.2.0
 retains its earlier BASIC/3D assets.
-The Rust parser remains at 0.1.0 with its opening-program subset. Neither surface
+The Rust package version remains 0.1.0. Current source also parses the approved
+[Perfect 10 slice](../decisions/perfect-ten-parser-slice.md). Neither surface
 is complete AMOS support. Current source additionally covers §10.2 file/directory
 I/O, §8.1 music/basic sound §8.2 samples §8.3 music modules and §11.2 speech; these continuations are not in preview 0.2.0.
 The table describes current source.
 
 | Surface | Implemented |
 | --- | --- |
-| Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End. |
-| Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes; recovery at line/colon boundaries. |
+| Parser | Cls with no argument or an unsigned decimal literal; Print with exactly one double-quoted literal; Wait Key; End; named assignments with integer/string/name values and one unary minus; multiline If with one equality and End If. Else, nesting, arithmetic, arrays and inline If stay unsupported. |
+| Source | Original UTF-8 text, all tokens/trivia, half-open byte ranges, typed statement nodes including If bodies; recovery at line/colon boundaries. |
 | Parser lexical rules | Case-insensitive commands, spaces/tabs, blank lines, colon separators, double-quoted strings without backslash escapes, line-start apostrophe comments and statement-start Rem comments. |
 | Highlighting | Professional forms from §§5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 19 BASIC dialogue/value/control/resource forms from 9.1/9.3/9.4, 10.1–10.6, 11.1–11.2, 11.4, 12.1–12.2 and five §13.1 accessory/configuration forms, Appendix B’s Kill Editor and twenty-eight Appendix A memory/block/address/conversion/bit/call/register forms and eight Appendix F Copper forms and two Appendix C display-mode queries, plus library/equate/structure/device/requester forms from 11.5 and Bank or Risk display/sound vocabulary; standalone labels and declaration names, selected numeric notation, names, strings and comments. Partial vocabulary, not version validation. |
 | Profiles | One named observed Pro 2.00 installation; no additional extension qualification. Creator/Easy CLI profiles are not enabled. Separate native Cls trials cover Creator 1.1 and Easy 1.01; other forms and revisions remain unknown. |
@@ -28,7 +29,7 @@ than a lexical error; procedure/extension resolution is not implemented.
 Malformed strings and misplaced apostrophe comments are invalid within this
 source contract. Other argument combinations generally remain unsupported:
 we do not infer invalidity from absence in the first subset. An unsupported
-statement always retains its range and prevents a successful check. Empty
+statement or complete block always retains its range and prevents a successful check. Empty
 colon statements also remain unsupported pending qualification.
 
 LF, CRLF and CR delimit lines in host text. This is a text-input convention,

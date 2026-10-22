@@ -1,8 +1,15 @@
-use lang198x_amos::{Expression, ParsedProgram, Profile, Span, StatementKind, check, parse};
+use lang198x_amos::{
+    Expression, ParsedProgram, Profile, Span, Statement, StatementKind, check, parse,
+};
 
 pub fn valid_span(source: &str, span: &Span) {
     assert!(span.start <= span.end, "reversed span: {span:?}");
     assert!(source.get(span.clone()).is_some(), "invalid span: {span:?}");
+}
+
+fn child_span(source: &str, span: &Span, parent: &Span) {
+    valid_span(source, span);
+    assert!(span.start >= parent.start && span.end <= parent.end);
 }
 
 pub fn parsed_contract(program: &ParsedProgram<'_>) {
@@ -18,39 +25,64 @@ pub fn parsed_contract(program: &ParsedProgram<'_>) {
     }
     assert_eq!(next, source.len(), "untokenized source bytes");
     assert_eq!(reconstructed, source);
-    let mut end = 0;
-    for statement in &program.statements {
-        valid_span(source, &statement.span);
-        assert!(statement.span.start >= end, "overlapping statements");
-        assert!(statement.span.end > statement.span.start, "empty statement");
-        end = statement.span.end;
-        let child = match &statement.kind {
-            StatementKind::Cls { colour } => colour.as_ref().map(expression_span),
-            StatementKind::Print { value } => Some(expression_span(value)),
-            StatementKind::UnresolvedInvocation { name } => Some(name),
-            StatementKind::WaitKey | StatementKind::End | StatementKind::Unsupported => None,
-            _ => panic!("extend the contract for the new AST node"),
-        };
-        if let Some(child) = child {
-            valid_span(source, child);
-            assert!(child.start >= statement.span.start && child.end <= statement.span.end);
-        }
-    }
+    statements(source, &program.statements, &(0..source.len()));
     for diagnostic in &program.diagnostics {
         valid_span(source, &diagnostic.span);
         assert!(!diagnostic.message.is_empty());
     }
 }
 
-fn expression_span(expression: &Expression) -> &Span {
-    match expression {
-        Expression::IntegerLiteral(span) | Expression::StringLiteral(span) => span,
+fn statements(source: &str, nodes: &[Statement], parent: &Span) {
+    let mut end = parent.start;
+    for statement in nodes {
+        child_span(source, &statement.span, parent);
+        assert!(statement.span.start >= end, "overlapping statements");
+        assert!(statement.span.end > statement.span.start, "empty statement");
+        end = statement.span.end;
+        let span = &statement.span;
+        match &statement.kind {
+            StatementKind::Cls { colour } => {
+                if let Some(colour) = colour {
+                    expression(source, colour, span);
+                }
+            }
+            StatementKind::Print { value } => expression(source, value, span),
+            StatementKind::Assignment { target, value } => {
+                child_span(source, target, span);
+                expression(source, value, span);
+            }
+            StatementKind::If { condition, body } => {
+                expression(source, condition, span);
+                statements(source, body, span);
+            }
+            StatementKind::UnresolvedInvocation { name } => child_span(source, name, span),
+            StatementKind::WaitKey | StatementKind::End | StatementKind::Unsupported => {}
+            _ => panic!("extend the contract for the new AST node"),
+        }
+    }
+}
+
+fn expression(source: &str, node: &Expression, parent: &Span) {
+    match node {
+        Expression::IntegerLiteral(span)
+        | Expression::StringLiteral(span)
+        | Expression::Name(span) => child_span(source, span, parent),
+        Expression::Negate { span, operand } => {
+            child_span(source, span, parent);
+            expression(source, operand, span);
+        }
+        Expression::Equal { span, left, right } => {
+            child_span(source, span, parent);
+            expression(source, left, span);
+            expression(source, right, span);
+        }
         _ => panic!("extend the contract for the new expression node"),
     }
 }
 
 pub fn source_contract(source: &str) {
     let first = parse(source);
+    assert_eq!(first.source, source, "original source must be retained");
     parsed_contract(&first);
     assert_eq!(first, parse(source), "parse must be deterministic");
     for id in ["amos-pro-2.00-observed", "unknown-edition"] {

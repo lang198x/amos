@@ -37,8 +37,8 @@ cargo +nightly-2026-09-24 fuzz run source_contract \
 
 The target passes generated UTF-8 strings through the same checks as the
 property tests. Native bytes and their decoding remain outside this parser.
-The two authored seed files cover an opening program and recovery from broken
-input. Generated corpus files go in the first directory. They do not change
+The three seed files cover an opening program and recovery from broken
+input, plus the maintained Perfect 10 block. Generated corpus files go in the first directory. They do not change
 those seeds. The fuzz workspace has its own lockfile and no published package.
 Neither test tool adds a production dependency.
 

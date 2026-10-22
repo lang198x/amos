@@ -1,0 +1,5 @@
+               If BR_TOTAL=BR_CAP
+                  BR_AWARD=BR_TOTAL
+                  BR_HANDFIN=-1
+                  BR_MSG$="Perfect 10. Secured automatically."
+               End If

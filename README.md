@@ -1,6 +1,6 @@
 # AMOS language kit
 
-Parse small AMOS listings, check the supported opening-program surface, and
+Parse small AMOS listings, check a bounded source surface, and
 highlight AMOS, standalone AMAL and Interface source in Shiki and TextMate-based editors.
 
 Highlighting follows the Professional manual, with opt-in AMOS 3D, standalone
@@ -26,7 +26,7 @@ cargo clippy --all-targets -- -D warnings
 ```
 
 A successful result reports supported source structure. It does not establish
-native runtime compatibility. Unsupported statements, unresolved names and
+native runtime compatibility. Unsupported statements, unresolved statement calls and
 unknown profiles cannot pass silently. The library exposes `parse` and `check`
 with typed statements, tokens and byte spans. Each implemented instruction lives
 in its own small Rust module under `src/instructions/`.
@@ -107,7 +107,7 @@ The 0.2.0 highlighting preview includes the
 Its pinned source and independently reviewed scope inventory check all 398
 builtin/control-word and label occurrences in Bank or Risk in two themes.
 Earlier preview assets retain their original grammar. The Rust parser remains
-at 0.1.0 with its opening-program surface. See the
+at version 0.1.0; current source adds the approved Perfect 10 block. See the
 [0.2.0 release notes](docs/releases/0.2.0.md) for that earlier milestone.
 
 The [manual-led core inventory](specifications/manual-core/README.md) now drives
@@ -227,6 +227,11 @@ validate postfix expressions, terminators, custom names or native execution.
 See the [Interface inventory and limits](docs/interface-inventory.md).
 
 ## Verify source analysis
+
+Current source also parses the approved [Perfect 10 slice](docs/coverage.md):
+named assignments, literals/names, unary minus, and equality in multiline
+If / End If. Else, nesting, arithmetic, arrays and inline If stay unsupported.
+This adds host analysis only; profiles and native compatibility are unchanged.
 
 See the [testing guide](docs/testing.md) for fixture checks, generated property
 tests and a bounded fuzz run. These checks test the host parser; native trials

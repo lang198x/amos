@@ -17,3 +17,19 @@
 
 Do not change existing opening forms, runtime profiles, highlighting packages,
 native codecs or publication versions. Keep production dependencies empty.
+
+
+## Verification
+
+The exact fragment returned Unsupported before the change. Current tests check
+its one If node, equality names, three assignment targets/values, the negative
+integer and the quoted message. The CLI checks the same retained fragment.
+Four generated properties now run 512 cases each. Existing opening-form tests
+remain in force; no runtime profile or highlighting asset changed.
+
+The first strict Clippy run rejected an `expect()` in the new test. The test now
+returns a Result instead; strict Clippy passes. The 60-second fuzz campaign ran
+410,983 inputs in 61 seconds with no failure (coverage counter 891, feature
+counter 3,363, reported RSS 459 MiB). Its growing input limit reached 321 bytes;
+this is not exhaustive exploration of the configured 4 KiB maximum. The tool,
+nightly and resource bounds match the source-contract test plan.

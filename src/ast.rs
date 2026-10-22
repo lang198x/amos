@@ -6,6 +6,19 @@ use crate::Span;
 pub enum Expression {
     /// Decimal digits, retained without narrowing to a host integer type.
     IntegerLiteral(Span),
+    /// A lexical name with its original spelling and suffix; not resolved.
+    Name(Span),
+    /// One unary minus; no value is evaluated or narrowed.
+    Negate {
+        span: Span,
+        operand: Box<Expression>,
+    },
+    /// The single equality comparison in a supported If header.
+    Equal {
+        span: Span,
+        left: Box<Expression>,
+        right: Box<Expression>,
+    },
     /// The quoted literal's full range, including its delimiters.
     StringLiteral(Span),
 }
@@ -14,6 +27,16 @@ pub enum Expression {
 #[derive(Debug, Clone, PartialEq, Eq)]
 #[non_exhaustive]
 pub enum StatementKind {
+    /// A named target and one supported value expression.
+    Assignment {
+        target: Span,
+        value: Expression,
+    },
+    /// A complete multiline block; the statement span includes End If.
+    If {
+        condition: Expression,
+        body: Vec<Statement>,
+    },
     Cls {
         colour: Option<Expression>,
     },

@@ -47,3 +47,30 @@ fn profile_and_usage_errors_are_nonzero() -> Result<(), Box<dyn std::error::Erro
     assert!(command().arg("--help").status()?.success());
     Ok(())
 }
+
+#[test]
+fn cli_checks_the_same_perfect_ten_fragment_as_the_library()
+-> Result<(), Box<dyn std::error::Error>> {
+    let path = format!(
+        "{}/corpus/parser/perfect-ten.amos.txt",
+        env!("CARGO_MANIFEST_DIR")
+    );
+    let source = std::fs::read_to_string(&path)?;
+    let checked = lang198x_amos::check(
+        &source,
+        &lang198x_amos::Profile {
+            id: "amos-pro-2.00-observed",
+            extensions: &[],
+        },
+    );
+    assert_eq!(
+        checked.status,
+        lang198x_amos::CheckStatus::SupportedStructure
+    );
+    let output = command()
+        .args(["check", "--profile", "amos-pro-2.00-observed", &path])
+        .output()?;
+    assert_eq!(output.status.code(), Some(0));
+    assert!(String::from_utf8_lossy(&output.stdout).contains("1 statements"));
+    Ok(())
+}

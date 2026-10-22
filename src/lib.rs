@@ -4,11 +4,13 @@
 //! repository's coverage document before interpreting a result.
 mod ast;
 mod diagnostic;
+mod expression;
 mod instructions;
 mod lexer;
 mod location;
 mod parser;
 mod profile;
+mod segments;
 mod token;
 
 pub use ast::{Expression, Statement, StatementKind};

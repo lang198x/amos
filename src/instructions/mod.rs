@@ -1,11 +1,18 @@
+mod assignment;
 mod cls;
 mod end;
+pub(crate) mod if_block;
 mod print;
 mod wait_key;
 
-use crate::{StatementKind, Token, TokenKind};
+use crate::{Diagnostic, StatementKind, Token, TokenKind, expression};
 
-pub(crate) fn parse(source: &str, head: &Token, args: &[&Token]) -> StatementKind {
+pub(crate) fn parse(
+    source: &str,
+    head: &Token,
+    args: &[&Token],
+    diagnostics: &mut Vec<Diagnostic>,
+) -> StatementKind {
     if head.kind != TokenKind::Word {
         return StatementKind::Unsupported;
     }
@@ -16,6 +23,12 @@ pub(crate) fn parse(source: &str, head: &Token, args: &[&Token]) -> StatementKin
         "end" => end::parse(args),
         "if" | "then" | "else" | "do" | "loop" | "for" | "next" | "repeat" | "until" | "while"
         | "wend" | "procedure" => StatementKind::Unsupported,
+        _ if args
+            .first()
+            .is_some_and(|token| expression::text(source, token, "=")) =>
+        {
+            assignment::parse(source, head, args, diagnostics)
+        }
         _ => StatementKind::UnresolvedInvocation {
             name: head.span.clone(),
         },

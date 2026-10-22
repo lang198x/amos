@@ -37,6 +37,25 @@ proptest! {
     }
 
     #[test]
+    fn generated_blocks_keep_their_body_and_later_end(
+        name in "BR_[A-Z]{1,12}",
+        value in 0_u32..100_000,
+        message in "[a-zA-Z :]{0,64}",
+        newline in prop::sample::select(vec!["\n", "\r", "\r\n"]),
+    ) {
+        let source = format!("If {name}=CAP{newline}{name}=-{value}{newline}MSG$=\"{message}\"{newline}End If{newline}End");
+        let parsed = parse(&source);
+        prop_assert!(parsed.diagnostics.is_empty());
+        prop_assert_eq!(parsed.statements.len(), 2);
+        let StatementKind::If { body, .. } = &parsed.statements[0].kind else {
+            return Err(TestCaseError::fail("expected typed If"));
+        };
+        prop_assert_eq!(body.len(), 2);
+        prop_assert!(matches!(parsed.statements[1].kind, StatementKind::End));
+        invariants::source_contract(&source);
+    }
+
+    #[test]
     fn a_bad_statement_cannot_consume_the_next_line(
         tail in "[a-zA-Z0-9 :]{0,64}",
         newline in prop::sample::select(vec!["\n", "\r", "\r\n"]),

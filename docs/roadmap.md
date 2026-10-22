@@ -11,16 +11,16 @@ Blitz follows AMOS. Track the work in [roadmap #5](https://github.com/lang198x/a
 | Editions and releases | Seven forms are compared across three manuals. Separate native trials cover four Cls cases each in Creator 1.1, Easy 1.01 and Professional 2.00. Other forms and revisions remain open. | [#1](https://github.com/lang198x/amos/issues/1) |
 | Bare Cls disagreement | Resolved for the three tested revisions: bare Cls follows paper colour; explicit Cls 0 clears to black. Creator 1.1 contradicts its manual. The origin of that wording is unknown. | [#2](https://github.com/lang198x/amos/issues/2), closed |
 | Native Easy Save/Load | One 56-byte program saved, loaded and ran in a fresh Easy editor. FS-UAE independently produced the same program and bitmap bytes. Format198x 0.3.4 fixes the checker's bitmap policy; Build198x adoption is in [PR #76](https://github.com/build198x/build198x/pull/76). | [#6](https://github.com/lang198x/amos/issues/6) |
-| Useful parser slice | Agree a small Bank or Risk fragment, its expression operators, one conditional form, AST nodes and errors before code. First strengthen tests of the current parser. | [#3](https://github.com/lang198x/amos/issues/3) |
+| Useful parser slice | Approved: Bank or Risk lines 128–132, named assignments, literals/names, unary minus and equality in multiline If / End If. Current source implements that slice with generated tests and fuzzing; broader forms stay unsupported. | [#3](https://github.com/lang198x/amos/issues/3) |
 | Native AMOS import | Define the Format198x codec and Lang198x analysis boundary, unknown-token handling and lawful fixtures before code. | [#4](https://github.com/lang198x/amos/issues/4) |
 
 The [edition comparison](../specifications/editions/README.md) links the sources
 and native trials. These trials cover their exact programs and installations.
 They do not qualify a whole edition or enable Creator/Easy CLI profiles.
 
-The parser still handles only the four [opening forms](coverage.md). Broad
+The parser handles the [opening forms and Perfect 10 slice](coverage.md). Broad
 highlighting does not prove that a program parses or runs. Property tests and
-fuzzing will test source preservation, spans, recovery and repeatable results.
+fuzzing check source preservation, spans, recovery and repeatable results.
 They cannot replace trials in the original software.
 
 Completing a milestone does not approve a stable release, broader parser design
