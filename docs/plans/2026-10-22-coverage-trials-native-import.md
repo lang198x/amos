@@ -74,3 +74,26 @@ now records both immediate and settled frames. It checkpoints input in bounded
 chunks; the initial large calls hit the process timeout. A Creator US-keymap
 input failure was excluded after inspecting its missing quotes. No CLI profiles,
 parser forms, native codec or dependency were added.
+
+## Native import proposal result
+
+`specifications/native-import/` contains the evidence, read contract, staged
+qualification plan and explicit placement-decision draft. Five pinned Git blobs
+and twelve source ranges verify. A transcoded tokenizer and a missing source
+file both fail the real verifier. Four new source-binding failure controls
+bring Python checks to 18; Ruff passes. All five proposal pages measure at or
+below grade 10; code/tables and local links were also reviewed.
+
+The original Easy specimen's header says AMOS Basic v1.3 despite the identified
+Easy 1.01 runtime. Its stored body length and tail positions agree with the
+56-byte file binding. Header families therefore cannot pick a runtime revision.
+Unknown tokens/encodings remain retained and block clean whole-file analysis.
+No codec, dependency, native binary fixture, AST/API change or editor behavior
+is implemented. The scope and proposed Format198x bootstrap exception remain
+unadopted pending review.
+
+Native trial commit `1fc1c42` is pushed and both CI jobs pass. Its 12 evidence
+bindings were rechecked before the task's private native workspace was removed.
+The pre-existing Easy media retained for future native import qualification
+were mounted read-only and were not removed or changed. Research downloads and
+documentation caches are disposable after the proposal commit is verified.

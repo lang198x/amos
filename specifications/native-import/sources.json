@@ -1,0 +1,135 @@
+{
+  "repository": "https://github.com/AOZ-Studio/AMOS-Professional-Official",
+  "commit": "533b4b1f5acd604814513f78e02c7b4796cb0531",
+  "encoding": "ISO-8859-1",
+  "licence": "original-source-LICENSE",
+  "qualified_runtime_binary_equivalence": false,
+  "scope": "Pinned publisher source observations only. Source version marker does not prove correspondence with a released binary or all Creator/Easy/Pro revisions.",
+  "files": [
+    {
+      "path": "+Verif.s",
+      "sha256": "b701e25c6643898190aad93a2291fc707c7b0dfb10bd5530d868b8c61d7efca8",
+      "ranges": [
+        {
+          "id": "header-constants",
+          "first_line": 4349,
+          "last_line": 4353,
+          "range_sha256": "315119fbc771fdab32a46725ad0a2b3119c083ee5c1febf5ef51d539b2dff41a",
+          "url": "https://github.com/AOZ-Studio/AMOS-Professional-Official/blob/533b4b1f5acd604814513f78e02c7b4796cb0531/%2BVerif.s#L4349-L4353"
+        },
+        {
+          "id": "header-load",
+          "first_line": 4817,
+          "last_line": 4867,
+          "range_sha256": "70942a0503d928c54391863cab0e5765923442620d183388a92db26c0fd63ae5",
+          "url": "https://github.com/AOZ-Studio/AMOS-Professional-Official/blob/533b4b1f5acd604814513f78e02c7b4796cb0531/%2BVerif.s#L4817-L4867"
+        },
+        {
+          "id": "save-envelope",
+          "first_line": 4992,
+          "last_line": 5044,
+          "range_sha256": "94b991094d92e456466aa6914da95dcfe1ee68477fe2e51eb78aeb4beb1809b2",
+          "url": "https://github.com/AOZ-Studio/AMOS-Professional-Official/blob/533b4b1f5acd604814513f78e02c7b4796cb0531/%2BVerif.s#L4992-L5044"
+        },
+        {
+          "id": "source-record-traversal",
+          "first_line": 5066,
+          "last_line": 5115,
+          "range_sha256": "85b7f01e64a622c396057c2f27eb9420ec15dc67c92f01ca72babc6ee25214b5",
+          "url": "https://github.com/AOZ-Studio/AMOS-Professional-Official/blob/533b4b1f5acd604814513f78e02c7b4796cb0531/%2BVerif.s#L5066-L5115"
+        }
+      ],
+      "git_blob": "196c19d589a85479779a18dc36336f66b1de19b6",
+      "bytes": 111027
+    },
+    {
+      "path": "AMOSPro Sources/+Token.s",
+      "sha256": "b3c1b4b03aa80f217e7188f98aa2331e68f23fd6a7dbb32e78a5979a70fea56c",
+      "ranges": [
+        {
+          "id": "line-prefix",
+          "first_line": 44,
+          "last_line": 64,
+          "range_sha256": "855f2d56d334629ce8623d3007b8aecf057c0d0f0f686cde9957fa27088230bb",
+          "url": "https://github.com/AOZ-Studio/AMOS-Professional-Official/blob/533b4b1f5acd604814513f78e02c7b4796cb0531/AMOSPro%20Sources/%2BToken.s#L44-L64"
+        },
+        {
+          "id": "record-length",
+          "first_line": 480,
+          "last_line": 516,
+          "range_sha256": "6a5b3008a97fa2b1b84258f561a6fc9560d8d8e216f7e96f6c4447ce152af676",
+          "url": "https://github.com/AOZ-Studio/AMOS-Professional-Official/blob/533b4b1f5acd604814513f78e02c7b4796cb0531/AMOSPro%20Sources/%2BToken.s#L480-L516"
+        },
+        {
+          "id": "extension-record",
+          "first_line": 420,
+          "last_line": 433,
+          "range_sha256": "47532966e88d3c455ee36aeb4f2314b2ae2016e17374c76a7b5bae8c619f6346",
+          "url": "https://github.com/AOZ-Studio/AMOS-Professional-Official/blob/533b4b1f5acd604814513f78e02c7b4796cb0531/AMOSPro%20Sources/%2BToken.s#L420-L433"
+        },
+        {
+          "id": "listing-and-extension-resolution",
+          "first_line": 559,
+          "last_line": 639,
+          "range_sha256": "d4cf5823950ac8ec224864140fe9dd5e764e935660d80614df776a0219635543",
+          "url": "https://github.com/AOZ-Studio/AMOS-Professional-Official/blob/533b4b1f5acd604814513f78e02c7b4796cb0531/AMOSPro%20Sources/%2BToken.s#L559-L639"
+        }
+      ],
+      "git_blob": "1ddedd96704f28c5ae90b1236db4b6943c76283f",
+      "bytes": 19714
+    },
+    {
+      "path": "+Equ.s",
+      "sha256": "96be293512c3d13fbade43da4c334768cba56b69eb4f5fc3a5fdba155653f193",
+      "ranges": [
+        {
+          "id": "special-token-codes",
+          "first_line": 2021,
+          "last_line": 2040,
+          "range_sha256": "ab9106e9a1ddc8ea200af93753347f6c28e1abbd9860e3258e32f47909bc47b0",
+          "url": "https://github.com/AOZ-Studio/AMOS-Professional-Official/blob/533b4b1f5acd604814513f78e02c7b4796cb0531/%2BEqu.s#L2021-L2040"
+        }
+      ],
+      "git_blob": "df950ccfa9f30883e441820bd65849cf457e9f48",
+      "bytes": 47841
+    },
+    {
+      "path": "+Lib.s",
+      "sha256": "3422384075ddfd5783c8e9b5d31608896d9e86eda5fad808b13e64313682ba55",
+      "ranges": [
+        {
+          "id": "bank-signatures",
+          "first_line": 3817,
+          "last_line": 3825,
+          "range_sha256": "cc8bdb41be8ec0c88e9d1f86c4d65c37d8f60b41243ffbc8800d08553e78c4dc",
+          "url": "https://github.com/AOZ-Studio/AMOS-Professional-Official/blob/533b4b1f5acd604814513f78e02c7b4796cb0531/%2BLib.s#L3817-L3825"
+        },
+        {
+          "id": "save-bank-tail",
+          "first_line": 3863,
+          "last_line": 3907,
+          "range_sha256": "865fca7e2f47d27fb6890d8c50e82bb61931e5f3caf1146a0824c1038311378d",
+          "url": "https://github.com/AOZ-Studio/AMOS-Professional-Official/blob/533b4b1f5acd604814513f78e02c7b4796cb0531/%2BLib.s#L3863-L3907"
+        }
+      ],
+      "git_blob": "d4c94591539bcf1bdaa8a0f15d3a816568aa4893",
+      "bytes": 622479
+    },
+    {
+      "path": "+Version.s",
+      "sha256": "4f2d47fd202006452ff101e775c1d3a497ee95b01f43fc998d3cba5d30cf5b9d",
+      "ranges": [
+        {
+          "id": "source-version",
+          "first_line": 30,
+          "last_line": 33,
+          "range_sha256": "595300916f4b575de58bee3136d1bff5d254dd52bddc9c4d9a77bda9c307a638",
+          "url": "https://github.com/AOZ-Studio/AMOS-Professional-Official/blob/533b4b1f5acd604814513f78e02c7b4796cb0531/%2BVersion.s#L30-L33"
+        }
+      ],
+      "git_blob": "650f289d5c64cfbc53a23deec00228985a68d2ef",
+      "bytes": 1441
+    }
+  ],
+  "retrieval": "Git blob API, verified by object SHA-1 and SHA-256; retain legacy bytes without transcoding."
+}

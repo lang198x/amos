@@ -11,7 +11,7 @@ more edition trials and native import design. Blitz follows AMOS. Track the work
 | Bare Cls disagreement | Resolved for the three tested revisions: bare Cls follows paper colour; explicit Cls 0 clears to black. Creator 1.1 contradicts its manual. The origin of that wording is unknown. | [#2](https://github.com/lang198x/amos/issues/2), closed |
 | Native Easy Save/Load | One 56-byte program saved, loaded and ran in a fresh Easy editor. FS-UAE independently produced the same program and bitmap bytes. Format198x 0.3.4 fixes the checker's bitmap policy. Both Build198x 0.2.13 releases are published; downloaded Mac binaries pass nine unchanged images and five corruption controls. | [#6](https://github.com/lang198x/amos/issues/6), closed |
 | Useful parser slice | Approved: Bank or Risk lines 128–132, named assignments, literals/names, unary minus and equality in multiline If / End If. Current source implements that slice with generated tests and fuzzing; broader forms stay unsupported. | [#3](https://github.com/lang198x/amos/issues/3), closed |
-| Native AMOS import | Define the Format198x codec and Lang198x analysis boundary, unknown-token handling and lawful fixtures before code. | [#4](https://github.com/lang198x/amos/issues/4) |
+| Native AMOS import | [Read-only proposal](../specifications/native-import/README.md) prepared with pinned source evidence, unknown-byte retention, maps and fixture gates. Scope and the documented Format198x bootstrap exception need review before code. | [#4](https://github.com/lang198x/amos/issues/4) |
 
 The [edition comparison](../specifications/editions/README.md) links the sources
 and native trials. These trials cover their exact programs and installations.

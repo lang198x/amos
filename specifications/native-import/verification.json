@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-22",
+  "status": "Proposal research verified; codec not implemented or approved",
+  "tool": "Vale 3.24.0",
+  "scope": "Prose metrics exclude code/tables. Manual review also checked tables, source interpretations and scope boundaries.",
+  "documents": [
+    {
+      "file": "README.md",
+      "flesch_kincaid": 9.13,
+      "words": 494,
+      "sentences": 42
+    },
+    {
+      "file": "evidence.md",
+      "flesch_kincaid": 7.49,
+      "words": 321,
+      "sentences": 26
+    },
+    {
+      "file": "placement-decision-draft.md",
+      "flesch_kincaid": 9.95,
+      "words": 263,
+      "sentences": 20
+    },
+    {
+      "file": "qualification.md",
+      "flesch_kincaid": 9.79,
+      "words": 619,
+      "sentences": 51
+    },
+    {
+      "file": "read-contract.md",
+      "flesch_kincaid": 8.4,
+      "words": 737,
+      "sentences": 64
+    }
+  ],
+  "source_checks": {
+    "files": 5,
+    "ranges": 12,
+    "git_object_and_sha256": true,
+    "reencoded_source_rejected": true,
+    "missing_source_rejected": true
+  },
+  "tests": "18 Python tests pass, including source inventory and provenance failure controls; Ruff passes."
+}

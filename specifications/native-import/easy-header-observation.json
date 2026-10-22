@@ -1,0 +1,11 @@
+{
+  "evidence": "../../corpus/editions/save-load/easy/observations.json",
+  "native_file_sha256": "72b16ac6f6c1a01d9274f2af68427b688f064c8b33544796d16f4674c258910a",
+  "bytes": 56,
+  "header_ascii": "AMOS Basic v1.3 ",
+  "body_length_be_at_16": 30,
+  "bank_tail_offset": 50,
+  "tail_magic_ascii": "AmBs",
+  "tail_remaining_bytes": 6,
+  "scope": "Header and length inspection of the existing exact native Save fixture, not a codec or new native trial."
+}
