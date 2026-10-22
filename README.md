@@ -110,37 +110,25 @@ Earlier preview assets retain their original grammar. The Rust parser remains
 at version 0.1.0; current source adds the approved Perfect 10 block. See the
 [0.2.0 release notes](docs/releases/0.2.0.md) for that earlier milestone.
 
-The [manual-led core inventory](specifications/manual-core/README.md) now drives
-broader coverage: current source highlights 728 BASIC entries from Professional manual
-chapters 5.1–5.9, 6.1–6.5, 7.1–7.7, 8.1–8.3, 19 Interface-facing BASIC forms from 9.1/9.3/9.4, 10.1–10.6, 11.1–11.2, 11.4–11.5, 12.1–12.2 and five §13.1 accessory/configuration forms, Appendix B’s Kill Editor and twenty-eight Appendix A memory/conversion/bit/call/register forms, plus eight Appendix F Copper forms and two Appendix C display-mode queries.
-The file/directory I/O, music/basic sound, sample, music-module, speech, icon/block, font, error-handling, printer/port, serial, parallel, AREXX, multitasking, library/equate/structure/device/requester, Monitor, accessory/configuration, Kill Editor, dialogue, zone/value, resource, direct-memory, block/address, conversion, bit-operation, machine-code call, register, Copper and display-mode continuations are
-in preview 0.3.0; published 0.2.0 retains its 452-entry BASIC inventory.
-Fourteen embedded menu commands and 36 [AMAL records](specifications/amal/README.md)
-are inventoried separately. Current source adds standalone AMAL highlighting;
-BASIC string payloads remain opaque. Preview 0.3.0 includes this
-mode; published 0.2.0 does not.
-[AMOS 3D](specifications/extensions/amos-3d/README.md) is tracked as an optional
-extension with a 59-record manual inventory, three source-level answers and a pinned-binary
-answer to the collision-result question. The opt-in `amos-3d` profile highlights
-those records in preview 0.2.0. Other manual chapters and edition/extension
-qualification remain separate work. See the [remaining-gap review](docs/highlighting-gaps.md)
-for the proposed next sweeps and unresolved surfaces.
+Preview 0.3.0 highlights 728 BASIC entries from the Professional manual.
+The [core inventory](specifications/manual-core/README.md) maps each group to
+its sources. The [coverage guide](docs/coverage.md) lists the forms and limits.
+The older 0.2.0 preview keeps its 452-entry BASIC inventory.
 
-The separate [Interface inventory](docs/interface-inventory.md) maps 69 embedded-language
-forms to their definitions, retaining role collisions and lexical questions.
-Current source exposes a separate opt-in Interface mode; BASIC strings remain
-opaque. H/I’s historical reference material is reconciled without adding vocabulary.
+AMOS 3D has a separate [59-record inventory](specifications/extensions/amos-3d/README.md).
+Its opt-in mode has shipped since preview 0.2.0. AMAL and Interface are separate
+text languages, included in preview 0.3.0. They do not inspect strings inside
+BASIC. Choose the mode you need from the examples below.
 
-The [command-index review](docs/command-index-review.md) reconciles all 818 Appendix G
-rows against the existing inventories, retaining conflicts and separate Interface
-references. It adds no grammar rules or vocabulary.
+We also keep source reviews for details that cannot be settled by highlighting:
 
-The [appendix reconciliation](docs/manual-reconciliation.md) records Bell’s explicit
-Music Extension provenance and separates memory-bank layouts from BASIC source.
-It adds no vocabulary, native codec or installed-extension qualification.
+- [Command index](docs/command-index-review.md): all 818 Appendix G rows and known conflicts.
+- [Manual appendices](docs/manual-reconciliation.md): Music Extension sources and memory-bank layouts.
+- [I/O boundaries](docs/io-extension-boundary.md): serial/parallel forms and component identities.
+- [Remaining gaps](docs/highlighting-gaps.md): unresolved forms and edition checks.
 
-The [I/O boundary review](docs/io-extension-boundary.md) records 28 serial/parallel
-forms with pinned source spelling/component evidence; both serial and parallel now have lexical coverage.
+These records do not qualify an installed edition or extension. A word can have
+a colour even when its arguments are wrong or its command is not installed.
 
 ## Optional AMOS 3D highlighting
 

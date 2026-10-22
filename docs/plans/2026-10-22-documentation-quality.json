@@ -1,0 +1,41 @@
+{
+  "tool": "vale version 3.24.0",
+  "scope": "Vale prose metrics exclude code and tables; review those separately. Scores do not prove comprehension.",
+  "documents": [
+    {
+      "file": "README.md",
+      "flesch_kincaid": 9.61,
+      "words": 1246,
+      "sentences": 110,
+      "within_grade_10": true
+    },
+    {
+      "file": "docs/roadmap.md",
+      "flesch_kincaid": 8.17,
+      "words": 147,
+      "sentences": 14,
+      "within_grade_10": true
+    },
+    {
+      "file": "specifications/editions/README.md",
+      "flesch_kincaid": 7.63,
+      "words": 529,
+      "sentences": 46,
+      "within_grade_10": true
+    },
+    {
+      "file": "docs/testing.md",
+      "flesch_kincaid": 6.34,
+      "words": 358,
+      "sentences": 33,
+      "within_grade_10": true
+    },
+    {
+      "file": "docs/coverage.md",
+      "flesch_kincaid": 11.35,
+      "words": 5961,
+      "sentences": 446,
+      "within_grade_10": false
+    }
+  ]
+}

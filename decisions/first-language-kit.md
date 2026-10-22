@@ -17,7 +17,11 @@ does not establish validity. Share fixtures and documented command facts instead
 of trying to turn regex highlighting into a parser. Later semantic highlighting
 must consume canonical analysis.
 
-The Rust implementation and distributable highlighting package add no dependencies.
+The production Rust implementation and distributable highlighting package add no
+runtime dependencies. On 22 October 2026, the user approved proptest for generated
+tests, libfuzzer-sys in a separate fuzz workspace, and cargo-fuzz as a test tool.
+This refines the initial dependency-free test setup without adding production
+dependencies. Other dependency additions still require approval.
 Test integrations with existing tools; dependency additions require approval.
 New authored material follows the foundation's GPL-2.0-or-later licence; retained
 teaching fixtures keep their upstream MIT notice. Do not copy website software
