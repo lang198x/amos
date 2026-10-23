@@ -1,0 +1,6 @@
+# Source fixtures are compared byte for byte, and the Perfect 10 fixture is
+# pinned by its SHA-256, so git must never convert their line endings. Without
+# this, a Windows checkout rewrites them with CRLF and the tests compare the
+# wrong bytes. The fuzz seeds mix line endings on purpose.
+corpus/** -text
+fuzz/seeds/** -text
