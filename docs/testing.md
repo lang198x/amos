@@ -48,6 +48,13 @@ timeout or memory failure must fail the command. Preserve the failure input,
 reduce it, and add a test before fixing the cause. Do not commit private native
 programs or disk images as test cases.
 
+Pull requests do not fuzz, because a time-boxed run is not repeatable and
+could fail a pull request that did not cause the problem. They only check that
+the target builds. The [fuzz workflow](../.github/workflows/fuzz.yml) fuzzes
+for ten minutes every Monday, and on demand. It keeps its corpus between runs,
+uploads any crashing input and opens an issue. Run longer campaigns locally
+before releases and after parser changes.
+
 A short run is a smoke test. It does not prove that all inputs work, that the
 whole grammar is covered, or that original AMOS accepts a program. Native
 trials and parser tests answer different questions. See [coverage](coverage.md)
