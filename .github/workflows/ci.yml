@@ -1,39 +1,63 @@
-name: Check
+name: CI
+
 on:
   push:
+    branches:
+      - main
   pull_request:
+
+concurrency:
+  group: ci-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
+
 jobs:
-  check:
+  # Format, Clippy, coverage (the Linux test run), a build and test on macOS
+  # and Windows, and workflow lint, shared by every 198x Rust repo
+  # (stevehill1981/198x-workflows). The toolchain is rust-toolchain.toml's.
+  rust:
+    name: Rust
+    uses: stevehill1981/198x-workflows/.github/workflows/rust-ci.yml@v1
+    with:
+      # Measured 98.24% on 2026-10-23. Ratchet up as tests grow; never down.
+      coverage-floor: 95
+
+  # The parts of AMOS that aren't Rust: the Python tests, the npm package and
+  # its tests, and the VS Code extension build.
+  packages:
+    name: Packages and editor
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
       - uses: actions/setup-node@v7
         with:
           node-version: '24'
       - uses: actions/setup-python@v7
         with:
           python-version: '3.14'
-      - name: Rust tools
-        run: rustup toolchain install stable --profile minimal --component clippy,rustfmt
-      - run: cargo +stable fmt --check
-      - run: cargo +stable test --locked
-      - run: cargo +stable clippy --all-targets --locked -- -D warnings
       - run: python3 -m unittest discover -s tests -p 'test_*.py'
       - run: npm test
       - run: npm run check:editor
       - run: python3 scripts/package-editor.py --pre-release --public
       - run: npm pack --pack-destination dist
+
   fuzz:
+    name: Fuzz
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
       - name: Fuzz tools
         run: |
           rustup toolchain install nightly-2026-09-24 --profile minimal
-          cargo +stable install cargo-fuzz --version 0.13.2 --locked
+          cargo install cargo-fuzz --version 0.13.2 --locked
       - name: Check fuzz lockfile
         run: cargo +nightly-2026-09-24 metadata --manifest-path fuzz/Cargo.toml --locked --format-version 1 > /dev/null
       - name: Fuzz source contract for one minute

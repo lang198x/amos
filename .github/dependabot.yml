@@ -1,0 +1,29 @@
+# Dependabot version updates, as in the other 198x Rust repos. The fuzz
+# workspace has its own Cargo.lock, so it is listed separately. Minor and patch
+# updates are grouped per ecosystem to keep PR volume low.
+
+version: 2
+updates:
+  - package-ecosystem: "cargo"
+    directories:
+      - "/"
+      - "/fuzz"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    groups:
+      cargo-minor-patch:
+        update-types:
+          - "minor"
+          - "patch"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    groups:
+      github-actions:
+        update-types:
+          - "minor"
+          - "patch"
