@@ -46,22 +46,18 @@ jobs:
       - run: python3 scripts/package-editor.py --pre-release --public
       - run: npm pack --pack-destination dist
 
-  fuzz:
-    name: Fuzz
+  # Pull requests do not fuzz: a time-boxed run is not repeatable, so it could
+  # fail a pull request that did not cause the problem. Fuzzing runs weekly in
+  # fuzz.yml instead, and every crash it finds becomes a seed or test that the
+  # ordinary tests run here. This job only keeps the fuzz target building
+  # against the current API, with an up-to-date lockfile.
+  fuzz-targets:
+    name: Fuzz targets
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v7
         with:
           persist-credentials: false
-      - name: Fuzz tools
-        run: |
-          rustup toolchain install nightly-2026-09-24 --profile minimal
-          cargo install cargo-fuzz --version 0.13.2 --locked
-      - name: Check fuzz lockfile
-        run: cargo +nightly-2026-09-24 metadata --manifest-path fuzz/Cargo.toml --locked --format-version 1 > /dev/null
-      - name: Fuzz source contract for one minute
-        run: |
-          mkdir -p fuzz/corpus/source_contract
-          cargo +nightly-2026-09-24 fuzz run source_contract fuzz/corpus/source_contract fuzz/seeds/source_contract -- -max_total_time=60 -max_len=4096 -timeout=2 -rss_limit_mb=1024 -seed=1980
-          git diff --exit-code -- fuzz/Cargo.lock
+      - name: Check the fuzz target builds
+        run: cargo check --manifest-path fuzz/Cargo.toml --locked --bins
