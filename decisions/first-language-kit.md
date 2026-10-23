@@ -37,3 +37,14 @@ Source organisation follows the requested small-file convention: one supported
 instruction per Rust module, with separate AST, lexer, parser coordination,
 diagnostics, profile checks and coordinate mapping. Do not accumulate instruction
 implementations in a central match body or introduce a framework to split files.
+
+## Amendment, 23 October 2026
+
+A second language now needs shared parts. The Lang198x
+[shared syntax layer record](https://github.com/lang198x/lang198x/blob/main/decisions/shared-syntax-layer.md)
+adopts `lang198x-syntax`, a dependency-free lossless tree that every front end
+uses. It shares building blocks only. AMOS keeps its own grammar, AST and
+analysis. AMOS moves onto the shared tree when it builds its formatter, and its
+existing source-contract checks are the gate. Until then the current lexer and
+parser stand unchanged. Its one-instruction-per-module convention carries over,
+with each instruction module driving the shared tree builder.
