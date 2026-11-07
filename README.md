@@ -5,7 +5,7 @@ highlight AMOS, standalone AMAL and Interface source in Shiki and TextMate-based
 
 Highlighting follows the Professional manual, with opt-in AMOS 3D, standalone
 AMAL and standalone Interface modes. Creator, Easy and other release/extension
-revisions remain unqualified. The [readiness review](docs/highlighting-readiness.md)
+revisions remain unqualified. The [readiness review](https://github.com/lang198x/amos/blob/main/docs/highlighting-readiness.md)
 states the tested scope and remaining limits.
 
 This is a bounded implementation. It builds an abstract syntax tree (AST),
@@ -17,7 +17,14 @@ manual sources and original-runtime observations.
 
 ## Check a listing
 
-With stable Rust 1.98 or later:
+The Rust parser preview is version **0.1.0**, separate from the highlighting
+packages. With stable Rust 1.98 or later, install its CLI with
+`cargo install lang198x-amos --version 0.1.0 --locked`, or add
+`lang198x-amos = "0.1.0"` to your Rust dependencies. See the
+[Rust preview notes](https://github.com/lang198x/amos/blob/main/docs/releases/rust-0.1.0.md)
+for the supported syntax and limits.
+
+From a source checkout:
 
 ```sh
 cargo run -- check --profile amos-pro-2.00-observed corpus/opening/sources/message.amos.txt
@@ -35,7 +42,7 @@ in its own small Rust module under `src/instructions/`.
 ## Highlight a listing
 
 Highlighting preview **0.3.0 is published**; see the
-[release notes](docs/releases/0.3.0.md) for scope and limits. It adds standalone
+[release notes](https://github.com/lang198x/amos/blob/main/docs/releases/0.3.0.md) for scope and limits. It adds standalone
 AMAL/Interface and the readiness fixes.
 
 The currently published dependency-free grammar package is available on npm
@@ -95,7 +102,7 @@ The preview uses the active theme and colours the documented lexical subset.
 It does not provide compiler errors, completion or a language server. Its
 identifier is `lang198x.lang198x-amos`, with the approved L icon. Public preview
 approval is recorded in the
-[release decision](decisions/marketplace-release-readiness.md).
+[release decision](https://github.com/lang198x/amos/blob/main/decisions/marketplace-release-readiness.md).
 
 `editors/vscode/` is a thin declarative extension. Its grammar is generated from
 the canonical file; `npm run check:editor` fails on drift. Build an installable
@@ -109,7 +116,7 @@ Its pinned source and independently reviewed scope inventory check all 398
 builtin/control-word and label occurrences in Bank or Risk in two themes.
 Earlier preview assets retain their original grammar. The Rust parser remains
 at version 0.1.0; current source adds the approved Perfect 10 block. See the
-[0.2.0 release notes](docs/releases/0.2.0.md) for that earlier milestone.
+[0.2.0 release notes](https://github.com/lang198x/amos/blob/main/docs/releases/0.2.0.md) for that earlier milestone.
 
 Preview 0.3.0 highlights 728 BASIC entries from the Professional manual.
 The [core inventory](specifications/manual-core/README.md) maps each group to
@@ -123,10 +130,10 @@ BASIC. Choose the mode you need from the examples below.
 
 We also keep source reviews for details that cannot be settled by highlighting:
 
-- [Command index](docs/command-index-review.md): all 818 Appendix G rows and known conflicts.
-- [Manual appendices](docs/manual-reconciliation.md): Music Extension sources and memory-bank layouts.
-- [I/O boundaries](docs/io-extension-boundary.md): serial/parallel forms and component identities.
-- [Remaining gaps](docs/highlighting-gaps.md): unresolved forms and edition checks.
+- [Command index](https://github.com/lang198x/amos/blob/main/docs/command-index-review.md): all 818 Appendix G rows and known conflicts.
+- [Manual appendices](https://github.com/lang198x/amos/blob/main/docs/manual-reconciliation.md): Music Extension sources and memory-bank layouts.
+- [I/O boundaries](https://github.com/lang198x/amos/blob/main/docs/io-extension-boundary.md): serial/parallel forms and component identities.
+- [Remaining gaps](https://github.com/lang198x/amos/blob/main/docs/highlighting-gaps.md): unresolved forms and edition checks.
 
 These records do not qualify an installed edition or extension. A word can have
 a colour even when its arguments are wrong or its command is not installed.
@@ -213,7 +220,7 @@ and punctuation. SW keeps a neutral builtin scope because it has two roles.
 Min/Max and Call remain unresolved spellings; CAll/CA follows its definition.
 No automatic association or BASIC-string injection is added. Colour does not
 validate postfix expressions, terminators, custom names or native execution.
-See the [Interface inventory and limits](docs/interface-inventory.md).
+See the [Interface inventory and limits](https://github.com/lang198x/amos/blob/main/docs/interface-inventory.md).
 
 ## Verify source analysis
 
@@ -222,7 +229,7 @@ named assignments, literals/names, unary minus, and equality in multiline
 If / End If. Else, nesting, arithmetic, arrays and inline If stay unsupported.
 This adds host analysis only; profiles and native compatibility are unchanged.
 
-See the [testing guide](docs/testing.md) for fixture checks, generated property
+See the [testing guide](https://github.com/lang198x/amos/blob/main/docs/testing.md) for fixture checks, generated property
 tests and a bounded fuzz run. These checks test the host parser; native trials
 remain separate evidence.
 
@@ -260,4 +267,4 @@ The npm preview uses GitHub Actions OIDC trusted publishing, bound to
 `lang198x/amos` and `publish-preview.yml`. The successful 0.3.0 publication
 verified the retained archive before publishing to next. Registry download bytes,
 signature and provenance attestation are verified; latest remains 0.1.0.
-See the [publishing procedure](docs/releases/publishing.md) for future previews.
+See the [publishing procedure](https://github.com/lang198x/amos/blob/main/docs/releases/publishing.md) for future previews.
